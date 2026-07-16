@@ -3,7 +3,8 @@
 # Adds observable logging and a simple lock around update_all.py.
 set -u
 
-DIR="/Users/daniel0522/Desktop/Claude playground/全台展覽地圖"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 PY="/Users/daniel0522/miniforge3/bin/python3"
 LOG="$DIR/runtime/logs/scheduled_update.log"
 LOCKDIR="$DIR/runtime/state/scheduled_update.lock"

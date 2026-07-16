@@ -1,6 +1,6 @@
 # 全台展覽地圖
 
-最後更新：2026/07/13
+最後更新：2026/07/16
 
 ⚠️ **與 Claude / Codex 溝通一律使用中文，不得用日文或英文。**
 
@@ -89,6 +89,37 @@
            刪除權限，刪不掉，需 Daniel 自己在 Finder 刪除。
 下一步：   ⚠️請 Daniel 覆核「B-SIDE LABEL POP UP STORE in Taiwan」分類矛盾（07/12排除ACG vs
            07/13指示是ACG），確認後續以哪個為準。
+已完成：   【2026/07/16 排程回報，Cowork】本次跑 report_status.py 顯示 51館/132場，約略定位／缺連結／
+           缺KV三項缺口皆為0%，第二步A/B/C（geocode／WebSearch查證／重跑Excel管線）無項目可做，
+           本輪未動 xlsx／venues.json／HTML。✅已驗證：獨立重新逐欄位核對 venues.json（loc/addr/
+           連結/KV），結論與腳本一致；另用python逐位元組比對確認HTML內嵌DATA與venues.json完全相同
+           （hd==vj為True），無07/13發生過的「HTML沒同步」問題。
+目前錯誤： ⚠️新發現（07/16）：排程 launchd 疑似路徑設定錯誤，Mac端每週一/四11:30自動跑update_all.py
+           這件事本週四「沒有真的成功執行」——public/venues.json、taiwan-exhibition-map.html、
+           全台ACG活動.xlsx 三檔修改時間都停在07/13 12:13–12:25，07/16當天完全沒有新異動。追查到
+           ops/run_scheduled_update.sh 與 ops/_install_schedule.command 內 DIR 變數寫的是
+           `/Users/daniel0522/Desktop/Claude playground/全台展覽地圖`（無.nosync），但專案實際在
+           `Claude playground.nosync/全台展覽地圖`（有.nosync）；且在錯路徑資料夾下找到殘留log證實
+           launchd有觸發但找不到run_scheduled_update.sh，執行失敗。這是排程/路徑問題非資料問題，
+           Cowork沙箱這邊改不到Daniel Mac上的launchd設定，需Daniel自己確認資料夾是否改過名、
+           修好ops/兩支腳本的DIR路徑後重跑_install_schedule.command重新載入排程。
+下一步：   ①Daniel 自行在Mac端修正ops/run_scheduled_update.sh與ops/_install_schedule.command的
+           DIR路徑（補上.nosync），重跑_install_schedule.command重新載入launchd。
+           ②修好路徑後建議手動跑一次ops/_final_update.command確認完整流程能正常產出新資料，
+           而不是等下一個週一/四。
+           ③承07/13：B-SIDE LABEL分類矛盾仍待Daniel回覆。
+不要改動： （沿用上方原有規定：①manual_extra.json/全台ACG活動.xlsx既有列②archive/backups內歷史備份
+           ③venues.json欄位結構④前端只改taiwan-exhibition-map.html這一個檔⑤政府API刻意停用不算異常）
+已完成：   【2026/07/16同日續，Daniel直接指示】①分類複核確認1筆：「我適文創快閃-夏日降溫計畫」
+           （松山文創）是ACG，已寫入data/manual/event_overrides.json（c:"ACG"）。⚠️尚未生效，需等
+           排程修好或Daniel手動跑ops/_final_update.command才會反映到venues.json。
+           ②Daniel確認不用「Claude playground」（非.nosync）這個工作資料夾，經AskUserQuestion問清楚
+           刪除範圍（有另一個無關專案「小紅書爬蟲」在裡面）並得到「整個都刪」的明確答覆後，已呼叫
+           allow_cowork_file_delete取得授權清空該資料夾（全台展覽地圖殘留log＋小紅書爬蟲整個Chrome
+           profile）。✅已驗證：find確認資料夾內容已清空。⚠️這不等於修好launchd排程路徑錯誤，
+           下一步仍是Daniel要做的事（見上方「目前錯誤」①的路徑修正）。
+下一步：   （承上）①②③不變，另外Daniel下次若要驗證分類override有沒有生效，記得看
+           event_overrides.json的「我適文創快閃-夏日降溫計畫」有沒有真的反映到venues.json的c欄。
 ```
 
 ---

@@ -1051,5 +1051,53 @@
   "display_name": "台北市萬華區西門里峨眉街52號, 10844",
   "type": "PointAddress",
   "score": 100
+ },
+ "台中市后里區福容路201號": {
+  "la": 24.324143,
+  "lo": 120.699211,
+  "source": "arcgis_address",
+  "display_name": "台中市后里區福容路201號, 421408",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市西屯區台灣大道四段1727號": {
+  "la": 24.1822604,
+  "lo": 120.6025048,
+  "source": "arcgis_address",
+  "display_name": "台中市西屯區台灣大道四段1727號, 407224",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市萬華區昆明街92之1號5樓": {
+  "la": 25.0452564,
+  "lo": 121.5053799,
+  "source": "arcgis_address",
+  "display_name": "台北市萬華區萬壽里昆明街92號, 10843",
+  "type": "PointAddress",
+  "score": 97.5
+ },
+ "台中市西屯區惠來里台灣大道三段301號": {
+  "la": 24.1650058,
+  "lo": 120.6433984,
+  "source": "arcgis_address",
+  "display_name": "台中市台灣大道三段301號, 407550",
+  "type": "PointAddress",
+  "score": 96.34
+ },
+ "嘉義市鹿寮里學府路300號": {
+  "la": 23.463187,
+  "lo": 120.47928,
+  "source": "arcgis_address",
+  "display_name": "嘉義市東區學府路300號, 600041",
+  "type": "PointAddress",
+  "score": 97.96
+ },
+ "高雄市前金區大同二路23號1樓": {
+  "la": 22.627008,
+  "lo": 120.295574,
+  "source": "arcgis_address",
+  "display_name": "高雄市前金區大同二路23號, 801008",
+  "type": "PointAddress",
+  "score": 100
  }
 }
