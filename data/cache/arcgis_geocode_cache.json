@@ -1,0 +1,6561 @@
+{
+ "台北市中正區忠孝西路一段70號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區黎明里忠孝西路一段70號, 10041",
+    "location": {
+     "x": 121.514351601486,
+     "y": 25.046709275361
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區黎明里忠孝西路一段70號, 10041",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.513351601486,
+     "ymin": 25.045709275361,
+     "xmax": 121.515351601486,
+     "ymax": 25.047709275361
+    }
+   }
+  ]
+ },
+ "新北市板橋區中正路435號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市中正路435號, 22052",
+    "location": {
+     "x": 121.453833003274,
+     "y": 25.023514998622
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "新北市中正路435號, 22052",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.452833003274,
+     "ymin": 25.022514998622,
+     "xmax": 121.454833003274,
+     "ymax": 25.024514998622
+    }
+   },
+   {
+    "address": "新北市新莊區中正路435號, 242",
+    "location": {
+     "x": 121.443476994263,
+     "y": 25.034022007619
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "新北市新莊區中正路435號, 242",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.442476994263,
+     "ymin": 25.033022007619,
+     "xmax": 121.444476994263,
+     "ymax": 25.035022007619
+    }
+   },
+   {
+    "address": "新北市新店區中正路435號, 23148",
+    "location": {
+     "x": 121.533928039267,
+     "y": 24.978357998179
+    },
+    "score": 90.77,
+    "attributes": {
+     "Score": 90.77,
+     "Match_addr": "新北市新店區中正路435號, 23148",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.532928039267,
+     "ymin": 24.977357998179,
+     "xmax": 121.534928039267,
+     "ymax": 24.979357998179
+    }
+   }
+  ]
+ },
+ "台北市士林區雨農路17-2號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市士林區福志里雨農路17之2號, 11142",
+    "location": {
+     "x": 121.532121403856,
+     "y": 25.097833226946
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市士林區福志里雨農路17之2號, 11142",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.531121403856,
+     "ymin": 25.096833226946,
+     "xmax": 121.533121403856,
+     "ymax": 25.098833226946
+    }
+   },
+   {
+    "address": "台北市士林區雨農路2巷17號, 111",
+    "location": {
+     "x": 121.532927064592,
+     "y": 25.097540835694
+    },
+    "score": 95.02,
+    "attributes": {
+     "Score": 95.02,
+     "Match_addr": "台北市士林區雨農路2巷17號, 111",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.531927064592,
+     "ymin": 25.096540835694,
+     "xmax": 121.533927064592,
+     "ymax": 25.098540835694
+    }
+   }
+  ]
+ },
+ "台中市西區英才路589巷6號1F(月臨畫廊)": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市英才路589巷1號, 40359",
+    "location": {
+     "x": 120.66591543917,
+     "y": 24.143319068957
+    },
+    "score": 90.05,
+    "attributes": {
+     "Score": 90.05,
+     "Match_addr": "台中市英才路589巷1號, 40359",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.66491543917,
+     "ymin": 24.142319068957,
+     "xmax": 120.66691543917,
+     "ymax": 24.144319068957
+    }
+   }
+  ]
+ },
+ "台北市文山區景文街32號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市文山區景行里景文街32號, 11670",
+    "location": {
+     "x": 121.541178050237,
+     "y": 24.992090614975
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市文山區景行里景文街32號, 11670",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.540178050237,
+     "ymin": 24.991090614975,
+     "xmax": 121.542178050237,
+     "ymax": 24.993090614975
+    }
+   }
+  ]
+ },
+ "彰化縣彰化市溫泉路31號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "彰化縣彰化市溫泉路31號, 50074",
+    "location": {
+     "x": 120.547946999105,
+     "y": 24.077999984882
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "彰化縣彰化市溫泉路31號, 50074",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.546946999105,
+     "ymin": 24.076999984882,
+     "xmax": 120.548946999105,
+     "ymax": 24.078999984882
+    }
+   }
+  ]
+ },
+ "新北市板橋區文化路一段266號12樓之1": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市文化路一段266號, 220",
+    "location": {
+     "x": 121.46703500369,
+     "y": 25.020783001101
+    },
+    "score": 96.91,
+    "attributes": {
+     "Score": 96.91,
+     "Match_addr": "新北市文化路一段266號, 220",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.46603500369,
+     "ymin": 25.019783001101,
+     "xmax": 121.46803500369,
+     "ymax": 25.021783001101
+    }
+   }
+  ]
+ },
+ "彰化縣芳苑鄉漁港路900號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "彰化縣芳苑鄉漁港路900號, 528",
+    "location": {
+     "x": 120.327043377387,
+     "y": 23.968036684708
+    },
+    "score": 98.9,
+    "attributes": {
+     "Score": 98.9,
+     "Match_addr": "彰化縣芳苑鄉漁港路900號, 528",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 120.326043377387,
+     "ymin": 23.967036684708,
+     "xmax": 120.328043377387,
+     "ymax": 23.969036684708
+    }
+   },
+   {
+    "address": "彰化縣芳苑鄉漁港路, 528",
+    "location": {
+     "x": 120.324888290808,
+     "y": 23.968018064735
+    },
+    "score": 89.23,
+    "attributes": {
+     "Score": 89.23,
+     "Match_addr": "彰化縣芳苑鄉漁港路, 528",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.323888290808,
+     "ymin": 23.967018064735,
+     "xmax": 120.325888290808,
+     "ymax": 23.969018064735
+    }
+   }
+  ]
+ },
+ "彰化縣埤頭鄉彰水路二段526號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "彰化縣埤頭鄉彰水路二段526號, 52342",
+    "location": {
+     "x": 120.458968989765,
+     "y": 23.869608982405
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "彰化縣埤頭鄉彰水路二段526號, 52342",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.457968989765,
+     "ymin": 23.868608982405,
+     "xmax": 120.459968989765,
+     "ymax": 23.870608982405
+    }
+   }
+  ]
+ },
+ "台中市南屯區惠中路三段65號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市南屯區惠中路三段65號, 40862",
+    "location": {
+     "x": 120.641151918397,
+     "y": 24.149147003959
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市南屯區惠中路三段65號, 40862",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.640151918397,
+     "ymin": 24.148147003959,
+     "xmax": 120.642151918397,
+     "ymax": 24.150147003959
+    }
+   }
+  ]
+ },
+ "台南市仁德區二仁路一段321號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市仁德區二仁路一段321號, 717",
+    "location": {
+     "x": 120.222855890274,
+     "y": 22.92442249736
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台南市仁德區二仁路一段321號, 717",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.221855890274,
+     "ymin": 22.92342249736,
+     "xmax": 120.223855890274,
+     "ymax": 22.92542249736
+    }
+   }
+  ]
+ },
+ "台南市新營區大同路39號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市新營區大同路39號, 73048",
+    "location": {
+     "x": 120.322464287756,
+     "y": 23.310099836671
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台南市新營區大同路39號, 73048",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.321464287756,
+     "ymin": 23.309099836671,
+     "xmax": 120.323464287756,
+     "ymax": 23.311099836671
+    }
+   }
+  ]
+ },
+ "台中市西區柳川西路二段158號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市柳川西路二段158號, 40357",
+    "location": {
+     "x": 120.673454683588,
+     "y": 24.141287796265
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市柳川西路二段158號, 40357",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.672454683588,
+     "ymin": 24.140287796265,
+     "xmax": 120.674454683588,
+     "ymax": 24.142287796265
+    }
+   }
+  ]
+ },
+ "屏東縣屏東市公園路28號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "屏東縣公園路28號, 90054",
+    "location": {
+     "x": 120.490291994293,
+     "y": 22.674526992568
+    },
+    "score": 92.67,
+    "attributes": {
+     "Score": 92.67,
+     "Match_addr": "屏東縣公園路28號, 90054",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.489291994293,
+     "ymin": 22.673526992568,
+     "xmax": 120.491291994293,
+     "ymax": 22.675526992568
+    }
+   },
+   {
+    "address": "屏東縣潮州鎮公園路28號, 92052",
+    "location": {
+     "x": 120.537700038654,
+     "y": 22.552910019901
+    },
+    "score": 90,
+    "attributes": {
+     "Score": 90,
+     "Match_addr": "屏東縣潮州鎮公園路28號, 92052",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.536700038654,
+     "ymin": 22.551910019901,
+     "xmax": 120.538700038654,
+     "ymax": 22.553910019901
+    }
+   },
+   {
+    "address": "屏東縣公園路28巷, 90054",
+    "location": {
+     "x": 120.490240990413,
+     "y": 22.674521984381
+    },
+    "score": 83.2,
+    "attributes": {
+     "Score": 83.2,
+     "Match_addr": "屏東縣公園路28巷, 90054",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.489240990413,
+     "ymin": 22.673521984381,
+     "xmax": 120.491240990413,
+     "ymax": 22.675521984381
+    }
+   }
+  ]
+ },
+ "台中市北屯區環中東路二段597號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市北屯區環中東路二段597號, 406",
+    "location": {
+     "x": 120.721058682675,
+     "y": 24.166917839508
+    },
+    "score": 98.9,
+    "attributes": {
+     "Score": 98.9,
+     "Match_addr": "台中市北屯區環中東路二段597號, 406",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 120.720058682675,
+     "ymin": 24.165917839508,
+     "xmax": 120.722058682675,
+     "ymax": 24.167917839508
+    }
+   },
+   {
+    "address": "台中市環中東路二段, 40641",
+    "location": {
+     "x": 120.720670013836,
+     "y": 24.174387392546
+    },
+    "score": 88.38,
+    "attributes": {
+     "Score": 88.38,
+     "Match_addr": "台中市環中東路二段, 40641",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.719670013836,
+     "ymin": 24.173387392546,
+     "xmax": 120.721670013836,
+     "ymax": 24.175387392546
+    }
+   }
+  ]
+ },
+ "彰化縣彰化市福山街348號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "彰化縣彰化市福山街348號, 50076",
+    "location": {
+     "x": 120.575612979278,
+     "y": 24.080538989082
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "彰化縣彰化市福山街348號, 50076",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.574612979278,
+     "ymin": 24.079538989082,
+     "xmax": 120.576612979278,
+     "ymax": 24.081538989082
+    }
+   }
+  ]
+ },
+ "台北市中正區中山南路1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區幸福里中山南路1號, 10051",
+    "location": {
+     "x": 121.519586435295,
+     "y": 25.043965878451
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區幸福里中山南路1號, 10051",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.518586435295,
+     "ymin": 25.042965878451,
+     "xmax": 121.520586435295,
+     "ymax": 25.044965878451
+    }
+   }
+  ]
+ },
+ "屏東縣屏東市青島街106號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "屏東縣青島街106號, 90063",
+    "location": {
+     "x": 120.484494986238,
+     "y": 22.678565016332
+    },
+    "score": 92.67,
+    "attributes": {
+     "Score": 92.67,
+     "Match_addr": "屏東縣青島街106號, 90063",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.483494986238,
+     "ymin": 22.677565016332,
+     "xmax": 120.485494986238,
+     "ymax": 22.679565016332
+    }
+   }
+  ]
+ },
+ "台北市大同區迪化街1段21號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大同區永樂里迪化街一段21號, 10343",
+    "location": {
+     "x": 121.51032501902,
+     "y": 25.054500841095
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大同區永樂里迪化街一段21號, 10343",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.50932501902,
+     "ymin": 25.053500841095,
+     "xmax": 121.51132501902,
+     "ymax": 25.055500841095
+    }
+   }
+  ]
+ },
+ "台中市西區五權西路一段110號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市五權西路一段110號, 40359",
+    "location": {
+     "x": 120.661251973669,
+     "y": 24.140346005624
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市五權西路一段110號, 40359",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.660251973669,
+     "ymin": 24.139346005624,
+     "xmax": 120.662251973669,
+     "ymax": 24.141346005624
+    }
+   }
+  ]
+ },
+ "台中市西區公益路155巷9號B1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+    "location": {
+     "x": 120.664491411608,
+     "y": 24.150274411845
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.663491411608,
+     "ymin": 24.149274411845,
+     "xmax": 120.665491411608,
+     "ymax": 24.151274411845
+    }
+   }
+  ]
+ },
+ "台北市南京東路二段1號3F": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區南京東路二段1號, 104",
+    "location": {
+     "x": 121.527941728865,
+     "y": 25.052218202331
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中山區南京東路二段1號, 104",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.526941728865,
+     "ymin": 25.051218202331,
+     "xmax": 121.528941728865,
+     "ymax": 25.053218202331
+    }
+   },
+   {
+    "address": "台北市中山區中原里南京東路二段13號, 10457",
+    "location": {
+     "x": 121.528617600691,
+     "y": 25.052288353933
+    },
+    "score": 96.92,
+    "attributes": {
+     "Score": 96.92,
+     "Match_addr": "台北市中山區中原里南京東路二段13號, 10457",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.527617600691,
+     "ymin": 25.051288353933,
+     "xmax": 121.529617600691,
+     "ymax": 25.053288353933
+    }
+   }
+  ]
+ },
+ "苗栗縣竹南鎮公園路206號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "苗栗縣竹南鎮公園路206號, 35056",
+    "location": {
+     "x": 120.886116978194,
+     "y": 24.690958002904
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "苗栗縣竹南鎮公園路206號, 35056",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.885116978194,
+     "ymin": 24.689958002904,
+     "xmax": 120.887116978194,
+     "ymax": 24.691958002904
+    }
+   }
+  ]
+ },
+ "台中市西區公益路155巷9號B1": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+    "location": {
+     "x": 120.664491411608,
+     "y": 24.150274411845
+    },
+    "score": 97,
+    "attributes": {
+     "Score": 97,
+     "Match_addr": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.663491411608,
+     "ymin": 24.149274411845,
+     "xmax": 120.665491411608,
+     "ymax": 24.151274411845
+    }
+   }
+  ]
+ },
+ "台中市豐原區成功路369號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市豐原區成功路369號, 42059",
+    "location": {
+     "x": 120.706197331057,
+     "y": 24.248957910691
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市豐原區成功路369號, 42059",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.705197331057,
+     "ymin": 24.247957910691,
+     "xmax": 120.707197331057,
+     "ymax": 24.249957910691
+    }
+   }
+  ]
+ },
+ "台南市中西區國華街三段15號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市國華街三段15號, 70059",
+    "location": {
+     "x": 120.197446988987,
+     "y": 22.993670009539
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台南市國華街三段15號, 70059",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.196446988987,
+     "ymin": 22.992670009539,
+     "xmax": 120.198446988987,
+     "ymax": 22.994670009539
+    }
+   }
+  ]
+ },
+ "台南市新營區民治路36號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市新營區民治路36號, 73001",
+    "location": {
+     "x": 120.314022917447,
+     "y": 23.311718308046
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台南市新營區民治路36號, 73001",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.313022917447,
+     "ymin": 23.310718308046,
+     "xmax": 120.315022917447,
+     "ymax": 23.312718308046
+    }
+   },
+   {
+    "address": "台南市新營區民治路3-6號, 73047",
+    "location": {
+     "x": 120.321064219028,
+     "y": 23.310960793547
+    },
+    "score": 99.99,
+    "attributes": {
+     "Score": 99.99,
+     "Match_addr": "台南市新營區民治路3-6號, 73047",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.320064219028,
+     "ymin": 23.309960793547,
+     "xmax": 120.322064219028,
+     "ymax": 23.311960793547
+    }
+   }
+  ]
+ },
+ "新竹市北區西門街258號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新竹市西門街258號, 30046",
+    "location": {
+     "x": 120.960093476325,
+     "y": 24.79940721523
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "新竹市西門街258號, 30046",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.959093476325,
+     "ymin": 24.79840721523,
+     "xmax": 120.961093476325,
+     "ymax": 24.80040721523
+    }
+   },
+   {
+    "address": "新竹市東區西門街25-8號, 300",
+    "location": {
+     "x": 120.965984110239,
+     "y": 24.802797904612
+    },
+    "score": 97.79,
+    "attributes": {
+     "Score": 97.79,
+     "Match_addr": "新竹市東區西門街25-8號, 300",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.964984110239,
+     "ymin": 24.801797904612,
+     "xmax": 120.966984110239,
+     "ymax": 24.803797904612
+    }
+   }
+  ]
+ },
+ "台南市麻豆區興國路11號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市麻豆區興國路11號, 72148",
+    "location": {
+     "x": 120.248462604474,
+     "y": 23.182664114601
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台南市麻豆區興國路11號, 72148",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.247462604474,
+     "ymin": 23.181664114601,
+     "xmax": 120.249462604474,
+     "ymax": 23.183664114601
+    }
+   }
+  ]
+ },
+ "台中市大甲區光明路67號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市大甲區光明路67號, 43746",
+    "location": {
+     "x": 120.623256974212,
+     "y": 24.344037987452
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市大甲區光明路67號, 43746",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.622256974212,
+     "ymin": 24.343037987452,
+     "xmax": 120.624256974212,
+     "ymax": 24.345037987452
+    }
+   }
+  ]
+ },
+ "新竹市東區忠孝路80號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新竹市東區忠孝路80號, 30069",
+    "location": {
+     "x": 120.991550004571,
+     "y": 24.80304999035
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新竹市東區忠孝路80號, 30069",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.990550004571,
+     "ymin": 24.80204999035,
+     "xmax": 120.992550004571,
+     "ymax": 24.80404999035
+    }
+   }
+  ]
+ },
+ "彰化縣彰化市卦山路18號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "彰化縣彰化市卦山路18號, 50074",
+    "location": {
+     "x": 120.557154016829,
+     "y": 24.075792987866
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "彰化縣彰化市卦山路18號, 50074",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.556154016829,
+     "ymin": 24.074792987866,
+     "xmax": 120.558154016829,
+     "ymax": 24.076792987866
+    }
+   }
+  ]
+ },
+ "台中市太平區東平路464號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市太平區東平路464號, 41141",
+    "location": {
+     "x": 120.724375835026,
+     "y": 24.134050106692
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市太平區東平路464號, 41141",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.723375835026,
+     "ymin": 24.133050106692,
+     "xmax": 120.725375835026,
+     "ymax": 24.135050106692
+    }
+   }
+  ]
+ },
+ "台北市大安區延吉街120號地下樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區車層里延吉街120號, 10696",
+    "location": {
+     "x": 121.554636453071,
+     "y": 25.040420752503
+    },
+    "score": 97.5,
+    "attributes": {
+     "Score": 97.5,
+     "Match_addr": "台北市大安區車層里延吉街120號, 10696",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.553636453071,
+     "ymin": 25.039420752503,
+     "xmax": 121.555636453071,
+     "ymax": 25.041420752503
+    }
+   }
+  ]
+ },
+ "台北市大同區民族西路141號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大同區至聖里民族西路141號, 10369",
+    "location": {
+     "x": 121.516388990691,
+     "y": 25.068704646578
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大同區至聖里民族西路141號, 10369",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.515388990691,
+     "ymin": 25.067704646578,
+     "xmax": 121.517388990691,
+     "ymax": 25.069704646578
+    }
+   }
+  ]
+ },
+ "台北市大安區忠孝東路四段阿波羅大廈218-6號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區車層里忠孝東路四段218之6號, 10692",
+    "location": {
+     "x": 121.553337760993,
+     "y": 25.041090634205
+    },
+    "score": 86.36,
+    "attributes": {
+     "Score": 86.36,
+     "Match_addr": "台北市大安區車層里忠孝東路四段218之6號, 10692",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.552337760993,
+     "ymin": 25.040090634205,
+     "xmax": 121.554337760993,
+     "ymax": 25.042090634205
+    }
+   },
+   {
+    "address": "台北市大安區忠孝東路四段, 106",
+    "location": {
+     "x": 121.5488668357,
+     "y": 25.041452460812
+    },
+    "score": 84.09,
+    "attributes": {
+     "Score": 84.09,
+     "Match_addr": "台北市大安區忠孝東路四段, 106",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 121.5478668357,
+     "ymin": 25.040452460812,
+     "xmax": 121.5498668357,
+     "ymax": 25.042452460812
+    }
+   },
+   {
+    "address": "台北市大安區國父紀念館商圈忠孝東路四段, 10694",
+    "location": {
+     "x": 121.555278293602,
+     "y": 25.041318840298
+    },
+    "score": 84.09,
+    "attributes": {
+     "Score": 84.09,
+     "Match_addr": "台北市大安區國父紀念館商圈忠孝東路四段, 10694",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 121.554278293602,
+     "ymin": 25.040318840298,
+     "xmax": 121.556278293602,
+     "ymax": 25.042318840298
+    }
+   }
+  ]
+ },
+ "台北市中山區玉門路1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區",
+    "location": {
+     "x": 121.5336277,
+     "y": 25.0642508
+    },
+    "score": 81,
+    "attributes": {
+     "Score": 81,
+     "Match_addr": "台北市中山區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.5086277,
+     "ymin": 25.0392508,
+     "xmax": 121.5586277,
+     "ymax": 25.0892508
+    }
+   }
+  ]
+ },
+ "台中市霧峰區民生路26號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市霧峰區民生路26號, 41343",
+    "location": {
+     "x": 120.700818831427,
+     "y": 24.062807408191
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市霧峰區民生路26號, 41343",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.699818831427,
+     "ymin": 24.061807408191,
+     "xmax": 120.701818831427,
+     "ymax": 24.063807408191
+    }
+   }
+  ]
+ },
+ "台中市西屯區市政路386號13樓之5": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市市政路386號, 40757",
+    "location": {
+     "x": 120.640228316486,
+     "y": 24.158809117115
+    },
+    "score": 96.71,
+    "attributes": {
+     "Score": 96.71,
+     "Match_addr": "台中市市政路386號, 40757",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.639228316486,
+     "ymin": 24.157809117115,
+     "xmax": 120.641228316486,
+     "ymax": 24.159809117115
+    }
+   }
+  ]
+ },
+ "花蓮縣花蓮市節約街37號B1": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "花蓮縣舊鐵道商圈節約街37號, 97049",
+    "location": {
+     "x": 121.607162887385,
+     "y": 23.978591998535
+    },
+    "score": 89.58,
+    "attributes": {
+     "Score": 89.58,
+     "Match_addr": "花蓮縣舊鐵道商圈節約街37號, 97049",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.606162887385,
+     "ymin": 23.977591998535,
+     "xmax": 121.608162887385,
+     "ymax": 23.979591998535
+    }
+   },
+   {
+    "address": "花蓮縣舊鐵道商圈節約街, 97049",
+    "location": {
+     "x": 121.60647872224,
+     "y": 23.978080144502
+    },
+    "score": 76.73,
+    "attributes": {
+     "Score": 76.73,
+     "Match_addr": "花蓮縣舊鐵道商圈節約街, 97049",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 121.60547872224,
+     "ymin": 23.977080144502,
+     "xmax": 121.60747872224,
+     "ymax": 23.979080144502
+    }
+   },
+   {
+    "address": "花蓮縣花蓮市",
+    "location": {
+     "x": 121.6068468,
+     "y": 23.9821734
+    },
+    "score": 76.37,
+    "attributes": {
+     "Score": 76.37,
+     "Match_addr": "花蓮縣花蓮市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.5688468,
+     "ymin": 23.9441734,
+     "xmax": 121.6448468,
+     "ymax": 24.0201734
+    }
+   }
+  ]
+ },
+ "台中市中區台灣大道一段145號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市中區自由路商圈台灣大道一段145號, 40045",
+    "location": {
+     "x": 120.682428013851,
+     "y": 24.139663006244
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市中區自由路商圈台灣大道一段145號, 40045",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.681428013851,
+     "ymin": 24.138663006244,
+     "xmax": 120.683428013851,
+     "ymax": 24.140663006244
+    }
+   }
+  ]
+ },
+ "台中市北屯區崇德路三段865~869號5樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市北屯區崇德路三段865號, 406",
+    "location": {
+     "x": 120.686475070546,
+     "y": 24.20139708069
+    },
+    "score": 97.4,
+    "attributes": {
+     "Score": 97.4,
+     "Match_addr": "台中市北屯區崇德路三段865號, 406",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 120.685475070546,
+     "ymin": 24.20039708069,
+     "xmax": 120.687475070546,
+     "ymax": 24.20239708069
+    }
+   },
+   {
+    "address": "台中市北屯區崇德路三段, 42771",
+    "location": {
+     "x": 120.686655300989,
+     "y": 24.205130259136
+    },
+    "score": 84.25,
+    "attributes": {
+     "Score": 84.25,
+     "Match_addr": "台中市北屯區崇德路三段, 42771",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.685655300989,
+     "ymin": 24.204130259136,
+     "xmax": 120.687655300989,
+     "ymax": 24.206130259136
+    }
+   }
+  ]
+ },
+ "台南市東區中華東路一段366號A1館1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市東區中華東路一段366號, 70155",
+    "location": {
+     "x": 120.233671761463,
+     "y": 22.990763410588
+    },
+    "score": 99.05,
+    "attributes": {
+     "Score": 99.05,
+     "Match_addr": "台南市東區中華東路一段366號, 70155",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.232671761463,
+     "ymin": 22.989763410588,
+     "xmax": 120.234671761463,
+     "ymax": 22.991763410588
+    }
+   }
+  ]
+ },
+ "台南市中西區西門路一段658-1號B1F": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市西門路一段658-1號, 70051",
+    "location": {
+     "x": 120.198946762923,
+     "y": 22.986943113146
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台南市西門路一段658-1號, 70051",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.197946762923,
+     "ymin": 22.985943113146,
+     "xmax": 120.199946762923,
+     "ymax": 22.987943113146
+    }
+   }
+  ]
+ },
+ "高雄市前鎮區中華五路789號2F": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市前鎮區中華五路789號, 80661",
+    "location": {
+     "x": 120.308779538327,
+     "y": 22.595342922586
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "高雄市前鎮區中華五路789號, 80661",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.307779538327,
+     "ymin": 22.594342922586,
+     "xmax": 120.309779538327,
+     "ymax": 22.596342922586
+    }
+   }
+  ]
+ },
+ "台中市東區進德路600號3樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市東區進德路, 40154",
+    "location": {
+     "x": 120.692468058386,
+     "y": 24.140495690454
+    },
+    "score": 85,
+    "attributes": {
+     "Score": 85,
+     "Match_addr": "台中市東區進德路, 40154",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.691468058386,
+     "ymin": 24.139495690454,
+     "xmax": 120.693468058386,
+     "ymax": 24.141495690454
+    }
+   },
+   {
+    "address": "台中市東區進德路3號, 40141",
+    "location": {
+     "x": 120.692608589629,
+     "y": 24.14746571991
+    },
+    "score": 78.83,
+    "attributes": {
+     "Score": 78.83,
+     "Match_addr": "台中市東區進德路3號, 40141",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.691608589629,
+     "ymin": 24.14646571991,
+     "xmax": 120.693608589629,
+     "ymax": 24.14846571991
+    }
+   },
+   {
+    "address": "台中市東區",
+    "location": {
+     "x": 120.7038138,
+     "y": 24.1367231
+    },
+    "score": 74.25,
+    "attributes": {
+     "Score": 74.25,
+     "Match_addr": "台中市東區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6888138,
+     "ymin": 24.1217231,
+     "xmax": 120.7188138,
+     "ymax": 24.1517231
+    }
+   }
+  ]
+ },
+ "台中市東區進德路600號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市東區進德路, 40154",
+    "location": {
+     "x": 120.692468058386,
+     "y": 24.140495690454
+    },
+    "score": 85,
+    "attributes": {
+     "Score": 85,
+     "Match_addr": "台中市東區進德路, 40154",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.691468058386,
+     "ymin": 24.139495690454,
+     "xmax": 120.693468058386,
+     "ymax": 24.141495690454
+    }
+   },
+   {
+    "address": "台中市東區進德路1號, 40141",
+    "location": {
+     "x": 120.692608589629,
+     "y": 24.147501510637
+    },
+    "score": 78.83,
+    "attributes": {
+     "Score": 78.83,
+     "Match_addr": "台中市東區進德路1號, 40141",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.691608589629,
+     "ymin": 24.146501510637,
+     "xmax": 120.693608589629,
+     "ymax": 24.148501510637
+    }
+   },
+   {
+    "address": "台中市東區",
+    "location": {
+     "x": 120.7038138,
+     "y": 24.1367231
+    },
+    "score": 74.25,
+    "attributes": {
+     "Score": 74.25,
+     "Match_addr": "台中市東區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6888138,
+     "ymin": 24.1217231,
+     "xmax": 120.7188138,
+     "ymax": 24.1517231
+    }
+   }
+  ]
+ },
+ "新北市林口區文化三路一段356號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市林口區文化三路一段356號, 24448",
+    "location": {
+     "x": 121.363547165582,
+     "y": 25.071241094298
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新北市林口區文化三路一段356號, 24448",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.362547165582,
+     "ymin": 25.070241094298,
+     "xmax": 121.364547165582,
+     "ymax": 25.072241094298
+    }
+   }
+  ]
+ },
+ "台北市中正區市民大道三段2號7樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區梅花里市民大道三段2號, 10058",
+    "location": {
+     "x": 121.531021027607,
+     "y": 25.045632997083
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區梅花里市民大道三段2號, 10058",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.530021027607,
+     "ymin": 25.044632997083,
+     "xmax": 121.532021027607,
+     "ymax": 25.046632997083
+    }
+   }
+  ]
+ },
+ "高雄市前鎮區中華五路789號B1": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市前鎮區中華五路789號, 80661",
+    "location": {
+     "x": 120.308779538327,
+     "y": 22.595342922586
+    },
+    "score": 98.93,
+    "attributes": {
+     "Score": 98.93,
+     "Match_addr": "高雄市前鎮區中華五路789號, 80661",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.307779538327,
+     "ymin": 22.594342922586,
+     "xmax": 120.309779538327,
+     "ymax": 22.596342922586
+    }
+   }
+  ]
+ },
+ "台北市中正區市民大道三段2號8樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區梅花里市民大道三段2號, 10058",
+    "location": {
+     "x": 121.531021027607,
+     "y": 25.045632997083
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區梅花里市民大道三段2號, 10058",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.530021027607,
+     "ymin": 25.044632997083,
+     "xmax": 121.532021027607,
+     "ymax": 25.046632997083
+    }
+   }
+  ]
+ },
+ "台北市中正區市民大道三段2號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區梅花里市民大道三段2號, 10058",
+    "location": {
+     "x": 121.531021027607,
+     "y": 25.045632997083
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區梅花里市民大道三段2號, 10058",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.530021027607,
+     "ymin": 25.044632997083,
+     "xmax": 121.532021027607,
+     "ymax": 25.046632997083
+    }
+   }
+  ]
+ },
+ "台北市大同區承德路一段1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大同區建明里承德路一段1號, 10351",
+    "location": {
+     "x": 121.516784113607,
+     "y": 25.049090071139
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大同區建明里承德路一段1號, 10351",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.515784113607,
+     "ymin": 25.048090071139,
+     "xmax": 121.517784113607,
+     "ymax": 25.050090071139
+    }
+   }
+  ]
+ },
+ "台中市西屯區台灣大道三段251號13樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台灣大道三段251號, 40756",
+    "location": {
+     "x": 120.64456938796,
+     "y": 24.164671713563
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "台中市台灣大道三段251號, 40756",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.64356938796,
+     "ymin": 24.163671713563,
+     "xmax": 120.64556938796,
+     "ymax": 24.165671713563
+    }
+   },
+   {
+    "address": "台中市西屯區台灣大道三段, 407",
+    "location": {
+     "x": 120.633001879288,
+     "y": 24.173813113821
+    },
+    "score": 87.11,
+    "attributes": {
+     "Score": 87.11,
+     "Match_addr": "台中市西屯區台灣大道三段, 407",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.632001879288,
+     "ymin": 24.172813113821,
+     "xmax": 120.634001879288,
+     "ymax": 24.174813113821
+    }
+   }
+  ]
+ },
+ "台中市中區台灣大道一段1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市中區台灣大道一段1號, 400",
+    "location": {
+     "x": 120.684425083868,
+     "y": 24.137891344103
+    },
+    "score": 98.9,
+    "attributes": {
+     "Score": 98.9,
+     "Match_addr": "台中市中區台灣大道一段1號, 400",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 120.683425083868,
+     "ymin": 24.136891344103,
+     "xmax": 120.685425083868,
+     "ymax": 24.138891344103
+    }
+   },
+   {
+    "address": "台中市中區中華夜市台灣大道一段, 40041",
+    "location": {
+     "x": 120.676566447487,
+     "y": 24.145076457522
+    },
+    "score": 94.62,
+    "attributes": {
+     "Score": 94.62,
+     "Match_addr": "台中市中區中華夜市台灣大道一段, 40041",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.675566447487,
+     "ymin": 24.144076457522,
+     "xmax": 120.677566447487,
+     "ymax": 24.146076457522
+    }
+   },
+   {
+    "address": "台中市中區自由路商圈台灣大道一段, 400",
+    "location": {
+     "x": 120.682242130737,
+     "y": 24.140121035106
+    },
+    "score": 94.62,
+    "attributes": {
+     "Score": 94.62,
+     "Match_addr": "台中市中區自由路商圈台灣大道一段, 400",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.681242130737,
+     "ymin": 24.139121035106,
+     "xmax": 120.683242130737,
+     "ymax": 24.141121035106
+    }
+   }
+  ]
+ },
+ "台北市信義區松壽路20號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區西村里松壽路20號, 11051",
+    "location": {
+     "x": 121.567405360549,
+     "y": 25.035641139855
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市信義區西村里松壽路20號, 11051",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.566405360549,
+     "ymin": 25.034641139855,
+     "xmax": 121.568405360549,
+     "ymax": 25.036641139855
+    }
+   }
+  ]
+ },
+ "台北市大安區敦化南路二段105號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區義安里敦化南路二段105號, 10682",
+    "location": {
+     "x": 121.549122920981,
+     "y": 25.028461411143
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區義安里敦化南路二段105號, 10682",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.548122920981,
+     "ymin": 25.027461411143,
+     "xmax": 121.550122920981,
+     "ymax": 25.029461411143
+    }
+   }
+  ]
+ },
+ "台北市松山區復興南路一段39號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市松山區中崙里復興南路一段39號, 10556",
+    "location": {
+     "x": 121.544125546489,
+     "y": 25.046129415299
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市松山區中崙里復興南路一段39號, 10556",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.543125546489,
+     "ymin": 25.045129415299,
+     "xmax": 121.545125546489,
+     "ymax": 25.047129415299
+    }
+   }
+  ]
+ },
+ "台中市西屯區台灣大道三段301號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台灣大道三段301號, 40756",
+    "location": {
+     "x": 120.643398436086,
+     "y": 24.165005816224
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "台中市台灣大道三段301號, 40756",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.642398436086,
+     "ymin": 24.164005816224,
+     "xmax": 120.644398436086,
+     "ymax": 24.166005816224
+    }
+   },
+   {
+    "address": "台中市西屯區台灣大道三段, 407",
+    "location": {
+     "x": 120.633001879288,
+     "y": 24.173813113821
+    },
+    "score": 91.25,
+    "attributes": {
+     "Score": 91.25,
+     "Match_addr": "台中市西屯區台灣大道三段, 407",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.632001879288,
+     "ymin": 24.172813113821,
+     "xmax": 120.634001879288,
+     "ymax": 24.174813113821
+    }
+   }
+  ]
+ },
+ "台北市信義區松壽路11號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區西村里松壽路11號, 11051",
+    "location": {
+     "x": 121.567280134916,
+     "y": 25.036073352693
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市信義區西村里松壽路11號, 11051",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.566280134916,
+     "ymin": 25.035073352693,
+     "xmax": 121.568280134916,
+     "ymax": 25.037073352693
+    }
+   }
+  ]
+ },
+ "台北市信義區松高路12號5樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區西村里松高路12號, 11073",
+    "location": {
+     "x": 121.56680018714,
+     "y": 25.038813103474
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市信義區西村里松高路12號, 11073",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.56580018714,
+     "ymin": 25.037813103474,
+     "xmax": 121.56780018714,
+     "ymax": 25.039813103474
+    }
+   }
+  ]
+ },
+ "台北市中山區南京西路12號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區民安里南京西路12號, 10444",
+    "location": {
+     "x": 121.521244878658,
+     "y": 25.052327204054
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中山區民安里南京西路12號, 10444",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.520244878658,
+     "ymin": 25.051327204054,
+     "xmax": 121.522244878658,
+     "ymax": 25.053327204054
+    }
+   },
+   {
+    "address": "台北市中山區民安里南京西路1之2號, 10444",
+    "location": {
+     "x": 121.521697836705,
+     "y": 25.052543750523
+    },
+    "score": 99.99,
+    "attributes": {
+     "Score": 99.99,
+     "Match_addr": "台北市中山區民安里南京西路1之2號, 10444",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.520697836705,
+     "ymin": 25.051543750523,
+     "xmax": 121.522697836705,
+     "ymax": 25.053543750523
+    }
+   }
+  ]
+ },
+ "高雄市左營區高鐵路123號10樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市左營區高鐵路123號, 81361",
+    "location": {
+     "x": 120.310524981614,
+     "y": 22.68894298593
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "高雄市左營區高鐵路123號, 81361",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.309524981614,
+     "ymin": 22.68794298593,
+     "xmax": 120.311524981614,
+     "ymax": 22.68994298593
+    }
+   }
+  ]
+ },
+ "新北市新店區中興路三段70號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市新店區中興路三段70號, 23144",
+    "location": {
+     "x": 121.546363430818,
+     "y": 24.97774930437
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新北市新店區中興路三段70號, 23144",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.545363430818,
+     "ymin": 24.97674930437,
+     "xmax": 121.547363430818,
+     "ymax": 24.97874930437
+    }
+   }
+  ]
+ },
+ "新北市新莊區和興街66號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市新莊區和興街66號, 24242",
+    "location": {
+     "x": 121.4474074363,
+     "y": 25.040267279856
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新北市新莊區和興街66號, 24242",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.4464074363,
+     "ymin": 25.039267279856,
+     "xmax": 121.4484074363,
+     "ymax": 25.041267279856
+    }
+   }
+  ]
+ },
+ "高雄市前鎮區中華五路789號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市前鎮區中華五路789號, 80661",
+    "location": {
+     "x": 120.308779538327,
+     "y": 22.595342922586
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "高雄市前鎮區中華五路789號, 80661",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.307779538327,
+     "ymin": 22.594342922586,
+     "xmax": 120.309779538327,
+     "ymax": 22.596342922586
+    }
+   }
+  ]
+ },
+ "高雄市苓雅區三多四路21號13樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市三多四路21號, 80247",
+    "location": {
+     "x": 120.303548975058,
+     "y": 22.613424008067
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "高雄市三多四路21號, 80247",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.302548975058,
+     "ymin": 22.612424008067,
+     "xmax": 120.304548975058,
+     "ymax": 22.614424008067
+    }
+   }
+  ]
+ },
+ "高雄市三民區建國二路320號B2": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市三民區建國二路320號, 807",
+    "location": {
+     "x": 120.303481446083,
+     "y": 22.637780896119
+    },
+    "score": 98.93,
+    "attributes": {
+     "Score": 98.93,
+     "Match_addr": "高雄市三民區建國二路320號, 807",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.302481446083,
+     "ymin": 22.636780896119,
+     "xmax": 120.304481446083,
+     "ymax": 22.638780896119
+    }
+   }
+  ]
+ },
+ "高雄市左營區修明街166號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市左營區修明街166號, 81357",
+    "location": {
+     "x": 120.304188011356,
+     "y": 22.660055008093
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "高雄市左營區修明街166號, 81357",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.303188011356,
+     "ymin": 22.659055008093,
+     "xmax": 120.305188011356,
+     "ymax": 22.661055008093
+    }
+   }
+  ]
+ },
+ "台北市南港區經貿二路131號5樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市南港區三重里經貿二路131號, 11568",
+    "location": {
+     "x": 121.617582534262,
+     "y": 25.059344952488
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市南港區三重里經貿二路131號, 11568",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.616582534262,
+     "ymin": 25.058344952488,
+     "xmax": 121.618582534262,
+     "ymax": 25.060344952488
+    }
+   }
+  ]
+ },
+ "台中市西屯區台灣大道三段251號11樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台灣大道三段251號, 40756",
+    "location": {
+     "x": 120.64456938796,
+     "y": 24.164671713563
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "台中市台灣大道三段251號, 40756",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.64356938796,
+     "ymin": 24.163671713563,
+     "xmax": 120.64556938796,
+     "ymax": 24.165671713563
+    }
+   },
+   {
+    "address": "台中市西屯區台灣大道三段, 407",
+    "location": {
+     "x": 120.633001879288,
+     "y": 24.173813113821
+    },
+    "score": 87.11,
+    "attributes": {
+     "Score": 87.11,
+     "Match_addr": "台中市西屯區台灣大道三段, 407",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.632001879288,
+     "ymin": 24.172813113821,
+     "xmax": 120.634001879288,
+     "ymax": 24.174813113821
+    }
+   }
+  ]
+ },
+ "台南市中西區西門路一段658號5樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市西門路一段658號, 70051",
+    "location": {
+     "x": 120.198867302481,
+     "y": 22.986730506172
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台南市西門路一段658號, 70051",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.197867302481,
+     "ymin": 22.985730506172,
+     "xmax": 120.199867302481,
+     "ymax": 22.987730506172
+    }
+   }
+  ]
+ },
+ "高雄市前鎮區中華五路789號7F": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市前鎮區中華五路789號, 80661",
+    "location": {
+     "x": 120.308779538327,
+     "y": 22.595342922586
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "高雄市前鎮區中華五路789號, 80661",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.307779538327,
+     "ymin": 22.594342922586,
+     "xmax": 120.309779538327,
+     "ymax": 22.596342922586
+    }
+   }
+  ]
+ },
+ "台北市大安區金華街243巷27號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區福住里金華街243巷27號, 10649",
+    "location": {
+     "x": 121.530283671585,
+     "y": 25.031023884672
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區福住里金華街243巷27號, 10649",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.529283671585,
+     "ymin": 25.030023884672,
+     "xmax": 121.531283671585,
+     "ymax": 25.032023884672
+    }
+   }
+  ]
+ },
+ "台北市大安區忠孝東路四段205巷7弄7號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區建安里忠孝東路四段205巷7弄7號, 10690",
+    "location": {
+     "x": 121.552323299252,
+     "y": 25.042176090666
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區建安里忠孝東路四段205巷7弄7號, 10690",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.551323299252,
+     "ymin": 25.041176090666,
+     "xmax": 121.553323299252,
+     "ymax": 25.043176090666
+    }
+   }
+  ]
+ },
+ "星紅藝廊 南投縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "南投縣",
+    "location": {
+     "x": 120.982063632034,
+     "y": 23.842970635472
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "南投縣",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.596063632034,
+     "ymin": 23.456970635472,
+     "xmax": 121.368063632034,
+     "ymax": 24.228970635472
+    }
+   },
+   {
+    "address": "南投縣南投縣",
+    "location": {
+     "x": 120.690454,
+     "y": 23.902125
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "南投縣南投縣",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.665454,
+     "ymin": 23.877125,
+     "xmax": 120.715454,
+     "ymax": 23.927125
+    }
+   }
+  ]
+ },
+ "苗栗陶瓷農創園區 苗栗縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "五穀文化村 苗栗縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "五穀文化村",
+    "location": {
+     "x": 120.820779,
+     "y": 24.517656
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "五穀文化村",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.815779,
+     "ymin": 24.512656,
+     "xmax": 120.825779,
+     "ymax": 24.522656
+    }
+   }
+  ]
+ },
+ "亞書藝所 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台中市",
+    "location": {
+     "x": 120.6467399,
+     "y": 24.1634888
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "台中市台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6037399,
+     "ymin": 24.1204888,
+     "xmax": 120.6897399,
+     "ymax": 24.2064888
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   }
+  ]
+ },
+ "安卓藝術 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市台北市",
+    "location": {
+     "x": 121.5637046,
+     "y": 25.0384125
+    },
+    "score": 72.36,
+    "attributes": {
+     "Score": 72.36,
+     "Match_addr": "台北市台北市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.5457046,
+     "ymin": 25.0204125,
+     "xmax": 121.5817046,
+     "ymax": 25.0564125
+    }
+   },
+   {
+    "address": "台北市",
+    "location": {
+     "x": 121.553344554947,
+     "y": 25.082980696277
+    },
+    "score": 72.36,
+    "attributes": {
+     "Score": 72.36,
+     "Match_addr": "台北市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.438344554947,
+     "ymin": 24.967980696277,
+     "xmax": 121.668344554947,
+     "ymax": 25.197980696277
+    }
+   },
+   {
+    "address": "台北市",
+    "location": {
+     "x": 121.553344554947,
+     "y": 25.082980696277
+    },
+    "score": 72.36,
+    "attributes": {
+     "Score": 72.36,
+     "Match_addr": "台北市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.438344554947,
+     "ymin": 24.967980696277,
+     "xmax": 121.668344554947,
+     "ymax": 25.197980696277
+    }
+   }
+  ]
+ },
+ "巫家捏麵館 彰化縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "巫家捏麵館",
+    "location": {
+     "x": 120.478,
+     "y": 23.9723
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "巫家捏麵館",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.473,
+     "ymin": 23.9673,
+     "xmax": 120.483,
+     "ymax": 23.9773
+    }
+   }
+  ]
+ },
+ "蔡廷蘭進士第 澎湖縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "蔡廷蘭進士第",
+    "location": {
+     "x": 119.606852,
+     "y": 23.546403
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "蔡廷蘭進士第",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 119.601852,
+     "ymin": 23.541403,
+     "xmax": 119.611852,
+     "ymax": 23.551403
+    }
+   },
+   {
+    "address": "蔡廷蘭進士第",
+    "location": {
+     "x": 119.6114938,
+     "y": 23.5506337
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "蔡廷蘭進士第",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 119.6064938,
+     "ymin": 23.5456337,
+     "xmax": 119.6164938,
+     "ymax": 23.5556337
+    }
+   }
+  ]
+ },
+ "胡克敏紀念館 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "蔣勳文化基金會 時善慧館 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "臺中市猿緣園藝術館 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台中市",
+    "location": {
+     "x": 120.6467399,
+     "y": 24.1634888
+    },
+    "score": 82.03,
+    "attributes": {
+     "Score": 82.03,
+     "Match_addr": "台中市台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6037399,
+     "ymin": 24.1204888,
+     "xmax": 120.6897399,
+     "ymax": 24.2064888
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 82.03,
+    "attributes": {
+     "Score": 82.03,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   },
+   {
+    "address": "台中市臺中市",
+    "location": {
+     "x": 120.682107,
+     "y": 24.165991
+    },
+    "score": 82.03,
+    "attributes": {
+     "Score": 82.03,
+     "Match_addr": "台中市臺中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.675107,
+     "ymin": 24.158991,
+     "xmax": 120.689107,
+     "ymax": 24.172991
+    }
+   }
+  ]
+ },
+ "鷺安平美術館 台南市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "鷺-安平美術館",
+    "location": {
+     "x": 120.1585888,
+     "y": 23.0023963
+    },
+    "score": 99.98,
+    "attributes": {
+     "Score": 99.98,
+     "Match_addr": "鷺-安平美術館",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.1535888,
+     "ymin": 22.9973963,
+     "xmax": 120.1635888,
+     "ymax": 23.0073963
+    }
+   }
+  ]
+ },
+ "臺中市臻品藝術中心 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台中市",
+    "location": {
+     "x": 120.6467399,
+     "y": 24.1634888
+    },
+    "score": 82.03,
+    "attributes": {
+     "Score": 82.03,
+     "Match_addr": "台中市台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6037399,
+     "ymin": 24.1204888,
+     "xmax": 120.6897399,
+     "ymax": 24.2064888
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 82.03,
+    "attributes": {
+     "Score": 82.03,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   },
+   {
+    "address": "台中市臺中市",
+    "location": {
+     "x": 120.682107,
+     "y": 24.165991
+    },
+    "score": 82.03,
+    "attributes": {
+     "Score": 82.03,
+     "Match_addr": "台中市臺中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.675107,
+     "ymin": 24.158991,
+     "xmax": 120.689107,
+     "ymax": 24.172991
+    }
+   }
+  ]
+ },
+ "梧棲行旅 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "梧棲行旅",
+    "location": {
+     "x": 120.5364515,
+     "y": 24.2625349
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "梧棲行旅",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.5314515,
+     "ymin": 24.2575349,
+     "xmax": 120.5414515,
+     "ymax": 24.2675349
+    }
+   }
+  ]
+ },
+ "辛藝術 Hsin Art Gallery 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "毛刺空間 Glitch home 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "盧安藝術文化有限公司 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "綠光 gallery 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "Moon Gallery",
+    "location": {
+     "x": 120.666072,
+     "y": 24.142982
+    },
+    "score": 70.13,
+    "attributes": {
+     "Score": 70.13,
+     "Match_addr": "Moon Gallery",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.661072,
+     "ymin": 24.137982,
+     "xmax": 120.671072,
+     "ymax": 24.147982
+    }
+   }
+  ]
+ },
+ "當代陶藝館 苗栗縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "玉山國家公園管理處東埔服務中心 南投縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "玉山國家公園管理處",
+    "location": {
+     "x": 120.8499167,
+     "y": 23.8125557
+    },
+    "score": 82.3,
+    "attributes": {
+     "Score": 82.3,
+     "Match_addr": "玉山國家公園管理處",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.8449167,
+     "ymin": 23.8075557,
+     "xmax": 120.8549167,
+     "ymax": 23.8175557
+    }
+   }
+  ]
+ },
+ "中島GLAb 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "桃園市復興區中島",
+    "location": {
+     "x": 121.401457,
+     "y": 24.790805
+    },
+    "score": 74.25,
+    "attributes": {
+     "Score": 74.25,
+     "Match_addr": "桃園市復興區中島",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.394457,
+     "ymin": 24.783805,
+     "xmax": 121.408457,
+     "ymax": 24.797805
+    }
+   }
+  ]
+ },
+ "森初．moricasa art 台南市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "雨果曐Gallery 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "Smohouse 思默好時 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "Smohouse",
+    "location": {
+     "x": 120.6494,
+     "y": 24.1427109
+    },
+    "score": 86.09,
+    "attributes": {
+     "Score": 86.09,
+     "Match_addr": "Smohouse",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.6444,
+     "ymin": 24.1377109,
+     "xmax": 120.6544,
+     "ymax": 24.1477109
+    }
+   }
+  ]
+ },
+ "大新美術館 台南市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "大新美術館",
+    "location": {
+     "x": 120.2075,
+     "y": 23.0082
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "大新美術館",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.2025,
+     "ymin": 23.0032,
+     "xmax": 120.2125,
+     "ymax": 23.0132
+    }
+   }
+  ]
+ },
+ "社團法人中華翰維文化推廣協會 南投縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "采泥藝術事業股份有限公司 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "ZASSO 草也 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "Epic禪藝實相人文空間 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "Epic",
+    "location": {
+     "x": 120.6421,
+     "y": 24.176
+    },
+    "score": 72.18,
+    "attributes": {
+     "Score": 72.18,
+     "Match_addr": "Epic",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.6371,
+     "ymin": 24.171,
+     "xmax": 120.6471,
+     "ymax": 24.181
+    }
+   }
+  ]
+ },
+ "朝代藝術畫廊 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "當代一畫廊 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "當代一畫廊",
+    "location": {
+     "x": 121.5557,
+     "y": 25.0468
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "當代一畫廊",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.5507,
+     "ymin": 25.0418,
+     "xmax": 121.5607,
+     "ymax": 25.0518
+    }
+   }
+  ]
+ },
+ "聯邦藝術中心 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "曜畫廊 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "曜畫廊",
+    "location": {
+     "x": 121.548027,
+     "y": 25.055666
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "曜畫廊",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.543027,
+     "ymin": 25.050666,
+     "xmax": 121.553027,
+     "ymax": 25.060666
+    }
+   }
+  ]
+ },
+ "二空間藝術經紀股份有限公司 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "852藝術空間 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "852, 茄萣區, 高雄市",
+    "location": {
+     "x": 120.1958765,
+     "y": 22.8952922
+    },
+    "score": 75.9,
+    "attributes": {
+     "Score": 75.9,
+     "Match_addr": "852, 茄萣區, 高雄市",
+     "Addr_type": "Postal"
+    },
+    "extent": {
+     "xmin": 120.1668765,
+     "ymin": 22.8662922,
+     "xmax": 120.2248765,
+     "ymax": 22.9242922
+    }
+   }
+  ]
+ },
+ "天目城藝文展覽館 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "窯座 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台中市",
+    "location": {
+     "x": 120.6467399,
+     "y": 24.1634888
+    },
+    "score": 79.71,
+    "attributes": {
+     "Score": 79.71,
+     "Match_addr": "台中市台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6037399,
+     "ymin": 24.1204888,
+     "xmax": 120.6897399,
+     "ymax": 24.2064888
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 79.71,
+    "attributes": {
+     "Score": 79.71,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 79.71,
+    "attributes": {
+     "Score": 79.71,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   }
+  ]
+ },
+ "養心藝術 Artnutri Gallery 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "臺南市方圓美術館 台南市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市台南市",
+    "location": {
+     "x": 120.1850342,
+     "y": 22.9916218
+    },
+    "score": 83.77,
+    "attributes": {
+     "Score": 83.77,
+     "Match_addr": "台南市台南市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1650342,
+     "ymin": 22.9716218,
+     "xmax": 120.2050342,
+     "ymax": 23.0116218
+    }
+   },
+   {
+    "address": "台南市",
+    "location": {
+     "x": 120.325617520125,
+     "y": 23.150535609539
+    },
+    "score": 83.77,
+    "attributes": {
+     "Score": 83.77,
+     "Match_addr": "台南市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.038617520125,
+     "ymin": 22.863535609539,
+     "xmax": 120.612617520125,
+     "ymax": 23.437535609539
+    }
+   },
+   {
+    "address": "台南市",
+    "location": {
+     "x": 120.325617520125,
+     "y": 23.150535609539
+    },
+    "score": 79.96,
+    "attributes": {
+     "Score": 79.96,
+     "Match_addr": "台南市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.038617520125,
+     "ymin": 22.863535609539,
+     "xmax": 120.612617520125,
+     "ymax": 23.437535609539
+    }
+   }
+  ]
+ },
+ "金車文藝中心 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "帝門藝術中心 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "帝門藝術中心",
+    "location": {
+     "x": 121.5454,
+     "y": 25.0366
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "帝門藝術中心",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.5404,
+     "ymin": 25.0316,
+     "xmax": 121.5504,
+     "ymax": 25.0416
+    }
+   }
+  ]
+ },
+ "江山藝改所 新竹市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "江山藝改所",
+    "location": {
+     "x": 120.964478,
+     "y": 24.804954
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "江山藝改所",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.959478,
+     "ymin": 24.799954,
+     "xmax": 120.969478,
+     "ymax": 24.809954
+    }
+   }
+  ]
+ },
+ "台中市 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台中市",
+    "location": {
+     "x": 120.6467399,
+     "y": 24.1634888
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6037399,
+     "ymin": 24.1204888,
+     "xmax": 120.6897399,
+     "ymax": 24.2064888
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894757417803,
+     "y": 24.238127342605
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535757417803,
+     "ymin": 23.879127342605,
+     "xmax": 121.253757417803,
+     "ymax": 24.597127342605
+    }
+   }
+  ]
+ },
+ "淡江大橋 新北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市新北市",
+    "location": {
+     "x": 121.4658836,
+     "y": 25.0117099
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "新北市新北市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.4418836,
+     "ymin": 24.9877099,
+     "xmax": 121.4898836,
+     "ymax": 25.0357099
+    }
+   },
+   {
+    "address": "新北市",
+    "location": {
+     "x": 121.536995966667,
+     "y": 25.299522733333
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "新北市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.198995966667,
+     "ymin": 24.961522733333,
+     "xmax": 121.874995966667,
+     "ymax": 25.637522733333
+    }
+   },
+   {
+    "address": "新北市",
+    "location": {
+     "x": 121.536995966667,
+     "y": 25.299522733333
+    },
+    "score": 72.3,
+    "attributes": {
+     "Score": 72.3,
+     "Match_addr": "新北市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.198995966667,
+     "ymin": 24.961522733333,
+     "xmax": 121.874995966667,
+     "ymax": 25.637522733333
+    }
+   }
+  ]
+ },
+ "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點） 高雄市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台中市南區文心南路919號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市南區文心南路919號, 40256",
+    "location": {
+     "x": 120.660043638507,
+     "y": 24.11034109728
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市南區文心南路919號, 40256",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.659043638507,
+     "ymin": 24.10934109728,
+     "xmax": 120.661043638507,
+     "ymax": 24.11134109728
+    }
+   }
+  ]
+ },
+ "台中市南屯區大墩六街208號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市南屯區大墩六街208號, 40864",
+    "location": {
+     "x": 120.649428963964,
+     "y": 24.14270798403
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市南屯區大墩六街208號, 40864",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.648428963964,
+     "ymin": 24.14170798403,
+     "xmax": 120.650428963964,
+     "ymax": 24.14370798403
+    }
+   }
+  ]
+ },
+ "台北市中山區松江路226巷6號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區中庄里松江路226巷6號, 10467",
+    "location": {
+     "x": 121.532607302783,
+     "y": 25.058396917329
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中山區中庄里松江路226巷6號, 10467",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.531607302783,
+     "ymin": 25.057396917329,
+     "xmax": 121.533607302783,
+     "ymax": 25.059396917329
+    }
+   },
+   {
+    "address": "台北市中山區松江路6號, 104",
+    "location": {
+     "x": 121.532759527302,
+     "y": 25.046282696454
+    },
+    "score": 96.36,
+    "attributes": {
+     "Score": 96.36,
+     "Match_addr": "台北市中山區松江路6號, 104",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.531759527302,
+     "ymin": 25.045282696454,
+     "xmax": 121.533759527302,
+     "ymax": 25.047282696454
+    }
+   }
+  ]
+ },
+ "台北市大同區承德路三段131號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大同區斯文里承德路三段131號, 10364",
+    "location": {
+     "x": 121.518591587208,
+     "y": 25.067372301159
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大同區斯文里承德路三段131號, 10364",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.517591587208,
+     "ymin": 25.066372301159,
+     "xmax": 121.519591587208,
+     "ymax": 25.068372301159
+    }
+   }
+  ]
+ },
+ "台北市內湖區瑞光路548巷15號5F": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市內湖區西湖里瑞光路548巷15號五F, 11492",
+    "location": {
+     "x": 121.567058852672,
+     "y": 25.079209602009
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市內湖區西湖里瑞光路548巷15號五F, 11492",
+     "Addr_type": "Subaddress"
+    },
+    "extent": {
+     "xmin": 121.566058852672,
+     "ymin": 25.078209602009,
+     "xmax": 121.568058852672,
+     "ymax": 25.080209602009
+    }
+   },
+   {
+    "address": "台北市內湖區瑞光路15號, 11466",
+    "location": {
+     "x": 121.583591391134,
+     "y": 25.069642853649
+    },
+    "score": 96.8,
+    "attributes": {
+     "Score": 96.8,
+     "Match_addr": "台北市內湖區瑞光路15號, 11466",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.582591391134,
+     "ymin": 25.068642853649,
+     "xmax": 121.584591391134,
+     "ymax": 25.070642853649
+    }
+   }
+  ]
+ },
+ "苗栗縣公館鄉館南村14鄰館南352號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "苗栗縣公館鄉",
+    "location": {
+     "x": 120.8284996,
+     "y": 24.5059208
+    },
+    "score": 74.25,
+    "attributes": {
+     "Score": 74.25,
+     "Match_addr": "苗栗縣公館鄉",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.7724996,
+     "ymin": 24.4499208,
+     "xmax": 120.8844996,
+     "ymax": 24.5619208
+    }
+   },
+   {
+    "address": "苗栗縣公館鄉公館",
+    "location": {
+     "x": 120.828251,
+     "y": 24.509372
+    },
+    "score": 74.25,
+    "attributes": {
+     "Score": 74.25,
+     "Match_addr": "苗栗縣公館鄉公館",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.821251,
+     "ymin": 24.502372,
+     "xmax": 120.835251,
+     "ymax": 24.516372
+    }
+   },
+   {
+    "address": "苗栗縣大埔頂公館",
+    "location": {
+     "x": 120.875172,
+     "y": 24.663395
+    },
+    "score": 74.25,
+    "attributes": {
+     "Score": 74.25,
+     "Match_addr": "苗栗縣大埔頂公館",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.868172,
+     "ymin": 24.656395,
+     "xmax": 120.882172,
+     "ymax": 24.670395
+    }
+   }
+  ]
+ },
+ "苗栗縣公館鄉館南352號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "352, 頭份市",
+    "location": {
+     "x": 120.9115382,
+     "y": 24.6857631
+    },
+    "score": 79.2,
+    "attributes": {
+     "Score": 79.2,
+     "Match_addr": "352, 頭份市",
+     "Addr_type": "Postal"
+    },
+    "extent": {
+     "xmin": 120.8585382,
+     "ymin": 24.6327631,
+     "xmax": 120.9645382,
+     "ymax": 24.7387631
+    }
+   }
+  ]
+ },
+ "苗栗陶瓷農創園區 苗栗縣公館鄉館南352號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "苗栗縣三義鄉水美188號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "苗栗縣三義鄉水美",
+    "location": {
+     "x": 120.762601,
+     "y": 24.397311
+    },
+    "score": 86.67,
+    "attributes": {
+     "Score": 86.67,
+     "Match_addr": "苗栗縣三義鄉水美",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.755601,
+     "ymin": 24.390311,
+     "xmax": 120.769601,
+     "ymax": 24.404311
+    }
+   },
+   {
+    "address": "苗栗縣三義鄉",
+    "location": {
+     "x": 120.7702219,
+     "y": 24.4127987
+    },
+    "score": 79.2,
+    "attributes": {
+     "Score": 79.2,
+     "Match_addr": "苗栗縣三義鄉",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.7162219,
+     "ymin": 24.3587987,
+     "xmax": 120.8242219,
+     "ymax": 24.4667987
+    }
+   }
+  ]
+ },
+ "當代陶藝館 苗栗縣三義鄉水美188號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台南市將軍區西甲里1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市將軍區",
+    "location": {
+     "x": 120.1585761,
+     "y": 23.1991632
+    },
+    "score": 81,
+    "attributes": {
+     "Score": 81,
+     "Match_addr": "台南市將軍區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1165761,
+     "ymin": 23.1571632,
+     "xmax": 120.2005761,
+     "ymax": 23.2411632
+    }
+   }
+  ]
+ },
+ "台南市將軍區將軍里1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市將軍區",
+    "location": {
+     "x": 120.1585761,
+     "y": 23.1991632
+    },
+    "score": 81,
+    "attributes": {
+     "Score": 81,
+     "Match_addr": "台南市將軍區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1165761,
+     "ymin": 23.1571632,
+     "xmax": 120.2005761,
+     "ymax": 23.2411632
+    }
+   }
+  ]
+ },
+ "臺南市方圓美術館 台南市將軍區1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市將軍區",
+    "location": {
+     "x": 120.1585761,
+     "y": 23.1991632
+    },
+    "score": 81.68,
+    "attributes": {
+     "Score": 81.68,
+     "Match_addr": "台南市將軍區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1165761,
+     "ymin": 23.1571632,
+     "xmax": 120.2005761,
+     "ymax": 23.2411632
+    }
+   }
+  ]
+ },
+ "台中市龍井區藝術街61巷6號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市新莊子東海藝術街商圈藝術街61巷6號, 43446",
+    "location": {
+     "x": 120.593252023958,
+     "y": 24.187742985872
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台中市新莊子東海藝術街商圈藝術街61巷6號, 43446",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.592252023958,
+     "ymin": 24.186742985872,
+     "xmax": 120.594252023958,
+     "ymax": 24.188742985872
+    }
+   }
+  ]
+ },
+ "台南市安平區漁光路113號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市安平區漁光路113號, 70841",
+    "location": {
+     "x": 120.161177823395,
+     "y": 22.976953896217
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台南市安平區漁光路113號, 70841",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.160177823395,
+     "ymin": 22.975953896217,
+     "xmax": 120.162177823395,
+     "ymax": 22.977953896217
+    }
+   }
+  ]
+ },
+ "台中市西區五權西六街72號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市五權西六街72號, 40347",
+    "location": {
+     "x": 120.658710412988,
+     "y": 24.13781689207
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市五權西六街72號, 40347",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.657710412988,
+     "ymin": 24.13681689207,
+     "xmax": 120.659710412988,
+     "ymax": 24.13881689207
+    }
+   }
+  ]
+ },
+ "台北市大安區樂利路41號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區法治里樂利路41號, 10678",
+    "location": {
+     "x": 121.551769926004,
+     "y": 25.026843200916
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區法治里樂利路41號, 10678",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.550769926004,
+     "ymin": 25.025843200916,
+     "xmax": 121.552769926004,
+     "ymax": 25.027843200916
+    }
+   }
+  ]
+ },
+ "台中市南屯區文心南五路一段395號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市南屯區文心南五路一段395號, 40876",
+    "location": {
+     "x": 120.640800968111,
+     "y": 24.131925000871
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市南屯區文心南五路一段395號, 40876",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.639800968111,
+     "ymin": 24.130925000871,
+     "xmax": 120.641800968111,
+     "ymax": 24.132925000871
+    }
+   }
+  ]
+ },
+ "南投縣南投市向上路271號3樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "南投縣下莊向上路271號, 54045",
+    "location": {
+     "x": 120.682412004416,
+     "y": 23.95298301892
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "南投縣下莊向上路271號, 54045",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.681412004416,
+     "ymin": 23.95198301892,
+     "xmax": 120.683412004416,
+     "ymax": 23.95398301892
+    }
+   }
+  ]
+ },
+ "台北市大安區安和路一段78巷4號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區敦安里安和路一段78巷4號, 10685",
+    "location": {
+     "x": 121.552093802743,
+     "y": 25.034943639783
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區敦安里安和路一段78巷4號, 10685",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.551093802743,
+     "ymin": 25.033943639783,
+     "xmax": 121.553093802743,
+     "ymax": 25.035943639783
+    }
+   },
+   {
+    "address": "台北市大安區安和路一段78巷, 10685",
+    "location": {
+     "x": 121.551056493106,
+     "y": 25.035028877215
+    },
+    "score": 95.63,
+    "attributes": {
+     "Score": 95.63,
+     "Match_addr": "台北市大安區安和路一段78巷, 10685",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 121.550056493106,
+     "ymin": 25.034028877215,
+     "xmax": 121.552056493106,
+     "ymax": 25.036028877215
+    }
+   }
+  ]
+ },
+ "台中市北區博館二街115號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市博館二街115號, 403",
+    "location": {
+     "x": 120.668169223083,
+     "y": 24.153442310241
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市博館二街115號, 403",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.667169223083,
+     "ymin": 24.152442310241,
+     "xmax": 120.669169223083,
+     "ymax": 24.154442310241
+    }
+   },
+   {
+    "address": "台中市博館二街, 40354",
+    "location": {
+     "x": 120.669544753885,
+     "y": 24.15207969384
+    },
+    "score": 86.43,
+    "attributes": {
+     "Score": 86.43,
+     "Match_addr": "台中市博館二街, 40354",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.668544753885,
+     "ymin": 24.15107969384,
+     "xmax": 120.670544753885,
+     "ymax": 24.15307969384
+    }
+   }
+  ]
+ },
+ "台中市西區忠誠街35號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市勤美誠品綠園道商圈忠誠街35號, 40351",
+    "location": {
+     "x": 120.662376489799,
+     "y": 24.152430991713
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市勤美誠品綠園道商圈忠誠街35號, 40351",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.661376489799,
+     "ymin": 24.151430991713,
+     "xmax": 120.663376489799,
+     "ymax": 24.153430991713
+    }
+   }
+  ]
+ },
+ "台中市西區柳川東路二段58號3樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市柳川東路二段58號, 40346",
+    "location": {
+     "x": 120.664953003016,
+     "y": 24.133611020694
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市柳川東路二段58號, 40346",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.663953003016,
+     "ymin": 24.132611020694,
+     "xmax": 120.665953003016,
+     "ymax": 24.134611020694
+    }
+   }
+  ]
+ },
+ "台中市西區台灣大道二段375號11樓之2": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台灣大道二段375號, 40360",
+    "location": {
+     "x": 120.664229393315,
+     "y": 24.154278405083
+    },
+    "score": 96.82,
+    "attributes": {
+     "Score": 96.82,
+     "Match_addr": "台中市台灣大道二段375號, 40360",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.663229393315,
+     "ymin": 24.153278405083,
+     "xmax": 120.665229393315,
+     "ymax": 24.155278405083
+    }
+   }
+  ]
+ },
+ "台中市西區中興一巷2號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市綠光計畫范特喜文創聚落中興一巷2號, 40350",
+    "location": {
+     "x": 120.662898766186,
+     "y": 24.147558088483
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市綠光計畫范特喜文創聚落中興一巷2號, 40350",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.661898766186,
+     "ymin": 24.146558088483,
+     "xmax": 120.663898766186,
+     "ymax": 24.148558088483
+    }
+   }
+  ]
+ },
+ "南投縣信義鄉東埔村1鄰開高巷25號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "南投縣信義鄉開高巷25號, 55691",
+    "location": {
+     "x": 120.926237041562,
+     "y": 23.554195996166
+    },
+    "score": 96.21,
+    "attributes": {
+     "Score": 96.21,
+     "Match_addr": "南投縣信義鄉開高巷25號, 55691",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.925237041562,
+     "ymin": 23.553195996166,
+     "xmax": 120.927237041562,
+     "ymax": 23.555195996166
+    }
+   }
+  ]
+ },
+ "台中市西區林森路40號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市林森路40號, 40345",
+    "location": {
+     "x": 120.672331173286,
+     "y": 24.136556589108
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市林森路40號, 40345",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.671331173286,
+     "ymin": 24.135556589108,
+     "xmax": 120.673331173286,
+     "ymax": 24.137556589108
+    }
+   }
+  ]
+ },
+ "台中市西區五權西二街14號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市忠信市場五權西二街14號, 40348",
+    "location": {
+     "x": 120.663717929583,
+     "y": 24.139633879131
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市忠信市場五權西二街14號, 40348",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.662717929583,
+     "ymin": 24.138633879131,
+     "xmax": 120.664717929583,
+     "ymax": 24.140633879131
+    }
+   }
+  ]
+ },
+ "台北市大安區信義路四段1號7樓之7": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區信義路四段1號, 10684",
+    "location": {
+     "x": 121.543843631896,
+     "y": 25.033543728262
+    },
+    "score": 98.82,
+    "attributes": {
+     "Score": 98.82,
+     "Match_addr": "台北市大安區信義路四段1號, 10684",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.542843631896,
+     "ymin": 25.032543728262,
+     "xmax": 121.544843631896,
+     "ymax": 25.034543728262
+    }
+   },
+   {
+    "address": "台北市大安區仁慈里信義路四段1號七F9, 10684",
+    "location": {
+     "x": 121.543915244538,
+     "y": 25.033565990177
+    },
+    "score": 95.29,
+    "attributes": {
+     "Score": 95.29,
+     "Match_addr": "台北市大安區仁慈里信義路四段1號七F9, 10684",
+     "Addr_type": "Subaddress"
+    },
+    "extent": {
+     "xmin": 121.542915244538,
+     "ymin": 25.032565990177,
+     "xmax": 121.544915244538,
+     "ymax": 25.034565990177
+    }
+   },
+   {
+    "address": "台北市大安區仁慈里信義路四段1號七F7, 10684",
+    "location": {
+     "x": 121.543915244538,
+     "y": 25.033565990177
+    },
+    "score": 95.29,
+    "attributes": {
+     "Score": 95.29,
+     "Match_addr": "台北市大安區仁慈里信義路四段1號七F7, 10684",
+     "Addr_type": "Subaddress"
+    },
+    "extent": {
+     "xmin": 121.542915244538,
+     "ymin": 25.032565990177,
+     "xmax": 121.544915244538,
+     "ymax": 25.034565990177
+    }
+   }
+  ]
+ },
+ "台中市西區台灣大道二段307號15樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市台灣大道二段307號, 40360",
+    "location": {
+     "x": 120.665783984897,
+     "y": 24.153278988857
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "台中市台灣大道二段307號, 40360",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.664783984897,
+     "ymin": 24.152278988857,
+     "xmax": 120.666783984897,
+     "ymax": 24.154278988857
+    }
+   }
+  ]
+ },
+ "台北市大安區忠孝東路四段219號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區建安里忠孝東路四段219號, 10690",
+    "location": {
+     "x": 121.552512646444,
+     "y": 25.04166244764
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區建安里忠孝東路四段219號, 10690",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.551512646444,
+     "ymin": 25.04066244764,
+     "xmax": 121.553512646444,
+     "ymax": 25.04266244764
+    }
+   }
+  ]
+ },
+ "台中市龍井區藝術街38巷11號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市新莊子東海藝術街商圈藝術街38巷11號, 43446",
+    "location": {
+     "x": 120.594171015822,
+     "y": 24.188247618353
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台中市新莊子東海藝術街商圈藝術街38巷11號, 43446",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.593171015822,
+     "ymin": 24.187247618353,
+     "xmax": 120.595171015822,
+     "ymax": 24.189247618353
+    }
+   }
+  ]
+ },
+ "台中市南屯區五權西路二段957號2樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市南屯區五權西路二段957號, 408",
+    "location": {
+     "x": 120.632897168693,
+     "y": 24.144956010461
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台中市南屯區五權西路二段957號, 408",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.631897168693,
+     "ymin": 24.143956010461,
+     "xmax": 120.633897168693,
+     "ymax": 24.145956010461
+    }
+   }
+  ]
+ },
+ "台中市西區民生路126巷9號2樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市民生路126巷9號, 40342",
+    "location": {
+     "x": 120.672571985364,
+     "y": 24.142083993248
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台中市民生路126巷9號, 40342",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.671571985364,
+     "ymin": 24.141083993248,
+     "xmax": 120.673571985364,
+     "ymax": 24.143083993248
+    }
+   },
+   {
+    "address": "台中市霧峰區民生路126號, 41346",
+    "location": {
+     "x": 120.702379960894,
+     "y": 24.068670004638
+    },
+    "score": 90,
+    "attributes": {
+     "Score": 90,
+     "Match_addr": "台中市霧峰區民生路126號, 41346",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.701379960894,
+     "ymin": 24.067670004638,
+     "xmax": 120.703379960894,
+     "ymax": 24.069670004638
+    }
+   },
+   {
+    "address": "台中市南區民生路12-6號, 40247",
+    "location": {
+     "x": 120.680726906602,
+     "y": 24.133995205226
+    },
+    "score": 89.99,
+    "attributes": {
+     "Score": 89.99,
+     "Match_addr": "台中市南區民生路12-6號, 40247",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.679726906602,
+     "ymin": 24.132995205226,
+     "xmax": 120.681726906602,
+     "ymax": 24.134995205226
+    }
+   }
+  ]
+ },
+ "台北市中山區敬業一路128巷48號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區成功里敬業一路128巷48號, 10462",
+    "location": {
+     "x": 121.553899097049,
+     "y": 25.083246368488
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中山區成功里敬業一路128巷48號, 10462",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.552899097049,
+     "ymin": 25.082246368488,
+     "xmax": 121.554899097049,
+     "ymax": 25.084246368488
+    }
+   },
+   {
+    "address": "台北市下塔悠大直敬業一路128巷48號, 10462",
+    "location": {
+     "x": 121.554339348874,
+     "y": 25.083275734891
+    },
+    "score": 98.17,
+    "attributes": {
+     "Score": 98.17,
+     "Match_addr": "台北市下塔悠大直敬業一路128巷48號, 10462",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.553339348874,
+     "ymin": 25.082275734891,
+     "xmax": 121.555339348874,
+     "ymax": 25.084275734891
+    }
+   }
+  ]
+ },
+ "采泥藝術 台北市中山區敬業一路128巷48號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區成功里敬業一路128巷48號, 10462",
+    "location": {
+     "x": 121.553899097049,
+     "y": 25.083246368488
+    },
+    "score": 81.86,
+    "attributes": {
+     "Score": 81.86,
+     "Match_addr": "台北市中山區成功里敬業一路128巷48號, 10462",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.552899097049,
+     "ymin": 25.082246368488,
+     "xmax": 121.554899097049,
+     "ymax": 25.084246368488
+    }
+   },
+   {
+    "address": "台北市中山區成功里敬業一路48號, 10462",
+    "location": {
+     "x": 121.55289301721,
+     "y": 25.081383364779
+    },
+    "score": 74.98,
+    "attributes": {
+     "Score": 74.98,
+     "Match_addr": "台北市中山區成功里敬業一路48號, 10462",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.55189301721,
+     "ymin": 25.080383364779,
+     "xmax": 121.55389301721,
+     "ymax": 25.082383364779
+    }
+   },
+   {
+    "address": "台北市下塔悠敬業一路48號, 10462",
+    "location": {
+     "x": 121.552772591645,
+     "y": 25.081443919775
+    },
+    "score": 70.43,
+    "attributes": {
+     "Score": 70.43,
+     "Match_addr": "台北市下塔悠敬業一路48號, 10462",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.551772591645,
+     "ymin": 25.080443919775,
+     "xmax": 121.553772591645,
+     "ymax": 25.082443919775
+    }
+   }
+  ]
+ },
+ "台中市西區美村路一段771巷16號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市美村路一段771巷16號, 403",
+    "location": {
+     "x": 120.662306668545,
+     "y": 24.133038913893
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台中市美村路一段771巷16號, 403",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.661306668545,
+     "ymin": 24.132038913893,
+     "xmax": 120.663306668545,
+     "ymax": 24.134038913893
+    }
+   },
+   {
+    "address": "台中市美村路一段771號, 403",
+    "location": {
+     "x": 120.661749326174,
+     "y": 24.133094272732
+    },
+    "score": 95.5,
+    "attributes": {
+     "Score": 95.5,
+     "Match_addr": "台中市美村路一段771號, 403",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.660749326174,
+     "ymin": 24.132094272732,
+     "xmax": 120.662749326174,
+     "ymax": 24.134094272732
+    }
+   }
+  ]
+ },
+ "台中市西區英才路534號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市勤美誠品綠園道商圈英才路534號, 40360",
+    "location": {
+     "x": 120.665068002727,
+     "y": 24.149960006657
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市勤美誠品綠園道商圈英才路534號, 40360",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.664068002727,
+     "ymin": 24.148960006657,
+     "xmax": 120.666068002727,
+     "ymax": 24.150960006657
+    }
+   }
+  ]
+ },
+ "苗栗陶瓷農創園區 苗栗縣公館鄉館南村14鄰館南352號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "苗栗縣三義鄉勝興村水美188號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "苗栗縣三義鄉勝興",
+    "location": {
+     "x": 120.778286,
+     "y": 24.390711
+    },
+    "score": 80.52,
+    "attributes": {
+     "Score": 80.52,
+     "Match_addr": "苗栗縣三義鄉勝興",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.771286,
+     "ymin": 24.383711,
+     "xmax": 120.785286,
+     "ymax": 24.397711
+    }
+   },
+   {
+    "address": "苗栗縣三義鄉水美",
+    "location": {
+     "x": 120.762601,
+     "y": 24.397311
+    },
+    "score": 80.52,
+    "attributes": {
+     "Score": 80.52,
+     "Match_addr": "苗栗縣三義鄉水美",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.755601,
+     "ymin": 24.390311,
+     "xmax": 120.769601,
+     "ymax": 24.404311
+    }
+   },
+   {
+    "address": "苗栗縣三義鄉",
+    "location": {
+     "x": 120.7702219,
+     "y": 24.4127987
+    },
+    "score": 75.24,
+    "attributes": {
+     "Score": 75.24,
+     "Match_addr": "苗栗縣三義鄉",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.7162219,
+     "ymin": 24.3587987,
+     "xmax": 120.8242219,
+     "ymax": 24.4667987
+    }
+   }
+  ]
+ },
+ "當代陶藝館 苗栗縣三義鄉勝興村水美188號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台南市將軍區西甲里西華1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市將軍區西華",
+    "location": {
+     "x": 120.155031,
+     "y": 23.199275
+    },
+    "score": 83.77,
+    "attributes": {
+     "Score": 83.77,
+     "Match_addr": "台南市將軍區西華",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.148031,
+     "ymin": 23.192275,
+     "xmax": 120.162031,
+     "ymax": 23.206275
+    }
+   },
+   {
+    "address": "台南市將軍區",
+    "location": {
+     "x": 120.1585761,
+     "y": 23.1991632
+    },
+    "score": 77.68,
+    "attributes": {
+     "Score": 77.68,
+     "Match_addr": "台南市將軍區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1165761,
+     "ymin": 23.1571632,
+     "xmax": 120.2005761,
+     "ymax": 23.2411632
+    }
+   }
+  ]
+ },
+ "臺南市方圓美術館 台南市將軍區西甲里西華1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市將軍區",
+    "location": {
+     "x": 120.1585761,
+     "y": 23.1991632
+    },
+    "score": 78.4,
+    "attributes": {
+     "Score": 78.4,
+     "Match_addr": "台南市將軍區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1165761,
+     "ymin": 23.1571632,
+     "xmax": 120.2005761,
+     "ymax": 23.2411632
+    }
+   }
+  ]
+ },
+ "台南市中西區府前路一段203號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市孔廟商圈府前路一段203號, 70045",
+    "location": {
+     "x": 120.203994261196,
+     "y": 22.989094496234
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台南市孔廟商圈府前路一段203號, 70045",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.202994261196,
+     "ymin": 22.988094496234,
+     "xmax": 120.204994261196,
+     "ymax": 22.990094496234
+    }
+   },
+   {
+    "address": "台南市府前路一段1號, 70046",
+    "location": {
+     "x": 120.211198004061,
+     "y": 22.988364013372
+    },
+    "score": 84.76,
+    "attributes": {
+     "Score": 84.76,
+     "Match_addr": "台南市府前路一段1號, 70046",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.210198004061,
+     "ymin": 22.987364013372,
+     "xmax": 120.212198004061,
+     "ymax": 22.989364013372
+    }
+   }
+  ]
+ },
+ "台南市東區林森路一段370號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市東區林森路一段370號, 70151",
+    "location": {
+     "x": 120.221580583705,
+     "y": 22.984375484746
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台南市東區林森路一段370號, 70151",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.220580583705,
+     "ymin": 22.983375484746,
+     "xmax": 120.222580583705,
+     "ymax": 22.985375484746
+    }
+   }
+  ]
+ },
+ "財團法人中台文化藝術基金會 南投縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台南市中西區成功路83號2樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市成功路83號, 700",
+    "location": {
+     "x": 120.208299961038,
+     "y": 22.997638002503
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台南市成功路83號, 700",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.207299961038,
+     "ymin": 22.996638002503,
+     "xmax": 120.209299961038,
+     "ymax": 22.998638002503
+    }
+   },
+   {
+    "address": "台南市佳里區成功路83號, 72259",
+    "location": {
+     "x": 120.174541923261,
+     "y": 23.152696951787
+    },
+    "score": 91.43,
+    "attributes": {
+     "Score": 91.43,
+     "Match_addr": "台南市佳里區成功路83號, 72259",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.173541923261,
+     "ymin": 23.151696951787,
+     "xmax": 120.175541923261,
+     "ymax": 23.153696951787
+    }
+   },
+   {
+    "address": "台南市佳里區成功路83號, 72259",
+    "location": {
+     "x": 120.174447249353,
+     "y": 23.152796430501
+    },
+    "score": 91.43,
+    "attributes": {
+     "Score": 91.43,
+     "Match_addr": "台南市佳里區成功路83號, 72259",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.173447249353,
+     "ymin": 23.151796430501,
+     "xmax": 120.175447249353,
+     "ymax": 23.153796430501
+    }
+   }
+  ]
+ },
+ "索卡藝術 台南市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "索卡",
+    "location": {
+     "x": 120.24735,
+     "y": 23.03824
+    },
+    "score": 86.89,
+    "attributes": {
+     "Score": 86.89,
+     "Match_addr": "索卡",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.24235,
+     "ymin": 23.03324,
+     "xmax": 120.25235,
+     "ymax": 23.04324
+    }
+   }
+  ]
+ },
+ "台南市安平區永華路二段300號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市永華路二段300號, 70848",
+    "location": {
+     "x": 120.179207213306,
+     "y": 22.990274919658
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台南市永華路二段300號, 70848",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.178207213306,
+     "ymin": 22.989274919658,
+     "xmax": 120.180207213306,
+     "ymax": 22.991274919658
+    }
+   },
+   {
+    "address": "台南市安平區永華路二段, 708",
+    "location": {
+     "x": 120.158367032006,
+     "y": 22.991200395766
+    },
+    "score": 90.67,
+    "attributes": {
+     "Score": 90.67,
+     "Match_addr": "台南市安平區永華路二段, 708",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.157367032006,
+     "ymin": 22.990200395766,
+     "xmax": 120.159367032007,
+     "ymax": 22.992200395766
+    }
+   }
+  ]
+ },
+ "國立臺南大學博物館 台南市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市台南市",
+    "location": {
+     "x": 120.1850342,
+     "y": 22.9916218
+    },
+    "score": 72.07,
+    "attributes": {
+     "Score": 72.07,
+     "Match_addr": "台南市台南市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.1650342,
+     "ymin": 22.9716218,
+     "xmax": 120.2050342,
+     "ymax": 23.0116218
+    }
+   },
+   {
+    "address": "台南市",
+    "location": {
+     "x": 120.325617520125,
+     "y": 23.150535609539
+    },
+    "score": 72.07,
+    "attributes": {
+     "Score": 72.07,
+     "Match_addr": "台南市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.038617520125,
+     "ymin": 22.863535609539,
+     "xmax": 120.612617520125,
+     "ymax": 23.437535609539
+    }
+   },
+   {
+    "address": "台南市歸仁區大學",
+    "location": {
+     "x": 120.275301,
+     "y": 22.996823
+    },
+    "score": 72.07,
+    "attributes": {
+     "Score": 72.07,
+     "Match_addr": "台南市歸仁區大學",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.268301,
+     "ymin": 22.989823,
+     "xmax": 120.282301,
+     "ymax": 23.003823
+    }
+   }
+  ]
+ },
+ "台南市中西區民生路一段205巷11號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市民生路一段205巷11號, 70048",
+    "location": {
+     "x": 120.199478175584,
+     "y": 22.99379548663
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台南市民生路一段205巷11號, 70048",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.198478175584,
+     "ymin": 22.99279548663,
+     "xmax": 120.200478175584,
+     "ymax": 22.99479548663
+    }
+   },
+   {
+    "address": "台南市民生路一段205號, 70048",
+    "location": {
+     "x": 120.199540672624,
+     "y": 22.994286052497
+    },
+    "score": 95.63,
+    "attributes": {
+     "Score": 95.63,
+     "Match_addr": "台南市民生路一段205號, 70048",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 120.198540672624,
+     "ymin": 22.993286052497,
+     "xmax": 120.200540672624,
+     "ymax": 22.995286052497
+    }
+   },
+   {
+    "address": "台南市孔廟商圈民生路一段11號, 70048",
+    "location": {
+     "x": 120.204128287828,
+     "y": 22.992894809224
+    },
+    "score": 94.65,
+    "attributes": {
+     "Score": 94.65,
+     "Match_addr": "台南市孔廟商圈民生路一段11號, 70048",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.203128287828,
+     "ymin": 22.991894809224,
+     "xmax": 120.205128287828,
+     "ymax": 22.993894809224
+    }
+   }
+  ]
+ },
+ "農業部林業及自然保育署南投分署 南投縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "農業部林業及自然保育署南投分署",
+    "location": {
+     "x": 120.6678438,
+     "y": 23.9903005
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "農業部林業及自然保育署南投分署",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.6628438,
+     "ymin": 23.9853005,
+     "xmax": 120.6728438,
+     "ymax": 23.9953005
+    }
+   }
+  ]
+ },
+ "臺灣青年工藝協會 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "嚴禁煙火藝廊 高雄市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "平溪區 新北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市平溪區",
+    "location": {
+     "x": 121.7381158,
+     "y": 25.0266396
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新北市平溪區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.6831158,
+     "ymin": 24.9716396,
+     "xmax": 121.7931158,
+     "ymax": 25.0816396
+    }
+   }
+  ]
+ },
+ "高雄市鳳山區高雄市鳳山區三多一路1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市鳳山區三多一路1號, 830043",
+    "location": {
+     "x": 120.342433462079,
+     "y": 22.624169817485
+    },
+    "score": 97.78,
+    "attributes": {
+     "Score": 97.78,
+     "Match_addr": "高雄市鳳山區三多一路1號, 830043",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.341433462079,
+     "ymin": 22.623169817485,
+     "xmax": 120.343433462079,
+     "ymax": 22.625169817485
+    }
+   }
+  ]
+ },
+ "噪山藝術空間 高雄市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台北市中山區中山北路二段62巷32號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區民安里中山北路二段62巷32號, 10448",
+    "location": {
+     "x": 121.52108109627,
+     "y": 25.05666810789
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中山區民安里中山北路二段62巷32號, 10448",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.52008109627,
+     "ymin": 25.05566810789,
+     "xmax": 121.52208109627,
+     "ymax": 25.05766810789
+    }
+   },
+   {
+    "address": "台北市中山區南西商圈中山北路二段32號, 104016",
+    "location": {
+     "x": 121.522467515046,
+     "y": 25.054226781939
+    },
+    "score": 97.52,
+    "attributes": {
+     "Score": 97.52,
+     "Match_addr": "台北市中山區南西商圈中山北路二段32號, 104016",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.521467515046,
+     "ymin": 25.053226781939,
+     "xmax": 121.523467515046,
+     "ymax": 25.055226781939
+    }
+   },
+   {
+    "address": "台北市中山區中山北路二段62巷1號, 104016",
+    "location": {
+     "x": 121.522592153579,
+     "y": 25.056747604808
+    },
+    "score": 97.02,
+    "attributes": {
+     "Score": 97.02,
+     "Match_addr": "台北市中山區中山北路二段62巷1號, 104016",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.521592153579,
+     "ymin": 25.055747604808,
+     "xmax": 121.523592153579,
+     "ymax": 25.057747604808
+    }
+   }
+  ]
+ },
+ "台北市中正區南海路41號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區南門里南海路41號, 10066",
+    "location": {
+     "x": 121.512322426547,
+     "y": 25.031760234866
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區南門里南海路41號, 10066",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.511322426547,
+     "ymin": 25.030760234866,
+     "xmax": 121.513322426547,
+     "ymax": 25.032760234866
+    }
+   }
+  ]
+ },
+ "藝時代畫廊 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台中市北屯區松竹路二段349號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市松竹路二段349號, 406506",
+    "location": {
+     "x": 120.69162597912,
+     "y": 24.182346004146
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市松竹路二段349號, 406506",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.69062597912,
+     "ymin": 24.181346004146,
+     "xmax": 120.69262597912,
+     "ymax": 24.183346004146
+    }
+   },
+   {
+    "address": "台中市北屯區松竹路二段, 406",
+    "location": {
+     "x": 120.703270486798,
+     "y": 24.182179564441
+    },
+    "score": 90.67,
+    "attributes": {
+     "Score": 90.67,
+     "Match_addr": "台中市北屯區松竹路二段, 406",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 120.702270486798,
+     "ymin": 24.181179564441,
+     "xmax": 120.704270486798,
+     "ymax": 24.183179564441
+    }
+   }
+  ]
+ },
+ "和顏牙醫診所 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "和顏牙醫診所",
+    "location": {
+     "x": 120.7014517,
+     "y": 24.2117643
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "和顏牙醫診所",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.6964517,
+     "ymin": 24.2067643,
+     "xmax": 120.7064517,
+     "ymax": 24.2167643
+    }
+   }
+  ]
+ },
+ "小路映画工作室 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "工作室",
+    "location": {
+     "x": 120.6462,
+     "y": 24.1669
+    },
+    "score": 71.46,
+    "attributes": {
+     "Score": 71.46,
+     "Match_addr": "工作室",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.6412,
+     "ymin": 24.1619,
+     "xmax": 120.6512,
+     "ymax": 24.1719
+    }
+   }
+  ]
+ },
+ "台灣好基金會 屏東縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "財團法人鴻梅文化藝術基金會 新竹縣 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "SOLO GALLERY 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "Gallery De Sol",
+    "location": {
+     "x": 121.548027,
+     "y": 25.055666
+    },
+    "score": 81.17,
+    "attributes": {
+     "Score": 81.17,
+     "Match_addr": "Gallery De Sol",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.543027,
+     "ymin": 25.050666,
+     "xmax": 121.553027,
+     "ymax": 25.060666
+    }
+   },
+   {
+    "address": "台中市台中市",
+    "location": {
+     "x": 120.6467399,
+     "y": 24.1634888
+    },
+    "score": 75,
+    "attributes": {
+     "Score": 75,
+     "Match_addr": "台中市台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.6037399,
+     "ymin": 24.1204888,
+     "xmax": 120.6897399,
+     "ymax": 24.2064888
+    }
+   },
+   {
+    "address": "台中市",
+    "location": {
+     "x": 120.894735346936,
+     "y": 24.238127141873
+    },
+    "score": 75,
+    "attributes": {
+     "Score": 75,
+     "Match_addr": "台中市",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 120.535735346936,
+     "ymin": 23.879127141873,
+     "xmax": 121.253735346936,
+     "ymax": 24.597127141873
+    }
+   }
+  ]
+ },
+ "小影廊 Know Photo Gallery 台中市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "長興美術館 高雄市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "新竹縣新埔鎮新關路五埔段1170巷42弄17號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新竹縣新埔鎮新關路五埔段1170巷42弄17號, 305",
+    "location": {
+     "x": 121.092292015018,
+     "y": 24.823891005862
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新竹縣新埔鎮新關路五埔段1170巷42弄17號, 305",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.091292015018,
+     "ymin": 24.822891005862,
+     "xmax": 121.093292015018,
+     "ymax": 24.824891005862
+    }
+   },
+   {
+    "address": "新竹縣新埔鎮新關路五埔段1170巷42號, 305",
+    "location": {
+     "x": 121.092846980827,
+     "y": 24.823560004506
+    },
+    "score": 98.26,
+    "attributes": {
+     "Score": 98.26,
+     "Match_addr": "新竹縣新埔鎮新關路五埔段1170巷42號, 305",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.091846980827,
+     "ymin": 24.822560004506,
+     "xmax": 121.093846980827,
+     "ymax": 24.824560004506
+    }
+   },
+   {
+    "address": "新竹縣新埔鎮新關路五埔段1170號, 305044",
+    "location": {
+     "x": 121.091860253334,
+     "y": 24.822992384252
+    },
+    "score": 96.96,
+    "attributes": {
+     "Score": 96.96,
+     "Match_addr": "新竹縣新埔鎮新關路五埔段1170號, 305044",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.090860253334,
+     "ymin": 24.821992384252,
+     "xmax": 121.092860253334,
+     "ymax": 24.823992384252
+    }
+   }
+  ]
+ },
+ "台北市大安區青田街八巷三號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大安區龍安里青田街8巷3號, 10649",
+    "location": {
+     "x": 121.531378431959,
+     "y": 25.027676278272
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市大安區龍安里青田街8巷3號, 10649",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.530378431959,
+     "ymin": 25.026676278272,
+     "xmax": 121.532378431959,
+     "ymax": 25.028676278272
+    }
+   },
+   {
+    "address": "台北市大安區青田街8號, 106010",
+    "location": {
+     "x": 121.531909275825,
+     "y": 25.027490746397
+    },
+    "score": 97.69,
+    "attributes": {
+     "Score": 97.69,
+     "Match_addr": "台北市大安區青田街8號, 106010",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.530909275825,
+     "ymin": 25.026490746397,
+     "xmax": 121.532909275825,
+     "ymax": 25.028490746397
+    }
+   },
+   {
+    "address": "台北市大安區青田街3號, 106011",
+    "location": {
+     "x": 121.532008774438,
+     "y": 25.028817781713
+    },
+    "score": 97.48,
+    "attributes": {
+     "Score": 97.48,
+     "Match_addr": "台北市大安區青田街3號, 106011",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.531008774438,
+     "ymin": 25.027817781713,
+     "xmax": 121.533008774438,
+     "ymax": 25.029817781713
+    }
+   }
+  ]
+ },
+ "新竹市東區中央路241號6樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新竹市東區中央路241號, 300197",
+    "location": {
+     "x": 120.976230735414,
+     "y": 24.809670017478
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新竹市東區中央路241號, 300197",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.975230735414,
+     "ymin": 24.808670017478,
+     "xmax": 120.977230735414,
+     "ymax": 24.810670017478
+    }
+   }
+  ]
+ },
+ "台北市中山區中山北路二段16巷1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中山區民安里中山北路二段16巷1號, 10445",
+    "location": {
+     "x": 121.521965470874,
+     "y": 25.05311791089
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中山區民安里中山北路二段16巷1號, 10445",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.520965470874,
+     "ymin": 25.05211791089,
+     "xmax": 121.522965470874,
+     "ymax": 25.05411791089
+    }
+   },
+   {
+    "address": "台北市中山區中山北路二段1號, 104",
+    "location": {
+     "x": 121.522734286789,
+     "y": 25.052504358594
+    },
+    "score": 97.25,
+    "attributes": {
+     "Score": 97.25,
+     "Match_addr": "台北市中山區中山北路二段1號, 104",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.521734286789,
+     "ymin": 25.051504358594,
+     "xmax": 121.523734286789,
+     "ymax": 25.053504358594
+    }
+   },
+   {
+    "address": "台北市中山區南西商圈中山北路二段16巷, 104002",
+    "location": {
+     "x": 121.521517048362,
+     "y": 25.053103403374
+    },
+    "score": 95.88,
+    "attributes": {
+     "Score": 95.88,
+     "Match_addr": "台北市中山區南西商圈中山北路二段16巷, 104002",
+     "Addr_type": "StreetName"
+    },
+    "extent": {
+     "xmin": 121.520517048362,
+     "ymin": 25.052103403374,
+     "xmax": 121.522517048362,
+     "ymax": 25.054103403374
+    }
+   }
+  ]
+ },
+ "台南市北區西門路四段135號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台南市北區西門路四段135號, 704008",
+    "location": {
+     "x": 120.207474845157,
+     "y": 23.009190880104
+    },
+    "score": 98.9,
+    "attributes": {
+     "Score": 98.9,
+     "Match_addr": "台南市北區西門路四段135號, 704008",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 120.206474845157,
+     "ymin": 23.008190880104,
+     "xmax": 120.208474845157,
+     "ymax": 23.010190880104
+    }
+   }
+  ]
+ },
+ "台北市中山區南京西路16號B1": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市大同區建泰里南京西路16號, 10352",
+    "location": {
+     "x": 121.520331837945,
+     "y": 25.052504816583
+    },
+    "score": 96.5,
+    "attributes": {
+     "Score": 96.5,
+     "Match_addr": "台北市大同區建泰里南京西路16號, 10352",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.519331837945,
+     "ymin": 25.051504816583,
+     "xmax": 121.521331837945,
+     "ymax": 25.053504816583
+    }
+   }
+  ]
+ },
+ "台北市信義區信義路五段5號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區西村里信義路五段5號, 11011",
+    "location": {
+     "x": 121.562339673546,
+     "y": 25.033151966069
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市信義區西村里信義路五段5號, 11011",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.561339673546,
+     "ymin": 25.032151966069,
+     "xmax": 121.563339673546,
+     "ymax": 25.034151966069
+    }
+   },
+   {
+    "address": "台北市信義路五段5號, 110202",
+    "location": {
+     "x": 121.562326111288,
+     "y": 25.033074633508
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "台北市信義路五段5號, 110202",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.561326111288,
+     "ymin": 25.032074633508,
+     "xmax": 121.563326111288,
+     "ymax": 25.034074633508
+    }
+   }
+  ]
+ },
+ "台中市西區向上路一段79巷72號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市向上路一段79巷72號, 403008",
+    "location": {
+     "x": 120.664182035562,
+     "y": 24.144977007129
+    },
+    "score": 98.23,
+    "attributes": {
+     "Score": 98.23,
+     "Match_addr": "台中市向上路一段79巷72號, 403008",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.663182035562,
+     "ymin": 24.143977007129,
+     "xmax": 120.665182035562,
+     "ymax": 24.145977007129
+    }
+   },
+   {
+    "address": "台中市向上路一段72號, 403",
+    "location": {
+     "x": 120.665589021829,
+     "y": 24.146942982519
+    },
+    "score": 94.99,
+    "attributes": {
+     "Score": 94.99,
+     "Match_addr": "台中市向上路一段72號, 403",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.664589021829,
+     "ymin": 24.145942982519,
+     "xmax": 120.666589021829,
+     "ymax": 24.147942982519
+    }
+   }
+  ]
+ },
+ "台北市信義區香堤大道廣場及周邊 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "香堤大道廣場",
+    "location": {
+     "x": 121.567,
+     "y": 25.0372
+    },
+    "score": 82.3,
+    "attributes": {
+     "Score": 82.3,
+     "Match_addr": "香堤大道廣場",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.562,
+     "ymin": 25.0322,
+     "xmax": 121.572,
+     "ymax": 25.0422
+    }
+   },
+   {
+    "address": "台北市信義區",
+    "location": {
+     "x": 121.5677202,
+     "y": 25.0331314
+    },
+    "score": 79.2,
+    "attributes": {
+     "Score": 79.2,
+     "Match_addr": "台北市信義區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.5477202,
+     "ymin": 25.0131314,
+     "xmax": 121.5877202,
+     "ymax": 25.0531314
+    }
+   },
+   {
+    "address": "台北市信義區",
+    "location": {
+     "x": 121.566878,
+     "y": 25.03318
+    },
+    "score": 79.2,
+    "attributes": {
+     "Score": 79.2,
+     "Match_addr": "台北市信義區",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.563878,
+     "ymin": 25.03018,
+     "xmax": 121.569878,
+     "ymax": 25.03618
+    }
+   }
+  ]
+ },
+ "台北市信義區松智路17號B1": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區西村里松智路17號, 11047",
+    "location": {
+     "x": 121.565774493649,
+     "y": 25.034435319265
+    },
+    "score": 95.7,
+    "attributes": {
+     "Score": 95.7,
+     "Match_addr": "台北市信義區西村里松智路17號, 11047",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.564774493649,
+     "ymin": 25.033435319265,
+     "xmax": 121.566774493649,
+     "ymax": 25.035435319265
+    }
+   }
+  ]
+ },
+ "台東縣鹿野鄉永安村高台路46號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台東縣鹿野鄉高台路46號, 955001",
+    "location": {
+     "x": 121.124778391813,
+     "y": 22.924121556064
+    },
+    "score": 90.9,
+    "attributes": {
+     "Score": 90.9,
+     "Match_addr": "台東縣鹿野鄉高台路46號, 955001",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 121.123778391813,
+     "ymin": 22.923121556064,
+     "xmax": 121.125778391813,
+     "ymax": 22.925121556064
+    }
+   },
+   {
+    "address": "台東縣成功鎮高台路46號, 961005",
+    "location": {
+     "x": 121.397109982277,
+     "y": 23.124979982676
+    },
+    "score": 84,
+    "attributes": {
+     "Score": 84,
+     "Match_addr": "台東縣成功鎮高台路46號, 961005",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.396109982277,
+     "ymin": 23.123979982676,
+     "xmax": 121.398109982277,
+     "ymax": 23.125979982676
+    }
+   },
+   {
+    "address": "台東縣鹿野鄉永安",
+    "location": {
+     "x": 121.126056,
+     "y": 22.932639
+    },
+    "score": 80.52,
+    "attributes": {
+     "Score": 80.52,
+     "Match_addr": "台東縣鹿野鄉永安",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.119056,
+     "ymin": 22.925639,
+     "xmax": 121.133056,
+     "ymax": 22.939639
+    }
+   }
+  ]
+ },
+ "新竹市東區中央路229號3F": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新竹市東區中央路229號, 300197",
+    "location": {
+     "x": 120.975508969731,
+     "y": 24.809383985032
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "新竹市東區中央路229號, 300197",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.974508969731,
+     "ymin": 24.808383985032,
+     "xmax": 120.976508969731,
+     "ymax": 24.810383985032
+    }
+   }
+  ]
+ },
+ "新北市板橋區新站路28號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "新北市新站路28號, 220692",
+    "location": {
+     "x": 121.466619009835,
+     "y": 25.013677997055
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "新北市新站路28號, 220692",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.465619009835,
+     "ymin": 25.012677997055,
+     "xmax": 121.467619009835,
+     "ymax": 25.014677997055
+    }
+   }
+  ]
+ },
+ "花蓮縣壽豐鄉池南村環潭北路100號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "花蓮縣壽豐鄉環潭北路100號, 974011",
+    "location": {
+     "x": 121.509322771056,
+     "y": 23.937043394404
+    },
+    "score": 91.84,
+    "attributes": {
+     "Score": 91.84,
+     "Match_addr": "花蓮縣壽豐鄉環潭北路100號, 974011",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 121.508322771056,
+     "ymin": 23.936043394404,
+     "xmax": 121.510322771056,
+     "ymax": 23.938043394404
+    }
+   },
+   {
+    "address": "花蓮縣壽豐鄉池南",
+    "location": {
+     "x": 121.506256,
+     "y": 23.9215546
+    },
+    "score": 79.2,
+    "attributes": {
+     "Score": 79.2,
+     "Match_addr": "花蓮縣壽豐鄉池南",
+     "Addr_type": "Locality"
+    },
+    "extent": {
+     "xmin": 121.499256,
+     "ymin": 23.9145546,
+     "xmax": 121.513256,
+     "ymax": 23.9285546
+    }
+   }
+  ]
+ },
+ "台北市信義區菸廠路88號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區新仁里菸廠路88號, 11072",
+    "location": {
+     "x": 121.561110551265,
+     "y": 25.044737055453
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市信義區新仁里菸廠路88號, 11072",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.560110551265,
+     "ymin": 25.043737055453,
+     "xmax": 121.562110551265,
+     "ymax": 25.045737055453
+    }
+   },
+   {
+    "address": "台北市菸廠路88號, 110055",
+    "location": {
+     "x": 121.561156355921,
+     "y": 25.044945300515
+    },
+    "score": 97.8,
+    "attributes": {
+     "Score": 97.8,
+     "Match_addr": "台北市菸廠路88號, 110055",
+     "Addr_type": "StreetAddress"
+    },
+    "extent": {
+     "xmin": 121.560156355921,
+     "ymin": 25.043945300515,
+     "xmax": 121.562156355921,
+     "ymax": 25.045945300515
+    }
+   }
+  ]
+ },
+ "台北市萬華區武昌街二段77號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市萬華區萬壽里武昌街二段77號, 10843",
+    "location": {
+     "x": 121.505708602027,
+     "y": 25.045076815898
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市萬華區萬壽里武昌街二段77號, 10843",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.504708602027,
+     "ymin": 25.044076815898,
+     "xmax": 121.506708602027,
+     "ymax": 25.046076815898
+    }
+   }
+  ]
+ },
+ "台北市萬華區峨眉街52號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市萬華區西門里峨眉街52號, 10844",
+    "location": {
+     "x": 121.505398974524,
+     "y": 25.043802724706
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市萬華區西門里峨眉街52號, 10844",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.504398974524,
+     "ymin": 25.042802724706,
+     "xmax": 121.506398974524,
+     "ymax": 25.044802724706
+    }
+   },
+   {
+    "address": "台北市萬華區萬壽里峨眉街5之2號, 10844",
+    "location": {
+     "x": 121.507949168565,
+     "y": 25.043398758882
+    },
+    "score": 99.99,
+    "attributes": {
+     "Score": 99.99,
+     "Match_addr": "台北市萬華區萬壽里峨眉街5之2號, 10844",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.506949168565,
+     "ymin": 25.042398758882,
+     "xmax": 121.508949168565,
+     "ymax": 25.044398758882
+    }
+   }
+  ]
+ }
+}

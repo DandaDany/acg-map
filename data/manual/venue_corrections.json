@@ -1,0 +1,48 @@
+[
+  {
+    "match_name": "國立臺灣藝術大學",
+    "title_patterns": [
+      "十個透明喇叭與一隻蟬",
+      "鍾宇豪個展"
+    ],
+    "name": "漢寶德紀念館",
+    "city": "台南市",
+    "addr": "台南市官田區大崎里66號",
+    "lat": 23.1871158,
+    "lng": 120.3755295,
+    "url": "https://hptmm.tnnua.edu.tw/p/412-1074-4024.php?Lang=zh-tw",
+    "source": "user_supplied_2026-06-20"
+  },
+  {
+    "match_name": "中台世界博物館",
+    "url": "https://www.ctwm.org.tw/exhibition/special-exhibition",
+    "source": "user_supplied_2026-06-22"
+  },
+  {
+    "match_name": "得忌利士洋行",
+    "title_patterns": [
+      "齊柏林空間年度特展",
+      "齊柏林俯瞰台灣"
+    ],
+    "name": "齊柏林空間",
+    "city": "新北市",
+    "addr": "新北市淡水區中正路316、316-1號",
+    "lat": 25.1726698,
+    "lng": 121.4369767,
+    "url": "https://www.chipolin.org/exhibition",
+    "source": "user_supplied_2026-06-22"
+  },
+  {
+    "match_name": "平溪區",
+    "title_patterns": [
+      "2026新北市平溪區四校聯合美展",
+      "平溪區四校聯合美展"
+    ],
+    "name": "菁桐礦業生活館",
+    "city": "新北市",
+    "addr": "新北市平溪區菁桐里菁桐街113-117號",
+    "lat": 25.023917,
+    "lng": 121.724333,
+    "source": "user_supplied_2026-07-05"
+  }
+]

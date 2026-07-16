@@ -1,0 +1,39 @@
+{
+ "_note": "Generated from official CACO storelist pages.",
+ "cafe_url": "https://www.caco.com.tw/storelist/CAFE",
+ "popup_url": "https://www.caco.com.tw/storelist/POPUP",
+ "cafes": [
+  {
+   "title": "CACO cafe 台中漢神店",
+   "addr": "台中市北屯區崇德路三段865~869號5樓",
+   "end": "",
+   "source": "https://www.caco.com.tw/storelist/CAFE"
+  },
+  {
+   "title": "CACO cafe 台南南紡店",
+   "addr": "台南市東區中華東路一段366號A1館1樓",
+   "end": "",
+   "source": "https://www.caco.com.tw/storelist/CAFE"
+  },
+  {
+   "title": "CACO cafe 台南小西門",
+   "addr": "台南市中西區西門路一段658-1號B1F",
+   "end": "",
+   "source": "https://www.caco.com.tw/storelist/CAFE"
+  },
+  {
+   "title": "CACO cafe 高雄夢時代店",
+   "addr": "高雄市前鎮區中華五路789號2F",
+   "end": "",
+   "source": "https://www.caco.com.tw/storelist/CAFE"
+  }
+ ],
+ "popups": [
+  {
+   "title": "南港-LaLaport(玩具總動員快閃)",
+   "addr": "台北市南港區經貿二路131號5樓",
+   "end": "2026/07/31",
+   "source": "https://www.caco.com.tw/storelist/POPUP"
+  }
+ ]
+}

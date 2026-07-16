@@ -1,0 +1,1055 @@
+{
+ "台中市中區台灣大道一段145號": {
+  "la": 24.139663,
+  "lo": 120.682428,
+  "source": "arcgis_address",
+  "display_name": "台中市中區自由路商圈台灣大道一段145號, 40045",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市中區台灣大道一段1號": {
+  "la": 24.1450765,
+  "lo": 120.6765664,
+  "source": "arcgis_address",
+  "display_name": "台中市中區中華夜市台灣大道一段, 40041",
+  "type": "StreetName",
+  "score": 94.62
+ },
+ "台中市北屯區崇德路三段865~869號5樓": {
+  "la": 24.2013971,
+  "lo": 120.6864751,
+  "source": "arcgis_address_variant",
+  "display_name": "台中市北屯區崇德路三段865號, 406",
+  "type": "StreetAddressExt",
+  "score": 98.9
+ },
+ "台中市北屯區環中東路二段597號": {
+  "la": 24.1743874,
+  "lo": 120.72067,
+  "source": "arcgis_address",
+  "display_name": "台中市環中東路二段, 40641",
+  "type": "StreetName",
+  "score": 88.38
+ },
+ "台中市南屯區惠中路三段65號": {
+  "la": 24.149147,
+  "lo": 120.6411519,
+  "source": "arcgis_address",
+  "display_name": "台中市南屯區惠中路三段65號, 40862",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市大甲區光明路67號": {
+  "la": 24.344038,
+  "lo": 120.623257,
+  "source": "arcgis_address",
+  "display_name": "台中市大甲區光明路67號, 43746",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市太平區東平路464號": {
+  "la": 24.1340501,
+  "lo": 120.7243758,
+  "source": "arcgis_address",
+  "display_name": "台中市太平區東平路464號, 41141",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市東區進德路600號1樓": {
+  "la": 24.134169,
+  "lo": 120.69217,
+  "source": "arcgis_poi",
+  "display_name": "Mitsui Shopping Park Lalaport Taichung",
+  "type": "POI",
+  "score": 96.22
+ },
+ "台中市東區進德路600號3樓": {
+  "la": 24.134169,
+  "lo": 120.69217,
+  "source": "arcgis_poi",
+  "display_name": "Mitsui Shopping Park Lalaport Taichung",
+  "type": "POI",
+  "score": 96.22
+ },
+ "台中市西區五權西路一段110號": {
+  "la": 24.140346,
+  "lo": 120.661252,
+  "source": "arcgis_address",
+  "display_name": "台中市五權西路一段110號, 40359",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市西區公益路155巷9號B1": {
+  "la": 24.1502744,
+  "lo": 120.6644914,
+  "source": "arcgis_address",
+  "display_name": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+  "type": "PointAddress",
+  "score": 97
+ },
+ "台中市西區公益路155巷9號B1樓": {
+  "la": 24.1502744,
+  "lo": 120.6644914,
+  "source": "arcgis_address",
+  "display_name": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "台中市西區柳川西路二段158號": {
+  "la": 24.1412878,
+  "lo": 120.6734547,
+  "source": "arcgis_address",
+  "display_name": "台中市柳川西路二段158號, 40357",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市西區英才路589巷6號1F(月臨畫廊)": {
+  "la": 24.1433191,
+  "lo": 120.6659154,
+  "source": "arcgis_address",
+  "display_name": "台中市英才路589巷1號, 40359",
+  "type": "StreetAddress",
+  "score": 90.05
+ },
+ "台中市西屯區台灣大道三段251號11樓": {
+  "la": 24.1646717,
+  "lo": 120.6445694,
+  "source": "arcgis_address",
+  "display_name": "台中市台灣大道三段251號, 40756",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "台中市西屯區台灣大道三段251號13樓": {
+  "la": 24.1646717,
+  "lo": 120.6445694,
+  "source": "arcgis_address",
+  "display_name": "台中市台灣大道三段251號, 40756",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "台中市西屯區台灣大道三段301號": {
+  "la": 24.1650058,
+  "lo": 120.6433984,
+  "source": "arcgis_address",
+  "display_name": "台中市台灣大道三段301號, 40756",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "台中市西屯區市政路386號13樓之5": {
+  "la": 24.1588091,
+  "lo": 120.6402283,
+  "source": "arcgis_address",
+  "display_name": "台中市市政路386號, 40757",
+  "type": "PointAddress",
+  "score": 96.71
+ },
+ "台中市豐原區成功路369號": {
+  "la": 24.2489579,
+  "lo": 120.7061973,
+  "source": "arcgis_address",
+  "display_name": "台中市豐原區成功路369號, 42059",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市霧峰區民生路26號": {
+  "la": 24.0628074,
+  "lo": 120.7008188,
+  "source": "arcgis_address",
+  "display_name": "台中市霧峰區民生路26號, 41343",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中山區南京西路12號": {
+  "la": 25.0523272,
+  "lo": 121.5212449,
+  "source": "arcgis_address",
+  "display_name": "台北市中山區民安里南京西路12號, 10444",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中山區玉門路1號": {
+  "la": 25.0703595,
+  "lo": 121.5204969,
+  "source": "arcgis_address_variant",
+  "display_name": "台北市中山區圓山里玉門街1號, 10452",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區中山南路1號": {
+  "la": 25.0439659,
+  "lo": 121.5195864,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區幸福里中山南路1號, 10051",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區市民大道三段2號": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區市民大道三段2號7樓": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區市民大道三段2號8樓": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區忠孝西路一段70號": {
+  "la": 25.0467093,
+  "lo": 121.5143516,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區黎明里忠孝西路一段70號, 10041",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市信義區松壽路11號": {
+  "la": 25.0360734,
+  "lo": 121.5672801,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區西村里松壽路11號, 11051",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市信義區松壽路20號": {
+  "la": 25.0356411,
+  "lo": 121.5674054,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區西村里松壽路20號, 11051",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市信義區松高路12號5樓": {
+  "la": 25.0388131,
+  "lo": 121.5668002,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區西村里松高路12號, 11073",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市南京東路二段1號3F": {
+  "la": 25.0522182,
+  "lo": 121.5279417,
+  "source": "arcgis_address",
+  "display_name": "台北市中山區南京東路二段1號, 104",
+  "type": "StreetAddress",
+  "score": 100
+ },
+ "台北市南港區經貿二路131號5樓": {
+  "la": 25.059345,
+  "lo": 121.6175825,
+  "source": "arcgis_address",
+  "display_name": "台北市南港區三重里經貿二路131號, 11568",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市士林區雨農路17-2號1樓": {
+  "la": 25.0978332,
+  "lo": 121.5321214,
+  "source": "arcgis_address",
+  "display_name": "台北市士林區福志里雨農路17之2號, 11142",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大同區承德路一段1號": {
+  "la": 25.0490901,
+  "lo": 121.5167841,
+  "source": "arcgis_address",
+  "display_name": "台北市大同區建明里承德路一段1號, 10351",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大同區民族西路141號": {
+  "la": 25.0687046,
+  "lo": 121.516389,
+  "source": "arcgis_address",
+  "display_name": "台北市大同區至聖里民族西路141號, 10369",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大同區迪化街1段21號": {
+  "la": 25.0545008,
+  "lo": 121.510325,
+  "source": "arcgis_address",
+  "display_name": "台北市大同區永樂里迪化街一段21號, 10343",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大安區延吉街120號地下樓": {
+  "la": 25.0404208,
+  "lo": 121.5546365,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區車層里延吉街120號, 10696",
+  "type": "PointAddress",
+  "score": 97.5
+ },
+ "台北市大安區忠孝東路四段205巷7弄7號1樓": {
+  "la": 25.0421761,
+  "lo": 121.5523233,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區建安里忠孝東路四段205巷7弄7號, 10690",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大安區忠孝東路四段阿波羅大廈218-6號": {
+  "la": 25.0410906,
+  "lo": 121.5533378,
+  "source": "arcgis_address_variant",
+  "display_name": "台北市大安區車層里忠孝東路四段218之6號, 10692",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大安區敦化南路二段105號": {
+  "la": 25.0284614,
+  "lo": 121.5491229,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區義安里敦化南路二段105號, 10682",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大安區金華街243巷27號1樓": {
+  "la": 25.0310239,
+  "lo": 121.5302837,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區福住里金華街243巷27號, 10649",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市文山區景文街32號": {
+  "la": 24.9920906,
+  "lo": 121.5411781,
+  "source": "arcgis_address",
+  "display_name": "台北市文山區景行里景文街32號, 11670",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市松山區復興南路一段39號": {
+  "la": 25.0461294,
+  "lo": 121.5441255,
+  "source": "arcgis_address",
+  "display_name": "台北市松山區中崙里復興南路一段39號, 10556",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市中西區國華街三段15號": {
+  "la": 22.99367,
+  "lo": 120.197447,
+  "source": "arcgis_address",
+  "display_name": "台南市國華街三段15號, 70059",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台南市中西區西門路一段658-1號B1F": {
+  "la": 22.9869431,
+  "lo": 120.1989468,
+  "source": "arcgis_address",
+  "display_name": "台南市西門路一段658-1號, 70051",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台南市中西區西門路一段658號5樓": {
+  "la": 22.9867305,
+  "lo": 120.1988673,
+  "source": "arcgis_address",
+  "display_name": "台南市西門路一段658號, 70051",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台南市仁德區二仁路一段321號": {
+  "la": 22.9244225,
+  "lo": 120.2228559,
+  "source": "arcgis_address",
+  "display_name": "台南市仁德區二仁路一段321號, 717",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市新營區大同路39號": {
+  "la": 23.3100998,
+  "lo": 120.3224643,
+  "source": "arcgis_address",
+  "display_name": "台南市新營區大同路39號, 73048",
+  "type": "StreetAddress",
+  "score": 100
+ },
+ "台南市新營區民治路36號": {
+  "la": 23.3117183,
+  "lo": 120.3140229,
+  "source": "arcgis_address",
+  "display_name": "台南市新營區民治路36號, 73001",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市東區中華東路一段366號A1館1樓": {
+  "la": 22.9907634,
+  "lo": 120.2336718,
+  "source": "arcgis_address",
+  "display_name": "台南市東區中華東路一段366號, 70155",
+  "type": "StreetAddress",
+  "score": 99.05
+ },
+ "台南市麻豆區興國路11號": {
+  "la": 23.1826641,
+  "lo": 120.2484626,
+  "source": "arcgis_address",
+  "display_name": "台南市麻豆區興國路11號, 72148",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "屏東縣屏東市公園路28號": {
+  "la": 22.674527,
+  "lo": 120.490292,
+  "source": "arcgis_address",
+  "display_name": "屏東縣公園路28號, 90054",
+  "type": "PointAddress",
+  "score": 92.67
+ },
+ "屏東縣屏東市青島街106號": {
+  "la": 22.678565,
+  "lo": 120.484495,
+  "source": "arcgis_address",
+  "display_name": "屏東縣青島街106號, 90063",
+  "type": "PointAddress",
+  "score": 92.67
+ },
+ "彰化縣埤頭鄉彰水路二段526號": {
+  "la": 23.869609,
+  "lo": 120.458969,
+  "source": "arcgis_address",
+  "display_name": "彰化縣埤頭鄉彰水路二段526號, 52342",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "彰化縣彰化市卦山路18號": {
+  "la": 24.075793,
+  "lo": 120.557154,
+  "source": "arcgis_address",
+  "display_name": "彰化縣彰化市卦山路18號, 50074",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "彰化縣彰化市溫泉路31號": {
+  "la": 24.078,
+  "lo": 120.547947,
+  "source": "arcgis_address",
+  "display_name": "彰化縣彰化市溫泉路31號, 50074",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "彰化縣彰化市福山街348號": {
+  "la": 24.080539,
+  "lo": 120.575613,
+  "source": "arcgis_address",
+  "display_name": "彰化縣彰化市福山街348號, 50076",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "彰化縣芳苑鄉漁港路900號": {
+  "la": 23.9680181,
+  "lo": 120.3248883,
+  "source": "arcgis_address",
+  "display_name": "彰化縣芳苑鄉漁港路, 528",
+  "type": "StreetName",
+  "score": 89.23
+ },
+ "新北市新店區中興路三段70號": {
+  "la": 24.9777493,
+  "lo": 121.5463634,
+  "source": "arcgis_address",
+  "display_name": "新北市新店區中興路三段70號, 23144",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新北市新莊區和興街66號": {
+  "la": 25.0402673,
+  "lo": 121.4474074,
+  "source": "arcgis_address",
+  "display_name": "新北市新莊區和興街66號, 24242",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新北市板橋區中正路435號": {
+  "la": 25.023515,
+  "lo": 121.453833,
+  "source": "arcgis_address",
+  "display_name": "新北市中正路435號, 22052",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "新北市板橋區文化路一段266號12樓之1": {
+  "la": 25.020783,
+  "lo": 121.467035,
+  "source": "arcgis_address",
+  "display_name": "新北市文化路一段266號, 220",
+  "type": "PointAddress",
+  "score": 96.91
+ },
+ "新北市林口區文化三路一段356號1樓": {
+  "la": 25.0712411,
+  "lo": 121.3635472,
+  "source": "arcgis_address",
+  "display_name": "新北市林口區文化三路一段356號, 24448",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新竹市北區西門街258號": {
+  "la": 24.7994072,
+  "lo": 120.9600935,
+  "source": "arcgis_address",
+  "display_name": "新竹市西門街258號, 30046",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "新竹市東區忠孝路80號1樓": {
+  "la": 24.80305,
+  "lo": 120.99155,
+  "source": "arcgis_address",
+  "display_name": "新竹市東區忠孝路80號, 30069",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "花蓮縣花蓮市節約街37號B1": {
+  "la": 23.978592,
+  "lo": 121.6071629,
+  "source": "arcgis_address",
+  "display_name": "花蓮縣舊鐵道商圈節約街37號, 97049",
+  "type": "StreetAddress",
+  "score": 89.58
+ },
+ "苗栗縣竹南鎮公園路206號": {
+  "la": 24.690958,
+  "lo": 120.886117,
+  "source": "arcgis_address",
+  "display_name": "苗栗縣竹南鎮公園路206號, 35056",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "高雄市三民區建國二路320號B2": {
+  "la": 22.6377809,
+  "lo": 120.3034814,
+  "source": "arcgis_address",
+  "display_name": "高雄市三民區建國二路320號, 807",
+  "type": "StreetAddress",
+  "score": 98.93
+ },
+ "高雄市前鎮區中華五路789號1樓": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "arcgis_address",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "score": 100
+ },
+ "高雄市前鎮區中華五路789號2F": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "arcgis_address",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "score": 100
+ },
+ "高雄市前鎮區中華五路789號7F": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "arcgis_address",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "score": 100
+ },
+ "高雄市前鎮區中華五路789號B1": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "arcgis_address",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "score": 98.93
+ },
+ "高雄市左營區修明街166號1樓": {
+  "la": 22.660055,
+  "lo": 120.304188,
+  "source": "arcgis_address",
+  "display_name": "高雄市左營區修明街166號, 81357",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "高雄市左營區高鐵路123號10樓": {
+  "la": 22.688943,
+  "lo": 120.310525,
+  "source": "arcgis_address",
+  "display_name": "高雄市左營區高鐵路123號, 81361",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "高雄市苓雅區三多四路21號13樓": {
+  "la": 22.613424,
+  "lo": 120.303549,
+  "source": "arcgis_address",
+  "display_name": "高雄市三多四路21號, 80247",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市南區文心南路919號": {
+  "la": 24.1103411,
+  "lo": 120.6600436,
+  "source": "arcgis_address",
+  "display_name": "台中市南區文心南路919號, 40256",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市南屯區大墩六街208號": {
+  "la": 24.142708,
+  "lo": 120.649429,
+  "source": "arcgis_address",
+  "display_name": "台中市南屯區大墩六街208號, 40864",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中山區松江路226巷6號": {
+  "la": 25.0583969,
+  "lo": 121.5326073,
+  "source": "arcgis_address",
+  "display_name": "台北市中山區中庄里松江路226巷6號, 10467",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大同區承德路三段131號": {
+  "la": 25.0673723,
+  "lo": 121.5185916,
+  "source": "arcgis_address",
+  "display_name": "台北市大同區斯文里承德路三段131號, 10364",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市內湖區瑞光路548巷15號5F": {
+  "la": 25.0696429,
+  "lo": 121.5835914,
+  "source": "arcgis_address",
+  "display_name": "台北市內湖區瑞光路15號, 11466",
+  "type": "StreetAddress",
+  "score": 96.8
+ },
+ "台中市龍井區藝術街61巷6號": {
+  "la": 24.187743,
+  "lo": 120.593252,
+  "source": "arcgis_address",
+  "display_name": "台中市新莊子東海藝術街商圈藝術街61巷6號, 43446",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "台南市安平區漁光路113號": {
+  "la": 22.9769539,
+  "lo": 120.1611778,
+  "source": "arcgis_address",
+  "display_name": "台南市安平區漁光路113號, 70841",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市西區五權西六街72號": {
+  "la": 24.1378169,
+  "lo": 120.6587104,
+  "source": "arcgis_address",
+  "display_name": "台中市五權西六街72號, 40347",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台北市大安區樂利路41號": {
+  "la": 25.0268432,
+  "lo": 121.5517699,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區法治里樂利路41號, 10678",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市南屯區文心南五路一段395號": {
+  "la": 24.131925,
+  "lo": 120.640801,
+  "source": "arcgis_address",
+  "display_name": "台中市南屯區文心南五路一段395號, 40876",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "南投縣南投市向上路271號3樓": {
+  "la": 23.952983,
+  "lo": 120.682412,
+  "source": "arcgis_address",
+  "display_name": "南投縣下莊向上路271號, 54045",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "台北市大安區安和路一段78巷4號": {
+  "la": 25.0349436,
+  "lo": 121.5520938,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區敦安里安和路一段78巷4號, 10685",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市北區博館二街115號": {
+  "la": 24.1534423,
+  "lo": 120.6681692,
+  "source": "arcgis_address",
+  "display_name": "台中市博館二街115號, 403",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市西區忠誠街35號": {
+  "la": 24.152431,
+  "lo": 120.6623765,
+  "source": "arcgis_address",
+  "display_name": "台中市勤美誠品綠園道商圈忠誠街35號, 40351",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市西區柳川東路二段58號3樓": {
+  "la": 24.133611,
+  "lo": 120.664953,
+  "source": "arcgis_address",
+  "display_name": "台中市柳川東路二段58號, 40346",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市西區台灣大道二段375號11樓之2": {
+  "la": 24.1542784,
+  "lo": 120.6642294,
+  "source": "arcgis_address",
+  "display_name": "台中市台灣大道二段375號, 40360",
+  "type": "PointAddress",
+  "score": 96.82
+ },
+ "台中市西區中興一巷2號": {
+  "la": 24.1475581,
+  "lo": 120.6628988,
+  "source": "arcgis_address",
+  "display_name": "台中市綠光計畫范特喜文創聚落中興一巷2號, 40350",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "南投縣信義鄉東埔村1鄰開高巷25號": {
+  "la": 23.554196,
+  "lo": 120.926237,
+  "source": "arcgis_address",
+  "display_name": "南投縣信義鄉開高巷25號, 55691",
+  "type": "PointAddress",
+  "score": 96.21
+ },
+ "台中市西區林森路40號": {
+  "la": 24.1365566,
+  "lo": 120.6723312,
+  "source": "arcgis_address",
+  "display_name": "台中市林森路40號, 40345",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台中市西區五權西二街14號": {
+  "la": 24.1396339,
+  "lo": 120.6637179,
+  "source": "arcgis_address",
+  "display_name": "台中市忠信市場五權西二街14號, 40348",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台北市大安區信義路四段1號7樓之7": {
+  "la": 25.0335437,
+  "lo": 121.5438436,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區信義路四段1號, 10684",
+  "type": "StreetAddress",
+  "score": 98.82
+ },
+ "台中市西區台灣大道二段307號15樓": {
+  "la": 24.153279,
+  "lo": 120.665784,
+  "source": "arcgis_address",
+  "display_name": "台中市台灣大道二段307號, 40360",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "台北市大安區忠孝東路四段219號": {
+  "la": 25.0416624,
+  "lo": 121.5525126,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區建安里忠孝東路四段219號, 10690",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市龍井區藝術街38巷11號": {
+  "la": 24.1882476,
+  "lo": 120.594171,
+  "source": "arcgis_address",
+  "display_name": "台中市新莊子東海藝術街商圈藝術街38巷11號, 43446",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "台中市南屯區五權西路二段957號2樓": {
+  "la": 24.144956,
+  "lo": 120.6328972,
+  "source": "arcgis_address",
+  "display_name": "台中市南屯區五權西路二段957號, 408",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市西區民生路126巷9號2樓": {
+  "la": 24.142084,
+  "lo": 120.672572,
+  "source": "arcgis_address",
+  "display_name": "台中市民生路126巷9號, 40342",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "台北市中山區敬業一路128巷48號1樓": {
+  "la": 25.0832464,
+  "lo": 121.5538991,
+  "source": "arcgis_address_user_confirmed",
+  "display_name": "台北市中山區成功里敬業一路128巷48號, 10462",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市西區美村路一段771巷16號": {
+  "la": 24.1330389,
+  "lo": 120.6623067,
+  "source": "arcgis_address",
+  "display_name": "台中市美村路一段771巷16號, 403",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "台中市西區英才路534號": {
+  "la": 24.14996,
+  "lo": 120.665068,
+  "source": "arcgis_address",
+  "display_name": "台中市勤美誠品綠園道商圈英才路534號, 40360",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "苗栗縣公館鄉館南村14鄰館南352號": {
+  "la": 24.4895319,
+  "lo": 120.8277677,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "苗栗陶瓷農創園區，穿龍驛站",
+  "type": "GoogleMapsPlace"
+ },
+ "苗栗縣三義鄉勝興村水美188號": {
+  "la": 24.3977804,
+  "lo": 120.7610516,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "當代陶藝館",
+  "type": "GoogleMapsPlace"
+ },
+ "台南市將軍區西甲里西華1號": {
+  "la": 23.1990925,
+  "lo": 120.1574022,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "方圓美術館",
+  "type": "GoogleMapsPlace"
+ },
+ "台南市中西區府前路一段203號1樓": {
+  "la": 22.9890945,
+  "lo": 120.2039943,
+  "source": "arcgis_address",
+  "display_name": "台南市孔廟商圈府前路一段203號, 70045",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台南市東區林森路一段370號": {
+  "la": 22.9843755,
+  "lo": 120.2215806,
+  "source": "arcgis_address",
+  "display_name": "台南市東區林森路一段370號, 70151",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市中西區成功路83號2樓": {
+  "la": 22.997638,
+  "lo": 120.2083,
+  "source": "arcgis_address",
+  "display_name": "台南市成功路83號, 700",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台南市安平區永華路二段300號": {
+  "la": 22.9902749,
+  "lo": 120.1792072,
+  "source": "arcgis_address",
+  "display_name": "台南市永華路二段300號, 70848",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "台南市中西區民生路一段205巷11號": {
+  "la": 22.9937955,
+  "lo": 120.1994782,
+  "source": "arcgis_address",
+  "display_name": "台南市民生路一段205巷11號, 70048",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "高雄市鳳山區高雄市鳳山區三多一路1號": {
+  "la": 22.6241698,
+  "lo": 120.3424335,
+  "source": "arcgis_address",
+  "display_name": "高雄市鳳山區三多一路1號, 830043",
+  "type": "PointAddress",
+  "score": 97.78
+ },
+ "台北市中山區中山北路二段62巷32號1樓": {
+  "la": 25.0566681,
+  "lo": 121.5210811,
+  "source": "arcgis_address",
+  "display_name": "台北市中山區民安里中山北路二段62巷32號, 10448",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區南海路41號": {
+  "la": 25.0317602,
+  "lo": 121.5123224,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區南門里南海路41號, 10066",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市北屯區松竹路二段349號": {
+  "la": 24.182346,
+  "lo": 120.691626,
+  "source": "arcgis_address",
+  "display_name": "台中市松竹路二段349號, 406506",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "新竹縣新埔鎮新關路五埔段1170巷42弄17號": {
+  "la": 24.823891,
+  "lo": 121.092292,
+  "source": "arcgis_address",
+  "display_name": "新竹縣新埔鎮新關路五埔段1170巷42弄17號, 305",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市大安區青田街八巷三號": {
+  "la": 25.0276763,
+  "lo": 121.5313784,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區龍安里青田街8巷3號, 10649",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新竹市東區中央路241號6樓": {
+  "la": 24.80967,
+  "lo": 120.9762307,
+  "source": "arcgis_address",
+  "display_name": "新竹市東區中央路241號, 300197",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中山區中山北路二段16巷1號": {
+  "la": 25.0531179,
+  "lo": 121.5219655,
+  "source": "arcgis_address",
+  "display_name": "台北市中山區民安里中山北路二段16巷1號, 10445",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市北區西門路四段135號": {
+  "la": 23.0091909,
+  "lo": 120.2074748,
+  "source": "arcgis_address",
+  "display_name": "台南市北區西門路四段135號, 704008",
+  "type": "StreetAddressExt",
+  "score": 98.9
+ },
+ "台北市中山區南京西路16號B1": {
+  "la": 25.0525048,
+  "lo": 121.5203318,
+  "source": "arcgis_address",
+  "display_name": "台北市大同區建泰里南京西路16號, 10352",
+  "type": "PointAddress",
+  "score": 96.5
+ },
+ "台北市信義區信義路五段5號": {
+  "la": 25.033152,
+  "lo": 121.5623397,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區西村里信義路五段5號, 11011",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市西區向上路一段79巷72號": {
+  "la": 24.144977,
+  "lo": 120.664182,
+  "source": "arcgis_address",
+  "display_name": "台中市向上路一段79巷72號, 403008",
+  "type": "PointAddress",
+  "score": 98.23
+ },
+ "台北市信義區松智路17號B1": {
+  "la": 25.0344353,
+  "lo": 121.5657745,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區西村里松智路17號, 11047",
+  "type": "PointAddress",
+  "score": 95.7
+ },
+ "台東縣鹿野鄉永安村高台路46號": {
+  "la": 22.9241216,
+  "lo": 121.1247784,
+  "source": "arcgis_address",
+  "display_name": "台東縣鹿野鄉高台路46號, 955001",
+  "type": "StreetAddressExt",
+  "score": 90.9
+ },
+ "新竹市東區中央路229號3F": {
+  "la": 24.809384,
+  "lo": 120.975509,
+  "source": "arcgis_address",
+  "display_name": "新竹市東區中央路229號, 300197",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新北市板橋區新站路28號": {
+  "la": 25.013678,
+  "lo": 121.466619,
+  "source": "arcgis_address",
+  "display_name": "新北市新站路28號, 220692",
+  "type": "PointAddress",
+  "score": 97.88
+ },
+ "花蓮縣壽豐鄉池南村環潭北路100號": {
+  "la": 23.9370434,
+  "lo": 121.5093228,
+  "source": "arcgis_address",
+  "display_name": "花蓮縣壽豐鄉環潭北路100號, 974011",
+  "type": "StreetAddressExt",
+  "score": 91.84
+ },
+ "台北市信義區菸廠路88號": {
+  "la": 25.0447371,
+  "lo": 121.5611106,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區新仁里菸廠路88號, 11072",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市萬華區武昌街二段77號": {
+  "la": 25.0450768,
+  "lo": 121.5057086,
+  "source": "arcgis_address",
+  "display_name": "台北市萬華區萬壽里武昌街二段77號, 10843",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市萬華區峨眉街52號": {
+  "la": 25.0438027,
+  "lo": 121.505399,
+  "source": "arcgis_address",
+  "display_name": "台北市萬華區西門里峨眉街52號, 10844",
+  "type": "PointAddress",
+  "score": 100
+ }
+}

@@ -1,0 +1,1066 @@
+{
+  "中台世界博物館": {
+    "sources": [
+      {
+        "url": "https://www.ctwm.org.tw/exhibition/special-exhibition",
+        "title": "中台世界博物館 特展"
+      },
+      {
+        "url": "https://www.ctwm.org.tw/exhibition/permanent-exhibition",
+        "title": "中台世界博物館 常設展"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "常設"
+        ],
+        "url": "https://www.ctwm.org.tw/exhibition/permanent-exhibition"
+      }
+    ]
+  },
+  "大東文化藝術中心": {
+    "sources": [
+      {
+        "url": "https://dadongcenter.kcg.gov.tw/home02.aspx?ID=$4000&IDK=2&EXEC=L",
+        "title": "大東文化藝術中心 展覽活動"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://dadongcenter.kcg.gov.tw/home02.aspx?ID=$4000&IDK=2&EXEC=L"
+      }
+    ]
+  },
+  "桃園市土地公文化館": {
+    "sources": [
+      {
+        "url": "https://www.taoyuantudigong.org.tw/main/exhibition-current/",
+        "title": "桃園市土地公文化館 當期展覽"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "常設展"
+        ],
+        "url": "https://www.taoyuantudigong.org.tw/main/exhibition-current/"
+      }
+    ]
+  },
+  "三義木雕博物館": {
+    "sources": [
+      {
+        "url": "https://wood.mlc.gov.tw/active/index.aspx?Parser=10,7,39",
+        "title": "三義木雕博物館 展覽活動"
+      },
+      {
+        "url": "https://wood.mlc.gov.tw/content/index.aspx?Parser=1,7,38",
+        "title": "三義木雕博物館 常設展"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "臺灣木雕專題展",
+          "台灣木雕專題展",
+          "一木一心",
+          "黃國書"
+        ],
+        "url": "https://wood.mlc.gov.tw/active/index.aspx?Parser=10,7,39"
+      },
+      {
+        "title_patterns": [
+          "常設展"
+        ],
+        "url": "https://wood.mlc.gov.tw/content/index.aspx?Parser=1,7,38"
+      }
+    ]
+  },
+  "國家攝影文化中心": {
+    "sources": [
+      {
+        "url": "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632",
+        "title": "國家攝影文化中心 線上展覽"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "虛空之境"
+        ],
+        "url": "https://ncpi.ntmofa.gov.tw/News_OnlineExhibitionPic_str.aspx?n=8006&sms=15632"
+      }
+    ]
+  },
+  "屏東縣王船文化館": {
+    "sources": [
+      {
+        "url": "https://www.cultural.pthg.gov.tw/kingboat/News.aspx?n=D9A2A838FCAE0014&sms=113DCB1E865A3C0C",
+        "title": "屏東縣王船文化館 當期展覽"
+      },
+      {
+        "url": "https://www.cultural.pthg.gov.tw/kingboat/Default.aspx",
+        "title": "屏東縣王船文化館 展演活動"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "七角頭",
+          "念念之間"
+        ],
+        "url": "https://www.cultural.pthg.gov.tw/kingboat/News.aspx?n=D9A2A838FCAE0014&sms=113DCB1E865A3C0C"
+      },
+      {
+        "title_patterns": [
+          "千歲巡狩",
+          "打造神舟",
+          "常設展"
+        ],
+        "url": "https://www.cultural.pthg.gov.tw/kingboat/News.aspx?n=D9A2A838FCAE0014&sms=113DCB1E865A3C0C"
+      }
+    ]
+  },
+  "紅毛港文化園區": {
+    "sources": [
+      {
+        "url": "https://hongmaogang.hmg.org.tw/",
+        "title": "紅毛港文化園區 官方網站"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "乘浪上港",
+          "紅毛港舊物件展"
+        ],
+        "url": "https://hongmaogang.hmg.org.tw/"
+      }
+    ]
+  },
+  "臺北市藝文推廣處-文山劇場": {
+    "sources": [
+      {
+        "url": "https://www.tapo.gov.taipei/",
+        "title": "臺北市藝文推廣處 官方網站"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "育藝深遠",
+          "客廳即劇場",
+          "魔幻森林",
+          "文山劇場工作坊"
+        ],
+        "url": "https://www.tapo.gov.taipei/"
+      }
+    ]
+  },
+  "洪根深美術館": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/61571558291485/photos/122127256028718609/",
+        "title": "洪根深美術館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "被觀看的親密",
+          "東方媒材的身體、愛與書寫"
+        ],
+        "url": "https://www.facebook.com/61571558291485/photos/122127256028718609/"
+      },
+      {
+        "title_patterns": [
+          "洪根深美術館常設展"
+        ],
+        "url": "https://www.facebook.com/61571558291485/photos/122127256028718609/"
+      }
+    ]
+  },
+  "內惟藝術中心": {
+    "sources": [
+      {
+        "url": "https://www.nwac.org.tw/",
+        "title": "內惟藝術中心"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "內惟藝術中心首展",
+          "解惟．解圍",
+          "Once"
+        ],
+        "url": "https://www.nwac.org.tw/"
+      }
+    ]
+  },
+  "勝利星村創意生活園區": {
+    "sources": [
+      {
+        "url": "https://yoke918.tw/star/",
+        "title": "勝利星村創意生活園區"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "日本藝術家Sawa個展"
+        ],
+        "url": "https://yoke918.tw/star/"
+      }
+    ]
+  },
+  "屏菸1936文化基地": {
+    "sources": [
+      {
+        "url": "https://www.cultural.pthg.gov.tw/pt1936/Default.aspx",
+        "title": "屏菸1936文化基地"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "就在前方，我那依山依水的客家"
+        ],
+        "url": "https://www.cultural.pthg.gov.tw/pt1936/Default.aspx"
+      }
+    ]
+  },
+  "宜蘭人故事館": {
+    "sources": [
+      {
+        "url": "https://www.yilanstory.com.tw/",
+        "title": "宜蘭人故事館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "與家的距離",
+          "創作聯展"
+        ],
+        "url": "https://www.yilanstory.com.tw/"
+      }
+    ]
+  },
+  "五股守讓堂": {
+    "sources": [
+      {
+        "url": "https://www.culture.ntpc.gov.tw/wgsrh",
+        "title": "五股守讓堂"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "五股守讓堂",
+          "閱讀書籤",
+          "大地的味道"
+        ],
+        "url": "https://www.culture.ntpc.gov.tw/wgsrh"
+      }
+    ]
+  },
+  "打狗英國領事館文化園區": {
+    "sources": [
+      {
+        "url": "https://britishconsulate.kcg.gov.tw/",
+        "title": "打狗英國領事館文化園區"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "打狗英國領事館文化園區常設展"
+        ],
+        "url": "https://britishconsulate.kcg.gov.tw/"
+      }
+    ]
+  },
+  "齊柏林空間": {
+    "sources": [
+      {
+        "url": "https://www.chipolin.org/exhibition",
+        "title": "齊柏林空間"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "齊柏林空間年度特展",
+          "齊柏林俯瞰台灣"
+        ],
+        "url": "https://www.chipolin.org/exhibition"
+      }
+    ]
+  },
+  "舊打狗驛故事館": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/TakaoMuseum/",
+        "title": "舊打狗驛故事館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "舊打狗驛故事館常設展"
+        ],
+        "url": "https://www.facebook.com/TakaoMuseum/"
+      }
+    ]
+  },
+  "見城館": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/cofch.khm/",
+        "title": "見城館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "見城館常設展"
+        ],
+        "url": "https://www.facebook.com/cofch.khm/"
+      }
+    ]
+  },
+  "嘉義縣表演藝術中心": {
+    "sources": [
+      {
+        "url": "https://cypac.cyhg.gov.tw/",
+        "title": "嘉義縣表演藝術中心"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "三昧堂精工布袋戲展"
+        ],
+        "url": "https://cypac.cyhg.gov.tw/"
+      }
+    ]
+  },
+  "新北市立十三行博物館": {
+    "sources": [
+      {
+        "url": "https://www.sshm.ntpc.gov.tw/",
+        "title": "新北市立十三行博物館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "阮的海海人生",
+          "台韓海洋文化交流特展"
+        ],
+        "url": "https://www.sshm.ntpc.gov.tw/"
+      }
+    ]
+  },
+  "新竹市玻璃工藝博物館": {
+    "sources": [
+      {
+        "url": "https://culture.hccg.gov.tw/ch/home.jsp?id=146&parentpath=0,145",
+        "title": "新竹市玻璃工藝博物館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "台日玻璃藝術交流展",
+          "生活即是藝術"
+        ],
+        "url": "https://culture.hccg.gov.tw/ch/home.jsp?id=146&parentpath=0,145"
+      }
+    ]
+  },
+  "高雄市電影館": {
+    "sources": [
+      {
+        "url": "https://kfa.kcg.gov.tw/",
+        "title": "高雄市電影館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "高雄市電影館親子教育展-光影魔幻樂園"
+        ],
+        "url": "https://kfa.kcg.gov.tw/"
+      }
+    ]
+  },
+  "高雄流行音樂中心": {
+    "sources": [
+      {
+        "url": "https://kpmc.com.tw/",
+        "title": "高雄流行音樂中心"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "藍寶石大歌廳",
+          "秀場傳奇"
+        ],
+        "url": "https://kpmc.com.tw/"
+      }
+    ]
+  },
+  "新莊文化藝術中心": {
+    "sources": [
+      {
+        "url": "https://museums.moc.gov.tw/MusData/Detail?museumsId=9fa29869-bd9a-4de0-a3d7-a53b146d6f81",
+        "title": "新莊文化藝術中心"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "凝視與沉思",
+          "胡文賢油畫展"
+        ],
+        "url": "https://museums.moc.gov.tw/MusData/Detail?museumsId=9fa29869-bd9a-4de0-a3d7-a53b146d6f81"
+      }
+    ]
+  },
+  "臺北市藝文推廣處-大稻埕戲苑": {
+    "sources": [
+      {
+        "url": "https://www.tapo.gov.taipei/News.aspx?n=3985BE0F0DDA52EB&sms=AE4221F47FAC4FB7",
+        "title": "臺北市藝文推廣處-大稻埕戲苑"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "請戲-布袋戲一條街"
+        ],
+        "url": "https://www.tapo.gov.taipei/News.aspx?n=3985BE0F0DDA52EB&sms=AE4221F47FAC4FB7"
+      }
+    ]
+  },
+  "國立成功大學博物館": {
+    "sources": [
+      {
+        "url": "https://museum.ncku.edu.tw/",
+        "title": "國立成功大學博物館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "型-心身一如",
+          "台日協作展"
+        ],
+        "url": "https://museum.ncku.edu.tw/"
+      }
+    ]
+  },
+  "立法院 文化走廊": {
+    "sources": [
+      {
+        "url": "https://www.ly.gov.tw/",
+        "title": "立法院 文化走廊"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "積吶虹光",
+          "光譜中的我們"
+        ],
+        "url": "https://www.ly.gov.tw/"
+      }
+    ]
+  },
+  "臺南市民治市政中心": {
+    "sources": [
+      {
+        "url": "https://www.tainan.gov.tw/",
+        "title": "臺南市民治市政中心"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://www.tainan.gov.tw/"
+      }
+    ]
+  },
+  "臺南市麻豆區文化館": {
+    "sources": [
+      {
+        "url": "https://www.twtainan.net/zh-tw/attractions/detail/947/",
+        "title": "臺南市麻豆區文化館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "漫慢陶人生路",
+          "黑嚕嚕柴藝作品聯展"
+        ],
+        "url": "https://www.twtainan.net/zh-tw/attractions/detail/947/"
+      }
+    ]
+  },
+  "好地下藝術空間": {
+    "sources": [
+      {
+        "url": "https://goodunderground.weebly.com/",
+        "title": "好地下藝術空間"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "浮光影藏十─",
+          "私人座標靈感森林",
+          "攝影書專題展"
+        ],
+        "url": "https://goodunderground.weebly.com/"
+      }
+    ]
+  },
+  "朝代藝術畫廊": {
+    "sources": [
+      {
+        "url": "https://www.dynastyart.com/",
+        "title": "朝代藝術畫廊"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "李岳凌個展"
+        ],
+        "url": "https://www.dynastyart.com/"
+      }
+    ]
+  },
+  "加沃文行 +wò Cultural Practice": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/WuguBranch/",
+        "title": "加沃文行 +wò Cultural Practice"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "未完的軌跡",
+          "Unfinished",
+          "Trajectories"
+        ],
+        "url": "https://www.facebook.com/WuguBranch/"
+      }
+    ]
+  },
+  "新光三越台北南西店 一館 9F 活動會館": {
+    "sources": [
+      {
+        "url": "https://www.skm.com.tw/",
+        "title": "新光三越台北南西店 一館 9F 活動會館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "JOJO",
+          "CARAVAN",
+          "飆馬野郎複製原畫展"
+        ],
+        "url": "https://www.skm.com.tw/"
+      }
+    ]
+  },
+  "新莊棒球場": {
+    "sources": [
+      {
+        "url": "https://www.fubonguardians.com/",
+        "title": "新莊棒球場"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "進擊的巨人",
+          "富邦棒球主題日"
+        ],
+        "url": "https://www.fubonguardians.com/"
+      }
+    ]
+  },
+  "清泉藝術之森": {
+    "sources": [
+      {
+        "url": "https://travel.hsinchu.gov.tw/",
+        "title": "清泉藝術之森"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "學生書法、畫作及常設展"
+        ],
+        "url": "https://travel.hsinchu.gov.tw/"
+      }
+    ]
+  },
+  "漢寶德紀念館": {
+    "sources": [
+      {
+        "url": "https://hptmm.tnnua.edu.tw/p/412-1074-4024.php?Lang=zh-tw",
+        "title": "漢寶德紀念館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "十個透明喇叭與一隻蟬",
+          "鍾宇豪個展"
+        ],
+        "url": "https://hptmm.tnnua.edu.tw/p/412-1074-4024.php?Lang=zh-tw"
+      }
+    ]
+  },
+  "帝門藝術中心": {
+    "sources": [
+      {
+        "url": "https://www.dimensionsart.com/",
+        "title": "帝門藝術中心"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "帝門藝術市集"
+        ],
+        "url": "https://www.dimensionsart.com/"
+      }
+    ]
+  },
+  "戰爭與和平紀念公園主題館": {
+    "sources": [
+      {
+        "url": "https://warpeace.khm.org.tw/",
+        "title": "戰爭與和平紀念公園主題館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "戰爭與和平紀念公園主題館常設展"
+        ],
+        "url": "https://warpeace.khm.org.tw/"
+      }
+    ]
+  },
+  "森初．moricasa art": {
+    "sources": [
+      {
+        "url": "https://www.moricasa.com/showrooms/9",
+        "title": "森初．moricasa art"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "羅翌慎個展"
+        ],
+        "url": "https://www.moricasa.com/showrooms/9"
+      }
+    ]
+  },
+  "胡克敏紀念館": {
+    "sources": [
+      {
+        "url": "https://www.hukemin.com/18",
+        "title": "胡克敏紀念館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "胡克敏水墨百花圖集原作展"
+        ],
+        "url": "https://www.hukemin.com/18"
+      }
+    ]
+  },
+  "臺中市臻品藝術中心": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/22Pierre/?locale=zh_TW",
+        "title": "臺中市臻品藝術中心"
+      },
+      {
+        "url": "https://www.lpd.com.tw/art-content.php?ID=219",
+        "title": "臺中市臻品藝術中心 展覽"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "姍姍向野"
+        ],
+        "url": "https://www.lpd.com.tw/art-content.php?ID=219"
+      },
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://www.facebook.com/22Pierre/?locale=zh_TW"
+      }
+    ]
+  },
+  "臺南市方圓美術館": {
+    "sources": [
+      {
+        "url": "https://www.fy-mofa.org.tw/exhibition-information/current-exhibitions",
+        "title": "臺南市方圓美術館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "乘風而起書畫會_2026丙午年_首展"
+        ],
+        "url": "https://www.fy-mofa.org.tw/exhibition-information/current-exhibitions"
+      }
+    ]
+  },
+  "臺南．家具產業博物館": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/940514fmmit/?locale=zh_TW",
+        "title": "臺南．家具產業博物館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "工藝境象",
+          "異材．技藝．職人精神"
+        ],
+        "url": "https://www.facebook.com/940514fmmit/?locale=zh_TW"
+      }
+    ]
+  },
+  "臺灣省政資料館": {
+    "sources": [
+      {
+        "url": "https://aaa.archives.tw/tw/event/306.html",
+        "title": "臺灣省政資料館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "奇蹟之島─1970-1980從開發到保育台灣建設檔案特展"
+        ],
+        "url": "https://aaa.archives.tw/tw/event/306.html"
+      }
+    ]
+  },
+  "蔣勳文化基金會 時善慧館": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/p/%E6%99%82%E5%96%84%E6%85%A7%E9%A4%A8-61574121317652/?locale=zh_TW",
+        "title": "蔣勳文化基金會 時善慧館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "祇樹給孤獨園"
+        ],
+        "url": "https://www.facebook.com/p/%E6%99%82%E5%96%84%E6%85%A7%E9%A4%A8-61574121317652/?locale=zh_TW"
+      }
+    ]
+  },
+  "郭子究音樂文化館": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/kuotzuchiu/",
+        "title": "郭子究音樂文化館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "不是為了獵捕而存在",
+          "蜘蛛─林政璋創作展"
+        ],
+        "url": "https://www.facebook.com/kuotzuchiu/"
+      }
+    ]
+  },
+  "雨果曐Gallery": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/p/%E9%9B%A8%E6%9E%9C%E6%9B%90-Gallery-100076348324653/",
+        "title": "雨果曐Gallery"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "張璧蘭\\ 個展\\ ・"
+        ],
+        "url": "https://www.facebook.com/p/%E9%9B%A8%E6%9E%9C%E6%9B%90-Gallery-100076348324653/"
+      }
+    ]
+  },
+  "高雄兒童美術館": {
+    "sources": [
+      {
+        "url": "https://www.kmfa.gov.tw/",
+        "title": "高雄兒童美術館"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "生活藏寶圖"
+        ],
+        "url": "https://www.kmfa.gov.tw/"
+      }
+    ]
+  },
+  "遠雄海洋公園": {
+    "sources": [
+      {
+        "url": "https://www.farglory-oceanpark.com.tw/",
+        "title": "遠雄海洋公園"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "進擊的巨人",
+          "遠雄海洋公園"
+        ],
+        "url": "https://www.farglory-oceanpark.com.tw/"
+      }
+    ]
+  },
+  "澎湖郵便局": {
+    "sources": [
+      {
+        "url": "https://www.penghu-go.tw/penghugo/index.php?action=brands_detail&br_uid=2179",
+        "title": "澎湖郵便局"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "烽火船說-水下文化資產特展",
+          "台灣海洋戰爭史"
+        ],
+        "url": "https://www.penghu-go.tw/penghugo/index.php?action=brands_detail&br_uid=2179"
+      }
+    ]
+  },
+  "高雄市旗山生活文化園區": {
+    "sources": [
+      {
+        "url": "https://www.facebook.com/p/%E6%97%97%E5%B1%B1%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80%E5%B8%82%E5%AE%9A%E5%8F%A4%E8%B9%9F%E8%88%8A%E9%BC%93%E5%B1%B1%E5%9C%8B%E5%B0%8F-100057066475302/",
+        "title": "高雄市旗山生活文化園區"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "旗山生活文化園區常設展"
+        ],
+        "url": "https://www.facebook.com/p/%E6%97%97%E5%B1%B1%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80%E5%B8%82%E5%AE%9A%E5%8F%A4%E8%B9%9F%E8%88%8A%E9%BC%93%E5%B1%B1%E5%9C%8B%E5%B0%8F-100057066475302/"
+      }
+    ]
+  },
+  "國立臺灣工藝研究發展中心": {
+    "sources": [
+      {
+        "url": "https://www.ntcri.gov.tw/home/zh-tw/exhibition",
+        "title": "國立臺灣工藝研究發展中心 展覽"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://www.ntcri.gov.tw/home/zh-tw/exhibition"
+      }
+    ]
+  },
+  "國立臺灣工藝研究發展中心-臺北當代工藝設計分館": {
+    "sources": [
+      {
+        "url": "https://www.ntcri.gov.tw/home/zh-tw/taipei",
+        "title": "臺北當代工藝設計分館"
+      },
+      {
+        "url": "https://www.ntcri.gov.tw/home/zh-tw/exhibition",
+        "title": "國立臺灣工藝研究發展中心 展覽"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://www.ntcri.gov.tw/home/zh-tw/exhibition"
+      }
+    ]
+  },
+  "中壢藝術館": {
+    "sources": [
+      {
+        "url": "https://www.afmc.gov.tw/Activity?c3=hall2&c5=performance2&k=",
+        "title": "中壢藝術館 展演活動"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://www.afmc.gov.tw/Activity?c3=hall2&c5=performance2&k="
+      }
+    ]
+  },
+  "亞洲大學現代美術館": {
+    "sources": [
+      {
+        "url": "https://asiamodern.asia.edu.tw/p/403-1005-61.php?Lang=zh-tw",
+        "title": "亞洲大學現代美術館 正在展出"
+      },
+      {
+        "url": "https://asiamodern.asia.edu.tw/p/403-1005-62.php?Lang=zh-tw",
+        "title": "亞洲大學現代美術館 即將展出"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "共生未來",
+          "正在展出"
+        ],
+        "url": "https://asiamodern.asia.edu.tw/p/403-1005-61.php?Lang=zh-tw"
+      },
+      {
+        "title_patterns": [
+          "典藏對話",
+          "即將展出"
+        ],
+        "url": "https://asiamodern.asia.edu.tw/p/403-1005-62.php?Lang=zh-tw"
+      },
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://asiamodern.asia.edu.tw/p/403-1005-61.php?Lang=zh-tw"
+      }
+    ]
+  },
+  "嚴禁煙火藝廊": {
+    "sources": [
+      {
+        "url": "https://mozukugallery.com/",
+        "title": "嚴禁煙火藝廊"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://mozukugallery.com/"
+      }
+    ]
+  },
+  "台灣好基金會": {
+    "sources": [
+      {
+        "url": "https://new.lovelytaiwan.org.tw/",
+        "title": "台灣好基金會"
+      },
+      {
+        "url": "https://new.lovelytaiwan.org.tw/news",
+        "title": "台灣好基金會 最新消息"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://new.lovelytaiwan.org.tw/news"
+      }
+    ]
+  },
+  "財團法人鴻梅文化藝術基金會": {
+    "sources": [
+      {
+        "url": "https://grandview.org.tw/",
+        "title": "財團法人鴻梅文化藝術基金會"
+      },
+      {
+        "url": "https://grandview.org.tw/news/?e-filter-02df351-news-tag=exhibition-info",
+        "title": "鴻梅文化藝術基金會 展覽資訊"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://grandview.org.tw/news/?e-filter-02df351-news-tag=exhibition-info"
+      }
+    ]
+  },
+  "長興美術館": {
+    "sources": [
+      {
+        "url": "https://www.eternal-group.com/Eternalmuseum/Home",
+        "title": "長興美術館"
+      },
+      {
+        "url": "https://www.eternal-group.com/Eternalmuseum/Exhibition",
+        "title": "長興美術館 常設展"
+      },
+      {
+        "url": "https://www.eternal-group.com/Eternalmuseum/CurrentExhibition",
+        "title": "長興美術館 當期展覽"
+      }
+    ],
+    "fallbacks": [
+      {
+        "title_patterns": [
+          "常設"
+        ],
+        "url": "https://www.eternal-group.com/Eternalmuseum/Exhibition"
+      },
+      {
+        "title_patterns": [
+          ".+"
+        ],
+        "url": "https://www.eternal-group.com/Eternalmuseum/CurrentExhibition"
+      }
+    ]
+  }
+}

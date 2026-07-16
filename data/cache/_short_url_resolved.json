@@ -1,0 +1,495 @@
+{
+ "亞書藝所": [
+  {
+   "short": "https://reurl.cc/DxMnjN",
+   "error": "Error",
+   "message": "Page.evaluate: Execution context was destroyed, most likely because of a navigation"
+  },
+  {
+   "short": "https://reurl.cc/N2dEr9",
+   "error": "Error",
+   "message": "Page.goto: Navigation to \"https://reurl.cc/N2dEr9\" is interrupted by another navigation to \"https://www.facebook.com/permalink.php?story_fbid=pfbid02X9F3tnRxSsL"
+  }
+ ],
+ "佛光緣美術館台中館": [
+  {
+   "short": "https://reurl.cc/9bN6mj",
+   "error": "Error",
+   "message": "Page.goto: Navigation to \"https://reurl.cc/9bN6mj\" is interrupted by another navigation to \"https://reurl.cc/N2dEr9\"\nCall log:\n  - navigating to \"https://reurl."
+  }
+ ],
+ "林之助紀念館": [
+  {
+   "short": "https://reurl.cc/mplQAW",
+   "final": "https://www.facebook.com/LinChihChuMemorial/posts/pfbid02KsouYfreszzQmbVCYiKMQUdVL1fW1Gyhk85FaMYj6X89rmumwmiufmri18o3hmiWl?rdid=jOaWKoyNYn7GSx3C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1A68ThMZs6%2F",
+   "domain": "facebook.com",
+   "title": "國立臺中教育大學美術學系115年教授聯展 ‹... - 林之助紀念館 Lin, Chih-Chu Memorial",
+   "links": []
+  }
+ ],
+ "辛藝術 Hsin Art Gallery": [
+  {
+   "short": "https://reurl.cc/Wb8vKe",
+   "final": "https://www.facebook.com/hsinartgallery/posts/pfbid0JvEgXVhrUcaikPxGYkRgMMqCPf86EFFPpPPDHULFhmx7bUN4ihpaHg89L9g6GvQAl?rdid=cBYS7gK95JcQQ8uU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F14cbFMWPkjm%2F",
+   "domain": "facebook.com",
+   "title": "Facebook",
+   "links": []
+  }
+ ],
+ "毛刺空間 Glitch home": [
+  {
+   "short": "https://reurl.cc/DxYD3j",
+   "final": "https://www.facebook.com/permalink.php?story_fbid=pfbid0YS9iebb8i7Bm5DRSSG9Mh1Dh3kxXkbAJNqgmvDriprGXx4ypTNjay2RJ9ypdfnfGl&id=61556692779891&__cft__[0]=AZYkzpbiHfnR7iQLx1-Jw46X2tF0JAHIJgKWVPATONYkYYticmbWjORBVYnA_gtiC4_QthmXAIhvpn_wxVMgoQo1pEfu_qJ9pHF98tDwnIjAM1fVzJJTINOkRu_HvGsFJUNKq3iLtjnMFW08CMplgYjLP7J_C9_f8yPM4GnaUc_mqNbfXeB24UmAnrFpDklVhIExh8DIVtFtCrFRjD1bq70n&__tn__=%2CO%2CP-R",
+   "domain": "facebook.com",
+   "title": "毛刺 Glitch - 【 亞洲漫畫倉庫｜最新展訊 】 毛刺推出陶藝品牌 @wecandancetogether...",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0YS9iebb8i7Bm5DRSSG9Mh1Dh3kxXkbAJNqgmvDriprGXx4ypTNjay2RJ9ypdfnfGl%26id%3D61556692779891%26__cft__%255B0%255D%3DAZYkzpbiHfnR7iQLx1-Jw46X2tF0JAHIJgKWVPATONYkYYticmbWjORBVYnA_gtiC4_QthmXAIhvpn_wxVMgoQo1pEfu_qJ9pHF98tDwnIjAM1fVzJJTINOkRu_HvGsFJUNKq3iLtjnMFW08CMplgYjLP7J_C9_f8yPM4GnaUc_mqNbfXeB24UmAnrFpDklVhIExh8DIVtFtCrFRjD1bq70n%26__tn__%3D%252CO%252CP-R"
+    }
+   ]
+  }
+ ],
+ "盧安藝術文化有限公司": [
+  {
+   "short": "https://reurl.cc/EmYa7A",
+   "final": "https://www.facebook.com/LuanSurge/posts/pfbid02w8tvDhtYnpjgZAFG1cvLFCAkZhnGHQ4P5wmQig14RUcgTXDMtYfTgq4wZpGuzAUcl",
+   "domain": "facebook.com",
+   "title": "盧安 潮 Luan Surge - 【展覽開幕｜遠望——孫少英水彩中的台灣風景】... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2FLuanSurge%2Fposts%2Fpfbid02w8tvDhtYnpjgZAFG1cvLFCAkZhnGHQ4P5wmQig14RUcgTXDMtYfTgq4wZpGuzAUcl"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/stories/101116275569099/UzpfSVNDOjE1MDM4Mzg4OTEyODE0MTI=/?view_single=false&__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=%3C%3C%2CP-R"
+    },
+    {
+     "text": "盧安 潮 Luan Surge",
+     "href": "https://www.facebook.com/LuanSurge?__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=-UC%2CP-R"
+    },
+    {
+     "text": "3月23日",
+     "href": "https://www.facebook.com/LuanSurge/posts/pfbid02vxsgYjLBoCY8CdKNfmSY7e5wc3PytzkjfngRFcpMV2XXcG1MkqmGTx6s68T4cQdrl?__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=%2CO%2CP-R"
+    },
+    {
+     "text": "＃盧安潮",
+     "href": "https://www.facebook.com/hashtag/%E7%9B%A7%E5%AE%89%E6%BD%AE?__eep__=6&__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=*NK-R"
+    },
+    {
+     "text": "＃盧安藝術",
+     "href": "https://www.facebook.com/hashtag/%E7%9B%A7%E5%AE%89%E8%97%9D%E8%A1%93?__eep__=6&__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=*NK-R"
+    },
+    {
+     "text": "＃水彩",
+     "href": "https://www.facebook.com/hashtag/%E6%B0%B4%E5%BD%A9?__eep__=6&__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=*NK-R"
+    },
+    {
+     "text": "#台灣風景",
+     "href": "https://www.facebook.com/hashtag/%E5%8F%B0%E7%81%A3%E9%A2%A8%E6%99%AF?__eep__=6&__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=*NK-R"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/photo/?fbid=1247275604286488&set=a.490992956581427&__cft__[0]=AZYoTQXkt3wJG4hmUMjVe5YmCZdeMMERgfMuIpK4W4EdfGLBLRFMSTylMML-FxpSngued9RStTS9oMGTXtvWJNoT7hm25rDX5GXCO9jUAXermwS6cnOecWnKugYFpBg2-eSdzuPr9eQJVAy4RfXyEVwf7nlEORW8UWoqvvgG_CPB7Q&__tn__=EH-R"
+    }
+   ]
+  }
+ ],
+ "綠光 gallery": [
+  {
+   "short": "https://reurl.cc/epQZdW",
+   "final": "https://www.facebook.com/greenray.marute/posts/pfbid02h5kYxzYjSKLuSH2DT5EJKWx53Xx41wptF2QJMojpyZ6xgCZXpKA8fijZGZYPZvz6l?__cft__[0]=AZbC-f-JVjG9TeZFJtK0z-BFSH9WPexut-DkgYVL47FZnK7Y-X-_SxTJZ1HSzRoy8fNCoyazxr5NI0mKd8I40baDqxt_ZT7y54MjVOVMPxutNFCkLUBTxnxLVRk6C-MfrtS3rufTn5zVVlhu5X4utEujBGXMsqjGg3G7gmNqrSuq4knXNzGbMsMiy3YSHOFMYH4&__tn__=%2CO%2CP-R",
+   "domain": "facebook.com",
+   "title": "",
+   "links": []
+  }
+ ],
+ "豐藝館": [
+  {
+   "short": "https://reurl.cc/V27nyR",
+   "final": "https://www.facebook.com/photo?fbid=1565460828918119&set=a.531575015640044&locale=zh_TW",
+   "domain": "facebook.com",
+   "title": "Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fphoto%3Ffbid%3D1565460828918119%26set%3Da.531575015640044%26locale%3Dzh_TW"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/?__tn__=*F"
+    },
+    {
+     "text": "忘記密碼？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    }
+   ]
+  }
+ ],
+ "寬藝術空間": [
+  {
+   "short": "https://reurl.cc/0myqmo",
+   "final": "https://www.facebook.com/kuanartspace/posts/pfbid0EJ8kSyUvKiMLpYCCKffRZfB6xtZGrN9w1DkJZZFME5w6u6G8Q2FyFQcUoMqDeVAql?rdid=QGgNkUmORAP0UbEd",
+   "domain": "facebook.com",
+   "title": "寬藝術空間 - 【 館休公告與展覽預告 Closed ＆Upcoming 】 5月1日(五)至... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fkuanartspace%2Fposts%2Fpfbid0EJ8kSyUvKiMLpYCCKffRZfB6xtZGrN9w1DkJZZFME5w6u6G8Q2FyFQcUoMqDeVAql%3Frdid%3DQGgNkUmORAP0UbEd"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    }
+   ]
+  }
+ ],
+ "國璽藝術": [
+  {
+   "short": "https://reurl.cc/53N7rG",
+   "final": "https://www.facebook.com/GSAGallery/posts/pfbid032xNFGrnjASGSpvVW4kK9AVEcuW636bjJSdZmMhducWPjduoaEF9zHy7RKPxUTUpdl?rdid=YZwL1po8NIKYB9iu",
+   "domain": "facebook.com",
+   "title": "📣📣【 館內個展-展覽預告 Upcoming... - 國璽藝術 Great Seal Art / GSA Gallery | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2FGSAGallery%2Fposts%2Fpfbid032xNFGrnjASGSpvVW4kK9AVEcuW636bjJSdZmMhducWPjduoaEF9zHy7RKPxUTUpdl%3Frdid%3DYZwL1po8NIKYB9iu"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/GSAGallery?__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=%3C%3C%2CP-R"
+    },
+    {
+     "text": "國璽藝術 Great Seal Art / GSA Gallery",
+     "href": "https://www.facebook.com/GSAGallery?__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=-]C%2CP-R"
+    },
+    {
+     "text": "2026.05【廖敏君個展Min Chun LIAO Solo Exhibition】",
+     "href": "https://www.facebook.com/media/set/?vanity=GSAGallery&set=a.1416570440489640&__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=-UC%2CP-R"
+    },
+    {
+     "text": "5月18日",
+     "href": "https://www.facebook.com/GSAGallery/posts/pfbid0yEh74aCKmghVq5wFycB5EAnmHZiQy3jFqzBL2G5iHuKDLgkyUpvsd6JSC827Frxpl?__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=%2CO%2CP-R"
+    },
+    {
+     "text": "廖敏君",
+     "href": "https://www.facebook.com/minchun.liao?__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=-]K-R"
+    },
+    {
+     "text": "#gsagallery",
+     "href": "https://www.facebook.com/hashtag/gsagallery?__eep__=6&__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=*NK-R"
+    },
+    {
+     "text": "#minchunliao",
+     "href": "https://www.facebook.com/hashtag/minchunliao?__eep__=6&__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=*NK-R"
+    },
+    {
+     "text": "#exhibitions",
+     "href": "https://www.facebook.com/hashtag/exhibitions?__eep__=6&__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=*NK-R"
+    },
+    {
+     "text": "#contemporaryart",
+     "href": "https://www.facebook.com/hashtag/contemporaryart?__eep__=6&__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=*NK-R"
+    },
+    {
+     "text": "#artcollectors",
+     "href": "https://www.facebook.com/hashtag/artcollectors?__eep__=6&__cft__[0]=AZazfCzSOTg5-lwGHnwNCkfP-1DQf29TpzA3pFaeSfJxl-gcUjvcGr6XS6ymxFUC0cIT4_UDX0yLWMJZ8zLu_1iyw36__IB-oOg-XndvWDmuz7IeQhuonaZa2eNqqgFsB-JhWx8NZNm22UC1mO4PmrJ_W1lTOjNBNgDX1ch5SPBXWw&__tn__=*NK-R"
+    }
+   ]
+  }
+ ],
+ "ZASSO 草也": [
+  {
+   "short": "https://reurl.cc/WbQzgO",
+   "final": "https://www.facebook.com/zasso72/posts/pfbid02sSRVVh7fjpNLkUNb1spzC9Mspq8gZszCmuUQfhLJjK1sZN4DfKBapA1wxhUFCvR7l?rdid=I420qVuhAmUYOr8S",
+   "domain": "facebook.com",
+   "title": "ZASSO 草也 - . Elina Försti Solo Exhibition 艾琳娜・福斯提 個展...",
+   "links": []
+  }
+ ],
+ "大河美術": [
+  {
+   "short": "https://reurl.cc/Dxke1d",
+   "final": "https://www.facebook.com/RIVERART/posts/pfbid02bSuFLS9m6Uw5DycxKje2Lit7CUcL1c6jTTZSLch8beYiFrELhoZL4QNodgnzNAXgl?rdid=DYsO6MN9UCv3SIYm",
+   "domain": "facebook.com",
+   "title": "Opening next Saturday, June 6th.... - RIVER ART Gallery 大河美術",
+   "links": []
+  }
+ ],
+ "太平買菸場": [
+  {
+   "short": "https://reurl.cc/A9mz1Y",
+   "final": "https://www.facebook.com/taipingdistrict/posts/pfbid0BYoiWTPxJRK6NREpDhyiPbqe9zYz4wJVmbAP7fpTRckFJY9V5q4VYHW7BhDNMWmTl",
+   "domain": "facebook.com",
+   "title": "臺中市太平區公所 - #太平買菸場 在地藝文展示區新展【筌織．構築-#太平原住民工藝展】，歡迎蒞臨參觀~👍... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Ftaipingdistrict%2Fposts%2Fpfbid0BYoiWTPxJRK6NREpDhyiPbqe9zYz4wJVmbAP7fpTRckFJY9V5q4VYHW7BhDNMWmTl"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/taipingdistrict?__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=%3C%3C%2CP-R"
+    },
+    {
+     "text": "臺中市太平區公所",
+     "href": "https://www.facebook.com/taipingdistrict?__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=-UC%2CP-R"
+    },
+    {
+     "text": "5月29日下午4:28",
+     "href": "https://www.facebook.com/taipingdistrict/posts/pfbid02F6ZxReL1RfLJNtsrF4xH6QUSC9WQZ96k8E2dj5VM22him4v1e99JBcNCkZDftxN6l?__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=%2CO%2CP-R"
+    },
+    {
+     "text": "#太平買菸場",
+     "href": "https://www.facebook.com/hashtag/%E5%A4%AA%E5%B9%B3%E8%B2%B7%E8%8F%B8%E5%A0%B4?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    },
+    {
+     "text": "#太平原住民工藝展",
+     "href": "https://www.facebook.com/hashtag/%E5%A4%AA%E5%B9%B3%E5%8E%9F%E4%BD%8F%E6%B0%91%E5%B7%A5%E8%97%9D%E5%B1%95?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    },
+    {
+     "text": "#太平買菸場",
+     "href": "https://www.facebook.com/hashtag/%E5%A4%AA%E5%B9%B3%E8%B2%B7%E8%8F%B8%E5%A0%B4?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    },
+    {
+     "text": "#吉路塱嬡",
+     "href": "https://www.facebook.com/hashtag/%E5%90%89%E8%B7%AF%E5%A1%B1%E5%AC%A1?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    },
+    {
+     "text": "#構樹",
+     "href": "https://www.facebook.com/hashtag/%E6%A7%8B%E6%A8%B9?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    },
+    {
+     "text": "#潘明通",
+     "href": "https://www.facebook.com/hashtag/%E6%BD%98%E6%98%8E%E9%80%9A?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    },
+    {
+     "text": "#魚筌",
+     "href": "https://www.facebook.com/hashtag/%E9%AD%9A%E7%AD%8C?__eep__=6&__cft__[0]=AZbOM3OiJIckgfrIzhl3M1trGICrobEoqITi8lsPOCPcVJcnJNqcU6yF0GJr_-wdhLMGvcAKErTDnDy9aoR4wQFVtIyrcyQDg_Xk-T98-Ef-SeEjTENhbCkjx76VCEwP-q6b5Zw7bgdrDaEfgQ2m9iV6AjLs_mETgYSgRJW8UwhePw&__tn__=*NK-R"
+    }
+   ]
+  }
+ ],
+ "Epic禪藝實相人文空間": [
+  {
+   "short": "https://reurl.cc/4le0Kj",
+   "final": "https://www.facebook.com/baoyanepic/posts/pfbid0LtpQYULvzroAsLnHJVwn3qXthptxpyjDqGzdHqr49QXd8Yde2GXDuWpf2tqseJXfl",
+   "domain": "facebook.com",
+   "title": "Epic禪藝實相人文空間 - ［EPIC 禪藝實相人文空間藝文大曉事📣📣～... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fbaoyanepic%2Fposts%2Fpfbid0LtpQYULvzroAsLnHJVwn3qXthptxpyjDqGzdHqr49QXd8Yde2GXDuWpf2tqseJXfl"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/stories/122095071633003120/UzpfSVNDOjEzMjUxMjc0OTMxMzgxNTM=/?view_single=false&__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=%3C%3C%2CP-R"
+    },
+    {
+     "text": "Epic禪藝實相人文空間",
+     "href": "https://www.facebook.com/baoyanepic?__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=-]C%2CP-R"
+    },
+    {
+     "text": "陳鴻振",
+     "href": "https://www.facebook.com/jhon.wu2?__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=-]C%2CP-R"
+    },
+    {
+     "text": "郎亞玲",
+     "href": "https://www.facebook.com/yaling.lang?__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=-]C%2CP-R"
+    },
+    {
+     "text": "Epic禪藝實相人文空間",
+     "href": "https://www.facebook.com/baoyanepic?__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=-]C%2CP-R"
+    },
+    {
+     "text": "5月24日下午3:10",
+     "href": "https://www.facebook.com/baoyanepic/posts/pfbid0LmHwa8cu672JXkretk71ScY5oZnQciy4MfKeX8uuQVKwi3SG133w7ccvJ2RHxnkNl?__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=%2CO%2CP-R"
+    },
+    {
+     "text": "台中市",
+     "href": "https://www.facebook.com/pages/%E5%8F%B0%E4%B8%AD%E5%B8%82/110922325599480?__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=%2CP-R"
+    },
+    {
+     "text": "#心來境去",
+     "href": "https://www.facebook.com/hashtag/%E5%BF%83%E4%BE%86%E5%A2%83%E5%8E%BB?__eep__=6&__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=*NK-R"
+    },
+    {
+     "text": "#黎志文",
+     "href": "https://www.facebook.com/hashtag/%E9%BB%8E%E5%BF%97%E6%96%87?__eep__=6&__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=*NK-R"
+    },
+    {
+     "text": "#陳世強",
+     "href": "https://www.facebook.com/hashtag/%E9%99%B3%E4%B8%96%E5%BC%B7?__eep__=6&__cft__[0]=AZbbKkV8KDm8Epz1bWdm0XWQFotXZSlYO1C8Z7769EmDxWIw5Qdr0P6rrrzkSI_c-j-yg-K2ehHOTX9bGLG4dZ-AMTfvm9z_Wpwu3ysWDKFrUhYNzhflB8dlCETZoZmdxKoggJJkhVHwxJNf2pMueRLTWLZM7XBc7yJwjRvwyxhCjg&__tn__=*NK-R"
+    }
+   ]
+  }
+ ],
+ "霧峰林家宮保第園區": [
+  {
+   "short": "https://reurl.cc/O63xvX",
+   "final": "https://www.facebook.com/wufenglins/posts/pfbid02t7xVWHyBebKS6YyZKZHW2XcFT4rX4vmyhXfDAZcNLVN72iYZefGv4hT6V1HdHNLyl?locale=zh_TW",
+   "domain": "facebook.com",
+   "title": "霧峰林家宮保第園區 - 從巴蜀雲煙到宮保第 四川藝術家王波「光‧煙‧塵」山水畫展 跨越時空的當代對話... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fwufenglins%2Fposts%2Fpfbid02t7xVWHyBebKS6YyZKZHW2XcFT4rX4vmyhXfDAZcNLVN72iYZefGv4hT6V1HdHNLyl%3Flocale%3Dzh_TW"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/stories/100384622135462/UzpfSVNDOjE4MjY4NDY5MTUxNDg5MzE=/?view_single=false&__cft__[0]=AZaa3jBfC_sdC7k3nJIIeGjEDbpGx7WAIgY-i_54TVBLIsowf5iYB_ZzyFTVntcwFJvtpZTcaiwXGFnDx-ZdqHuZKY3gH_5-V2oMLw3gEO3I-88NM3Az3D8MT_8m-Nz7Lyjz5GfVYlgs0YyLKE-iJBAZ9A6alfOCo8-AZhALLQiVjw&__tn__=%3C%3C%2CP-R"
+    },
+    {
+     "text": "霧峰林家宮保第園區",
+     "href": "https://www.facebook.com/wufenglins?__cft__[0]=AZaa3jBfC_sdC7k3nJIIeGjEDbpGx7WAIgY-i_54TVBLIsowf5iYB_ZzyFTVntcwFJvtpZTcaiwXGFnDx-ZdqHuZKY3gH_5-V2oMLw3gEO3I-88NM3Az3D8MT_8m-Nz7Lyjz5GfVYlgs0YyLKE-iJBAZ9A6alfOCo8-AZhALLQiVjw&__tn__=-UC%2CP-R"
+    },
+    {
+     "text": "5月15日",
+     "href": "https://www.facebook.com/wufenglins/posts/pfbid02szS2XxF9jtt5umDcayzfNdCJrbZzZa6wvmpHuEAU5rjRxzHbG8TMaWyYNGVLNLeDl?__cft__[0]=AZaa3jBfC_sdC7k3nJIIeGjEDbpGx7WAIgY-i_54TVBLIsowf5iYB_ZzyFTVntcwFJvtpZTcaiwXGFnDx-ZdqHuZKY3gH_5-V2oMLw3gEO3I-88NM3Az3D8MT_8m-Nz7Lyjz5GfVYlgs0YyLKE-iJBAZ9A6alfOCo8-AZhALLQiVjw&__tn__=%2CO%2CP-R"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/photo/?fbid=1431658522341392&set=pcb.1431658645674713&__cft__[0]=AZaa3jBfC_sdC7k3nJIIeGjEDbpGx7WAIgY-i_54TVBLIsowf5iYB_ZzyFTVntcwFJvtpZTcaiwXGFnDx-ZdqHuZKY3gH_5-V2oMLw3gEO3I-88NM3Az3D8MT_8m-Nz7Lyjz5GfVYlgs0YyLKE-iJBAZ9A6alfOCo8-AZhALLQiVjw&__tn__=*b0H-R"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/photo/?fbid=1431658529008058&set=pcb.1431658645674713&__cft__[0]=AZaa3jBfC_sdC7k3nJIIeGjEDbpGx7WAIgY-i_54TVBLIsowf5iYB_ZzyFTVntcwFJvtpZTcaiwXGFnDx-ZdqHuZKY3gH_5-V2oMLw3gEO3I-88NM3Az3D8MT_8m-Nz7Lyjz5GfVYlgs0YyLKE-iJBAZ9A6alfOCo8-AZhALLQiVjw&__tn__=*b1H-R"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/photo/?fbid=1431658525674725&set=pcb.1431658645674713&__cft__[0]=AZaa3jBfC_sdC7k3nJIIeGjEDbpGx7WAIgY-i_54TVBLIsowf5iYB_ZzyFTVntcwFJvtpZTcaiwXGFnDx-ZdqHuZKY3gH_5-V2oMLw3gEO3I-88NM3Az3D8MT_8m-Nz7Lyjz5GfVYlgs0YyLKE-iJBAZ9A6alfOCo8-AZhALLQiVjw&__tn__=*b2H-R"
+    }
+   ]
+  }
+ ],
+ "852藝術空間": [
+  {
+   "short": "https://reurl.cc/YDzqNo",
+   "final": "https://www.facebook.com/thufineart1983/posts/pfbid08tiXTnRN8QU9hwwiMV2Ymx5D8ShNANi3o1PRJuUKzQWZUKTpfxbQYs73dFfKfExbl?rdid=YmCj72vAIxSh4hDA",
+   "domain": "facebook.com",
+   "title": "東海大學美術系 - [東美教師/系友展覽報報] 「勾•勒 - 當代工筆人物白描展」| 鄭志揚... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fthufineart1983%2Fposts%2Fpfbid08tiXTnRN8QU9hwwiMV2Ymx5D8ShNANi3o1PRJuUKzQWZUKTpfxbQYs73dFfKfExbl%3Frdid%3DYmCj72vAIxSh4hDA"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    }
+   ]
+  }
+ ],
+ "窯座": [
+  {
+   "short": "https://reurl.cc/0mNmob",
+   "final": "https://www.facebook.com/events/1299860508963249/?rdid=XpCTUfcyoGA2HAtk&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1byDUjqWmg%2F",
+   "domain": "facebook.com",
+   "title": "成天空隊形 散開 Sky as Formation, Then Scattering",
+   "links": []
+  }
+ ],
+ "養心藝術 Artnutri Gallery": [
+  {
+   "short": "https://reurl.cc/qpepeD",
+   "final": "https://www.facebook.com/artnutrigallery/posts/pfbid028qL8ZWmHkhZcmWWdyuqo9JPViXnPTKqLDoiuAYnBgE9YC9G4vHv32UfUjCGzn1kZl?rdid=lTpqTl4ALurobDRh",
+   "domain": "facebook.com",
+   "title": "UPCOMING EXHIBITION展覽預告|A PLACE... - 養心藝術 Artnutri Gallery | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fartnutrigallery%2Fposts%2Fpfbid028qL8ZWmHkhZcmWWdyuqo9JPViXnPTKqLDoiuAYnBgE9YC9G4vHv32UfUjCGzn1kZl%3Frdid%3DlTpqTl4ALurobDRh"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/stories/103496518461098/UzpfSVNDOjk5NzU4NzA2OTgyMjUyMA==/?view_single=false&__cft__[0]=AZYPSOksiUeqBlkES93E91QI6OiruNz0I6u5tpUYBoTZ8VmCbcv6w03jeQP_VH2iT3lY-y5-s_Mu5IADubN-9sFl8nkJ7mdGEDbrYL9RpMw_1uIT1iHie4quQ2UNSVk8ij7CVzMiQaj5s101UrfOPcdshS2X1eGVsTvxIaJD1k_GkQ&__tn__=%3C%3C%2CP-R"
+    },
+    {
+     "text": "養心藝術 Artnutri Gallery",
+     "href": "https://www.facebook.com/artnutrigallery?__cft__[0]=AZYPSOksiUeqBlkES93E91QI6OiruNz0I6u5tpUYBoTZ8VmCbcv6w03jeQP_VH2iT3lY-y5-s_Mu5IADubN-9sFl8nkJ7mdGEDbrYL9RpMw_1uIT1iHie4quQ2UNSVk8ij7CVzMiQaj5s101UrfOPcdshS2X1eGVsTvxIaJD1k_GkQ&__tn__=-UC%2CP-R"
+    },
+    {
+     "text": "6月4日下午10:14",
+     "href": "https://www.facebook.com/artnutrigallery/posts/pfbid028vUAD6Z1JQMJr51oPXuMQ1aWHcAYqqBqyvuVw5eNHuzDdwFxh9kw3P8E242Cg4Q6l?__cft__[0]=AZYPSOksiUeqBlkES93E91QI6OiruNz0I6u5tpUYBoTZ8VmCbcv6w03jeQP_VH2iT3lY-y5-s_Mu5IADubN-9sFl8nkJ7mdGEDbrYL9RpMw_1uIT1iHie4quQ2UNSVk8ij7CVzMiQaj5s101UrfOPcdshS2X1eGVsTvxIaJD1k_GkQ&__tn__=%2CO%2CP-R"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/photo/?fbid=1473513134792756&set=a.674132784730799&__cft__[0]=AZYPSOksiUeqBlkES93E91QI6OiruNz0I6u5tpUYBoTZ8VmCbcv6w03jeQP_VH2iT3lY-y5-s_Mu5IADubN-9sFl8nkJ7mdGEDbrYL9RpMw_1uIT1iHie4quQ2UNSVk8ij7CVzMiQaj5s101UrfOPcdshS2X1eGVsTvxIaJD1k_GkQ&__tn__=EH-R"
+    }
+   ]
+  }
+ ],
+ "科元藝術中心": [
+  {
+   "short": "https://reurl.cc/7Exld5",
+   "final": "https://www.facebook.com/reel/2293222414750691/?rdid=IMuWZe18ogl2Kl1C&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F1NcpG6gsYj%2F",
+   "domain": "facebook.com",
+   "title": "Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Freel%2F2293222414750691%2F%3Frdid%3DIMuWZe18ogl2Kl1C%26share_url%3Dhttps%253A%252F%252Fwww.facebook.com%252Fshare%252Fr%252F1NcpG6gsYj%252F"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    },
+    {
+     "text": "",
+     "href": "https://www.facebook.com/"
+    },
+    {
+     "text": "忘記密碼？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    }
+   ]
+  }
+ ],
+ "全安堂臺灣太陽餅博物館": [
+  {
+   "short": "https://reurl.cc/Em0YZK",
+   "final": "https://www.facebook.com/taichung.west/posts/pfbid0HX7bRm913Fx9ppZkPBk6zYzuj6FH355Jg6uJJzk4g3VA2tKxn4DpvN2zsQXrDXTkl",
+   "domain": "facebook.com",
+   "title": "臺中市西區區公所 - 🎨【筆墨傳情．藝韻飄香】🎨 西區長青學苑「輕鬆學國畫班」師生聯展，自6月1日起至6月30日於... | Facebook",
+   "links": [
+    {
+     "text": "登入",
+     "href": "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Ftaichung.west%2Fposts%2Fpfbid0HX7bRm913Fx9ppZkPBk6zYzuj6FH355Jg6uJJzk4g3VA2tKxn4DpvN2zsQXrDXTkl"
+    },
+    {
+     "text": "忘記帳號？",
+     "href": "https://www.facebook.com/recover/initiate?ars=royal_blue_bar"
+    }
+   ]
+  }
+ ]
+}

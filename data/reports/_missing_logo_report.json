@@ -1,0 +1,745 @@
+{
+ "summary": {
+  "can_try_with_network_later": 48,
+  "needs_user_official_source": 22,
+  "excel_needs_fix": 3,
+  "missing_total": 73
+ },
+ "can_try_with_network_later": [
+  {
+   "name": "亞書藝所",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/DxMnjN",
+    "https://reurl.cc/N2dEr9"
+   ]
+  },
+  {
+   "name": "中正紀念堂1展廳",
+   "city": "台北市",
+   "addr": "台北市中正區中山南路21號",
+   "domains": [
+    "opentix.life",
+    "s3.resource.opentix.life"
+   ],
+   "urls": [
+    "https://www.opentix.life/program/2047597722530205696",
+    "https://s3.resource.opentix.life/upload/program/177746026393736t41ZUcee.jpeg"
+   ]
+  },
+  {
+   "name": "中原文創園區",
+   "city": "桃園市",
+   "addr": "桃園市中壢區忠仁路33號",
+   "domains": [
+    "opentix.life",
+    "s3.resource.opentix.life"
+   ],
+   "urls": [
+    "https://www.opentix.life/program/2056265427831562240",
+    "https://s3.resource.opentix.life/upload/program/1779099724885xEjRvTaUIF.jpeg"
+   ]
+  },
+  {
+   "name": "未具名場地",
+   "city": "新北市",
+   "addr": "新北市板橋區文化路一段266號12樓之1",
+   "domains": [
+    "waker.org.tw"
+   ],
+   "urls": [
+    "https://www.waker.org.tw/",
+    "https://cloud.culture.tw/e_new_upload/cms/image/A0/B0/C0/D15/E175/F640/00feea06-fee1-4303-abe0-ddb79c8956d8.png"
+   ]
+  },
+  {
+   "name": "佛光緣美術館台中館",
+   "city": "台中市",
+   "addr": "台中市南屯區惠中路三段65號",
+   "domains": [
+    "fgsarts.fgs.org.tw"
+   ],
+   "urls": [
+    "https://reurl.cc/9bN6mj",
+    "https://fgsarts.fgs.org.tw/images/exhibition/Taiwan/03_Taichung/2026/01/20260118-Taichun-00s.jpg"
+   ]
+  },
+  {
+   "name": "林之助紀念館",
+   "city": "台中市",
+   "addr": "台中市西區柳川西路二段158號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/mplQAW"
+   ]
+  },
+  {
+   "name": "74藝術中心",
+   "city": "台中市",
+   "addr": "台中市北屯區環中東路二段597號",
+   "domains": [
+    "tcod.com.tw"
+   ],
+   "urls": [
+    "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=537&page=1",
+    "https://www.tcod.com.tw//upload/artspots-news/202605181038080.jpg"
+   ]
+  },
+  {
+   "name": "臺中市猿緣園藝術館",
+   "city": "台中市",
+   "addr": "台中市南區",
+   "domains": [
+    "tcod.com.tw"
+   ],
+   "urls": [
+    "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=534&page=1",
+    "https://www.tcod.com.tw//upload/artspots-news/202604081535430.jpg"
+   ]
+  },
+  {
+   "name": "佛光山彰化福山寺",
+   "city": "彰化縣",
+   "addr": "彰化縣彰化市福山街348號",
+   "domains": [
+    "fgsarts.fgs.org.tw"
+   ],
+   "urls": [
+    "http://fgsarts.fgs.org.tw/",
+    "http://fgsarts.fgs.org.tw/images/exhibition/Taiwan/01_Ilan/2024/07/20240713YiLan-00s.jpg"
+   ]
+  },
+  {
+   "name": "梧棲行旅",
+   "city": "台中市",
+   "addr": "台中市梧棲區",
+   "domains": [
+    "tcod.com.tw"
+   ],
+   "urls": [
+    "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=548&page=2",
+    "https://www.tcod.com.tw//upload/artspots-news/202604231354070.jpg"
+   ]
+  },
+  {
+   "name": "立法院 文化走廊",
+   "city": "台北市",
+   "addr": "台北市中正區中山南路1號",
+   "domains": [
+    "cloud.culture.tw"
+   ],
+   "urls": [
+    "https://cloud.culture.tw/e_new_upload/signinImage/2026-05-02/2efe5fcf-6d9e-4be2-aa79-f671b52d953f/1.jpg"
+   ]
+  },
+  {
+   "name": "辛藝術 Hsin Art Gallery",
+   "city": "台中市",
+   "addr": "台中市龍井區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/Wb8vKe"
+   ]
+  },
+  {
+   "name": "毛刺空間 Glitch home",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/DxYD3j"
+   ]
+  },
+  {
+   "name": "盧安藝術文化有限公司",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/EmYa7A"
+   ]
+  },
+  {
+   "name": "綠光 gallery",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/epQZdW"
+   ]
+  },
+  {
+   "name": "豐藝館",
+   "city": "台中市",
+   "addr": "台中市西區五權西路一段110號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/V27nyR"
+   ]
+  },
+  {
+   "name": "中島GLAb",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/share/p/1D5eZUWurA/?mibextid=wwXIfr"
+   ]
+  },
+  {
+   "name": "正太筆墨坊",
+   "city": "台中市",
+   "addr": "台中市豐原區成功路369號",
+   "domains": [
+    "tcod.com.tw"
+   ],
+   "urls": [
+    "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=560&page=1",
+    "https://www.tcod.com.tw//upload/artspots-news/202605181054120.jpg"
+   ]
+  },
+  {
+   "name": "暮拉多元藝術空間",
+   "city": "台南市",
+   "addr": "台南市中西區國華街三段15號",
+   "domains": [
+    "themoolahart.com"
+   ],
+   "urls": [
+    "https://themoolahart.com/dear-alterity/"
+   ]
+  },
+  {
+   "name": "梧棲文化出張所",
+   "city": "台中市",
+   "addr": "台中市梧棲區梧棲路142號",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/share/p/18k1D4T8Up/"
+   ]
+  },
+  {
+   "name": "寬藝術空間",
+   "city": "台中市",
+   "addr": "台中市西區台中市西區向上路一段79巷38號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/0myqmo"
+   ]
+  },
+  {
+   "name": "國璽藝術",
+   "city": "台中市",
+   "addr": "台中市南屯區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/53N7rG"
+   ]
+  },
+  {
+   "name": "加沃文行 +wò Cultural Practice",
+   "city": "新竹市",
+   "addr": "新竹市北區西門街258號",
+   "domains": [
+    "cloud.culture.tw"
+   ],
+   "urls": [
+    "https://cloud.culture.tw/e_new_upload/signinImage/2026-05-28/5664cb38-f579-46f9-ab90-1fa418c7ec5a/6.jpg"
+   ]
+  },
+  {
+   "name": "Smohouse 思默好時",
+   "city": "台中市",
+   "addr": "台中市南屯區",
+   "domains": [
+    "smohouse.com"
+   ],
+   "urls": [
+    "https://www.smohouse.com/space/2026_6_exhibition/"
+   ]
+  },
+  {
+   "name": "采泥藝術事業股份有限公司",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/events/1554920389584964/"
+   ]
+  },
+  {
+   "name": "印 藝文空間 / 咖啡",
+   "city": "台中市",
+   "addr": "台中市西區林森路38巷1號",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/yinhere38/posts/pfbid0gLjriPcBMs2eKDJNKYxfjTxuoY6AX4sRmE5XeVJTt3ZZZvupzYYJp"
+   ]
+  },
+  {
+   "name": "ZASSO 草也",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/WbQzgO"
+   ]
+  },
+  {
+   "name": "大河美術",
+   "city": "台中市",
+   "addr": "台中市南屯區大業路281號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/Dxke1d"
+   ]
+  },
+  {
+   "name": "鹽埕區",
+   "city": "高雄市",
+   "addr": "高雄市鹽埕區",
+   "domains": [
+    "sinpink.com"
+   ],
+   "urls": [
+    "https://sinpink.com/",
+    "https://sinpink.com/wp-content/uploads/2022/07/cropped-e696b0e6b59ce7a2bce9a0ade68b9be7898c5j0_e5b7a5e4bd9ce58d80e59f9f-1.png"
+   ]
+  },
+  {
+   "name": "太平買菸場",
+   "city": "台中市",
+   "addr": "台中市太平區東平路464號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/A9mz1Y"
+   ]
+  },
+  {
+   "name": "Epic禪藝實相人文空間",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/4le0Kj"
+   ]
+  },
+  {
+   "name": "當代一畫廊",
+   "city": "台北市",
+   "addr": "台北市松山區",
+   "domains": [
+    "sissyleelee1.wixsite.com",
+    "static.wixstatic.com"
+   ],
+   "urls": [
+    "https://sissyleelee1.wixsite.com/agallery/%E5%89%AF%E6%9C%AC-%E5%B1%95%E8%A6%BD%E8%A8%8A%E6%81%AF-1/",
+    "https://static.wixstatic.com/media/4e4ebb_dfca19cd6bdc4ec799bea535aeee53b5~mv2.png/v1/crop/x_1,y_0,w_271,h_202/fill/w_272,h_200,al_c,lg_1,q_85,enc_avif,quality_auto/%E7%A9%BA%E5%9C%96%E6%99%82%E6%94%BE%E7%9A%84%E7%85%A7%E7%89%87.png"
+   ]
+  },
+  {
+   "name": "圓山花博- 花海廣場",
+   "city": "台北市",
+   "addr": "台北市中山區玉門路1號",
+   "domains": [
+    "imgs2.utiki.com.tw"
+   ],
+   "urls": [
+    "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1BLGYZT",
+    "https://imgs2.utiki.com.tw/Data/ERA/Images/UTK2401/P1BLGYZT_Other.JPG?v=202606150944"
+   ]
+  },
+  {
+   "name": "霧峰林家宮保第園區",
+   "city": "台中市",
+   "addr": "台中市霧峰區民生路26號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/O63xvX"
+   ]
+  },
+  {
+   "name": "852藝術空間",
+   "city": "台中市",
+   "addr": "台中市龍井區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/YDzqNo"
+   ]
+  },
+  {
+   "name": "天目城藝文展覽館",
+   "city": "台中市",
+   "addr": "台中市南屯區",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/share/p/1E1odvdHgh/"
+   ]
+  },
+  {
+   "name": "窯座",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/0mNmob"
+   ]
+  },
+  {
+   "name": "養心藝術 Artnutri Gallery",
+   "city": "台中市",
+   "addr": "台中市南屯區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/qpepeD"
+   ]
+  },
+  {
+   "name": "科元藝術中心",
+   "city": "台中市",
+   "addr": "台中市清水區",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/7Exld5"
+   ]
+  },
+  {
+   "name": "全安堂臺灣太陽餅博物館",
+   "city": "台中市",
+   "addr": "台中市中區台灣大道一段145號",
+   "domains": [
+    "reurl.cc"
+   ],
+   "urls": [
+    "https://reurl.cc/Em0YZK"
+   ]
+  },
+  {
+   "name": "MyAnime Café 三創店（台北）",
+   "city": "台北市",
+   "addr": "台北市中正區市民大道三段2號7樓",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl"
+   ]
+  },
+  {
+   "name": "MyAnime Café 高雄店（統一時代百貨B1）",
+   "city": "高雄市",
+   "addr": "高雄市前鎮區中華五路789號B1",
+   "domains": [
+    "facebook.com"
+   ],
+   "urls": [
+    "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl"
+   ]
+  },
+  {
+   "name": "台中驛鐵道文化園區 鐵鹿大街",
+   "city": "台中市",
+   "addr": "台中市中區台灣大道一段1號，台中火車站舊站",
+   "domains": [
+    "instagram.com"
+   ],
+   "urls": [
+    "https://www.instagram.com/p/DYHSByMgRcv/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+   ]
+  },
+  {
+   "name": "台北和平籃球館（台北戰神主場）",
+   "city": "台北市",
+   "addr": "台北市大安區敦化南路二段105號",
+   "domains": [
+    "instagram.com"
+   ],
+   "urls": [
+    "https://www.instagram.com/p/DUkZZilgfSf/"
+   ]
+  },
+  {
+   "name": "淡江大橋",
+   "city": "新北市",
+   "addr": "新北市淡水區與八里區之間，跨淡水河",
+   "domains": [
+    "newtaipei.travel"
+   ],
+   "urls": [
+    "https://newtaipei.travel/zh-tw/calendar/detail/3806"
+   ]
+  },
+  {
+   "name": "澎湖",
+   "city": "澎湖縣",
+   "addr": "澎湖縣，2026澎湖花火節，地點：馬公觀音亭",
+   "domains": [
+    "tw.news.yahoo.com"
+   ],
+   "urls": [
+    "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html"
+   ]
+  },
+  {
+   "name": "高雄駅一番街・北站 高雄捷運高雄車站B2",
+   "city": "高雄市",
+   "addr": "高雄市三民區建國二路320號B2",
+   "domains": [
+    "instagram.com"
+   ],
+   "urls": [
+    "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl"
+   ]
+  },
+  {
+   "name": "魯克思咖啡左營店",
+   "city": "高雄市",
+   "addr": "高雄市左營區修明街166號1樓",
+   "domains": [
+    "instagram.com"
+   ],
+   "urls": [
+    "https://www.instagram.com/p/DXs46EPD-z0/"
+   ]
+  }
+ ],
+ "needs_user_official_source": [
+  {
+   "name": "洪根深美術館",
+   "city": "澎湖縣",
+   "addr": "澎湖縣馬公市民族路22號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "臺南．家具產業博物館",
+   "city": "台南市",
+   "addr": "台南市仁德區二仁路一段321號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "胡克敏紀念館",
+   "city": "台北市",
+   "addr": "台北市大安區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "蔣勳文化基金會 時善慧館",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "屏東演武場",
+   "city": "屏東縣",
+   "addr": "屏東縣屏東市公園路28號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "臺中市臻品藝術中心",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "勝利星村創意生活園區",
+   "city": "屏東縣",
+   "addr": "屏東縣屏東市青島街106號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "森初．moricasa art",
+   "city": "台南市",
+   "addr": "台南市安平區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "臺南市民治市政中心",
+   "city": "台南市",
+   "addr": "台南市新營區民治路36號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "雨果曐Gallery",
+   "city": "台中市",
+   "addr": "台中市西區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "臺南市麻豆區文化館",
+   "city": "台南市",
+   "addr": "台南市麻豆區興國路11號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "五股守讓堂",
+   "city": "新北市",
+   "addr": "新北市五股區新五路二段169號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "清泉藝術之森",
+   "city": "新竹縣",
+   "addr": "新竹縣五峰鄉16鄰清泉227號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "朝代藝術畫廊",
+   "city": "台北市",
+   "addr": "台北市大安區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "得忌利士洋行",
+   "city": "新北市",
+   "addr": "新北市淡水區中正路316、316-1號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "郭子究音樂文化館",
+   "city": "花蓮縣",
+   "addr": "花蓮縣花蓮市民權7街1巷10號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "臺南市方圓美術館",
+   "city": "台南市",
+   "addr": "台南市將軍區1號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "帝門藝術中心",
+   "city": "台北市",
+   "addr": "台北市大安區",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "台中大遠百威秀影城",
+   "city": "台中市",
+   "addr": "台中市西屯區台灣大道三段251號13樓",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "台北信義威秀影城",
+   "city": "台北市",
+   "addr": "台北市信義區松壽路20號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "新莊棒球場",
+   "city": "新北市",
+   "addr": "新北市新莊區和興街66號",
+   "domains": [],
+   "urls": []
+  },
+  {
+   "name": "高雄大遠百威秀影城",
+   "city": "高雄市",
+   "addr": "高雄市苓雅區三多四路21號13樓",
+   "domains": [],
+   "urls": []
+  }
+ ],
+ "excel_needs_fix": [
+  {
+   "name": "全台 CACO CAFE 門市（多分店，無單一門牌）",
+   "city": "台北市",
+   "addr": "台北市中山區南京西路16號B1",
+   "domains": [
+    "instagram.com"
+   ],
+   "urls": [
+    "https://www.instagram.com/p/DWjEyZRjbmX/"
+   ]
+  },
+  {
+   "name": "台中市",
+   "city": "台中市",
+   "addr": "台中市政府交通安全推廣合作，無單一定點",
+   "domains": [
+    "news.tvbs.com.tw"
+   ],
+   "urls": [
+    "https://news.tvbs.com.tw/local/3104972"
+   ]
+  },
+  {
+   "name": "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點）",
+   "city": "高雄市",
+   "addr": "高雄市苓雅區海邊路",
+   "domains": [
+    "instagram.com"
+   ],
+   "urls": [
+    "https://www.instagram.com/p/DVdZ6s2FhxU/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+   ]
+  }
+ ]
+}

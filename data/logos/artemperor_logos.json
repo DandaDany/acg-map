@@ -1,0 +1,77 @@
+{
+ "_source": "https://artemperor.tw/museums?page=1..8",
+ "_note": "Fallback logos only. Official local logos from logo_map.json stay higher priority.",
+ "logos": {
+  "台北當代藝術館": "logos/artemperor/台北當代藝術館.jpg",
+  "國立自然科學博物館": "logos/artemperor/國立自然科學博物館.jpg",
+  "國立臺灣美術館": "logos/artemperor/國立台灣美術館.jpg",
+  "國立臺灣藝術大學": "logos/artemperor/國立台灣藝術大學.jpg",
+  "好地下藝術空間": "logos/artemperor/好地下藝術空間.jpg",
+  "臺灣當代文化實驗場 C-LAB": "logos/artemperor/台灣當代文化實驗場c_lab.jpg",
+  "關渡美術館": "logos/artemperor/關渡美術館.jpg",
+  "鯉魚藝廊Carp Gallery": "logos/artemperor/鯉魚藝廊carpgallery.jpg",
+  "鳳甲美術館": "logos/artemperor/鳳甲美術館.jpg"
+ },
+ "matched": [
+  {
+   "venue": "台北當代藝術館",
+   "artemperor_name": "台北當代藝術館",
+   "page": "https://artemperor.tw/gallery/154",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/154.jpg"
+  },
+  {
+   "venue": "國立臺灣美術館",
+   "artemperor_name": "國立台灣美術館",
+   "page": "https://artemperor.tw/gallery/316",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/316.jpg"
+  },
+  {
+   "venue": "國立臺灣藝術大學",
+   "artemperor_name": "國立臺灣藝術大學有章藝術博物館",
+   "page": "https://artemperor.tw/gallery/501",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/501.jpg"
+  },
+  {
+   "venue": "國立臺灣藝術大學",
+   "artemperor_name": "國立台灣藝術大學日間部美術系105級",
+   "page": "https://artemperor.tw/gallery/270",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/270.jpg"
+  },
+  {
+   "venue": "國立臺灣藝術大學",
+   "artemperor_name": "國立臺灣藝術大學雕塑學系",
+   "page": "https://artemperor.tw/gallery/237",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/237_xt9sb.jpg"
+  },
+  {
+   "venue": "好地下藝術空間",
+   "artemperor_name": "好地下藝術空間",
+   "page": "https://artemperor.tw/gallery/689",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/689.jpg"
+  },
+  {
+   "venue": "臺灣當代文化實驗場 C-LAB",
+   "artemperor_name": "臺灣當代文化實驗場",
+   "page": "https://artemperor.tw/gallery/869",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/869_fiuw9.jpg"
+  },
+  {
+   "venue": "關渡美術館",
+   "artemperor_name": "國立臺北藝術大學關渡美術館",
+   "page": "https://artemperor.tw/gallery/259",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/259.jpg"
+  },
+  {
+   "venue": "鯉魚藝廊Carp Gallery",
+   "artemperor_name": "鯉魚藝廊 Carp Gallery",
+   "page": "https://artemperor.tw/gallery/1509",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/1509_vwjbp.jpg"
+  },
+  {
+   "venue": "鳳甲美術館",
+   "artemperor_name": "鳳甲美術館",
+   "page": "https://artemperor.tw/gallery/190",
+   "logo": "https://d2onjhd726mt7c.cloudfront.net/images/gallery/logo/L310/190.jpg"
+  }
+ ]
+}

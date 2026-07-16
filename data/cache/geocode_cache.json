@@ -1,0 +1,3214 @@
+{
+ "彰化藝術館 彰化縣 台灣": [
+  {
+   "place_id": 226830031,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 320767308,
+   "lat": "24.0790234",
+   "lon": "120.5455723",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 0.31776205367205024,
+   "addresstype": "amenity",
+   "name": "彰化藝術館",
+   "display_name": "彰化藝術館, 542, 中山路二段, 中山庄, 中山里, 彰化市, 彰化縣, 500, 臺灣",
+   "boundingbox": [
+    "24.0788846",
+    "24.0791892",
+    "120.5453475",
+    "120.5457787"
+   ]
+  }
+ ],
+ "彰化藝術館 彰化縣彰化市中山路2段542號 台灣": [],
+ "彰化縣立美術館 彰化縣 台灣": [
+  {
+   "place_id": 225871900,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3661265881,
+   "lat": "24.0775097",
+   "lon": "120.5458437",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 0.2753675655596695,
+   "addresstype": "amenity",
+   "name": "彰化縣立美術館",
+   "display_name": "彰化縣立美術館, 3, 卦山路, 中山庄, 卦山里, 彰化市, 彰化縣, 500, 臺灣",
+   "boundingbox": [
+    "24.0774597",
+    "24.0775597",
+    "120.5457937",
+    "120.5458937"
+   ]
+  }
+ ],
+ "彰化縣立美術館 彰化縣彰化市卦山路3號 台灣": [],
+ "新北市美術館 新北市 台灣": [
+  {
+   "place_id": 227638302,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 759493035,
+   "lat": "24.9525351",
+   "lon": "121.3574905",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 0.35499373245428756,
+   "addresstype": "amenity",
+   "name": "新北市美術館",
+   "display_name": "新北市美術館, 300, 館前路, 東鶯里, 鶯歌區, 二橋, 新北市, 80284, 臺灣",
+   "boundingbox": [
+    "24.9511343",
+    "24.9539161",
+    "121.3555796",
+    "121.3589088"
+   ]
+  },
+  {
+   "place_id": 228703505,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1153980337,
+   "lat": "24.9527498",
+   "lon": "121.3575269",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "新北市美術館",
+   "display_name": "新北市美術館, 298, 館前路, 東鶯里, 鶯歌區, 二橋, 新北市, 80284, 臺灣",
+   "boundingbox": [
+    "24.9522613",
+    "24.9531696",
+    "121.3569999",
+    "121.3580540"
+   ]
+  }
+ ],
+ "新北市美術館 新北市鶯歌區館前路300號 台灣": [],
+ "國家攝影文化中心 台北市 台灣": [],
+ "國家攝影文化中心 台北市中正區忠孝西路一段70號 台灣": [],
+ "內惟藝術中心 高雄市 台灣": [
+  {
+   "place_id": 235664261,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9775364850,
+   "lat": "22.6549942",
+   "lon": "120.2828398",
+   "category": "railway",
+   "type": "stop",
+   "place_rank": 30,
+   "importance": 0.32076214465567665,
+   "addresstype": "railway",
+   "name": "內惟藝術中心",
+   "display_name": "內惟藝術中心, 美術館路, 龍水里, 鼓山區, 高雄市, 804, 臺灣",
+   "boundingbox": [
+    "22.6549442",
+    "22.6550442",
+    "120.2827898",
+    "120.2828898"
+   ]
+  },
+  {
+   "place_id": 235771310,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9776227778,
+   "lat": "22.6549695",
+   "lon": "120.2828409",
+   "category": "railway",
+   "type": "station",
+   "place_rank": 30,
+   "importance": 0.32076214465567665,
+   "addresstype": "railway",
+   "name": "內惟藝術中心",
+   "display_name": "內惟藝術中心, 美術館路, 龍水里, 鼓山區, 高雄市, 804, 臺灣",
+   "boundingbox": [
+    "22.6499695",
+    "22.6599695",
+    "120.2778409",
+    "120.2878409"
+   ]
+  },
+  {
+   "place_id": 232808841,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1111577600,
+   "lat": "22.6575962",
+   "lon": "120.2824075",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 6.951628900582921e-05,
+   "addresstype": "tourism",
+   "name": "內惟藝術中心",
+   "display_name": "內惟藝術中心, 329, 馬卡道路, 龍水里, 鼓山區, 高雄市, 804407, 臺灣",
+   "boundingbox": [
+    "22.6565579",
+    "22.6586173",
+    "120.2821123",
+    "120.2828425"
+   ]
+  }
+ ],
+ "內惟藝術中心 高雄市鼓山區馬卡道路329號 台灣": [],
+ "星紅藝廊 南投縣 台灣": [],
+ "星紅藝廊 南投縣南投市 台灣": [],
+ "屏菸1936文化基地 屏東縣 台灣": [
+  {
+   "place_id": 236576421,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 13805207,
+   "lat": "22.6611753",
+   "lon": "120.5051355",
+   "category": "tourism",
+   "type": "attraction",
+   "place_rank": 30,
+   "importance": 0.29960026554141705,
+   "addresstype": "tourism",
+   "name": "屏菸1936文化基地",
+   "display_name": "屏菸1936文化基地, 民生路57巷, 屏東產業園區, 瑞光里, 屏東市, 屏東縣, 900, 臺灣",
+   "boundingbox": [
+    "22.6605491",
+    "22.6623308",
+    "120.5035685",
+    "120.5067623"
+   ]
+  }
+ ],
+ "臺南市政府民政局 台南市 台灣": [],
+ "臺南市政府民政局 台南市關廟區 台灣": [],
+ "435藝文特區 新北市 台灣": [
+  {
+   "place_id": 232099602,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3229939044,
+   "lat": "25.0229280",
+   "lon": "121.4542145",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "highway",
+   "name": "板橋國中(435藝文特區)",
+   "display_name": "板橋國中(435藝文特區), 中正路, 中正里, 板橋區, 社後, 新北市, 22052, 臺灣",
+   "boundingbox": [
+    "25.0228780",
+    "25.0229780",
+    "121.4541645",
+    "121.4542645"
+   ]
+  },
+  {
+   "place_id": 232260257,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3229939043,
+   "lat": "25.0225863",
+   "lon": "121.4543119",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "highway",
+   "name": "板橋國中(435藝文特區)",
+   "display_name": "板橋國中(435藝文特區), 中正路, 港尾里, 板橋區, 社後, 新北市, 22054, 臺灣",
+   "boundingbox": [
+    "25.0225363",
+    "25.0226363",
+    "121.4542619",
+    "121.4543619"
+   ]
+  },
+  {
+   "place_id": 231986314,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 587411711,
+   "lat": "25.0241534",
+   "lon": "121.4503577",
+   "category": "amenity",
+   "type": "parking",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "435藝文特區停車場",
+   "display_name": "435藝文特區停車場, 藝文一街, 中正里, 板橋區, 社後, 新北市, 22052, 臺灣",
+   "boundingbox": [
+    "25.0236481",
+    "25.0244940",
+    "121.4499397",
+    "121.4506819"
+   ]
+  }
+ ],
+ "435藝文特區 新北市板橋區中正路435號 台灣": [],
+ "孟焦畫坊 台北市 台灣": [
+  {
+   "place_id": 230285863,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 368877182,
+   "lat": "25.0438601",
+   "lon": "121.5552941",
+   "category": "amenity",
+   "type": "parking",
+   "place_rank": 30,
+   "importance": 7.457007705801507e-05,
+   "addresstype": "amenity",
+   "name": "嘟嘟房 華視文教加盟場",
+   "display_name": "嘟嘟房 華視文教加盟場, 光復南路96巷, 華聲里, 大安區, 車罾, 臺北市, 106079, 臺灣",
+   "boundingbox": [
+    "25.0437478",
+    "25.0439650",
+    "121.5550021",
+    "121.5555743"
+   ]
+  }
+ ],
+ "孟焦畫坊 台北市士林區雨農路17-2號1樓 台灣": [],
+ "國立自然科學博物館 台中市 台灣": [
+  {
+   "place_id": 225499887,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 219414222,
+   "lat": "24.1573158",
+   "lon": "120.6667627",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.4215069254623829,
+   "addresstype": "park",
+   "name": "國立自然科學博物館",
+   "display_name": "國立自然科學博物館, 1, 北區, 臺中市, 40453, 臺灣",
+   "boundingbox": [
+    "24.1554268",
+    "24.1591483",
+    "120.6640320",
+    "120.6690936"
+   ]
+  }
+ ],
+ "國立自然科學博物館 台中市北區館前路1號 台灣": [],
+ "朱銘美術館 新北市 台灣": [
+  {
+   "place_id": 229775635,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 225807977,
+   "lat": "25.2442190",
+   "lon": "121.6112253",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.35614271866453184,
+   "addresstype": "tourism",
+   "name": "朱銘美術館",
+   "display_name": "朱銘美術館, 2, 西勢湖, 金山區, 茂林村, 新北市, 208, 臺灣",
+   "boundingbox": [
+    "25.2417270",
+    "25.2466009",
+    "121.6096459",
+    "121.6125548"
+   ]
+  },
+  {
+   "place_id": 234082790,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 8432400385,
+   "lat": "25.2462990",
+   "lon": "121.6112475",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "highway",
+   "name": "朱銘美術館",
+   "display_name": "朱銘美術館, 北22-1, 西湖里, 金山區, 六股, 新北市, 20842, 臺灣",
+   "boundingbox": [
+    "25.2462490",
+    "25.2463490",
+    "121.6111975",
+    "121.6112975"
+   ]
+  }
+ ],
+ "朱銘美術館 新北市金山區西勢湖2號 台灣": [],
+ "洪根深美術館 澎湖縣 台灣": [
+  {
+   "place_id": 236787881,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10201626732,
+   "lat": "23.5644833",
+   "lon": "119.5636646",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 3.750133516437045e-05,
+   "addresstype": "tourism",
+   "name": "洪根深美術館",
+   "display_name": "洪根深美術館, 15之1號, 民族路, 復興里, 馬公市, 澎湖縣, 88041, 臺灣",
+   "boundingbox": [
+    "23.5644333",
+    "23.5645333",
+    "119.5636146",
+    "119.5637146"
+   ]
+  }
+ ],
+ "洪根深美術館 澎湖縣馬公市民族路22號 台灣": [],
+ "高雄流行音樂中心 高雄市 台灣": [
+  {
+   "place_id": 236847718,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 6459914,
+   "lat": "22.6183599",
+   "lon": "120.2921417",
+   "category": "place",
+   "type": "square",
+   "place_rank": 25,
+   "importance": 0.3817407619997487,
+   "addresstype": "square",
+   "name": "高雄流行音樂中心",
+   "display_name": "高雄流行音樂中心, 苓洲里, 苓雅區, 高雄市, 802, 臺灣",
+   "boundingbox": [
+    "22.6162507",
+    "22.6196169",
+    "120.2862544",
+    "120.2933310"
+   ]
+  }
+ ],
+ "高雄流行音樂中心 高雄市鹽埕區17鄰真愛路1號 台灣": [],
+ "雲林布袋戲館 雲林縣 台灣": [
+  {
+   "place_id": 234305263,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 546765447,
+   "lat": "23.7095377",
+   "lon": "120.4335533",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.29322317952748045,
+   "addresstype": "tourism",
+   "name": "雲林布袋戲館",
+   "display_name": "雲林布袋戲館, 林森路一段, 公安里, 虎尾鎮, 雲林縣, 632, 臺灣",
+   "boundingbox": [
+    "23.7093420",
+    "23.7097737",
+    "120.4331846",
+    "120.4336779"
+   ]
+  },
+  {
+   "place_id": 234229155,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 4577298561,
+   "lat": "23.7093956",
+   "lon": "120.4338605",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 4.709468223082349e-05,
+   "addresstype": "highway",
+   "name": "雲林布袋戲館",
+   "display_name": "雲林布袋戲館, 林森路一段, 公安里, 虎尾鎮, 雲林縣, 632, 臺灣",
+   "boundingbox": [
+    "23.7093456",
+    "23.7094456",
+    "120.4338105",
+    "120.4339105"
+   ]
+  }
+ ],
+ "雲林布袋戲館 雲林縣虎尾鎮林森路一段498號 台灣": [],
+ "屏東縣王船文化館 屏東縣 台灣": [
+  {
+   "place_id": 238105189,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1028536838,
+   "lat": "22.4638062",
+   "lon": "120.4600357",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 4.889066910806466e-05,
+   "addresstype": "tourism",
+   "name": "屏東縣王船文化館",
+   "display_name": "屏東縣王船文化館, 9, 船頭路, 東津里, 東港鎮, 屏東縣, 928, 臺灣",
+   "boundingbox": [
+    "22.4634699",
+    "22.4641160",
+    "120.4596474",
+    "120.4604151"
+   ]
+  }
+ ],
+ "屏東縣王船文化館 屏東縣東港鎮船頭路9號 台灣": [],
+ "五穀文化村 苗栗縣 台灣": [],
+ "五穀文化村 苗栗縣公館鄉 台灣": [],
+ "月臨畫廊 台中市 台灣": [],
+ "月臨畫廊 台中市西區英才路589巷6號1F(月臨畫廊) 台灣": [],
+ "新莊文化藝術中心 新北市 台灣": [
+  {
+   "place_id": 232622377,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 258599429,
+   "lat": "25.0472332",
+   "lon": "121.4439566",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "新莊文化藝術中心",
+   "display_name": "新莊文化藝術中心, 133, 中平路, 立基里, 新莊區, 中港厝, 新北市, 242, 臺灣",
+   "boundingbox": [
+    "25.0470292",
+    "25.0474493",
+    "121.4435398",
+    "121.4443669"
+   ]
+  },
+  {
+   "place_id": 232521435,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9363053118,
+   "lat": "25.0471400",
+   "lon": "121.4445000",
+   "category": "amenity",
+   "type": "bicycle_rental",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "新莊文化藝術中心",
+   "display_name": "新莊文化藝術中心, 中平路129巷, 立基里, 新莊區, 中港厝, 新北市, 24217, 臺灣",
+   "boundingbox": [
+    "25.0470900",
+    "25.0471900",
+    "121.4444500",
+    "121.4445500"
+   ]
+  }
+ ],
+ "新莊文化藝術中心 新北市新莊區中平路133號 台灣": [],
+ "土城藝文館 新北市 台灣": [
+  {
+   "place_id": 229142726,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 547793325,
+   "lat": "24.9730315",
+   "lon": "121.4430006",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "tourism",
+   "name": "土城藝文館",
+   "display_name": "土城藝文館, 24, 和平路, 埤塘里, 土城區, 清水, 新北市, 236, 臺灣",
+   "boundingbox": [
+    "24.9728946",
+    "24.9731404",
+    "121.4428834",
+    "121.4431175"
+   ]
+  }
+ ],
+ "土城藝文館 新北市土城區和平路24號 台灣": [],
+ "亞書藝所 台中市 台灣": [
+  {
+   "place_id": 226381611,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12300345211,
+   "lat": "24.1106909",
+   "lon": "120.6548709",
+   "category": "amenity",
+   "type": "dentist",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "樹義牙醫診所",
+   "display_name": "樹義牙醫診所, 269, 福田三街, 樹義里, 南區, 樹王, 臺中市, 402024, 臺灣",
+   "boundingbox": [
+    "24.1106409",
+    "24.1107409",
+    "120.6548209",
+    "120.6549209"
+   ]
+  },
+  {
+   "place_id": 227366326,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5119756375,
+   "lat": "24.1741358",
+   "lon": "120.6475018",
+   "category": "amenity",
+   "type": "dentist",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "舒康牙醫診所",
+   "display_name": "舒康牙醫診所, 330, 河南路二段, 逢甲里, 西屯區, 臺中七期, 臺中市, 40744, 臺灣",
+   "boundingbox": [
+    "24.1740858",
+    "24.1741858",
+    "120.6474518",
+    "120.6475518"
+   ]
+  }
+ ],
+ "亞書藝所 台中市西區 台灣": [
+  {
+   "place_id": 227366326,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5119756375,
+   "lat": "24.1741358",
+   "lon": "120.6475018",
+   "category": "amenity",
+   "type": "dentist",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "舒康牙醫診所",
+   "display_name": "舒康牙醫診所, 330, 河南路二段, 逢甲里, 西屯區, 臺中七期, 臺中市, 40744, 臺灣",
+   "boundingbox": [
+    "24.1740858",
+    "24.1741858",
+    "120.6474518",
+    "120.6475518"
+   ]
+  },
+  {
+   "place_id": 227112314,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3603954083,
+   "lat": "24.9881674",
+   "lon": "121.4213689",
+   "category": "amenity",
+   "type": "dentist",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "曙光牙醫診所",
+   "display_name": "曙光牙醫診所, 218, 中山路一段, 育英里, 樹林區, 新北市, 23844, 臺灣",
+   "boundingbox": [
+    "24.9881174",
+    "24.9882174",
+    "121.4213189",
+    "121.4214189"
+   ]
+  }
+ ],
+ "臺北市藝文推廣處-文山劇場 台北市 台灣": [],
+ "臺北市藝文推廣處-文山劇場 台北市文山區景文街32號 台灣": [],
+ "彰化八卦山大佛區 彰化縣 台灣": [],
+ "彰化八卦山大佛區 彰化縣彰化市溫泉路31號 台灣": [],
+ "鹿港公會堂 彰化縣 台灣": [
+  {
+   "place_id": 225780825,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 321577542,
+   "lat": "24.0576108",
+   "lon": "120.4318909",
+   "category": "amenity",
+   "type": "community_centre",
+   "place_rank": 30,
+   "importance": 5.296940566105161e-05,
+   "addresstype": "amenity",
+   "name": "鹿港公會堂",
+   "display_name": "鹿港公會堂, 72, 埔頭街(鹿港老街), 洛津里, 鹿港鎮, 彰化縣, 50542, 臺灣",
+   "boundingbox": [
+    "24.0574651",
+    "24.0577564",
+    "120.4317343",
+    "120.4320474"
+   ]
+  }
+ ],
+ "鹿港公會堂 彰化縣鹿港鎮埔頭街74號 台灣": [],
+ "安卓藝術 台北市 台灣": [],
+ "安卓藝術 台北市內湖區 台灣": [],
+ "財團法人廣達文教基金會 苗栗縣政府 苗栗縣 台灣": [],
+ "財團法人廣達文教基金會 苗栗縣政府 苗栗縣苗栗市 台灣": [],
+ "未具名場地 新北市 台灣": [],
+ "未具名場地 新北市板橋區文化路一段266號12樓之1 台灣": [],
+ "宜蘭人故事館 宜蘭縣 台灣": [
+  {
+   "place_id": 229474091,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 593001253,
+   "lat": "24.7515749",
+   "lon": "121.7537083",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 5.0793469138582704e-05,
+   "addresstype": "tourism",
+   "name": "宜蘭人故事館",
+   "display_name": "宜蘭人故事館, 426, 中山路二段, 民權里, 宜蘭市, 宜蘭縣, 260, 臺灣",
+   "boundingbox": [
+    "24.7514394",
+    "24.7517103",
+    "121.7535953",
+    "121.7538212"
+   ]
+  }
+ ],
+ "宜蘭人故事館 宜蘭縣宜蘭市中山路二段426號 台灣": [],
+ "益品美術館 南投縣 台灣": [
+  {
+   "place_id": 233937447,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 872340095,
+   "lat": "23.7288917",
+   "lon": "120.7742574",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 4.867399099713157e-05,
+   "addresstype": "tourism",
+   "name": "益品美術館",
+   "display_name": "益品美術館, 興產路, 田寮, 內湖村, 鹿谷鄉, 南投縣, 558, 臺灣",
+   "boundingbox": [
+    "23.7287908",
+    "23.7289926",
+    "120.7741423",
+    "120.7743725"
+   ]
+  }
+ ],
+ "益品美術館 南投縣鹿谷鄉中正路二段211巷19號 台灣": [],
+ "台灣玻璃館 彰化縣 台灣": [
+  {
+   "place_id": 225565479,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 191016589,
+   "lat": "24.0684603",
+   "lon": "120.3947776",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 5.296940566105161e-05,
+   "addresstype": "tourism",
+   "name": "臺灣玻璃館",
+   "display_name": "臺灣玻璃館, 鹿工南四路, 彰濱鹿港產業園區, 東石里, 鹿港鎮, 彰化縣, 50546, 臺灣",
+   "boundingbox": [
+    "24.0680728",
+    "24.0688478",
+    "120.3943496",
+    "120.3952055"
+   ]
+  },
+  {
+   "place_id": 225643347,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 2076122177,
+   "lat": "24.0519506",
+   "lon": "120.4363025",
+   "category": "shop",
+   "type": "gift",
+   "place_rank": 30,
+   "importance": 5.296940566105161e-05,
+   "addresstype": "shop",
+   "name": "臺灣玻璃館",
+   "display_name": "臺灣玻璃館, 中山路, 泰興里, 鹿港鎮, 彰化縣, 50570, 臺灣",
+   "boundingbox": [
+    "24.0519006",
+    "24.0520006",
+    "120.4362525",
+    "120.4363525"
+   ]
+  },
+  {
+   "place_id": 228389071,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3309736806,
+   "lat": "24.0683898",
+   "lon": "120.3952224",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 5.296940566105161e-05,
+   "addresstype": "highway",
+   "name": "臺灣玻璃館",
+   "display_name": "臺灣玻璃館, 鹿工南四路, 彰濱鹿港產業園區, 東石里, 鹿港鎮, 彰化縣, 50546, 臺灣",
+   "boundingbox": [
+    "24.0683398",
+    "24.0684398",
+    "120.3951724",
+    "120.3952724"
+   ]
+  }
+ ],
+ "台灣玻璃館 彰化縣鹿港鎮鹿工南四路30號 台灣": [],
+ "王功蚵藝文化館 彰化縣 台灣": [],
+ "王功蚵藝文化館 彰化縣芳苑鄉漁港路900號 台灣": [],
+ "台灣穀堡 彰化縣 台灣": [],
+ "台灣穀堡 彰化縣埤頭鄉彰水路二段526號 台灣": [],
+ "巫家捏麵館 彰化縣 台灣": [],
+ "巫家捏麵館 彰化縣溪湖鎮 台灣": [],
+ "澎湖生活博物館 澎湖縣 台灣": [
+  {
+   "place_id": 236633402,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 687128062,
+   "lat": "23.5671696",
+   "lon": "119.5795400",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.34081317763107843,
+   "addresstype": "tourism",
+   "name": "澎湖生活博物館",
+   "display_name": "澎湖生活博物館, 文城三路, 西文澳, 西文里, 馬公市, 澎湖縣, 880010, 臺灣",
+   "boundingbox": [
+    "23.5668750",
+    "23.5674612",
+    "119.5792636",
+    "119.5798170"
+   ]
+  }
+ ],
+ "澎湖生活博物館 澎湖縣馬公市新生路327號 台灣": [],
+ "澎湖開拓館 澎湖縣 台灣": [
+  {
+   "place_id": 235168364,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3400931864,
+   "lat": "23.5699364",
+   "lon": "119.5673261",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.11734328469919902,
+   "addresstype": "tourism",
+   "name": "澎湖開拓館",
+   "display_name": "澎湖開拓館, 30, 治平路, 埔子尾, 中興里, 馬公市, 澎湖縣, 880, 臺灣",
+   "boundingbox": [
+    "23.5698864",
+    "23.5699864",
+    "119.5672761",
+    "119.5673761"
+   ]
+  }
+ ],
+ "澎湖開拓館 澎湖縣馬公市治平路30號 台灣": [],
+ "蔡廷蘭進士第 澎湖縣 台灣": [
+  {
+   "place_id": 235771998,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 8615034639,
+   "lat": "23.5520675",
+   "lon": "119.6113917",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 5.302128633550038e-05,
+   "addresstype": "highway",
+   "name": "蔡廷蘭進士第",
+   "display_name": "蔡廷蘭進士第, 204, 興仁, 興仁里, 馬公市, 澎湖縣, 850, 臺灣",
+   "boundingbox": [
+    "23.5520175",
+    "23.5521175",
+    "119.6113417",
+    "119.6114417"
+   ]
+  }
+ ],
+ "蔡廷蘭進士第 澎湖縣馬公市29號 台灣": [],
+ "澎湖縣政府旅遊處 澎湖縣 台灣": [],
+ "澎湖縣政府旅遊處 澎湖縣馬公市 台灣": [],
+ "佛光緣美術館台中館 台中市 台灣": [],
+ "佛光緣美術館台中館 台中市南屯區惠中路三段65號 台灣": [],
+ "臺南．家具產業博物館 台南市 台灣": [
+  {
+   "place_id": 234838763,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3697220809,
+   "lat": "22.9234984",
+   "lon": "120.2237133",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.57671473258109e-05,
+   "addresstype": "highway",
+   "name": "臺南家具產業博物館",
+   "display_name": "臺南家具產業博物館, 二仁路一段, 保安里, 仁德區, 臺南市, 717, 臺灣",
+   "boundingbox": [
+    "22.9234484",
+    "22.9235484",
+    "120.2236633",
+    "120.2237633"
+   ]
+  },
+  {
+   "place_id": 234643700,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3697220810,
+   "lat": "22.9242212",
+   "lon": "120.2230296",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.57671473258109e-05,
+   "addresstype": "highway",
+   "name": "臺南家具產業博物館",
+   "display_name": "臺南家具產業博物館, 二仁路一段, 二層行, 二行里, 仁德區, 臺南市, 717, 臺灣",
+   "boundingbox": [
+    "22.9241712",
+    "22.9242712",
+    "120.2229796",
+    "120.2230796"
+   ]
+  }
+ ],
+ "臺南．家具產業博物館 台南市仁德區二仁路一段321號 台灣": [],
+ "胡克敏紀念館 台北市 台灣": [],
+ "胡克敏紀念館 台北市大安區 台灣": [],
+ "澎湖郵便局 澎湖縣 台灣": [
+  {
+   "place_id": 236396209,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 687283761,
+   "lat": "23.5634356",
+   "lon": "119.5639304",
+   "category": "building",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 0.3263790596244939,
+   "addresstype": "building",
+   "name": "澎湖郵便局",
+   "display_name": "澎湖郵便局, 中山路, 復興里, 馬公市, 澎湖縣, 88041, 臺灣",
+   "boundingbox": [
+    "23.5633638",
+    "23.5634754",
+    "119.5638085",
+    "119.5640442"
+   ]
+  }
+ ],
+ "澎湖郵便局 澎湖縣馬公市中山路75號 台灣": [],
+ "中台世界博物館 南投縣 台灣": [
+  {
+   "place_id": 224875033,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 961080088,
+   "lat": "24.0125169",
+   "lon": "120.9491698",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.13618373728802152,
+   "addresstype": "tourism",
+   "name": "中台世界博物館",
+   "display_name": "中台世界博物館, 8, 中台路, 燈心湖, 廣成里, 埔里鎮, 南投縣, 54544, 臺灣",
+   "boundingbox": [
+    "24.0115340",
+    "24.0134913",
+    "120.9481935",
+    "120.9505315"
+   ]
+  },
+  {
+   "place_id": 228206512,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9067499031,
+   "lat": "24.0152310",
+   "lon": "120.9495271",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 4.885709925989193e-05,
+   "addresstype": "highway",
+   "name": "中台世界博物館",
+   "display_name": "中台世界博物館, 永豐路, 燈心湖, 廣成里, 埔里鎮, 南投縣, 545004, 臺灣",
+   "boundingbox": [
+    "24.0151810",
+    "24.0152810",
+    "120.9494771",
+    "120.9495771"
+   ]
+  }
+ ],
+ "中台世界博物館 南投縣埔里鎮 台灣": [
+  {
+   "place_id": 226448550,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 961080088,
+   "lat": "24.0125169",
+   "lon": "120.9491698",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.13618373728802152,
+   "addresstype": "tourism",
+   "name": "中台世界博物館",
+   "display_name": "中台世界博物館, 8, 中台路, 燈心湖, 廣成里, 埔里鎮, 南投縣, 54544, 臺灣",
+   "boundingbox": [
+    "24.0115340",
+    "24.0134913",
+    "120.9481935",
+    "120.9505315"
+   ]
+  },
+  {
+   "place_id": 225836491,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9067499031,
+   "lat": "24.0152310",
+   "lon": "120.9495271",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 4.885709925989193e-05,
+   "addresstype": "highway",
+   "name": "中台世界博物館",
+   "display_name": "中台世界博物館, 永豐路, 燈心湖, 廣成里, 埔里鎮, 南投縣, 545004, 臺灣",
+   "boundingbox": [
+    "24.0151810",
+    "24.0152810",
+    "120.9494771",
+    "120.9495771"
+   ]
+  }
+ ],
+ "見城館 高雄市 台灣": [
+  {
+   "place_id": 233465285,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 264915842,
+   "lat": "22.6769346",
+   "lon": "120.2913662",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 6.951628900582921e-05,
+   "addresstype": "tourism",
+   "name": "見城館",
+   "display_name": "見城館, 157-2, Gueishan Lane, 勝利新村, 埤東里, 左營區, 高雄市, 813, 臺灣",
+   "boundingbox": [
+    "22.6768304",
+    "22.6770345",
+    "120.2912630",
+    "120.2914694"
+   ]
+  }
+ ],
+ "見城館 高雄市左營區龜山巷157-2號 台灣": [],
+ "蔣勳文化基金會 時善慧館 台中市 台灣": [],
+ "蔣勳文化基金會 時善慧館 台中市西區 台灣": [],
+ "國立成功大學博物館 台南市 台灣": [
+  {
+   "place_id": 233184709,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 199351780,
+   "lat": "22.9967443",
+   "lon": "120.2196291",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.3498723237425788,
+   "addresstype": "tourism",
+   "name": "國立成功大學博物館",
+   "display_name": "國立成功大學博物館, 南榕廣場, 大學里, 東區, 三份仔, 臺南市, 701, 臺灣",
+   "boundingbox": [
+    "22.9966264",
+    "22.9968420",
+    "120.2191802",
+    "120.2200779"
+   ]
+  }
+ ],
+ "國立成功大學博物館 台南市東區 台灣": [
+  {
+   "place_id": 234793925,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 199351780,
+   "lat": "22.9967443",
+   "lon": "120.2196291",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.3498723237425788,
+   "addresstype": "tourism",
+   "name": "國立成功大學博物館",
+   "display_name": "國立成功大學博物館, 南榕廣場, 大學里, 東區, 三份仔, 臺南市, 701, 臺灣",
+   "boundingbox": [
+    "22.9966264",
+    "22.9968420",
+    "120.2191802",
+    "120.2200779"
+   ]
+  }
+ ],
+ "嘉義縣表演藝術中心 嘉義縣 台灣": [
+  {
+   "place_id": 233640844,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 544689758,
+   "lat": "23.5443129",
+   "lon": "120.4318027",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08004904478522924,
+   "addresstype": "park",
+   "name": "嘉義縣表演藝術中心",
+   "display_name": "嘉義縣表演藝術中心, 山腳子, 文隆村, 民雄鄉, 嘉義縣, 621, 臺灣",
+   "boundingbox": [
+    "23.5422547",
+    "23.5454287",
+    "120.4305776",
+    "120.4332127"
+   ]
+  },
+  {
+   "place_id": 233503997,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12640062102,
+   "lat": "23.5429300",
+   "lon": "120.4329800",
+   "category": "amenity",
+   "type": "bicycle_rental",
+   "place_rank": 30,
+   "importance": 4.904478522922129e-05,
+   "addresstype": "amenity",
+   "name": "嘉義縣表演藝術中心",
+   "display_name": "嘉義縣表演藝術中心, 建國路二段, 山腳子, 文隆村, 民雄鄉, 嘉義縣, 621, 臺灣",
+   "boundingbox": [
+    "23.5428800",
+    "23.5429800",
+    "120.4329300",
+    "120.4330300"
+   ]
+  }
+ ],
+ "嘉義縣表演藝術中心 嘉義縣民雄鄉建國路二段265號 台灣": [],
+ "弎弌和茗園 台南市 台灣": [],
+ "弎弌和茗園 台南市新營區大同路39號 台灣": [],
+ "池上穀倉藝術館 台東縣 台灣": [
+  {
+   "place_id": 240392421,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 962170598,
+   "lat": "23.1244016",
+   "lon": "121.2173692",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 4.9436942091966395e-05,
+   "addresstype": "amenity",
+   "name": "池上穀倉藝術館",
+   "display_name": "池上穀倉藝術館, 6, 中西三路, 福原村, 池上鄉, 臺東縣, 958, 臺灣",
+   "boundingbox": [
+    "23.1242015",
+    "23.1245990",
+    "121.2171291",
+    "121.2176426"
+   ]
+  }
+ ],
+ "池上穀倉藝術館 台東縣池上鄉中西三路6號 台灣": [],
+ "林之助紀念館 台中市 台灣": [],
+ "林之助紀念館 台中市西區柳川西路二段158號 台灣": [],
+ "屏東演武場 屏東縣 台灣": [
+  {
+   "place_id": 233849243,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9212551772,
+   "lat": "22.6744167",
+   "lon": "120.4902470",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 5.404821850914805e-05,
+   "addresstype": "highway",
+   "name": "屏東演武場",
+   "display_name": "屏東演武場, 公園路, 公園里, 屏東市, 屏東縣, 900, 臺灣",
+   "boundingbox": [
+    "22.6743667",
+    "22.6744667",
+    "120.4901970",
+    "120.4902970"
+   ]
+  }
+ ],
+ "屏東演武場 屏東縣屏東市公園路28號 台灣": [],
+ "74藝術中心 台中市 台灣": [],
+ "74藝術中心 台中市北屯區環中東路二段597號 台灣": [],
+ "臺中市猿緣園藝術館 台中市 台灣": [],
+ "臺中市猿緣園藝術館 台中市南區 台灣": [],
+ "鷺安平美術館 台南市 台灣": [],
+ "鷺安平美術館 台南市安平區 台灣": [],
+ "佛光山彰化福山寺 彰化縣 台灣": [],
+ "佛光山彰化福山寺 彰化縣彰化市福山街348號 台灣": [],
+ "臺南市政府社會局 台南市 台灣": [],
+ "臺南市政府社會局 台南市安平區 台灣": [],
+ "臺中市臻品藝術中心 台中市 台灣": [],
+ "臺中市臻品藝術中心 台中市西區 台灣": [],
+ "梧棲行旅 台中市 台灣": [
+  {
+   "place_id": 227588479,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5155188724,
+   "lat": "24.2317699",
+   "lon": "120.5463851",
+   "category": "amenity",
+   "type": "fuel",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "台灣中油",
+   "display_name": "台灣中油, 中華路一段, 興農里, 梧棲區, 大莊, 臺中市, 43345, 臺灣",
+   "boundingbox": [
+    "24.2317199",
+    "24.2318199",
+    "120.5463351",
+    "120.5464351"
+   ]
+  },
+  {
+   "place_id": 229096140,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5155207023,
+   "lat": "24.2283235",
+   "lon": "120.5457136",
+   "category": "amenity",
+   "type": "fuel",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "台灣中油",
+   "display_name": "台灣中油, 中華路一段, 永寧里, 梧棲區, 大莊, 臺中市, 43345, 臺灣",
+   "boundingbox": [
+    "24.2282735",
+    "24.2283735",
+    "120.5456636",
+    "120.5457636"
+   ]
+  }
+ ],
+ "梧棲行旅 台中市梧棲區 台灣": [
+  {
+   "place_id": 227030152,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5155188724,
+   "lat": "24.2317699",
+   "lon": "120.5463851",
+   "category": "amenity",
+   "type": "fuel",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "台灣中油",
+   "display_name": "台灣中油, 中華路一段, 興農里, 梧棲區, 大莊, 臺中市, 43345, 臺灣",
+   "boundingbox": [
+    "24.2317199",
+    "24.2318199",
+    "120.5463351",
+    "120.5464351"
+   ]
+  },
+  {
+   "place_id": 226967616,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5155207023,
+   "lat": "24.2283235",
+   "lon": "120.5457136",
+   "category": "amenity",
+   "type": "fuel",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "台灣中油",
+   "display_name": "台灣中油, 中華路一段, 永寧里, 梧棲區, 大莊, 臺中市, 43345, 臺灣",
+   "boundingbox": [
+    "24.2282735",
+    "24.2283735",
+    "120.5456636",
+    "120.5457636"
+   ]
+  }
+ ],
+ "立法院 文化走廊 台北市 台灣": [],
+ "立法院 文化走廊 台北市中正區中山南路1號 台灣": [],
+ "勝利星村創意生活園區 屏東縣 台灣": [],
+ "勝利星村創意生活園區 屏東縣屏東市青島街106號 台灣": [],
+ "臺北市藝文推廣處-大稻埕戲苑 台北市 台灣": [],
+ "臺北市藝文推廣處-大稻埕戲苑 台北市大同區迪化街1段21號 台灣": [],
+ "辛藝術 Hsin Art Gallery 台中市 台灣": [],
+ "辛藝術 Hsin Art Gallery 台中市龍井區 台灣": [],
+ "新北市立十三行博物館 新北市 台灣": [
+  {
+   "place_id": 240146379,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 230093070,
+   "lat": "25.1568755",
+   "lon": "121.4044109",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.3479646975901272,
+   "addresstype": "tourism",
+   "name": "十三行博物館",
+   "display_name": "十三行博物館, 200, 博物館路, 頂罟里, 八里區, 公田, 新北市, 24947, 臺灣",
+   "boundingbox": [
+    "25.1566133",
+    "25.1574388",
+    "121.4044109",
+    "121.4055311"
+   ]
+  }
+ ],
+ "新北市立十三行博物館 新北市八里區博物館路200號 台灣": [],
+ "毛刺空間 Glitch home 台中市 台灣": [],
+ "毛刺空間 Glitch home 台中市西區 台灣": [],
+ "鯉魚藝廊Carp Gallery 台中市 台灣": [
+  {
+   "place_id": 227270163,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10118954825,
+   "lat": "24.1539950",
+   "lon": "120.6584490",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "鯉魚藝廊Carp Gallery",
+   "display_name": "鯉魚藝廊Carp Gallery, 194, 公益路174巷, 忠誠里, 西區, 田心, 臺中市, 403, 臺灣",
+   "boundingbox": [
+    "24.1539450",
+    "24.1540450",
+    "120.6583990",
+    "120.6584990"
+   ]
+  }
+ ],
+ "鯉魚藝廊Carp Gallery 台中市西區 台灣": [
+  {
+   "place_id": 227194637,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10118954825,
+   "lat": "24.1539950",
+   "lon": "120.6584490",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "鯉魚藝廊Carp Gallery",
+   "display_name": "鯉魚藝廊Carp Gallery, 194, 公益路174巷, 忠誠里, 西區, 田心, 臺中市, 403, 臺灣",
+   "boundingbox": [
+    "24.1539450",
+    "24.1540450",
+    "120.6583990",
+    "120.6584990"
+   ]
+  }
+ ],
+ "盧安藝術文化有限公司 台中市 台灣": [],
+ "盧安藝術文化有限公司 台中市西區 台灣": [],
+ "綠光 gallery 台中市 台灣": [],
+ "綠光 gallery 台中市西區 台灣": [],
+ "豐藝館 台中市 台灣": [
+  {
+   "place_id": 227607813,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 605399027,
+   "lat": "24.2551810",
+   "lon": "120.7456987",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 0.2432038182346074,
+   "addresstype": "amenity",
+   "name": "豐原漆藝館",
+   "display_name": "豐原漆藝館, 水源路, 南嵩里, 豐原區, 臺中市, 420084, 臺灣",
+   "boundingbox": [
+    "24.2550674",
+    "24.2552968",
+    "120.7456018",
+    "120.7458036"
+   ]
+  },
+  {
+   "place_id": 226823890,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1442090863,
+   "lat": "24.1855134",
+   "lon": "120.7074457",
+   "category": "landuse",
+   "type": "commercial",
+   "place_rank": 24,
+   "importance": 0.08006650873579,
+   "addresstype": "commercial",
+   "name": "豐邑建設接待會館",
+   "display_name": "豐邑建設接待會館, 舊社里, 北屯區, 臺中市, 406, 臺灣",
+   "boundingbox": [
+    "24.1851617",
+    "24.1857788",
+    "120.7071909",
+    "120.7077058"
+   ]
+  },
+  {
+   "place_id": 226566807,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5788727469,
+   "lat": "24.2415637",
+   "lon": "120.7172075",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "highway",
+   "name": "豐原藝文館",
+   "display_name": "豐原藝文館, 育仁路, 田心里, 豐原區, 臺中市, 42082, 臺灣",
+   "boundingbox": [
+    "24.2415137",
+    "24.2416137",
+    "120.7171575",
+    "120.7172575"
+   ]
+  },
+  {
+   "place_id": 223855125,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9417169578,
+   "lat": "24.2411719",
+   "lon": "120.7176115",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "amenity",
+   "name": "豐原藝文館",
+   "display_name": "豐原藝文館, 藝文巷, 田心里, 豐原區, 臺中市, 42054, 臺灣",
+   "boundingbox": [
+    "24.2411219",
+    "24.2412219",
+    "120.7175615",
+    "120.7176615"
+   ]
+  },
+  {
+   "place_id": 224833554,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 6022672173,
+   "lat": "24.2554331",
+   "lon": "120.7440192",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "highway",
+   "name": "水源地(豐原漆藝館)",
+   "display_name": "水源地(豐原漆藝館), 水源路, 南嵩里, 豐原區, 臺中市, 420084, 臺灣",
+   "boundingbox": [
+    "24.2553831",
+    "24.2554831",
+    "120.7439692",
+    "120.7440692"
+   ]
+  }
+ ],
+ "豐藝館 台中市西區五權西路一段110號 台灣": [],
+ "當代陶藝館 苗栗縣 台灣": [],
+ "當代陶藝館 苗栗縣三義鄉12鄰水美188號 台灣": [],
+ "角落裡的慢時區 A Corner, A World 台中市 台灣": [],
+ "角落裡的慢時區 A Corner, A World 台中市西區公益路155巷9號B1樓 台灣": [],
+ "大雋藝術 台中市 台灣": [
+  {
+   "place_id": 227755482,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10109023386,
+   "lat": "24.1453279",
+   "lon": "120.6431705",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "大雋藝術",
+   "display_name": "大雋藝術, 489, 惠文路, 田心里, 南屯區, 田心, 臺中市, 408333, 臺灣",
+   "boundingbox": [
+    "24.1452779",
+    "24.1453779",
+    "120.6431205",
+    "120.6432205"
+   ]
+  }
+ ],
+ "大雋藝術 台中市南屯區惠文路489號 台灣": [],
+ "金車文藝中心 臺北南京館 台北市 台灣": [],
+ "金車文藝中心 臺北南京館 台北市南京東路二段1號3F 台灣": [],
+ "雲林縣政府文化觀光處 雲林縣 台灣": [
+  {
+   "place_id": 233595642,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12636035719,
+   "lat": "23.6950690",
+   "lon": "120.5254170",
+   "category": "amenity",
+   "type": "bicycle_rental",
+   "place_rank": 30,
+   "importance": 5.111390859841333e-05,
+   "addresstype": "amenity",
+   "name": "雲林縣政府(文化觀光處)",
+   "display_name": "雲林縣政府(文化觀光處), 大學路三段, 埤口, 鎮西里, 斗六市, 雲林縣, 64054, 臺灣",
+   "boundingbox": [
+    "23.6950190",
+    "23.6951190",
+    "120.5253670",
+    "120.5254670"
+   ]
+  }
+ ],
+ "雲林縣政府文化觀光處 雲林縣台西鄉 台灣": [],
+ "玉山國家公園管理處東埔服務中心 南投縣 台灣": [],
+ "玉山國家公園管理處東埔服務中心 南投縣信義鄉 台灣": [],
+ "苗北藝文中心藝廊 苗栗縣 台灣": [],
+ "苗北藝文中心藝廊 苗栗縣竹南鎮公園路206號 台灣": [],
+ "臺中市現代畫廊 台中市 台灣": [],
+ "臺中市現代畫廊 台中市西區公益路155巷9號B1 台灣": [],
+ "中島GLAb 台中市 台灣": [],
+ "中島GLAb 台中市西區 台灣": [],
+ "正太筆墨坊 台中市 台灣": [],
+ "正太筆墨坊 台中市豐原區成功路369號 台灣": [],
+ "暮拉多元藝術空間 台南市 台灣": [],
+ "暮拉多元藝術空間 台南市中西區國華街三段15號 台灣": [],
+ "森初．moricasa art 台南市 台灣": [],
+ "森初．moricasa art 台南市安平區 台灣": [],
+ "臺南市民治市政中心 台南市 台灣": [
+  {
+   "place_id": 234589616,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 310751903,
+   "lat": "23.3111137",
+   "lon": "120.3156054",
+   "category": "office",
+   "type": "government",
+   "place_rank": 30,
+   "importance": 6.57671473258109e-05,
+   "addresstype": "office",
+   "name": "臺南市議會民治議事廳",
+   "display_name": "臺南市議會民治議事廳, 38, 民治路, 忠政里, 新營區, 臺南市, 730007, 臺灣",
+   "boundingbox": [
+    "23.3109252",
+    "23.3113997",
+    "120.3152676",
+    "120.3159450"
+   ]
+  }
+ ],
+ "臺南市民治市政中心 台南市新營區民治路36號 台灣": [],
+ "梧棲文化出張所 台中市 台灣": [
+  {
+   "place_id": 227966338,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 526982233,
+   "lat": "24.2565445",
+   "lon": "120.5298893",
+   "category": "landuse",
+   "type": "commercial",
+   "place_rank": 24,
+   "importance": 0.08006650873579,
+   "addresstype": "commercial",
+   "name": "梧棲文化出張所",
+   "display_name": "梧棲文化出張所, 中和里, 梧棲區, 台中港市鎮中心, 臺中市, 臺灣",
+   "boundingbox": [
+    "24.2563997",
+    "24.2566892",
+    "120.5295894",
+    "120.5301893"
+   ]
+  }
+ ],
+ "梧棲文化出張所 台中市梧棲區梧棲路142號 台灣": [],
+ "寬藝術空間 台中市 台灣": [
+  {
+   "place_id": 226759879,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10118954822,
+   "lat": "24.1456739",
+   "lon": "120.6641578",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "寬藝術空間",
+   "display_name": "寬藝術空間, 38, 向上路一段79巷, 昇平里, 西區, 臺中市, 403, 臺灣",
+   "boundingbox": [
+    "24.1456239",
+    "24.1457239",
+    "120.6641078",
+    "120.6642078"
+   ]
+  }
+ ],
+ "寬藝術空間 台中市西區台中市西區向上路一段79巷38號 台灣": [],
+ "國璽藝術 台中市 台灣": [
+  {
+   "place_id": 227417152,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9458866459,
+   "lat": "24.1447853",
+   "lon": "120.6537360",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "國璽藝術",
+   "display_name": "國璽藝術, 167號, 向上南路一段, 大同里, 南屯區, 田心, 臺中市, 403031, 臺灣",
+   "boundingbox": [
+    "24.1447353",
+    "24.1448353",
+    "120.6536860",
+    "120.6537860"
+   ]
+  }
+ ],
+ "國璽藝術 台中市南屯區 台灣": [
+  {
+   "place_id": 226605648,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9458866459,
+   "lat": "24.1447853",
+   "lon": "120.6537360",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "國璽藝術",
+   "display_name": "國璽藝術, 167號, 向上南路一段, 大同里, 南屯區, 田心, 臺中市, 403031, 臺灣",
+   "boundingbox": [
+    "24.1447353",
+    "24.1448353",
+    "120.6536860",
+    "120.6537860"
+   ]
+  }
+ ],
+ "雨果曐Gallery 台中市 台灣": [],
+ "雨果曐Gallery 台中市西區 台灣": [],
+ "加沃文行 +wò Cultural Practice 新竹市 台灣": [],
+ "加沃文行 +wò Cultural Practice 新竹市北區西門街258號 台灣": [],
+ "臺中綠美圖 台中市 台灣": [
+  {
+   "place_id": 227117156,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 485125572,
+   "lat": "24.1928851",
+   "lon": "120.6545094",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08006650873579,
+   "addresstype": "park",
+   "name": "臺中綠美圖",
+   "display_name": "臺中綠美圖, 港尾里, 西屯區, 水湳經貿園區, 臺中市, 臺灣",
+   "boundingbox": [
+    "24.1921964",
+    "24.1939298",
+    "120.6534294",
+    "120.6557469"
+   ]
+  }
+ ],
+ "臺中綠美圖 台中市西屯區中科路2201號 台灣": [],
+ "臺南市麻豆區文化館 台南市 台灣": [],
+ "臺南市麻豆區文化館 台南市麻豆區興國路11號 台灣": [],
+ "Smohouse 思默好時 台中市 台灣": [],
+ "Smohouse 思默好時 台中市南屯區 台灣": [],
+ "大甲三寶文化館 台中市 台灣": [],
+ "大甲三寶文化館 台中市大甲區光明路67號 台灣": [],
+ "屏東縣政府 屏東縣 台灣": [
+  {
+   "place_id": 236734426,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 232303321,
+   "lat": "22.3372716",
+   "lon": "120.3684786",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 4.410391393907099e-05,
+   "addresstype": "amenity",
+   "name": "琉球國小",
+   "display_name": "琉球國小, 293, 中正路, 上坪腳, 大福村, 琉球鄉, 屏東縣, 929, 臺灣",
+   "boundingbox": [
+    "22.3360349",
+    "22.3384378",
+    "120.3673579",
+    "120.3695767"
+   ]
+  },
+  {
+   "place_id": 236952864,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 232300640,
+   "lat": "22.3345020",
+   "lon": "120.3676479",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 3.500190737769158e-05,
+   "addresstype": "amenity",
+   "name": "琉球國中",
+   "display_name": "琉球國中, 158之19, 中正路, 上坪腳, 大福村, 琉球鄉, 屏東縣, 929, 臺灣",
+   "boundingbox": [
+    "22.3332833",
+    "22.3362168",
+    "120.3664163",
+    "120.3690746"
+   ]
+  }
+ ],
+ "屏東縣政府 屏東縣竹田鄉 台灣": [],
+ "五股守讓堂 新北市 台灣": [],
+ "五股守讓堂 新北市五股區新五路二段169號 台灣": [],
+ "大新美術館 台南市 台灣": [],
+ "大新美術館 台南市北區 台灣": [],
+ "社團法人中華翰維文化推廣協會 南投縣 台灣": [],
+ "社團法人中華翰維文化推廣協會 南投縣埔里鎮 台灣": [],
+ "清泉藝術之森 新竹縣 台灣": [
+  {
+   "place_id": 227603224,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1011946774,
+   "lat": "24.5730224",
+   "lon": "121.1037889",
+   "category": "tourism",
+   "type": "artwork",
+   "place_rank": 30,
+   "importance": 4.740138857094709e-05,
+   "addresstype": "tourism",
+   "name": "清泉藝術之森",
+   "display_name": "清泉藝術之森, 清泉大橋, 清泉, 桃山村, 五峰鄉, 新竹縣, 311, 臺灣",
+   "boundingbox": [
+    "24.5728077",
+    "24.5732468",
+    "121.1035619",
+    "121.1040179"
+   ]
+  }
+ ],
+ "清泉藝術之森 新竹縣五峰鄉16鄰清泉227號 台灣": [],
+ "iart Gallery 愛上藝廊 新竹市 台灣": [],
+ "iart Gallery 愛上藝廊 新竹市東區忠孝路80號1樓 台灣": [],
+ "台語文創意園區 彰化縣 台灣": [
+  {
+   "place_id": 226063445,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12293227056,
+   "lat": "24.0772157",
+   "lon": "120.5574761",
+   "category": "building",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 5.512245365067548e-05,
+   "addresstype": "building",
+   "name": "台語文創意園區",
+   "display_name": "台語文創意園區, 7號入口, 卦山里, 彰化市, 彰化縣, 50074, 臺灣",
+   "boundingbox": [
+    "24.0771657",
+    "24.0772657",
+    "120.5574261",
+    "120.5575261"
+   ]
+  }
+ ],
+ "台語文創意園區 彰化縣彰化市卦山路18號 台灣": [],
+ "采泥藝術事業股份有限公司 台中市 台灣": [],
+ "采泥藝術事業股份有限公司 台中市西區 台灣": [],
+ "印 藝文空間 / 咖啡 台中市 台灣": [
+  {
+   "place_id": 227459419,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10118954817,
+   "lat": "24.1367049",
+   "lon": "120.6724998",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "印 藝文空間/咖啡",
+   "display_name": "印 藝文空間/咖啡, 1, 林森路38巷, 三民里, 西區, 臺中市, 403, 臺灣",
+   "boundingbox": [
+    "24.1366549",
+    "24.1367549",
+    "120.6724498",
+    "120.6725498"
+   ]
+  }
+ ],
+ "印 藝文空間 / 咖啡 台中市西區林森路38巷1號 台灣": [],
+ "ZASSO 草也 台中市 台灣": [],
+ "ZASSO 草也 台中市西區 台灣": [],
+ "大河美術 台中市 台灣": [
+  {
+   "place_id": 225106174,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10109023385,
+   "lat": "24.1533789",
+   "lon": "120.6482895",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "大河美術",
+   "display_name": "大河美術, 281, 大業路, 溝墘里, 南屯區, 臺中七期, 臺中市, 408325, 臺灣",
+   "boundingbox": [
+    "24.1533289",
+    "24.1534289",
+    "120.6482395",
+    "120.6483395"
+   ]
+  }
+ ],
+ "大河美術 台中市南屯區大業路281號 台灣": [],
+ "鹽埕區 高雄市 台灣": [
+  {
+   "place_id": 235845465,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 2106257,
+   "lat": "22.6246660",
+   "lon": "120.2867950",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 14,
+   "importance": 0.4540735774087027,
+   "addresstype": "suburb",
+   "name": "鹽埕區",
+   "display_name": "鹽埕區, 高雄市, 803, 臺灣",
+   "boundingbox": [
+    "22.6149909",
+    "22.6346975",
+    "120.2769849",
+    "120.2902190"
+   ]
+  }
+ ],
+ "鹽埕區 高雄市鹽埕區 台灣": [
+  {
+   "place_id": 236778752,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1248239051,
+   "lat": "22.6208490",
+   "lon": "120.2784254",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.3793875555226289,
+   "addresstype": "tourism",
+   "name": "哈瑪星台灣鐵道館",
+   "display_name": "哈瑪星台灣鐵道館, 新興街, 新豐里, 鹽埕區, 高雄市, 803, 臺灣",
+   "boundingbox": [
+    "22.6206501",
+    "22.6210480",
+    "120.2782498",
+    "120.2786010"
+   ]
+  },
+  {
+   "place_id": 236602624,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3768776658,
+   "lat": "22.6226063",
+   "lon": "120.2849721",
+   "category": "amenity",
+   "type": "bank",
+   "place_rank": 30,
+   "importance": 6.951628900582921e-05,
+   "addresstype": "amenity",
+   "name": "星展（台灣）商業銀行",
+   "display_name": "星展（台灣）商業銀行, 111, 五福四路, 河濱里, 鹽埕區, 高雄市, 803004, 臺灣",
+   "boundingbox": [
+    "22.6225563",
+    "22.6226563",
+    "120.2849221",
+    "120.2850221"
+   ]
+  },
+  {
+   "place_id": 236078694,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 217313477,
+   "lat": "22.6261308",
+   "lon": "120.2848312",
+   "category": "amenity",
+   "type": "bank",
+   "place_rank": 30,
+   "importance": 6.951628900582921e-05,
+   "addresstype": "amenity",
+   "name": "臺灣土地銀行",
+   "display_name": "臺灣土地銀行, 131, 大勇路, 瀨南里, 鹽埕區, 高雄市, 803, 臺灣",
+   "boundingbox": [
+    "22.6259290",
+    "22.6263325",
+    "120.2846071",
+    "120.2850552"
+   ]
+  },
+  {
+   "place_id": 236333872,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 808480744,
+   "lat": "22.6305057",
+   "lon": "120.2826530",
+   "category": "amenity",
+   "type": "fuel",
+   "place_rank": 30,
+   "importance": 6.951628900582921e-05,
+   "addresstype": "amenity",
+   "name": "台灣中油",
+   "display_name": "台灣中油, 建國四路311巷, 博愛里, 鹽埕區, 高雄市, 803, 臺灣",
+   "boundingbox": [
+    "22.6303782",
+    "22.6305524",
+    "120.2825700",
+    "120.2828157"
+   ]
+  },
+  {
+   "place_id": 236100241,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 7489297695,
+   "lat": "22.6229894",
+   "lon": "120.2846050",
+   "category": "shop",
+   "type": "mobile_phone",
+   "place_rank": 30,
+   "importance": 6.951628900582921e-05,
+   "addresstype": "shop",
+   "name": "台灣大哥大",
+   "display_name": "台灣大哥大, 五福四路, 河濱里, 鹽埕區, 高雄市, 803, 臺灣",
+   "boundingbox": [
+    "22.6229394",
+    "22.6230394",
+    "120.2845550",
+    "120.2846550"
+   ]
+  }
+ ],
+ "國立臺灣藝術大學 台南市 台灣": [],
+ "國立臺灣藝術大學 台南市官田區 台灣": [],
+ "屏東縣政府文化處 屏東縣 台灣": [
+  {
+   "place_id": 236044238,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 7814664106,
+   "lat": "22.6638916",
+   "lon": "120.5059639",
+   "category": "office",
+   "type": "government",
+   "place_rank": 30,
+   "importance": 5.404821850914805e-05,
+   "addresstype": "office",
+   "name": "屏東縣政府文化處",
+   "display_name": "屏東縣政府文化處, 演藝廳地下停車場, 瑞光里, 屏東市, 屏東縣, 900, 臺灣",
+   "boundingbox": [
+    "22.6638416",
+    "22.6639416",
+    "120.5059139",
+    "120.5060139"
+   ]
+  }
+ ],
+ "屏東縣政府文化處 屏東縣恆春鎮 台灣": [],
+ "太平買菸場 台中市 台灣": [
+  {
+   "place_id": 227405245,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 675424981,
+   "lat": "24.1342192",
+   "lon": "120.7244002",
+   "category": "building",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 0.32771111640952466,
+   "addresstype": "building",
+   "name": "太平買菸場",
+   "display_name": "太平買菸場, 464號, 東平路, 東平里, 太平區, 長億里, 臺中市, 406, 臺灣",
+   "boundingbox": [
+    "24.1340123",
+    "24.1343991",
+    "120.7241878",
+    "120.7246142"
+   ]
+  },
+  {
+   "place_id": 227452214,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3737158223,
+   "lat": "24.1340331",
+   "lon": "120.7243673",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "highway",
+   "name": "太平買菸場",
+   "display_name": "太平買菸場, 464號, 東平路, 東平里, 太平區, 長億里, 臺中市, 406, 臺灣",
+   "boundingbox": [
+    "24.1339831",
+    "24.1340831",
+    "120.7243173",
+    "120.7244173"
+   ]
+  },
+  {
+   "place_id": 226932601,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3737158222,
+   "lat": "24.1338645",
+   "lon": "120.7242910",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "highway",
+   "name": "太平買菸場",
+   "display_name": "太平買菸場, 東平路, 成功里, 太平區, 長億里, 臺中市, 411, 臺灣",
+   "boundingbox": [
+    "24.1338145",
+    "24.1339145",
+    "120.7242410",
+    "120.7243410"
+   ]
+  }
+ ],
+ "太平買菸場 台中市太平區東平路464號 台灣": [],
+ "Epic禪藝實相人文空間 台中市 台灣": [],
+ "Epic禪藝實相人文空間 台中市西區 台灣": [],
+ "朝代藝術畫廊 台北市 台灣": [],
+ "朝代藝術畫廊 台北市大安區 台灣": [],
+ "當代一畫廊 台北市 台灣": [],
+ "當代一畫廊 台北市松山區 台灣": [],
+ "聯邦藝術中心 台北市 台灣": [],
+ "聯邦藝術中心 台北市大安區 台灣": [],
+ "1839當代藝廊 Little Gallery 台北市 台灣": [],
+ "1839當代藝廊 Little Gallery 台北市大安區延吉街120號地下樓 台灣": [],
+ "曜畫廊 台北市 台灣": [],
+ "曜畫廊 台北市松山區 台灣": [],
+ "也趣藝廊 AKI Gallery 台北市 台灣": [],
+ "也趣藝廊 AKI Gallery 台北市大同區民族西路141號 台灣": [],
+ "臺北青年職涯發展中心 台北市 台灣": [
+  {
+   "place_id": 230725613,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 13333798207,
+   "lat": "25.0391032",
+   "lon": "121.5225333",
+   "category": "amenity",
+   "type": "social_facility",
+   "place_rank": 30,
+   "importance": 7.457007705801507e-05,
+   "addresstype": "amenity",
+   "name": "臺北青年職涯發展中心",
+   "display_name": "臺北青年職涯發展中心, 17, 仁愛路一段, 東門里, 中正區, 華山, 臺北市, 10052, 臺灣",
+   "boundingbox": [
+    "25.0390532",
+    "25.0391532",
+    "121.5224833",
+    "121.5225833"
+   ]
+  }
+ ],
+ "臺北青年職涯發展中心 台北市中正區仁愛路一段17號 台灣": [],
+ "阿波羅畫廊 台北市 台灣": [],
+ "阿波羅畫廊 台北市大安區忠孝東路四段阿波羅大廈218-6號 台灣": [],
+ "得忌利士洋行 新北市 台灣": [
+  {
+   "place_id": 237882858,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 299785381,
+   "lat": "25.1726698",
+   "lon": "121.4369767",
+   "category": "tourism",
+   "type": "attraction",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "tourism",
+   "name": "得忌利士洋行",
+   "display_name": "得忌利士洋行, 中正路, 新生里, 淡水區, 滬尾, 新北市, 25164, 臺灣",
+   "boundingbox": [
+    "25.1725779",
+    "25.1727616",
+    "121.4368657",
+    "121.4370878"
+   ]
+  }
+ ],
+ "得忌利士洋行 新北市淡水區中正路316、316-1號 台灣": [],
+ "二空間藝術經紀股份有限公司 台北市 台灣": [],
+ "二空間藝術經紀股份有限公司 台北市中山區 台灣": [],
+ "圓山花博- 花海廣場 台北市 台灣": [],
+ "圓山花博- 花海廣場 台北市中山區玉門路1號 台灣": [],
+ "霧峰林家宮保第園區 台中市 台灣": [
+  {
+   "place_id": 226479706,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 678933233,
+   "lat": "24.0628086",
+   "lon": "120.7011082",
+   "category": "building",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "building",
+   "name": "霧峰林家宮保第園區",
+   "display_name": "霧峰林家宮保第園區, 26, 民生路, 本堂里, 霧峰區, 草湖, 臺中市, 413, 臺灣",
+   "boundingbox": [
+    "24.0626583",
+    "24.0629027",
+    "120.7007889",
+    "120.7014314"
+   ]
+  }
+ ],
+ "霧峰林家宮保第園區 台中市霧峰區民生路26號 台灣": [],
+ "大象藝術空間館 台中市 台灣": [],
+ "大象藝術空間館 台中市西屯區市政路386號13樓之5 台灣": [],
+ "852藝術空間 台中市 台灣": [],
+ "852藝術空間 台中市龍井區 台灣": [],
+ "天目城藝文展覽館 台中市 台灣": [],
+ "天目城藝文展覽館 台中市南屯區 台灣": [],
+ "窯座 台中市 台灣": [
+  {
+   "place_id": 227381446,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 13584677903,
+   "lat": "24.1546910",
+   "lon": "120.6959915",
+   "category": "craft",
+   "type": "handicraft",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "craft",
+   "name": "長樂窯陶藝工作室",
+   "display_name": "長樂窯陶藝工作室, 14, 興進路131巷7弄, 錦村里, 北區, 臺中市, 404, 臺灣",
+   "boundingbox": [
+    "24.1546410",
+    "24.1547410",
+    "120.6959415",
+    "120.6960415"
+   ]
+  }
+ ],
+ "窯座 台中市西區 台灣": [],
+ "養心藝術 Artnutri Gallery 台中市 台灣": [],
+ "養心藝術 Artnutri Gallery 台中市南屯區 台灣": [],
+ "科元藝術中心 台中市 台灣": [
+  {
+   "place_id": 227015995,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10108869473,
+   "lat": "24.2685647",
+   "lon": "120.5754474",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "科元藝術中心",
+   "display_name": "科元藝術中心, 126之8, 中山路, 清水里, 清水區, 臺中市, 436713, 臺灣",
+   "boundingbox": [
+    "24.2685147",
+    "24.2686147",
+    "120.5753974",
+    "120.5754974"
+   ]
+  }
+ ],
+ "科元藝術中心 台中市清水區 台灣": [
+  {
+   "place_id": 227406957,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10108869473,
+   "lat": "24.2685647",
+   "lon": "120.5754474",
+   "category": "shop",
+   "type": "art",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "shop",
+   "name": "科元藝術中心",
+   "display_name": "科元藝術中心, 126之8, 中山路, 清水里, 清水區, 臺中市, 436713, 臺灣",
+   "boundingbox": [
+    "24.2685147",
+    "24.2686147",
+    "120.5753974",
+    "120.5754974"
+   ]
+  }
+ ],
+ "好地下藝術空間 花蓮縣 台灣": [],
+ "好地下藝術空間 花蓮縣花蓮市節約街37號B1 台灣": [],
+ "郭子究音樂文化館 花蓮縣 台灣": [
+  {
+   "place_id": 233584269,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 916071002,
+   "lat": "23.9871702",
+   "lon": "121.6247340",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "tourism",
+   "name": "郭子究音樂文化館",
+   "display_name": "郭子究音樂文化館, 10, 民權七街1巷, 民立里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9870911",
+    "23.9872321",
+    "121.6246549",
+    "121.6248127"
+   ]
+  }
+ ],
+ "郭子究音樂文化館 花蓮縣花蓮市民權7街1巷10號 台灣": [],
+ "花蓮縣政府 花蓮縣 台灣": [
+  {
+   "place_id": 232725381,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 18501494,
+   "lat": "23.9933270",
+   "lon": "121.6201157",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "amenity",
+   "name": "花蓮縣警察局",
+   "display_name": "花蓮縣警察局, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9924819",
+    "23.9938954",
+    "121.6191468",
+    "121.6226933"
+   ]
+  },
+  {
+   "place_id": 232816877,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 424969824,
+   "lat": "23.9941258",
+   "lon": "121.6207420",
+   "category": "office",
+   "type": "government",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "office",
+   "name": "花蓮縣議會",
+   "display_name": "花蓮縣議會, 23, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9938002",
+    "23.9944403",
+    "121.6204167",
+    "121.6210761"
+   ]
+  },
+  {
+   "place_id": 232804690,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 424969843,
+   "lat": "23.9932273",
+   "lon": "121.6201332",
+   "category": "office",
+   "type": "government",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "office",
+   "name": "花蓮縣警察局",
+   "display_name": "花蓮縣警察局, 21, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9929651",
+    "23.9935233",
+    "121.6196170",
+    "121.6202700"
+   ]
+  },
+  {
+   "place_id": 232823534,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12473554605,
+   "lat": "23.9926852",
+   "lon": "121.6223431",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "amenity",
+   "name": "花蓮縣警察局婦幼警察隊",
+   "display_name": "花蓮縣警察局婦幼警察隊, 226, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9926352",
+    "23.9927352",
+    "121.6222931",
+    "121.6223931"
+   ]
+  },
+  {
+   "place_id": 232989662,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12473554604,
+   "lat": "23.9928647",
+   "lon": "121.6223710",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "amenity",
+   "name": "花蓮縣警察局交通警察隊",
+   "display_name": "花蓮縣警察局交通警察隊, 226, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9928147",
+    "23.9929147",
+    "121.6223210",
+    "121.6224210"
+   ]
+  }
+ ],
+ "花蓮縣政府 花蓮縣花蓮市 台灣": [
+  {
+   "place_id": 233257266,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 18501494,
+   "lat": "23.9933270",
+   "lon": "121.6201157",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "amenity",
+   "name": "花蓮縣警察局",
+   "display_name": "花蓮縣警察局, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9924819",
+    "23.9938954",
+    "121.6191468",
+    "121.6226933"
+   ]
+  },
+  {
+   "place_id": 233446494,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 424969824,
+   "lat": "23.9941258",
+   "lon": "121.6207420",
+   "category": "office",
+   "type": "government",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "office",
+   "name": "花蓮縣議會",
+   "display_name": "花蓮縣議會, 23, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9938002",
+    "23.9944403",
+    "121.6204167",
+    "121.6210761"
+   ]
+  },
+  {
+   "place_id": 231014125,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 424969843,
+   "lat": "23.9932273",
+   "lon": "121.6201332",
+   "category": "office",
+   "type": "government",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "office",
+   "name": "花蓮縣警察局",
+   "display_name": "花蓮縣警察局, 21, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9929651",
+    "23.9935233",
+    "121.6196170",
+    "121.6202700"
+   ]
+  },
+  {
+   "place_id": 230764867,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12473554605,
+   "lat": "23.9926852",
+   "lon": "121.6223431",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "amenity",
+   "name": "花蓮縣警察局婦幼警察隊",
+   "display_name": "花蓮縣警察局婦幼警察隊, 226, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9926352",
+    "23.9927352",
+    "121.6222931",
+    "121.6223931"
+   ]
+  },
+  {
+   "place_id": 230960032,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12473554602,
+   "lat": "23.9927750",
+   "lon": "121.6223570",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 5.339360646977977e-05,
+   "addresstype": "amenity",
+   "name": "花蓮縣警察局少年警察隊",
+   "display_name": "花蓮縣警察局少年警察隊, 226, 府前路, 大陳一村, 民勤里, 花蓮市, 花蓮縣, 970, 臺灣",
+   "boundingbox": [
+    "23.9927250",
+    "23.9928250",
+    "121.6223070",
+    "121.6224070"
+   ]
+  }
+ ],
+ "全安堂臺灣太陽餅博物館 台中市 台灣": [],
+ "全安堂臺灣太陽餅博物館 台中市中區台灣大道一段145號 台灣": [],
+ "臺南市方圓美術館 台南市 台灣": [],
+ "臺南市方圓美術館 台南市將軍區1號 台灣": [],
+ "臺北市藝文推廣處 台北市 台灣": [
+  {
+   "place_id": 230491616,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 136053365,
+   "lat": "25.0484248",
+   "lon": "121.5522332",
+   "category": "amenity",
+   "type": "arts_centre",
+   "place_rank": 30,
+   "importance": 7.457007705801507e-05,
+   "addresstype": "amenity",
+   "name": "臺北市藝文推廣處",
+   "display_name": "臺北市藝文推廣處, 25, 八德路三段, 敦化里, 松山區, 中崙, 臺北市, 10554, 臺灣",
+   "boundingbox": [
+    "25.0483206",
+    "25.0485255",
+    "121.5519881",
+    "121.5524784"
+   ]
+  },
+  {
+   "place_id": 230813319,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9180652849,
+   "lat": "25.0482600",
+   "lon": "121.5523500",
+   "category": "amenity",
+   "type": "bicycle_rental",
+   "place_rank": 30,
+   "importance": 7.457007705801507e-05,
+   "addresstype": "amenity",
+   "name": "臺北市藝文推廣處",
+   "display_name": "臺北市藝文推廣處, 八德路三段, 敦化里, 松山區, 中崙, 臺北市, 10554, 臺灣",
+   "boundingbox": [
+    "25.0482100",
+    "25.0483100",
+    "121.5523000",
+    "121.5524000"
+   ]
+  }
+ ],
+ "臺北市藝文推廣處 台北市大同區 台灣": [],
+ "金車文藝中心 台北市 台灣": [
+  {
+   "place_id": 230354843,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 674101024,
+   "lat": "25.0328786",
+   "lon": "121.5284600",
+   "category": "amenity",
+   "type": "parking",
+   "place_rank": 30,
+   "importance": 7.457007705801507e-05,
+   "addresstype": "amenity",
+   "name": "27247Times金山南路平面停車場",
+   "display_name": "27247Times金山南路平面停車場, 信義路二段148巷, 永康里, 大安區, 古亭, 臺北市, 106007, 臺灣",
+   "boundingbox": [
+    "25.0328141",
+    "25.0329397",
+    "121.5283897",
+    "121.5285305"
+   ]
+  },
+  {
+   "place_id": 230565445,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5110242799,
+   "lat": "25.0354578",
+   "lon": "121.5330104",
+   "category": "shop",
+   "type": "alcohol",
+   "place_rank": 30,
+   "importance": 7.457007705801507e-05,
+   "addresstype": "shop",
+   "name": "金車葛馬蘭威士忌",
+   "display_name": "金車葛馬蘭威士忌, 新生南路一段151巷, 民炤里, 大安區, 華山, 臺北市, 10603, 臺灣",
+   "boundingbox": [
+    "25.0354078",
+    "25.0355078",
+    "121.5329604",
+    "121.5330604"
+   ]
+  }
+ ],
+ "金車文藝中心 台北市大同區 台灣": [],
+ "帝門藝術中心 台北市 台灣": [],
+ "帝門藝術中心 台北市大安區 台灣": [],
+ "江山藝改所 新竹市 台灣": [],
+ "江山藝改所 新竹市東區 台灣": [],
+ "苗栗陶瓷農創園區 苗栗縣 台灣": [],
+ "苗栗陶瓷農創園區 苗栗縣公館鄉14鄰館南352號 台灣": [],
+ "LaLaport 台中 café stand 台中市 台灣": [],
+ "LaLaport 台中 café stand 台中市東區進德路600號3樓 台灣": [],
+ "LaLaport 台中北館1F 台中市 台灣": [],
+ "LaLaport 台中北館1F 台中市東區進德路600號1樓 台灣": [],
+ "MITSUI OUTLET PARK 林口I館室內棟1F 六角廣場 新北市 台灣": [],
+ "MITSUI OUTLET PARK 林口I館室內棟1F 六角廣場 新北市林口區文化三路一段356號1樓 台灣": [],
+ "MyAnime Café 三創店（台北） 台北市 台灣": [],
+ "MyAnime Café 三創店（台北） 台北市中正區市民大道三段2號7樓 台灣": [],
+ "MyAnime Café 高雄店（統一時代百貨B1） 高雄市 台灣": [],
+ "MyAnime Café 高雄店（統一時代百貨B1） 高雄市前鎮區中華五路789號B1 台灣": [],
+ "SORA LINK（三創生活園區8樓） 台北市 台灣": [],
+ "SORA LINK（三創生活園區8樓） 台北市中正區市民大道三段2號8樓 台灣": [],
+ "三創生活園區1F 十二立方 台北市 台灣": [],
+ "三創生活園區1F 十二立方 台北市中正區市民大道三段2號 台灣": [],
+ "中友百貨 台中市 台灣": [
+  {
+   "place_id": 226407915,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 7347107,
+   "lat": "24.1522668",
+   "lon": "120.6847123",
+   "category": "shop",
+   "type": "department_store",
+   "place_rank": 30,
+   "importance": 0.3544115905399448,
+   "addresstype": "shop",
+   "name": "中友百貨",
+   "display_name": "中友百貨, 161, 三民路三段, 錦平里, 北區, 臺中市, 40446, 臺灣",
+   "boundingbox": [
+    "24.1516200",
+    "24.1528671",
+    "120.6840773",
+    "120.6851972"
+   ]
+  },
+  {
+   "place_id": 224151203,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 2957200718,
+   "lat": "24.1524424",
+   "lon": "120.6853708",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "highway",
+   "name": "中友百貨",
+   "display_name": "中友百貨, 三民路三段, 新北里, 北區, 臺中市, 404, 臺灣",
+   "boundingbox": [
+    "24.1523924",
+    "24.1524924",
+    "120.6853208",
+    "120.6854208"
+   ]
+  },
+  {
+   "place_id": 226905833,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 2957200717,
+   "lat": "24.1517849",
+   "lon": "120.6848381",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.650873578999036e-05,
+   "addresstype": "highway",
+   "name": "中友百貨",
+   "display_name": "中友百貨, 三民路三段, 錦平里, 北區, 臺中市, 404, 臺灣",
+   "boundingbox": [
+    "24.1517349",
+    "24.1518349",
+    "120.6847881",
+    "120.6848881"
+   ]
+  }
+ ],
+ "京站時尚廣場1F 台北市 台灣": [],
+ "京站時尚廣場1F 台北市大同區承德路一段1號 台灣": [],
+ "全台 CACO CAFE 門市（多分店，無單一門牌） 台北市 台灣": [],
+ "全台 CACO CAFE 門市（多分店，無單一門牌） 台北市信義區光復南路133號 台灣": [],
+ "台中中友百貨B棟13樓 台中市 台灣": [],
+ "台中中友百貨B棟13樓 台中市北區三民路三段161號B棟13樓 台灣": [],
+ "台中大遠百威秀影城 台中市 台灣": [],
+ "台中大遠百威秀影城 台中市西屯區台灣大道三段251號13樓 台灣": [],
+ "台中市 台北市 台灣": [
+  {
+   "place_id": 231843160,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 4790859,
+   "lat": "25.0494348",
+   "lon": "121.5380675",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 0.43777879259724717,
+   "addresstype": "amenity",
+   "name": "中山女高",
+   "display_name": "中山女高, 141, 長安東路二段, 朱崙里, 中山區, 中崙, 臺北市, 10490, 臺灣",
+   "boundingbox": [
+    "25.0484776",
+    "25.0499593",
+    "121.5370679",
+    "121.5390486"
+   ]
+  },
+  {
+   "place_id": 231155162,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 17885278,
+   "lat": "25.0378875",
+   "lon": "121.5139190",
+   "category": "emergency",
+   "type": "assembly_point",
+   "place_rank": 30,
+   "importance": 0.4449077257189811,
+   "addresstype": "emergency",
+   "name": "臺北市立第一女子高級中學",
+   "display_name": "臺北市立第一女子高級中學, 165, 重慶南路一段, 建國里, 中正區, 城內, 臺北市, 10045, 臺灣",
+   "boundingbox": [
+    "25.0371874",
+    "25.0386613",
+    "121.5127891",
+    "121.5151055"
+   ]
+  },
+  {
+   "place_id": 231290139,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 4730350,
+   "lat": "25.0354347",
+   "lon": "121.5407304",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 0.43372653935730887,
+   "addresstype": "amenity",
+   "name": "師大附中",
+   "display_name": "師大附中, 143, 信義路三段, 和安里, 大安區, 東區商圈, 臺北市, 10658, 臺灣",
+   "boundingbox": [
+    "25.0336461",
+    "25.0371298",
+    "121.5395488",
+    "121.5418911"
+   ]
+  },
+  {
+   "place_id": 230335641,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 3392608,
+   "lat": "25.0303389",
+   "lon": "121.5126900",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 0.41476986573684055,
+   "addresstype": "amenity",
+   "name": "建國中學",
+   "display_name": "建國中學, 56, 南海路, 龍光里, 中正區, 龍匣口, 臺北市, 10066, 臺灣",
+   "boundingbox": [
+    "25.0291679",
+    "25.0315437",
+    "121.5110152",
+    "121.5141208"
+   ]
+  },
+  {
+   "place_id": 231278247,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 4638981,
+   "lat": "25.0383307",
+   "lon": "121.5204463",
+   "category": "emergency",
+   "type": "assembly_point",
+   "place_rank": 30,
+   "importance": 0.39965982201271655,
+   "addresstype": "emergency",
+   "name": "東門國小",
+   "display_name": "東門國小, 2-4, 仁愛路一段, 東門里, 中正區, 城內, 臺北市, 10052, 臺灣",
+   "boundingbox": [
+    "25.0373241",
+    "25.0388148",
+    "121.5194976",
+    "121.5213967"
+   ]
+  }
+ ],
+ "台中市 台北市中山區大佳河濱公園（基16號水門） 台灣": [],
+ "台中驛鐵道文化園區 鐵鹿大街 新北市 台灣": [],
+ "台中驛鐵道文化園區 鐵鹿大街 新北市板橋區環河西路四段18號 台灣": [],
+ "台北三創生活園區 台北市 台灣": [],
+ "台北三創生活園區 台北市中正區市民大道三段2號 台灣": [],
+ "台北三創生活園區 1F 十二立方 台北市 台灣": [],
+ "台北三創生活園區 1F 十二立方 台北市中正區市民大道三段2號 台灣": [],
+ "台北信義威秀影城 台北市 台灣": [],
+ "台北信義威秀影城 台北市信義區松壽路20號 台灣": [],
+ "台北和平籃球館（台北戰神主場） 台北市 台灣": [],
+ "台北和平籃球館（台北戰神主場） 台北市中正區市民大道三段2號 台灣": [],
+ "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心 台北市 台灣": [],
+ "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心 台北市松山區復興南路一段39號 台灣": [],
+ "新光三越台中中港店10F天空劇場 台中市 台灣": [],
+ "新光三越台中中港店10F天空劇場 台中市西屯區台灣大道三段301號 台灣": [],
+ "新光三越台北信義新天地A11館 台北市 台灣": [],
+ "新光三越台北信義新天地A11館 台北市中正區市民大道三段2號8樓 台灣": [],
+ "新光三越台北信義新天地A8館5樓 台北市 台灣": [],
+ "新光三越台北信義新天地A8館5樓 台北市信義區松高路12號5樓 台灣": [],
+ "新光三越台北南西店 一館 9F 活動會館 台北市 台灣": [],
+ "新光三越台北南西店 一館 9F 活動會館 台北市中山區南京西路12號 台灣": [],
+ "新光三越高雄左營店 10F 高雄市 台灣": [],
+ "新光三越高雄左營店 10F 高雄市左營區高鐵路123號10樓 台灣": [],
+ "新店裕隆城 5F 機械大廳 新北市 台灣": [],
+ "新店裕隆城 5F 機械大廳 新北市新店區中興路三段70號 台灣": [],
+ "新莊棒球場 新北市 台灣": [
+  {
+   "place_id": 231726150,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 665628025,
+   "lat": "25.0410978",
+   "lon": "121.4477768",
+   "category": "leisure",
+   "type": "stadium",
+   "place_rank": 30,
+   "importance": 0.38231608517972687,
+   "addresstype": "leisure",
+   "name": "新北市立新莊棒球場",
+   "display_name": "新北市立新莊棒球場, 和興街, 立德里, 新莊區, 新庄(海山口), 新北市, 242005, 臺灣",
+   "boundingbox": [
+    "25.0402323",
+    "25.0419386",
+    "121.4468434",
+    "121.4487008"
+   ]
+  },
+  {
+   "place_id": 231693987,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 2526629188,
+   "lat": "25.0417333",
+   "lon": "121.4462235",
+   "category": "highway",
+   "type": "bus_stop",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "highway",
+   "name": "新莊棒球場(立功里立德里)",
+   "display_name": "新莊棒球場(立功里立德里), 復興路一段, 立德里, 新莊區, 中港厝, 新北市, 242005, 臺灣",
+   "boundingbox": [
+    "25.0416833",
+    "25.0417833",
+    "121.4461735",
+    "121.4462735"
+   ]
+  },
+  {
+   "place_id": 231786023,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 9363053132,
+   "lat": "25.0413800",
+   "lon": "121.4460900",
+   "category": "amenity",
+   "type": "bicycle_rental",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "新莊棒球場",
+   "display_name": "新莊棒球場, 和興街, 立德里, 新莊區, 新庄(海山口), 新北市, 242005, 臺灣",
+   "boundingbox": [
+    "25.0413300",
+    "25.0414300",
+    "121.4460400",
+    "121.4461400"
+   ]
+  },
+  {
+   "place_id": 231799382,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 13601809687,
+   "lat": "25.0406900",
+   "lon": "121.4465400",
+   "category": "amenity",
+   "type": "bicycle_rental",
+   "place_rank": 30,
+   "importance": 6.715571831841028e-05,
+   "addresstype": "amenity",
+   "name": "新莊棒球場(和興街)",
+   "display_name": "新莊棒球場(和興街), 和興街, 立德里, 新莊區, 新庄(海山口), 新北市, 242005, 臺灣",
+   "boundingbox": [
+    "25.0406400",
+    "25.0407400",
+    "121.4464900",
+    "121.4465900"
+   ]
+  }
+ ],
+ "新莊棒球場 新北市新莊區和興街66號 台灣": [],
+ "松山文創園區 4號倉庫 台北市 台灣": [],
+ "松山文創園區 4號倉庫 台北市信義區光復南路133號 台灣": [],
+ "松山文創園區 5號倉庫 台北市 台灣": [],
+ "松山文創園區 5號倉庫 台北市信義區光復南路133號 台灣": [],
+ "松山文創園區2F 多功能展演廳 台北市 台灣": [],
+ "松山文創園區2F 多功能展演廳 台北市信義區光復南路133號 台灣": [],
+ "淡江大橋 新北市 台灣": [
+  {
+   "place_id": 231116347,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 572782986,
+   "lat": "25.1721207",
+   "lon": "121.4170090",
+   "category": "highway",
+   "type": "trunk",
+   "place_rank": 26,
+   "importance": 0.35614271866453184,
+   "addresstype": "road",
+   "name": "淡江大橋",
+   "display_name": "淡江大橋, 埤頭里, 八里區, 淡海, 新北市, 25155, 臺灣",
+   "boundingbox": [
+    "25.1673826",
+    "25.1777624",
+    "121.4138811",
+    "121.4185460"
+   ]
+  },
+  {
+   "place_id": 231179001,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 574378104,
+   "lat": "25.1745031",
+   "lon": "121.4176711",
+   "category": "bridge",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 0.35614271866453184,
+   "addresstype": "bridge",
+   "name": "淡江大橋",
+   "display_name": "淡江大橋, 公車專用道, 沙崙里, 淡水區, 淡海, 新北市, 25155, 臺灣",
+   "boundingbox": [
+    "25.1708596",
+    "25.1781916",
+    "121.4165751",
+    "121.4186029"
+   ]
+  },
+  {
+   "place_id": 231106681,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1234307550,
+   "lat": "25.1789311",
+   "lon": "121.4188306",
+   "category": "highway",
+   "type": "trunk",
+   "place_rank": 26,
+   "importance": 0.35614271866453184,
+   "addresstype": "road",
+   "name": "淡江大橋",
+   "display_name": "淡江大橋, 沙崙里, 淡水區, 淡海, 新北市, 25155, 臺灣",
+   "boundingbox": [
+    "25.1778804",
+    "25.1798693",
+    "121.4183809",
+    "121.4194802"
+   ]
+  }
+ ],
+ "淡江大橋 新北市淡水區與八里區之間，跨淡水河 台灣": [],
+ "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點） 高雄市 台灣": [],
+ "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點） 高雄市前鎮區中山二路8號 台灣": [],
+ "華山1914文創園區 中4A館 台北市 台灣": [],
+ "華山1914文創園區 中4A館 台北市中正區八德路一段1號 台灣": [],
+ "華山1914文創園區 東2館四連棟 台北市 台灣": [],
+ "華山1914文創園區 東2館四連棟 台北市中正區八德路一段1號 台灣": [],
+ "華山1914文化創意產業園區 中5B館 台北市 台灣": [],
+ "華山1914文化創意產業園區 中5B館 台北市中正區八德路一段1號 台灣": [],
+ "遠雄海洋公園 花蓮縣 台灣": [
+  {
+   "place_id": 233908563,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 313210456,
+   "lat": "23.9009737",
+   "lon": "121.6014247",
+   "category": "tourism",
+   "type": "theme_park",
+   "place_rank": 30,
+   "importance": 0.3363461829037416,
+   "addresstype": "tourism",
+   "name": "遠雄海洋公園",
+   "display_name": "遠雄海洋公園, 189, 福德, 鹽寮村, 壽豐鄉, 花蓮縣, 974, 臺灣",
+   "boundingbox": [
+    "23.8992374",
+    "23.9027039",
+    "121.5989914",
+    "121.6038615"
+   ]
+  }
+ ],
+ "高雄夢時代購物中心 1F 高雄市 台灣": [],
+ "高雄夢時代購物中心 1F 高雄市前鎮區中華五路789號1樓 台灣": [],
+ "高雄大遠百威秀影城 高雄市 台灣": [],
+ "高雄大遠百威秀影城 高雄市苓雅區三多四路21號13樓 台灣": [],
+ "高雄駁二藝術特區 蓬萊B4倉庫（獵人實境解謎遊戲－貪婪之島篇 高雄站） 高雄市 台灣": [],
+ "高雄駁二藝術特區 蓬萊B4倉庫（獵人實境解謎遊戲－貪婪之島篇 高雄站） 高雄市鹽埕區大勇路1號 台灣": [],
+ "高雄駅一番街・北站 高雄捷運高雄車站B2 高雄市 台灣": [],
+ "高雄駅一番街・北站 高雄捷運高雄車站B2 高雄市三民區建國二路320號B2 台灣": [],
+ "魯克思咖啡左營店 高雄市 台灣": [],
+ "魯克思咖啡左營店 高雄市左營區修明街166號1樓 台灣": [],
+ "台北市中正區忠孝西路一段70號 台灣": [],
+ "新北市板橋區中正路435號 台灣": [],
+ "台北市士林區雨農路17-2號1樓 台灣": [],
+ "台中市西區英才路589巷6號1F(月臨畫廊) 台灣": [],
+ "台北市文山區景文街32號 台灣": [],
+ "彰化縣彰化市溫泉路31號 台灣": [],
+ "新北市板橋區文化路一段266號12樓之1 台灣": [],
+ "彰化縣芳苑鄉漁港路900號 台灣": [],
+ "彰化縣埤頭鄉彰水路二段526號 台灣": [],
+ "台中市南屯區惠中路三段65號 台灣": [],
+ "台南市仁德區二仁路一段321號 台灣": [],
+ "台南市新營區大同路39號 台灣": [],
+ "台中市西區柳川西路二段158號 台灣": [],
+ "屏東縣屏東市公園路28號 台灣": [],
+ "台中市北屯區環中東路二段597號 台灣": [],
+ "彰化縣彰化市福山街348號 台灣": [],
+ "台北市中正區中山南路1號 台灣": [],
+ "屏東縣屏東市青島街106號 台灣": [],
+ "台北市大同區迪化街1段21號 台灣": [],
+ "台中市西區五權西路一段110號 台灣": [],
+ "台中市西區公益路155巷9號B1樓 台灣": [],
+ "台北市南京東路二段1號3F 台灣": [],
+ "苗栗縣竹南鎮公園路206號 台灣": [],
+ "台中市西區公益路155巷9號B1 台灣": [],
+ "台中市豐原區成功路369號 台灣": [],
+ "台南市中西區國華街三段15號 台灣": [],
+ "台南市新營區民治路36號 台灣": [],
+ "新竹市北區西門街258號 台灣": [],
+ "台南市麻豆區興國路11號 台灣": [],
+ "台中市大甲區光明路67號 台灣": [],
+ "新竹市東區忠孝路80號1樓 台灣": [],
+ "彰化縣彰化市卦山路18號 台灣": [],
+ "台中市太平區東平路464號 台灣": [],
+ "台北市大安區延吉街120號地下樓 台灣": [],
+ "台北市大同區民族西路141號 台灣": [],
+ "台北市大安區忠孝東路四段阿波羅大廈218-6號 台灣": [],
+ "台北市中山區玉門路1號 台灣": [],
+ "台中市霧峰區民生路26號 台灣": [],
+ "台中市西屯區市政路386號13樓之5 台灣": [],
+ "花蓮縣花蓮市節約街37號B1 台灣": [],
+ "台中市中區台灣大道一段145號 台灣": [],
+ "台中市北屯區崇德路三段865~869號5樓 台灣": [],
+ "CACO cafe 台中漢神店 台中市北屯區崇德路三段865~869號5樓 台灣": [],
+ "CACO cafe 台中漢神店 台中市 台灣": [],
+ "台南市東區中華東路一段366號A1館1樓 台灣": [],
+ "CACO cafe 台南南紡店 台南市東區中華東路一段366號A1館1樓 台灣": [],
+ "CACO cafe 台南南紡店 台南市 台灣": [],
+ "台南市中西區西門路一段658-1號B1F 台灣": [],
+ "CACO cafe 台南小西門 台南市中西區西門路一段658-1號B1F 台灣": [],
+ "CACO cafe 台南小西門 台南市 台灣": [],
+ "高雄市前鎮區中華五路789號2F 台灣": [],
+ "CACO cafe 高雄夢時代店 高雄市前鎮區中華五路789號2F 台灣": [],
+ "CACO cafe 高雄夢時代店 高雄市 台灣": [],
+ "台中市東區進德路600號3樓 台灣": [],
+ "台中市東區進德路600號1樓 台灣": [],
+ "新北市林口區文化三路一段356號1樓 台灣": [],
+ "台北市中正區市民大道三段2號7樓 台灣": [],
+ "高雄市前鎮區中華五路789號B1 台灣": [],
+ "台北市中正區市民大道三段2號8樓 台灣": [],
+ "台北市中正區市民大道三段2號 台灣": [],
+ "台北市大同區承德路一段1號 台灣": [],
+ "台中市西屯區台灣大道三段251號13樓 台灣": [],
+ "台中市 台中市 台灣": [
+  {
+   "place_id": 226336971,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 4193750,
+   "lat": "24.1514563",
+   "lon": "120.6897357",
+   "category": "amenity",
+   "type": "university",
+   "place_rank": 30,
+   "importance": 0.44541965879922213,
+   "addresstype": "amenity",
+   "name": "國立臺灣體育運動大學",
+   "display_name": "國立臺灣體育運動大學, 16, 雙十路二段, 樂英里, 北區, 臺中市, 40404, 臺灣",
+   "boundingbox": [
+    "24.1452983",
+    "24.1527860",
+    "120.6852385",
+    "120.6912601"
+   ]
+  },
+  {
+   "place_id": 226502822,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 240137720,
+   "lat": "24.1414905",
+   "lon": "120.6632680",
+   "category": "tourism",
+   "type": "museum",
+   "place_rank": 30,
+   "importance": 0.4348490150141181,
+   "addresstype": "tourism",
+   "name": "國立臺灣美術館",
+   "display_name": "國立臺灣美術館, 2, 五權西路一段, 土庫里, 西區, 田心, 臺中市, 40359, 臺灣",
+   "boundingbox": [
+    "24.1409260",
+    "24.1420792",
+    "120.6623924",
+    "120.6647208"
+   ]
+  },
+  {
+   "place_id": 226546883,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3296169020,
+   "lat": "24.1450480",
+   "lon": "120.6833349",
+   "category": "historic",
+   "type": "memorial",
+   "place_rank": 30,
+   "importance": 0.3863874290870923,
+   "addresstype": "historic",
+   "name": "台灣地籍測量三角原點中心碑",
+   "display_name": "台灣地籍測量三角原點中心碑, 精武路, 新興里, 北區, 臺中市, 404, 臺灣",
+   "boundingbox": [
+    "24.1449980",
+    "24.1450980",
+    "120.6832849",
+    "120.6833849"
+   ]
+  },
+  {
+   "place_id": 227344564,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 100575650,
+   "lat": "24.2651713",
+   "lon": "120.5745890",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 0.36591189903985394,
+   "addresstype": "amenity",
+   "name": "清水高中",
+   "display_name": "清水高中, 90, 中山路, 清水里, 清水區, 鹿寮, 臺中市, 43653, 臺灣",
+   "boundingbox": [
+    "24.2638337",
+    "24.2662984",
+    "120.5736130",
+    "120.5754724"
+   ]
+  },
+  {
+   "place_id": 226424615,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1097358496,
+   "lat": "24.1460832",
+   "lon": "120.6810382",
+   "category": "landuse",
+   "type": "religious",
+   "place_rank": 24,
+   "importance": 0.3586565232418998,
+   "addresstype": "religious",
+   "name": "柳原教會",
+   "display_name": "柳原教會, 柳川里, 中區, 臺中市, 臺灣",
+   "boundingbox": [
+    "24.1456780",
+    "24.1464882",
+    "120.6806012",
+    "120.6814752"
+   ]
+  }
+ ],
+ "台中市中區台灣大道一段1號 台灣": [],
+ "台中驛鐵道文化園區 鐵鹿大街 台中市中區台灣大道一段1號 台灣": [],
+ "台中驛鐵道文化園區 鐵鹿大街 台中市 台灣": [],
+ "台中驛鐵道文化園區 鐵鹿大街 台中市中區台灣大道一段1號，台中火車站舊站 台灣": [],
+ "台北市信義區松壽路20號 台灣": [],
+ "台北市大安區敦化南路二段105號 台灣": [],
+ "台北和平籃球館（台北戰神主場） 台北市大安區敦化南路二段105號 台灣": [],
+ "台北市松山區復興南路一段39號 台灣": [],
+ "台中市西屯區台灣大道三段301號 台灣": [],
+ "台北市信義區松壽路11號 台灣": [],
+ "新光三越台北信義新天地A11館 台北市信義區松壽路11號 台灣": [],
+ "台北市信義區松高路12號5樓 台灣": [],
+ "台北市中山區南京西路12號 台灣": [],
+ "高雄市左營區高鐵路123號10樓 台灣": [],
+ "新北市新店區中興路三段70號 台灣": [],
+ "新北市新莊區和興街66號 台灣": [],
+ "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點） 高雄市苓雅區海邊路 台灣": [],
+ "高雄市前鎮區中華五路789號1樓 台灣": [],
+ "高雄市苓雅區三多四路21號13樓 台灣": [],
+ "高雄市三民區建國二路320號B2 台灣": [],
+ "高雄市左營區修明街166號1樓 台灣": [],
+ "台北市南港區經貿二路131號5樓 台灣": [],
+ "南港-LaLaport(玩具總動員快閃) 台北市南港區經貿二路131號5樓 台灣": [],
+ "南港-LaLaport(玩具總動員快閃) 台北市 台灣": [],
+ "台中市西屯區台灣大道三段251號11樓 台灣": [],
+ "台中遠百快閃(玩具總動員快閃) 台中市西屯區台灣大道三段251號11樓 台灣": [],
+ "台中遠百快閃(玩具總動員快閃) 台中市 台灣": [],
+ "台南市中西區西門路一段658號5樓 台灣": [],
+ "台南西門新天地快閃(玩具總動員快閃) 台南市中西區西門路一段658號5樓 台灣": [],
+ "台南西門新天地快閃(玩具總動員快閃) 台南市 台灣": [],
+ "高雄市前鎮區中華五路789號7F 台灣": [],
+ "高雄-夢時代快閃店(玩具總動員快閃) 高雄市前鎮區中華五路789號7F 台灣": [],
+ "高雄-夢時代快閃店(玩具總動員快閃) 高雄市 台灣": [],
+ "森初 moricasa art 台南市 台灣": [],
+ "國立臺灣藝術大學 台南市 官田區 台灣": [],
+ "苗栗陶瓷農創園區 苗栗縣公館鄉館南村14鄰館南352號 台灣": [],
+ "苗栗縣公館鄉館南村14鄰館南352號 台灣": [],
+ "當代陶藝館 苗栗縣三義鄉勝興村水美188號 台灣": [],
+ "苗栗縣三義鄉勝興村水美188號 台灣": [],
+ "臺南市方圓美術館 台南市將軍區西甲里西華1號 台灣": [],
+ "台南市將軍區西甲里西華1號 台灣": [],
+ "台北市信義區信義路五段5號 台灣": [],
+ "台北世界貿易中心展覽一館 台北市信義區信義路五段5號 台灣": [],
+ "台北世界貿易中心展覽一館 台北市 台灣": []
+}

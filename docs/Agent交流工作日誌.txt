@@ -1,0 +1,1368 @@
+==========================================================
+Agent 交流工作日誌
+==========================================================
+用途：
+  這是 Claude（網頁維護員）與 Codex 兩個 agent 協作的共用日誌。
+  每次對專案做了更動，就在這裡記一筆，讓另一個 agent 讀完能校對進度、
+  避免重工或互相覆蓋。人類（Daniel）也可在此看到每天發生了什麼。
+
+寫法（請兩個 agent 都遵守）：
+  - 最新的寫在最上面（新 → 舊）。
+  - 一個區塊 = 一次工作，標頭寫：日期 + agent 名（Claude / Codex）。
+  - 每筆說明：做了什麼、改了哪些檔、怎麼做/為什麼、對方該注意的事。
+  - 不確定或需人工確認的事項，明確標「需人工確認」。
+  - 只追加、不要刪改別人寫過的歷史紀錄。
+
+長期注意事項（環境差異，務必知道）：
+  - Claude 端：沙箱瀏覽器目前不可用（缺 libXdamage 系統庫、無 root）。
+    → collect_venues.py / collect_logos.py（需 Playwright 瀏覽器）在 Claude 端「跑不動」。
+    → 需要瀏覽器的官網爬蟲、抓 KV / logo，請在 Mac 端執行。
+    → Claude 端可正常跑：refresh_venues.py、report_status.py、寫 Excel / JSON（urllib，不需瀏覽器）。
+  - 資料更新流程「跑」這件事 = Mac 端負責（launchd，_install_schedule.command），每週一/四 11:00。
+  - 回報 = Claude 排程 exhibition-map-maintenance-report，每週一/四 11:13 跑 report_status.py。
+  - 同步資料夾偶發 "Resource deadlock avoided" 鎖檔；讀寫請加重試。
+
+
+==========================================================
+2026/07/13 Claude（Cowork）：排程回報延伸為手動修資料缺口（KV/地址/分類/GANADI展開），修好一個 openpyxl bug，並把排程任務改為半自動
+==========================================================
+背景：當天 11:40 排程 exhibition-map-maintenance-report 先跑出回報（8館約略定位、66場官網活動疑似漏判ACG等），
+Daniel 接著在同一個對話串直接要求動手修，過程延伸成好幾件事，一併記錄：
+
+1. KV 補齊 3 場（Daniel 直接給圖片URL）：GANADI POP-UP（K-MONSTAR）、蠟筆小新玩轉時空大冒險（屏東縣民公園）、
+   Sanrio 狗狗派對快閃店（板橋大遠百），寫入 data/manual/全台ACG活動.xlsx 對應列 KV 欄。
+
+2. 分類複核 2 場改判 ACG（Daniel 直接指示）：「B-SIDE LABEL POP UP STORE in Taiwan」（華山1914）、
+   「愛麗絲夢遊仙境:兔子洞的秘密｜沈浸式互動故事特展」（松山文創）。因兩者都是 src=official（官網爬蟲來源）
+   且已有KV/連結，只是主題(c)判錯，依 report_status.py 建議的正確機制寫入 data/manual/event_overrides.json
+   （c:"ACG"），沒有動 xlsx（避免變成重複場館）。
+   ⚠️需 Daniel 確認：「B-SIDE LABEL POP UP STORE in Taiwan」在本日誌上一筆（2026/07/12）明確記載 Daniel 已
+   確認過「算是其他不是」（判斷理由：「屬多藝術家貼紙品牌，非單一角色IP授權」），排除ACG。但 07/13 Daniel
+   直接指示這場「是ACG」，已依最新指示改判。兩天的決定互相矛盾，可能是 Daniel 改變心意（正常），也可能是
+   看到不同場次/漏看上一筆紀錄，請 Daniel 覆核是否要維持 07/13 的判斷。
+
+3. GANADI POP-UP（LINE FRIENDS×K-MONSTAR）原本 1 列塞了台北微風南山/新竹巨城/台中綠園道/高雄夢時代 4 家店，
+   只會在地圖顯示 1 個台北的釘子。依 CLAUDE.md 規則9（多場次要完整展開）展開為 4 列，個別查證地址：
+   - 新竹巨城：新竹市東區中央路229號3F（來源：K-MONSTAR官方threads開幕貼文）
+   - 台中綠園道：台中市西區向上路一段79巷72號（來源：K-MONSTAR官方threads/facebook開幕貼文）
+   - 高雄夢時代：高雄市前鎮區中華五路789號B1，統一時代百貨高雄店（來源：K-MONSTAR官方threads開幕貼文）
+   三店地址 Daniel 已確認沒問題。
+
+4. 花蓮鯉魚潭主場（2026花蓮FUN暑假）：補地址「花蓮縣壽豐鄉池南村環潭北路100號」（鯉魚潭遊客中心，來源：
+   交通部觀光署花東縱谷國家風景區管理處官網），作主場參考點。
+   香堤大道廣場（PokéXciting! in 台北）：WebSearch 查無正式門牌（僅查得「松智路與松高路20巷間人行步道」
+   描述性位置），座標最後改用 Daniel 直接提供的 25.03742733240707, 121.5670387441809，寫入
+   data/manual/venue_geocodes.json（source: user_supplied_2026-07-13）。
+
+5. 跑過 import_acg_excel.py → refresh_venues.py → geocode_venues.py → refresh_venues.py 讓以上都生效，
+   最後 51 館全部 loc=exact（原本 8 館約略定位，現在 0 館）。
+
+6. ⚠️過程中踩到一個 openpyxl bug，已修好：第一次展開 GANADI 用 `ws.insert_rows()` 從第93列中間插入3列，
+   結果 openpyxl 沒有同步搬移既有儲存格的 Hyperlink 物件（只搬了 .value），導致隔壁原本第94列「點點心×
+   三麗鷗」那格KV的舊超連結錯位，覆蓋到新插入列（新竹巨城那列）的 KV 欄——儲存格顯示的文字是對的
+   URL，但 openpyxl/import_acg_excel.py 的 cell_link() 優先讀 .hyperlink，讀到的其實是舊資料的圖。
+   發現後已從 `_excel_backups/全台ACG活動_before_地址補查_20260713.xlsx` 還原，改用「附加在表尾」
+   （ws.max_row+1，不搬動既有列）的方式重做，並逐格核對 .value 與 .hyperlink 都正確後才繼續。
+   已把這個坑寫進排程任務 exhibition-map-maintenance-report 的新 SKILL.md，之後不管誰編輯這份
+   xlsx，展開多列都不要用 insert_rows。損毀的中間版本備份在
+   `data/manual/_excel_backups/全台ACG活動_CORRUPTED_had_stray_hyperlink_20260713.xlsx`，
+   Daniel 說用不到可以刪，但這個沙盒環境對這個掛載資料夾的既有檔案沒有刪除權限（rm/os.remove
+   都是 Operation not permitted），刪不掉，麻煩 Daniel 自己在 Finder 刪。
+
+7. 另外踩到一次 data/generated/excel_overlap_titles.json 寫入時 `[Errno 35] Resource deadlock avoided`
+   （跟 report_status.py 註解提過的鎖檔狀況同一類），照建議等10秒重試3次仍失敗；後來改用「寫暫存檔+
+   os.replace() 改名覆蓋」的方式繞過去，寫成功後同一個檔案改回直接 open('w') 也正常了，研判是這個
+   VM 掛載層對「直接截斷覆寫已存在檔案」偶發卡住，rename-based write 比較穩，已寫進排程任務 SKILL.md。
+
+8. Daniel 回報「地圖沒更新」：原因是 public/venues.json 有更新，但 `taiwan-exhibition-map.html` 內嵌的
+   `let DATA = ...` 備援（給 file:// 雙擊開啟用）沒同步（update_all.py 的 sync_embed() 只在跑完整流程
+   時才會執行，我這次是分開手動跑 backend 各支腳本，漏了這步）。已補跑同步邏輯修正，並把這步寫進排程
+   任務 SKILL.md，規定「重新產生過 venues.json 之後，最後一定要同步 HTML 內嵌」。
+
+9. Daniel 要求把 exhibition-map-maintenance-report 排程任務從「只回報」改成「自動修正機械性缺口＋回報」，
+   最大化自動化但關鍵決策要問。用 AskUserQuestion 跟 Daniel 確認邊界：分類複核（判斷ACG，涉及IP/授權
+   判斷）維持人工確認、不自動寫 event_overrides.json（Daniel 選「仍保留人工確認」）；地址/座標這類有
+   官方一手來源可查證的機械性修正，之後排程可以自動做。已更新排程任務的 prompt（見
+   /Users/daniel0522/Documents/Claude/Scheduled/exhibition-map-maintenance-report/SKILL.md），
+   新增：機械性地址/geocode自動修正規則、必須附加不可insert_rows的規定、檔案鎖定重試改tmp+replace、
+   每次重產venues.json後必須同步HTML內嵌、分類複核仍只列清單。
+
+驗證：
+   - ✅已驗證：重讀 public/venues.json 確認51館loc=exact（0館約略定位）、GANADI 4店KV圖URL一致、
+     B-SIDE LABEL／愛麗絲夢遊仙境 c=ACG、event_overrides.json 共9筆且JSON格式正確、xlsx全表hyperlink
+     掃描過（只剩既有合法的53筆，M欄=活動連結、A71/A94為既有舊資料，無新增錯位）。
+   - ✅已驗證：重讀 HTML 內嵌 DATA 解析回來確認51館、香堤大道座標與Daniel提供的一致。
+   - ⚠️未驗證：新竹巨城/台中綠園道/高雄夢時代地址來源是官方社群貼文非店家官網一級來源，Daniel已口頭
+     確認沒問題但未附官網連結佐證。
+
+給下一個 agent／人類：
+   - B-SIDE LABEL 分類矛盾（見上第2點）務必請 Daniel 覆核，不要假設07/13的指示一定蓋過07/12的紀錄。
+   - `全台ACG活動_CORRUPTED_had_stray_hyperlink_20260713.xlsx` 備份檔還在 _excel_backups/，Daniel
+     說可以刪但我這邊刪不掉，麻煩處理掉。
+   - 之後任何人要展開 xlsx 多列，一律用附加在表尾的方式，不要用 insert_rows。
+
+==========================================================
+2026/07/12 Claude（Cowork）：複核六大文創園區官網活動，補3筆漏判ACG進Excel
+==========================================================
+背景：延續同日稍早「調整 report_status.py」那筆工作，Daniel 進一步要求「判斷文創園區的ACG活動，
+確保沒有被漏掉，跟我確認後寫到Excel」。過程：
+
+1. 重新讀 public/venues.json 才發現期間資料已變動（官網來源89場中c!=ACG從83筆降到70筆，
+   ACG從45→64），推測是先前report_status.py抓出的候選中，已有3筆（好想兔10週年特展、
+   nagano market POP UP SHOP、MONSTER STRIKE DREAMDAZE）被人工／另一個流程補進
+   data/manual/全台ACG活動.xlsx 並靠 Excel×官網重疊機制改判成功，本次改以最新70筆為基礎複核，
+   不重複處理已解決的部分。
+
+2. 逐筆過一輪70筆，先用常識判斷排除掉不像角色IP授權的（食品/公益/藝術個展/畢業展/科普展等），
+   對存疑的用 WebSearch＋web_fetch 查證來源，找到3筆有把握、2筆查無實據：
+   - 高信心（有官方/新聞來源佐證角色IP授權）：Baby Shark 守護海洋大冒險（駁二，授權
+     The Pinkfong Company, Inc.）、星際大戰華山限定快閃店_Mission Cantina（華山，官網寫
+     「全台唯一官方授權星戰宇宙盛事」）、NishimuraYuji's shop!（松山，角色GOKIGEN PANDA/
+     LOVE RABBIT/KONEZUMI等，查到西村優志本人資料佐證）。
+   - 查無實據，不建議列入：開心馬場特展×2、《果子們特展》、鮮乳偵探事務所、B-SIDE LABEL
+     （後者屬多藝術家貼紙品牌，非單一角色IP授權）。
+
+3. 用 AskUserQuestion 跟 Daniel 逐筆確認，Daniel 同意3筆高信心候選寫入Excel，
+   並回覆「B-SIDE LABEL算是其他不是」（確認排除，不列ACG）。
+
+4. 寫入 data/manual/全台ACG活動.xlsx（先備份到
+   archive/backups/excel/全台ACG活動_backup_20260712_2249_before_park_acg_review.xlsx，
+   111→114列原始資料不動，只在最後新增3列）。⚠️ 過程中第一次寫入時忘記表格第1欄是KV
+   （欄位順序：KV/類型/活動類別/年度/季別/開始/結束/IP/活動名稱/地點/主辦方/授權單位/連結/
+   備註/IP_std/Licensor_std/月份，共17欄），少算一欄造成整批欄位錯位，已發現並從備份還原、
+   重新用正確17欄對齊寫入，未留下錯誤版本。
+   - 主辦方/授權單位欄，凡官網未明確列名者一律留空，不自行猜測授權公司（依 Daniel 的規則
+     不亂補授權商/主辦方）；Baby Shark 的主辦/授權資訊取自同展覽台北科教館場次的售票頁
+     （駁二官網頁面本身是JS動態頁、fetch不到內文），已在備註寫明是同巡迴推定、非駁二頁直接證實，
+     請 Daniel 之後有空覆核。
+   - 星際大戰的授權單位官網只寫「全台唯一官方授權」沒列公司名，該欄留空未自行填Lucasfilm/迪士尼。
+
+驗證：
+   - ✅已驗證：openpyxl 重新讀回 data/manual/全台ACG活動.xlsx，dims=A1:Q115、max_row=115，
+     抽查第2列（原始資料）、第111/112列（前次補入的3筆）內容與備份一致、未被更動；
+     新增的3列17欄逐欄核對過欄位對應正確（KV在第1欄、備註在第14欄等）。
+   - ⚠️未驗證：尚未實跑 import_acg_excel.py／update_all.py 讓這3筆真正合併回 venues.json
+     （這兩支需瀏覽器/Mac端），下次 Mac 端跑完整流程後才會反映到地圖上。
+
+給下一個 agent／人類：
+   - 如果之後 Daniel 覆核 Baby Shark 的主辦/授權推定不成立，記得同時修
+     data/manual/全台ACG活動.xlsx 該列與此日誌，不要只改一邊。
+   - 星際大戰那列授權單位欄是空的，如查到正式授權方名稱記得補上。
+
+==========================================================
+2026/07/12 Claude（Cowork）：調整 report_status.py 維護回報排呈，配合地圖範圍收斂
+==========================================================
+背景：Daniel 指出地圖已收斂為「ACG 活動＋六大文創園區活動」（對照本日誌前兩筆 Claude Code 紀錄：
+停政府API＋官網收斂六大園區、圖釘改水滴＋形式圖示不再用logo），所以維護回報不會再有「缺場館logo」
+問題，只剩「缺KV」與「官網活動被歸類到其他文化/藝術設計但其實是ACG」兩件事要顧。只改
+backend/report_status.py 這一支讀取用的回報腳本，未改 refresh_venues.py 分類邏輯、未改任何資料檔。
+
+改了什麼：
+  1. 移除「缺場館 logo」統計與建議：前端 pin 已改用活動形式圖示、不再顯示場館logo（見上面
+     「地圖圖釘改水滴造型」那筆），logo 缺漏對現行地圖已無實質影響。⚠️ 這項移除本身是 AI 判斷
+     （比對README_docs.md已完成的前端改版推出），非 Daniel 逐字指示要刪，已在報表「需人工確認」
+     段落列出請他覆核。
+  2. 保留「缺主視覺 KV」「約略定位」「缺官方連結」三項統計（皆保留原有計算方式，只是重新分節）。
+  3. 新增「分類複核」章節：抓 src=='official'（六大園區官網）且 c!='ACG' 的活動，逐筆列出場館/
+     標題/目前c/c2，不做任何自動改判，只供人工複核——因為 refresh_venues.py 的 THEME_ACG_KW
+     關鍵字表judge新IP（本次實測就抓出《天官賜福》《我獨自升級》伊藤潤二展、櫻桃小丸子40週年、
+     MONSTER STRIKE等明顯漏判成「其他文化」的ACG/角色IP活動）。c2=='快閃店'的加★標記（AI經驗
+     判斷排序提示，非分類結論）。複核後可在 data/manual/event_overrides.json 逐筆加
+     {"標題":{"c":"ACG"}} 覆蓋，不用改程式碼。
+  4. 同時列出既有 c_flag=='需人工確認'（模糊比對Excel標題0.70-0.85）的活動，原本的
+     report_status.py 完全沒讀這個欄位，這次補上。
+
+驗證：
+  - ✅已驗證：python3 -m py_compile backend/report_status.py 通過。
+  - ✅已驗證：實際跑 python3 report_status.py 讀真實 public/venues.json（44館/128場活動），
+    輸出正確——分類複核抓出官網89場活動中83場非ACG，KV缺4場、約略定位2館，且能具體列出
+    《天官賜福》等應為ACG的例子。跑之前先備份 data/reports/_report_prev.json，跑完驗證輸出後
+    已還原成備份，不影響真正排程下次比對基準（我的測試run本身不會改變資料內容，只是快照時間點，
+    但仍照規則先備份再還原，不留副作用）。
+  - 未執行：尚未等到下次 Claude 排程 exhibition-map-maintenance-report 實際觸發跑這支新版腳本，
+    只是手動驗證過一次輸出格式正確；⚠️需人工確認下次排程跑出來的回報格式是否符合預期。
+
+需人工確認：
+  - 是否同意完全移除「缺logo」統計（而不是保留精簡版）。
+  - ★快閃店優先看的排序提示、以及本次報表列出的83筆候選是否要進一步篩選或全部人工過一輪。
+
+==========================================================
+2026/07/12 Claude（Cowork）：slack-acg-daily-scan 排程任務新增「找官方KV」步驟
+==========================================================
+依 Daniel 需求，幫 slack-acg-daily-scan 這支既有排程任務（每天 17:00 掃 Slack #社群訊息 找候選ACG活動）
+新增「幫每個活動找主視覺KV」的步驟。這不是新技能/新專案檔案，只改了排程任務本身的 SKILL.md：
+  /Users/daniel0522/Documents/Claude/Scheduled/slack-acg-daily-scan/SKILL.md
+
+改動：
+  1. 步驟 A 新增第5步「找主視覺 KV」：只能從官方網站／官方活動頁／有查證來源的新聞報導抓圖
+     （複用 backend/collect_event_kv.py 的 extract_kv() 邏輯，og:image優先）；嚴禁直接拿 Slack/IG/FB
+     貼文本身的圖或影片縮圖當KV。抓到要下載存檔驗證（image/*、>3000 bytes），存
+     data/manual/_kv_cache/；完全找不到官方/新聞來源就留空標「⚠️ 無官方KV來源」，不用社群截圖頂替。
+  2. 步驟 B 寫入 Excel 時，KV欄（A欄）改成用 openpyxl 把驗證過的圖片實際嵌入儲存格，不是存網址文字
+     （官方來源以外的網址常是簽章/臨時連結，例如IG cdninstagram過幾小時會失效）。
+  3. 舊有98筆資料目前都沒有KV，Daniel 決定「之後再說」，這次不做回溯補齊。
+  4. description 也同步更新（透過 mcp scheduled-tasks update_scheduled_task）。
+
+過程中的重要修正：我一開始示範時直接對 IG 貼文連結抓縮圖（row 99「Sanrio 狗狗派對快閃店」，抓到一張
+帶播放鍵浮水印的影片截圖），被 Daniel 糾正「這樣是錯的，KV要從官網或報導的正式視覺抓，不能對貼文
+連結硬抓」。之後改用 Excel row 92（哆啦A夢100%哆啦A夢櫻花節）NOTE欄已查證的聯合新聞網文章連結
+重新示範，抓到真正的官方海報視覺，驗證通過（肉眼比對圖片文字與Excel資料一致）。
+
+需人工確認：
+  - 排程下次執行（今天 17:02 左右）才會第一次套用新邏輯，尚未實跑驗證過完整流程（目前只驗證過
+    extract_kv() 對「官方/新聞連結」單獨可行，openpyxl 嵌入圖片到儲存格的寫入邏輯還沒實際跑過）。
+  - data/manual/_kv_cache/ 目錄目前不存在，第一次跑會需要建立；若讀寫路徑有誤要回報。
+
+追加（同日）：Daniel 再次糾正並補規則，已更新 SKILL.md 步驟5：
+  - row 99「Sanrio 狗狗派對快閃店」重新示範：來源只有IG貼文 → 額外查了場館「板橋大遠百/Mega City」
+    官網（aws.feds.com.tw），找到官方活動頁 Event/Detail/32536，抓到真正官方KV（畫面本身就印有
+    活動名稱/日期/地點，還有「© 2026 SANRIO CO., LTD. APPROVAL NO. ST26078405」官方授權字樣）。
+  - 新增規則寫進 SKILL.md：①若一筆候選的來源清一色是社群貼文，強制多查一步場館/IP官網；
+    ②抓到候選圖後不能只信 og:image，一定要下載後用 Read 工具肉眼確認畫面上有「名稱+日期+地點」
+    正式視覺排版才能採用，看不出來就換下一個來源或留空；有官方授權字樣是強訊號要記錄。
+  - Daniel 表示要把這套KV判斷邏輯獨立技能化（不只塞在這支排程任務裡），由 Daniel 主導調整，
+    Claude 先協助搭建。後續如果技能做出來，這支任務的步驟5要改成呼叫該技能，不要維持兩份邏輯。
+
+追加（同日）：技能化 find-event-kv + KV存法改回網址 + 新增活動類別判斷。
+  1. 建了獨立技能 find-event-kv（打包成 .skill 給 Daniel 存到他的技能庫，原始檔目前只在
+     Claude 這次工作階段的暫存區，沒有寫進專案資料夾）。用一個全新案例（row 90 mofusand快閃店，
+     Excel備註原寫「查無獨立新聞報導」）測試草稿，subagent 意外找到之前沒查到的新聞來源官方KV，
+     同時抓出腳本的一個bug：文章側欄「相關推薦」縮圖因命中關鍵字分數過高，差點被誤判成KV，靠
+     「下載後要肉眼核對」這條規則擋下來。已修正 scripts/extract_kv.py 的 og:image 權重，並在
+     技能裡加了「留意抓到對的圖但錯的活動」的提醒。
+  2. Daniel 糾正 KV 存法：不要嵌入圖片檔，改回寫「驗證過的官方圖片網址」文字進 Excel A欄
+     （Daniel 已知社群平台網址可能過期失效，接受這個取捨）。slack-acg-daily-scan/SKILL.md
+     步驟B.2 與 find-event-kv 技能的 Output format 都已改回這個規則。
+  3. Daniel 新增規則：①如果步驟5找到合格官方頁面，活動連結欄（第13欄）也要建議換成官方頁面
+     網址（取代原本社群連結），沒找到就維持原連結；換不換都要先在報告裡列出來讓 Daniel 確認才寫入。
+     ②新增步驟6「判斷活動類別」，四選一（展覽/快閃店/主題餐廳/體驗活動），明確要求不能只看
+     活動名稱字面判斷，要看實際內容；套不進四類的要標「需人工確認」，不硬塞、不自創新類別；
+     確認後才寫進第3欄「活動類別」。
+  4. 需人工確認：Excel「活動類別」欄實際歷史資料出現過6種值（展覽/Exhibition、快閃店/Pop Up
+     Store、快閃店/Pop-up Store 兩種寫法都有、主題餐廳/Theme Cafe、活動/Event、音樂會/Concert），
+     但 Daniel 只指定四類，其中「體驗活動」沒有既有英文寫法可循，Claude 暫時自訂為
+     `Experience Activity`，Daniel 之後可能會換；另外 AskUserQuestion 工具這次連續兩次呼叫失敗
+     （"Tool permission stream closed"），沒能正式問到 Daniel 確認，是 Claude 自行決定後告知，
+     不是 Daniel 明確拍板，日後如果 Daniel 有指定英文寫法要記得回來改。
+
+
+==========================================================
+2026/07/12 Claude Code：新增 event_overrides.json 手動覆蓋 ＋ 清掉 ACG 端「其他」形式 ＋ 移除前端其他按鈕
+==========================================================
+需求（Daniel）：逐筆指定目前落在「其他」形式的 ACG 活動，並把前端「其他」分類拿掉。
+
+背景：現有 c2='其他' 共 31 筆，其中 6 筆為 ACG（會顯示），且 30 筆來自官網爬蟲、僅 1 筆來自 Excel——
+故不用「寫回 Excel」（官網的不在 Excel、又會被官網優先去重蓋過，且不宜改動 xlsx 既有列），
+改用覆蓋檔統一處理官網＋手動。
+
+改動：
+  1. 新增 data/manual/event_overrides.json：鍵=活動標題（比對時去空白轉小寫），值={c2:...} 或 {c:...}，
+     以 _ 開頭的鍵忽略（放說明）。可同時覆蓋形式(c2)或主題(c)。
+  2. backend/paths.py：註冊 event_overrides.json → data/manual/。
+  3. backend/refresh_venues.py：最終兩軸分類 loop 前讀入覆蓋表，loop 內在自動分類後套用（手動優先）。
+  4. Daniel 對 6 筆 ACG『其他』的裁定已寫入 event_overrides.json：
+       早點出發（喫茶店/貝果）→ 主題餐廳
+       100% 哆啦A夢櫻花節 → 快閃店
+       動漫最高祭 Anime Max Festival → 快閃店
+       PEANUTS夏日海灘祭 → 快閃店
+       漫畫便當店 COMIC BENTO → 展覽
+       Team Taipei挺就業（青年科技）→ 主題(c) 改『其他文化』＝非 ACG，退出 ACG 視圖（非形式問題，是誤判為 ACG）
+  5. 立即生效：已把 6 筆覆蓋套進現有 public/venues.json 並同步 HTML 內嵌備援；ACG 端 c2='其他' 現為 0 筆。
+  6. 前端：移除形式篩選的 <button data-f="其他">（#fform）。注意——水滴 pin 的 FORM_ICON['其他'] 定位點圖示
+     『保留』，因為它另一用途是「同場館多形式」的混合 pin（venueForm 回『其他』），與 c2 分類值是兩回事。
+
+驗證：refresh_venues.py / paths.py py_compile 通過；venues.json 合法；HTML node --check 全過；data-f="其他" 命中 0。
+
+尚未處理（Daniel 選項 A：只清會顯示的 ACG）：25 筆非 ACG 的 c2='其他'（其他文化/藝術設計，ACG 地圖看不到）
+仍保留原值，未逐筆分類。classify_form 的自動判斷與『其他』fallback 未改。
+給下一個 agent／人類：日後判不出形式的新活動，直接在 event_overrides.json 加一列即可（官網/手動皆適用）。
+
+==========================================================
+2026/07/12 Claude Code：形式分類改「Excel 欄位優先、判不出才自動」（map_excel_cat2 強化）
+==========================================================
+需求（Daniel）：之後資料基本上都由 Excel 輸入，希望在 Excel 直接指定活動形式；無法判斷時讀該欄，
+不要讓系統亂猜成「其他」。
+
+現況即已具備此路：Excel「活動類別 / Activity Category」欄 → import_acg_excel.py 讀入 → manual_extra.json
+的 cat2 欄位 → refresh_venues.py:912 `c2 = map_excel_cat2(cat2) or classify_form(...)`（Excel 欄優先）。
+
+本次只小改 backend/refresh_venues.py 的 map_excel_cat2（約 4 行）：
+  - 新增 FORM_VALUES=('展覽','快閃店','主題餐廳','體驗活動')；raw 若「正好等於」這四個最終值 → 直接照用。
+  - 舊的模糊關鍵字對應（快閃/餐廳/活動/pop/cafe…）保留相容。
+  - 空白或無法對應 → 回傳 ''，交給 classify_form 自動判斷（判不出才是「其他」）。
+效果：Excel 欄填四個形式詞之一 → 強制採用（跳過自動判斷）；留空 → 自動判斷，其他＝「你還沒填」的暫存狀態。
+py_compile 通過；並對 map_excel_cat2 做 11 筆單元測試全過（含 4 個正式值、空白、其他、舊模糊寫法、亂寫）。
+
+注意：此手動槓桿只作用於 Excel/manual 來源（refresh_venues.py:912）。官網六園區爬蟲（:922）沒有 Excel、
+仍純靠 classify_form；若日後要逐筆手動指定官網形式，需另做 form_overrides.json 覆蓋檔（尚未實作）。
+classify_form 的自動判斷邏輯與「其他」fallback 本次未改（依 Daniel 指示不硬套關鍵字重分類）。
+
+==========================================================
+2026/07/12 Claude Code：停用政府（文化部）API ＋ 官網來源收斂為六大園區 ＋ 官網優先去重
+==========================================================
+依 Daniel 決策，把公開資料來源大幅收斂（建議書第三階段方向）。背景：公開端已預設只顯示 ACG，
+文化部 API（moc）佔約 2/3 場館卻只貢獻 1 筆 ACG，等於後台雜訊；決定全停。
+
+決策與改動：
+  1. 停政府 API（backend/refresh_venues.py）：新增 USE_MOC=False 旗標；USE_MOC 為 False 時
+     不呼叫 fetch_api()、moc 層跑空、且強制 _moc_api_ok=True 以「不觸發」moc 快照補填
+     （原本 API 異常會從前次快照把 moc 場館救回來，停用後必須關掉）。恢復政府來源改回 True 即可。
+  2. 官網爬蟲只留六大文創園區/特區（backend/collect_venues.py VENUES）：華山1914、松山文創、
+     圓山花博、駁二、嘉義文創、花蓮文創（ACG 命中率高、常辦快閃/聯名）。其餘純美術館/博物館移除。
+     update_all.py 停用 collect_public.py（新竹/關渡/C-LAB）與 collect_soka_art.py（索卡）步驟。
+  3. ANCHORS 精簡（refresh_venues.py）：只留四個園區座標錨（華山/松山/嘉義/花蓮），
+     移除故宮、北美館、國美館、高美館、臺南美、奇美、關渡、新竹市美術館、當代館、鳳甲、臺博、
+     MoNTUE、文資園區、蕭壠、C-LAB 等常設卡。駁二/圓山花博座標由 collect_venues 提供。
+  4. 官網優先「全域」去重（refresh_venues.py merge_acg_extra）：新增 skip_titles 參數＋_norm_title()；
+     手動 Excel 合併時，若活動標題（去空白轉小寫後）已存在於官網 official 事件，就不寫入。
+     跨場館名比對——解決官網用「華山1914文化創意產業園區」、手動用「華山…東2館四連棟」名稱不同
+     導致的 CHIIKAWA DAYS 重複。只對 manual 生效，caco/cayenne 不受影響；同名多分店（如名偵探柯南
+     快閃 8 分店）因標題比對只擋官網重複、不擋手動彼此，故保留。
+  5. 立即生效：因爬蟲需瀏覽器、政府/圖片驗證需連網，沙箱無法安全重跑 update_all.py，故改用
+     過濾腳本直接清理現有 public/venues.json（保留已驗證圖片）：移除 moc(132)/curated(5)/
+     非六園區 official(17)，套用官網優先去重(移除 1 筆華山 CHIIKAWA 手動重複)，並同步 HTML 內嵌備援。
+     結果：場館 199→44、活動 406→128、ACG 49→46（少的 3 筆＝蔡志忠(moc)、臺南美 1 筆、CHIIKAWA 去重）。
+     來源標記 source 改為「官網六大園區 + 手動 ACG + CACO/Cayenne（政府 API 已停用）」。
+
+保留：手動 ACG Excel（含早點出發）、CACO 官方快閃、Cayenne 主題餐廳、補件層（geocode/logo/KV）。
+py_compile 通過：refresh_venues.py / collect_venues.py / update_all.py；venues.json 合法；HTML node --check 全過。
+備份：過濾前 venues.json 備份於本機 scratchpad（venues.json.bak_20260712）。
+
+給下一個 agent／人類（重要）：
+  - 在 Daniel 的 Mac 上重跑 `python3 backend/update_all.py` 會用上述新設定「等價重生」venues.json；
+    因政府層已停、官網剩六園區，筆數本來就會大幅下降——這是「刻意」，不是資料異常，
+    不要因為筆數暴跌而回退或觸發警報。
+  - venue_extra.json 目前仍可能含舊的非六園區官網場館（上次爬蟲留下）；下次 collect_venues 重跑後
+    才會被覆蓋成六園區。若要在下次爬蟲前保持乾淨，可手動清 venue_extra.json 的非六園區鍵。
+
+==========================================================
+2026/07/12 Claude Code：地圖圖釘改水滴造型 ＋ 依活動形式用不同圖示（建議書 §5.2）
+==========================================================
+依使用者指示與建議書 §5.2「活動形式用不同圖示、顏色僅作輔助」，將原本「圓形＋場館 logo」圖釘
+改為「水滴（map-pin）造型＋依活動形式的 SVG 圖示」，並依使用者明確要求「不再使用 logo」。
+只改 public/taiwan-exhibition-map.html 一個檔（非 workflow，單一聚焦改動）。
+
+做了什麼／改了哪些：
+  1. 新增 FORM_ICON（展覽=畫框 #3f8ad0、快閃店=購物袋 #e05aa0、主題餐廳=杯子 #e08a3c、
+     體驗活動=星號 #8560d8、其他=定位點 #5f7089，圖示座標定位於水滴頭部中心 (20,19)）。
+  2. 新增 venueForm(exs)：取該場館通過篩選活動的代表形式；形式不一致時退回「其他」定位圖示。
+  3. 新增 pinSvg(form)：輸出水滴 SVG（viewBox 0 0 40 52，頭部 + 尖端），fill 用形式色、白色描邊。
+  4. pinHtml 簽名由 (n,loc,logo,fav,soon) 改為 (n,loc,form,fav,soon)，不再產生 logo <img>；
+     rebuild() 改傳 venueForm(exs)，divIcon iconSize 改 [40,52]、iconAnchor 改 [20,50]（錨在尖端）。
+  5. CSS：.pin 圓形樣式改為 .pinsvg 水滴（含 hover 縮放、approx 半透明）；角標重新定位到頭部——
+     活動數 .bd 右上、即將結束 .soondot 左上、已收藏 .favdot 移到頭部右側（原本在尾端，會壓到尖端）。
+  6. popup offset 由 (0,-18) 改 (0,-46)，配合水滴變高、錨點移到尖端，popup 開在頭部上方不壓圖釘。
+
+注意事項：
+  - 場館 logo 相關休眠碼（loadPinLogo / observePinLogos / logoThumbUrl / ART 常數）仍保留但已無 pin 觸發路徑，
+    未刪除以縮小改動面；如日後確定不用可再清。
+  - 同一場館多形式時 pin 顯示「其他」定位圖示（代表形式無法唯一判定）。
+  - 驗證：5 個 <script> 區塊全數通過 node --check；無殘留 .pin img / lazy-logo / <div class="pin"> 參照。
+
+給下一個 agent／人類：pin 外觀契約已改為「水滴＋形式圖示」，形式色僅輔助辨識；改 pin 請同步 FORM_ICON/pinSvg/CSS。
+
+==========================================================
+2026/07/11 Claude Code / workflow：UI 版型改左側側欄 ＋ 建議書第二階段（使用者功能）完成
+==========================================================
+接續同日第一階段，依「ACG 活動地圖 UI 更改建議書」§三（桌機版）與 §14.5，
+以 workflow 分多個 sub-agent 依序改同一檔（SideNav / Favorites / Nearby / Verify），
+本輪完成「版面架構改側欄」與「第二階段使用者功能」，最終狀態已驗證通過。
+
+改了哪些檔：
+  - public/taiwan-exhibition-map.html（唯一前端檔；只做最小 Edit，未動內嵌 DATA 與 Leaflet 函式庫）
+  - docs/Agent交流工作日誌.txt（本筆紀錄）
+  - docs/README_docs.md（覆蓋更新開頭六欄交接狀態）
+  未改動任何資料檔（manual_extra.json、全台ACG活動.xlsx、venues.json 欄位結構、archive/backups/）。
+
+做了什麼（本輪，已完成）：
+  1) 移除「自選日期」篩選（#cs/#ce/.daterange/onDate 及 state.cs/ce 全清除）與「常設活動」toggle（#ftype 群組）。
+  2) 頂部懸浮篩選列（.hud/.bar）改為固定於畫面左側、寬 340px、滿版高度、可垂直捲動的深色玻璃側欄（side navigation）。
+     側欄由上而下：站名 → 活動數（#stat）→ 搜尋框 → 垂直分區篩選（「時間／活動形式／地區」三區各有 .ftitle 小標題，
+     地區次級縣市列 #regionCities 以分隔線區隔）。
+  3) 手機版（≤600px）側欄退化為頂部面板：預設只顯示站名＋活動數＋搜尋＋「篩選」展開鈕（#fbtn），
+     點擊 .hud.open 展開完整篩選，地圖維持滿版。Leaflet 縮放鈕移右下角、.foot 桌機右移（left:352px）避開側欄。
+     popup autoPan 閃避改動態量測：桌機用側欄 offsetWidth+14、手機用 .bar bottom+14。
+  4) 【第二階段】想去收藏（localStorage，免登入、不跨裝置、不社群）：
+     favKey(e,v)=[v.name,e.t,e.s,e.l].join('¦')；localStorage key='acg_favs'（存 favKey 字串陣列）。
+     side 欄新增「♥ 想去 N」入口（#favEntry/#favN）＋收藏浮層（#favScrim/#favPanel，含移除、地圖顯示全部、2km 標近、點列聚焦）。
+  5) 【第二階段】popup 新增「想去」toggle 按鈕與「導航」外部連結
+     （Google Maps dir/?api=1&destination=…，優先座標否則地址；target=_blank rel=noopener）。
+  6) 【第二階段】popup 底部「附近 2 公里內還有 N 個活動」：haversine 半徑 2000m（NEARBY_RADIUS_M）掃描其他 venue，
+     只納入通過目前篩選（venueExs）的活動、排除自己、依距離排序，可展開列表並點擊跳轉切換 popup。
+  7) 圖釘狀態標記：已收藏 → 右下角小愛心 .favdot；即將結束（daysLeft 0..ENDING_SOON_DAYS，常設不計）→ 左上角紅點 .soondot；
+     與右上角活動數 .bd 三者位置錯開可共存。
+
+注意事項 / 需人工確認：
+  - 收藏 favKey 組成與 localStorage key 固定為上述格式，第三階段若動到務必沿用，否則既有收藏鍵不一致。
+  - Leaflet autoPan 會以字串重建 popup 內容，直接掛按鈕的監聽會失效；本輪一律改用 popup root 事件委派（收藏／附近皆然）。
+  - 現有資料（TODAY=2026-06-15 基準）暫無「即將結束」活動，紅點在現資料不會出現，已用 runtime 模擬驗證邏輯與共存正確。
+  - 已收藏愛心在該場館被 markercluster 併入群集時不顯示（屬叢集正常行為），僅個別 marker 顯示時出現。
+  - 導航一律開外部 Google Maps；座標缺漏退回地址字串，地址若僅為「地點」占位則目的地不精確（現資料多有座標，影響極小）。
+  - 既有休眠碼 cardHtml() 內硬編碼 d<=30 與 ENDING_SOON_DAYS=7 不一致問題仍未動（無觸發路徑）。
+  - 驗證：venues.json 可讀、舊元素（#cs/#ce/.daterange/onDate/data-y="permanent"/常設活動）皆 0 命中、
+    新內容（sidebar/favKey/導航/haversine/soondot）皆存在、script node --check 全通過、關鍵函式定義完整、版面 z-index 分層正常。
+
+待辦（第三階段，本次未做）：
+  - 資料穩定：政府 API 改為 ACG 候選來源、候選待審核流程、資料異常偵測、schema 擴充。
+  - 【重要】任何 schema 擴充 / venues.json 欄位結構變更前，須先確認 DECISIONS.md（架構級決策不可貿然推翻）。
+
+
+==========================================================
+2026/07/11 Claude Code / workflow：ACG 活動地圖 UI 建議書第一階段（定位與 UI 收斂）
+==========================================================
+依「ACG 活動地圖 UI 更改建議書」第一階段，對前端做定位與 UI 收斂改版。
+本次以 workflow 分多個 sub-agent 依序改同一檔（Rename / Filters / Popup / Verify），
+最終狀態已驗證通過。
+
+改了哪些檔：
+  - public/taiwan-exhibition-map.html（唯一前端檔；只做最小 Edit，未動內嵌 DATA 與 Leaflet 函式庫）
+  - docs/Agent交流工作日誌.txt（本筆紀錄）
+  - docs/README_docs.md（覆蓋更新開頭六欄交接狀態）
+  未改動任何資料檔（manual_extra.json、全台ACG活動.xlsx、venues.json 欄位結構、archive/backups/）。
+
+做了什麼（第一階段，已完成）：
+  1) 站名／文案改「全台 ACG 活動地圖」：<title>、.brand、搜尋框 placeholder 改「搜尋活動、作品、場館或地區…」。
+  2) 移除公開端主題篩選 #fcat 整組（含 handler，全檔無 fcat 殘留），前端預設只顯示 ACG（state.cat 預設 'ACG'）。
+  3) 時段文案：「展覽中」→「進行中」（data-t="ongoing" 不變）、「即將開展」→「即將開始」（data-t="upcoming" 不變）。
+  4) 「即將結束」統一為常數 ENDING_SOON_DAYS=7（TODAY 附近定義），matchEx 'ending' 用 d>=0&&d<=ENDING_SOON_DAYS。
+  5) 特展／常設收進「其他條件」：#ftype 群組改為只剩一顆 data-y="permanent" 的「常設活動」toggle（active→permanent，取消→all）。
+  6) 地區加縣市次級選項：新增 #regionCities 容器 + REGION_CITIES（北/中/南/東縣市）+ cityBounds()（用 DATA.venues 的 v.city 算點）；
+     點區域展開縣市 pill，點縣市有點就 fitBounds 該縣市、無點退回 REGION 邊界。未新增 city 過濾軸、無自編座標。
+  7) 活動數量文字改「目前共有 N 場活動」（#stat）。
+  8) 搜尋比對擴充：venueExs 比對 v.name、v.city、v.addr 與 e.t。
+  9) 點圖釘改「活動優先」popup card：marker click 由 openSheet(v) 改呼叫 openVenuePopup(v,m,latlng)，
+     以 L.popup（autoPan + 動態計算 HUD 篩選列高度作 autoPanPaddingTopLeft）在圖釘位置顯示深色活動卡；
+     單活動顯示完整卡（popupCardHtml），多活動顯示「此地點共有 N 個活動」標頭 + <details> 手風琴列表。
+     活動卡欄位：圖片／雙標籤（活動形式 c2 為主，即將結束為輔，不顯示 ACG/特展）／名稱／形式・地區（townOf 推算）／
+     日期／狀態（popupStatus）／場館／地址（venueAddr，fallback「地點」時隱藏）／官方連結（safeUrl 白名單，e.l 缺退 v.url），空欄位一律隱藏。
+     桌機不再彈出大型底部場館抽屜；closeSheet() 改為同時關閉抽屜與 map.closePopup()，8 處 filter handler 沿用不變。
+
+注意事項 / 需人工確認：
+  - #sheet / #scrim / openSheet / cardHtml 依指示保留於檔案中但已無 marker 觸發路徑（休眠碼，scrim click / Escape 仍安全指向 closeSheet）。
+  - cardHtml()（休眠的 sheet 卡片用）內仍有獨立硬編碼 const soon=…d<=30，與 ENDING_SOON_DAYS=7 不一致（30 vs 7）；
+    因該函式已無觸發路徑故未動，若第二階段復用需先統一改用 ENDING_SOON_DAYS。
+  - 驗證：venues.json 可讀、舊字串（全台展覽地圖／全部主題／場展覽 ·／matchEx d<=30）皆清除、
+    新內容皆存在、5 個 script 區塊 node --check 全通過、無 #fcat 殘留、closeSheet 定義完整。
+
+待辦（第二／三階段，本次未做）：
+  - 第二階段：想去收藏、導航、附近活動。
+  - 第三階段：後台資料管線與 schema 變更。
+
+
+==========================================================
+2026/07/05 Codex：修正菁桐非官方連結並同步地圖產物
+==========================================================
+1) 菁桐資料修正
+   - 只處理「菁桐礦業生活館」相關資料，沒有全域清理其他場館連結。
+   - 移除先前誤填的 Wikipedia 連結：
+     data/manual/venue_event_sources.json 的菁桐來源已移除。
+     data/manual/event_link_overrides.json 的「2026新北市平溪區四校聯合美展」覆寫連結已移除。
+     data/manual/venue_corrections.json 的菁桐 url 欄位已移除。
+   - 保留使用者提供的地址與座標：
+     新北市平溪區菁桐里菁桐街113-117號，25.023917, 121.724333。
+   - data/manual/venue_geocodes.json 的菁桐 source 改為 manual_override_2026-07-05，不再標示 wikipedia。
+
+2) 產物同步
+   - public/venues.json 已同步清空菁桐 venue url 與活動 link。
+   - public/taiwan-exhibition-map.html 內嵌 fallback DATA 已同步 public/venues.json。
+   - 驗證 public/venues.json 可讀，HTML 內嵌 DATA 為 202 筆，node --check 前端腳本通過。
+
+3) 文件規則
+   - docs/README.md 的「資料來源」段落已新增硬性規則：
+     url 只能填真正官方網站、官方展覽頁、官方活動頁。
+     禁止把 Wikipedia、Google Maps、新聞、部落格、資料庫頁、地址查詢頁、非官方介紹頁或猜測頁面填入 url。
+     若無法確認官方來源，url 必須留空。
+   - 根目錄 README.md 目前是 macOS compressed,dataless 佔位檔，沙盒無法安全讀取或 patch；未覆寫，避免破壞原內容。
+
+4) 流程執行狀態
+   - 嘗試執行 python3 backend/update_all.py 與 backend/refresh_venues.py，但 Python 卡在 import path / zipimport 初始化，皆已中止，未完成完整管線。
+   - 因完整腳本未跑成，本次採用精準同步公開 JSON 與 HTML fallback 的方式完成地圖資料修正。
+
+需人工確認：
+   - Mac 端 Python 環境出現 import path / zipimport 初始化卡住；後續若要重跑完整管線，建議先檢查 Python 環境或雲端檔案 dataless 狀態。
+
+
+==========================================================
+## 2026/06/28　Claude Code（Logo 大量消失修復）
+==========================================================
+診斷並修復 182 個場館 logo 全部消失的問題。
+
+### Root Cause
+`logo_map.json` 與 `venue_logos.json` 兩個檔案被 macOS APFS 透明壓縮，
+資料儲存在 resource fork（com.apple.decmpfs），Terminal 可透明解壓，
+但 Claude Code 沙盒環境無法讀取 resource fork，導致：
+- `refresh_venues.py` 讀取 logo_map.json 拋 exception（被 try/except 吞掉）
+- logomap = {}，所有場館 logo 變空字串
+
+### 修復步驟
+1. 確認 _logo_backups/ 有 2023-06-23 的可讀備份
+2. 從備份重寫 logo_map.json 與 venue_logos.json（強制寫入 data fork，繞開壓縮）
+3. 跑 `collect_logos.py` 重新確認 logo（got: 100 筆）
+4. 重跑 `refresh_venues.py`：logo 從 63 → **182** 個場館
+5. 同步 HTML（_sync_map_and_report.py synced=1）
+
+### 驗證結果
+- 場館數：211（含 moc 補填 133 個）
+- 有 logo：**182** 個（6/25 正常狀態為 202，差距 20 個為 collect_logos MISS 的域名）
+- 嘉義文化創意產業園區、故宮、松山等重點場館 logo 已正常顯示
+
+注意 / 給 Codex：
+- logo_map.json 與 venue_logos.json 現在是正常 data fork 檔，Claude Code 可讀寫。
+- 若之後 collect_logos.py 再次失敗，logo_map.json 仍保有 100 筆本地 logo。
+- 還差約 20 個 MISS 域名（liart1996.com、tcod.com.tw 等），需 Mac 端 Playwright 跑。
+
+==========================================================
+## 2026/06/27　Claude Code（P0 MOC 場館消失 + DDG Logo 根本修復）
+==========================================================
+診斷並修復兩個 Bug（詳見 BUG_文化部場館消失_for_ClaudeCode.md）。
+
+### Root Cause（H1 確認）
+文化部 API 目前只回傳 54 筆（正常應 200+ 筆），且有時回傳空字串，導致每次
+refresh_venues.py 跑完都會讓 moc 場館從 ~140 崩到 12（甚至 0）。
+這是 API 本身的暫時性問題，無法由程式碼解決，只能加防護。
+
+### 修改檔案：refresh_venues.py
+
+1. fetch_api()：API 回傳空字串時不再拋 JSONDecodeError，改回傳空 list。
+
+2. API 件數保護（main() 入口）：
+   - fetch_api() 後檢查 len(d) >= 200，否則設 _moc_api_ok = False。
+   - 記警告 log，moc 層仍照常抓（但通常只有 54 筆→只產 ~12 個 moc 場館）。
+
+3. moc 補填（第3類合併後插入）：
+   - 若 _moc_api_ok == False，從 _report_prev.json（前次快照）讀出所有 src=moc 場館。
+   - 過濾結束日已過者，把仍有效的場館補入 venues list。
+   - 本次補填 133 個場館（_report_prev.json 06/25 快照）。
+   - 補填後的場館仍走後續所有流程（分類、logo、geocode 等）。
+
+4. venue_logo()：移除 DuckDuckGo favicon 備援。
+   - 舊：`return "https://icons.duckduckgo.com/ip3/" + dom + ".ico"`
+   - 新：`return ""`（沒本地/FB logo 就留空，顯示預設圖示）
+
+### 驗證結果
+  場館數：81 → **214**（目標 ~224，差距可用「到期場館」解釋）
+  moc 場館：12 → **145**
+  DDG favicon logo：59 → **0**
+  HTML 內嵌 DATA 已同步（_sync_map_and_report.py synced=1）
+
+注意 / 給 Codex 與 Daniel：
+- 文化部 API 目前仍只回 54 筆，每次 refresh_venues.py 都會走 moc 補填路徑。
+  待 API 恢復正常（>200 筆）後，補填會自動停用，改用即時資料。
+- _report_prev.json 是 06/25 快照（218 場館），若 API 繼續異常超過一週，
+  補填資料會越來越舊，可能有已結束場館被誤保留；屆時需人工清理或更新快照。
+- DDG favicon 根本已移除，Mac 端週一/四重跑後不會再補回假 logo。
+
+==========================================================
+## 2026/06/27　Claude Code（README 規範化 + 記憶）
+==========================================================
+1. README.md：工作日誌說明加強調「每次任何更動結束前必須追加，不寫算未完成」；
+   分類說明更新為兩軸（c 軸A主題 / c2 軸B形式）；維護提示對應新關鍵字表位置。
+2. 記憶系統（~/.claude/.../memory/）：新增 feedback_work_journal.md 永久記錄此規定。
+
+==========================================================
+## 2026/06/25　Codex
+==========================================================
+1) 建立 Facebook logo crawler 專用登入 profile
+   - Daniel 要求建立本機 Chrome profile 讓他登入 FB，之後 logo fallback 可用登入狀態抓粉專頭貼。
+   - 已新增 open_fb_logo_profile.py：
+     - profile 路徑：profiles/fb_logo_chrome。
+     - 預設開啟 15 分鐘，Daniel 登入後 session 會保存在 profile。
+     - 已補強關閉處理，手動關閉視窗或中斷等待時不再噴 Playwright close 例外。
+   - 已用 Playwright 驗證 profile 內存在登入 cookie（只確認 cookie 名稱與登入狀態，沒有記錄 cookie 值）。
+
+2) collect_fb_logos.py 改用登入 profile，並防止錯誤 FB 圖進流程
+   - 已修改 collect_fb_logos.py：
+     - 若 profiles/fb_logo_chrome 存在，改用 launch_persistent_context() 讀取登入狀態。
+     - 保留 FB 作為 fallback：官網 logo / artemperor 等較高優先來源仍由 refresh_venues.py 決定。
+     - 加入已知錯誤佔位圖 md5 黑名單：
+       3e8f62364b0f574a7d18a6c8b26730f1、1dd14f9a1e1f8f374bb29ccb8c8a2b82。
+     - 加入幾何檢查：FB fallback 只接受接近正方形且至少 120x120 的圖片，
+       避免把粉專封面、頁面橫幅或模糊 placeholder 當成 logo。
+
+3) 本輪清理與同步結果
+   - 先從 fb_logos.json 移除 12 筆已知 md5 placeholder。
+   - 再移除 8 筆非正方形候選圖（例如 320x118 / 320x122 橫幅型圖）。
+   - 重跑 collect_fb_logos.py：
+     - pages=67、downloaded=8、fb_logos.json 目前 logos=66。
+     - 驗證結果：黑名單圖 0 筆、非正方形圖 0 筆。
+   - 已跑 refresh_venues.py 與 _sync_map_and_report.py：
+     - venues.json 目前 224 個場館、449 筆展覽。
+     - with_image=400、with_link=444。
+     - 地圖定位：220 精準、4 區域層級。
+     - 最終 venues.json 掃描：bad_logo_refs=0，Facebook logo 被採用 61 筆。
+
+注意 / 給 Claude：
+   - FB profile 內含 Daniel 登入狀態，請視為本機私有資料，不要搬移或提交。
+   - 之後若 FB 又回新的 placeholder，先看圖片 md5/比例/尺寸，再加入黑名單或規則。
+   - 目前策略是「寧可暫時缺 logo，也不要補錯 logo」；缺漏可再用官網或人工指定穩定補齊。
+   - 本輪 refresh_venues.py 有一個非阻斷警告：
+     方圓美術館官網 https://www.fy-mofa.org.tw/exhibition-information/current-exhibitions
+     Remote end closed connection without response。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 新增「圓山花博」官網展覽活動固定來源
+   - Daniel 提供花博官網：
+     https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029&page=1&PageSize=100
+     並指定只收「展覽活動」類型。
+   - 已修改 collect_venues.py：
+     - 新增 VENUES 設定「圓山花博」，座標 25.0703595, 121.5204969。
+     - path 使用 News_Photo_Content.aspx。
+     - type_include 設為「展覽活動」。
+     - 支援民國年日期解析，例如 115-07-25 → 2026/07/25。
+     - 花博專屬 drop_past_start_without_end=True：只有開始日、沒有結束日、且已過期者不收。
+     - 卡片標題優先讀 a[title]，避免列表摘要文字/CSS 混入標題。
+   - 已修改 venue_address_overrides.json：
+     - 圓山花博 → 台北市中山區玉門街1號。
+   - 已確認 Claude 先前花博 logo 接線：
+     - logos/yuanshan_huabo.jpg 已存在。
+     - venue_logos.json: 圓山花博 → yuanshanhuabo.manual。
+     - logo_map.json: yuanshanhuabo.manual → logos/yuanshan_huabo.jpg。
+   - 已修改 collect_logos.py：
+     - 跳過 .manual pseudo-domain，避免日後 collect_logos.py 嘗試抓不存在的 yuanshanhuabo.manual。
+
+2) 修正官網收集流程的資料清除風險
+   - 本輪完整 collect_venues.py 時，臺北市立美術館、北師美術館、新北市美術館暫時回傳空結果；
+     舊流程會清除該館 venue_extra.json 既有資料。
+   - 已改為：單站空結果只記錄 MISS，保留舊資料，不再 out.pop()。
+   - 本輪已從尚未刷新前的 venues.json 補回這三站到 venue_extra.json：
+     臺北市立美術館 1 筆、北師美術館 MoNTUE 1 筆、新北市美術館 5 筆。
+
+3) 本輪執行與驗證
+   - 已跑 collect_venues.py：圓山花博寫入 16 筆官網展覽活動。
+   - 已跑 refresh_venues.py 與 _sync_map_and_report.py。
+   - 最終 venues.json：
+     - 場館總數 218，展覽總數 438。
+     - 圓山花博存在，地址「台北市中山區玉門街1號」，loc=exact，
+       logo=logos/yuanshan_huabo.jpg。
+     - 圓山花博目前未過期展覽 4 筆：
+       好婚市集-愛情入住中、MONSTER STRIKE DREAMDA...、
+       台灣兩棲爬蟲特寵新紀元、2026 AI TAIWAN 未來商務展。
+
+注意：
+   - 花博官網部分標題本身在列表 title/文字中帶有省略號，例如
+     MONSTER STRIKE DREAMDA...；目前保留官網列表可抓到的文字。
+     若 Daniel 需要完整標題，下一步可針對花博詳情頁再補 detail-title 解析。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 補強 Facebook 頭貼 fallback：支援 SVG image 的 xlink:href
+   - Daniel 提供一段 FB 頭貼 HTML，發現頭貼圖片可能不是 <img src>，
+     而是 <svg><image xlink:href="...fbcdn..."></image></svg>。
+   - 已修改 collect_fb_logos.py：
+     - page_avatar_fallback() 掃 image/img 時，除了 currentSrc/src/href.baseVal，
+       也讀 href.animVal、xlink:href、href attribute、getAttributeNS(xlink, href)。
+   - 已跑 python3 -m py_compile collect_fb_logos.py 通過。
+
+注意：
+   - 這能提升 FB 頁面 fallback 的成功率，尤其是 Daniel 貼的窯座 Yáo 這種 SVG 頭貼格式。
+   - 仍不能保證每個 FB 頁都成功，因為 FB 可能因登入牆、地區節點、動態載入或反爬策略改版。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 采泥藝術回復 current 入口；排除政府 API 錯資料「耘非凡美術館」
+   - Daniel 最新決策：
+     - 采泥藝術仍使用 https://www.chinigallery.com/load_page/get_exhibition_current
+       作為固定流程入口；未出現在 current 的個案就當作流失，不改抓全部展覽列表。
+     - 政府 API 給錯的「耘非凡美術館」不要放進地圖。
+   - 已修改 collect_venues.py：
+     - 采泥藝術 list URL 從 get_exhibition_list 改回 get_exhibition_current。
+   - 已修改 refresh_venues.py：
+     - USER_CUT 新增「耘非凡美術館」，之後政府 API 再給同名錯資料也會在流程中被排除。
+   - 已重跑 refresh_venues.py 與 _sync_map_and_report.py：
+     - venues.json 目前 218 個場館。
+     - 采泥藝術事業股份有限公司保留 3 筆 current 來源展覽：
+       形相之外：虛實共生、吟遊時空 — 霍剛・權純益、風中吟遊——李光裕．鄧卜君雙個展。
+     - 耘非凡美術館已不在 venues.json。
+
+給 Claude / 組長的提醒：
+   - 下面一筆日誌記錄了曾短暫評估 get_exhibition_list；最新有效決策以本筆為準。
+   - 不要再把采泥改成 get_exhibition_list，除非 Daniel 之後明確改變策略。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 修正采泥藝術官網展覽入口；保留耘非凡美術館獨立
+   - Daniel 指出：耘非凡美術館不是采泥，不要合併。
+   - 已確認並撤回先前準備加入的 ALIAS 合併規則；refresh_venues.py 目前沒有
+     「耘非凡美術館 → 采泥藝術事業股份有限公司」的歸併。
+   - collect_venues.py 已把采泥藝術的列表入口從
+     https://www.chinigallery.com/load_page/get_exhibition_current
+     改為
+     https://www.chinigallery.com/load_page/get_exhibition_list
+     原因：官方全部展覽列表可看到「片段與回響——王淑鈴個展」，
+     舊 current 入口沒有這筆，所以之前采泥流程沒有收錄到。
+   - 本輪 collect_venues.py 爬蟲執行被中斷，尚未重建 venue_extra.json；
+     目前 venues.json 仍維持：
+       · 采泥藝術事業股份有限公司：3 筆舊的采泥官網展覽。
+       · 耘非凡美術館：獨立場館，政府 API 來源「片段與回響 ——王淑鈴個展」。
+
+給 Claude / 組長的提醒：
+   - 後續要在 Mac 端重跑 collect_venues.py + refresh_venues.py，確認采泥新入口是否只帶入
+     有效當期/未過期展覽；get_exhibition_list 包含歷史展，需要留意日期過濾是否正確。
+   - 不要把耘非凡美術館併入采泥，除非 Daniel 另行確認同一場館或同一活動需改名。
+
+
+==========================================================
+## 2026/06/27　Claude Code（分類重構實作）
+==========================================================
+依規格檔「分類重構規格_for_ClaudeCode.md」完成兩軸分類重構。
+
+修改檔案：
+1. import_acg_excel.py
+   - 讀取「活動類別 / Activity Category」欄（col 3），存入 event.cat2。
+   - 下次 Mac 端跑 import_acg_excel → manual_extra.json 將帶 cat2 欄位。
+
+2. refresh_venues.py
+   - 新增 helper：map_excel_cat2()、classify_form()、classify_theme_kw()。
+   - merge_acg_extra() 傳遞 cat2 欄位。
+   - apply_event_kv_cache() 之後插入「最終兩軸分類 pass」：
+     · manual/caco/cayenne 來源 → c=ACG，c2 讀 cat2 欄或標題關鍵字。
+     · 其他來源 → 比對 Excel 活動標題集（difflib ≥0.85 exact/≥0.70 fuzzy）；
+       exact→ACG，fuzzy→關鍵字結果+c_flag，無重疊→關鍵字。
+   - 已跑並驗證輸出：81 場館、215 展覽，c 值僅 ACG/藝術設計/其他文化，c2 值僅五類。
+   - c_flag 本輪 0 筆（無模糊邊界案例）。
+
+3. taiwan-exhibition-map.html
+   - 單一 7 類 #fcat 篩選器 → 拆成「主題」4 鍵（#fcat）+ 「形式」6 鍵（#fform）。
+   - state 加 form:'all'；matchEx() 加 c2 AND 篩選；cardHtml() 加 c2 綠色 tag。
+   - 已跑 _sync_map_and_report.py 同步 HTML 內嵌 DATA（synced=1）。
+
+產出：_分類對照_20260627.csv（215 筆，欄位：場館/活動/src/c/c2/c_flag）供人工抽查。
+
+分類分布（本輪）：
+  軸A c：ACG=44, 藝術設計=48, 其他文化=123
+  軸B c2：展覽=108, 其他=73, 快閃店=20, 體驗活動=5, 主題餐廳=9
+
+注意 / 給 Codex 與 Daniel：
+- c2「其他」73 筆主要是常設展廳佔位卡（ty=permanent）與無關鍵字的一般展覽。
+  若要進一步細化可在 FORM_KW 加「常設」等詞；本輪依規格落 fallback=其他文化，不動。
+- FORM_KW 的 café/cafe 已加 (?i) flag（修正大寫 CAFE 未匹配問題）；CACO CAFE 正確歸 主題餐廳。
+- import_acg_excel.py 的 cat2 讀取需下次 Mac 端跑才會寫進 manual_extra.json；
+  目前 refresh_venues.py 沒有 cat2 時走標題關鍵字，行為一致、不影響現在輸出。
+- 備份：refresh_venues_backup_20260627.py 在 _backup_run_20260616/。
+
+==========================================================
+## 2026/06/27　Claude（網頁維護員）#4（新增交接狀態規範）
+==========================================================
+依使用者要求，在 README.md 最上方新增「📌 目前交接狀態」六欄區塊
+（目標／目前檔案／已完成／目前錯誤／下一步／不要改動），並訂為硬性規定：
+不論誰，每次做完事情結束前都要 (1) 在本日誌追加歷史紀錄、(2) 覆蓋更新 README 那六欄。
+目的：讓人類/Agent 一眼看完現況，省 token、少重讀。已填入目前真實狀態。
+
+==========================================================
+## 2026/06/27　Claude（網頁維護員）#3（P0：文化部場館大量消失）
+==========================================================
+使用者回報場館變少。已量測確認是流程出包、非到期：
+- 06/25(_report_prev.json) 224館/449活動 → 06/27 venues.json 81館/215活動（檔案 229KB→109KB）。
+- 集中在 moc(文化部)層：約 140 → 12；其餘層 manual36/official23/caco3/cayenne2 完好。
+- 現有資料僅 12 個活動過期，無法解釋少掉 234 活動 → 排除自然到期。
+- 已開 P0 工單：BUG_文化部場館消失_for_ClaudeCode.md（含證據、3 個假設、診斷步驟、驗收與防呆建議）。
+  交 Claude Code 查修；我(技術主管)不自行動手。優先於 logo 根因修復與分類重構，但可同輪處理。
+
+==========================================================
+## 2026/06/27　Claude（網頁維護員）#2（Logo 大量錯圖 真因＝DDG favicon 備援）
+==========================================================
+使用者回報「logo 又跑出很多不對的圖案」。查清楚了：
+- 真因：refresh_venues.py 的 venue_logo() 在 logo_map 沒對到時，最後備援會給
+  `https://icons.duckduckgo.com/ip3/<網域>.ico`（DuckDuckGo favicon 代理）。
+  DDG 對很多台灣政府/美術館網域只回通用地球圖或低解析小圖 → 地圖上看起來很多不對。
+- 範圍：06/27 venues.json 有 59/71 個「有 logo」的場館是用 DDG favicon
+  （故宮、松菸、華山、駁二、南美館、北師、奇美、纖博、CACO、凱岩、各新光三越…）。
+- 我已做（**interim，當前地圖**）：把這 59 個 DDG favicon 的 logo 清成空字串（退回預設圖示），
+  venues.json 與 HTML 內嵌 DATA 已同步；備份 _logo_backups/venues.json.20260627_1511.bak、html.*。
+  另把一個本地 1008B 破圖 鳳甲美術館.jpg 也清掉。
+- ⚠️ 這是 interim：Mac 端週一/四 update_all 會重跑 refresh_venues.py，
+  只要 venue_logo() 的 DDG 備援還在，DDG favicon 會「全部回來」。需 Claude Code 從根本改。
+
+### 給 Claude Code 的根本修復（refresh_venues.py / collect_logos.py / collect_fb_logos.py）
+1. venue_logo()：**移除 DuckDuckGo（及任何 favicon 服務）作為 logo 備援**。
+   Logo 取得優先序改為：
+   logo_map 本地檔 → fb_logos FB 頭貼 → 官網 apple-touch-icon / og:image(尺寸夠) → 否則留空(顯示預設 pin)。
+   寧可空白也不要放 favicon 代理圖。
+2. collect_logos.py：抓 logo 時**拒收點陣 favicon <2KB**（.ico/.png/.jpg/.webp）；
+   .svg 向量不受大小限制（天生小，正常）；優先抓 apple-touch-icon / og:image。
+3. collect_fb_logos.py：拒收 1876B 佔位圖（md5 3e8f62364b0f574a7d18a6c8b26730f1）與
+   profile.php?id= / /p/ 這類常回登入牆圖的頁；抓到就跳過、不要寫進 fb_logos。
+4. 重跑後請產出「哪些場館仍無 logo」清單，交使用者逐館補正式 logo（這是使用者要的方向：真 logo，不要 favicon）。
+
+==========================================================
+## 2026/06/27　Claude（網頁維護員）（分類重構規格，交給 Claude Code 實作）
+==========================================================
+使用者要調整分類。已與使用者確認方向，產出規格檔：分類重構規格_for_ClaudeCode.md。
+重點（細節見規格檔）：
+- 改成兩個正交軸：軸A主題(ACG/藝術設計/其他文化) ＋ 軸B形式(展覽/快閃店/主題餐廳/體驗活動/其他)。
+- venues.json：c 重定義為軸A；新增 c2=軸B；選用 c_flag="需人工確認"。
+- 判斷(使用者指定兩層)：Excel 來源一律 ACG；其他來源若與 Excel「重疊」也算 ACG，沒重疊才用關鍵字。
+  軸B：Excel 讀「活動類別」欄，其他來源用關鍵字；優先序 Excel欄位＞標題＞場館型態；形式不被場館型態蓋過。
+- 前端：分類單一篩選 → 拆成「主題」「形式」兩個交叉篩選。
+- ⚠️ 規格內關鍵字表與軸名稱為 AI 擬定，使用者/Claude Code 可調，調整後回填規格檔。
+- 狀態：Codex 暫停(成本)，改由 Claude Code 實作程式；本人(Claude)只出規格＋日誌，未動 refresh_venues.py/前端。
+- 待辦：掛載鬆開後我可補拉「現有分類實際分布」與「新舊差異對照」給使用者抽查（目前掛載讀取鎖定）。
+
+==========================================================
+## 2026/06/26　Claude（網頁維護員）（全台ACG活動.xlsx 加 4 筆新檔期）
+==========================================================
+使用者貼 25 列檔期，要求「Excel 沒有的就加進去，地址空白上網查」。
+- 比對：去內部重複後 23 筆，其中 19 筆 Excel 已有(row59–80，多為 Codex 收錄)，真正缺 4 筆。
+- 已附加(row81–84)，欄位對齊既有 17 欄、日期格式沿用 mm-dd-yy / 月份 mmm-yy：
+  81《天官賜福》動畫 天地流光原畫紀念活動 06/17–07/27 華山中7A館 羚邦
+  82 全知讀者視角POP-UP STORE 07/04–07/12 華山西2館 台灣角川
+  83 2026花蓮FUN暑假(航海王) 07/11–08/16 壽豐鯉魚潭(主場) 花蓮縣政府/東映
+  84《東京喰種》期間限定快閃店 07/31–08/30 三創6F INCUBASE Arena INCUBASE
+- 地址原始空白的 4 處皆「網路查證」補入，已在各列備註標來源；非查證不補。
+- 另依使用者指示補 row79 孤獨搖滾台中場 結束日=2026/08/20（同時修正我一度誤寫到開始日欄的錯誤，現開始07/20、結束08/20正確）。
+- 備份：_excel_backups/全台ACG活動_backup_20260626_0321.xlsx。原有列未更動。
+- ⚠️ 需人工確認/留給後續：
+  (a) Excel 內仍有既存重複列(68/69 San-X、72/73 Hello Kitty)，非本次新增，未動。
+  (b) row79 季別仍為 Q2 但開始為 7 月(應 Q3)，屬既有資料，未擅改。
+  (c) 這些只進 Excel；要上地圖需 Mac 端跑 update_all.py(import_acg_excel→refresh)。
+
+==========================================================
+## 2026/06/25　Claude（網頁維護員）#2（FB 假 logo bug）
+==========================================================
+發現並處理：collect_fb_logos 把「FB 未登入通用佔位圖」當頭貼存了。
+- 訊號（給 Codex 做永久過濾）：該假圖大小固定 1876 bytes、md5=3e8f62364b0f574a7d18a6c8b26730f1。
+- 受影響 6 館（fb_logos.json 指向同一張 1876B 假圖）：
+  852藝術空間、窯座、毛刺空間 Glitch home、洪根深美術館、蔣勳文化基金會 時善慧館、雨果曐Gallery。
+- 我已做：fb_logos.json 移除這 6 筆指派（已備份 _logo_backups/fb_logos_backup_*）。fb_logos 56→52。
+- ⚠️ 但 fb_pages.json 仍有這些粉專，且 logos/facebook/*.jpg 假圖檔還在 →
+  下次 collect_fb_logos 會「再抓一次同一張假圖、再寫回 fb_logos」。
+  請 Codex 在 collect_fb_logos.py 加「拒絕 1876B / 該 md5 / FB 登入牆圖」的過濾，存圖前就擋掉；
+  並可一併刪除 logos/facebook/ 內這 6 個 1876B 檔。
+- 現況：venues.json 尚未重建，這 6 館目前仍顯示假 logo；待下次 refresh（移除來源後）會落回預設或正確圖。
+  若要 852/窯座 有真 logo，建議比照圓山花博：給穩定 logo 圖檔，我下載成本地檔再接線。
+
+
+==========================================================
+## 2026/06/25　Claude（網頁維護員）
+==========================================================
+1) 核對：06/25 venues.json 已套上先前登記的 logo
+   - 852藝術空間、窯座、科元藝術中心、中正紀念堂、圓山花博 → 現皆 logo=有。
+   - Daniel 收到的「缺 852/窯座」訊息是更新前的舊報告（時間差），非未更新。
+2) 補登記 FB（已查證，已備份 _logo_backups/fb_pages_backup_*）：
+   - 亞書藝所 → facebook.com/p/亞書藝所-61550777229650/
+   - 豐藝館   → facebook.com/fongyigallery/（自有粉專；另有官網 fong-yi.com.tw）
+   → 待 Mac 跑 collect_fb_logos + refresh 後生效。
+3) 仍待處理：中壢藝術館（無任何網址，待 Daniel 提供）；
+   MyAnime Café(三創/高雄)、object taipei store（IG/FB 抓不到頭貼，需穩定圖或接受預設）；
+   未具名場地、台中市（名稱不完整 → 正名問題，建議 Codex 處理）。
+
+
+==========================================================
+## 2026/06/23　Claude（網頁維護員）#2（C 類後續，Daniel 補了來源）
+==========================================================
+1) venue_logos.json 追加（已備份 _logo_backups/）：
+   - 中正紀念堂 → cksmh.gov.tw（Daniel 確認）
+   - 太平買菸場 → tchac.taichung.gov.tw（Daniel 同意套用文資處/公共）
+2) fb_pages.json 追加（交給你的 collect_fb_logos，已備份）：
+   - 852藝術空間 → facebook.com/profile.php?id=61574023807656
+   - 窯座 → facebook.com/p/窯座-Yáo-61556758625583/
+   ⚠️ 852 是 profile.php?id= 格式；若 collect_fb_logos 只支援 /p/ 與粉專短名，可能要擴充支援 profile.php?id=。
+3) 圓山花博-花海廣場：Daniel 直接給 logo 圖（FB CDN，含到期參數）。
+   - 已下載成本地檔避免過期：logos/yuanshan_huabo.jpg（18KB）。
+   - 接線：venue_logos 加 ["圓山花博","yuanshanhuabo.manual"]；logo_map 加
+     {"yuanshanhuabo.manual":"logos/yuanshan_huabo.jpg"}。
+   - ⚠️ 請 Codex 確認 collect_logos.py 不會對 pseudo 網域 yuanshanhuabo.manual 去抓 favicon 覆蓋本地檔；
+     若會，請把它加進 skip 清單，或改用你既有的「手動 logo 覆寫」機制。
+全部只追加、皆有備份；logo 實際生效需 Mac 端跑 collect_logos/collect_fb_logos + refresh。
+
+
+==========================================================
+## 2026/06/23　Claude（網頁維護員）
+==========================================================
+1) 處理「缺 logo」C 類（短網址/票券/新聞/表單，原 12 筆）
+   - reurl 短網址(7)：Claude 端靜態解不出；Codex 的瀏覽器解析也 error
+     （_short_url_resolved.json 內為 "Execution context destroyed"）。改用「場館名稱」WebSearch 找官網。
+   - 已 WebSearch 查證並登記進 venue_logos.json（map，indent=1；已備份
+     _logo_backups/venue_logos_backup_20260623_0729.json，map 167→170）：
+       科元藝術中心 → keyuan.com.tw
+       全安堂       → sunnycake.tw
+       中原文創園區 → cycc.org.tw
+     （logo 實際下載仍需 Mac 端跑 collect_logos.py；Claude 端只登記網域。）
+   - 待確認/未自行登記：
+     · 中正紀念堂(1展廳) → 建議 cksmh.gov.tw（高度可信，但本輪未網搜驗證，待確認後加）。
+     · 豐藝館 → 無自有官網（屬豐邑機構 fong-yi.com.tw）；自有識別在 FB facebook.com/fongyigallery → 建議走 FB 流程。
+     · 亞書藝所 → 只有 FB facebook.com/p/亞書藝所-61550777229650 → 建議走 FB 流程。
+     · 太平買菸場 → 無自有網域（台中市文化資產處/太平區公所管理）→ 不宜登記共用 gov logo。
+     · 852藝術空間、窯座 → 查無官網，需 Daniel 提供。
+     · 圓山花博-花海廣場 → 來源為年代售票(ticket)；場館應為花博公園，網域待確認。
+   - 名稱品質問題(非 logo)：「台中市」(來源 tvbs 新聞)、「澎湖」(yahoo 新聞) → 名稱是縣市非場館，建議正名/併館。
+給 Codex：venue_logos.json 我只追加上述 3 筆已驗證者、未改既有格式(indent=1)；
+   FB 類(亞書藝所/豐藝館)建議由你的 collect_fb_logos 流程處理。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 補強 logo 流程並執行
+   - Daniel 問：有非社群網址為什麼流程沒補上？只有社群為什麼沒有用頭貼？
+   - 原因確認：
+     - collect_logos.py 只會跑 venue_logos.json 已登記的「場館名稱關鍵字 → 官方網域」。
+       缺 logo 報告中的非社群網址雖然存在於活動連結，但很多沒有登記到 venue_logos.json，
+       所以完整流程不會主動拿它們抓 logo。
+     - collect_fb_logos.py 只讀 fb_pages.json，不會自動從 venues.json 的 Facebook 連結抽粉專。
+       因此即使場館只有 FB 來源，只要沒在 fb_pages.json，就不會下載頭貼。
+     - Instagram 目前沒有穩定頭貼流程；多數資料是 IG 貼文 URL，靜態頁常只能穩定拿到貼文圖/KV，
+       不一定能取得帳號大頭貼。
+
+2) 本次已做的流程修正
+   - venue_logos.json 新增 21 組可判斷的非社群場館/官方網域，例如：
+     新莊棒球場→fubonguardians.com、采泥→chinigallery.com、胡克敏→hukemin.com、
+     帝門→dimensionsart.com、朝代→dynastyart.com、森初→moricasa.com、
+     勝利星村→yoke918.tw、漢寶德紀念館→hptmm.tnnua.edu.tw、立法院文化走廊→ly.gov.tw 等。
+   - 未加入 TVBS、ticket.com.tw、未具名場地這類新聞/票券/不明來源，避免拿平台 logo 充當場館 logo。
+   - collect_fb_logos.py：
+     - 會自動掃 venues.json 的 Facebook 連結，補進 fb_pages.json。
+     - 支援 Facebook /p/名稱-ID 格式。
+     - Graph API 失敗時，新增粉專頁面 fallback 嘗試抓 og:image/頁面圖片。
+
+3) 本次執行結果
+   - 已跑 collect_logos.py：
+     - logo_map.json 從 90 個網域增加到 100 個網域。
+     - 本輪成功下載/補入包含：soka-art、chipolin、chinigallery、tainan.gov、hukemin、
+       arte、ly.gov、moricasa、dynastyart、dimensionsart、yoke918、fubonguardians 等。
+   - 已跑 collect_fb_logos.py：
+     - fb_pages.json 自動新增 11 筆。
+     - 新下載 10 個 Facebook 頭貼。
+     - fb_logos.json 目前 56 個 logo。
+     - 仍有 MyAnime Café 兩筆與耘非凡美術館 Graph/頁面 fallback 都未取到圖。
+   - 已跑 refresh_venues.py 與 _sync_map_and_report.py。
+   - 缺 logo 從 51 降到 23：
+     - 已有 logo：196 / 219。
+     - 缺 logo：23。
+     - 剩餘原因：
+       - 1 筆完全沒有網址：中壢藝術館。
+       - 9 筆只有社群：其中多數是 Instagram 貼文/首頁，尚無穩定頭貼流程；3 筆 FB 嘗試後仍失敗。
+       - 12 筆只有短網址/票券/新聞/表單，需下一輪查官方來源。
+       - 1 筆非社群但場館不明：未具名場地 / waker.org.tw。
+
+給 Claude / 組長的提醒：
+   - 非社群網址缺 logo 的主要缺口已不是「沒跑」，而是「未登記官方網域」；
+     本次已把可判斷者登記進流程。
+   - Facebook 已改為自動掃 venues.json，之後新增 FB 場館不需手動先寫 fb_pages.json。
+   - Instagram 頭貼仍需另開新流程：需要可靠地從 IG profile/post 推回帳號並取得 profile_pic_url；
+     否則直接用 IG 貼文 og:image 會變成活動 KV，不一定是場館頭貼。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 修正 ANI-FEST 期間限定店地點：台北三創 → 高雄夢時代野獸國
+   - Daniel 指出：「台北三創生活園區 1F 十二立方 ANI-FEST期間限定店」寫錯；
+     正確地點為「夢時代購物中心Ｘ野獸國」，地址「高雄市前鎮區中華五路789號1樓 F1C40」。
+   - 確認來源：
+     - 來自 全台ACG活動.xlsx 第 117 列。
+     - import_acg_excel.py 匯入後生成 manual_extra.json，再由 refresh_venues.py 合併進 venues.json。
+   - 已備份 Excel：
+     - _excel_backups/全台ACG活動_backup_20260623_010906_before_anifest_dreammall.xlsx
+   - 已修改 Excel 第 117 列地點：
+     - 舊：台北三創生活園區 1F 十二立方（台北市中正區市民大道三段2號）
+     - 新：夢時代購物中心Ｘ野獸國（高雄市前鎮區中華五路789號1樓 F1C40）
+   - 已補 venue_geocodes.json：
+     - 夢時代購物中心Ｘ野獸國 → 22.5953429, 120.3087795，source=user_supplied_2026-06-23。
+   - 已補 venue_logos.json：
+     - 「夢時代購物中心」→ dream-mall.com.tw，讓新場館名稱可套用既有夢時代 logo。
+
+2) 本次驗證
+   - 已跑 import_acg_excel.py：
+     - manual_extra.json 不再有「台北三創生活園區 1F 十二立方」。
+     - 新增「夢時代購物中心Ｘ野獸國」。
+   - 已跑 refresh_venues.py 與 _sync_map_and_report.py。
+   - venues.json 目前：
+     - ANI-FEST期間限定店 只剩 1 筆。
+     - 場館：夢時代購物中心Ｘ野獸國。
+     - 地址：高雄市前鎮區中華五路789號1樓 F1C40。
+     - 座標 exact：22.5953429, 120.3087795。
+     - 舊的「台北三創生活園區 1F 十二立方」已不存在。
+     - logo 已即時補成 logos/dream_mall_com_tw.svg；後續重跑也會由 venue_logos.json 自動套用。
+
+
+==========================================================
+## 2026/06/23　Codex
+==========================================================
+1) 前端連結標籤：社群首頁不算「官方網站」
+   - Daniel 補充規則：社群首頁不算官方網站。
+   - 修改 taiwan-exhibition-map.html：
+     - 新增 isSocialUrl()，排除 facebook.com / instagram.com / threads.net / x.com /
+       twitter.com / youtube.com / youtu.be。
+     - officialLinkLabel() 現在必須「不是社群連結」且為首頁型 URL 或等於場館 v.url，
+       才顯示「官方網站 ↗」；社群首頁與社群貼文一律顯示「活動連結 ↗」。
+   - 驗證：
+     - 齊柏林空間 chipolin.org/exhibition → 官方網站。
+     - 早點出發 / EATWITHGO Instagram 首頁 → 活動連結。
+     - 華山單篇展覽頁 → 活動連結。
+
+
+==========================================================
+## 2026/06/22　Codex
+==========================================================
+1) 修正前端連結標籤規則
+   - Daniel 提醒：之前約定是「確定連結是官方網站」才顯示官方網站，其他顯示活動連結；
+     但前端 officialLinkLabel() 原本用 source/同網域判斷，會把官方單篇展覽頁也標成官方連結。
+   - 修改 taiwan-exhibition-map.html：
+     - 新增 sameCleanUrl()：比對連結是否與場館 v.url 同一個乾淨 URL。
+     - 新增 isWebsiteLikeUrl()：判斷首頁型 URL（/、index、default.aspx、home、ch、zh-tw）。
+     - officialLinkLabel() 改為：
+       - 首頁型 URL，或與場館 v.url 相同 →「官方網站 ↗」。
+       - 其他全部 →「活動連結 ↗」。
+   - 驗證案例：
+     - 華山單篇展覽頁 → 活動連結。
+     - 嘉義文創單篇活動頁 → 活動連結。
+     - 齊柏林空間 v.url 與活動連結同為 chipolin 展覽頁 → 官方網站。
+   - 注意：若某場館 v.url 本身是官方社群首頁（例如 EATWITHGO Instagram），目前也會顯示「官方網站」；
+     若 Daniel 希望社群首頁不算官方網站，可再加社群網域排除。
+
+
+==========================================================
+## 2026/06/22　Codex
+==========================================================
+1) 修正「得忌利士洋行」實際場館為「齊柏林空間」
+   - Daniel 指出：這筆展覽的場館名稱應為「齊柏林空間」；
+     官方展覽頁 https://www.chipolin.org/exhibition；
+     官方 logo https://www.chipolin.org/assets/front/images/logo/museum_3.svg。
+   - 修改 venue_corrections.json：
+     - 若文化部 API 場館名為「得忌利士洋行」且展名命中「齊柏林空間年度特展 / 齊柏林俯瞰台灣」，
+       自動改名為「齊柏林空間」。
+     - 保留地址「新北市淡水區中正路316、316-1號」與 exact 座標 25.1726698, 121.4369767。
+     - url 改為 https://www.chipolin.org/exhibition。
+   - 修改 venue_event_sources.json：
+     - 將原本「得忌利士洋行」來源改成「齊柏林空間」，
+       fallback URL 改為 chipolin 官方展覽頁。
+   - 修改 venue_logos.json / logo_map.json：
+     - 新增「齊柏林空間」→ chipolin.org。
+     - logo 使用 Daniel 提供的官方 SVG。
+   - 修改 refresh_venues.py：
+     - 新增 bad_link()，過濾 javascript:/mailto:/tel:/# 這類無效活動連結。
+     - apply_event_sources / event_link_overrides 現在遇到無效既有連結時可用 fallback/override 取代。
+     - 這次修掉 chipolin 展覽頁被誤抓成 javascript:void(0); 的問題。
+
+2) 本次驗證
+   - 已跑 refresh_venues.py 與 _sync_map_and_report.py。
+   - venues.json 目前沒有「得忌利士洋行」場館。
+   - 「齊柏林空間」現為 exact，活動連結為 https://www.chipolin.org/exhibition，
+     logo 為官方 museum_3.svg。
+   - JSON 設定檔與 refresh_venues.py 語法檢查通過。
+
+給 Claude 的提醒：
+   - 若之後文化部 API 仍回「得忌利士洋行」，流程會依展名自動改回「齊柏林空間」。
+   - 若 chipolin 未來有單篇展覽 URL，可再把 fallback 從展覽列表頁換成單篇頁。
+
+
+==========================================================
+## 2026/06/22　Codex
+==========================================================
+1) 修正索卡藝術多分館定位流程
+   - Daniel 指出：索卡展覽需點進詳情頁才知道地點，不能用單一「索卡藝術」台北座標；
+     部分展覽在台南，台南地址為「臺南市安平區慶平路446號」、
+     座標 22.99728953725815, 120.1748699153447。
+   - 新增 collect_soka_art.py：
+     - 從 https://www.soka-art.com/cn/exhibition/current / future / exhibition 抓 details 連結。
+     - 逐一讀詳情頁，解析標題、展期、KV 圖、活動頁 URL。
+     - 只看「展期後方短文字」判斷索卡藝術 台北空間/台南空間，避免頁尾同時列出台北/台南地址造成誤判。
+     - 輸出 soka_extra.json。
+   - 修改 refresh_venues.py：
+     - 合併 soka_extra.json 為 official source。
+     - 若 soka_extra.json 有資料，移除政府 API 泛稱「索卡藝術」，避免又套用舊的單點座標。
+   - 修改 update_all.py：
+     - 完整排程加入 collect_soka_art.py，之後每週一/四自動刷新索卡官方分館資料。
+   - 修改 import_acg_excel.py：
+     - soka_extra.json 加入 auto-managed sources，Excel 匯入時會視為官方流程已維護，避免重複資料打架。
+
+2) 本次驗證
+   - 已跑 collect_soka_art.py：soka_extra.json 產出 2 分館、3 檔展覽。
+   - 已跑 refresh_venues.py 並同步 HTML。
+   - venues.json 現在包含：
+     - 索卡藝術 台北空間：台北市中山區堤頂大道二段350號，25.07965141055217, 121.56333144232764。
+       展覽：《 定格 ・ 之後 》、严一能：止步。
+     - 索卡藝術 台南空間：臺南市安平區慶平路446號，22.99728953725815, 120.1748699153447。
+       展覽：低語的形體 Forms of Whisper。
+   - 兩個分館皆為 exact、official，展覽連結與 KV 皆有。
+
+給 Claude 的提醒：
+   - 先前日誌提到「索卡 city 改台北、分館待確認」已由本次流程修正。
+   - 若 Daniel 之後補索卡其他分館或官方頁格式變動，請優先調 collect_soka_art.py 的 branch_for/parse_date_range。
+   - 本次 _sync_map_and_report.py 顯示剩 1 筆有完整地址但非 exact：object taipei store，與索卡無關。
+
+
+==========================================================
+## 2026/06/22　Claude（網頁維護員）— 依 Daniel 指示更新 3 場館
+==========================================================
+協作模式（Daniel 新指示，請兩端遵守）：
+  - 之後分工：Claude 負責邏輯/技術方案/code review/驗收；Codex 負責實作。
+  - Claude 自行判斷改動大小：非小幅或會動到產生檔/座標/資料結構 → 實測（讀產出檔驗證）；
+    純小更動 → 書面 review 即可。每次都要更新本日誌。
+
+1) 中台兩館合併（同一場館）
+   - Daniel 指出「財團法人中台文化藝術基金會」=「中台世界博物館」。
+   - 作法：refresh_venues.py 的 canon() ALIAS 表新增
+     '財團法人中台文化藝術基金會' -> '中台世界博物館'，讓第3類合併自動併館＋去重展覽。
+   - 結果：基金會特展「【特展】一座博物館的誕生：藝術化世十年探索與實踐」(2026/08/04–12/31)
+     併入中台世界博物館；中台現有 2 檔特展；logo 沿用 logos/ctwm_org_tw.png。
+   - 中台官網 url 設為特展頁（venue_corrections.json）：
+     https://www.ctwm.org.tw/exhibition/special-exhibition
+   - 常設展頁加入 venue_event_sources.json（特展＋常設展兩個列表頁）。
+   - 中台地址維持「南投縣埔里鎮」(區級)，未自行補街道號（避免杜撰）；座標已 exact。
+
+2) 索卡藝術：補台北地址＋精確座標＋logo
+   - venue_address_overrides.json：台北市中山區堤頂大道二段350號。
+   - venue_geocodes.json：25.07965141, 121.56333144（Daniel 提供）。
+   - logo：venue_logos.json 加 ["索卡藝術","soka-art.com"]，logo_map.json 指到 Daniel 給的圖。
+   - ⚠️ 需人工確認：原政府 API 把索卡放「台南市(區級)」，Daniel 給的是台北內湖空間，
+     已改 city=台北市。但該館展覽「高橋朋子個展」實際在台北或台南分館無法確認。
+   - ⚠️ 索卡 logo 用的是 Google 縮圖快取網址(encrypted-tbn0.gstatic.com)，可能過期；
+     建議 Codex 在 Mac 端改抓官方 favicon 或下載存 logos/。
+
+3) 國立臺南大學博物館（香雨書院）：補地址＋座標＋logo
+   - venue_address_overrides.json：台南市將軍區長榮里182號。
+   - venue_geocodes.json：23.19242261, 120.15701876（Daniel 提供）。
+   - logo：venue_logos.json 加 ["國立臺南大學博物館","lib-museum.nutn.edu.tw"]，
+     logo_map.json 指到官方 PNG（lib-museum.nutn.edu.tw 網域，較穩定）。
+
+4) 產生方式（重要，雙軌）
+   - ① 來源設定檔全部改好（上述 6 個 JSON + refresh_venues.py ALIAS）→
+     每週一/四 Mac 端 update_all.py 重跑會自動保留這些修正。
+   - ② 因 Claude 沙箱跑完整 refresh 不穩（背景程序被中止、apply_event_sources
+     遇 hongmaogang 503 卡住、manual_permanent_extra.json 又踩到 Resource deadlock），
+     改用「精準補丁」直接套到現有 venues.json，只動這 3 館、不引入無關 diff。
+   - 已備份 venues.json -> venues_backup_20260622_0920.json。
+   - 已同步 taiwan-exhibition-map.html 內嵌 DATA。
+   - 驗證(✅ 已實測，重讀產出檔)：場館 219→218、活動 422 不變、基金會殘留 0、
+     中台 1 館含 2 展、索卡 exact/台北、臺南大學 exact＋logo、HTML DATA 也是 218。
+   - ⚠️ 未實測：3 個 logo URL 是否實際載得出圖（沙箱未抓圖）。
+
+給 Codex 的提醒/待辦：
+   - 下次 Mac 端 update_all.py 跑完，請確認這 3 館仍正確（ALIAS 合併會在第3類合併階段生效；
+     索卡/臺南大學的 geocode override 會把它們升 exact）。
+   - 索卡 city 改台北、與展覽分館是否一致，待 Daniel 確認。
+   - 索卡 gstatic logo 若失效，換官方 favicon / 本地 logos/。
+
+
+==========================================================
+## 2026/06/22　Codex
+==========================================================
+1) 修正跨 agent 衝突風險：manual_extra.json 會被 Excel 匯入覆寫
+   - Claude 指出：import_acg_excel.py 每次會整個重建 manual_extra.json。
+   - 確認屬實；若把非 Excel 常設資料只寫在 manual_extra.json，完整排程下次會刪掉它。
+   - 已新增 manual_permanent_extra.json，作為「Daniel/Codex 人工確認、非 Excel 來源、需長期保留」的 ACG 補表。
+   - 已把「早點出發 / EATWITHGO」從 manual_extra.json 搬到 manual_permanent_extra.json。
+
+2) 修改 refresh_venues.py
+   - 現在合併順序包含：
+     - manual_extra.json：Excel 匯入產物，可被 import_acg_excel.py 重建。
+     - manual_permanent_extra.json：長期人工補表，不由 Excel 重建。
+     - caco_extra.json / cayenne_extra.json：官方流程產物。
+   - refresh log 已出現：合併長期手動 ACG 活動: 1 場館。
+
+3) 已做「悲劇演練」
+   - 先跑 import_acg_excel.py，確認 manual_extra.json 被重建且不含 EATWITHGO。
+   - 再跑 refresh_venues.py，確認 EATWITHGO 仍從 manual_permanent_extra.json 合併回 venues.json。
+   - 已同步 taiwan-exhibition-map.html。
+   - 驗證結果：EATWITHGO 仍存在，loc=exact、src=manual、addr=新竹市北區大同路93號、KV 有保留。
+
+給 Claude 的提醒/待辦：
+   - 之後若 Daniel/Codex 新增「常設店、人工確認但不在 Excel 的資料」，請放 manual_permanent_extra.json。
+   - Excel 裡的活動仍走 manual_extra.json；不要再把非 Excel 長期資料只放 manual_extra.json。
+   - report_status.py 若看到 manual_permanent_extra.json，可把它視為長期人工補表，不是暫存產物。
+
+
+==========================================================
+## 2026/06/22　Codex
+==========================================================
+1) 啟用 Mac 端完整自動更新排程
+   - 修改並執行 _install_schedule.command。
+   - launchd label：com.danielcheng.twexhibmap。
+   - 排程：每週一、週四 11:00 跑 update_all.py。
+   - log：_scheduled_update.log。
+   - 這是「資料更新」主排程，會跑完整流程：官網/Excel/Logo/KV/geocode/refresh/HTML sync。
+
+2) 補強並執行 KV 流程
+   - collect_event_kv.py 已支援：
+     - 中文/空白圖片 URL percent-encoding。
+     - 寬鬆 SSL，處理華山圖片 CDN 憑證鏈問題。
+     - reurl.cc hidden target 解析，先跳到真正活動頁再抓 KV。
+     - --skip-social，可先排除 FB/IG。
+     - --browser-fallback，用 Playwright 讀渲染後圖片。
+     - 排除 QR code、egov/aplus/bg/loading/svg/top.png 等假 KV。
+   - update_all.py 已改成固定跑：collect_event_kv.py --browser-fallback。
+   - 今日多輪 refresh 後，KV 快取已套用；目前最新 venues.json 約為：
+     場館 219、活動 422、有連結 421、有 KV 371。
+   - 注意：後續若使用 IG/FB CDN 圖片，URL 可能含到期參數，失效後會被驗證流程清掉。
+
+3) 新增常設 ACG 主題店：早點出發 / EATWITHGO
+   - 寫入 manual_extra.json，因為這是 Daniel 人工確認的常設動漫主題店，需長期保留。
+   - 名稱：早點出發 / EATWITHGO
+   - 地址：新竹市北區大同路93號
+   - 座標：24.805472, 120.967965（ArcGIS PointAddress 97.8）
+   - 連結：https://www.instagram.com/eatwithgo/
+   - KV：使用 Daniel 提供的 IG CDN 圖片。
+   - 已跑 refresh_venues.py 並同步 taiwan-exhibition-map.html；venues.json 中 loc=exact、src=manual、分類=動漫遊戲(ACG)。
+
+4) 定位狀態
+   - 前一輪只跑 refresh_venues.py 時，有新進約略定位未被 geocode 升級。
+   - 已確認自動流程存在：update_all.py 會跑 geocode_venues.py，再跑 refresh_venues.py 套用。
+   - 單跑 refresh_venues.py 不會新增 geocode 快取；需跑 geocode_venues.py 或完整 update_all.py。
+   - EATWITHGO 是手動寫入 exact，不需再 geocode。
+
+5) 今日曾遇到的外站狀態
+   - hongmaogang.hmg.org.tw：多次 HTTP 503。
+   - fy-mofa.org.tw：連線 reset / remote end closed。
+   - kpmc.com.tw：某次 HTTP 400。
+   - 以上沒有中斷主流程，但該站即時官網展覽可能暫時抓不到。
+
+給 Claude 的提醒/待辦：
+   - Claude 端主要跑 report_status.py 回報即可，不要在 Claude 沙箱跑需 Playwright 的完整更新。
+   - 下次報告時請特別看：
+     1. EATWITHGO 的 IG CDN KV 是否失效。
+     2. Claude 追加到 Excel 的 Marshville Quokscout 是否已在 Mac 完整流程後進地圖。
+     3. 約略定位是否還有「有完整地址但未 exact」的新場館。
+   - 若 report_status.py 報出缺 KV 且來源是 IG/FB CDN，優先提醒 Daniel 換成穩定圖床或官方圖片 URL。
+
+
+==========================================================
+## 2026/06/22　Claude（網頁維護員）
+==========================================================
+1) 新增 report_status.py
+   - 作用：讀 venues.json，與上次快照 _report_prev.json 比對，輸出三段回報：
+     (1) 新增了什麼 (2) 缺什麼資料(連結/KV/logo/座標) (3) 建議補什麼怎麼補；
+     跑完把目前 venues.json 存成 _report_prev.json 供下次比對。
+   - 讀檔有重試（因應同步鎖）。純讀取，不改任何地圖資料。
+
+2) 建立 Claude 排程 exhibition-map-maintenance-report
+   - cron: 10 11 * * 1,4（每週一、四 11:13，接在 Mac 11:00 流程之後）。
+   - 內容：跑 report_status.py 並用繁中回報。只回報、不動資料。
+   - 註：原本想加一個「Claude 端跑更新流程」的排程，但因 Claude 沙箱瀏覽器不可用、
+     且使用者要求更新留在 Mac 端，故「未建立」該排程。
+
+3) 在 全台ACG活動.xlsx 追加 1 筆 ACG 活動
+   - 《Marshville Quokscout》｜object taipei store（台北市中山區中山北路二段62巷32號1樓）
+     ｜2026/06/19–2026/08/23｜IG 連結 https://www.instagram.com/p/DZwtQdGE2ro
+   - 動作前已備份：_excel_backups/全台ACG活動_backup_20260622_0744.xlsx（148→149 列）。
+   - 推算欄位（已在該列「備註」標需人工確認）：類型=物販/Goods、活動類別=快閃店/Pop-up Store、
+     IP=Marshville Quokscout、主辦方=object taipei、季別 Q2、月份 2026/06；授權單位留空。
+   - ⚠️ KV 用了 IG CDN 圖片網址（含到期參數 oe=...），會過期失效；管線圖片驗證可能之後自動清掉。
+     建議日後換成不會過期的圖床連結。
+   - 尚未進地圖：需 Mac 端跑 import_acg_excel → refresh_venues 才會生效。
+
+4) 本次「未更動」：venues.json、refresh_venues.py、collect_venues.py、前端 HTML。
+   （只新增 report_status.py、排程、Excel 追加 1 列、本日誌、README 補一段。）
+
+給 Codex 的提醒/待辦：
+   - 待 Mac 端跑流程後，確認《Marshville Quokscout》有正確進地圖、座標正確、KV 是否仍有效。
+   - collect_venues.py 內有 8 個「待瀏覽器驗證」的場館設定（北美館、北師、奇美、嘉義文創、
+     花蓮文創、纖維工藝博物館、港區藝術中心、新北市美術館），在 Mac 端跑一次 collect_venues
+     才會驗證/生效；若抓出雜訊，調該場館的 exclude。
+
+
+==========================================================
+## 2026/07/02　Codex
+==========================================================
+1) 改善前端地圖 logo 載入速度
+   - 問題：地圖 marker 直接載入 logos/ 原始圖檔，部分 logo 很大（例如 SVG/JPG 超過 1MB），造成地圖初次載入與縮放時卡頓。
+   - 新增 build_logo_thumbs.py，將地圖會用到的 logo 預先轉成 96px WebP 縮圖，輸出到 logos/_thumbs/。
+   - 修改 taiwan-exhibition-map.html：
+     - marker logo 改為載入 logos/_thumbs/ 的 WebP 縮圖。
+     - 使用 lazy loading / IntersectionObserver，只在 marker 進入視窗附近時載入。
+     - 原始 logo 保留為 fallback，縮圖失敗時才回退。
+     - 卡片圖片補上 loading="lazy" 與 decoding="async"。
+   - update_all.py 已加入 build_logo_thumbs.py，之後完整更新會自動補縮圖。
+
+2) 檢查 11:00 排程與上次失敗原因
+   - 原排程 com.danielcheng.twexhibmap 確實是每週一、週四 11:00 執行 update_all.py。
+   - 2026/07/02 11:00 launchd 有觸發，但地圖更新幾乎立即結束，_scheduled_update.log 與 venues.json 沒更新。
+   - 同時間發現另一個 daily 11:00 的 social-crawler 也會啟動 Playwright/Chromium；不是地圖排程重複，而是 11:00 有跨專案資源衝突。
+   - 將地圖主排程改到每週一、週四 11:30，避開 social-crawler。
+
+3) 強化排程入口與可觀測性
+   - 新增 run_scheduled_update.sh 作為 launchd wrapper。
+   - wrapper 會記錄進入時間、uid/user、Python 版本、cwd、結束 exit code。
+   - 加入 .scheduled_update.lock，避免同一時間重複執行完整流程。
+   - 加入 .scheduled_update.last_success；若 6 小時內已成功跑完，下一次觸發會 SKIP，避免手動測試後又被今日 11:30 排程重跑。
+   - _install_schedule.command 已改成安裝 wrapper，而不是直接執行 update_all.py。
+
+4) 修正資料檔讀寫的暫時性檔案錯誤
+   - 上次失敗之一：collect_venues.py 讀 venue_extra.json 時出現 OSError [Errno 11] Resource deadlock avoided。
+   - collect_venues.py 已新增 load_json_retry() 與 dump_json_atomic()：
+     - 讀 JSON 時遇到暫時性 OSError 會 retry。
+     - 寫 JSON 改為 temp file + fsync + os.replace，避免寫到一半被讀取。
+   - 手動測試時又抓到 logo_map.json 異常：檔案存在但 json.load/open 讀取時像 FileNotFoundError；檢查到檔案有 com.apple.decmpfs 狀態。
+   - 已將異常檔移到 _logo_backups/logo_map.bad_decmpfs_20260702_1114.json，並由現有備份與 logos/ 重建乾淨 logo_map.json。
+   - collect_logos.py 也已加入 load_json_retry() 與 dump_json_atomic()，避免 logo_map.json 同類問題再次中斷流程。
+
+5) 今日手動完整測試結果
+   - 已執行 bash run_scheduled_update.sh 做完整流程測試。
+   - 第一次測試抓出 logo_map.json 異常；修正後第二次完整測試成功，最後 exit=0。
+   - 最後成功時間：2026/07/02 11:25:52 CST。
+   - refresh_venues.py 輸出：
+     - venues: 202
+     - exhibitions: 407
+     - with_image: 353
+     - with_link: 392
+     - updated: 2026/07/02
+   - 已同步 venues.json 與 taiwan-exhibition-map.html 內嵌備援。
+   - wrapper SKIP 保護已測過：手動成功後再次執行 wrapper，會記錄 SKIP 並 exit=0，不會重跑完整更新。
+
+6) 調整 update_all.py 補件順序
+   - 發現 collect_fb_logos.py 會讀 current venues.json 自動補 fb_pages.json；若放在第一輪 refresh 前，會讀到上一版場館，新場館的 FB fallback logo 可能要等下一次排程才補到。
+   - 已改成兩階段流程：
+     1. 先跑所有來源收集器與 collect_logos.py，接著 refresh_venues.py 建立最新版 venues.json。
+     2. 再用最新版 venues.json 跑 collect_fb_logos.py、geocode_venues.py、collect_event_kv.py。
+     3. 最後 refresh_venues.py 一次套用 FB logo、地址座標與 KV，再 build_logo_thumbs.py 產生最終前端小圖。
+   - 這樣可以確保新抓到的場館/活動在同一輪更新內就會進入 logo、地址、KV 補件流程。
+
+給 Claude/Codex 的提醒/待辦：
+   - 地圖資料更新主排程現在是週一、週四 11:30，不再是 11:00。
+   - 若要看排程狀態：launchctl print gui/501/com.danielcheng.twexhibmap。
+   - 若要看最近執行結果：tail _scheduled_update.log。
+   - 若短時間內需要強制重跑完整流程，先移除 .scheduled_update.last_success，否則 wrapper 會因 6 小時內已成功而 SKIP。
+   - logo_map.json 若再出現 APFS/decmpfs 類異常，優先從 _logo_backups/ 與 logos/ 重建，不要直接沿用異常檔。
+
+==========================================================
+2026/07/04 Codex：整理成未來後台導向的資料夾結構
+==========================================================
+1) 目錄重整
+   - 將公開前端移到 public/：taiwan-exhibition-map.html、venues.json、logos/。
+   - 將後台腳本移到 backend/，並新增 backend/paths.py 作為集中路徑表。
+   - 將資料層拆成 data/manual、data/generated、data/cache、data/logos、data/reference、data/reports。
+   - 將文件移到 docs/，維運腳本移到 ops/，備份移到 archive/backups/，執行期 log/profile/debug/cache 移到 runtime/。
+
+2) 程式碼調整
+   - 主要 Python 腳本改用 paths.py 的 P("檔名") 取得新位置。
+   - logo 仍維持前端資料中的 logos/... 相對路徑，但實體檔案對應 public/logos/...。
+   - 更新 ops/run_scheduled_update.sh、ops/_install_schedule.command、ops/_final_update.command，改跑 backend/update_all.py，log/state 改放 runtime/。
+
+3) 文件更新
+   - 新增 docs/後台資料夾結構.md，說明 public/backend/data/docs/ops/runtime/archive 的角色。
+   - 更新 docs/README.md 的交接狀態、快速上手、專案內容、維護重點與驗證指令。
+
+4) 驗證
+   - 已通過核心與維護腳本 py_compile：
+     backend/update_all.py、backend/refresh_venues.py、backend/collect_logos.py、backend/collect_fb_logos.py、backend/build_logo_thumbs.py、
+     backend/collect_venues.py、backend/collect_public.py、backend/collect_soka_art.py、backend/clean_acg_excel.py、
+     backend/collect_caco_stores.py、backend/collect_cayenne_cafe.py、backend/import_acg_excel.py、backend/geocode_venues.py、
+     backend/collect_event_kv.py、backend/report_status.py 與多支診斷工具。
+   - 已確認 public/venues.json 可被 json.load 正常讀取。
+   - 本次未重跑完整 backend/update_all.py，避免在純整理目錄時覆蓋資料內容。
+
+==========================================================
+2026/07/04 Codex：補齊各資料夾 README 說明檔
+==========================================================
+1) 新增資料夾介紹
+   - 已在主要專案資料夾加入 README.md：archive、backend、data、ops、public、runtime，以及各自的管理型子資料夾。
+   - data/ 下分別說明 manual、generated、cache、logos、reference、reports 的資料角色與是否可重建。
+   - public/logos/ 與 _thumbs/facebook、_thumbs/artemperor 已補上圖片來源與重建方式。
+   - runtime/ 下補上 logs、state、debug、profiles、cache 的用途。
+
+2) 文件同步
+   - docs/README.md 補充「每個主要資料夾都有自己的 README.md」。
+   - docs/後台資料夾結構.md 補充說明：Chrome/Playwright profile 的內部子資料夾由瀏覽器自動管理，不逐層加入專案 README。
+
+3) 驗證
+   - 已用 find 檢查：排除瀏覽器 profile 內部自動產生目錄後，maxdepth 4 內的專案管理資料夾皆已有 README.md。

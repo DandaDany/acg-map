@@ -1,0 +1,848 @@
+{
+ "亞書藝所": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/DxMnjN",
+    "domain": "reurl.cc",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/N2dEr9",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "中正紀念堂1展廳": {
+  "city": "台北市",
+  "addr": "台北市中正區中山南路21號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.opentix.life/event/2047597722530205696",
+    "domain": "opentix.life",
+    "score": 0
+   },
+   {
+    "kind": "resolved",
+    "url": "https://s3.resource.opentix.life/upload/program/177746026393736t41ZUcee.jpeg",
+    "domain": "s3.resource.opentix.life",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "中原文創園區": {
+  "city": "桃園市",
+  "addr": "桃園市中壢區忠仁路33號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.opentix.life/event/2056265427831562240",
+    "domain": "opentix.life",
+    "score": 0
+   },
+   {
+    "kind": "resolved",
+    "url": "https://s3.resource.opentix.life/upload/program/1779099724885xEjRvTaUIF.jpeg",
+    "domain": "s3.resource.opentix.life",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "未具名場地": {
+  "city": "新北市",
+  "addr": "新北市板橋區文化路一段266號12樓之1",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/wake103",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.waker.org.tw/",
+    "domain": "waker.org.tw",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://cloud.culture.tw/e_new_upload/cms/image/A0/B0/C0/D15/E175/F640/00feea06-fee1-4303-abe0-ddb79c8956d8.png",
+    "domain": "cloud.culture.tw",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "佛光緣美術館台中館": {
+  "city": "台中市",
+  "addr": "台中市南屯區惠中路三段65號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/9bN6mj",
+    "domain": "reurl.cc",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://fgsarts.fgs.org.tw/images/exhibition/Taiwan/03_Taichung/2026/01/20260118-Taichun-00s.jpg",
+    "domain": "fgsarts.fgs.org.tw",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "林之助紀念館": {
+  "city": "台中市",
+  "addr": "台中市西區柳川西路二段158號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/mplQAW",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "74藝術中心": {
+  "city": "台中市",
+  "addr": "台中市北屯區環中東路二段597號",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/%E6%96%87%E5%89%B5%E8%87%BA%E4%B8%AD-393904994050645",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=537&page=1",
+    "domain": "tcod.com.tw",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw//upload/artspots-news/202605181038080.jpg",
+    "domain": "tcod.com.tw",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "臺中市猿緣園藝術館": {
+  "city": "台中市",
+  "addr": "台中市南區",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/%E6%96%87%E5%89%B5%E8%87%BA%E4%B8%AD-393904994050645",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=534&page=1",
+    "domain": "tcod.com.tw",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw//upload/artspots-news/202604081535430.jpg",
+    "domain": "tcod.com.tw",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "佛光山彰化福山寺": {
+  "city": "彰化縣",
+  "addr": "彰化縣彰化市福山街348號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "http://fgsarts.fgs.org.tw/",
+    "domain": "fgsarts.fgs.org.tw",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "http://fgsarts.fgs.org.tw/images/exhibition/Taiwan/01_Ilan/2024/07/20240713YiLan-00s.jpg",
+    "domain": "fgsarts.fgs.org.tw",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "梧棲行旅": {
+  "city": "台中市",
+  "addr": "台中市梧棲區",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/%E6%96%87%E5%89%B5%E8%87%BA%E4%B8%AD-393904994050645",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=548&page=2",
+    "domain": "tcod.com.tw",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw//upload/artspots-news/202604231354070.jpg",
+    "domain": "tcod.com.tw",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "立法院 文化走廊": {
+  "city": "台北市",
+  "addr": "台北市中正區中山南路1號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://cloud.culture.tw/e_new_upload/signinImage/2026-05-02/2efe5fcf-6d9e-4be2-aa79-f671b52d953f/1.jpg",
+    "domain": "cloud.culture.tw",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "辛藝術 Hsin Art Gallery": {
+  "city": "台中市",
+  "addr": "台中市龍井區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/Wb8vKe",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "毛刺空間 Glitch home": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/DxYD3j",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "盧安藝術文化有限公司": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/EmYa7A",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "綠光 gallery": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/epQZdW",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "豐藝館": {
+  "city": "台中市",
+  "addr": "台中市西區五權西路一段110號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/V27nyR",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "中島GLAb": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/graphicmatter/posts/pfbid02GQEWSDVbXKmcULebXcNMQa5dteHNzVRA5tWx6LVC9rSTcSfbDoqjAAfgFYKJCpCvl?mibextid=wwXIfr&rdid=QnMHXXFkZAEHGhRZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1D5eZUWurA%2F%3Fmibextid%3DwwXIfr",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/data/manifest",
+    "domain": "facebook.com",
+    "score": 3
+   }
+  ],
+  "errors": []
+ },
+ "正太筆墨坊": {
+  "city": "台中市",
+  "addr": "台中市豐原區成功路369號",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/%E6%96%87%E5%89%B5%E8%87%BA%E4%B8%AD-393904994050645",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw/tw/news_arts/show.aspx?num=560&page=1",
+    "domain": "tcod.com.tw",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.tcod.com.tw//upload/artspots-news/202605181054120.jpg",
+    "domain": "tcod.com.tw",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "暮拉多元藝術空間": {
+  "city": "台南市",
+  "addr": "台南市中西區國華街三段15號",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/themoolahart",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://themoolahart.com/dear-alterity/",
+    "domain": "themoolahart.com",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "梧棲文化出張所": {
+  "city": "台中市",
+  "addr": "台中市梧棲區梧棲路142號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/wu7culture/posts/pfbid0rNvLjNjdC9gUZJ4oxiNNVhavqxpvJNNb29wHLpzhCaqomusUhAsSSStYKfQax865l?rdid=9MhQ6UR2IrazBxm6&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F18k1D4T8Up%2F",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/data/manifest",
+    "domain": "facebook.com",
+    "score": 3
+   }
+  ],
+  "errors": []
+ },
+ "寬藝術空間": {
+  "city": "台中市",
+  "addr": "台中市西區台中市西區向上路一段79巷38號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/0myqmo",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "國璽藝術": {
+  "city": "台中市",
+  "addr": "台中市南屯區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/53N7rG",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "加沃文行 +wò Cultural Practice": {
+  "city": "新竹市",
+  "addr": "新竹市北區西門街258號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://cloud.culture.tw/e_new_upload/signinImage/2026-05-28/5664cb38-f579-46f9-ab90-1fa418c7ec5a/6.jpg",
+    "domain": "cloud.culture.tw",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "Smohouse 思默好時": {
+  "city": "台中市",
+  "addr": "台中市南屯區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.smohouse.com/space/2026_6_exhibition/",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/feed/",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/feed/atom/",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/xmlrpc.php",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/comments/feed/",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/2026_6_exhibition/feed/",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.4",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/wp-content/themes/soledad/style.css?ver=3.1",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/wp-content/plugins/tablepress/css/build/default.css?ver=3.0.4",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/wp-content/tablepress-custom.css?ver=21",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css?ver=5.35.0",
+    "domain": "smohouse.com",
+    "score": 4
+   },
+   {
+    "kind": "site",
+    "url": "https://www.smohouse.com/space/wp-content/plugins/elementor/assets/css/frontend.css?ver=3.27.6",
+    "domain": "smohouse.com",
+    "score": 4
+   }
+  ],
+  "errors": []
+ },
+ "采泥藝術事業股份有限公司": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/data/manifest",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/events/1554920389584964/",
+    "domain": "facebook.com",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "印 藝文空間 / 咖啡": {
+  "city": "台中市",
+  "addr": "台中市西區林森路38巷1號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/yinhere38/posts/pfbid0gLjriPcBMs2eKDJNKYxfjTxuoY6AX4sRmE5XeVJTt3ZZZvupzYYJp",
+    "domain": "facebook.com",
+    "score": 3
+   }
+  ],
+  "errors": []
+ },
+ "ZASSO 草也": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/WbQzgO",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "大河美術": {
+  "city": "台中市",
+  "addr": "台中市南屯區大業路281號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/Dxke1d",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "鹽埕區": {
+  "city": "高雄市",
+  "addr": "高雄市鹽埕區",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/sinpinpier",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://sinpink.com/",
+    "domain": "sinpink.com",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://sinpink.com/wp-content/uploads/2022/07/cropped-e696b0e6b59ce7a2bce9a0ade68b9be7898c5j0_e5b7a5e4bd9ce58d80e59f9f-1.png",
+    "domain": "sinpink.com",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "太平買菸場": {
+  "city": "台中市",
+  "addr": "台中市太平區東平路464號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/A9mz1Y",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "Epic禪藝實相人文空間": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/4le0Kj",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "當代一畫廊": {
+  "city": "台北市",
+  "addr": "台北市松山區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://sissyleelee1.wixsite.com/agallery/%E5%89%AF%E6%9C%AC-%E5%B1%95%E8%A6%BD%E8%A8%8A%E6%81%AF-1",
+    "domain": "sissyleelee1.wixsite.com",
+    "score": 1
+   },
+   {
+    "kind": "resolved",
+    "url": "https://static.wixstatic.com/media/4e4ebb_dfca19cd6bdc4ec799bea535aeee53b5~mv2.png/v1/crop/x_1,y_0,w_271,h_202/fill/w_272,h_200,al_c,lg_1,q_85,enc_avif,quality_auto/%E7%A9%BA%E5%9C%96%E6%99%82%E6%94%BE%E7%9A%84%E7%85%A7%E7%89%87.png",
+    "domain": "static.wixstatic.com",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "圓山花博- 花海廣場": {
+  "city": "台北市",
+  "addr": "台北市中山區玉門路1號",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/eraticket",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1BLGYZT",
+    "domain": "ticket.com.tw",
+    "score": 0
+   },
+   {
+    "kind": "resolved",
+    "url": "https://imgs2.utiki.com.tw/Data/ERA/Images/UTK2401/P1BLGYZT_Other.JPG?v=202606150944",
+    "domain": "imgs2.utiki.com.tw",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "霧峰林家宮保第園區": {
+  "city": "台中市",
+  "addr": "台中市霧峰區民生路26號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/O63xvX",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "852藝術空間": {
+  "city": "台中市",
+  "addr": "台中市龍井區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/YDzqNo",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "天目城藝文展覽館": {
+  "city": "台中市",
+  "addr": "台中市南屯區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/tian.mu.square/posts/pfbid02vUoRe7mbcVidDHJZGTLPMgCFmv1m1M5kwCQiaooLH3wXEM45QH9eSxAmkdjMvDfMl?rdid=n0QSdpywVGc08bUo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F1E1odvdHgh%2F",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/data/manifest",
+    "domain": "facebook.com",
+    "score": 3
+   }
+  ],
+  "errors": []
+ },
+ "窯座": {
+  "city": "台中市",
+  "addr": "台中市西區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/0mNmob",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "養心藝術 Artnutri Gallery": {
+  "city": "台中市",
+  "addr": "台中市南屯區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/qpepeD",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "科元藝術中心": {
+  "city": "台中市",
+  "addr": "台中市清水區",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/7Exld5",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "全安堂臺灣太陽餅博物館": {
+  "city": "台中市",
+  "addr": "台中市中區台灣大道一段145號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://reurl.cc/Em0YZK",
+    "domain": "reurl.cc",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "MyAnime Café 三創店（台北）": {
+  "city": "台北市",
+  "addr": "台北市中正區市民大道三段2號7樓",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl",
+    "domain": "facebook.com",
+    "score": 3
+   }
+  ],
+  "errors": []
+ },
+ "MyAnime Café 高雄店（統一時代百貨B1）": {
+  "city": "高雄市",
+  "addr": "高雄市前鎮區中華五路789號B1",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl",
+    "domain": "facebook.com",
+    "score": 3
+   }
+  ],
+  "errors": []
+ },
+ "台中驛鐵道文化園區 鐵鹿大街": {
+  "city": "台中市",
+  "addr": "台中市中區台灣大道一段1號，台中火車站舊站",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.instagram.com/p/DYHSByMgRcv/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+    "domain": "instagram.com",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "台北和平籃球館（台北戰神主場）": {
+  "city": "台北市",
+  "addr": "台北市大安區敦化南路二段105號",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.instagram.com/p/DUkZZilgfSf/",
+    "domain": "instagram.com",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "淡江大橋": {
+  "city": "新北市",
+  "addr": "新北市淡水區與八里區之間，跨淡水河",
+  "candidates": [
+   {
+    "kind": "facebook",
+    "url": "https://www.facebook.com/ntctour",
+    "domain": "facebook.com",
+    "score": 3
+   },
+   {
+    "kind": "resolved",
+    "url": "https://newtaipei.travel/zh-tw/calendar/detail/3806",
+    "domain": "newtaipei.travel",
+    "score": 1
+   }
+  ],
+  "errors": []
+ },
+ "澎湖": {
+  "city": "澎湖縣",
+  "addr": "澎湖縣，2026澎湖花火節，地點：馬公觀音亭",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
+    "domain": "tw.news.yahoo.com",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "高雄駅一番街・北站 高雄捷運高雄車站B2": {
+  "city": "高雄市",
+  "addr": "高雄市三民區建國二路320號B2",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
+    "domain": "instagram.com",
+    "score": 0
+   }
+  ],
+  "errors": []
+ },
+ "魯克思咖啡左營店": {
+  "city": "高雄市",
+  "addr": "高雄市左營區修明街166號1樓",
+  "candidates": [
+   {
+    "kind": "resolved",
+    "url": "https://www.instagram.com/p/DXs46EPD-z0/",
+    "domain": "instagram.com",
+    "score": 0
+   }
+  ],
+  "errors": []
+ }
+}

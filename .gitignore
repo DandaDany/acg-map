@@ -1,0 +1,20 @@
+.DS_Store
+**/.DS_Store
+
+__pycache__/
+*.py[cod]
+
+*.log
+_scheduled_update.log
+
+# Local browser profiles, runtime state, caches, and debug output.
+runtime/*
+!runtime/README.md
+
+# Local historical backups; keep only their documentation in Git.
+archive/backups/**
+!archive/backups/**/
+!archive/backups/**/README.md
+
+# Development write probe.
+data/generated/_test_write.json

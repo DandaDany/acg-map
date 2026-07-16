@@ -1,0 +1,11 @@
+{
+ "summary": {
+  "venues_total": 211,
+  "exact": 211,
+  "approx_total": 0,
+  "has_road_or_addr": 0,
+  "only_area": 0
+ },
+ "has_road_or_addr": [],
+ "only_area": []
+}

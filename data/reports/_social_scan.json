@@ -1,0 +1,58 @@
+{
+ "fgsarts.fgs.org.tw": {
+  "loaded_url": "",
+  "errors": [
+   {
+    "url": "https://www.fgsarts.fgs.org.tw",
+    "error": "Error",
+    "message": "Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.fgsarts.fgs.org.tw/\nCall log:\n  - navigating to \"https://www.fgsarts.fgs.org.tw/\", waiting until \"commit\"\n"
+   },
+   {
+    "url": "https://fgsarts.fgs.org.tw",
+    "error": "Error",
+    "message": "Page.goto: Navigation to \"https://fgsarts.fgs.org.tw/\" is interrupted by another navigation to \"chrome-error://chromewebdata/\"\nCall log:\n  - navigating to \"https://fgsarts.fgs.org."
+   }
+  ],
+  "facebook": [],
+  "images": []
+ },
+ "themoolahart.com": {
+  "loaded_url": "",
+  "errors": [
+   {
+    "url": "https://www.themoolahart.com",
+    "error": "Error",
+    "message": "Page.goto: Navigation to \"https://www.themoolahart.com/\" is interrupted by another navigation to \"https://fgsarts.fgs.org.tw/\"\nCall log:\n  - navigating to \"https://www.themoolahart"
+   },
+   {
+    "url": "https://themoolahart.com",
+    "error": "Error",
+    "message": "Page.goto: Navigation to \"https://themoolahart.com/\" is interrupted by another navigation to \"https://www.themoolahart.com/\"\nCall log:\n  - navigating to \"https://themoolahart.com/\""
+   }
+  ],
+  "facebook": [],
+  "images": []
+ },
+ "smohouse.com": {
+  "loaded_url": "https://smohouse.com/",
+  "errors": [
+   {
+    "url": "https://www.smohouse.com",
+    "error": "Error",
+    "message": "Page.goto: Navigation to \"https://www.smohouse.com/\" is interrupted by another navigation to \"https://themoolahart.com/\"\nCall log:\n  - navigating to \"https://www.smohouse.com/\", wa"
+   }
+  ],
+  "facebook": [],
+  "images": [
+   "https://smohouse.com/favicon.ico"
+  ]
+ },
+ "sinpink.com": {
+  "loaded_url": "https://www.sinpink.com/",
+  "errors": [],
+  "facebook": [],
+  "images": [
+   "data:;base64,="
+  ]
+ }
+}

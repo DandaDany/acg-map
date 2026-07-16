@@ -1,0 +1,18 @@
+{
+ "_note": "ACG-related CACO popup events generated from caco_stores.json.",
+ "venues": {
+  "南港-LaLaport(玩具總動員快閃)": {
+   "addr": "台北市南港區經貿二路131號5樓",
+   "url": "https://www.caco.com.tw/storelist/POPUP",
+   "ex": [
+    {
+     "t": "CACO 玩具總動員快閃",
+     "s": "",
+     "e": "2026/07/31",
+     "l": "https://www.caco.com.tw/storelist/POPUP",
+     "img": ""
+    }
+   ]
+  }
+ }
+}

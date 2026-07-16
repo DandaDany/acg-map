@@ -1,0 +1,1500 @@
+{
+ "索卡藝術": {
+  "la": 25.07965141055217,
+  "lo": 121.56333144232764,
+  "source": "user_supplied_2026-06-22",
+  "display_name": "索卡藝術 台北空間, 堤頂大道二段350號, 中山區, 台北市",
+  "type": "gallery"
+ },
+ "國立臺南大學博物館": {
+  "la": 23.19242261458911,
+  "lo": 120.15701875767236,
+  "source": "user_supplied_2026-06-22",
+  "display_name": "國立臺南大學博物館（香雨書院）, 長榮里182號, 將軍區, 台南市",
+  "type": "museum"
+ },
+ "中台世界博物館": {
+  "la": 24.0125169,
+  "lo": 120.9491698,
+  "source": "nominatim_poi",
+  "display_name": "中台世界博物館, 8, 中台路, 燈心湖, 廣成里, 埔里鎮, 南投縣, 54544, 臺灣",
+  "type": "museum"
+ },
+ "屏菸1936文化基地": {
+  "la": 22.6611753,
+  "lo": 120.5051355,
+  "source": "nominatim_poi",
+  "display_name": "屏菸1936文化基地, 民生路57巷, 屏東產業園區, 瑞光里, 屏東市, 屏東縣, 900, 臺灣",
+  "type": "attraction"
+ },
+ "彰化藝術館": {
+  "la": 24.0790234,
+  "lo": 120.5455723,
+  "source": "nominatim_poi",
+  "display_name": "彰化藝術館, 542, 中山路二段, 中山庄, 中山里, 彰化市, 彰化縣, 500, 臺灣",
+  "type": "arts_centre"
+ },
+ "彰化縣立美術館": {
+  "la": 24.0775097,
+  "lo": 120.5458437,
+  "source": "nominatim_poi",
+  "display_name": "彰化縣立美術館, 3, 卦山路, 中山庄, 卦山里, 彰化市, 彰化縣, 500, 臺灣",
+  "type": "arts_centre"
+ },
+ "新北市美術館": {
+  "la": 24.9525351,
+  "lo": 121.3574905,
+  "source": "nominatim_poi",
+  "display_name": "新北市美術館, 300, 館前路, 東鶯里, 鶯歌區, 二橋, 新北市, 80284, 臺灣",
+  "type": "arts_centre"
+ },
+ "內惟藝術中心": {
+  "la": 22.6575962,
+  "lo": 120.2824075,
+  "source": "nominatim_poi",
+  "display_name": "內惟藝術中心, 329, 馬卡道路, 龍水里, 鼓山區, 高雄市, 804407, 臺灣",
+  "type": "museum"
+ },
+ "國立自然科學博物館": {
+  "la": 24.1573158,
+  "lo": 120.6667627,
+  "source": "nominatim_poi",
+  "display_name": "國立自然科學博物館, 1, 北區, 臺中市, 40453, 臺灣",
+  "type": "park"
+ },
+ "朱銘美術館": {
+  "la": 25.244219,
+  "lo": 121.6112253,
+  "source": "nominatim_poi",
+  "display_name": "朱銘美術館, 2, 西勢湖, 金山區, 茂林村, 新北市, 208, 臺灣",
+  "type": "museum"
+ },
+ "洪根深美術館": {
+  "la": 23.5644833,
+  "lo": 119.5636646,
+  "source": "nominatim_poi",
+  "display_name": "洪根深美術館, 15之1號, 民族路, 復興里, 馬公市, 澎湖縣, 88041, 臺灣",
+  "type": "museum"
+ },
+ "高雄流行音樂中心": {
+  "la": 22.6183599,
+  "lo": 120.2921417,
+  "source": "nominatim_poi",
+  "display_name": "高雄流行音樂中心, 苓洲里, 苓雅區, 高雄市, 802, 臺灣",
+  "type": "square"
+ },
+ "雲林布袋戲館": {
+  "la": 23.7095377,
+  "lo": 120.4335533,
+  "source": "nominatim_poi",
+  "display_name": "雲林布袋戲館, 林森路一段, 公安里, 虎尾鎮, 雲林縣, 632, 臺灣",
+  "type": "museum"
+ },
+ "屏東縣王船文化館": {
+  "la": 22.4638062,
+  "lo": 120.4600357,
+  "source": "nominatim_poi",
+  "display_name": "屏東縣王船文化館, 9, 船頭路, 東津里, 東港鎮, 屏東縣, 928, 臺灣",
+  "type": "museum"
+ },
+ "新莊文化藝術中心": {
+  "la": 25.0472332,
+  "lo": 121.4439566,
+  "source": "nominatim_poi",
+  "display_name": "新莊文化藝術中心, 133, 中平路, 立基里, 新莊區, 中港厝, 新北市, 242, 臺灣",
+  "type": "arts_centre"
+ },
+ "土城藝文館": {
+  "la": 24.9730315,
+  "lo": 121.4430006,
+  "source": "nominatim_poi",
+  "display_name": "土城藝文館, 24, 和平路, 埤塘里, 土城區, 清水, 新北市, 236, 臺灣",
+  "type": "museum"
+ },
+ "鹿港公會堂": {
+  "la": 24.0576108,
+  "lo": 120.4318909,
+  "source": "nominatim_poi",
+  "display_name": "鹿港公會堂, 72, 埔頭街(鹿港老街), 洛津里, 鹿港鎮, 彰化縣, 50542, 臺灣",
+  "type": "community_centre"
+ },
+ "宜蘭人故事館": {
+  "la": 24.7515749,
+  "lo": 121.7537083,
+  "source": "nominatim_poi",
+  "display_name": "宜蘭人故事館, 426, 中山路二段, 民權里, 宜蘭市, 宜蘭縣, 260, 臺灣",
+  "type": "museum"
+ },
+ "益品美術館": {
+  "la": 23.7288917,
+  "lo": 120.7742574,
+  "source": "nominatim_poi",
+  "display_name": "益品美術館, 興產路, 田寮, 內湖村, 鹿谷鄉, 南投縣, 558, 臺灣",
+  "type": "museum"
+ },
+ "台灣玻璃館": {
+  "la": 24.0684603,
+  "lo": 120.3947776,
+  "source": "nominatim_poi",
+  "display_name": "臺灣玻璃館, 鹿工南四路, 彰濱鹿港產業園區, 東石里, 鹿港鎮, 彰化縣, 50546, 臺灣",
+  "type": "museum"
+ },
+ "澎湖生活博物館": {
+  "la": 23.5671696,
+  "lo": 119.57954,
+  "source": "nominatim_poi",
+  "display_name": "澎湖生活博物館, 文城三路, 西文澳, 西文里, 馬公市, 澎湖縣, 880010, 臺灣",
+  "type": "museum"
+ },
+ "澎湖開拓館": {
+  "la": 23.5699364,
+  "lo": 119.5673261,
+  "source": "nominatim_poi",
+  "display_name": "澎湖開拓館, 30, 治平路, 埔子尾, 中興里, 馬公市, 澎湖縣, 880, 臺灣",
+  "type": "museum"
+ },
+ "見城館": {
+  "la": 22.6769346,
+  "lo": 120.2913662,
+  "source": "nominatim_poi",
+  "display_name": "見城館, 157-2, Gueishan Lane, 勝利新村, 埤東里, 左營區, 高雄市, 813, 臺灣",
+  "type": "museum"
+ },
+ "國立成功大學博物館": {
+  "la": 22.9967443,
+  "lo": 120.2196291,
+  "source": "nominatim_poi",
+  "display_name": "國立成功大學博物館, 南榕廣場, 大學里, 東區, 三份仔, 臺南市, 701, 臺灣",
+  "type": "museum"
+ },
+ "嘉義縣表演藝術中心": {
+  "la": 23.5443129,
+  "lo": 120.4318027,
+  "source": "nominatim_poi",
+  "display_name": "嘉義縣表演藝術中心, 山腳子, 文隆村, 民雄鄉, 嘉義縣, 621, 臺灣",
+  "type": "park"
+ },
+ "池上穀倉藝術館": {
+  "la": 23.1244016,
+  "lo": 121.2173692,
+  "source": "nominatim_poi",
+  "display_name": "池上穀倉藝術館, 6, 中西三路, 福原村, 池上鄉, 臺東縣, 958, 臺灣",
+  "type": "arts_centre"
+ },
+ "鯉魚藝廊Carp Gallery": {
+  "la": 24.153995,
+  "lo": 120.658449,
+  "source": "nominatim_poi",
+  "display_name": "鯉魚藝廊Carp Gallery, 194, 公益路174巷, 忠誠里, 西區, 田心, 臺中市, 403, 臺灣",
+  "type": "art"
+ },
+ "大雋藝術": {
+  "la": 24.1453279,
+  "lo": 120.6431705,
+  "source": "nominatim_poi",
+  "display_name": "大雋藝術, 489, 惠文路, 田心里, 南屯區, 田心, 臺中市, 408333, 臺灣",
+  "type": "art"
+ },
+ "梧棲文化出張所": {
+  "la": 24.2565445,
+  "lo": 120.5298893,
+  "source": "nominatim_poi",
+  "display_name": "梧棲文化出張所, 中和里, 梧棲區, 台中港市鎮中心, 臺中市, 臺灣",
+  "type": "commercial"
+ },
+ "寬藝術空間": {
+  "la": 24.1456739,
+  "lo": 120.6641578,
+  "source": "nominatim_poi",
+  "display_name": "寬藝術空間, 38, 向上路一段79巷, 昇平里, 西區, 臺中市, 403, 臺灣",
+  "type": "art"
+ },
+ "國璽藝術": {
+  "la": 24.1447853,
+  "lo": 120.653736,
+  "source": "nominatim_poi",
+  "display_name": "國璽藝術, 167號, 向上南路一段, 大同里, 南屯區, 田心, 臺中市, 403031, 臺灣",
+  "type": "art"
+ },
+ "臺中綠美圖": {
+  "la": 24.1928851,
+  "lo": 120.6545094,
+  "source": "nominatim_poi",
+  "display_name": "臺中綠美圖, 港尾里, 西屯區, 水湳經貿園區, 臺中市, 臺灣",
+  "type": "park"
+ },
+ "清泉藝術之森": {
+  "la": 24.5730224,
+  "lo": 121.1037889,
+  "source": "nominatim_poi",
+  "display_name": "清泉藝術之森, 清泉大橋, 清泉, 桃山村, 五峰鄉, 新竹縣, 311, 臺灣",
+  "type": "artwork"
+ },
+ "印 藝文空間 / 咖啡": {
+  "la": 24.1367049,
+  "lo": 120.6724998,
+  "source": "nominatim_poi",
+  "display_name": "印 藝文空間/咖啡, 1, 林森路38巷, 三民里, 西區, 臺中市, 403, 臺灣",
+  "type": "art"
+ },
+ "大河美術": {
+  "la": 24.1533789,
+  "lo": 120.6482895,
+  "source": "nominatim_poi",
+  "display_name": "大河美術, 281, 大業路, 溝墘里, 南屯區, 臺中七期, 臺中市, 408325, 臺灣",
+  "type": "art"
+ },
+ "得忌利士洋行": {
+  "la": 25.1726698,
+  "lo": 121.4369767,
+  "source": "nominatim_poi",
+  "display_name": "得忌利士洋行, 中正路, 新生里, 淡水區, 滬尾, 新北市, 25164, 臺灣",
+  "type": "attraction"
+ },
+ "科元藝術中心": {
+  "la": 24.2685647,
+  "lo": 120.5754474,
+  "source": "nominatim_poi",
+  "display_name": "科元藝術中心, 126之8, 中山路, 清水里, 清水區, 臺中市, 436713, 臺灣",
+  "type": "art"
+ },
+ "郭子究音樂文化館": {
+  "la": 23.9871702,
+  "lo": 121.624734,
+  "source": "nominatim_poi",
+  "display_name": "郭子究音樂文化館, 10, 民權七街1巷, 民立里, 花蓮市, 花蓮縣, 970, 臺灣",
+  "type": "museum"
+ },
+ "臺北市藝文推廣處": {
+  "la": 25.0484248,
+  "lo": 121.5522332,
+  "source": "nominatim_poi",
+  "display_name": "臺北市藝文推廣處, 25, 八德路三段, 敦化里, 松山區, 中崙, 臺北市, 10554, 臺灣",
+  "type": "arts_centre"
+ },
+ "澎湖郵便局": {
+  "la": 23.563404,
+  "lo": 119.563874,
+  "source": "zh_wikipedia",
+  "display_name": "澎湖郵便局",
+  "type": "wiki_page"
+ },
+ "五股守讓堂": {
+  "la": 25.083381,
+  "lo": 121.440664,
+  "source": "zh_wikipedia",
+  "display_name": "五股守讓堂",
+  "type": "wiki_page"
+ },
+ "國立臺灣藝術大學": {
+  "la": 25.0068889,
+  "lo": 121.44975,
+  "source": "zh_wikipedia",
+  "display_name": "國立臺灣藝術大學",
+  "type": "wiki_page"
+ },
+ "屏東縣政府": {
+  "la": 22.683283,
+  "lo": 120.487943,
+  "source": "zh_wikipedia",
+  "display_name": "屏東縣政府",
+  "type": "wiki_page"
+ },
+ "新北市立十三行博物館": {
+  "la": 25.1569444,
+  "lo": 121.4044444,
+  "source": "zh_wikipedia",
+  "display_name": "新北市立十三行博物館",
+  "type": "wiki_page"
+ },
+ "屏東縣民公園": {
+  "la": 22.656,
+  "lo": 120.49,
+  "source": "zh_wikipedia",
+  "display_name": "屏東縣民公園",
+  "type": "wiki_page"
+ },
+ "花蓮縣政府": {
+  "la": 23.991331,
+  "lo": 121.619816,
+  "source": "zh_wikipedia",
+  "display_name": "花蓮縣政府",
+  "type": "wiki_page"
+ },
+ "駁二藝術特區": {
+  "la": 22.6198889,
+  "lo": 120.2817222,
+  "source": "zh_wikipedia",
+  "display_name": "駁二藝術特區",
+  "type": "wiki_page"
+ },
+ "鹽埕區": {
+  "la": 22.620849,
+  "lo": 120.2784254,
+  "source": "nominatim_poi",
+  "display_name": "哈瑪星台灣鐵道館, 新興街, 新豐里, 鹽埕區, 高雄市, 803, 臺灣",
+  "type": "museum"
+ },
+ "中友百貨": {
+  "la": 24.1522668,
+  "lo": 120.6847123,
+  "source": "nominatim_poi",
+  "display_name": "中友百貨, 161, 三民路三段, 錦平里, 北區, 臺中市, 40446, 臺灣",
+  "type": "department_store"
+ },
+ "遠雄海洋公園": {
+  "la": 23.9009737,
+  "lo": 121.6014247,
+  "source": "nominatim_poi",
+  "display_name": "遠雄海洋公園, 189, 福德, 鹽寮村, 壽豐鄉, 花蓮縣, 974, 臺灣",
+  "type": "theme_park"
+ },
+ "國家攝影文化中心": {
+  "la": 25.0467093,
+  "lo": 121.5143516,
+  "source": "address_geocode",
+  "display_name": "台北市中正區黎明里忠孝西路一段70號, 10041",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區忠孝西路一段70號"
+ },
+ "435藝文特區": {
+  "la": 25.023515,
+  "lo": 121.453833,
+  "source": "address_geocode",
+  "display_name": "新北市中正路435號, 22052",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區中正路435號"
+ },
+ "孟焦畫坊": {
+  "la": 25.0978332,
+  "lo": 121.5321214,
+  "source": "address_geocode",
+  "display_name": "台北市士林區福志里雨農路17之2號, 11142",
+  "type": "PointAddress",
+  "addr_key": "台北市士林區雨農路17-2號1樓"
+ },
+ "月臨畫廊": {
+  "la": 24.1433191,
+  "lo": 120.6659154,
+  "source": "address_geocode",
+  "display_name": "台中市英才路589巷1號, 40359",
+  "type": "StreetAddress",
+  "addr_key": "台中市西區英才路589巷6號1F(月臨畫廊)"
+ },
+ "臺北市藝文推廣處-文山劇場": {
+  "la": 24.9920906,
+  "lo": 121.5411781,
+  "source": "address_geocode",
+  "display_name": "台北市文山區景行里景文街32號, 11670",
+  "type": "PointAddress",
+  "addr_key": "台北市文山區景文街32號"
+ },
+ "彰化八卦山大佛區": {
+  "la": 24.078,
+  "lo": 120.547947,
+  "source": "address_geocode",
+  "display_name": "彰化縣彰化市溫泉路31號, 50074",
+  "type": "PointAddress",
+  "addr_key": "彰化縣彰化市溫泉路31號"
+ },
+ "未具名場地": {
+  "la": 25.020783,
+  "lo": 121.467035,
+  "source": "address_geocode",
+  "display_name": "新北市文化路一段266號, 220",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區文化路一段266號12樓之1"
+ },
+ "王功蚵藝文化館": {
+  "la": 23.9680181,
+  "lo": 120.3248883,
+  "source": "address_geocode",
+  "display_name": "彰化縣芳苑鄉漁港路, 528",
+  "type": "StreetName",
+  "addr_key": "彰化縣芳苑鄉漁港路900號"
+ },
+ "台灣穀堡": {
+  "la": 23.869609,
+  "lo": 120.458969,
+  "source": "address_geocode",
+  "display_name": "彰化縣埤頭鄉彰水路二段526號, 52342",
+  "type": "PointAddress",
+  "addr_key": "彰化縣埤頭鄉彰水路二段526號"
+ },
+ "佛光緣美術館台中館": {
+  "la": 24.149147,
+  "lo": 120.6411519,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區惠中路三段65號, 40862",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區惠中路三段65號"
+ },
+ "臺南．家具產業博物館": {
+  "la": 22.9244225,
+  "lo": 120.2228559,
+  "source": "address_geocode",
+  "display_name": "台南市仁德區二仁路一段321號, 717",
+  "type": "PointAddress",
+  "addr_key": "台南市仁德區二仁路一段321號"
+ },
+ "弎弌和茗園": {
+  "la": 23.3100998,
+  "lo": 120.3224643,
+  "source": "address_geocode",
+  "display_name": "台南市新營區大同路39號, 73048",
+  "type": "StreetAddress",
+  "addr_key": "台南市新營區大同路39號"
+ },
+ "林之助紀念館": {
+  "la": 24.1412878,
+  "lo": 120.6734547,
+  "source": "address_geocode",
+  "display_name": "台中市柳川西路二段158號, 40357",
+  "type": "PointAddress",
+  "addr_key": "台中市西區柳川西路二段158號"
+ },
+ "屏東演武場": {
+  "la": 22.674527,
+  "lo": 120.490292,
+  "source": "address_geocode",
+  "display_name": "屏東縣公園路28號, 90054",
+  "type": "PointAddress",
+  "addr_key": "屏東縣屏東市公園路28號"
+ },
+ "74藝術中心": {
+  "la": 24.1743874,
+  "lo": 120.72067,
+  "source": "address_geocode",
+  "display_name": "台中市環中東路二段, 40641",
+  "type": "StreetName",
+  "addr_key": "台中市北屯區環中東路二段597號"
+ },
+ "佛光山彰化福山寺": {
+  "la": 24.080539,
+  "lo": 120.575613,
+  "source": "address_geocode",
+  "display_name": "彰化縣彰化市福山街348號, 50076",
+  "type": "PointAddress",
+  "addr_key": "彰化縣彰化市福山街348號"
+ },
+ "立法院 文化走廊": {
+  "la": 25.0439659,
+  "lo": 121.5195864,
+  "source": "address_geocode",
+  "display_name": "台北市中正區幸福里中山南路1號, 10051",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區中山南路1號"
+ },
+ "勝利星村創意生活園區": {
+  "la": 22.678565,
+  "lo": 120.484495,
+  "source": "address_geocode",
+  "display_name": "屏東縣青島街106號, 90063",
+  "type": "PointAddress",
+  "addr_key": "屏東縣屏東市青島街106號"
+ },
+ "臺北市藝文推廣處-大稻埕戲苑": {
+  "la": 25.0545008,
+  "lo": 121.510325,
+  "source": "address_geocode",
+  "display_name": "台北市大同區永樂里迪化街一段21號, 10343",
+  "type": "PointAddress",
+  "addr_key": "台北市大同區迪化街1段21號"
+ },
+ "豐藝館": {
+  "la": 24.140346,
+  "lo": 120.661252,
+  "source": "address_geocode",
+  "display_name": "台中市五權西路一段110號, 40359",
+  "type": "PointAddress",
+  "addr_key": "台中市西區五權西路一段110號"
+ },
+ "角落裡的慢時區 A Corner, A World": {
+  "la": 24.1502744,
+  "lo": 120.6644914,
+  "source": "address_geocode",
+  "display_name": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+  "type": "PointAddress",
+  "addr_key": "台中市西區公益路155巷9號B1樓"
+ },
+ "金車文藝中心 臺北南京館": {
+  "la": 25.0522182,
+  "lo": 121.5279417,
+  "source": "address_geocode",
+  "display_name": "台北市中山區南京東路二段1號, 104",
+  "type": "StreetAddress",
+  "addr_key": "台北市南京東路二段1號3F"
+ },
+ "苗北藝文中心藝廊": {
+  "la": 24.690958,
+  "lo": 120.886117,
+  "source": "address_geocode",
+  "display_name": "苗栗縣竹南鎮公園路206號, 35056",
+  "type": "PointAddress",
+  "addr_key": "苗栗縣竹南鎮公園路206號"
+ },
+ "臺中市現代畫廊": {
+  "la": 24.1502744,
+  "lo": 120.6644914,
+  "source": "address_geocode",
+  "display_name": "台中市勤美誠品綠園道商圈公益路155巷9號, 40360",
+  "type": "PointAddress",
+  "addr_key": "台中市西區公益路155巷9號B1"
+ },
+ "正太筆墨坊": {
+  "la": 24.2489579,
+  "lo": 120.7061973,
+  "source": "address_geocode",
+  "display_name": "台中市豐原區成功路369號, 42059",
+  "type": "PointAddress",
+  "addr_key": "台中市豐原區成功路369號"
+ },
+ "暮拉多元藝術空間": {
+  "la": 22.99367,
+  "lo": 120.197447,
+  "source": "address_geocode",
+  "display_name": "台南市國華街三段15號, 70059",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區國華街三段15號"
+ },
+ "臺南市民治市政中心": {
+  "la": 23.3117183,
+  "lo": 120.3140229,
+  "source": "address_geocode",
+  "display_name": "台南市新營區民治路36號, 73001",
+  "type": "PointAddress",
+  "addr_key": "台南市新營區民治路36號"
+ },
+ "加沃文行 +wò Cultural Practice": {
+  "la": 24.7994072,
+  "lo": 120.9600935,
+  "source": "address_geocode",
+  "display_name": "新竹市西門街258號, 30046",
+  "type": "PointAddress",
+  "addr_key": "新竹市北區西門街258號"
+ },
+ "臺南市麻豆區文化館": {
+  "la": 23.1826641,
+  "lo": 120.2484626,
+  "source": "address_geocode",
+  "display_name": "台南市麻豆區興國路11號, 72148",
+  "type": "PointAddress",
+  "addr_key": "台南市麻豆區興國路11號"
+ },
+ "大甲三寶文化館": {
+  "la": 24.344038,
+  "lo": 120.623257,
+  "source": "address_geocode",
+  "display_name": "台中市大甲區光明路67號, 43746",
+  "type": "PointAddress",
+  "addr_key": "台中市大甲區光明路67號"
+ },
+ "iart Gallery 愛上藝廊": {
+  "la": 24.80305,
+  "lo": 120.99155,
+  "source": "address_geocode",
+  "display_name": "新竹市東區忠孝路80號, 30069",
+  "type": "PointAddress",
+  "addr_key": "新竹市東區忠孝路80號1樓"
+ },
+ "台語文創意園區": {
+  "la": 24.075793,
+  "lo": 120.557154,
+  "source": "address_geocode",
+  "display_name": "彰化縣彰化市卦山路18號, 50074",
+  "type": "PointAddress",
+  "addr_key": "彰化縣彰化市卦山路18號"
+ },
+ "太平買菸場": {
+  "la": 24.1340501,
+  "lo": 120.7243758,
+  "source": "address_geocode",
+  "display_name": "台中市太平區東平路464號, 41141",
+  "type": "PointAddress",
+  "addr_key": "台中市太平區東平路464號"
+ },
+ "1839當代藝廊 Little Gallery": {
+  "la": 25.0404208,
+  "lo": 121.5546365,
+  "source": "address_geocode",
+  "display_name": "台北市大安區車層里延吉街120號, 10696",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區延吉街120號地下樓"
+ },
+ "也趣藝廊 AKI Gallery": {
+  "la": 25.0687046,
+  "lo": 121.516389,
+  "source": "address_geocode",
+  "display_name": "台北市大同區至聖里民族西路141號, 10369",
+  "type": "PointAddress",
+  "addr_key": "台北市大同區民族西路141號"
+ },
+ "霧峰林家宮保第園區": {
+  "la": 24.0628074,
+  "lo": 120.7008188,
+  "source": "address_geocode",
+  "display_name": "台中市霧峰區民生路26號, 41343",
+  "type": "PointAddress",
+  "addr_key": "台中市霧峰區民生路26號"
+ },
+ "大象藝術空間館": {
+  "la": 24.1588091,
+  "lo": 120.6402283,
+  "source": "address_geocode",
+  "display_name": "台中市市政路386號, 40757",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區市政路386號13樓之5"
+ },
+ "好地下藝術空間": {
+  "la": 23.978592,
+  "lo": 121.6071629,
+  "source": "address_geocode",
+  "display_name": "花蓮縣舊鐵道商圈節約街37號, 97049",
+  "type": "StreetAddress",
+  "addr_key": "花蓮縣花蓮市節約街37號B1"
+ },
+ "全安堂臺灣太陽餅博物館": {
+  "la": 24.139663,
+  "lo": 120.682428,
+  "source": "address_geocode",
+  "display_name": "台中市中區自由路商圈台灣大道一段145號, 40045",
+  "type": "PointAddress",
+  "addr_key": "台中市中區台灣大道一段145號"
+ },
+ "CACO cafe 台南南紡店": {
+  "la": 22.9907634,
+  "lo": 120.2336718,
+  "source": "address_geocode",
+  "display_name": "台南市東區中華東路一段366號, 70155",
+  "type": "StreetAddress",
+  "addr_key": "台南市東區中華東路一段366號A1館1樓"
+ },
+ "CACO cafe 台南小西門": {
+  "la": 22.9869431,
+  "lo": 120.1989468,
+  "source": "address_geocode",
+  "display_name": "台南市西門路一段658-1號, 70051",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區西門路一段658-1號B1F"
+ },
+ "CACO cafe 高雄夢時代店": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "address_geocode",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "addr_key": "高雄市前鎮區中華五路789號2F"
+ },
+ "MITSUI OUTLET PARK 林口I館室內棟1F 六角廣場": {
+  "la": 25.0712411,
+  "lo": 121.3635472,
+  "source": "address_geocode",
+  "display_name": "新北市林口區文化三路一段356號, 24448",
+  "type": "PointAddress",
+  "addr_key": "新北市林口區文化三路一段356號1樓"
+ },
+ "MyAnime Café 三創店（台北）": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "address_geocode",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區市民大道三段2號7樓"
+ },
+ "MyAnime Café 高雄店（統一時代百貨B1）": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "address_geocode",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "addr_key": "高雄市前鎮區中華五路789號B1"
+ },
+ "SORA LINK（三創生活園區8樓）": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "address_geocode",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區市民大道三段2號8樓"
+ },
+ "三創生活園區1F 十二立方": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "address_geocode",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區市民大道三段2號"
+ },
+ "京站時尚廣場1F": {
+  "la": 25.0490901,
+  "lo": 121.5167841,
+  "source": "address_geocode",
+  "display_name": "台北市大同區建明里承德路一段1號, 10351",
+  "type": "PointAddress",
+  "addr_key": "台北市大同區承德路一段1號"
+ },
+ "台中大遠百威秀影城": {
+  "la": 24.1646717,
+  "lo": 120.6445694,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道三段251號, 40756",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區台灣大道三段251號13樓"
+ },
+ "台中驛鐵道文化園區 鐵鹿大街": {
+  "la": 24.1450765,
+  "lo": 120.6765664,
+  "source": "address_geocode",
+  "display_name": "台中市中區中華夜市台灣大道一段, 40041",
+  "type": "StreetName",
+  "addr_key": "台中市中區台灣大道一段1號"
+ },
+ "台北三創生活園區": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "address_geocode",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區市民大道三段2號"
+ },
+ "台北三創生活園區 1F 十二立方": {
+  "la": 25.045633,
+  "lo": 121.531021,
+  "source": "address_geocode",
+  "display_name": "台北市中正區梅花里市民大道三段2號, 10058",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區市民大道三段2號"
+ },
+ "台北信義威秀影城": {
+  "la": 25.0356411,
+  "lo": 121.5674054,
+  "source": "address_geocode",
+  "display_name": "台北市信義區西村里松壽路20號, 11051",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松壽路20號"
+ },
+ "台北和平籃球館（台北戰神主場）": {
+  "la": 25.0284614,
+  "lo": 121.5491229,
+  "source": "address_geocode",
+  "display_name": "台北市大安區義安里敦化南路二段105號, 10682",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區敦化南路二段105號"
+ },
+ "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心": {
+  "la": 25.0461294,
+  "lo": 121.5441255,
+  "source": "address_geocode",
+  "display_name": "台北市松山區中崙里復興南路一段39號, 10556",
+  "type": "PointAddress",
+  "addr_key": "台北市松山區復興南路一段39號"
+ },
+ "新光三越台中中港店10F天空劇場": {
+  "la": 24.1650058,
+  "lo": 120.6433984,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道三段301號, 40756",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區台灣大道三段301號"
+ },
+ "新光三越台北信義新天地A11館": {
+  "la": 25.0360734,
+  "lo": 121.5672801,
+  "source": "address_geocode",
+  "display_name": "台北市信義區西村里松壽路11號, 11051",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松壽路11號"
+ },
+ "新光三越台北信義新天地A8館5樓": {
+  "la": 25.0388131,
+  "lo": 121.5668002,
+  "source": "address_geocode",
+  "display_name": "台北市信義區西村里松高路12號, 11073",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松高路12號5樓"
+ },
+ "新光三越台北南西店 一館 9F 活動會館": {
+  "la": 25.0523272,
+  "lo": 121.5212449,
+  "source": "address_geocode",
+  "display_name": "台北市中山區民安里南京西路12號, 10444",
+  "type": "PointAddress",
+  "addr_key": "台北市中山區南京西路12號"
+ },
+ "新光三越高雄左營店 10F": {
+  "la": 22.688943,
+  "lo": 120.310525,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區高鐵路123號, 81361",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區高鐵路123號10樓"
+ },
+ "新店裕隆城 5F 機械大廳": {
+  "la": 24.9777493,
+  "lo": 121.5463634,
+  "source": "address_geocode",
+  "display_name": "新北市新店區中興路三段70號, 23144",
+  "type": "PointAddress",
+  "addr_key": "新北市新店區中興路三段70號"
+ },
+ "新莊棒球場": {
+  "la": 25.0402673,
+  "lo": 121.4474074,
+  "source": "address_geocode",
+  "display_name": "新北市新莊區和興街66號, 24242",
+  "type": "PointAddress",
+  "addr_key": "新北市新莊區和興街66號"
+ },
+ "高雄夢時代購物中心 1F": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "address_geocode",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "addr_key": "高雄市前鎮區中華五路789號1樓"
+ },
+ "高雄大遠百威秀影城": {
+  "la": 22.613424,
+  "lo": 120.303549,
+  "source": "address_geocode",
+  "display_name": "高雄市三多四路21號, 80247",
+  "type": "PointAddress",
+  "addr_key": "高雄市苓雅區三多四路21號13樓"
+ },
+ "高雄駅一番街・北站 高雄捷運高雄車站B2": {
+  "la": 22.6377809,
+  "lo": 120.3034814,
+  "source": "address_geocode",
+  "display_name": "高雄市三民區建國二路320號, 807",
+  "type": "StreetAddress",
+  "addr_key": "高雄市三民區建國二路320號B2"
+ },
+ "魯克思咖啡左營店": {
+  "la": 22.660055,
+  "lo": 120.304188,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區修明街166號, 81357",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區修明街166號1樓"
+ },
+ "南港-LaLaport(玩具總動員快閃)": {
+  "la": 25.059345,
+  "lo": 121.6175825,
+  "source": "address_geocode",
+  "display_name": "台北市南港區三重里經貿二路131號, 11568",
+  "type": "PointAddress",
+  "addr_key": "台北市南港區經貿二路131號5樓"
+ },
+ "台中遠百快閃(玩具總動員快閃)": {
+  "la": 24.1646717,
+  "lo": 120.6445694,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道三段251號, 40756",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區台灣大道三段251號11樓"
+ },
+ "台南西門新天地快閃(玩具總動員快閃)": {
+  "la": 22.9867305,
+  "lo": 120.1988673,
+  "source": "address_geocode",
+  "display_name": "台南市西門路一段658號, 70051",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區西門路一段658號5樓"
+ },
+ "高雄-夢時代快閃店(玩具總動員快閃)": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "address_geocode",
+  "display_name": "高雄市前鎮區中華五路789號, 80661",
+  "type": "StreetAddress",
+  "addr_key": "高雄市前鎮區中華五路789號7F"
+ },
+ "凱岩咖啡 - 永康店": {
+  "la": 25.0310239,
+  "lo": 121.5302837,
+  "source": "address_geocode",
+  "display_name": "台北市大安區福住里金華街243巷27號, 10649",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區金華街243巷27號1樓"
+ },
+ "凱岩咖啡 - 忠孝店": {
+  "la": 25.0421761,
+  "lo": 121.5523233,
+  "source": "address_geocode",
+  "display_name": "台北市大安區建安里忠孝東路四段205巷7弄7號, 10690",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區忠孝東路四段205巷7弄7號1樓"
+ },
+ "五穀文化村": {
+  "la": 24.517656,
+  "lo": 120.820779,
+  "source": "arcgis_poi",
+  "display_name": "五穀文化村",
+  "type": "POI",
+  "score": 100
+ },
+ "巫家捏麵館": {
+  "la": 23.9723,
+  "lo": 120.478,
+  "source": "arcgis_poi",
+  "display_name": "巫家捏麵館",
+  "type": "POI",
+  "score": 100
+ },
+ "蔡廷蘭進士第": {
+  "la": 23.546403,
+  "lo": 119.606852,
+  "source": "arcgis_poi",
+  "display_name": "蔡廷蘭進士第",
+  "type": "POI",
+  "score": 100
+ },
+ "鷺安平美術館": {
+  "la": 23.0023963,
+  "lo": 120.1585888,
+  "source": "arcgis_poi",
+  "display_name": "鷺-安平美術館",
+  "type": "POI",
+  "score": 99.98
+ },
+ "梧棲行旅": {
+  "la": 24.2625349,
+  "lo": 120.5364515,
+  "source": "arcgis_poi",
+  "display_name": "梧棲行旅",
+  "type": "POI",
+  "score": 100
+ },
+ "大新美術館": {
+  "la": 23.0082,
+  "lo": 120.2075,
+  "source": "arcgis_poi",
+  "display_name": "大新美術館",
+  "type": "POI",
+  "score": 100
+ },
+ "當代一畫廊": {
+  "la": 25.0468,
+  "lo": 121.5557,
+  "source": "arcgis_poi",
+  "display_name": "當代一畫廊",
+  "type": "POI",
+  "score": 100
+ },
+ "曜畫廊": {
+  "la": 25.055666,
+  "lo": 121.548027,
+  "source": "arcgis_poi",
+  "display_name": "曜畫廊",
+  "type": "POI",
+  "score": 100
+ },
+ "帝門藝術中心": {
+  "la": 25.0366,
+  "lo": 121.5454,
+  "source": "arcgis_poi",
+  "display_name": "帝門藝術中心",
+  "type": "POI",
+  "score": 100
+ },
+ "江山藝改所": {
+  "la": 24.804954,
+  "lo": 120.964478,
+  "source": "arcgis_poi",
+  "display_name": "江山藝改所",
+  "type": "POI",
+  "score": 100
+ },
+ "臺中市猿緣園藝術館": {
+  "la": 24.1103411,
+  "lo": 120.6600436,
+  "source": "address_geocode",
+  "display_name": "台中市南區文心南路919號, 40256",
+  "type": "PointAddress",
+  "addr_key": "台中市南區文心南路919號"
+ },
+ "Smohouse 思默好時": {
+  "la": 24.142708,
+  "lo": 120.649429,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區大墩六街208號, 40864",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區大墩六街208號"
+ },
+ "二空間藝術經紀股份有限公司": {
+  "la": 25.0583969,
+  "lo": 121.5326073,
+  "source": "address_geocode",
+  "display_name": "台北市中山區中庄里松江路226巷6號, 10467",
+  "type": "PointAddress",
+  "addr_key": "台北市中山區松江路226巷6號"
+ },
+ "金車文藝中心": {
+  "la": 25.0673723,
+  "lo": 121.5185916,
+  "source": "address_geocode",
+  "display_name": "台北市大同區斯文里承德路三段131號, 10364",
+  "type": "PointAddress",
+  "addr_key": "台北市大同區承德路三段131號"
+ },
+ "安卓藝術": {
+  "la": 25.0696429,
+  "lo": 121.5835914,
+  "source": "address_geocode",
+  "display_name": "台北市內湖區瑞光路15號, 11466",
+  "type": "StreetAddress",
+  "addr_key": "台北市內湖區瑞光路548巷15號5F"
+ },
+ "辛藝術 Hsin Art Gallery": {
+  "la": 24.187743,
+  "lo": 120.593252,
+  "source": "address_geocode",
+  "display_name": "台中市新莊子東海藝術街商圈藝術街61巷6號, 43446",
+  "type": "PointAddress",
+  "addr_key": "台中市龍井區藝術街61巷6號"
+ },
+ "森初．moricasa art": {
+  "la": 22.9769539,
+  "lo": 120.1611778,
+  "source": "address_geocode",
+  "display_name": "台南市安平區漁光路113號, 70841",
+  "type": "PointAddress",
+  "addr_key": "台南市安平區漁光路113號"
+ },
+ "ZASSO 草也": {
+  "la": 24.1378169,
+  "lo": 120.6587104,
+  "source": "address_geocode",
+  "display_name": "台中市五權西六街72號, 40347",
+  "type": "PointAddress",
+  "addr_key": "台中市西區五權西六街72號"
+ },
+ "朝代藝術畫廊": {
+  "la": 25.0268432,
+  "lo": 121.5517699,
+  "source": "address_geocode",
+  "display_name": "台北市大安區法治里樂利路41號, 10678",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區樂利路41號"
+ },
+ "養心藝術 Artnutri Gallery": {
+  "la": 24.131925,
+  "lo": 120.640801,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區文心南五路一段395號, 40876",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區文心南五路一段395號"
+ },
+ "淡江大橋": {
+  "la": 25.175730002764436,
+  "lo": 121.41778424305994,
+  "source": "user_supplied_2026-06-20",
+  "display_name": "新北市淡水區沙崙路"
+ },
+ "星紅藝廊": {
+  "la": 23.952983,
+  "lo": 120.682412,
+  "source": "address_geocode",
+  "display_name": "南投縣下莊向上路271號, 54045",
+  "type": "PointAddress",
+  "addr_key": "南投縣南投市向上路271號3樓"
+ },
+ "胡克敏紀念館": {
+  "la": 25.0349436,
+  "lo": 121.5520938,
+  "source": "address_geocode",
+  "display_name": "台北市大安區敦安里安和路一段78巷4號, 10685",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區安和路一段78巷4號"
+ },
+ "蔣勳文化基金會 時善慧館": {
+  "la": 24.1534423,
+  "lo": 120.6681692,
+  "source": "address_geocode",
+  "display_name": "台中市博館二街115號, 403",
+  "type": "PointAddress",
+  "addr_key": "台中市北區博館二街115號"
+ },
+ "臺中市臻品藝術中心": {
+  "la": 24.152431,
+  "lo": 120.6623765,
+  "source": "address_geocode",
+  "display_name": "台中市勤美誠品綠園道商圈忠誠街35號, 40351",
+  "type": "PointAddress",
+  "addr_key": "台中市西區忠誠街35號"
+ },
+ "毛刺空間 Glitch home": {
+  "la": 24.133611,
+  "lo": 120.664953,
+  "source": "address_geocode",
+  "display_name": "台中市柳川東路二段58號, 40346",
+  "type": "PointAddress",
+  "addr_key": "台中市西區柳川東路二段58號3樓"
+ },
+ "盧安藝術文化有限公司": {
+  "la": 24.1542784,
+  "lo": 120.6642294,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道二段375號, 40360",
+  "type": "PointAddress",
+  "addr_key": "台中市西區台灣大道二段375號11樓之2"
+ },
+ "綠光 gallery": {
+  "la": 24.1475581,
+  "lo": 120.6628988,
+  "source": "address_geocode",
+  "display_name": "台中市綠光計畫范特喜文創聚落中興一巷2號, 40350",
+  "type": "PointAddress",
+  "addr_key": "台中市西區中興一巷2號"
+ },
+ "玉山國家公園管理處東埔服務中心": {
+  "la": 23.554196,
+  "lo": 120.926237,
+  "source": "address_geocode",
+  "display_name": "南投縣信義鄉開高巷25號, 55691",
+  "type": "PointAddress",
+  "addr_key": "南投縣信義鄉東埔村1鄰開高巷25號"
+ },
+ "中島GLAb": {
+  "la": 24.1365566,
+  "lo": 120.6723312,
+  "source": "address_geocode",
+  "display_name": "台中市林森路40號, 40345",
+  "type": "PointAddress",
+  "addr_key": "台中市西區林森路40號"
+ },
+ "雨果曐Gallery": {
+  "la": 24.1396339,
+  "lo": 120.6637179,
+  "source": "address_geocode",
+  "display_name": "台中市忠信市場五權西二街14號, 40348",
+  "type": "PointAddress",
+  "addr_key": "台中市西區五權西二街14號"
+ },
+ "社團法人中華翰維文化推廣協會": {
+  "la": 25.0335437,
+  "lo": 121.5438436,
+  "source": "address_geocode",
+  "display_name": "台北市大安區信義路四段1號, 10684",
+  "type": "StreetAddress",
+  "addr_key": "台北市大安區信義路四段1號7樓之7"
+ },
+ "Epic禪藝實相人文空間": {
+  "la": 24.153279,
+  "lo": 120.665784,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道二段307號, 40360",
+  "type": "PointAddress",
+  "addr_key": "台中市西區台灣大道二段307號15樓"
+ },
+ "聯邦藝術中心": {
+  "la": 25.0416624,
+  "lo": 121.5525126,
+  "source": "address_geocode",
+  "display_name": "台北市大安區建安里忠孝東路四段219號, 10690",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區忠孝東路四段219號"
+ },
+ "852藝術空間": {
+  "la": 24.1882476,
+  "lo": 120.594171,
+  "source": "address_geocode",
+  "display_name": "台中市新莊子東海藝術街商圈藝術街38巷11號, 43446",
+  "type": "PointAddress",
+  "addr_key": "台中市龍井區藝術街38巷11號"
+ },
+ "天目城藝文展覽館": {
+  "la": 24.144956,
+  "lo": 120.6328972,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區五權西路二段957號, 408",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區五權西路二段957號2樓"
+ },
+ "窯座": {
+  "la": 24.142084,
+  "lo": 120.672572,
+  "source": "address_geocode",
+  "display_name": "台中市民生路126巷9號, 40342",
+  "type": "PointAddress",
+  "addr_key": "台中市西區民生路126巷9號2樓"
+ },
+ "亞書藝所": {
+  "la": 24.1330389,
+  "lo": 120.6623067,
+  "source": "address_geocode",
+  "display_name": "台中市美村路一段771巷16號, 403",
+  "type": "PointAddress",
+  "addr_key": "台中市西區美村路一段771巷16號"
+ },
+ "台中市": {
+  "la": 24.14996,
+  "lo": 120.665068,
+  "source": "address_geocode",
+  "display_name": "台中市勤美誠品綠園道商圈英才路534號, 40360",
+  "type": "PointAddress",
+  "addr_key": "台中市西區英才路534號"
+ },
+ "苗栗陶瓷農創園區": {
+  "la": 24.4895319,
+  "lo": 120.8277677,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "苗栗陶瓷農創園區，穿龍驛站"
+ },
+ "當代陶藝館": {
+  "la": 24.3977804,
+  "lo": 120.7610516,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "當代陶藝館"
+ },
+ "臺南市方圓美術館": {
+  "la": 23.1990925,
+  "lo": 120.1574022,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "方圓美術館"
+ },
+ "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點）": {
+  "la": 22.6119402,
+  "lo": 120.2985393,
+  "source": "google_maps_lookup_2026-06-20",
+  "display_name": "海邊路 & 成功二路（遊行起點代表點）"
+ },
+ "臺南東門美術館": {
+  "la": 22.9890945,
+  "lo": 120.2039943,
+  "source": "address_geocode",
+  "display_name": "台南市孔廟商圈府前路一段203號, 70045",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區府前路一段203號1樓"
+ },
+ "耘非凡美術館": {
+  "la": 22.9843755,
+  "lo": 120.2215806,
+  "source": "address_geocode",
+  "display_name": "台南市東區林森路一段370號, 70151",
+  "type": "PointAddress",
+  "addr_key": "台南市東區林森路一段370號"
+ },
+ "臺南海馬迴光畫館": {
+  "la": 22.997638,
+  "lo": 120.2083,
+  "source": "address_geocode",
+  "display_name": "台南市成功路83號, 700",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區成功路83號2樓"
+ },
+ "台南梵藝術中心": {
+  "la": 22.9902749,
+  "lo": 120.1792072,
+  "source": "address_geocode",
+  "display_name": "台南市永華路二段300號, 70848",
+  "type": "PointAddress",
+  "addr_key": "台南市安平區永華路二段300號"
+ },
+ "臺南絕對空間 Absolute Space for the Art": {
+  "la": 22.9937955,
+  "lo": 120.1994782,
+  "source": "address_geocode",
+  "display_name": "台南市民生路一段205巷11號, 70048",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區民生路一段205巷11號"
+ },
+ "夢時代購物中心Ｘ野獸國": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "user_supplied_2026-06-23",
+  "display_name": "夢時代購物中心, 高雄市前鎮區中華五路789號1樓 F1C40",
+  "type": "shopping_mall",
+  "addr_key": "高雄市前鎮區中華五路789號1樓F1C40"
+ },
+ "農業部林業及自然保育署南投分署": {
+  "la": 23.9903005,
+  "lo": 120.6678438,
+  "source": "arcgis_poi",
+  "display_name": "農業部林業及自然保育署南投分署",
+  "type": "POI",
+  "score": 100
+ },
+ "衛武營國家藝術文化中心": {
+  "la": 22.6241698,
+  "lo": 120.3424335,
+  "source": "address_geocode",
+  "display_name": "高雄市鳳山區三多一路1號, 830043",
+  "type": "PointAddress",
+  "addr_key": "高雄市鳳山區高雄市鳳山區三多一路1號"
+ },
+ "object taipei store": {
+  "la": 25.0566681,
+  "lo": 121.5210811,
+  "source": "address_geocode",
+  "display_name": "台北市中山區民安里中山北路二段62巷32號, 10448",
+  "type": "PointAddress",
+  "addr_key": "台北市中山區中山北路二段62巷32號1樓"
+ },
+ "國立臺灣工藝研究發展中心-臺北當代工藝設計分館": {
+  "la": 25.0317602,
+  "lo": 121.5123224,
+  "source": "address_geocode",
+  "display_name": "台北市中正區南門里南海路41號, 10066",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區南海路41號"
+ },
+ "松風閣畫廊": {
+  "la": 24.182346,
+  "lo": 120.691626,
+  "source": "address_geocode",
+  "display_name": "台中市松竹路二段349號, 406506",
+  "type": "PointAddress",
+  "addr_key": "台中市北屯區松竹路二段349號"
+ },
+ "和顏牙醫診所": {
+  "la": 24.2117643,
+  "lo": 120.7014517,
+  "source": "arcgis_poi",
+  "display_name": "和顏牙醫診所",
+  "type": "POI",
+  "score": 100
+ },
+ "菁桐礦業生活館": {
+  "la": 25.023917,
+  "lo": 121.724333,
+  "source": "manual_override_2026-07-05",
+  "display_name": "菁桐礦業生活館, 新北市平溪區菁桐里菁桐街113-117號",
+  "type": "museum"
+ },
+ "財團法人鴻梅文化藝術基金會": {
+  "la": 24.823891,
+  "lo": 121.092292,
+  "source": "address_geocode",
+  "display_name": "新竹縣新埔鎮新關路五埔段1170巷42弄17號, 305",
+  "type": "PointAddress",
+  "addr_key": "新竹縣新埔鎮新關路五埔段1170巷42弄17號"
+ },
+ "蒙藏文化館": {
+  "la": 25.0276763,
+  "lo": 121.5313784,
+  "source": "address_geocode",
+  "display_name": "台北市大安區龍安里青田街8巷3號, 10649",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區青田街八巷三號"
+ },
+ "新竹市241藝術空間": {
+  "la": 24.80967,
+  "lo": 120.9762307,
+  "source": "address_geocode",
+  "display_name": "新竹市東區中央路241號, 300197",
+  "type": "PointAddress",
+  "addr_key": "新竹市東區中央路241號6樓"
+ },
+ "光點台北側門 羊空間 YOUNG SPACE": {
+  "la": 25.0531179,
+  "lo": 121.5219655,
+  "source": "address_geocode",
+  "display_name": "台北市中山區民安里中山北路二段16巷1號, 10445",
+  "type": "PointAddress",
+  "addr_key": "台北市中山區中山北路二段16巷1號"
+ },
+ "新光三越台南小北門店1F": {
+  "la": 23.0091909,
+  "lo": 120.2074748,
+  "source": "address_geocode",
+  "display_name": "台南市北區西門路四段135號, 704008",
+  "type": "StreetAddressExt",
+  "addr_key": "台南市北區西門路四段135號"
+ },
+ "誠品R79 中山地下書街B1": {
+  "la": 25.0525048,
+  "lo": 121.5203318,
+  "source": "address_geocode",
+  "display_name": "台北市大同區建泰里南京西路16號, 10352",
+  "type": "PointAddress",
+  "addr_key": "台北市中山區南京西路16號B1"
+ },
+ "台北世界貿易中心展覽一館": {
+  "la": 25.033152,
+  "lo": 121.5623397,
+  "source": "address_geocode",
+  "display_name": "台北市信義區西村里信義路五段5號, 11011",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區信義路五段5號"
+ },
+ "台中綠園道 K-MONSTAR門市": {
+  "la": 24.144977,
+  "lo": 120.664182,
+  "source": "address_geocode",
+  "display_name": "台中市向上路一段79巷72號, 403008",
+  "type": "PointAddress",
+  "addr_key": "台中市西區向上路一段79巷72號"
+ },
+ "台北微風南山": {
+  "la": 25.0344353,
+  "lo": 121.5657745,
+  "source": "address_geocode",
+  "display_name": "台北市信義區西村里松智路17號, 11047",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松智路17號B1"
+ },
+ "台東縣鹿野鄉高台": {
+  "la": 22.9241216,
+  "lo": 121.1247784,
+  "source": "address_geocode",
+  "display_name": "台東縣鹿野鄉高台路46號, 955001",
+  "type": "StreetAddressExt",
+  "addr_key": "台東縣鹿野鄉永安村高台路46號"
+ },
+ "新竹巨城 K-MONSTAR門市": {
+  "la": 24.809384,
+  "lo": 120.975509,
+  "source": "address_geocode",
+  "display_name": "新竹市東區中央路229號, 300197",
+  "type": "PointAddress",
+  "addr_key": "新竹市東區中央路229號3F"
+ },
+ "板橋大遠百 B1綠洲區": {
+  "la": 25.013678,
+  "lo": 121.466619,
+  "source": "address_geocode",
+  "display_name": "新北市新站路28號, 220692",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區新站路28號"
+ },
+ "花蓮縣壽豐鄉鯉魚潭": {
+  "la": 23.9370434,
+  "lo": 121.5093228,
+  "source": "address_geocode",
+  "display_name": "花蓮縣壽豐鄉環潭北路100號, 974011",
+  "type": "StreetAddressExt",
+  "addr_key": "花蓮縣壽豐鄉池南村環潭北路100號"
+ },
+ "誠品生活松菸店": {
+  "la": 25.0447371,
+  "lo": 121.5611106,
+  "source": "address_geocode",
+  "display_name": "台北市信義區新仁里菸廠路88號, 11072",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區菸廠路88號"
+ },
+ "誠品生活武昌店": {
+  "la": 25.0450768,
+  "lo": 121.5057086,
+  "source": "address_geocode",
+  "display_name": "台北市萬華區萬壽里武昌街二段77號, 10843",
+  "type": "PointAddress",
+  "addr_key": "台北市萬華區武昌街二段77號"
+ },
+ "誠品生活西門店": {
+  "la": 25.0438027,
+  "lo": 121.505399,
+  "source": "address_geocode",
+  "display_name": "台北市萬華區西門里峨眉街52號, 10844",
+  "type": "PointAddress",
+  "addr_key": "台北市萬華區峨眉街52號"
+ },
+ "台北市信義區香堤大道廣場及周邊": {
+  "la": 25.03742733240707,
+  "lo": 121.5670387441809,
+  "source": "user_supplied_2026-07-13",
+  "display_name": "香堤大道廣場, 信義區, 台北市",
+  "type": "plaza"
+ }
+}

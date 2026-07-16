@@ -1,0 +1,175 @@
+{
+ "_note": "Generated from official Cayenne Cafe restaurant/news pages.",
+ "restaurant_url": "https://www.cayenne-cafe.com.tw/restaurant.aspx",
+ "news_url": "https://www.cayenne-cafe.com.tw/news.aspx",
+ "stores": [
+  {
+   "title": "凱岩咖啡 - 忠孝店",
+   "store": "忠孝店",
+   "addr": "台北市大安區忠孝東路四段205巷7弄7號1樓",
+   "source": "https://www.cayenne-cafe.com.tw/restaurant.aspx"
+  },
+  {
+   "title": "凱岩咖啡 - 永康店",
+   "store": "永康店",
+   "addr": "台北市大安區金華街243巷27號1樓",
+   "source": "https://www.cayenne-cafe.com.tw/restaurant.aspx"
+  }
+ ],
+ "news": [
+  {
+   "store": "忠孝店",
+   "title": "楓之谷 x 凱岩主題餐廳",
+   "start": "2026/07/16",
+   "end": "2026/08/30",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=23"
+  },
+  {
+   "store": "永康店",
+   "title": "賽爾號 x 凱岩主題餐廳",
+   "start": "2026/06/12",
+   "end": "2026/07/26",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22"
+  },
+  {
+   "store": "忠孝店",
+   "title": "怪物彈珠 × 凱岩主題餐廳",
+   "start": "2026/06/11",
+   "end": "2026/07/12",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=21"
+  },
+  {
+   "store": "忠孝店",
+   "title": "卡厄思夢境 𝘅 凱岩主題餐廳",
+   "start": "2026/05/06",
+   "end": "2026/06/07",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=20"
+  },
+  {
+   "store": "永康店",
+   "title": "卡厄思夢境 𝘅 凱岩主題餐廳",
+   "start": "2026/04/22",
+   "end": "2026/05/24",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=19"
+  },
+  {
+   "store": "永康店",
+   "title": "摩爾莊園 x 凱岩主題餐廳",
+   "start": "2026/03/19",
+   "end": "2026/04/19",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=18"
+  },
+  {
+   "store": "忠孝店",
+   "title": "次元波板糖 x 進擊的巨人",
+   "start": "2026/03/18",
+   "end": "2026/05/03",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=17"
+  },
+  {
+   "store": "忠孝店",
+   "title": "桃源深處有人家 x 凱岩主題餐廳",
+   "start": "2026/01/30",
+   "end": "2026/03/08",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=15"
+  },
+  {
+   "store": "永康店",
+   "title": "PINK&VEN x 凱岩主題餐廳",
+   "start": "2026/01/22",
+   "end": "2026/02/22",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=16"
+  },
+  {
+   "store": "忠孝店",
+   "title": "七騎士Re:BIRTH x 凱岩主題餐廳",
+   "start": "2025/12/31",
+   "end": "2026/01/25",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=14"
+  },
+  {
+   "store": "永康店",
+   "title": "The Butters 奶油家族 X 凱岩主題餐廳",
+   "start": "2025/12/04",
+   "end": "2026/01/18",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=13"
+  },
+  {
+   "store": "忠孝店",
+   "title": "鳴潮 x 凱岩主題餐廳",
+   "start": "2025/10/28",
+   "end": "2025/12/28",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=12"
+  },
+  {
+   "store": "永康店",
+   "title": "KINGJUN x 凱岩主題餐廳",
+   "start": "2025/10/17",
+   "end": "2025/11/30",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=10"
+  },
+  {
+   "store": "永康店",
+   "title": "車銀優 x 凱岩主題餐廳",
+   "start": "2025/09/16",
+   "end": "2025/10/12",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=11"
+  },
+  {
+   "store": "忠孝店",
+   "title": "WIND BREAKER防風少年 x 凱岩主題餐廳",
+   "start": "2025/09/11",
+   "end": "2025/10/26",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=9"
+  },
+  {
+   "store": "忠孝店",
+   "title": "第五人格 x 凱岩主題餐廳",
+   "start": "2025/07/24",
+   "end": "2025/09/07",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=8"
+  },
+  {
+   "store": "忠孝店",
+   "title": "新楓之谷 x 凱岩主題餐廳",
+   "start": "2025/06/24",
+   "end": "2025/07/20",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=7"
+  },
+  {
+   "store": "忠孝店",
+   "title": "穿越時空的貓 x 凱岩主題餐廳",
+   "start": "2025/05/08",
+   "end": "2025/06/22",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=6"
+  },
+  {
+   "store": "忠孝店",
+   "title": "凱岩主題餐廳期間限定店",
+   "start": "2025/03/28",
+   "end": "2025/05/04",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=5"
+  },
+  {
+   "store": "忠孝店",
+   "title": "棕色塵埃2 x 凱岩主題餐廳",
+   "start": "2025/02/06",
+   "end": "2025/03/23",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=4"
+  },
+  {
+   "store": "忠孝店",
+   "title": "摩爾莊園 x 凱岩主題餐廳",
+   "start": "2024/11/21",
+   "end": "2025/02/02",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=3"
+  },
+  {
+   "store": "忠孝店",
+   "title": "第五人格 x 凱岩主題餐廳",
+   "start": "2024/09/30",
+   "end": "2024/11/17",
+   "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=2"
+  }
+ ]
+}
