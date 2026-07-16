@@ -24,6 +24,76 @@ Agent 交流工作日誌
 
 
 ==========================================================
+2026/07/16（續，同日對話追加）Claude（Cowork）：Daniel 直接確認1筆ACG分類＋清空無關的「Claude playground」資料夾
+==========================================================
+接續上面同日的排程回報，Daniel 在對話中直接下了兩個指示，分開記錄：
+
+1. 分類複核：Daniel 確認「我適文創快閃-夏日降溫計畫」（松山文創園區）是ACG。
+   - 依規則（分類複核不自動判定、需人工確認後才寫入），已寫入 data/manual/event_overrides.json：
+     `"我適文創快閃-夏日降溫計畫": { "c": "ACG" }`（原自動分類為其他文化/快閃店）。
+   - ✅已驗證：寫入後重新 json.load 讀回檔案，確認鍵值正確、JSON格式合法，且未動到既有9筆舊資料。
+   - ⚠️尚未生效：這筆 override 要等下一次成功跑 update_all.py（refresh_venues.py 套用override）才會
+     反映到 venues.json／地圖上；而目前排程本身是壞的（見上一則日誌），不會自動套用，需 Daniel 手動跑
+     一次 ops/_final_update.command 或等修好排程路徑後才會生效。
+
+2. 刪除「Claude playground」資料夾：Daniel 說不會用到這個工作資料夾，指示永久刪除。
+   - 這個資料夾是 Cowork 使用者選取的頂層資料夾之一，跟本專案所在的「Claude playground.nosync」是
+     兩個不同資料夾。裡面除了本專案因排程路徑錯誤（見上一則日誌）產生的殘留資料夾（全台展覽地圖，
+     只有一個失敗的log檔）之外，還有一個完全無關的專案「小紅書爬蟲」（內含Chrome瀏覽器profile）。
+   - 因為是不可逆刪除操作，且會牽動與本專案無關的另一個專案，執行前先用 AskUserQuestion 明確問過
+     Daniel 刪除範圍（只刪全台展覽地圖殘留資料夾／還是整個Claude playground資料夾都刪），
+     Daniel 選擇「整個Claude playground資料夾都刪」，才動手。
+   - 執行方式：呼叫 allow_cowork_file_delete 取得授權後 `rm -rf`，資料夾內容（全台展覽地圖殘留log＋
+     小紅書爬蟲整個Chrome profile）已清空；掛載點本身（folder mount root）因是即時掛載無法刪除自己，
+     顯示「Device or resource busy」，但這是Cowork沙箱掛載機制的限制，不影響清空結果。
+   - ✅已驗證：`find` 確認資料夾內容已完全清空（mindepth 1 無任何檔案）。
+   - ⚠️這個刪除跟本專案「排程launchd路徑錯誤」是兩件事：刪掉這個殘留資料夾**不會**修好Mac上
+     ops/run_scheduled_update.sh、ops/_install_schedule.command裡DIR變數指錯路徑的問題，Daniel
+     還是需要自己去Mac上修那兩支腳本的路徑（見上一則日誌第3點），否則下次11:30排程一樣會失敗
+     （只是不會再產生殘留檔案而已）。
+
+==========================================================
+2026/07/16 Claude（Cowork）：本次排程回報「無機械性缺口可修」，但抓到排程 launchd 疑似路徑錯誤 3 天沒真的跑過
+==========================================================
+背景：11:14 排程 exhibition-map-maintenance-report 依規定跑 backend/report_status.py 回報，
+本輪與 07/13 不同：沒有「約略定位但有地址」「地址空白」的場館，第二步 A/B/C（geocode/WebSearch查證/重跑Excel管線）
+一項都沒有可做的，只跑了讀取與驗證，沒有動 xlsx、venues.json、HTML。
+
+1. 讀現況：backend/report_status.py 正常跑出，51館/132場，約略定位0/51、缺連結0/132、缺KV0/132，
+   三項缺口都是0%。
+
+2. 沒有信任腳本數字就結束，另外自己重新讀一次 public/venues.json 逐欄位核對（loc欄、addr欄、
+   ex[].l連結欄、ex[].img KV欄），確認官方六園區venues本來就不存addr欄（用固定地標座標，不算缺地址）、
+   其餘manual/caco/cayenne來源全部有addr；132場活動的l與img欄全部有值。結論與report_status.py一致：
+   ✅已驗證＝無A/B類場館、無需重跑import_acg_excel/refresh_venues/geocode_venues流程。
+
+3. ⚠️發現排程本身疑似壞掉（不在第二步規則範圍內，只回報不動手修）：
+   - public/venues.json、public/taiwan-exhibition-map.html、data/manual/全台ACG活動.xlsx 三個檔案
+     的檔案修改時間都停在 2026/07/13 12:13–12:25，這次（07/16週四，本應是每週一/四11:30自動跑
+     update_all.py的日子）完全沒有新的修改時間，代表週四11:30這次自動排程「沒有真的成功執行」。
+   - 追查到 ops/run_scheduled_update.sh 與 ops/_install_schedule.command 裡的 DIR 變數寫的是
+     `/Users/daniel0522/Desktop/Claude playground/全台展覽地圖`（沒有.nosync），但專案實際位置是
+     `/Users/daniel0522/Desktop/Claude playground.nosync/全台展覽地圖`（有.nosync）。
+   - 在錯的路徑（沒有.nosync那個資料夾）底下真的找到一個殘留 log 檔
+     `Claude playground/全台展覽地圖/_scheduled_update.log`，內容是
+     `shell-init: error retrieving current directory` 與
+     `run_scheduled_update.sh: No such file or directory`，時間戳2026/07/13 11:30，
+     證實launchd排程有觸發、但因為路徑錯誤根本執行不到真正的更新腳本。
+   - ✅已驗證：git status 確認這次sandbox只有report_status.py自己寫的_report_prev.json有變動（它的
+     正常快取行為），其餘檔案零變動；另外用python逐位元組比對確認public/taiwan-exhibition-map.html
+     內嵌DATA目前仍與public/venues.json完全一致（hd==vj為True），沒有07/13報過的「HTML沒同步」舊問題。
+   - ⚠️這是排程/路徑設定問題，不是資料問題，Cowork沙箱這邊看不到、也改不到Daniel Mac上真正的
+     launchd排程與資料夾，需要Daniel自己在Mac上確認：資料夾是否曾經從「Claude playground」改名成
+     「Claude playground.nosync」但忘記同步改 ops/ 兩支腳本裡的 DIR 路徑；若是，修好路徑後要重跑
+     ops/_install_schedule.command 重新載入 launchd 排程。
+
+給下一個 agent／Daniel 的提醒：
+   - 下次排程回報前，先看 public/venues.json 的檔案修改時間是不是「上次排程時間之後」，如果還停在
+     好幾天前，代表Mac端自動流程沒真的跑，不要照單全收「已在11:30跑過」這個假設。
+   - 本次沒有新的分類複核決定，07/13遺留的「B-SIDE LABEL POP UP STORE in Taiwan」ACG判斷矛盾
+     （07/12排除 vs 07/13改判ACG）Daniel尚未回覆確認，維持上次狀態不動。
+
+==========================================================
 2026/07/13 Claude（Cowork）：排程回報延伸為手動修資料缺口（KV/地址/分類/GANADI展開），修好一個 openpyxl bug，並把排程任務改為半自動
 ==========================================================
 背景：當天 11:40 排程 exhibition-map-maintenance-report 先跑出回報（8館約略定位、66場官網活動疑似漏判ACG等），

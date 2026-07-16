@@ -1,7 +1,8 @@
 #!/bin/bash
 # 安裝「每週一、週四 11:30 自動更新」launchd 排程（避開 11:00 social crawler）。由 Claude 建立。
 # 解除安裝：launchctl unload ~/Library/LaunchAgents/com.danielcheng.twexhibmap.plist 後刪除該檔。
-DIR="/Users/daniel0522/Desktop/Claude playground/全台展覽地圖"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 PY="/Users/daniel0522/miniforge3/bin/python3"
 LABEL="com.danielcheng.twexhibmap"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"

@@ -107,6 +107,24 @@
    }
   ]
  },
+ "三創生活園區1F": {
+  "city": "台北市",
+  "lat": 25.04008,
+  "lng": 121.57526,
+  "loc": "市級",
+  "addr": "台北市中正區市民大道三段2號",
+  "url": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
+  "ex": [
+   {
+    "t": "角落小夥伴水族館第2彈",
+    "s": "2026/07/13",
+    "e": "2026/08/02",
+    "l": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
+    "img": "",
+    "cat2": "快閃店/Pop-up Store"
+   }
+  ]
+ },
  "中友百貨": {
   "city": "台中市",
   "lat": 24.1522668,
@@ -179,6 +197,24 @@
    }
   ]
  },
+ "台中東海大學": {
+  "city": "台中市",
+  "lat": 24.19374,
+  "lng": 120.61791,
+  "loc": "區級",
+  "addr": "台中市西屯區台灣大道四段1727號",
+  "url": "https://www.bryte-fun.com",
+  "ex": [
+   {
+    "t": "伊藤潤二狂熱城市夜行路跑",
+    "s": "2026/08/29",
+    "e": "2026/08/29",
+    "l": "https://www.bryte-fun.com",
+    "img": "",
+    "cat2": "體驗活動/Experience Activity"
+   }
+  ]
+ },
  "台中綠園道 K-MONSTAR門市": {
   "city": "台中市",
   "lat": 24.144977,
@@ -194,6 +230,32 @@
     "l": "https://www.instagram.com/p/DakWfJNDMk8",
     "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
     "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
+ "台中麗寶OUTLET MALL C區1樓中央廣場": {
+  "city": "台中市",
+  "lat": 24.326,
+  "lng": 120.70673,
+  "loc": "區級",
+  "addr": "台中市后里區福容路201號",
+  "url": "https://www.instagram.com/p/Da2DfOEj_9k",
+  "ex": [
+   {
+    "t": "麵包超人夏日萌萌主題店",
+    "s": "2026/07/16",
+    "e": "2026/09/14",
+    "l": "https://www.instagram.com/p/Da2DfOEj_9k",
+    "img": "",
+    "cat2": "快閃店/Pop-up Store"
+   },
+   {
+    "t": "Sirotan期間限定快閃店",
+    "s": "2026/07/16",
+    "e": "2026/09/14",
+    "l": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
+    "img": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
+    "cat2": "快閃店/Pop-up Store"
    }
   ]
  },
@@ -230,6 +292,14 @@
     "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
     "img": "",
     "cat2": "快閃店/Pop-up Store"
+   },
+   {
+    "t": "HUNTER×HUNTER POP UP SHOP",
+    "s": "2026/09/04",
+    "e": "2026/10/04",
+    "l": "https://www.instagram.com/p/DaNEtndDFyn/",
+    "img": "",
+    "cat2": "快閃店/Pop-up Store"
    }
   ]
  },
@@ -253,9 +323,9 @@
  },
  "台北市信義區香堤大道廣場及周邊": {
   "city": "台北市",
-  "lat": 25.01774,
-  "lng": 121.58449,
-  "loc": "區級",
+  "lat": 25.03742733240707,
+  "lng": 121.5670387441809,
+  "loc": "exact",
   "addr": "台北市信義區松智路與松高路20巷間人行步道",
   "url": "https://tw.portal-pokemon.com/30th/topics/20260701_01/",
   "ex": [
@@ -284,6 +354,24 @@
     "l": "https://www.instagram.com/p/DakWfJNDMk8",
     "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
     "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
+ "台北西門店": {
+  "city": "台北市",
+  "lat": 25.0332,
+  "lng": 121.48505,
+  "loc": "區級",
+  "addr": "台北市萬華區昆明街92之1號5樓",
+  "url": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+  "ex": [
+   {
+    "t": "異環 x FanFans Café｜期間限定主題餐廳",
+    "s": "2026/07/17",
+    "e": "2026/08/11",
+    "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+    "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
+    "cat2": "主題餐廳/Theme Cafe"
    }
   ]
  },
@@ -359,21 +447,21 @@
    }
   ]
  },
- "新光三越台中中港店10F天空劇場": {
+ "新光三越台中中港店 10F": {
   "city": "台中市",
-  "lat": 24.1650058,
-  "lng": 120.6433984,
-  "loc": "exact",
-  "addr": "台中市西屯區台灣大道三段301號",
-  "url": "https://www.instagram.com/p/DY6yAdUCeQV/",
+  "lat": 24.18913,
+  "lng": 120.62962,
+  "loc": "區級",
+  "addr": "台中市西屯區惠來里台灣大道三段301號",
+  "url": "https://www.instagram.com/p/DazKEteDD38",
   "ex": [
    {
-    "t": "Ani-One 玩轉動漫遊‧台中場",
-    "s": "2026/06/13",
-    "e": "2026/07/13",
-    "l": "https://www.instagram.com/p/DY6yAdUCeQV/",
+    "t": "Tamagotchi電子雞30週年紀念快閃店",
+    "s": "2026/07/27",
+    "e": "2026/08/19",
+    "l": "https://www.instagram.com/p/DazKEteDD38",
     "img": "",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop-up Store"
    }
   ]
  },
@@ -523,9 +611,9 @@
  },
  "花蓮縣壽豐鄉鯉魚潭": {
   "city": "花蓮縣",
-  "lat": 23.84404,
-  "lng": 121.50847,
-  "loc": "區級",
+  "lat": 23.9370434,
+  "lng": 121.5093228,
+  "loc": "exact",
   "addr": "花蓮縣壽豐鄉池南村環潭北路100號",
   "url": "https://www.instagram.com/p/DZrU9yxgT5x/",
   "ex": [
@@ -554,6 +642,24 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=305017",
     "img": "",
     "cat2": "展覽/Exhibition"
+   }
+  ]
+ },
+ "蘭潭音樂噴泉（嘉義市東區紅毛埤187號）／檢錄地點：嘉義大學蘭潭校區－瑞穗館前": {
+  "city": "嘉義市",
+  "lat": 23.4621,
+  "lng": 120.46858,
+  "loc": "市級",
+  "addr": "嘉義市鹿寮里學府路300號",
+  "url": "https://www.instagram.com/p/DazKEN1jqZZ",
+  "ex": [
+   {
+    "t": "2026來嘉BIKE訪．騎聚好歡樂 x CookieRun薑餅人（7/18加開場）",
+    "s": "2026/07/18",
+    "e": "2026/07/18",
+    "l": "https://www.instagram.com/p/DazKEN1jqZZ",
+    "img": "",
+    "cat2": "體驗活動/Experience Activity"
    }
   ]
  },
@@ -734,6 +840,24 @@
     "l": "https://www.instagram.com/p/DaU5z0TFPTd",
     "img": "",
     "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
+ "高雄愛河店": {
+  "city": "高雄市",
+  "lat": 22.637,
+  "lng": 120.2844,
+  "loc": "區級",
+  "addr": "高雄市前金區大同二路23號1樓",
+  "url": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+  "ex": [
+   {
+    "t": "異環 x FanFans Café｜期間限定主題餐廳",
+    "s": "2026/07/17",
+    "e": "2026/08/11",
+    "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+    "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
+    "cat2": "主題餐廳/Theme Cafe"
    }
   ]
  },
