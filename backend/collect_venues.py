@@ -74,13 +74,20 @@ VENUES = [
   "url":"https://www.pier2.org","list":"https://pier2.org/exhibition/list/all/",
   "path":"/exhibition/info/","exclude":r"","kv":"content"},
  {"key":"嘉義文化創意產業園區","city":"嘉義市","lat":23.4790,"lng":120.4490,"url":"https://www.g9cip.com","list":"https://www.g9cip.com/activity/exhibitions/","path":"auto","exclude":r"(名單|公告|得獎|徵件|徵選|報名|招標|研習)"},
- {"key":"花蓮文化創意產業園區","city":"花蓮縣","lat":23.9760,"lng":121.6090,"url":"https://hualien1913.nat.gov.tw","list":"https://hualien1913.nat.gov.tw/%e6%9c%80%e6%96%b0%e6%b4%bb%e5%8b%95/","path":"auto","exclude":r"(講座|工作坊|論壇|課程|徵件)"},
+ {"key":"花蓮文化創意產業園區","city":"花蓮縣","lat":23.9760,"lng":121.6090,"url":"https://hualien1913.nat.gov.tw","list":"https://hualien1913.nat.gov.tw/%e6%9c%80%e6%96%b0%e6%b4%bb%e5%8b%95/","path":"auto","exclude":r"(講座|工作坊|論壇|課程|徵件)"},  # 2026/07/18 check-sources.yml 實測：GitHub Actions 雲端連此網域回 403（本機/一般網路正常），故在雲端排程排除，見 CLOUD_EXCLUDE_KEYS
  {"key":"圓山花博","city":"台北市","lat":25.0703595,"lng":121.5204969,
   "url":"https://www.expopark.taipei","list":"https://www.expopark.taipei/News_Exhibition.aspx?n=247&sms=9029&page=1&PageSize=100",
   "path":"News_Photo_Content.aspx","type_include":r"展覽活動","drop_past_start_without_end":True,
   "exclude":r"(講座|工作坊|論壇|課程|徵件)"},
 ]
 GLOBAL_EXCLUDE = re.compile(r"(news/article|門票|售票|常見問題|交通資訊)")
+
+# 2026/07/18：check-sources.yml 實測 GitHub Actions 雲端機器連 hualien1913.nat.gov.tw 回 403
+# （其餘 7 個來源皆 200，含另一個政府網域 expopark.taipei）。研判是該政府網站對雲端機房 IP
+# 的防火牆/WAF 阻擋，非程式問題。Daniel 確認：雲端排程排除此館即可，不用等它連上再研究繞過方案。
+# 只在雲端（GitHub Actions 會自動設環境變數 GITHUB_ACTIONS=true）跳過；本機手動執行 update_all.py
+# 時仍會照常嘗試抓這一館（若 Daniel 之後想在本機補這一館資料）。
+CLOUD_EXCLUDE_KEYS = {"花蓮文化創意產業園區"}
 
 _DATELINE = re.compile(r'^[\s\d:．.\-~/年月日上下午APMapm()]+$')
 def strip_dt(text):
@@ -378,7 +385,11 @@ def main():
     單站逾時會連同 Chromium 子孫程序一併終結，不會卡住整體流程。
     成功抓到空結果時會清掉該館舊資料；逾時/解析錯誤則保留舊資料。"""
     out = load_json_retry(OUTP, {})
+    is_cloud = os.environ.get("GITHUB_ACTIONS") == "true"
     for v in VENUES:
+        if is_cloud and v["key"] in CLOUD_EXCLUDE_KEYS:
+            log(f"SKIP {v['key']}（雲端排除：check-sources.yml 2026/07/18 實測連線 403，保留舊資料，僅本機執行才會嘗試更新）")
+            continue
         stdout, status, stderr = _run_site(v["key"], timeout=90)
         if status == "timeout":
             tail = _err_tail(stderr)
