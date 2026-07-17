@@ -1436,3 +1436,34 @@ refresh_venues.py 跑完都會讓 moc 場館從 ~140 崩到 12（甚至 0）。
 
 3) 驗證
    - 已用 find 檢查：排除瀏覽器 profile 內部自動產生目錄後，maxdepth 4 內的專案管理資料夾皆已有 README.md。
+
+────────────────────────────────────────────────────────
+2026/07/17（opus 協調 + sonnet/fable 子代理）｜P0 地基 + P2 自動化落地
+────────────────────────────────────────────────────────
+起因：使用者要求以最嚴格標準檢視 UX / 自動化，並確立產品推進 phase（P0 上線基礎 → P2 自動化 → P1 進階）。
+先產出 docs/優化建議報告_2026-07-17.md，經數輪對焦後動手做 P0+P2。
+
+本輪改動（皆已在無外網開發環境驗證）：
+1) 前端 public/taiwan-exhibition-map.html（opus）
+   - 移除 viewport 的 maximum-scale=1.0（手機可放大，無障礙修正；台灣範圍由 Leaflet setMaxBounds 控制，不受影響）。
+   - 新增 Open Graph / Twitter Card / meta description / canonical / theme-color / robots。
+     og:image 留占位（待設計 1200x630）；og:url 與 canonical 為部署前占位，正式上線後需改實際無參數網址。
+2) GitHub Actions（sonnet）.github/workflows/
+   - ci.yml：push/PR 時 py_compile 全 backend + 驗證 venues.json 結構。
+   - check-sources.yml：手動觸發，測雲端能否連到各場館網址（含花蓮文創 nat.gov.tw、圓山花博 .taipei）。
+   - daily-update.yml：每日排程跑 update_all.py，用 peter-evans/create-pull-request 開 PR（不直接 push main），對應雲端審流程。
+3) 資料治理（fable）
+   - Excel→JSON 遷移：新增 backend/export_excel_to_json.py，產 data/manual/acg_events.json（xlsx 忠實鏡像，127列×17欄，帶 _links）。
+     修改 import_acg_excel.py 為「acg_events.json 優先、否則退回 xlsx」（load_sheet()），解析/輸出邏輯零改動。
+     等值性經 opus 獨立複驗：JSON 路徑 vs xlsx 路徑產出的 manual_extra.json 逐位元組相同。
+   - 審核決策持久層：新增 data/manual/review_decisions.json（rejected/approved），
+     refresh_venues.py 新增 stable_event_key()/load_rejected_keys()/filter_rejected_events()，輸出前依 rejected 過濾。
+     空名單為 no-op；backend/_test_review_decisions.py 單元測試全過。
+   - paths.py 註冊 acg_events.json / review_decisions.json。
+
+決策：手動層編輯入口改為 data/manual/acg_events.json（使用者指示「換成 json」）；xlsx 退為備份，勿再直接編輯。
+      未改 update_all.py（雙來源同步方向互斥，見協作指南第五節），保持可回退（刪 acg_events.json 即回舊行為）。
+
+待辦（需有外網環境：CI 或本機 Mac）：KV 圖在地化、MapLibre 離線打包、正式部署後回填 og:url/canonical/og:image。
+
+協作文件：新增 docs/協作指南_自動化與審核.md（每日 PR 怎麼審、刪活動記哪、手動內容走哪條 PR、模型分工慣例）。

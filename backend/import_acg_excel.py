@@ -15,11 +15,13 @@ import json
 import os
 import re
 import ast
+import sys
 
 from openpyxl import load_workbook
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 XLSX = P("全台ACG活動.xlsx")
+ACG_EVENTS_JSON = P("acg_events.json")
 OUT = P("manual_extra.json")
 TOWN_CENTROIDS = P("town_centroids.json")
 VENUES = P("venues.json")
@@ -92,6 +94,71 @@ def cell_link(cell):
         return cell.hyperlink.target.strip()
     value = str(cell.value or "").strip()
     return value if value.startswith(("http://", "https://")) else ""
+
+
+class _JsonHyperlink:
+    """模擬 openpyxl 的 cell.hyperlink（只需 target 屬性，供 cell_link 使用）。"""
+
+    def __init__(self, target):
+        self.target = target
+
+
+class _JsonCell:
+    """模擬 openpyxl 儲存格：只提供本檔會用到的 .value 與 .hyperlink。"""
+
+    __slots__ = ("value", "hyperlink")
+
+    def __init__(self, value, link=""):
+        self.value = value
+        self.hyperlink = _JsonHyperlink(link) if link else None
+
+
+class _JsonSheet:
+    """openpyxl worksheet 的最小替身，由 acg_events.json（export_excel_to_json.py 產出）
+    重建與 xlsx 完全相同的列結構：ws[1] 表頭、ws.max_row、ws.cell(row, col)。
+    第 1 列為表頭（即各列物件的鍵，"_links" 除外），資料列自第 2 列起。
+    """
+
+    def __init__(self, rows):
+        self._headers = []
+        for row in rows:
+            for key in row:
+                if key != "_links" and key not in self._headers:
+                    self._headers.append(key)
+        self._rows = rows
+        self.max_row = len(rows) + 1
+
+    def __getitem__(self, idx):
+        if idx != 1:
+            raise KeyError("_JsonSheet 只支援 ws[1]（表頭列）")
+        return [_JsonCell(h) for h in self._headers]
+
+    def cell(self, row, col):
+        header = self._headers[col - 1]
+        record = self._rows[row - 2]
+        links = record.get("_links") or {}
+        return _JsonCell(record.get(header), links.get(header, ""))
+
+
+def load_sheet():
+    """優先讀 acg_events.json（純文字、diff 友善）；不存在或格式非預期則退回讀 xlsx。
+
+    解析與輸出邏輯完全不變：JSON 只是把 xlsx 的列（含超連結目標）原樣重建成
+    同介面的 sheet，後續 main() 走同一套程式。
+    """
+    if os.path.exists(ACG_EVENTS_JSON):
+        try:
+            rows = json.load(open(ACG_EVENTS_JSON, encoding="utf-8"))
+        except Exception as err:
+            print(f"acg_events.json 讀取失敗（{err}），退回讀 xlsx", file=sys.stderr)
+            rows = None
+        if isinstance(rows, list) and all(isinstance(r, dict) for r in rows):
+            print(f"讀取來源: acg_events.json（{len(rows)} 列）", file=sys.stderr)
+            return _JsonSheet(rows)
+        if rows is not None:
+            print("acg_events.json 格式非預期（應為物件陣列），退回讀 xlsx", file=sys.stderr)
+    wb = load_workbook(XLSX, data_only=True)
+    return wb.active
 
 
 def parse_location(value):
@@ -318,8 +385,7 @@ def locate(venue, addr, cent, citycent, known):
 
 
 def main():
-    wb = load_workbook(XLSX, data_only=True)
-    ws = wb.active
+    ws = load_sheet()
     headers = [str(c.value or "").strip() for c in ws[1]]
     idx = {h: i + 1 for i, h in enumerate(headers)}
 

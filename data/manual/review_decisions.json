@@ -1,0 +1,5 @@
+{
+ "_readme": "審核決策持久層：rejected 內的活動不會出現在 venues.json（refresh_venues.py 輸出前過濾）。key 為穩定鍵 = 場館名|正規化標題|開始日(YYYY-MM-DD)，由 backend/refresh_venues.py 的 stable_event_key() 產生；title/venue/reason/date 僅供人閱讀。範例格式見 data/manual/README.md。",
+ "rejected": [],
+ "approved": []
+}
