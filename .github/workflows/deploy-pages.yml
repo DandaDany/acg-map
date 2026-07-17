@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+# 把 public/ 目錄部署為 GitHub Pages 網站根目錄。
+# 啟用方式（一次性）：GitHub → Settings → Pages → Build and deployment → Source 選「GitHub Actions」。
+# 之後每次 main 分支的 public/ 有變動（含每日自動更新 PR 合併後）就自動重新部署。
+# 站台網址預設為 https://<owner>.github.io/<repo>/（本專案即 https://dandadany.github.io/acg-map/）。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時只跑一個部署，且不取消進行中的，以免中斷已開始的發佈
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload public/ as Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
