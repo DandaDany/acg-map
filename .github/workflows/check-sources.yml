@@ -1,0 +1,47 @@
+name: Check Sources Connectivity
+
+# 手動觸發：用來實測 GitHub Actions 雲端機器（ubuntu-latest runner）
+# 能不能連到爬蟲會打的各個場館網站，特別是兩個政府網域
+# (hualien1913.nat.gov.tw / expopark.taipei)。
+# 這是每日排程 daily-update.yml 上雲之前的前置探測工具，不影響其他 workflow。
+on:
+  workflow_dispatch: {}
+
+jobs:
+  check-connectivity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check connectivity to venue sources
+        run: |
+          echo "== 測試各場館來源網址連線狀況 =="
+          echo "(200/3xx = 連得到；000/403/timeout 等 = 連不到，需保留在本機跑)"
+          echo ""
+
+          urls=(
+            "https://www.huashan1914.com/w/huashan1914/exhibition"
+            "https://www.songshanculturalpark.org/exhibition"
+            "https://pier2.org/exhibition/list/all/"
+            "https://www.g9cip.com/activity/exhibitions/"
+            "https://hualien1913.nat.gov.tw/"
+            "https://www.expopark.taipei/"
+            "https://www.caco.com.tw/"
+            "https://www.cayenne-cafe.com.tw/"
+          )
+
+          for url in "${urls[@]}"; do
+            echo "--- 測試: $url"
+            curl -sS -o /dev/null -w "HTTP狀態碼: %{http_code}  最終網址: %{url_effective}\n" \
+              --max-time 30 -L "$url" || echo "!! 連線失敗 (curl 錯誤，可能是 timeout / DNS / 拒絕連線)"
+            echo ""
+          done || true
+
+      - name: Print summary
+        if: always()
+        run: |
+          echo "== 摘要說明 =="
+          echo "200 / 3xx  => 該網址在 GitHub Actions 雲端機器連得到，適合放進每日自動排程 (daily-update.yml)。"
+          echo "000 / 403 / timeout / 其他錯誤 => 連不到 (可能被防火牆、WAF、地區限制或機器人阻擋)，"
+          echo "  這類來源（尤其兩個政府網域 hualien1913.nat.gov.tw、expopark.taipei）建議先保留在本機執行，"
+          echo "  或在 daily-update.yml 中排除，待之後研究替代方案（例如改用其他 IP、代理或人工更新）。"
+          echo ""
+          echo "請對照上面每一段的實際 HTTP 狀態碼判斷，本步驟本身一律視為成功（僅供觀察用）。"

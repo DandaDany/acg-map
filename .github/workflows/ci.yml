@@ -1,0 +1,91 @@
+name: CI
+
+# 針對所有分支的 push 與 pull_request 都會觸發，
+# 目的是在合併前抓出 backend 語法錯誤與 public/venues.json 結構壞掉的問題。
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install openpyxl
+
+      - name: Compile-check all backend/*.py files
+        run: |
+          set -e
+          echo "== py_compile: backend/*.py =="
+          status=0
+          for f in backend/*.py; do
+            echo "--- compiling: $f"
+            python -m py_compile "$f" || status=1
+          done
+          if [ "$status" -ne 0 ]; then
+            echo "!! 有 backend/*.py 檔案編譯失敗，請修正語法錯誤。"
+            exit 1
+          fi
+          echo "== 全部 backend/*.py 編譯通過 =="
+
+      - name: Validate public/venues.json structure
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          import sys
+
+          path = "public/venues.json"
+
+          print(f"== 驗證 {path} ==")
+
+          try:
+              with open(path, "r", encoding="utf-8") as f:
+                  data = json.load(f)
+          except Exception as e:
+              print(f"!! 無法讀取或解析 JSON: {e}")
+              sys.exit(1)
+
+          errors = []
+
+          if "venues" not in data:
+              errors.append("頂層缺少 'venues' 欄位")
+          elif not isinstance(data["venues"], list):
+              errors.append("'venues' 不是 list")
+          else:
+              venues = data["venues"]
+              print(f"venues 筆數: {len(venues)}")
+              required_fields = ["name", "city", "la", "lo", "ex"]
+              for idx, venue in enumerate(venues):
+                  if not isinstance(venue, dict):
+                      errors.append(f"venues[{idx}] 不是物件 (object)")
+                      continue
+                  for field in required_fields:
+                      if field not in venue:
+                          errors.append(
+                              f"venues[{idx}] (name={venue.get('name', '?')!r}) 缺少必要欄位 '{field}'"
+                          )
+                  if "ex" in venue and not isinstance(venue["ex"], list):
+                      errors.append(
+                          f"venues[{idx}] (name={venue.get('name', '?')!r}) 的 'ex' 欄位不是 list"
+                      )
+
+          if errors:
+              print("!! 驗證失敗，發現以下問題:")
+              for e in errors:
+                  print(f"  - {e}")
+              sys.exit(1)
+
+          print("== public/venues.json 結構驗證通過 ==")
+          PYEOF
