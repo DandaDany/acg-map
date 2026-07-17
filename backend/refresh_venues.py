@@ -366,6 +366,69 @@ def enrich_links(urls):
         json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
     return cache
 
+# ---- 審核決策持久層（data/manual/review_decisions.json）----
+# 每日自動更新開 PR 供使用者審核；使用者「刪掉」的活動記在 rejected 名單，
+# 之後每次輸出 venues.json 前都以穩定鍵過濾，避免同一活動下次又冒出來。
+# 穩定鍵 = 場館名 + 正規化後活動標題 + 開始日（YYYY-MM-DD），以 "|" 串接。
+
+_KEY_PUNCT = ("!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+              "！＂＃＄％＆＇（）＊＋，－．／：；＜＝＞？＠［＼］＾＿｀｛｜｝～"
+              "。、；：？！…—–─·・「」『』《》〈〉【】〔〕“”‘’〝〟﹏～　 ")
+
+
+def _norm_key_text(text):
+    """穩定鍵用正規化：strip、全形空白→半形並壓縮、去除前後標點、臺→台。"""
+    text = norm(str(text or ""))
+    text = text.replace("　", " ")
+    text = re.sub(r"\s+", " ", text).strip()
+    return text.strip(_KEY_PUNCT)
+
+
+def stable_event_key(venue_name, title, start):
+    """產生活動穩定鍵：場館名|正規化標題|開始日（日期統一為 YYYY-MM-DD）。"""
+    date = str(start or "").strip().replace("/", "-")
+    return f"{_norm_key_text(venue_name)}|{_norm_key_text(title)}|{date}"
+
+
+def load_rejected_keys():
+    """讀 review_decisions.json 的 rejected 名單，回傳穩定鍵集合；檔案缺失/壞掉時回空集合（不擋管線）。"""
+    path = P("review_decisions.json")
+    if not os.path.exists(path):
+        return set()
+    try:
+        data = json.load(open(path, encoding="utf-8"))
+    except Exception as err:
+        log("review_decisions.json 讀取失敗（略過過濾）:", err)
+        return set()
+    keys = set()
+    rejected = data.get("rejected") if isinstance(data, dict) else None
+    for item in rejected or []:
+        if isinstance(item, dict) and item.get("key"):
+            keys.add(str(item["key"]).strip())
+    return keys
+
+
+def filter_rejected_events(venues, rejected_keys):
+    """輸出前過濾：穩定鍵在 rejected 名單的活動不輸出；ex 被清空的場館一併移除。
+
+    不改任何既有欄位，只縮減 ex 清單（additive、可回退：清空 rejected 即完全還原）。
+    """
+    if not rejected_keys:
+        return venues
+    removed = 0
+    for v in venues:
+        kept = []
+        for e in v.get("ex", []):
+            if stable_event_key(v.get("name", ""), e.get("t", ""), e.get("s", "")) in rejected_keys:
+                removed += 1
+            else:
+                kept.append(e)
+        v["ex"] = kept
+    out = [v for v in venues if v.get("ex")]
+    log("審核決策過濾: 依 rejected 名單移除", removed, "場活動｜移除空場館", len(venues) - len(out), "個")
+    return out
+
+
 def main():
     from collections import defaultdict, Counter
     cent = {tuple(k.split("|")): tuple(v) for k, v in
@@ -1001,6 +1064,10 @@ def main():
         return artemperor_logos.get(name, fb_logos.get(name, ""))
     for v in venues:
         v['logo'] = venue_logo(v['name'])
+
+    # 審核決策持久層：使用者於 PR 審核中拒絕（刪掉）的活動，依穩定鍵於輸出前過濾，
+    # 確保下次自動更新不會再冒出來。名單為空或檔案不存在時完全不影響輸出。
+    venues = filter_rejected_events(venues, load_rejected_keys())
 
     venues.sort(key=lambda v: -len(v['ex']))
     out = {'updated': TODAY, 'source': '文化部開放資料 藝文活動-展覽 + 編輯整理重點館/常設層', 'venues': venues}

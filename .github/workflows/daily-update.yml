@@ -1,0 +1,69 @@
+# 每日自動更新 workflow
+#
+# 前提：GitHub Actions 雲端機器要連得到爬蟲會打的場館網址，才能讓
+# backend/update_all.py 順利跑完整條資料管線。請先手動觸發
+# `.github/workflows/check-sources.yml` 確認連線狀況：
+#   - 若 hualien1913.nat.gov.tw 或 www.expopark.taipei 等政府網域連不到，
+#     之後可以在 backend 端排除這些來源改由本機補跑，
+#     或是修改本檔案的執行步驟（例如改成只跑部分來源）。
+#
+# 本 workflow 不會直接 push 到 main，而是用 peter-evans/create-pull-request
+# 開一個 PR，讓人工審核新增/消失的活動之後再合併。
+name: Daily Update
+
+on:
+  schedule:
+    # UTC 00:30 ≈ 台灣時間 (UTC+8) 08:30
+    - cron: '30 0 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-and-open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install openpyxl playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Run data pipeline (backend/update_all.py)
+        run: python3 backend/update_all.py
+
+      - name: Get current date for PR title
+        id: date
+        run: echo "today=$(date '+%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Create Pull Request with updated data
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: '每日自動更新活動資料 (${{ steps.date.outputs.today }})'
+          branch: bot/auto-update
+          branch-suffix: timestamp
+          base: main
+          title: '每日自動更新 ${{ steps.date.outputs.today }}'
+          body: |
+            本 PR 由每日排程自動產生，請審核新增/消失的活動後合併。
+
+            - 若有被你手動刪除的活動，請記錄到 `data/manual/review_decisions.json`，
+              以免下次排程再次把它加回來。
+            - 主要變動內容：`public/venues.json`、`public/taiwan-exhibition-map.html`
+              （內嵌備援資料）、`data/` 底下的快取檔案等。
+          labels: |
+            auto-update
+          add-paths: |
+            public/venues.json
+            public/taiwan-exhibition-map.html
+            data/**

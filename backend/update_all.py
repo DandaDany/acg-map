@@ -49,6 +49,7 @@ run("collect_fb_logos.py") # 讀最新版 venues.json 的 FB 連結 → logos/fa
 run("geocode_venues.py")   # 讀最新版 venues.json；完整地址/高可信 POI → geocode 快取
 run("collect_event_kv.py", "--browser-fallback")  # 讀最新版 venues.json；缺 KV 且有活動連結者 → event_kv_cache.json
 run("refresh_venues.py")   # 第二輪：套用 FB logo、geocode、KV 快取後輸出最終版
+run("download_event_kv.py") # 自存會過期的 IG/FB CDN 主視覺到 public/kv/ 並清理過期活動的孤兒圖
 run("build_logo_thumbs.py") # 依最終 logo 清單產生小圖 → logos/_thumbs/，前端 marker 載入更快
 
 def sync_embed():
