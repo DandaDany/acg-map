@@ -1099,5 +1099,13 @@
   "display_name": "高雄市前金區大同二路23號, 801008",
   "type": "PointAddress",
   "score": 100
+ },
+ "台北市中正區八德路一段1號": {
+  "la": 25.0437055,
+  "lo": 121.528695,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區梅花里八德路一段1號, 10058",
+  "type": "PointAddress",
+  "score": 100
  }
 }

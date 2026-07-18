@@ -1544,5 +1544,13 @@
   "display_name": "高雄市前金區大同二路23號, 801008",
   "type": "PointAddress",
   "addr_key": "高雄市前金區大同二路23號1樓"
+ },
+ "華山1914文創園區 東2館四連棟": {
+  "la": 25.0437055,
+  "lo": 121.528695,
+  "source": "address_geocode",
+  "display_name": "台北市中正區梅花里八德路一段1號, 10058",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區八德路一段1號"
  }
 }
