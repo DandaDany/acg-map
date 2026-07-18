@@ -35,7 +35,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openpyxl playwright
+          pip install -r backend/requirements.txt
           python -m playwright install --with-deps chromium
 
       - name: Run data pipeline (backend/update_all.py)
@@ -64,6 +64,5 @@ jobs:
           labels: |
             auto-update
           add-paths: |
-            public/venues.json
-            public/taiwan-exhibition-map.html
+            public/**
             data/**

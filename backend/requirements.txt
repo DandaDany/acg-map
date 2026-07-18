@@ -1,0 +1,6 @@
+# 後台資料管線（update_all.py 及其呼叫的 collect_*/refresh/geocode/build_logo_thumbs）
+# 執行所需的第三方套件。GitHub Actions 與本機皆用此檔安裝，避免漏裝。
+# 掃描來源：backend/*.py 的 import（stdlib 與本地模組除外）。
+Pillow      # collect_fb_logos.py / build_logo_thumbs.py 影像處理（from PIL import Image）
+openpyxl    # import_acg_excel.py / export_excel_to_json.py 讀寫 Excel
+playwright  # collect_venues.py 等以無頭 Chromium 爬各館官網
