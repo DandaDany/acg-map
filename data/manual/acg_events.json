@@ -2656,5 +2656,115 @@
   "_links": {
    "活動連結 / Activity link": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/"
   }
+ },
+ {
+  "KV": "https://storage.googleapis.com/hhg-images/news/16/1784279096.jpg",
+  "類型 / Category": null,
+  "活動類別 / Activity Category": "活動/Event",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-11 00:00:00",
+  "結束日期 / End Date": "2026-09-13 00:00:00",
+  "IP": "NIJISANJI",
+  "活動名稱 / Activity Name": "NIJISANJI × 樂天桃猿「NIJISANJI 野球日」官方聯名企劃",
+  "地點 / Location": "樂天桃園棒球場（桃園市中壢區領航北路一段1號，樂天桃猿主場；亦稱桃園國際棒球場）",
+  "主辦方 / Organizer": "樂天桃猿、NIJISANJI（ANYCOLOR）、CyberAgent",
+  "授權單位 / Authorized unit (Licensor)": "官方",
+  "活動連結 / Activity link": "https://monkeys.rakuten.com.tw/news_detail/927",
+  "備註 / NOTE": "資料來源：樂天桃猿官方news頁（Daniel提供，取代原Slack IG連結）。KV(rakuten monkeys官方storage)已用Read肉眼確認含「NIJISANJI 野球日」「9.11-9.13」及「©Rakuten Monkeys｜©ANYCOLOR, Inc.」版權標示。活動性質為球場官方聯名日，不完全符合展覽/快閃店/主題餐廳/體驗活動四類，AI暫歸「活動/Event」，可由Daniel調整。官方news頁curl回000(疑anti-bot擋)，未獨立驗證，連結由Daniel提供。",
+  "IP_std": "NIJISANJI",
+  "Licensor_std": "官方",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://monkeys.rakuten.com.tw/news_detail/927"
+  }
+ },
+ {
+  "KV": "https://p2.bahamut.com.tw/B/2KU/76/c42f612014824e36b5cb31018a1z6mw5.JPG",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "展覽/Exhibition",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-14 00:00:00",
+  "結束日期 / End Date": "2026-10-04 00:00:00",
+  "IP": "新世紀福音戰士（EVANGELION）",
+  "活動名稱 / Activity Name": "《新世紀福音戰士》展：線（Lines of EVANGELION）",
+  "地點 / Location": "新光三越台北信義新天地 A9 9F 宴會展演館（台北市信義區松壽路9號）",
+  "主辦方 / Organizer": "popacg（波波動漫）",
+  "授權單位 / Authorized unit (Licensor)": "官方",
+  "活動連結 / Activity link": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
+  "備註 / NOTE": "資料來源：Daniel提供之Klook售票頁與巴哈姆特新聞圖KV。KV已用Read肉眼確認含「Lines of EVANGELION／新世紀福音戰士展：線」「2026 08.14-10.04」「新光三越台北信義新天地 A9 9F 宴會展演館」「©khara」。連結為Klook售票頁(curl回403疑anti-bot擋，Daniel提供)，原Slack為IG連結。",
+  "IP_std": "新世紀福音戰士",
+  "Licensor_std": "官方",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/"
+  }
+ },
+ {
+  "KV": "https://www.mofan.co.com/upload/news_b/ALL_news_26G14_g2uycgadbc.png",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-17 00:00:00",
+  "結束日期 / End Date": "2026-09-13 00:00:00",
+  "IP": "頭文字D（Initial D）",
+  "活動名稱 / Activity Name": "頭文字D（Initial D）快閃店（第二站）",
+  "地點 / Location": "高雄車站一番街 北站 B2（高雄市三民區，高雄捷運高雄車站鄰3、4號出口；門牌以現場為準）",
+  "主辦方 / Organizer": "TRENDIC、INCUBASE Studio",
+  "授權單位 / Authorized unit (Licensor)": "講談社（KODANSHA，Licensed through Medialink）",
+  "活動連結 / Activity link": "https://www.mofan.co.com/news-detail/133/",
+  "備註 / NOTE": "資料來源：摸番(mofan)官方活動頁(Daniel提供)。KV已用Read肉眼確認含「頭文字D 快閃店」「高雄駅一番街·北站｜高雄捷運高雄車站B2(鄰3、4號出口)」「2026.07.17-09.13」「©Shuichi Shigeno/KODANSHA」。主辦TRENDIC/INCUBASE Studio，授權講談社(透過Medialink)。原Slack為IG連結。",
+  "IP_std": "頭文字D",
+  "Licensor_std": "官方",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.mofan.co.com/news-detail/133/"
+  }
+ },
+ {
+  "KV": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-17 00:00:00",
+  "結束日期 / End Date": "2026-08-23 00:00:00",
+  "IP": "家庭教師HITMAN REBORN!",
+  "活動名稱 / Activity Name": "《家庭教師HITMAN REBORN!》動畫20週年快閃店（高雄場）",
+  "地點 / Location": "夢時代購物中心 8F 時代會館（高雄市前鎮區中華五路789號；近高雄輕軌夢時代站、捷運凱旋站）",
+  "主辦方 / Organizer": "木棉花國際",
+  "授權單位 / Authorized unit (Licensor)": "木棉花",
+  "活動連結 / Activity link": "https://universe.oneone.com.tw/posts/6309",
+  "備註 / NOTE": "資料來源：oneone宇宙新聞(含官方主視覺)。官方主視覺KV(主辦:木棉花國際)已用Read肉眼確認含「家庭教師HITMAN REBORN! 動畫20周年快閃店」「2026年7月17日→8月23日」「高雄夢時代購物中心 8F 時代會館」「免費入場」「©AKIRA AMANO/SHUEISHA」。⚠️原Slack稱「主題展」，惟官方主視覺與各媒體(oneone/ETtoday/SouNova)一致稱「快閃店」，已據此修正活動類別。免費入場。原Slack為IG連結。",
+  "IP_std": "家庭教師",
+  "Licensor_std": "木棉花",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://universe.oneone.com.tw/posts/6309"
+  }
+ },
+ {
+  "KV": null,
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-31 00:00:00",
+  "結束日期 / End Date": "2026-08-30 00:00:00",
+  "IP": "Monchhichi（蒙奇奇）",
+  "活動名稱 / Activity Name": "Monchhichi Summer Vibe in Taiwan 2026 台灣快閃店",
+  "地點 / Location": "羊空間 YOUNG SPACE（台北市中山區，近中山捷運站；門牌需人工確認）",
+  "主辦方 / Organizer": "ipnjoy",
+  "授權單位 / Authorized unit (Licensor)": "官方",
+  "活動連結 / Activity link": "https://woman.udn.com/woman/story/123164/9629395",
+  "備註 / NOTE": "資料來源：udn女子漾／NOWnews新聞。期間2026/07/31~08/30、地點台北中山站羊空間YOUNG SPACE(兩來源一致)。⚠️門牌需人工確認：Slack作「中山北路二段16巷1號」，另有他源作「中山北路二段18號1F」，未定。主辦ipnjoy。⚠️KV暫留空：未找到含名稱+日期+地點的官方正式主視覺海報，現有僅新聞編輯實拍/官方產品圖，不符KV採用標準。Monchhichi為Sekiguchi角色IP，ACG歸類邊緣但屬話題性角色快閃(Daniel核可納入)。原Slack為IG連結。",
+  "IP_std": "Monchhichi",
+  "Licensor_std": "官方",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://woman.udn.com/woman/story/123164/9629395"
+  }
  }
 ]
