@@ -89,6 +89,24 @@
    }
   ]
  },
+ "animate Gratte 西門站": {
+  "city": "台北市",
+  "lat": 25.0179,
+  "lng": 121.52191,
+  "loc": "區級",
+  "addr": "台北市中正區西門地下街，近西門捷運站6號/1號出口；門牌依第三方報導為寶慶路32-1號B1，未經animate官方管道二次確認",
+  "url": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
+  "ex": [
+   {
+    "t": ".Bloom10周年＆メロキス8周年記念 Gratte",
+    "s": "2026/07/17",
+    "e": "2026/08/16",
+    "l": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
+    "img": "https://www.facebook.com/photo/?fbid=122141725047055906&set=pcb.122141725071055906",
+    "cat2": "快閃店/Pop-up Store"
+   }
+  ]
+ },
  "object taipei store": {
   "city": "台北市",
   "lat": 25.0566681,
@@ -229,6 +247,24 @@
     "e": "2026/07/26",
     "l": "https://www.instagram.com/p/DakWfJNDMk8",
     "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
+    "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
+ "台中驛鐵道文化園區 鐵鹿大街A2": {
+  "city": "台中市",
+  "lat": 24.14526,
+  "lng": 120.6911,
+  "loc": "區級",
+  "addr": "台中市中區台灣大道一段1號",
+  "url": "https://www.tcrp.com.tw/activity/221",
+  "ex": [
+   {
+    "t": "2026 Taichung 萌魂動漫祭",
+    "s": "2026/07/04",
+    "e": "2026/08/03",
+    "l": "https://www.tcrp.com.tw/activity/221",
+    "img": "https://www.tcrp.com.tw/storage/upload/activity/image/2026-07-10/aXWQfWYvBuDuguVtyi7m72aZxQH72ARYpGShHAbW.jpeg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -642,6 +678,24 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=305017",
     "img": "",
     "cat2": "展覽/Exhibition"
+   }
+  ]
+ },
+ "華山1914文創園區 西2館（華山紅磚六合院）": {
+  "city": "台北市",
+  "lat": 25.02539,
+  "lng": 121.50814,
+  "loc": "區級",
+  "addr": "台北市中正區杭州北路3-1號",
+  "url": "https://www.huashan1914.com/w/huashan1914/exhibition_26071311381949168",
+  "ex": [
+   {
+    "t": "TOHO animation STORE《我的英雄學院》快閃店",
+    "s": "2026/07/16",
+    "e": "2026/07/26",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26071311381949168",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/電子宣傳_1920x1080.jpg",
+    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },

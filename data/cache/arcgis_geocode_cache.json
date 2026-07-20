@@ -6795,5 +6795,12 @@
     }
    }
   ]
+ },
+ "animate Gratte 西門站 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
  }
 }
