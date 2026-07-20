@@ -17,6 +17,46 @@ def test_is_expiring():
     print("test_is_expiring: PASS")
 
 
+def test_is_remote():
+    assert m.is_remote("https://media.huashan1914.com/a.jpg") is True   # 穩定官網也算遠端
+    assert m.is_remote("http://x.com/a.jpg") is True
+    assert m.is_remote("https://scontent.cdninstagram.com/a.jpg?oe=1") is True
+    assert m.is_remote("kv/deadbeef.jpg") is False                       # 已本地化
+    assert m.is_remote("") is False
+    assert m.is_remote(None) is False
+    print("test_is_remote: PASS")
+
+
+def test_localize_all_mode():
+    """--all 模式（predicate=is_remote）：連穩定官網圖也一併自存、改站內路徑。"""
+    d = tempfile.mkdtemp()
+    try:
+        venues = [
+            {"name": "駁二藝術特區", "ex": [
+                {"t": "IG活動A", "s": "2026-08-01", "img": "https://scontent.cdninstagram.com/a.jpg?oe=1"},
+                {"t": "官網活動B", "s": "2026-08-02", "img": "https://www.g9cip.com/b.png"},
+                {"t": "已本地化C", "s": "2026-08-03", "img": "kv/deadbeef.jpg"},  # 不應重抓
+            ]},
+        ]
+
+        def fake_dl(url, dest):
+            with open(dest, "wb") as f:
+                f.write(b"x" * 1024)
+
+        rewritten, downloaded, failed = m.localize(
+            venues, d, downloader=fake_dl, log=lambda *a, **k: None, predicate=m.is_remote
+        )
+        # 兩張遠端圖都被自存並改寫；已本地化的那張不動
+        assert (rewritten, downloaded, failed) == (2, 2, 0), (rewritten, downloaded, failed)
+        assert venues[0]["ex"][0]["img"].startswith("kv/")
+        assert venues[0]["ex"][1]["img"].startswith("kv/")   # 官網圖也本地化了（預設模式不會）
+        assert venues[0]["ex"][2]["img"] == "kv/deadbeef.jpg"  # 原樣保留
+        assert len(os.listdir(d)) == 2
+        print("test_localize_all_mode: PASS")
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_localize_and_gc():
     d = tempfile.mkdtemp()
     try:
@@ -69,5 +109,7 @@ def test_localize_and_gc():
 
 if __name__ == "__main__":
     test_is_expiring()
+    test_is_remote()
     test_localize_and_gc()
+    test_localize_all_mode()
     print("ALL TESTS PASS")
