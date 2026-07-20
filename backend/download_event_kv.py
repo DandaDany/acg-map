@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自存會過期的活動主視覺（KV）並清理過期活動的圖檔。
+自存活動主視覺（KV）到 public/kv/，改引用站內路徑，並清理過期活動的圖檔。
 
 背景：
-- 多數活動 KV 來自場館官網（穩定公開網址），維持遠端引用即可，不處理。
-- 少數 KV 來自 Instagram / Facebook CDN（scontent*.cdninstagram.com、*.fbcdn.net，
-  或網址帶 oe= 到期參數）。這種網址是臨時簽章網址，數天～數週後會失效導致破圖，
-  不論網站部署在哪都一樣。→ 這類必須「自存一份」到 public/kv/，改引用站內路徑。
+- 每張活動 KV 原本都是「遠端網址直接引用」。這有兩種失效風險：
+  a) 會過期的臨時簽章網址（Instagram / Facebook CDN：scontent*.cdninstagram.com、
+     *.fbcdn.net，或網址帶 oe= 到期參數），數天～數週後必失效導致破圖。
+  b) 一般官網圖雖較穩定，仍可能被站方改版、搬移、擋外連（hotlink）而破圖。
+- 因此支援兩種模式（見 --all）：
+  * 預設：只自存 (a) 會過期的那類（最小必要，省儲存）。
+  * --all：把所有遠端 KV 全部自存到 public/kv/，一律改引用站內路徑
+           （「先存起來，再從存檔資料夾引用」的完整自存模式，不再依賴外站）。
+    update_all.py 走的就是 --all。
 
 機制：
-1) 讀 public/venues.json，對「會過期主機」的 e.img 下載到 public/kv/<穩定鍵hash>.<ext>，
-   並把 e.img 改寫成 'kv/<檔名>'（站內相對路徑，前端 safeUrl 會正確解析）。
+1) 讀 public/venues.json，對「符合本次模式」的 e.img 下載到
+   public/kv/<穩定鍵hash>.<ext>，並把 e.img 改寫成 'kv/<檔名>'（站內相對路徑，
+   前端 safeUrl 會正確解析）。
    下載失敗則保留原網址（不讓管線中斷、寧可暫時破圖也不寫壞資料）。
    已存在同名本地檔則跳過下載、只改寫路徑（可重複執行、冪等）。
 2) 清理（使用者需求「活動過了就刪掉」）：venues.json 已由 refresh_venues.py 自動移除
@@ -21,9 +27,11 @@
 在 update_all.py 中的位置：最後一輪 refresh 之後、sync_embed 之前執行，
 讓 HTML 內嵌備援也拿到站內路徑。
 
-用法：python3 backend/download_event_kv.py
+用法：
+  python3 backend/download_event_kv.py         # 只自存會過期的 KV
+  python3 backend/download_event_kv.py --all    # 自存所有遠端 KV（完整自存模式）
 """
-import json, os, sys, ssl, hashlib, urllib.request
+import argparse, json, os, sys, ssl, hashlib, urllib.request
 from paths import path as P
 from refresh_venues import stable_event_key  # 用同一把穩定鍵，檔名跨執行穩定
 
@@ -43,10 +51,15 @@ def kv_dir():
     return os.path.join(public_dir(), KV_DIRNAME)
 
 
+def is_remote(url):
+    """是否為仍指向外站的遠端網址（尚未本地化）。站內相對路徑/空值回傳 False。"""
+    return str(url or "").startswith("http")
+
+
 def is_expiring(url):
     """判斷此圖網址是否為會過期的臨時簽章網址（IG/FB CDN 或帶 oe= 到期參數）。"""
     u = str(url or "")
-    if not u.startswith("http"):
+    if not is_remote(u):
         return False  # 已是站內相對路徑或空值
     if "oe=" in u:
         return True
@@ -84,14 +97,19 @@ def _default_downloader(url, dest):
     os.replace(tmp, dest)
 
 
-def localize(venues, dirpath, downloader=_default_downloader, log=print):
-    """把會過期的 e.img 下載到 dirpath 並改寫為站內路徑。回傳 (改寫數, 下載數, 失敗數)。"""
+def localize(venues, dirpath, downloader=_default_downloader, log=print, predicate=is_expiring):
+    """把符合 predicate 的 e.img 下載到 dirpath 並改寫為站內路徑。
+
+    predicate(url) 決定哪些圖要自存：預設 is_expiring（只會過期的），
+    傳 is_remote 則自存所有遠端圖（完整自存模式）。
+    回傳 (改寫數, 下載數, 失敗數)。
+    """
     os.makedirs(dirpath, exist_ok=True)
     rewritten = downloaded = failed = 0
     for v in venues:
         for e in v.get("ex", []):
             url = e.get("img")
-            if not is_expiring(url):
+            if not predicate(url):
                 continue
             fname = local_name(v.get("name", ""), e, url)
             dest = os.path.join(dirpath, fname)
@@ -134,14 +152,24 @@ def gc_orphans(venues, dirpath, log=print):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="自存活動主視覺（KV）到 public/kv/ 並清理過期孤兒圖。")
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="自存所有遠端 KV（不只會過期的），一律改引用 public/kv/（完整自存模式）",
+    )
+    args = parser.parse_args()
+
+    predicate = is_remote if args.all else is_expiring
+    mode = "全部遠端" if args.all else "僅會過期"
     vpath = P("venues.json")
     data = json.load(open(vpath, encoding="utf-8"))
     venues = data.get("venues", [])
     dirpath = kv_dir()
-    rewritten, downloaded, failed = localize(venues, dirpath)
+    rewritten, downloaded, failed = localize(venues, dirpath, predicate=predicate)
     removed = gc_orphans(venues, dirpath)
     json.dump(data, open(vpath, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    print(f"KV 自存：改寫 {rewritten} 張（新下載 {downloaded}、失敗 {failed}）｜清理過期孤兒圖 {removed} 張")
+    print(f"KV 自存（{mode}）：改寫 {rewritten} 張（新下載 {downloaded}、失敗 {failed}）｜清理過期孤兒圖 {removed} 張")
 
 
 if __name__ == "__main__":
