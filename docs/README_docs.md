@@ -120,6 +120,24 @@
            下一步仍是Daniel要做的事（見上方「目前錯誤」①的路徑修正）。
 下一步：   （承上）①②③不變，另外Daniel下次若要驗證分類override有沒有生效，記得看
            event_overrides.json的「我適文創快閃-夏日降溫計畫」有沒有真的反映到venues.json的c欄。
+已完成：   【2026/07/20 Claude（Claude Code/web）：KV匯入改為完整自存模式】把活動主視覺（KV）從
+           「大多直接引用外站遠端網址」改為「所有遠端KV先自存到public/kv/再改引用站內路徑」，
+           不再依賴外站（避免站方改版/搬移/擋外連破圖）。改動：backend/download_event_kv.py新增
+           is_remote()＋localize()加predicate參數＋--all旗標；update_all.py管線改用--all；補離線
+           單元測試；docs/後台資料夾結構.md新增KV自存流程章節；docs/Agent交流工作日誌.txt追加一筆。
+           已合進main（PR#8程式碼＋PR#9文件）。✅已驗證：6項離線單元測試全過；用egress允許主機做過
+           真實下載→落地→改寫站內路徑→冪等重跑（下載0）；官網圖跑--all確認下載失敗保留原網址不寫壞。
+           ⚠️本沙箱網路擋活動圖床（403），無法在此整批下載真實活動圖，要等Mac端/正式CI跑update_all.py
+           時public/kv/才會實際擴充為全部活動的圖。
+目前錯誤： ⚠️（KV相關）本次未在真實活動圖床上完成整批自存驗證，僅機制驗證＋容錯驗證通過；正式環境
+           首次跑--all會整批下載約150+張圖並一起commit，repo會變大（不依賴外站的取捨，若要避免膨脹
+           可改成自存但不進git追蹤，需再討論）。
+下一步：   ①（沿用）B-SIDE LABEL POP UP STORE in Taiwan 分類矛盾（07/12排除ACG vs 07/13指示ACG）
+           仍待Daniel覆核。②（沿用）Daniel修好ops/兩支腳本DIR路徑（補.nosync）重載launchd排程，
+           修好後手動跑一次ops/_final_update.command確認完整流程；屆時KV自存也會首次在真實圖床上
+           整批生效，可順便抽查public/kv/是否確實擴充、地圖圖片正常。③其他agent注意：venues.json的
+           e.img現多為站內路徑kv/<hash>.<ext>，非外連網址，處理方式同logo（接網站根路徑）。
+不要改動： （沿用上方原有規定；另補）public/kv/是自動產物，別手動增刪（過期活動圖會被GC自動清除）。
 ```
 
 ---
