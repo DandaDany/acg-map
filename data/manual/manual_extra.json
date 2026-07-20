@@ -89,6 +89,32 @@
    }
   ]
  },
+ "animate Gratte 西門站": {
+  "city": "台北市",
+  "lat": 25.0179,
+  "lng": 121.52191,
+  "loc": "區級",
+  "addr": "台北市中正區西門地下街，近西門捷運站6號/1號出口；門牌依第三方報導為寶慶路32-1號B1，未經animate官方管道二次確認",
+  "url": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
+  "ex": [
+   {
+    "t": ".Bloom10周年＆メロキス8周年記念 Gratte",
+    "s": "2026/07/17",
+    "e": "2026/08/16",
+    "l": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
+    "img": "https://www.facebook.com/photo/?fbid=122141725047055906&set=pcb.122141725071055906",
+    "cat2": "快閃店/Pop-up Store"
+   },
+   {
+    "t": "《相反的你和我》雪人睡衣派對 FAIR in animate 活動紀念 Gratte",
+    "s": "2026/07/18",
+    "e": "2026/08/09",
+    "l": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/",
+    "img": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/750922523_27488611297473352_4729811146430164864_n.png?stp=dst-jpg_tt6&cstp=mx2048x1446&ctp=p960x960&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XfwenmqwL-8Q7kNvwHln8ko&_nc_oc=AdpP4LO9BsDKWO8S8xM7tigMTsOCpPlN7aP7CRUKa2_r1eK4StLMNHDRotaMtWPNlqI&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=I6MCHqiC7ZXlxEA8ow2hWg&_nc_ss=7b2a8&oh=00_AQB9vpdoeylyNrGgvsyjmTf_kHOZXV73PRGO8Sd0Yz-8uA&oe=6A635136",
+    "cat2": "主題餐廳/Theme Cafe"
+   }
+  ]
+ },
  "object taipei store": {
   "city": "台北市",
   "lat": 25.0566681,
@@ -229,6 +255,24 @@
     "e": "2026/07/26",
     "l": "https://www.instagram.com/p/DakWfJNDMk8",
     "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
+    "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
+ "台中驛鐵道文化園區 鐵鹿大街A2": {
+  "city": "台中市",
+  "lat": 24.14526,
+  "lng": 120.6911,
+  "loc": "區級",
+  "addr": "台中市中區台灣大道一段1號",
+  "url": "https://www.tcrp.com.tw/activity/221",
+  "ex": [
+   {
+    "t": "2026 Taichung 萌魂動漫祭",
+    "s": "2026/07/04",
+    "e": "2026/08/03",
+    "l": "https://www.tcrp.com.tw/activity/221",
+    "img": "https://www.tcrp.com.tw/storage/upload/activity/image/2026-07-10/aXWQfWYvBuDuguVtyi7m72aZxQH72ARYpGShHAbW.jpeg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -393,6 +437,24 @@
    }
   ]
  },
+ "夢時代購物中心 8F 時代會館": {
+  "city": "高雄市",
+  "lat": 22.57898,
+  "lng": 120.31382,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路789號；近高雄輕軌夢時代站、捷運凱旋站",
+  "url": "https://universe.oneone.com.tw/posts/6309",
+  "ex": [
+   {
+    "t": "《家庭教師HITMAN REBORN!》動畫20週年快閃店（高雄場）",
+    "s": "2026/07/17",
+    "e": "2026/08/23",
+    "l": "https://universe.oneone.com.tw/posts/6309",
+    "img": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
+    "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
  "夢時代購物中心Ｘ野獸國": {
   "city": "高雄市",
   "lat": 22.5953429,
@@ -462,6 +524,24 @@
     "l": "https://www.instagram.com/p/DazKEteDD38",
     "img": "",
     "cat2": "快閃店/Pop-up Store"
+   }
+  ]
+ },
+ "新光三越台北信義新天地 A9 9F 宴會展演館": {
+  "city": "台北市",
+  "lat": 25.02281,
+  "lng": 121.56272,
+  "loc": "區級",
+  "addr": "台北市信義區松壽路9號",
+  "url": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
+  "ex": [
+   {
+    "t": "《新世紀福音戰士》展：線（Lines of EVANGELION）",
+    "s": "2026/08/14",
+    "e": "2026/10/04",
+    "l": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
+    "img": "https://p2.bahamut.com.tw/B/2KU/76/c42f612014824e36b5cb31018a1z6mw5.JPG",
+    "cat2": "展覽/Exhibition"
    }
   ]
  },
@@ -609,6 +689,24 @@
    }
   ]
  },
+ "羊空間 YOUNG SPACE": {
+  "city": "台北市",
+  "lat": 25.06747,
+  "lng": 121.53132,
+  "loc": "區級",
+  "addr": "台北市中山區，近中山捷運站；門牌需人工確認",
+  "url": "https://woman.udn.com/woman/story/123164/9629395",
+  "ex": [
+   {
+    "t": "Monchhichi Summer Vibe in Taiwan 2026 台灣快閃店",
+    "s": "2026/07/31",
+    "e": "2026/08/30",
+    "l": "https://woman.udn.com/woman/story/123164/9629395",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
  "花蓮縣壽豐鄉鯉魚潭": {
   "city": "花蓮縣",
   "lat": 23.9370434,
@@ -642,6 +740,24 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=305017",
     "img": "",
     "cat2": "展覽/Exhibition"
+   }
+  ]
+ },
+ "華山1914文創園區 西2館（華山紅磚六合院）": {
+  "city": "台北市",
+  "lat": 25.02539,
+  "lng": 121.50814,
+  "loc": "區級",
+  "addr": "台北市中正區杭州北路3-1號",
+  "url": "https://www.huashan1914.com/w/huashan1914/exhibition_26071311381949168",
+  "ex": [
+   {
+    "t": "TOHO animation STORE《我的英雄學院》快閃店",
+    "s": "2026/07/16",
+    "e": "2026/07/26",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26071311381949168",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/電子宣傳_1920x1080.jpg",
+    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
@@ -840,6 +956,24 @@
     "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
     "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
     "cat2": "主題餐廳/Theme Cafe"
+   }
+  ]
+ },
+ "高雄車站一番街 北站 B2": {
+  "city": "高雄市",
+  "lat": 23.27494,
+  "lng": 120.69859,
+  "loc": "區級",
+  "addr": "高雄市三民區，高雄捷運高雄車站鄰3、4號出口；門牌以現場為準",
+  "url": "https://www.mofan.co.com/news-detail/133/",
+  "ex": [
+   {
+    "t": "頭文字D（Initial D）快閃店（第二站）",
+    "s": "2026/07/17",
+    "e": "2026/09/13",
+    "l": "https://www.mofan.co.com/news-detail/133/",
+    "img": "https://www.mofan.co.com/upload/news_b/ALL_news_26G14_g2uycgadbc.png",
+    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
