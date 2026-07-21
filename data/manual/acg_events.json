@@ -2788,5 +2788,49 @@
   "_links": {
    "活動連結 / Activity link": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/"
   }
+ },
+ {
+  "KV": null,
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-17 00:00:00",
+  "結束日期 / End Date": "2026-08-23 00:00:00",
+  "IP": "多動漫IP（Muse木棉花代理，含蠟筆小新、JOJO的奇妙冒險、暗殺教室、戀上換裝娃娃、86—不存在的戰區—、入間同學入魔了！、擅長逃跑的殿下、葬送的芙莉蓮 等17大動漫）",
+  "活動名稱 / Activity Name": "2026高雄翻轉動漫祭",
+  "地點 / Location": "夢時代購物中心 8F 時代會館（高雄市前鎮區中華五路789號；近高雄輕軌夢時代站、捷運凱旋站）",
+  "主辦方 / Organizer": "木棉花國際（Muse木棉花）× 統一夢時代",
+  "授權單位 / Authorized unit (Licensor)": "木棉花",
+  "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308179",
+  "備註 / NOTE": "資料來源：巴哈姆特GNN(sn=308179)、QooApp、Gamebase等媒體報導（2026/07/21查證）。免費入場，17大動漫合影區＋8款699元限定禮包。原Slack為IG貼文(instagram.com/p/DbADWelRKZU)，已改用巴哈GNN官方新聞連結。⚠️活動類別「快閃店」為AI依『免費入場＋商品販售＋合影展區、比照同場館同期木棉花活動』推算，可能屬『展覽』，請Daniel確認。⚠️多IP聯展，IP欄為彙整非單一授權。⚠️KV留空：Slack僅IG、尚無經Read確認之官方正式活動視覺，需人工補。",
+  "IP_std": "多IP",
+  "Licensor_std": "木棉花",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308179"
+  }
+ },
+ {
+  "KV": "https://cdn.sounova.com/upload/DP44qZL6j0x5w-gKR5Fng.webp",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-06 00:00:00",
+  "結束日期 / End Date": "2026-09-13 00:00:00",
+  "IP": "鏈鋸人",
+  "活動名稱 / Activity Name": "劇場版《鏈鋸人 蕾潔篇》快閃店",
+  "地點 / Location": "新光三越台北南西一館 9F 活動會館（台北市中山區南京西路12號；捷運中山站）",
+  "主辦方 / Organizer": "樂玩多 WAYTOFUN／Vision Toys",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認",
+  "活動連結 / Activity link": "https://sounova.com/anime/chainsaw-man-the-movie-reze-arc-pop-up",
+  "備註 / NOTE": "資料來源：SouNova少女星報導(2026/07/20，作者理查理)＋Vision Toys官方IG(instagram.com/p/Da-iAR6Dp4R)。日期8/6–9/13、地點新光三越南西一館9F活動會館(地址據新光三越官網skm.com.tw/branch/3/1103)。KV採Daniel指定圖(cdn.sounova.com/…DP44…webp)，已用Read確認含官方IP標題「劇場版 鏈鋸人 蕾潔篇」與官方版權「©2025 M/CSMP ©TF/S」，惟該圖為電影『COMING SOON』前導視覺、畫面本身未印出活動日期/地點，非活動專屬KV，建議日後換正式活動主視覺。⚠️片名官方作「鏈鋸人」(Slack原寫「鍊鋸人」已更正)。⚠️授權單位未於來源明確標示，標需人工確認。",
+  "IP_std": "鏈鋸人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://sounova.com/anime/chainsaw-man-the-movie-reze-arc-pop-up"
+  }
  }
 ]
