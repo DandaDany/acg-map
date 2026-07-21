@@ -6795,5 +6795,92 @@
     }
    }
   ]
+ },
+ "animate Gratte 西門站 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "台北市信義區松壽路9號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市信義區西村里松壽路9號, 11051",
+    "location": {
+     "x": 121.566662304833,
+     "y": 25.036081608867
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市信義區西村里松壽路9號, 11051",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.565662304833,
+     "ymin": 25.035081608867,
+     "xmax": 121.567662304833,
+     "ymax": 25.037081608867
+    }
+   }
+  ]
+ },
+ "羊空間 YOUNG SPACE 台北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": []
+ },
+ "高雄車站一番街 北站 B2 高雄市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄車站",
+    "location": {
+     "x": 120.301908,
+     "y": 22.638382
+    },
+    "score": 74.13,
+    "attributes": {
+     "Score": 74.13,
+     "Match_addr": "高雄車站",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.296908,
+     "ymin": 22.633382,
+     "xmax": 120.306908,
+     "ymax": 22.643382
+    }
+   },
+   {
+    "address": "高雄車站",
+    "location": {
+     "x": 120.30366,
+     "y": 22.63981
+    },
+    "score": 74.13,
+    "attributes": {
+     "Score": 74.13,
+     "Match_addr": "高雄車站",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 120.29866,
+     "ymin": 22.63481,
+     "xmax": 120.30866,
+     "ymax": 22.64481
+    }
+   }
+  ]
  }
 }
