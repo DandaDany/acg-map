@@ -2790,7 +2790,7 @@
   }
  },
  {
-  "KV": null,
+  "KV": "https://news.qoo-app.com/wp-content/uploads/2026/07/2026%E9%AB%98%E9%9B%84%E7%BF%BB%E8%BD%89%E5%8B%95%E6%BC%AB%E7%A5%AD%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA.jpg",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "快閃店/Pop Up Store",
   "年度 / Start Year": 2026,
@@ -2803,7 +2803,7 @@
   "主辦方 / Organizer": "木棉花國際（Muse木棉花）× 統一夢時代",
   "授權單位 / Authorized unit (Licensor)": "木棉花",
   "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308179",
-  "備註 / NOTE": "資料來源：巴哈姆特GNN(sn=308179)、QooApp、Gamebase等媒體報導（2026/07/21查證）。免費入場，17大動漫合影區＋8款699元限定禮包。原Slack為IG貼文(instagram.com/p/DbADWelRKZU)，已改用巴哈GNN官方新聞連結。⚠️活動類別「快閃店」為AI依『免費入場＋商品販售＋合影展區、比照同場館同期木棉花活動』推算，可能屬『展覽』，請Daniel確認。⚠️多IP聯展，IP欄為彙整非單一授權。⚠️KV留空：Slack僅IG、尚無經Read確認之官方正式活動視覺，需人工補。",
+  "備註 / NOTE": "資料來源：巴哈姆特GNN(sn=308179)、QooApp(post/440533，含官方提供原文)、Gamebase等媒體報導（2026/07/21查證）。免費入場，17大動漫合影區＋8款699元限定禮包。原Slack為IG貼文(instagram.com/p/DbADWelRKZU)，已改用巴哈GNN官方新聞連結。KV採官方活動主視覺(QooApp官方新聞圖，2026/07/21已用Read肉眼確認畫面含「2026翻轉動漫祭」「07.17→08.23」「夢時代8F時代會館」「免費入場」及官方版權©Hiromu Arakawa/SQUARE ENIX, Project TSUGAI、主辦單位MUSE木棉花)；此為遠端URL，將於daily-update經download_event_kv自存至public/kv。⚠️活動類別「快閃店」為AI依『免費入場＋商品販售＋合影展區、比照同場館同期木棉花活動』推算，可能屬『展覽』，請Daniel確認。⚠️多IP聯展，IP欄為彙整非單一授權。",
   "IP_std": "多IP",
   "Licensor_std": "木棉花",
   "月份": "2026-07-01 00:00:00",
