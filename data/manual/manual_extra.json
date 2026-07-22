@@ -261,9 +261,9 @@
  },
  "台中驛鐵道文化園區 鐵鹿大街A2": {
   "city": "台中市",
-  "lat": 24.14526,
-  "lng": 120.6911,
-  "loc": "區級",
+  "lat": 24.1450765,
+  "lng": 120.6765664,
+  "loc": "exact",
   "addr": "台中市中區台灣大道一段1號",
   "url": "https://www.tcrp.com.tw/activity/221",
   "ex": [
@@ -439,9 +439,9 @@
  },
  "夢時代購物中心 8F 時代會館": {
   "city": "高雄市",
-  "lat": 22.57898,
-  "lng": 120.31382,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號；近高雄輕軌夢時代站、捷運凱旋站",
   "url": "https://universe.oneone.com.tw/posts/6309",
   "ex": [
@@ -451,6 +451,14 @@
     "e": "2026/08/23",
     "l": "https://universe.oneone.com.tw/posts/6309",
     "img": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
+    "cat2": "快閃店/Pop Up Store"
+   },
+   {
+    "t": "2026高雄翻轉動漫祭",
+    "s": "2026/07/17",
+    "e": "2026/08/23",
+    "l": "https://gnn.gamer.com.tw/detail.php?sn=308179",
+    "img": "https://news.qoo-app.com/wp-content/uploads/2026/07/2026%E9%AB%98%E9%9B%84%E7%BF%BB%E8%BD%89%E5%8B%95%E6%BC%AB%E7%A5%AD%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA.jpg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -529,9 +537,9 @@
  },
  "新光三越台北信義新天地 A9 9F 宴會展演館": {
   "city": "台北市",
-  "lat": 25.02281,
-  "lng": 121.56272,
-  "loc": "區級",
+  "lat": 25.0360816,
+  "lng": 121.5666623,
+  "loc": "exact",
   "addr": "台北市信義區松壽路9號",
   "url": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
   "ex": [
@@ -559,6 +567,24 @@
     "e": "2026/07/23",
     "l": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
     "img": "https://instagram.frmq3-3.fna.fbcdn.net/v/t39.30808-6/712623279_1442584641240973_7445177216799446091_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE1MDAuc2RyLnJlZ3VsYXJfcGhvdG8uYzIifQ&_nc_ht=instagram.frmq3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHqaK8crqas3DLp09YiD9zDerWbDdIRUDLJyJpTMX09kW6XOoaqIiTd844Jl3IShMac5GwXwZXVE088NN354-rT&_nc_ohc=6oMyZPKa0TAQ7kNvwFOdvVR&_nc_gid=5Jv_nOa8CJqYGM-fLtRtTQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzkxMTAzNzU3MjMzMTE2MTM3OA%3D%3D.3-ccb7-5&oh=00_AQCVO1A1abghnjKMLXgvyK3pnl66wqYjUCeqeP98iKO8xg&oe=6A591298&_nc_sid=10d13b",
+    "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
+ "新光三越台北南西一館 9F 活動會館": {
+  "city": "台北市",
+  "lat": 25.06051,
+  "lng": 121.51935,
+  "loc": "區級",
+  "addr": "台北市中山區南京西路12號；捷運中山站",
+  "url": "https://sounova.com/anime/chainsaw-man-the-movie-reze-arc-pop-up",
+  "ex": [
+   {
+    "t": "劇場版《鏈鋸人 蕾潔篇》快閃店",
+    "s": "2026/08/06",
+    "e": "2026/09/13",
+    "l": "https://sounova.com/anime/chainsaw-man-the-movie-reze-arc-pop-up",
+    "img": "https://cdn.sounova.com/upload/DP44qZL6j0x5w-gKR5Fng.webp",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
