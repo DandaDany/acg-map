@@ -48,26 +48,42 @@ def test_build_report():
     print("test_build_report: PASS")
 
 
+def test_missing_links_and_approx():
+    venues = [
+        {"name": "館A", "loc": "exact", "ex": [
+            {"t": "有連結", "l": "https://x", "img": "kv/a.jpg"},
+            {"t": "沒連結", "l": "", "img": "kv/b.jpg"},
+        ]},
+        {"name": "館B", "loc": "approx", "ex": [{"t": "無 l 鍵", "img": "kv/c.jpg"}]},
+    ]
+    assert m.missing_links(venues) == [("館A", "沒連結"), ("館B", "無 l 鍵")]
+    assert m.approx_locations(venues) == ["館B"]
+    print("test_missing_links_and_approx: PASS")
+
+
 def test_build_markdown():
     venues = [
-        {"name": "館A", "ex": [
-            {"t": "已自存", "img": "kv/deadbeef.jpg"},
+        {"name": "館A", "loc": "approx", "ex": [
+            {"t": "已自存", "l": "https://x", "img": "kv/deadbeef.jpg"},
             {"t": "FB破圖", "l": "https://instagram.com/p/x", "img": "https://scontent.cdninstagram.com/a.jpg?oe=6A4BC1D8"},
             {"t": "官網未自存", "l": "https://g9cip.com/e", "img": "https://www.g9cip.com/b.png"},
+            {"t": "缺連結活動", "l": "", "img": "kv/d.jpg"},
         ]},
     ]
-    rows, summary = m.build_report(venues, today="2026-07-22")
-    md = m.build_markdown(rows, summary)
-    assert "# 待補 KV 工單" in md
-    assert "## A. 需人工補" in md and "## B. 官網外站圖" in md
-    assert "FB破圖" in md and "官網未自存" in md
-    assert "已自存" not in md.split("## A.")[1]  # ok 的不出現在工單表格
+    md = m.build_markdown(venues, today="2026-07-22")
+    assert "# 資料缺口清單" in md
+    # 三種缺口段落都在
+    assert "## ① KV 主視覺" in md and "## ② 缺官方連結" in md and "## ③ 約略定位" in md
+    assert "### A. KV 需人工補" in md and "### B. KV 官網外站圖" in md
+    assert "FB破圖" in md and "官網未自存" in md and "缺連結活動" in md
     assert "☐" in md                             # A 區有勾選欄
+    assert "已自存" not in md.split("## ①")[1]   # ok 的不出現在任何表格
     print("test_build_markdown: PASS")
 
 
 if __name__ == "__main__":
     test_kv_status()
     test_build_report()
+    test_missing_links_and_approx()
     test_build_markdown()
     print("ALL TESTS PASS")
