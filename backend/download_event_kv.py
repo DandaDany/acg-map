@@ -32,6 +32,7 @@
   python3 backend/download_event_kv.py --all    # 自存所有遠端 KV（完整自存模式）
 """
 import argparse, json, os, sys, ssl, hashlib, urllib.request
+from urllib.parse import quote, unquote, urlparse, urlunparse
 from paths import path as P
 from refresh_venues import stable_event_key  # 用同一把穩定鍵，檔名跨執行穩定
 
@@ -84,9 +85,25 @@ def local_name(venue_name, event, url):
     return h + _ext_from_url(url)
 
 
+def quote_url(url):
+    """把網址路徑/查詢字串中的空白與非 ASCII 字元做 percent-encode。
+
+    urllib.request.Request 遇到含空白或中文的原始網址會直接丟 InvalidURL
+    （"URL can't contain control characters"），使該圖無法自存、只能留原始遠端網址
+    （見 collect_event_kv.py 也用同樣手法）。例：華山官網 KV 檔名含空白與中文。
+    """
+    try:
+        p = urlparse(url)
+        path = quote(unquote(p.path), safe="/%:@")
+        query = quote(unquote(p.query), safe="=&?/%:@,+")
+        return urlunparse((p.scheme, p.netloc, path, p.params, query, p.fragment))
+    except Exception:
+        return url
+
+
 def _default_downloader(url, dest):
     """實際下載器：抓 url 存到 dest。失敗丟例外，由呼叫端決定是否略過。"""
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    req = urllib.request.Request(quote_url(url), headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30, context=_CTX) as r:
         data = r.read()
     if not data or len(data) < 512:

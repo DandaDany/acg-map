@@ -27,6 +27,20 @@ def test_is_remote():
     print("test_is_remote: PASS")
 
 
+def test_quote_url():
+    """含空白/中文的網址要被 percent-encode，否則 urllib 會丟 InvalidURL、圖無法自存。"""
+    import urllib.request
+    raw = "https://media.huashan1914.com/WebUPD/華山官網活動 1920(W) x 1080(H)_1.jpg"
+    q = m.quote_url(raw)
+    assert " " not in q and "華" not in q, q
+    # 編碼後 urllib.request.Request 不再因控制字元/非 ASCII 崩潰
+    urllib.request.Request(q, headers={"User-Agent": "x"})
+    # 已是純 ASCII 的網址維持可用（query 參數不被破壞）
+    plain = "https://scontent.cdninstagram.com/a.jpg?oe=1&x=2"
+    assert m.quote_url(plain) == plain, m.quote_url(plain)
+    print("test_quote_url: PASS")
+
+
 def test_localize_all_mode():
     """--all 模式（predicate=is_remote）：連穩定官網圖也一併自存、改站內路徑。"""
     d = tempfile.mkdtemp()
@@ -110,6 +124,7 @@ def test_localize_and_gc():
 if __name__ == "__main__":
     test_is_expiring()
     test_is_remote()
+    test_quote_url()
     test_localize_and_gc()
     test_localize_all_mode()
     print("ALL TESTS PASS")
