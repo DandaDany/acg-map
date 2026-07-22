@@ -1,18 +1,17 @@
 # 待補 KV 工單
 
-產生日期：2026-07-22　來源：`data/reports/_missing_event_kv.json`（由 `report_event_kv.py` 自動產生）
+產生日期：2026-07-22　本檔由 `backend/report_event_kv.py` 隨 `update_all.py` 自動重產，請勿手改。
 
-共 31 筆有風險。其中 **30 筆為 FB/IG 會過期簽章網址，須人工補**；1 筆為官網外站圖，下次 `update_all.py` 會自動自存（已修 URL 編碼 bug）。
+目前 146 場活動：已自存 115、有風險 31（其中 FB/IG 會過期 30 筆、已破圖 29 筆、官網未自存 1 筆、無圖 0 筆）。
 
-## 補圖 SOP（每筆照做，比照『藍色監獄×指南針武昌店』那筆）
+## 補圖 SOP（A 區每筆照做，比照『藍色監獄×指南針武昌店』那筆）
 
 1. 開該筆「來源連結」的 FB/IG 貼文，找官方主視覺（hi-res）。
 2. 下載存到 `data/manual/_kv_cache/`，檔名建議 `作品_場地_YYYYMMDD.jpg`。
-3. 在 `data/manual/acg_events.json` 對應活動的 `KV` 欄，改成 repo 內永久 raw URL：
-   `https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/<檔名>`
+3. 在 `data/manual/acg_events.json` 對應活動的 `KV` 欄改成 repo 內永久 raw URL：`https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/<檔名>`
 4. commit（含圖檔）。下次 `update_all.py` 的 `download_event_kv` 會再自存到 `public/kv/`，雙保險。
 
-## A. 需人工補（FB/IG 會過期，無法自動抓回）
+## A. 需人工補（FB/IG 會過期，無法自動抓回）— 30 筆
 
 | # | 完成 | 場館 | 活動 | 狀況 | 來源連結 |
 |---|---|---|---|---|---|
@@ -47,7 +46,7 @@
 | 29 | ☐ | 凱岩咖啡 - 永康店 | 賽爾號 x 凱岩主題餐廳 | 已過期破圖（到期 2026-06-25） | https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22 |
 | 30 | ☐ | object taipei store | 《Marshville Quokscout》 | 會過期（到期 未知） | https://www.instagram.com/p/DZwtQdGE2ro?img_index=1 |
 
-## B. 官網外站圖（下次 update_all 自動自存，通常免手動）
+## B. 官網外站圖（下次 update_all 自動自存，通常免手動）— 1 筆
 
 | # | 場館 | 活動 | 狀況 | 來源連結 |
 |---|---|---|---|---|

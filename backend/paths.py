@@ -75,6 +75,9 @@ _FILES = {
     "_approx_location_report.json": REPORTS_DIR / "_approx_location_report.json",
     "_missing_logo_report.json": REPORTS_DIR / "_missing_logo_report.json",
     "_missing_event_kv.json": REPORTS_DIR / "_missing_event_kv.json",
+
+    # Docs（人看的產出）
+    "待補KV工單.md": DOCS_DIR / "待補KV工單.md",
     "_social_scan.json": REPORTS_DIR / "_social_scan.json",
     "_logo_source_candidates.json": REPORTS_DIR / "_logo_source_candidates.json",
     "_resolved_logo_candidates.json": REPORTS_DIR / "_resolved_logo_candidates.json",

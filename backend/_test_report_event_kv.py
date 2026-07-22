@@ -48,7 +48,26 @@ def test_build_report():
     print("test_build_report: PASS")
 
 
+def test_build_markdown():
+    venues = [
+        {"name": "館A", "ex": [
+            {"t": "已自存", "img": "kv/deadbeef.jpg"},
+            {"t": "FB破圖", "l": "https://instagram.com/p/x", "img": "https://scontent.cdninstagram.com/a.jpg?oe=6A4BC1D8"},
+            {"t": "官網未自存", "l": "https://g9cip.com/e", "img": "https://www.g9cip.com/b.png"},
+        ]},
+    ]
+    rows, summary = m.build_report(venues, today="2026-07-22")
+    md = m.build_markdown(rows, summary)
+    assert "# 待補 KV 工單" in md
+    assert "## A. 需人工補" in md and "## B. 官網外站圖" in md
+    assert "FB破圖" in md and "官網未自存" in md
+    assert "已自存" not in md.split("## A.")[1]  # ok 的不出現在工單表格
+    assert "☐" in md                             # A 區有勾選欄
+    print("test_build_markdown: PASS")
+
+
 if __name__ == "__main__":
     test_kv_status()
     test_build_report()
+    test_build_markdown()
     print("ALL TESTS PASS")

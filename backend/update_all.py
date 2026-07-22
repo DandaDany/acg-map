@@ -51,7 +51,7 @@ run("geocode_venues.py")   # 讀最新版 venues.json；完整地址/高可信 P
 run("collect_event_kv.py", "--browser-fallback")  # 讀最新版 venues.json；缺 KV 且有活動連結者 → event_kv_cache.json
 run("refresh_venues.py")   # 第二輪：套用 FB logo、geocode、KV 快取後輸出最終版
 run("download_event_kv.py", "--all") # 自存所有遠端主視覺到 public/kv/（完整自存、不依賴外站）並清理過期活動的孤兒圖
-run("report_event_kv.py")  # 依最終 venues.json 重產準確的 KV 健康度報表 → _missing_event_kv.json（揪出仍為會過期外站網址、現正破圖者）
+run("report_event_kv.py")  # 依最終 venues.json 重產 KV 健康度：_missing_event_kv.json（機器讀）＋ docs/待補KV工單.md（人看的工單，揪出破圖/待補）
 run("build_logo_thumbs.py") # 依最終 logo 清單產生小圖 → logos/_thumbs/，前端 marker 載入更快
 
 def sync_embed():
