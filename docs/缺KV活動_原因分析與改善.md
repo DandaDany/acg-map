@@ -52,9 +52,27 @@ https://media.huashan1914.com/WebUPD/huashan1914/exhibition/華山官網活動 1
 
 `report_status.py` 只會列「缺 KV = img 為空」的活動（現在是 0），**不會**把「img 指向會過期外站網址」這種**假有圖、實破圖**的情況揪出來，也不會重產 `_missing_event_kv.json`。所以這類問題目前沒有任何自動預警。
 
-## 三、已做的修正（本次 commit）
+## 三、已做的修正
 
-**修掉問題 B**：`backend/download_event_kv.py` 新增 `quote_url()`，下載前先 percent-encode 路徑／查詢字串（與 `collect_event_kv.py` 同手法）。含空白／中文的官網 KV 從此能正常自存到 `public/kv/`，不再破圖。已補離線單元測試 `test_quote_url`，全數通過。
+**（1）修掉問題 B**：`backend/download_event_kv.py` 新增 `quote_url()`，下載前先 percent-encode 路徑／查詢字串（與 `collect_event_kv.py` 同手法）。含空白／中文的官網 KV（如華山《天官賜福》）從此能正常自存到 `public/kv/`，不再破圖。已補離線單元測試 `test_quote_url`。
+
+**（2）修掉問題 C（自動預警，對應下方改善方法第 3 點）**：
+- 新增 `backend/report_event_kv.py`：只讀最終版 `venues.json`，把每筆活動的 KV 分成
+  `ok`（已自存）／`empty`（無圖）／`expiring`（會過期 FB/IG 簽章網址，能解 `oe=` 者標到期日）／
+  `remote`（其他外站未自存），把有風險者逐筆寫進**準確版** `data/reports/_missing_event_kv.json`
+  （現正破圖者排最前），並印 summary。附離線測試 `_test_report_event_kv.py`。
+- `update_all.py`：在 `download_event_kv.py --all` 之後加一步 `report_event_kv.py`，每次更新自動重產報表。
+- `report_status.py`：週報「缺主視覺 KV」的判斷從「img 為空」擴大為「img 為空 **或** 仍指向會過期外站網址」，
+  逐筆標示「無圖／已過期破圖／會過期外站網址／尚未自存」，並改寫建議文案指向自存 raw 做法。
+
+**（3）清理**：刪除 `data/reports/` 內三個無人產生也無人讀取的孤兒報表
+（`_missing_event_links.json`、`_missing_logo_reason_report.json`、`_missing_logo_reason_report.md`）
+及其 `paths.py` 對應項。舊的失準文化部 `_missing_event_kv.json` 快照已由上述新報表**覆寫為準確內容**。
+
+**（4）問題 A（30 筆 FB/IG 破圖）——本環境無法自動修，需人工。** 原因：29/31 簽章網址的 `oe=`
+到期日已過（無圖可再抓），而重新取圖所需的 FB/IG 貼文頁被本工作環境的 egress 政策擋下（403）。
+這類本質上需人工檢視貼文、下載官方主視覺，套用下方第 1、2 點的 raw 自存流程。
+`report_event_kv.py` 產出的報表已逐筆列出這 30 筆及其來源 `link`，可直接照著補。
 
 ## 四、建議的改善方法（依優先序）
 

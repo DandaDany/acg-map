@@ -1,938 +1,312 @@
 [
-  {
-    "venue": "國立臺灣工藝研究發展中心",
-    "title": "【工藝行旅】市場職人手路-草屯走讀生活裡的工藝風景",
-    "src": "moc",
-    "link": "https://www.facebook.com/tripexploring",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "高雄市立美術館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://www.kmfa.gov.tw",
-    "host": "kmfa.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "南投縣文化園區",
-    "title": "114-115年南投縣傳統工藝及傳統表演藝術推廣展覽計畫-聽見匠聲、看見傳藝：陶藝篇—陶說南投．藝築生活篇",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "南投縣文化園區",
-    "title": "2026南投意麵觀光嘉年華：南投意麵 × 市場與巷弄走讀（味覺散策：意麵文化小旅行）-2場次",
-    "src": "moc",
-    "link": "https://www.facebook.com/tripinchunghsing",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "南投縣文化園區",
-    "title": "2026南投意麵觀光嘉年華：南投意麵 × 市場與巷弄走讀（歷史印記：文化巡禮走讀 × 工藝體驗）-2場次",
-    "src": "moc",
-    "link": "https://www.facebook.com/tripinchunghsing",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "南投縣文化園區",
-    "title": "114-115年南投縣傳統工藝及傳統表演藝術推廣展覽計畫-聽見匠聲、看見傳藝：漆藝篇－漆色流年．生活器物的光影之道",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "車籠埔斷層保存園區",
-    "title": "電磁視界2.0：消失的科學家（3月2日至6月1日空調設備改善工程休館）",
-    "src": "moc",
-    "link": "https://www.nmns.edu.tw/",
-    "host": "nmns.edu.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "文化部文化資產園區",
-    "title": "園區展覽與活動（詳見官網）",
-    "src": "curated",
-    "link": "https://tccip.boch.gov.tw",
-    "host": "tccip.boch.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "南投縣藝術家資料館",
-    "title": "《拾光．綻放》王碧芳、柯淑媛油畫創作首展",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "南投縣藝術家資料館",
-    "title": "光影拾野與自然同行－陳明弘師生聯展",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "南投縣藝術家資料館",
-    "title": "南投縣藝術家資料館2026駐館藝術家系列活動-主題特展：《冠藝之境—陳瓊茹創作展》",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "星紅藝廊",
-    "title": "我心如燄-張秀燕膠彩畫展",
-    "src": "moc",
-    "link": "https://www.facebook.com/HsingKungArtGallery",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "星紅藝廊",
-    "title": "棲-陳紀融個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/HsingKungArtGallery",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "星紅藝廊",
-    "title": "簡世哲創作個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/HsingKungArtGallery",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺南東門美術館",
-    "title": "老佛像畫收藏展",
-    "src": "moc",
-    "link": "http://liart1996.com/",
-    "host": "liart1996.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "臺南東門美術館",
-    "title": "莊子來北門逍遙遊-國際與國寶級漫畫大師-蔡志忠 漫畫手稿與雕塑展",
-    "src": "moc",
-    "link": "http://liart1996.com/",
-    "host": "liart1996.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "臺南東門美術館",
-    "title": "墨之道：楊詰蒼·楊子雲雙個展",
-    "src": "moc",
-    "link": "http://liart1996.com/",
-    "host": "liart1996.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "紅毛港文化園區",
-    "title": "乘浪上港特展",
-    "src": "moc",
-    "link": "https://hongmaogang.hmg.org.tw/",
-    "host": "hongmaogang.hmg.org.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "紅毛港文化園區",
-    "title": "紅毛港舊物件展",
-    "src": "moc",
-    "link": "https://hongmaogang.hmg.org.tw/",
-    "host": "hongmaogang.hmg.org.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "高雄市電影館",
-    "title": "高雄市電影館親子教育展-光影魔幻樂園",
-    "src": "moc",
-    "link": "https://kfa.kcg.gov.tw/",
-    "host": "kfa.kcg.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "虎山藝術館",
-    "title": "「藝遊方寸．氣象萬千」篆刻聯展",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "虎山藝術館",
-    "title": "生活美學與家飾彩繪創作成果展",
-    "src": "moc",
-    "link": "https://www.nthcc.gov.tw/",
-    "host": "nthcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "臺南國家美術館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "moc",
-    "link": "https://www.tnam.museum",
-    "host": "tnam.museum",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "洪根深美術館",
-    "title": "「被觀看的親密：東方媒材的身體、愛與書寫」特展",
-    "src": "moc",
-    "link": "https://www.facebook.com/61571558291485/photos/122127256028718609/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "洪根深美術館",
-    "title": "洪根深美術館常設展",
-    "src": "moc",
-    "link": "https://www.facebook.com/61571558291485/photos/122127256028718609/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "高雄流行音樂中心",
-    "title": "藍寶石大歌廳《秀場傳奇》故事展",
-    "src": "moc",
-    "link": "https://kpmc.com.tw/",
-    "host": "kpmc.com.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "雲林布袋戲館",
-    "title": "2026年1月【雲林布袋戲館-「掌演乾坤」常設展】",
-    "src": "moc",
-    "link": "https://www.facebook.com/yunlin.puppet",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "雲林布袋戲館",
-    "title": "2026年1月【雲林布袋戲館-《傳藝之魂‧黃海岱與戲偶之道》特展】",
-    "src": "moc",
-    "link": "https://www.facebook.com/yunlin.puppet",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "五穀文化村",
-    "title": "陶創雅集-中華陶藝展",
-    "src": "moc",
-    "link": "https://www.facebook.com/wuguu/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "五穀文化村",
-    "title": "臺灣陶藝薪傳成就獎-現代陶先鋒-李茂宗特展",
-    "src": "moc",
-    "link": "https://www.facebook.com/wuguu/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺北市藝文推廣處-文山劇場",
-    "title": "育藝深遠特展《客廳即劇場》",
-    "src": "moc",
-    "link": "https://www.tapo.gov.taipei/Content_List.aspx?n=3EA1041780A8138E",
-    "host": "tapo.gov.taipei",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "臺北市藝文推廣處-文山劇場",
-    "title": "常設展 《魔幻森林─文山劇場工作坊》",
-    "src": "moc",
-    "link": "https://www.tapo.gov.taipei/Content_List.aspx?n=3DB9A7B762AA8384",
-    "host": "tapo.gov.taipei",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "彰化八卦山大佛區",
-    "title": "班門弄斧──員永村社大甲骨文書法班聯展",
-    "src": "moc",
-    "link": "https://www.facebook.com/BaguaBuddha",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "彰化八卦山大佛區",
-    "title": "2026墨中一是 墨趣雅集會員聯展",
-    "src": "moc",
-    "link": "https://www.facebook.com/MtBagua",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "鹿港公會堂",
-    "title": "藝境傳真  共硯生活藝術學會會員聯展",
-    "src": "moc",
-    "link": "https://www.facebook.com/LukangHCH",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "鹿港公會堂",
-    "title": "馬躍鹿江 磺溪九怪書會聯展",
-    "src": "moc",
-    "link": "https://www.facebook.com/LukangHCH",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "高雄兒童美術館",
-    "title": "生活藏寶圖",
-    "src": "moc",
-    "link": "https://www.kmfa.gov.tw/",
-    "host": "kmfa.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "打狗英國領事館文化園區",
-    "title": "打狗英國領事館文化園區常設展",
-    "src": "moc",
-    "link": "https://www.facebook.com/TheBritishConsulate",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "高雄市旗山生活文化園區",
-    "title": "旗山生活文化園區常設展",
-    "src": "moc",
-    "link": "https://www.facebook.com/p/%E6%97%97%E5%B1%B1%E7%94%9F%E6%B4%BB%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80%E5%B8%82%E5%AE%9A%E5%8F%A4%E8%B9%9F%E8%88%8A%E9%BC%93%E5%B1%B1%E5%9C%8B%E5%B0%8F-100057066475302/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "舊打狗驛故事館",
-    "title": "舊打狗驛故事館常設展",
-    "src": "moc",
-    "link": "https://www.facebook.com/TakaoMuseum/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "戰爭與和平紀念公園主題館",
-    "title": "戰爭與和平紀念公園主題館常設展",
-    "src": "moc",
-    "link": "https://warpeace.khm.org.tw/",
-    "host": "warpeace.khm.org.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "農業部生物多樣性研究所保育教育館",
-    "title": "2026和平國小美展～和顏墨色平藝競稔",
-    "src": "moc",
-    "link": "https://www.facebook.com/TBRICEC",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "宜蘭人故事館",
-    "title": "「與家的距離~盼歸」創作聯展",
-    "src": "moc",
-    "link": "https://www.yilanstory.com.tw/",
-    "host": "yilanstory.com.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "王功蚵藝文化館",
-    "title": "蚵藝作品常態展",
-    "src": "moc",
-    "link": "http://www.ork.org.tw/",
-    "host": "ork.org.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "巫家捏麵館",
-    "title": "捏麵作品常態展（巫家捏麵館）",
-    "src": "moc",
-    "link": "https://www.facebook.com/wufigure/?fref=ts",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "澎湖開拓館",
-    "title": "澎湖開拓館「那間沒有名字的店：溫情 × 時光 × 𥴊仔店」特展",
-    "src": "moc",
-    "link": "http://phkt.phhcc.gov.tw",
-    "host": "phkt.phhcc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "臺南．家具產業博物館",
-    "title": "工藝境象－異材．技藝．職人精神",
-    "src": "moc",
-    "link": "https://www.facebook.com/940514fmmit/?locale=zh_TW",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "見城館",
-    "title": "見城館常設展",
-    "src": "moc",
-    "link": "https://www.facebook.com/cofch.khm/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "蔣勳文化基金會 時善慧館",
-    "title": "蔣勳《祇樹給孤獨園》展覽",
-    "src": "moc",
-    "link": "https://www.facebook.com/p/%E6%99%82%E5%96%84%E6%85%A7%E9%A4%A8-61574121317652/?locale=zh_TW",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "國立成功大學博物館",
-    "title": "型-心身一如 臺日協作展",
-    "src": "moc",
-    "link": "https://museum.ncku.edu.tw/",
-    "host": "museum.ncku.edu.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "池上穀倉藝術館",
-    "title": "《相遇‧相知‧相疼惜─吳清友先生紀念展》",
-    "src": "moc",
-    "link": "https://www.facebook.com/artchishang",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "苗栗陶瓷農創園區",
-    "title": "「觸見陶光-用雙手感受陶藝之美」常態展",
-    "src": "moc",
-    "link": "https://www.facebook.com/miaoliceramics",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺中市臻品藝術中心",
-    "title": "《走走停 B-SIDE CITY》聯展",
-    "src": "moc",
-    "link": "https://www.facebook.com/22Pierre/?locale=zh_TW",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺北市藝文推廣處-大稻埕戲苑",
-    "title": "【特展】 「請戲-布袋戲一條街」特展",
-    "src": "moc",
-    "link": "https://www.tapo.gov.taipei/News.aspx?n=3985BE0F0DDA52EB&sms=AE4221F47FAC4FB7",
-    "host": "tapo.gov.taipei",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "辛藝術 Hsin Art Gallery",
-    "title": "《小哥去哪裡》｜蔡恩宇個展",
-    "src": "moc",
-    "link": "https://reurl.cc/Wb8vKe",
-    "host": "reurl.cc",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "新北市立十三行博物館",
-    "title": "阮的海海人生：臺韓海洋文化交流特展",
-    "src": "moc",
-    "link": "https://www.sshm.ntpc.gov.tw/",
-    "host": "sshm.ntpc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "當代陶藝館",
-    "title": "「遊山━草木間」蔡明男、林智斌 陶藝雙個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/dangdaigallery/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "玉山國家公園管理處東埔服務中心",
-    "title": "2026玉山國家公園6-12月漫遊東埔導覽解說活動（42場次）",
-    "src": "moc",
-    "link": "https://www.facebook.com/YuShanNationalPark",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "梧棲文化出張所",
-    "title": "吾漆・武家的記憶：鎧甲、家徽與日本精神物語",
-    "src": "moc",
-    "link": "https://www.facebook.com/share/p/18k1D4T8Up/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "雨果曐Gallery",
-    "title": "張璧蘭 個展 ・ 受潮",
-    "src": "moc",
-    "link": "https://www.facebook.com/p/%E9%9B%A8%E6%9E%9C%E6%9B%90-Gallery-100076348324653/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "大新美術館",
-    "title": "｜大新美術館｜碎片之間 仍是宇宙",
-    "src": "moc",
-    "link": "https://www.facebook.com/DaXinArtMuseum/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "社團法人中華翰維文化推廣協會",
-    "title": "臨古開新．共書輝煌～2026西安碑林海峽兩岸臨書展",
-    "src": "moc",
-    "link": "https://beilinshu.hanwei-hanya.com",
-    "host": "beilinshu.hanwei-hanya.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "清泉藝術之森",
-    "title": "學生書法、畫作及常設展",
-    "src": "moc",
-    "link": "https://travel.hsinchu.gov.tw/",
-    "host": "travel.hsinchu.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "台語文創意園區",
-    "title": "台語繪本特展—膨鼠姊仔讀繪本 Phòng-tshí-tsí-á tha̍k huē-pún",
-    "src": "moc",
-    "link": "https://www.facebook.com/Taigibun0505",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "印 藝文空間 / 咖啡",
-    "title": "劉侑誼 光影-平凡之美油畫創作個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/yinhere38/posts/pfbid0gLjriPcBMs2eKDJNKYxfjTxuoY6AX4sRmE5XeVJTt3ZZZvupzYYJp",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "朝代藝術畫廊",
-    "title": "伏流：李岳凌個展",
-    "src": "moc",
-    "link": "https://www.dynastyart.com/",
-    "host": "dynastyart.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "聯邦藝術中心",
-    "title": "【光影重構萬象】許坤成油畫暨大漆個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/UNIONGROUPArtGallery/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "也趣藝廊 AKI Gallery",
-    "title": "A House That Finds Its Way",
-    "src": "moc",
-    "link": "https://www.galleryaki.com/zh/exhibition/content/post/316",
-    "host": "galleryaki.com",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "阿波羅畫廊",
-    "title": "《吟遊於母星之間》曾詩涵個展",
-    "src": "moc",
-    "link": "https://artgalleryapollo.com/2021/event/%e3%80%8a%e5%90%9f%e9%81%8a%e6%96%bc%e6%af%8d%e6%98%9f%e4%b9",
-    "host": "artgalleryapollo.com",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "得忌利士洋行",
-    "title": "齊柏林空間年度特展《Re見：齊柏林俯瞰台灣》",
-    "src": "moc",
-    "link": "https://www.tshs.ntpc.gov.tw/",
-    "host": "tshs.ntpc.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "天目城藝文展覽館",
-    "title": "光影境2.0",
-    "src": "moc",
-    "link": "https://www.facebook.com/share/p/1E1odvdHgh/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "好地下藝術空間",
-    "title": "浮光影藏十─（私人座標靈感森林）攝影書專題展",
-    "src": "moc",
-    "link": "https://goodunderground.weebly.com/",
-    "host": "goodunderground.weebly.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "郭子究音樂文化館",
-    "title": "不是為了獵捕而存在：蜘蛛─林政璋創作展",
-    "src": "moc",
-    "link": "https://www.facebook.com/kuotzuchiu/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "帝門藝術中心",
-    "title": "2026 帝門藝術市集",
-    "src": "moc",
-    "link": "https://www.dimensionsart.com/",
-    "host": "dimensionsart.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "耘非凡美術館",
-    "title": "片段與回響 ——王淑鈴個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/YunFeiFanMuseum/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺南海馬迴光畫館",
-    "title": "原 The Field Before 葉先傑個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/fotoaura.tw/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "索卡藝術",
-    "title": "月下庭園 ・ 新生星辰：高橋朋子 個展",
-    "src": "moc",
-    "link": "",
-    "host": "",
-    "cat": "沒有活動連結"
-  },
-  {
-    "venue": "台南梵藝術中心",
-    "title": "縫合神話",
-    "src": "moc",
-    "link": "https://www.facebook.com/fineartprivatemuseum/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺南絕對空間 Absolute Space for the Art",
-    "title": "曾經在場 - 鄭安利個展",
-    "src": "moc",
-    "link": "https://www.facebook.com/abaspace/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "臺北市立美術館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://www.tfam.museum",
-    "host": "tfam.museum",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "國立臺灣博物館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://www.ntm.gov.tw",
-    "host": "ntm.gov.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "北師美術館 MoNTUE",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://montue.ntue.edu.tw",
-    "host": "montue.ntue.edu.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "關渡美術館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://kdmofa.tnua.edu.tw",
-    "host": "kdmofa.tnua.edu.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "台北當代藝術館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://www.mocataipei.org.tw",
-    "host": "mocataipei.org.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "鳳甲美術館",
-    "title": "常設展廳（展品以官網為準）",
-    "src": "curated",
-    "link": "https://www.hong-gah.org.tw",
-    "host": "hong-gah.org.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "新竹市美術館",
-    "title": "百合——直到觸及我們的情感象限",
-    "src": "official",
-    "link": "https://culture.hccg.gov.tw/ch/home.jsp?id=452&parentpath=0,145,154&mcustomize=activity_view.jsp&toolsflag=Y&dataserno=202605250001&t=Activity&mserno=201810310008",
-    "host": "culture.hccg.gov.tw",
-    "cat": "有活動頁但未抓到KV"
-  },
-  {
-    "venue": "CACO cafe 台中漢神店",
-    "title": "CACO CAFE X 布丁狗",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DWjEyZRjbmX/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "CACO cafe 台南南紡店",
-    "title": "CACO CAFE X 布丁狗",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DWjEyZRjbmX/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "CACO cafe 台南小西門",
-    "title": "CACO CAFE X 布丁狗",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DWjEyZRjbmX/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "CACO cafe 高雄夢時代店",
-    "title": "CACO CAFE X 布丁狗",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DWjEyZRjbmX/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "LaLaport 台中 café stand",
-    "title": "名偵探柯南 高速公路的墮天使 x MyAnime Café",
-    "src": "manual",
-    "link": "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "LaLaport 台中北館1F",
-    "title": "名偵探柯南 高速公路的墮天使 快閃店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "MITSUI OUTLET PARK 林口I館室內棟1F 六角廣場",
-    "title": "名偵探柯南 高速公路的墮天使 快閃店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "MyAnime Café 三創店（台北）",
-    "title": "名偵探柯南 高速公路的墮天使 x MyAnime Café",
-    "src": "manual",
-    "link": "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "MyAnime Café 高雄店（統一時代百貨B1）",
-    "title": "名偵探柯南 高速公路的墮天使 x MyAnime Café",
-    "src": "manual",
-    "link": "https://www.facebook.com/MyAnimeCafe/posts/pfbid02ZZFoJfKLXf131STjAjDpqLUt7dJmLiiYGdi99Aiu326FKZnuVLpYjUrDmWQxubuvl",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "三創生活園區1F 十二立方",
-    "title": "《孤獨搖滾！》快閃店",
-    "src": "manual",
-    "link": "https://www.facebook.com/syntrend/photos/1312625067644403/",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "中友百貨",
-    "title": "孤獨搖滾！動畫展（台中場）",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DY3xo0lDO42/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "京站時尚廣場1F",
-    "title": "咒術迴戰 期間限定快閃店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DXq9gKOE9Gp/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "台中中友百貨B棟13樓",
-    "title": "名偵探柯南 高速公路的墮天使 快閃店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "台中驛鐵道文化園區 鐵鹿大街",
-    "title": "花茶舞會",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DYHSByMgRcv/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "台北三創生活園區",
-    "title": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
-    "src": "manual",
-    "link": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "台北三創生活園區 1F 十二立方",
-    "title": "ANI-FEST期間限定店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DYWFmd8jRZ2/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "台北和平籃球館（台北戰神主場）",
-    "title": "臺北戰神 × 麵包超人 聯名套票",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DUkZZilgfSf/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "台東",
-    "title": "吉伊卡哇-2026 臺灣國際熱氣球嘉年華",
-    "src": "manual",
-    "link": "https://www.facebook.com/balloontaiwan",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "屏東縣民公園",
-    "title": "蠟筆小新玩轉時空大冒險",
-    "src": "manual",
-    "link": "https://www.facebook.com/pingtungamazing/photos/%F0%93%87%BB%F0%93%82%83%F0%93%82%82%F0%93%82%83%F0",
-    "host": "facebook.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心",
-    "title": "San-X 90週年紀念展in台灣",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "新光三越台中中港店10F天空劇場",
-    "title": "Ani-One 玩轉動漫遊‧台中場",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DY6yAdUCeQV/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "新光三越台北信義新天地A8館5樓",
-    "title": "名偵探柯南 高速公路的墮天使 快閃店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "新光三越台北南西店 一館 9F 活動會館",
-    "title": "JOJO CARAVAN 飆馬野郎複製原畫展",
-    "src": "manual",
-    "link": "https://www.skm.com.tw/",
-    "host": "skm.com.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "新光三越高雄左營店 10F",
-    "title": "Hello Kitty展 高雄站",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "新莊棒球場",
-    "title": "進擊的巨人 × 富邦棒球主題日",
-    "src": "manual",
-    "link": "https://www.fubonguardians.com/",
-    "host": "fubonguardians.com",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "草帽海賊大遊行路線：海邊路與成功二路交叉口（起點）→ 高雄港16號碼頭（終點）",
-    "title": "草帽海賊大遊行",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DVdZ6s2FhxU/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "華山1914文創園區 中4A館",
-    "title": "Chiikawa Baby POP UP SHOP(第二次)",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DXy189hEcyK/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "遠雄海洋公園",
-    "title": "進擊的巨人 × 遠雄海洋公園",
-    "src": "manual",
-    "link": "https://www.farglory-oceanpark.com.tw/",
-    "host": "farglory-oceanpark.com.tw",
-    "cat": "只有首頁/場館頁"
-  },
-  {
-    "venue": "駁二藝術特區",
-    "title": "《凡爾賽玫瑰》快閃空間",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZZ0g9UpJHY/",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "高雄夢時代購物中心 1F",
-    "title": "名偵探柯南 高速公路的墮天使 快閃店",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  },
-  {
-    "venue": "高雄駅一番街・北站 高雄捷運高雄車站B2",
-    "title": "藥師少女的獨語展",
-    "src": "manual",
-    "link": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
-    "host": "instagram.com",
-    "cat": "社群頁/貼文"
-  }
+ {
+  "venue": "台北三創生活園區 6F INCUBASE Arena",
+  "title": "《東京喰種》期間限定快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-06",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZpKKNpDIN3/",
+  "img": "https://scontent.cdninstagram.com/v/t39.30808-6/725547095_122244103244787120_3416079558586003061_n.jpg?stp=c327.0.983.982a_dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nFKitOm_RPkQ7kNvwEBahBT&_nc_oc=AdpPrT9Cr37-7YlzN48pYSLUSA6CgEmVc0dcaKN19BJSGrqMhNe6Z2dmDNI24ZBLoaY&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=UKSL2LFhs5GJ4t5aTceGYw&_nc_ss=7f60f&oh=00_AQAuCbzJ-S23ZcwxUfS_SWH4C1DWlsC8GtBWTbS-Eau12A&oe=6A4BC1D8"
+ },
+ {
+  "venue": "LaLaport 台中北館1F",
+  "title": "名偵探柯南 高速公路的墮天使 快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
+  "img": "https://instagram.frmq3-3.fna.fbcdn.net/v/t39.30808-6/712623279_1442584641240973_7445177216799446091_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE1MDAuc2RyLnJlZ3VsYXJfcGhvdG8uYzIifQ&_nc_ht=instagram.frmq3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHqaK8crqas3DLp09YiD9zDerWbDdIRUDLJyJpTMX09kW6XOoaqIiTd844Jl3IShMac5GwXwZXVE088NN354-rT&_nc_ohc=6oMyZPKa0TAQ7kNvwFOdvVR&_nc_gid=5Jv_nOa8CJqYGM-fLtRtTQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzkxMTAzNzU3MjMzMTE2MTM3OA%3D%3D.3-ccb7-5&oh=00_AQCVO1A1abghnjKMLXgvyK3pnl66wqYjUCeqeP98iKO8xg&oe=6A591298&_nc_sid=10d13b"
+ },
+ {
+  "venue": "MITSUI OUTLET PARK 林口I館室內棟1F 六角廣場",
+  "title": "名偵探柯南 高速公路的墮天使 快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
+  "img": "https://instagram.frmq3-3.fna.fbcdn.net/v/t39.30808-6/712623279_1442584641240973_7445177216799446091_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE1MDAuc2RyLnJlZ3VsYXJfcGhvdG8uYzIifQ&_nc_ht=instagram.frmq3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHqaK8crqas3DLp09YiD9zDerWbDdIRUDLJyJpTMX09kW6XOoaqIiTd844Jl3IShMac5GwXwZXVE088NN354-rT&_nc_ohc=6oMyZPKa0TAQ7kNvwFOdvVR&_nc_gid=5Jv_nOa8CJqYGM-fLtRtTQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzkxMTAzNzU3MjMzMTE2MTM3OA%3D%3D.3-ccb7-5&oh=00_AQCVO1A1abghnjKMLXgvyK3pnl66wqYjUCeqeP98iKO8xg&oe=6A591298&_nc_sid=10d13b"
+ },
+ {
+  "venue": "中友百貨",
+  "title": "孤獨搖滾！動畫展（台中場）",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DY3xo0lDO42/",
+  "img": "https://scontent.cdninstagram.com/v/t39.30808-6/708089064_1437423438423760_7360665762419060387_n.jpg?stp=c409.0.1229.1228a_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=clnF3pH1VrMQ7kNvwHClSJI&_nc_oc=Adrqlzv7riqX2CFzUkfpwWkmv8HFlg7RN5LoHL0ppWHxv7cm9gMQ08HZXC6hqMmvAP8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=xOxV97DM4W149jR96rtlCA&_nc_ss=7f60f&oh=00_Af8JThFJ5HgMWGQoxEMqgrUzLhnvqSLDiaq1Mb0avnJnfw&oe=6A3E71A9"
+ },
+ {
+  "venue": "光點台北側門 羊空間 YOUNG SPACE",
+  "title": "AIR TWOKYO POP UP STORE",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-14",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DaWucdFv8Yj",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t51.82787-15/729654120_18066862505705592_2547466730221605445_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=kDip0X-g1iMQ7kNvwE7Uqfv&_nc_oc=AdoMqqaoTLBp6vQ7HpPRA52sq0Aqt9hQCxlv5gbYsRiHnYV6VE0-WfXeSc8vIadPd173qLOpX49tF1-T66_rxpZC&_nc_zt=23&_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_gid=pme0gLvofnX-OG4XWKfnqQ&_nc_ss=7f60f&oh=00_AQCTRJg-hrti3ILJCWTW_cO4hDu1Ys3P08Rf-YeqywxGQQ&oe=6A56CA42"
+ },
+ {
+  "venue": "台中中友百貨B棟13樓",
+  "title": "名偵探柯南 高速公路的墮天使 快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
+  "img": "https://instagram.frmq3-3.fna.fbcdn.net/v/t39.30808-6/712623279_1442584641240973_7445177216799446091_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE1MDAuc2RyLnJlZ3VsYXJfcGhvdG8uYzIifQ&_nc_ht=instagram.frmq3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHqaK8crqas3DLp09YiD9zDerWbDdIRUDLJyJpTMX09kW6XOoaqIiTd844Jl3IShMac5GwXwZXVE088NN354-rT&_nc_ohc=6oMyZPKa0TAQ7kNvwFOdvVR&_nc_gid=5Jv_nOa8CJqYGM-fLtRtTQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzkxMTAzNzU3MjMzMTE2MTM3OA%3D%3D.3-ccb7-5&oh=00_AQCVO1A1abghnjKMLXgvyK3pnl66wqYjUCeqeP98iKO8xg&oe=6A591298&_nc_sid=10d13b"
+ },
+ {
+  "venue": "台中中友百貨B棟13樓 文化大廳",
+  "title": "三麗鷗甜心復古快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-14",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DaUNtsBJxu0",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t51.82787-15/729680993_18592797913032824_8824351107353449446_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=T5BgNnVr07QQ7kNvwE4eCiH&_nc_oc=Ados_7S-ifySIC_72VnhCEHl0GPrMbgp_QmYu-3c9BmOXGqnmOS8axijwJeHuF-gklu1WuQFctv0CVNhfCsATYlz&_nc_zt=23&_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_gid=MC9Naedj5aOsrirs5nHFVQ&_nc_ss=7f60f&oh=00_AQDXa0UR2Wc1_TjrPm0ajU57AdXEo5B_WWy-61mtF2Z-Og&oe=6A56AEBD"
+ },
+ {
+  "venue": "台北三創生活園區",
+  "title": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
+  "img": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/715521721_122254100714118813_7612222001561463722_n.jpg?stp=dst-jpg_tt6&cstp=mx1176x1440&ctp=p600x600&_nc_cat=110&ccb=1-7&_nc_sid=b96d88&_nc_ohc=9LpthnKqmdwQ7kNvwH4cGTo&_nc_oc=AdrpqNAAFwwJSzhopOM7v9TJZkebKgnblJukzbTlSwWXkLup_fKzQYaTHNBD1gswNJ4&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=GJGFrTUSXNEFKpqLNiBbMg&_nc_ss=7f20f&oh=00_Af8jyRy3Yz25u2qySn8RnCUfOp8rBmCo9h1R4mZ4JtqEHQ&oe=6A3E7F02"
+ },
+ {
+  "venue": "台北世界貿易中心展覽一館",
+  "title": "《落第忍者亂太郎》40週年紀念原畫展（海外首度登場）",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-14",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DaUQi_4FctQ",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t39.30808-6/736234958_1313118644319464_3815377666582417256_n.jpg?stp=c230.0.691.691a_dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0AaD9cUoqTkQ7kNvwF-gRb_&_nc_oc=AdoHzKGpHop4QoavC6cJ4DGGfVqmPVrI3FU-hn2rLjk109urM3VaozuxgDn-rUXxwhbuXyKRNWhN9p7O3zYWPOYO&_nc_zt=23&_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_gid=_yvDcbNJoaLMQOYl3OPOQA&_nc_ss=7f60f&oh=00_AQBACL-BuVdGEapw77xof-hDihF9aVDw9NhI7RIELiTEmw&oe=6A56C21C"
+ },
+ {
+  "venue": "台東縣鹿野鄉高台",
+  "title": "吉伊卡哇-2026 臺灣國際熱氣球嘉年華",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.facebook.com/balloontaiwan",
+  "img": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-1/660884150_1255052066808070_8950090942783556205_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=107&ccb=1-7&_nc_sid=3ab345&_nc_ohc=mJ4eq5qe_5kQ7kNvwHKuAVu&_nc_oc=AdpSaTjqpnrwROpdhpV2ynDTzQcZraQz3nn546bIcTvslO-SVaQHHOi05Do9mNG1WzE&_nc_zt=24&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=HkEXdBwiOtsSs2Ss8VD3ww&_nc_ss=7f20f&oh=00_Af-uH-zAgvYL-4WrwLI_YFw8T7_lp7Pt5_xbS2okLASKEA&oe=6A3E81C1"
+ },
+ {
+  "venue": "夢時代購物中心Ｘ野獸國",
+  "title": "ANI-FEST期間限定店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DYWFmd8jRZ2/",
+  "img": "https://scontent.cdninstagram.com/v/t39.30808-6/701119927_1304702038435640_8508229919049171536_n.jpg?stp=c327.0.984.983a_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3w1nYj1WkxYQ7kNvwEZiFW0&_nc_oc=AdqA32fpabYOqVRJZREa8pHS2Oq6SJlOujxUsvjnmLQ_fBHnM1oTJL_Plrw3KU1RvW4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=TQAsMkbfiZTdfKFVjGAPDw&_nc_ss=7f60f&oh=00_Af-tikzwpblpnOSCKcDG0NdAScZnnVSCpK8SibSJvNSmmQ&oe=6A3E701B"
+ },
+ {
+  "venue": "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心",
+  "title": "San-X 90週年紀念展in台灣",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
+  "img": "https://scontent.cdninstagram.com/v/t39.30808-6/716610649_1444272547738849_2170469261566338942_n.jpg?stp=c220.0.660.660a_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=7c61d0vmXhsQ7kNvwFVM78j&_nc_oc=Adq8ljoPRTo7CLCdwi1IIXhaAj5YkA1ZCfYWzrQ9cqc5Fqxp9JpH5Xugf62xaPBH-3g&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=PRaUEaWgjp0ZWh5zQAswog&_nc_ss=7f60f&oh=00_Af__6pZhpWWT6TTc5URUEYX4fmWoUbci1WhsVRonA4maMw&oe=6A3E738B"
+ },
+ {
+  "venue": "新光三越台北信義新天地A8館5樓",
+  "title": "名偵探柯南 高速公路的墮天使 快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
+  "img": "https://instagram.frmq3-3.fna.fbcdn.net/v/t39.30808-6/712623279_1442584641240973_7445177216799446091_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE1MDAuc2RyLnJlZ3VsYXJfcGhvdG8uYzIifQ&_nc_ht=instagram.frmq3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHqaK8crqas3DLp09YiD9zDerWbDdIRUDLJyJpTMX09kW6XOoaqIiTd844Jl3IShMac5GwXwZXVE088NN354-rT&_nc_ohc=6oMyZPKa0TAQ7kNvwFOdvVR&_nc_gid=5Jv_nOa8CJqYGM-fLtRtTQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzkxMTAzNzU3MjMzMTE2MTM3OA%3D%3D.3-ccb7-5&oh=00_AQCVO1A1abghnjKMLXgvyK3pnl66wqYjUCeqeP98iKO8xg&oe=6A591298&_nc_sid=10d13b"
+ },
+ {
+  "venue": "新光三越台北南西店 一館 9F 活動會館",
+  "title": "JOJO CARAVAN 飆馬野郎複製原畫展",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.facebook.com/emuse.com.tw/photos/%F0%9D%97%9D%F0%9D%97%A2%F0%9D%97%9D%F0%9D%97%A2-%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A5%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%A1-%E5%8D%B3%E5%B0%87%E7%99%BB%E5%A0%B4%E7%82%BA%E7%B4%80%E5%BF%B5jojo-%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%9A%AA%E7%AC%AC%E4%B8%83%E9%83%A8steel-ball-run-%E9%A3%86%E9%A6%AC%E9%87%8E%E9%83%8E%E6%AD%A3%E5%BC%8F%E5%8B%95%E7%95%AB%E5%8C%96%E5%AE%98%E6%96%B9%E5%B7%A1%E8%BF%B4%E5%B1%95%E8%A6%BDjojo-caravan%E5%8D%B3%E5%B0%87%E4%BE%86%E5%8F%B0%E7%8F%BE/1478337260995605/",
+  "img": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.99422-6/722911112_1353811343285942_5744772236078704664_n.png?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s851x315&_nc_cat=111&ccb=1-7&_nc_sid=27488d&_nc_ohc=XedwXlunA2YQ7kNvwGjZCbf&_nc_oc=Ado4C2MShcGJPTQJsCOoM7BJFmwUsJG2VZrDW6JrffEr7BPhW1JWe5lMFzPNwXT_iAc&_nc_zt=14&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=jqeUgzKE6vuipwPbxALJWg&_nc_ss=7f20f&oh=00_Af_hcvVrTY3qRA9g7GXxPkGD3ft-Xzm-8d8-Vb8pRcMGNg&oe=6A3E9170"
+ },
+ {
+  "venue": "新光三越台南小北門店1F",
+  "title": "GODZILLA STORE 台南期間限定快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-14",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DaT8RkDAeAX",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t51.82787-15/730836842_18103483219932985_8216642575292910569_n.jpg?stp=c129.0.389.388a_dst-jpg_e35_s640x640_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qHf48jzeD4gQ7kNvwHIDTEw&_nc_oc=AdrLUfz3vRuQPhXe9D49v88J9P6EhdhXscvOszQvIG8TXwfjrcJ2bnmQ3cYoLI3GLesmV6W4FkruYvx_J0pLEybP&_nc_zt=23&_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_gid=lNxg2Hhoog_MoaYDr8Md3Q&_nc_ss=7f60f&oh=00_AQCIcQXZxwMSj5rx7YN34TCSLD3WGj_Dc5xbFwj1ndyGbg&oe=6A56AA92"
+ },
+ {
+  "venue": "新光三越高雄左營店 10F",
+  "title": "Hello Kitty展 高雄站",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
+  "img": "https://scontent.cdninstagram.com/v/t39.30808-6/714809331_1443481271151310_7180085305071484599_n.jpg?stp=c256.0.768.768a_dst-jpg_e35_s640x640_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=T4cQ9f8tdj8Q7kNvwGf4KWR&_nc_oc=AdrcDrb5Yo3V12CM9D7P3rgwHDgxv6RZ57qUZaHPwaAeE2BHmyla5BajNwyOLgUxpdA&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=tVkY7gkixtbw32OxJflGFg&_nc_ss=7f60f&oh=00_Af8lUy6fHgy-0zxR5f7SyK8_rUZc2pZqBLoIK2EQcQ8JMg&oe=6A3E612B"
+ },
+ {
+  "venue": "花蓮縣壽豐鄉鯉魚潭",
+  "title": "2026花蓮FUN暑假",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-06",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZrU9yxgT5x/",
+  "img": "https://scontent.cdninstagram.com/v/t39.30808-6/725698172_1401859465300911_2330909034171782124_n.jpg?stp=c171.0.513.513a_dst-jpg_e35_s640x640_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=g9ub89to_WYQ7kNvwHEWp2b&_nc_oc=AdoGb7wPCEwHMXUasaNUavOaP47qoJqwQSD5zbbf12YDmGJISf_1sqAN0VlGN0f2rRs&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=i0O-Z4SKnJqjHaX90G1PVw&_nc_ss=7f60f&oh=00_AQAKIH18jvMRwBYu8HqsxlGXUaqX8XkPr3arNMELsYcgfQ&oe=6A4BBD97"
+ },
+ {
+  "venue": "誠品R79 中山地下書街B1",
+  "title": "mofusand快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-14",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DaURh41Sp6r",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t51.82787-15/731140102_18086291315573341_8961728531473886642_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=1FbjPEgg_CUQ7kNvwESrLRO&_nc_oc=Adpyejhhx1K9N-ovd8Xu_TGkDwx4J37O8ppUR3qY_8lC_cmb7WBIF44qKUMtPBnAKW_CdO8SdQcAS6iGMbRiS9Zt&_nc_zt=23&_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_gid=93iQ7_66ncY_uTYQUg_Zeg&_nc_ss=7f60f&oh=00_AQDIkP8tJK19SdKPnUPtxiAY-vXsVKlLcbG6PT_XvuR9aQ&oe=6A56A2F0"
+ },
+ {
+  "venue": "誠品生活新店",
+  "title": "「夏日動漫時光機」展",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/Daj62-JJU6Q",
+  "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC"
+ },
+ {
+  "venue": "誠品生活松菸店",
+  "title": "「夏日動漫時光機」展",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/Daj62-JJU6Q",
+  "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC"
+ },
+ {
+  "venue": "誠品生活武昌店",
+  "title": "「夏日動漫時光機」展",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/Daj62-JJU6Q",
+  "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC"
+ },
+ {
+  "venue": "誠品生活西門店",
+  "title": "「夏日動漫時光機」展",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/Daj62-JJU6Q",
+  "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC"
+ },
+ {
+  "venue": "駁二藝術特區",
+  "title": "《凡爾賽玫瑰》快閃空間",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZZ0g9UpJHY/",
+  "img": "https://scontent.cdninstagram.com/v/t51.82787-15/721950871_17941270014248420_7204383314104486476_n.jpg?stp=c286.0.860.859a_dst-jpg_e35_s640x640_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=keLa8bMMYRQQ7kNvwHPyMUK&_nc_oc=Adr2pnWGugQodT9qfaCgOIzJ92px5ILizIgeq5hv8g-bbefNUhfeQfdoIyJ9oOLV2y4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=Y0b-Q-kuKr6KobWjCKmaRg&_nc_ss=7f60f&oh=00_Af_S-mnfymLzkYMGaRWkx0332pbkOYW2OlCSsHowe7W3fw&oe=6A3E6318"
+ },
+ {
+  "venue": "高雄夢時代購物中心 1F",
+  "title": "名偵探柯南 高速公路的墮天使 快閃店",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-16",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZGy_q_ARWM/?img_index=1",
+  "img": "https://instagram.frmq3-3.fna.fbcdn.net/v/t39.30808-6/712623279_1442584641240973_7445177216799446091_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE1MDAuc2RyLnJlZ3VsYXJfcGhvdG8uYzIifQ&_nc_ht=instagram.frmq3-3.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHqaK8crqas3DLp09YiD9zDerWbDdIRUDLJyJpTMX09kW6XOoaqIiTd844Jl3IShMac5GwXwZXVE088NN354-rT&_nc_ohc=6oMyZPKa0TAQ7kNvwFOdvVR&_nc_gid=5Jv_nOa8CJqYGM-fLtRtTQ&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzkxMTAzNzU3MjMzMTE2MTM3OA%3D%3D.3-ccb7-5&oh=00_AQCVO1A1abghnjKMLXgvyK3pnl66wqYjUCeqeP98iKO8xg&oe=6A591298&_nc_sid=10d13b"
+ },
+ {
+  "venue": "高雄夢時代購物中心8樓 時代會館",
+  "title": "primaniacs 夢時代POPUP 2026",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-14",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DaU5z0TFPTd",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t39.30808-6/730397837_878453038644565_1541266482502172015_n.jpg?stp=c327.0.983.982a_dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=gThEj_hu_rIQ7kNvwGCewOg&_nc_oc=Adok3YIsxsFaJClhjjEi5_B3wy1s_O-DA6yM9seDt-DJ_MvSJw6wS6juELCRpkp2n3khrXqe4LBavU56YjxRb0-z&_nc_zt=23&_nc_ht=scontent-tpe1-1.cdninstagram.com&_nc_gid=c7h2fMaGDLYvXE7cU6UP_w&_nc_ss=7f60f&oh=00_AQCGgR8LLWvN5jGB57LSD7Fmj66T3tqRjBAnZ9eXrwzekg&oe=6A56B6FE"
+ },
+ {
+  "venue": "高雄駅一番街・北站 高雄捷運高雄車站B2",
+  "title": "藥師少女的獨語展",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
+  "img": "https://scontent.cdninstagram.com/v/t51.82787-15/719506383_18110937136810590_2759839691054459890_n.jpg?stp=c562.0.1687.1687a_dst-jpg_e35_s640x640_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6hUzS4WGEwkQ7kNvwEKLzFl&_nc_oc=AdrbmrAZrEXpvj6StswXYiajtOMNWvapwXxEj88KsHyXFy6GA5aANqCLi5dcrVoQpBg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=ubZ3N7HOQjO6flIwolRCww&_nc_ss=7f60f&oh=00_Af_-Yajgbtj9uhRU23bnmeRQ4nKnPQjZi1DcG6-BxkRfbw&oe=6A3E7AC9"
+ },
+ {
+  "venue": "早點出發 / EATWITHGO",
+  "title": "早點出發 / EATWITHGO / 日式喫茶店 / 貝果專賣 / 神奇寶貝同好交流",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-26",
+  "expired_now": true,
+  "link": "https://www.instagram.com/eatwithgo/",
+  "img": "https://instagram.ftpe7-3.fna.fbcdn.net/v/t51.82787-19/568687837_18205120360314459_5761462485831570811_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.ftpe7-3.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2gE_Y5TtbhaVx0XaHTCC_yH031L1MMct8mRNY35EmE0j-r8udu5bY8T5IpY7THKHiqs&_nc_ohc=6mZ9pK7b3YUQ7kNvwFpahcM&_nc_gid=CizvvJyQIC-LDr_17OsMiQ&edm=APoiHPcBAAAA&ccb=7-5&oh=00_Af-qblg6iL4ULAhBW7WLb_EEwq7BcqJ67OLgoQUorizQAw&oe=6A3E713D&_nc_sid=22de04"
+ },
+ {
+  "venue": "凱岩咖啡 - 忠孝店",
+  "title": "楓之谷 x 凱岩主題餐廳",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-07-06",
+  "expired_now": true,
+  "link": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=23",
+  "img": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/731131717_122210042576512737_5556270474344509085_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dVo6mxZwdeUQ7kNvwEjqbW-&_nc_oc=AdpTiYYcCFmc0dfLmc9hUpLVvMWpg3BiGWvmnTYtPPUZ5gjPg2P1a8No9Am-fW15flc&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=tCgRj9frZ3CbKFwuciHKmg&_nc_ss=7b289&oh=00_AQCOdiMFVMuHPr7KibblLl_mjeB0yaQiB4yLPmj25ojjhA&oe=6A4BDDAD"
+ },
+ {
+  "venue": "凱岩咖啡 - 永康店",
+  "title": "賽爾號 x 凱岩主題餐廳",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "2026-06-25",
+  "expired_now": true,
+  "link": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22",
+  "img": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/715550246_122207922308512737_2167885398230234641_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x900&ctp=p600x600&_nc_cat=102&ccb=1-7&_nc_sid=cae128&_nc_ohc=E1WJkN2HIzMQ7kNvwGYxZah&_nc_oc=AdqgMMH9stIIscTWLMHzsQteiAfO4IeCMcbjG7GgZEXh8YRAm5P_1840v5Ki1ekcAzwj8w7Bddlvz675L-OtNM1X&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=COXym64iTM6sfQM2vaXtmA&_nc_ss=7f20f&oh=00_Af8WN1I_zP4dB5ZLjc5W16GS6eQlvW4rQs5K1eJo64HQyw&oe=6A3DA8B5"
+ },
+ {
+  "venue": "object taipei store",
+  "title": "《Marshville Quokscout》",
+  "reason": "遠端會過期(FB/IG簽章網址)",
+  "reason_code": "expiring",
+  "expiry": "",
+  "expired_now": false,
+  "link": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
+  "img": "https://scontent-tpe1-1.cdninstagram.com/v/t51.82787-15/723942022_17919184356390448_2022661587572240851_n.jpg"
+ },
+ {
+  "venue": "華山1914文化創意產業園區",
+  "title": "《天官賜福》",
+  "reason": "遠端未自存",
+  "reason_code": "remote",
+  "expiry": "",
+  "expired_now": false,
+  "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26062413384986627",
+  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/華山官網活動 1920(W) x 1080(H)_1.jpg"
+ }
 ]

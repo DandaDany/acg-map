@@ -18,6 +18,7 @@
 """
 import json, os, time, datetime
 from paths import path as P
+from report_event_kv import kv_status  # 共用同一套 KV 判斷（img 空 / 會過期外站網址 / 已自存）
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 def load(path, retries=6):
@@ -57,7 +58,21 @@ def main():
     # 統計
     n_v = len(vs); n_e = sum(len(v.get("ex", [])) for v in vs)
     miss_link = [(v["name"], e["t"]) for v in vs for e in v.get("ex", []) if not e.get("l")]
-    miss_kv   = [(v["name"], e["t"]) for v in vs for e in v.get("ex", []) if not e.get("img")]
+    # 缺 KV = 完全沒圖 或 img 仍指向會過期外站網址（cdninstagram/fbcdn/oe=，會破圖）。
+    # 只判 e.get("img") 為空會漏掉「假有圖、實破圖」的活動，故改用 kv_status 一併揪出。
+    miss_kv = []
+    for v in vs:
+        for e in v.get("ex", []):
+            code, expiry = kv_status(e.get("img"))
+            if code == "ok":
+                continue
+            if code == "empty":
+                note = "無圖"
+            elif code == "expiring":
+                note = "已過期破圖" if (expiry and expiry < datetime.date.today().isoformat()) else "會過期外站網址"
+            else:  # remote
+                note = "尚未自存(外站官網圖)"
+            miss_kv.append((v["name"], e["t"], note))
     approx    = [v["name"] for v in vs if v.get("loc") and v["loc"] != "exact"]
     from collections import Counter
     src = Counter(v.get("src", "?") for v in vs)
@@ -87,12 +102,13 @@ def main():
         print("  |---|---|")
         for vn, t in miss_link:
             print(f"  | {vn} | {t} |")
-    print(f"- 缺主視覺 KV：{len(miss_kv)} / {n_e} 場（{pct(len(miss_kv),n_e)}）")
+    print(f"- 缺主視覺 KV：{len(miss_kv)} / {n_e} 場（{pct(len(miss_kv),n_e)}）"
+          "（含 img 為空 與「仍指向會過期外站網址、已破圖/將破圖」者）")
     if miss_kv:
-        print("  | 場館 | 活動 |")
-        print("  |---|---|")
-        for vn, t in miss_kv:
-            print(f"  | {vn} | {t} |")
+        print("  | 場館 | 活動 | 狀況 |")
+        print("  |---|---|---|")
+        for vn, t, note in miss_kv:
+            print(f"  | {vn} | {t} | {note} |")
     print(f"- 約略定位（非精確座標）：{len(approx)} / {n_v} 館（{pct(len(approx),n_v)}）" + (f"：{'、'.join(approx)}" if approx else ""))
     print()
 
@@ -126,8 +142,10 @@ def main():
         print(f"1. 分類複核：{len(official_non_acg)} 場官網活動疑似漏判 ACG，本輪新增部分（見第1節「新增活動」）優先看，"
               "確認後補 event_overrides.json。")
     if miss_kv:
-        print(f"2. KV：{len(miss_kv)} 場缺主視覺 → 跑 collect_event_kv.py --browser-fallback，"
-              "多數可自動補齊，剩下人工核對。")
+        print(f"2. KV：{len(miss_kv)} 場缺/破圖主視覺。有官方活動頁者跑 collect_event_kv.py "
+              "--browser-fallback 多數可自動補齊；標『會過期/已破圖』者屬 FB/IG 簽章網址，"
+              "須趁未過期時下載官方主視覺、commit 進 data/manual/_kv_cache/ 並改引用 repo 內"
+              "永久 raw URL（比照『藍色監獄×指南針武昌店』那筆），無法靠自動抓取救回。")
     if approx:
         print(f"3. 座標：{len(approx)} 館還是約略定位 → 補完整地址後跑 geocode_venues.py。")
     if len(miss_link) > n_e * 0.3:
