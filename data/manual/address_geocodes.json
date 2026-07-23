@@ -1107,5 +1107,29 @@
   "display_name": "台北市信義區西村里松壽路9號, 11051",
   "type": "PointAddress",
   "score": 100
+ },
+ "台北市中正區忠孝東路二段79號；捷運忠孝新生站步行約1分鐘": {
+  "la": 25.0430852,
+  "lo": 121.5305187,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區光華商圈忠孝東路二段79號, 100013",
+  "type": "StreetAddressExt",
+  "score": 94.17
+ },
+ "台北市中正區八德路一段1號": {
+  "la": 25.0437055,
+  "lo": 121.528695,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區梅花里八德路一段1號, 10058",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "高雄市左營區世運大道100號": {
+  "la": 22.701527,
+  "lo": 120.295218,
+  "source": "arcgis_address",
+  "display_name": "高雄市左營區世運大道100號, 813003",
+  "type": "PointAddress",
+  "score": 100
  }
 }
