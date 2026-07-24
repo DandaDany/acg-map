@@ -6882,5 +6882,151 @@
     }
    }
   ]
+ },
+ "台北市中正區忠孝東路二段79號；捷運忠孝新生站步行約1分鐘": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區光華商圈忠孝東路二段79號, 100013",
+    "location": {
+     "x": 121.530518685427,
+     "y": 25.043085169192
+    },
+    "score": 94.17,
+    "attributes": {
+     "Score": 94.17,
+     "Match_addr": "台北市中正區光華商圈忠孝東路二段79號, 100013",
+     "Addr_type": "StreetAddressExt"
+    },
+    "extent": {
+     "xmin": 121.529518685427,
+     "ymin": 25.042085169192,
+     "xmax": 121.531518685427,
+     "ymax": 25.044085169192
+    }
+   },
+   {
+    "address": "台北市中正區梅花里忠孝東路二段79號, 10058",
+    "location": {
+     "x": 121.530254418743,
+     "y": 25.043284094447
+    },
+    "score": 81.34,
+    "attributes": {
+     "Score": 81.34,
+     "Match_addr": "台北市中正區梅花里忠孝東路二段79號, 10058",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.529254418743,
+     "ymin": 25.042284094447,
+     "xmax": 121.531254418743,
+     "ymax": 25.044284094447
+    }
+   }
+  ]
+ },
+ "微風運河園區 新北市 台灣": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "微風運河",
+    "location": {
+     "x": 121.4574577,
+     "y": 25.0950841
+    },
+    "score": 89.27,
+    "attributes": {
+     "Score": 89.27,
+     "Match_addr": "微風運河",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.4524577,
+     "ymin": 25.0900841,
+     "xmax": 121.4624577,
+     "ymax": 25.1000841
+    }
+   },
+   {
+    "address": "微風運河",
+    "location": {
+     "x": 121.4532592,
+     "y": 25.0849289
+    },
+    "score": 89.27,
+    "attributes": {
+     "Score": 89.27,
+     "Match_addr": "微風運河",
+     "Addr_type": "POI"
+    },
+    "extent": {
+     "xmin": 121.4482592,
+     "ymin": 25.0799289,
+     "xmax": 121.4582592,
+     "ymax": 25.0899289
+    }
+   }
+  ]
+ },
+ "台北市中正區八德路一段1號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市中正區梅花里八德路一段1號, 10058",
+    "location": {
+     "x": 121.528694965657,
+     "y": 25.04370545272
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市中正區梅花里八德路一段1號, 10058",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.527694965657,
+     "ymin": 25.04270545272,
+     "xmax": 121.529694965657,
+     "ymax": 25.04470545272
+    }
+   }
+  ]
+ },
+ "高雄市左營區世運大道100號": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "高雄市左營區世運大道100號, 813003",
+    "location": {
+     "x": 120.295218033854,
+     "y": 22.701526988624
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "高雄市左營區世運大道100號, 813003",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.294218033854,
+     "ymin": 22.700526988624,
+     "xmax": 120.296218033854,
+     "ymax": 22.702526988624
+    }
+   }
+  ]
  }
 }
