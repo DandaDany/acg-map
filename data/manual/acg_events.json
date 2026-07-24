@@ -2944,7 +2944,7 @@
   }
  },
  {
-  "KV": null,
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_realescape_taichung_20260828.jpg",
   "類型 / Category": "體驗/Experience",
   "活動類別 / Activity Category": "體驗活動/Experience Activity",
   "年度 / Start Year": 2026,
@@ -2957,7 +2957,7 @@
   "主辦方 / Organizer": "SCRAP／頂級豬排遊戲工作室（台灣代理）",
   "授權單位 / Authorized unit (Licensor)": "需人工確認",
   "活動連結 / Activity link": "https://realescapeconan.oen.tw/",
-  "備註 / NOTE": "資料來源：Daniel於2026/07/22對話指定採用；原Slack為IG(instagram.com/p/DbDrgmBjSYc)。台中場日期2026/08/28–09/06（早鳥票8/03開賣）、場地『台中世界貿易中心大禮堂』經官方頁realescapeconan.oen.tw與新聞(巴哈gnn.gamer.com.tw sn=305728、4Gamers、QooApp、top10.com.tw)交叉確認；官方另載台北場7/30–8/23、高雄場12月。活動類別『體驗活動』為AI依實境解謎/真實逃脫遊戲性質判定。⚠️KV待補：僅IG社群圖，尚未取得可肉眼驗證(含名稱+日期+地點)之官方正式主視覺，故KV留空。⚠️授權單位官方頁未明標，標需人工確認。",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/22對話指定採用；原Slack為IG(instagram.com/p/DbDrgmBjSYc)。台中場日期2026/08/28–09/06（早鳥票8/03開賣）、場地『台中世界貿易中心大禮堂』經官方頁realescapeconan.oen.tw與新聞(巴哈gnn.gamer.com.tw sn=305728、4Gamers、QooApp、top10.com.tw)交叉確認；官方另載台北場7/30–8/23、高雄場12月。活動類別『體驗活動』為AI依實境解謎/真實逃脫遊戲性質判定。⚠️KV待補：僅IG社群圖，尚未取得可肉眼驗證(含名稱+日期+地點)之官方正式主視覺，故KV留空。⚠️授權單位官方頁未明標，標需人工確認。 【KV更新 2026/07/23】KV已補並自存：採台灣官方活動頁realescapeconan.oen.tw之og:image主視覺(static-assets.oen.tw/images/img-3EsvXbUBi97X9r0mQ3XlQRP0rmJ.jpg)，2026/07/23已用Read肉眼確認為官方正式KV：含『名偵探柯南×REAL ESCAPE GAME Created by SCRAP』標題、主標『逃脫！疾風的高速追逐』、台灣代理『頂級豬排 THE KING PORK』logo、及版權©Gosho Aoyama/1996,2026 Shogakukan,YTV,TMS ©SCRAP。⚠️此為官方主視覺(title KV)，畫面未印台中場日期/地點文字(非海報式)。已下載commit進repo data/manual/_kv_cache/，KV欄引用repo永久raw URL。",
   "IP_std": "名偵探柯南",
   "Licensor_std": null,
   "月份": "2026-08-28 00:00:00",
@@ -2966,7 +2966,7 @@
   }
  },
  {
-  "KV": null,
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/artofmiku_whitestone_taipei_20260801.png",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "展覽/Exhibition",
   "年度 / Start Year": 2026,
@@ -2979,7 +2979,7 @@
   "主辦方 / Organizer": "需人工確認",
   "授權單位 / Authorized unit (Licensor)": "需人工確認",
   "活動連結 / Activity link": "https://capsule1111.kktix.cc/events/artofmiku",
-  "備註 / NOTE": "資料來源：Daniel於2026/07/22對話指定採用；原Slack為IG(instagram.com/p/DbDAyIQRTXe)。展期兩階段：第一階段8/01–8/23、第二階段8/29–9/20（開始日填8/01、結束日填9/20涵蓋整段；每週一休、11:00–19:00），經官方售票頁KKTIX(capsule1111.kktix.cc/events/artofmiku)與新聞(巴哈gnn.gamer.com.tw sn=305728、4Gamers sn=78715/79557、QooApp)交叉確認，為海外巡迴首站、逾80件作品。地點『白石畫廊台北(內湖基湖路1號1樓)』由新聞明載。活動類別『展覽』為AI依畫廊藝術展性質判定。⚠️KV待補：僅IG社群圖，尚未取得可肉眼驗證之官方正式主視覺，KV留空。⚠️主辦方/授權單位官方頁未明列(初音授權方通常為Crypton Future Media，但來源未明述)，標需人工確認。",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/22對話指定採用；原Slack為IG(instagram.com/p/DbDAyIQRTXe)。展期兩階段：第一階段8/01–8/23、第二階段8/29–9/20（開始日填8/01、結束日填9/20涵蓋整段；每週一休、11:00–19:00），經官方售票頁KKTIX(capsule1111.kktix.cc/events/artofmiku)與新聞(巴哈gnn.gamer.com.tw sn=305728、4Gamers sn=78715/79557、QooApp)交叉確認，為海外巡迴首站、逾80件作品。地點『白石畫廊台北(內湖基湖路1號1樓)』由新聞明載。活動類別『展覽』為AI依畫廊藝術展性質判定。⚠️KV待補：僅IG社群圖，尚未取得可肉眼驗證之官方正式主視覺，KV留空。⚠️主辦方/授權單位官方頁未明列(初音授權方通常為Crypton Future Media，但來源未明述)，標需人工確認。 【KV更新 2026/07/23】KV已補並自存：採官方售票頁KKTIX(capsule1111.kktix.cc/events/artofmiku)之og:image(assets.kktix.io/upload_images/498303/ARTOFMIKU_taipei_KV_original.png)，2026/07/23已用Read肉眼確認為官方正式KV：含『ART OF MIKU』標題、副標『Taipei Exhibition』、多件初音作品拼貼及版權©CFM(Crypton Future Media)。⚠️畫面未印展期日期文字(title KV)。已下載commit進repo data/manual/_kv_cache/，KV欄引用repo永久raw URL。",
   "IP_std": "初音未來",
   "Licensor_std": null,
   "月份": "2026-08-01 00:00:00",
@@ -2988,7 +2988,7 @@
   }
  },
  {
-  "KV": null,
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eslite_acgfest_2026_20260801.jpg",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "活動/Event",
   "年度 / Start Year": 2026,
@@ -3001,7 +3001,7 @@
   "主辦方 / Organizer": "誠品書店",
   "授權單位 / Authorized unit (Licensor)": "需人工確認",
   "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308160",
-  "備註 / NOTE": "資料來源：Daniel於2026/07/22對話指定並提供官方新聞(巴哈gnn.gamer.com.tw sn=308160，2026/07/14 GNN報導，內文為誠品廠商提供資料原文)；原Slack為IG(instagram.com/p/DbDExkcmSSS)。展期2026/08/01–09/30於全台誠品書店、誠品線上、誠品蝦皮同步；北中南逾20家主題IP店。⚠️此為全台多館複合活動(物販85折+主題造景展示+《排球少年!!排球援!!》桌遊+9/19松菸誠品表演廳宮崎駿×新海誠音樂會+電影特映+進駐7/23–7/27漫博臺灣漫畫館)，活動類別以『活動/Event』暫定，未逐一將各分店拆成獨立座標，建議人工細分各主題IP店地點與類別。活動官網8/1才正式上線，連結暫用GNN官方新聞。授權單位涉多家，標需人工確認。KV留空(僅社群圖，未取得可驗證官方主視覺)。",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/22對話指定並提供官方新聞(巴哈gnn.gamer.com.tw sn=308160，2026/07/14 GNN報導，內文為誠品廠商提供資料原文)；原Slack為IG(instagram.com/p/DbDExkcmSSS)。展期2026/08/01–09/30於全台誠品書店、誠品線上、誠品蝦皮同步；北中南逾20家主題IP店。⚠️此為全台多館複合活動(物販85折+主題造景展示+《排球少年!!排球援!!》桌遊+9/19松菸誠品表演廳宮崎駿×新海誠音樂會+電影特映+進駐7/23–7/27漫博臺灣漫畫館)，活動類別以『活動/Event』暫定，未逐一將各分店拆成獨立座標，建議人工細分各主題IP店地點與類別。活動官網8/1才正式上線，連結暫用GNN官方新聞。授權單位涉多家，標需人工確認。KV留空(僅社群圖，未取得可驗證官方主視覺)。 【KV更新 2026/07/23】KV已補並自存：採官方新聞巴哈GNN(sn=308160)之og:image(p2.bahamut.com.tw/B/2KU/98/a7dca9417ef488f7cbf7c8b7631zf525.JPG)，2026/07/23已用Read肉眼確認為官方正式主視覺：含『2026誠品動漫祭』標題、《全知讀者視角》主視覺牆、明載日期『8.01→9.30』與地點『誠品書店、誠品線上同步開展』、及©Sleepy·C/(3B2S STUDIO),LIMI,singNsong/REDICE STUDIO、台灣角川、誠品書店logo。名稱+日期+地點齊備。已下載commit進repo data/manual/_kv_cache/，KV欄引用repo永久raw URL。",
   "IP_std": null,
   "Licensor_std": null,
   "月份": "2026-08-01 00:00:00",
