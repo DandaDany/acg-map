@@ -1576,5 +1576,21 @@
   "display_name": "高雄市左營區世運大道100號, 813003",
   "type": "PointAddress",
   "addr_key": "高雄市左營區世運大道100號"
+ },
+ "台中世界貿易中心 大禮堂": {
+  "la": 24.176085,
+  "lo": 120.617068,
+  "source": "address_geocode",
+  "display_name": "台中市水崛頭天保街60號, 407017",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區天保街60號3樓"
+ },
+ "白石畫廊台北 Whitestone Gallery Taipei": {
+  "la": 25.0816818,
+  "lo": 121.5655696,
+  "source": "address_geocode",
+  "display_name": "台北市內湖區西湖里基湖路1號, 11492",
+  "type": "PointAddress",
+  "addr_key": "台北市內湖區基湖路1號1樓"
  }
 }
