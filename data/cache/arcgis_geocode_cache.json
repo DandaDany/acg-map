@@ -7028,5 +7028,59 @@
     }
    }
   ]
+ },
+ "台中市西屯區天保街60號3樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台中市水崛頭天保街60號, 407017",
+    "location": {
+     "x": 120.617068028365,
+     "y": 24.176085015841
+    },
+    "score": 97.88,
+    "attributes": {
+     "Score": 97.88,
+     "Match_addr": "台中市水崛頭天保街60號, 407017",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 120.616068028365,
+     "ymin": 24.175085015841,
+     "xmax": 120.618068028365,
+     "ymax": 24.177085015841
+    }
+   }
+  ]
+ },
+ "台北市內湖區基湖路1號1樓": {
+  "spatialReference": {
+   "wkid": 4326,
+   "latestWkid": 4326
+  },
+  "candidates": [
+   {
+    "address": "台北市內湖區西湖里基湖路1號, 11492",
+    "location": {
+     "x": 121.565569556116,
+     "y": 25.081681844351
+    },
+    "score": 100,
+    "attributes": {
+     "Score": 100,
+     "Match_addr": "台北市內湖區西湖里基湖路1號, 11492",
+     "Addr_type": "PointAddress"
+    },
+    "extent": {
+     "xmin": 121.564569556116,
+     "ymin": 25.080681844351,
+     "xmax": 121.566569556116,
+     "ymax": 25.082681844351
+    }
+   }
+  ]
  }
 }
