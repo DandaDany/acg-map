@@ -99,9 +99,9 @@
  },
  "台中世界貿易中心 大禮堂": {
   "city": "台中市",
-  "lat": 24.17228,
-  "lng": 120.63166,
-  "loc": "區級",
+  "lat": 24.176085,
+  "lng": 120.617068,
+  "loc": "exact",
   "addr": "台中市西屯區天保街60號3樓",
   "url": "https://realescapeconan.oen.tw/",
   "ex": [
@@ -148,24 +148,6 @@
     "l": "https://www.bryte-fun.com",
     "img": "",
     "cat2": "體驗活動/Experience Activity"
-   }
-  ]
- },
- "台中綠園道 K-MONSTAR門市": {
-  "city": "台中市",
-  "lat": 24.144977,
-  "lng": 120.664182,
-  "loc": "exact",
-  "addr": "台中市西區向上路一段79巷72號",
-  "url": "https://www.instagram.com/p/DakWfJNDMk8",
-  "ex": [
-   {
-    "t": "GANADI POP-UP（LINE FRIENDS×K-MONSTAR）",
-    "s": "2026/07/17",
-    "e": "2026/07/26",
-    "l": "https://www.instagram.com/p/DakWfJNDMk8",
-    "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
-    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
@@ -290,24 +272,6 @@
     "l": "https://tw.portal-pokemon.com/30th/topics/20260701_01/",
     "img": "https://tw.portal-pokemon.com/images/9c328b4f479c4b18107bb8782ce33498.jpg",
     "cat2": "活動/Event"
-   }
-  ]
- },
- "台北微風南山": {
-  "city": "台北市",
-  "lat": 25.0344353,
-  "lng": 121.5657745,
-  "loc": "exact",
-  "addr": "台北市信義區松智路17號B1",
-  "url": "https://www.instagram.com/p/DakWfJNDMk8",
-  "ex": [
-   {
-    "t": "GANADI POP-UP（LINE FRIENDS×K-MONSTAR）",
-    "s": "2026/07/17",
-    "e": "2026/07/26",
-    "l": "https://www.instagram.com/p/DakWfJNDMk8",
-    "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
-    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
@@ -589,24 +553,6 @@
    }
   ]
  },
- "新竹巨城 K-MONSTAR門市": {
-  "city": "新竹市",
-  "lat": 24.809384,
-  "lng": 120.975509,
-  "loc": "exact",
-  "addr": "新竹市東區中央路229號3F",
-  "url": "https://www.instagram.com/p/DakWfJNDMk8",
-  "ex": [
-   {
-    "t": "GANADI POP-UP（LINE FRIENDS×K-MONSTAR）",
-    "s": "2026/07/17",
-    "e": "2026/07/26",
-    "l": "https://www.instagram.com/p/DakWfJNDMk8",
-    "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
-    "cat2": "快閃店/Pop Up Store"
-   }
-  ]
- },
  "新莊棒球場": {
   "city": "新北市",
   "lat": 25.0402673,
@@ -663,9 +609,9 @@
  },
  "白石畫廊台北 Whitestone Gallery Taipei": {
   "city": "台北市",
-  "lat": 25.09341,
-  "lng": 121.59381,
-  "loc": "區級",
+  "lat": 25.0816818,
+  "lng": 121.5655696,
+  "loc": "exact",
   "addr": "台北市內湖區基湖路1號1樓",
   "url": "https://capsule1111.kktix.cc/events/artofmiku",
   "ex": [
@@ -717,9 +663,9 @@
  },
  "華山1914文創園區 東2館四連棟": {
   "city": "台北市",
-  "lat": 25.0437055,
-  "lng": 121.528695,
-  "loc": "exact",
+  "lat": 25.02983,
+  "lng": 121.52412,
+  "loc": "區級",
   "addr": "台北市中正區八德路一段1號",
   "url": "https://gnn.gamer.com.tw/detail.php?sn=305017",
   "ex": [
@@ -730,24 +676,6 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=305017",
     "img": "",
     "cat2": "展覽/Exhibition"
-   }
-  ]
- },
- "華山1914文創園區 西2館（華山紅磚六合院）": {
-  "city": "台北市",
-  "lat": 25.02539,
-  "lng": 121.50814,
-  "loc": "區級",
-  "addr": "台北市中正區杭州北路3-1號",
-  "url": "https://www.huashan1914.com/w/huashan1914/exhibition_26071311381949168",
-  "ex": [
-   {
-    "t": "TOHO animation STORE《我的英雄學院》快閃店",
-    "s": "2026/07/16",
-    "e": "2026/07/26",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26071311381949168",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/電子宣傳_1920x1080.jpg",
-    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
@@ -892,24 +820,6 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308477",
     "img": "https://p2.bahamut.com.tw/B/2KU/89/fde0a9d0b7051c772d010d99fa1zi555.JPG",
     "cat2": "體驗活動/Experience"
-   }
-  ]
- },
- "高雄夢時代 K-MONSTAR門市": {
-  "city": "高雄市",
-  "lat": 22.5953429,
-  "lng": 120.3087795,
-  "loc": "exact",
-  "addr": "高雄市前鎮區中華五路789號B1，統一時代百貨高雄店",
-  "url": "https://www.instagram.com/p/DakWfJNDMk8",
-  "ex": [
-   {
-    "t": "GANADI POP-UP（LINE FRIENDS×K-MONSTAR）",
-    "s": "2026/07/17",
-    "e": "2026/07/26",
-    "l": "https://www.instagram.com/p/DakWfJNDMk8",
-    "img": "https://static.accupass.com/eventbanner/2607090120552765661380.jpg",
-    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
