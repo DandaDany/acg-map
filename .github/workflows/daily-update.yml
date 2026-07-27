@@ -48,7 +48,7 @@ jobs:
       - name: Create Pull Request with updated data
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.FOR_CI }}
           commit-message: '每日自動更新活動資料 (${{ steps.date.outputs.today }})'
           branch: bot/auto-update
           branch-suffix: timestamp
