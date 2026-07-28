@@ -12,11 +12,11 @@ def sync_html():
     line = (
         "let DATA = "
         + json.dumps(data, ensure_ascii=False, separators=(",", ":"))
-        + "; let liveMode=false;\n"
+        + ";\n"
     )
     hits = 0
     for i, current in enumerate(lines):
-        if current.lstrip().startswith("let DATA = ") and "let liveMode=false;" in current:
+        if current.lstrip().startswith("let DATA = "):
             lines[i] = line
             hits += 1
     assert hits == 1, hits
