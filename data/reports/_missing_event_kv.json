@@ -241,16 +241,6 @@
  },
  {
   "venue": "華山1914文化創意產業園區",
-  "title": "星球樂園PLANET PARK-全境式互動樂園",
-  "reason": "遠端未自存",
-  "reason_code": "remote",
-  "expiry": "",
-  "expired_now": false,
-  "link": "https://www.huashan1914.com/w/huashan1914/exhibition_25062714454943100",
-  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_25062714454940536.jpg"
- },
- {
-  "venue": "華山1914文化創意產業園區",
   "title": "養元堂",
   "reason": "遠端未自存",
   "reason_code": "remote",
@@ -281,16 +271,6 @@
  },
  {
   "venue": "華山1914文化創意產業園區",
-  "title": "2026貓貓蟲咖波 咖波小浪漫快閃店臺北站",
-  "reason": "遠端未自存",
-  "reason_code": "remote",
-  "expiry": "",
-  "expired_now": false,
-  "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26060620421857466",
-  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/2026%2006%20%e5%92%96%e6%b3%a2%e5%b0%8f%e6%b5%aa%e6%bc%ab-%20%e6%b4%bb%e5%8b%95%e4%b8%bb%e8%a6%96%e8%a6%ba_1920x1080.jpg"
- },
- {
-  "venue": "華山1914文化創意產業園區",
   "title": "動漫最高祭 Anime Max Festival",
   "reason": "遠端未自存",
   "reason_code": "remote",
@@ -317,7 +297,7 @@
   "expiry": "",
   "expired_now": false,
   "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515351894532",
-  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/LINE_ALBUM_2024%e7%a7%8b%e7%af%80%e7%a6%ae%e7%9b%92_260721_3.jpg"
+  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/LINE_ALBUM_2024%e7%a7%8b%e7%af%80%e7%a6%ae%e7%9b%92_260721_3_26072710215821420.jpg"
  },
  {
   "venue": "華山1914文化創意產業園區",
@@ -331,16 +311,6 @@
  },
  {
   "venue": "華山1914文化創意產業園區",
-  "title": "《果子們 特展》",
-  "reason": "遠端未自存",
-  "reason_code": "remote",
-  "expiry": "",
-  "expired_now": false,
-  "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26070917023475337",
-  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/banner_%e6%b4%bb%e5%8b%95%e4%b8%bb%e8%a6%96%e8%a6%ba1920x1080_0.jpg"
- },
- {
-  "venue": "華山1914文化創意產業園區",
   "title": "島嶼生花",
   "reason": "遠端未自存",
   "reason_code": "remote",
@@ -348,6 +318,16 @@
   "expired_now": false,
   "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26061615453738958",
   "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/2026-06-%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95.jpg"
+ },
+ {
+  "venue": "華山1914文化創意產業園區",
+  "title": "《果子們 特展》",
+  "reason": "遠端未自存",
+  "reason_code": "remote",
+  "expiry": "",
+  "expired_now": false,
+  "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26070917023475337",
+  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/banner_%e6%b4%bb%e5%8b%95%e4%b8%bb%e8%a6%96%e8%a6%ba1920x1080_0.jpg"
  },
  {
   "venue": "華山1914文化創意產業園區",
@@ -367,6 +347,6 @@
   "expiry": "",
   "expired_now": false,
   "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515232688455",
-  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/李亭香_華山官網首頁Banner_820 (W) x 360(H) px_26072515372959804.jpg"
+  "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/S__90046467_26072715485853978.jpg"
  }
 ]
