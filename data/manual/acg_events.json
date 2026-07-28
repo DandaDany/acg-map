@@ -1912,6 +1912,9 @@
   "主辦方 / Organizer": "點點心",
   "授權單位 / Authorized unit (Licensor)": "三麗鷗",
   "活動連結 / Activity link": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
+  "多店活動 / Multi-store": "點點心",
+  "門市資料 / Store List": "data/manual/點點心門市地址_dimdimsum.json",
+  "門市名稱前綴 / Store Prefix": "點點心",
   "備註 / NOTE": "期間僅有IG貼文與部分新聞來源(udn女子漾https://woman.udn.com/woman/story/123162/9618208、ETtoday旅遊雲https://travel.ettoday.net/article/3198634.htm)佐證；此為點點心與三麗鷗每年反覆推出的聯名活動，新聞中另見「8/15-10/15、19間門市」等不同梯次描述，故本次年度梯次僅供參考，日期以IG貼文(2026/07/13-2026/09/13)為準。原Slack貼文載為全台21間門市，惟官網(dimdimsum.tw)2026/07/10查詢僅列出20間，差異需人工確認，門市清單已另存reference檔供未來場館更新使用。授權單位(三麗鷗)未查得官方公告，需人工確認。",
   "IP_std": "三麗鷗",
   "Licensor_std": null,
@@ -3007,6 +3010,75 @@
   "月份": "2026-08-01 00:00:00",
   "_links": {
    "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308160"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/avemujica_exitus_taipei_popup_20260807.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-07 00:00:00",
+  "結束日期 / End Date": "2026-08-10 00:00:00",
+  "IP": "BanG Dream!／Ave Mujica",
+  "活動名稱 / Activity Name": "Ave Mujica LIVE TOUR 2026「Exitus」台北限定快閃店",
+  "地點 / Location": "微風廣場 9F E廳（台北市松山區復興南路一段39號9樓）",
+  "主辦方 / Organizer": "寶島製造",
+  "授權單位 / Authorized unit (Licensor)": "Bushiroad／BanG Dream! Project",
+  "活動連結 / Activity link": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/28對話指定之巴哈姆特情報頁（轉載寶島製造官方Threads公告）。活動日期2026/08/07–08/10、地點微風廣場9F E廳及地址均由來源與主視覺明載；販售台北公演、日本巡迴及BanG Dream! Special LIVE in TAIPEI部分周邊。8/7–8/10每日11:30–18:00需預約，18:00後自由入場，預約自7/27 12:00開放，以主辦最新公告為準。KV採Daniel提供之imgpoi主視覺，已下載自存並肉眼確認含活動名稱、日期、地點、角色及©BanG Dream! Project。",
+  "IP_std": "BanG Dream!",
+  "Licensor_std": "Bushiroad",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_anique_sanchuang_20260805.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-05 00:00:00",
+  "結束日期 / End Date": "2026-08-17 00:00:00",
+  "IP": "藍色監獄（BLUE LOCK）",
+  "活動名稱 / Activity Name": "《藍色監獄》台灣 POP UP SHOP",
+  "地點 / Location": "三創生活園區 1F 十二立方（台北市中正區市民大道三段2號1樓）",
+  "主辦方 / Organizer": "Anique Taiwan（榮日股份有限公司）",
+  "授權單位 / Authorized unit (Licensor)": "講談社／BLUE LOCK Production Committee",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/28對話指定之Anique Taiwan官方Instagram貼文。活動日期2026/08/05–08/17、地點三創生活園區1F十二立方均由官方主視覺明載；內容包含「馬狼馬狼咖啡～惡言相向 ver.～」等商品。Anique既有活動頁anique.tw/event/blue-lock/仍顯示2024年舊檔期，故本筆以2026官方IG貼文及主視覺為準。KV採Daniel提供之Instagram官方圖，已下載自存並肉眼確認含藍色監獄、Anique logo、活動日期、地點及版權標示。",
+  "IP_std": "藍色監獄",
+  "Licensor_std": "講談社",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-15 00:00:00",
+  "結束日期 / End Date": "2026-10-14 00:00:00",
+  "IP": "葬送的芙莉蓮",
+  "活動名稱 / Activity Name": "《葬送的芙莉蓮》× 凍心 Frozen Heart 限定主題門市",
+  "地點 / Location": "凍心 Frozen Heart 臺北東區旗艦店（台北市大安區大安路一段42號）",
+  "主辦方 / Organizer": "凍心 Frozen Heart（動心國際股份有限公司）",
+  "授權單位 / Authorized unit (Licensor)": "TOHO animation／木棉花 Muse Communication",
+  "活動連結 / Activity link": "https://frozenheart.com.tw/",
+  "多店活動 / Multi-store": "凍心",
+  "門市資料 / Store List": "data/manual/凍心門市地址_frozenheart.json",
+  "門市名稱前綴 / Store Prefix": "凍心 Frozen Heart",
+  "備註 / NOTE": "資料來源：凍心Frozen Heart官網、官方門市頁及巴哈GNN（sn=308206，2026/07/15廠商資訊）。東區旗艦店於2026/07/15–10/14升級為限定主題門市，入口及店內設有魔法陣光影、角色與武器主題陳列；全台門市及官網同步推出限定Gelato包裝、旅途時光禮盒、滿額贈，8月底另有武器造型湯匙。地圖主場定位東區旗艦店；台灣28個官方據點另存data/manual/凍心門市地址_frozenheart.json。KV採Daniel提供之凍心官方商品主圖，已下載自存並肉眼確認含《葬送的芙莉蓮》、凍心logo、TOHO animation與木棉花授權標示；此圖為聯名商品KV，未印活動日期與門市地址。",
+  "IP_std": "葬送的芙莉蓮",
+  "Licensor_std": "木棉花",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://frozenheart.com.tw/"
   }
  }
 ]

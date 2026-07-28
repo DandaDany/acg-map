@@ -51,10 +51,21 @@ CITY_ALIAS = {
     "花蓮": "花蓮縣", "台東": "台東縣", "臺東": "台東縣",
     "澎湖": "澎湖縣", "金門": "金門縣",
 }
+LEGACY_CITY = {
+    "桃園縣": "桃園市",
+    "台中縣": "台中市",
+    "台南縣": "台南市",
+    "高雄縣": "高雄市",
+}
 
 
 def norm(text):
     return (text or "").replace("臺", "台").strip()
+
+
+def canonical_city(text):
+    city = norm(text)
+    return LEGACY_CITY.get(city, city)
 
 
 def clean_addr(addr):
@@ -184,7 +195,7 @@ def looks_like_addr(text):
 
 def city_of(addr):
     m = CITY_RE.search(addr or "")
-    return norm(m.group(1)) if m else ""
+    return canonical_city(m.group(1)) if m else ""
 
 
 def infer_city(*texts):
@@ -211,7 +222,7 @@ def load_centroids():
         if "|" not in key:
             continue
         city, town = key.split("|", 1)
-        city = norm(city)
+        city = canonical_city(city)
         town = norm(town)
         cent[(city, town)] = value
         city_points.setdefault(city, []).append(value)
@@ -231,13 +242,16 @@ def known_exact_venues():
         return out
     for v in venues:
         if v.get("loc") == "exact" and v.get("name") and v.get("la") and v.get("lo"):
-            out[norm(v["name"])] = {
+            rec = {
                 "lat": float(v["la"]),
                 "lng": float(v["lo"]),
-                "city": norm(v.get("city", "")),
+                "city": canonical_city(v.get("city", "")),
                 "loc": "exact",
                 "addr": clean_addr(v.get("addr", "")),
             }
+            out[norm(v["name"])] = rec
+            if rec["addr"]:
+                out["@addr:" + compact(rec["addr"])] = rec
     return out
 
 
@@ -359,14 +373,62 @@ def fill_caco_cafe_addr(entry, cafes):
     return out
 
 
+def expand_multi_store_event(entry):
+    """將明確指定門市清單、且據點總數 > 10 的單一活動展開成各固定門市圖釘。"""
+    label = norm(entry.get("multi_filter", ""))
+    rel_path = str(entry.get("store_list", "") or "").strip()
+    if not label or not rel_path:
+        return None, 0
+
+    manual_dir = os.path.realpath(os.path.dirname(ACG_EVENTS_JSON))
+    project_root = os.path.realpath(os.path.join(manual_dir, "..", ".."))
+    candidate = os.path.realpath(os.path.join(project_root, rel_path))
+    if not candidate.startswith(manual_dir + os.sep) or not os.path.isfile(candidate):
+        print(f"多店活動門市檔無效或不在 data/manual：{rel_path}", file=sys.stderr)
+        return None, 0
+    try:
+        payload = json.load(open(candidate, encoding="utf-8"))
+    except Exception as err:
+        print(f"多店活動門市檔讀取失敗（{rel_path}: {err}）", file=sys.stderr)
+        return None, 0
+
+    stores = payload.get("門市清單", []) if isinstance(payload, dict) else []
+    if not isinstance(stores, list) or len(stores) <= 10:
+        return None, 0
+
+    prefix = norm(entry.get("store_prefix", "")) or label
+    expanded = []
+    skipped = 0
+    for store in stores:
+        if not isinstance(store, dict):
+            skipped += 1
+            continue
+        store_name = norm(store.get("門市名稱", ""))
+        addr = clean_addr(store.get("地址", ""))
+        if not store_name or not looks_like_addr(addr):
+            skipped += 1
+            continue
+        clone = dict(entry)
+        clone["venue"] = f"{prefix} {store_name}".strip()
+        clone["addr"] = addr
+        clone["multi_filter"] = label
+        clone["multi_store_count"] = len(stores)
+        expanded.append(clone)
+    return expanded, skipped
+
+
 def locate(venue, addr, cent, citycent, known):
     key = norm(venue)
     if key in known:
         rec = known[key]
         return rec["lat"], rec["lng"], "exact", rec.get("city") or city_of(addr)
+    addr_key = "@addr:" + compact(clean_addr(addr))
+    if addr and addr_key in known:
+        rec = known[addr_key]
+        return rec["lat"], rec["lng"], "exact", rec.get("city") or city_of(addr)
     m = TOWN_RE.search(addr or "")
     if m:
-        city, town = norm(m.group(1)), norm(m.group(2))
+        city, town = canonical_city(m.group(1)), norm(m.group(2))
         if (city, town) in cent:
             la, lo = cent[(city, town)]
             dx, dy = jitter(venue)
@@ -400,6 +462,9 @@ def main():
     caco_cafes = load_caco_cafes()
     cat2_col = idx.get("活動類別 / Activity Category")  # 軸B形式欄，可選
     kv_col = idx.get("KV")  # 主視覺欄（可填圖片網址）；有填就用，覆寫自動抓的 KV
+    multi_col = idx.get("多店活動 / Multi-store")
+    store_list_col = idx.get("門市資料 / Store List")
+    store_prefix_col = idx.get("門市名稱前綴 / Store Prefix")
     entries = []
     parsed_addr = no_addr = caco_addr = imported_events = skipped_past = continuation_addr = skipped_no_location = skipped_auto_managed = 0
 
@@ -436,10 +501,21 @@ def main():
             "link": link,
             "cat2": raw_cat2,
             "img": img,
+            "multi_filter": str(ws.cell(row, multi_col).value or "").strip() if multi_col else "",
+            "store_list": str(ws.cell(row, store_list_col).value or "").strip() if store_list_col else "",
+            "store_prefix": str(ws.cell(row, store_prefix_col).value or "").strip() if store_prefix_col else "",
         })
 
     expanded = []
+    multi_store_events = multi_store_rows = multi_store_skipped_no_address = 0
     for entry in entries:
+        multi_entries, multi_skipped = expand_multi_store_event(entry)
+        if multi_entries is not None:
+            expanded.extend(multi_entries)
+            multi_store_events += 1
+            multi_store_rows += len(multi_entries)
+            multi_store_skipped_no_address += multi_skipped
+            continue
         caco_entries = fill_caco_cafe_addr(entry, caco_cafes)
         if caco_entries:
             expanded.extend(caco_entries)
@@ -458,7 +534,8 @@ def main():
     manual = {}
     for entry in entries:
         venue = entry["venue"]
-        managed = auto_managed_reason(venue, auto_managed)
+        # 多店活動需保留每一間分店；即使店名含既有自動場館名稱，也不可整筆略過。
+        managed = "" if entry.get("multi_filter") else auto_managed_reason(venue, auto_managed)
         if managed:
             skipped_auto_managed += 1
             continue
@@ -488,6 +565,9 @@ def main():
             ev = {"t": title, "s": entry["start"], "e": entry["end"], "l": link, "img": entry.get("img", "")}
             if entry.get("cat2"):
                 ev["cat2"] = entry["cat2"]
+            if entry.get("multi_filter") and entry.get("multi_store_count", 0) > 10:
+                ev["mf"] = entry["multi_filter"]
+                ev["ms"] = entry["multi_store_count"]
             rec["ex"].append(ev)
             imported_events += 1
 
@@ -497,6 +577,9 @@ def main():
         "events": imported_events,
         "parsed_addr_rows": parsed_addr,
         "caco_cafe_addr_rows": caco_addr,
+        "multi_store_events": multi_store_events,
+        "multi_store_rows": multi_store_rows,
+        "multi_store_skipped_no_address": multi_store_skipped_no_address,
         "continuation_addr_rows": continuation_addr,
         "no_addr_rows": no_addr,
         "skipped_past": skipped_past,

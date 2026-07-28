@@ -740,6 +740,9 @@ def main():
                       "src": source, "c": "動漫遊戲(ACG)"}
                 if e.get("cat2"):
                     ev["cat2"] = e["cat2"]
+                if e.get("mf") and int(e.get("ms", 0) or 0) > 10:
+                    ev["mf"] = e["mf"]
+                    ev["ms"] = int(e["ms"])
                 exs.append(ev)
             if not exs: continue
             old = next((v for v in venues if v["name"] == name), None)

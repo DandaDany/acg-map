@@ -11,6 +11,7 @@
 - `event_link_overrides.json`：活動連結覆寫。
 - `venue_event_sources.json`：官方展覽來源補強。
 - `venue_geocodes.json`、`address_geocodes.json`：已確認精準座標。
+- `點點心門市地址_dimdimsum.json`、`凍心門市地址_frozenheart.json`：多門市聯名活動的人工門市參考清單。
 
 原則：這裡的資料不要被爬蟲任意覆蓋。
 

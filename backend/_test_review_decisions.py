@@ -62,10 +62,18 @@ def test_filter_rejected_events():
 
 
 def test_load_rejected_keys_real_file():
-    # 正式檔目前 rejected 為空 → 空集合（不影響輸出）
+    # 正式檔會隨審核決策持續累積；loader 應完整載入所有有效 key。
+    import refresh_venues
+    with open(refresh_venues.P("review_decisions.json"), encoding="utf-8") as f:
+        data = json.load(f)
+    expected = {
+        str(item["key"]).strip()
+        for item in data.get("rejected", [])
+        if isinstance(item, dict) and item.get("key")
+    }
     keys = load_rejected_keys()
-    assert keys == set(), keys
-    print("test_load_rejected_keys_real_file: PASS (目前 rejected 為空)")
+    assert keys == expected, (keys, expected)
+    print(f"test_load_rejected_keys_real_file: PASS ({len(keys)} 筆)")
 
 
 def test_load_rejected_keys_schema(tmp_path=None):
