@@ -1,5 +1,27 @@
 {
  "_readme": "審核決策持久層：rejected 內的活動不會出現在 venues.json（refresh_venues.py 輸出前過濾）。key 為穩定鍵 = 場館名|正規化標題|開始日(YYYY-MM-DD)，由 backend/refresh_venues.py 的 stable_event_key() 產生；title/venue/reason/date 僅供人閱讀。範例格式見 data/manual/README.md。",
- "rejected": [],
+ "rejected": [
+  {
+   "key": "嘉義文化創意產業園區|▸有事青年節主題展 emo人生 ➫|2024-10-10",
+   "title": "▸有事青年節主題展 emo人生 ➫",
+   "venue": "嘉義文化創意產業園區",
+   "reason": "非 ACG／官網舊頁殘留（起始2024-10-10、無結束日、同展拆三筆）；Daniel 於 PR#25 審核決定排除",
+   "date": "2026-07-27"
+  },
+  {
+   "key": "嘉義文化創意產業園區|▸有事青年節主題展 emo人生 ➫ 展覽驚喜亮點|2024-10-10",
+   "title": "▸有事青年節主題展 emo人生 ➫ 展覽驚喜亮點",
+   "venue": "嘉義文化創意產業園區",
+   "reason": "非 ACG／官網舊頁殘留（起始2024-10-10、無結束日、同展拆三筆）；Daniel 於 PR#25 審核決定排除",
+   "date": "2026-07-27"
+  },
+  {
+   "key": "嘉義文化創意產業園區|▸有事青年節主題展 emo人生 ➫ 六大參展團隊一次公開|2024-10-10",
+   "title": "▸有事青年節主題展 emo人生 ➫ 六大參展團隊一次公開！",
+   "venue": "嘉義文化創意產業園區",
+   "reason": "非 ACG／官網舊頁殘留（起始2024-10-10、無結束日、同展拆三筆）；Daniel 於 PR#25 審核決定排除",
+   "date": "2026-07-27"
+  }
+ ],
  "approved": []
 }
