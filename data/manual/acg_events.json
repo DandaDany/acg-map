@@ -3008,5 +3008,71 @@
   "_links": {
    "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308160"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/avemujica_exitus_taipei_popup_20260807.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-07 00:00:00",
+  "結束日期 / End Date": "2026-08-10 00:00:00",
+  "IP": "BanG Dream!／Ave Mujica",
+  "活動名稱 / Activity Name": "Ave Mujica LIVE TOUR 2026「Exitus」台北限定快閃店",
+  "地點 / Location": "微風廣場 9F E廳（台北市松山區復興南路一段39號9樓）",
+  "主辦方 / Organizer": "寶島製造",
+  "授權單位 / Authorized unit (Licensor)": "Bushiroad／BanG Dream! Project",
+  "活動連結 / Activity link": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/28對話指定之巴哈姆特情報頁（轉載寶島製造官方Threads公告）。活動日期2026/08/07–08/10、地點微風廣場9F E廳及地址均由來源與主視覺明載；販售台北公演、日本巡迴及BanG Dream! Special LIVE in TAIPEI部分周邊。8/7–8/10每日11:30–18:00需預約，18:00後自由入場，預約自7/27 12:00開放，以主辦最新公告為準。KV採Daniel提供之imgpoi主視覺，已下載自存並肉眼確認含活動名稱、日期、地點、角色及©BanG Dream! Project。",
+  "IP_std": "BanG Dream!",
+  "Licensor_std": "Bushiroad",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_anique_sanchuang_20260805.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-05 00:00:00",
+  "結束日期 / End Date": "2026-08-17 00:00:00",
+  "IP": "藍色監獄（BLUE LOCK）",
+  "活動名稱 / Activity Name": "《藍色監獄》台灣 POP UP SHOP",
+  "地點 / Location": "三創生活園區 1F 十二立方（台北市中正區市民大道三段2號1樓）",
+  "主辦方 / Organizer": "Anique Taiwan（榮日股份有限公司）",
+  "授權單位 / Authorized unit (Licensor)": "講談社／BLUE LOCK Production Committee",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/28對話指定之Anique Taiwan官方Instagram貼文。活動日期2026/08/05–08/17、地點三創生活園區1F十二立方均由官方主視覺明載；內容包含「馬狼馬狼咖啡～惡言相向 ver.～」等商品。Anique既有活動頁anique.tw/event/blue-lock/仍顯示2024年舊檔期，故本筆以2026官方IG貼文及主視覺為準。KV採Daniel提供之Instagram官方圖，已下載自存並肉眼確認含藍色監獄、Anique logo、活動日期、地點及版權標示。",
+  "IP_std": "藍色監獄",
+  "Licensor_std": "講談社",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-15 00:00:00",
+  "結束日期 / End Date": "2026-10-14 00:00:00",
+  "IP": "葬送的芙莉蓮",
+  "活動名稱 / Activity Name": "《葬送的芙莉蓮》× 凍心 Frozen Heart 限定主題門市",
+  "地點 / Location": "凍心 Frozen Heart 臺北東區旗艦店（台北市大安區大安路一段42號）",
+  "主辦方 / Organizer": "凍心 Frozen Heart（動心國際股份有限公司）",
+  "授權單位 / Authorized unit (Licensor)": "TOHO animation／木棉花 Muse Communication",
+  "活動連結 / Activity link": "https://frozenheart.com.tw/",
+  "備註 / NOTE": "資料來源：凍心Frozen Heart官網、官方門市頁及巴哈GNN（sn=308206，2026/07/15廠商資訊）。東區旗艦店於2026/07/15–10/14升級為限定主題門市，入口及店內設有魔法陣光影、角色與武器主題陳列；全台門市及官網同步推出限定Gelato包裝、旅途時光禮盒、滿額贈，8月底另有武器造型湯匙。地圖主場定位東區旗艦店；台灣28個官方據點另存data/manual/凍心門市地址_frozenheart.json。KV採Daniel提供之凍心官方商品主圖，已下載自存並肉眼確認含《葬送的芙莉蓮》、凍心logo、TOHO animation與木棉花授權標示；此圖為聯名商品KV，未印活動日期與門市地址。",
+  "IP_std": "葬送的芙莉蓮",
+  "Licensor_std": "木棉花",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://frozenheart.com.tw/"
+  }
  }
 ]

@@ -43,6 +43,24 @@
    }
   ]
  },
+ "三創生活園區 1F 十二立方": {
+  "city": "台北市",
+  "lat": 25.045,
+  "lng": 121.53134,
+  "loc": "市級",
+  "addr": "台北市中正區市民大道三段2號1樓",
+  "url": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
+  "ex": [
+   {
+    "t": "《藍色監獄》台灣 POP UP SHOP",
+    "s": "2026/08/05",
+    "e": "2026/08/17",
+    "l": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_anique_sanchuang_20260805.jpg",
+    "cat2": "快閃店/Pop Up Store"
+   }
+  ]
+ },
  "三創生活園區1F": {
   "city": "台北市",
   "lat": 25.045633,
@@ -94,6 +112,24 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308160",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eslite_acgfest_2026_20260801.jpg",
     "cat2": "活動/Event"
+   }
+  ]
+ },
+ "凍心 Frozen Heart 台北東區旗艦店": {
+  "city": "台北市",
+  "lat": 25.03561,
+  "lng": 121.53788,
+  "loc": "區級",
+  "addr": "台北市大安區大安路一段42號",
+  "url": "https://frozenheart.com.tw/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 凍心 Frozen Heart 限定主題門市",
+    "s": "2026/07/15",
+    "e": "2026/10/14",
+    "l": "https://frozenheart.com.tw/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
+    "cat2": "主題餐廳/Theme Cafe"
    }
   ]
  },
@@ -239,24 +275,6 @@
    }
   ]
  },
- "台北世界貿易中心展覽一館": {
-  "city": "台北市",
-  "lat": 25.033152,
-  "lng": 121.5623397,
-  "loc": "exact",
-  "addr": "台北市信義區信義路五段5號",
-  "url": "https://www.instagram.com/p/DaUQi_4FctQ",
-  "ex": [
-   {
-    "t": "《落第忍者亂太郎》40週年紀念原畫展（海外首度登場）",
-    "s": "2026/07/23",
-    "e": "2026/07/27",
-    "l": "https://www.instagram.com/p/DaUQi_4FctQ",
-    "img": "",
-    "cat2": "展覽/Exhibition"
-   }
-  ]
- },
  "台北市信義區香堤大道廣場及周邊": {
   "city": "台北市",
   "lat": 25.03742733240707,
@@ -388,6 +406,24 @@
     "l": "https://www.facebook.com/pingtungamazing/photos/%F0%93%87%BB%F0%93%82%83%F0%93%82%82%F0%93%82%83%F0",
     "img": "https://res.klook.com/image/upload/c_crop,h_460,w_736,x_212,y_0,z_0.7/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/bvqtev3vdromwbwgbh27.webp",
     "cat2": "展覽/Exhibition"
+   }
+  ]
+ },
+ "微風廣場 9F E廳": {
+  "city": "台北市",
+  "lat": 25.06056,
+  "lng": 121.56762,
+  "loc": "區級",
+  "addr": "台北市松山區復興南路一段39號9樓",
+  "url": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
+  "ex": [
+   {
+    "t": "Ave Mujica LIVE TOUR 2026「Exitus」台北限定快閃店",
+    "s": "2026/08/07",
+    "e": "2026/08/10",
+    "l": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/avemujica_exitus_taipei_popup_20260807.jpg",
+    "cat2": "快閃店/Pop Up Store"
    }
   ]
  },
