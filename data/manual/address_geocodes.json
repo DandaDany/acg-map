@@ -1147,5 +1147,229 @@
   "display_name": "台北市內湖區西湖里基湖路1號, 11492",
   "type": "PointAddress",
   "score": 100
+ },
+ "南投縣草屯鎮富頂路一段726巷101號（2F美食區）": {
+  "la": 23.9639729,
+  "lo": 120.7090681,
+  "source": "arcgis_address",
+  "display_name": "南投縣草屯鎮富頂路一段726號, 542021",
+  "type": "StreetAddressExt",
+  "score": 95.98
+ },
+ "南投縣名間鄉彰南路256號（豬事文化園區）": {
+  "la": 23.854515,
+  "lo": 120.695867,
+  "source": "arcgis_address",
+  "display_name": "南投縣名間鄉彰南路256號, 551",
+  "type": "PointAddress",
+  "score": 96.79
+ },
+ "台中市大甲區中山路二段251-2號": {
+  "la": 24.3812783,
+  "lo": 120.6551969,
+  "source": "arcgis_address",
+  "display_name": "台中市大甲區中山路二段251-2號, 437103",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市梧棲區大庄里中央路一段918之6號": {
+  "la": 24.2475697,
+  "lo": 120.5383281,
+  "source": "arcgis_address",
+  "display_name": "台中市梧棲區中央路一段918號, 435053",
+  "type": "PointAddress",
+  "score": 97
+ },
+ "台北市大安區大安路一段42號": {
+  "la": 25.0435371,
+  "lo": 121.5461278,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區光武里大安路一段42號, 10691",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "嘉義市西區文化路93號": {
+  "la": 23.478107,
+  "lo": 120.449712,
+  "source": "arcgis_address",
+  "display_name": "嘉義市文化路商圈文化路93號, 600010",
+  "type": "PointAddress",
+  "score": 97.8
+ },
+ "基隆市仁愛區仁二路216號（大呼小叫通訊行外面）": {
+  "la": 25.1290206,
+  "lo": 121.744456,
+  "source": "arcgis_address",
+  "display_name": "基隆市仁愛區仁二路216號, 200010",
+  "type": "PointAddress",
+  "score": 95.89
+ },
+ "新竹縣竹東鎮東林路29號": {
+  "la": 24.737096,
+  "lo": 121.089321,
+  "source": "arcgis_address",
+  "display_name": "新竹縣竹東鎮竹東站前商圈東林路29號, 310007",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "桃園市桃園區新埔七街13號": {
+  "la": 25.018642,
+  "lo": 121.302024,
+  "source": "arcgis_address",
+  "display_name": "桃園市新埔七街13號, 330008",
+  "type": "PointAddress",
+  "score": 92.95
+ },
+ "苗栗縣竹南鎭博愛街159號": {
+  "la": 24.68669,
+  "lo": 120.874661,
+  "source": "arcgis_address",
+  "display_name": "苗栗縣竹南鎮竹南商圈博愛街159號, 350011",
+  "type": "PointAddress",
+  "score": 90.73
+ },
+ "桃園市中壢區領航北路一段1號": {
+  "la": 25.00072,
+  "lo": 121.20046,
+  "source": "arcgis_address",
+  "display_name": "桃園市中壢區領航北路一段1號, 320014",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市信義區松壽路12號4樓": {
+  "la": 25.0356681,
+  "lo": 121.5660209,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區西村里松壽路12號, 11051",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市東區進德路600號5F": {
+  "la": 24.1476593,
+  "lo": 120.6925429,
+  "source": "arcgis_address",
+  "display_name": "台中市東區進德路5號, 401004",
+  "type": "StreetAddress",
+  "score": 91.87
+ },
+ "新北市中和區中山路三段122號B2": {
+  "la": 25.0060212,
+  "lo": 121.475643,
+  "source": "arcgis_address",
+  "display_name": "新北市中和區中山路三段122號, 235008",
+  "type": "StreetAddress",
+  "score": 98.96
+ },
+ "桃園市中壢區中園路二段501號GB樓": {
+  "la": 25.000698,
+  "lo": 121.229504,
+  "source": "arcgis_address",
+  "display_name": "桃園市中厝中園路二段501號, 320075",
+  "type": "PointAddress",
+  "score": 96.25
+ },
+ "台北市信義區忠孝東路五段68號B1F": {
+  "la": 25.0406478,
+  "lo": 121.5666938,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區興雅里忠孝東路五段68號, 11065",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市梧棲區台灣大道十段168號2樓": {
+  "la": 24.2575504,
+  "lo": 120.5176497,
+  "source": "arcgis_address",
+  "display_name": "台中市梧棲區台灣大道十段168號, 435407",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市歸仁區歸仁大道101號2樓": {
+  "la": 23.0226728,
+  "lo": 120.2890317,
+  "source": "arcgis_address",
+  "display_name": "台南市新化區歸仁大道101號, 712",
+  "type": "StreetAddressExt",
+  "score": 91.4
+ },
+ "台南市東區中華東路一段358號1樓": {
+  "la": 22.9920259,
+  "lo": 120.2336462,
+  "source": "arcgis_address",
+  "display_name": "台南市東區中華東路一段358號, 701041",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台南市中西區西門路一段658號B2(本館)": {
+  "la": 22.9871662,
+  "lo": 120.1976397,
+  "source": "arcgis_address",
+  "display_name": "台南市西門路一段658號, 700",
+  "type": "StreetAddress",
+  "score": 95.91
+ },
+ "新北市土城區學府路2段210號1樓": {
+  "la": 24.9787655,
+  "lo": 121.4451275,
+  "source": "arcgis_address",
+  "display_name": "新北市土城區學府路二段210號, 236030",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市中正區北平西路3號2F（西三門）": {
+  "la": 25.0477528,
+  "lo": 121.5182697,
+  "source": "arcgis_address",
+  "display_name": "台北市中正區北平西路3號, 100230",
+  "type": "StreetAddress",
+  "score": 98.21
+ },
+ "新竹市東區中央路229號4樓": {
+  "la": 24.809384,
+  "lo": 120.975509,
+  "source": "arcgis_address",
+  "display_name": "新竹市東區中央路229號, 300197",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新北市新莊區新北大道四段3號7樓": {
+  "la": 25.059944,
+  "lo": 121.449451,
+  "source": "arcgis_address",
+  "display_name": "新北市新莊區新北大道四段3號, 242032",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "新北市林口區文化三路一段356號2樓": {
+  "la": 25.0712411,
+  "lo": 121.3635472,
+  "source": "arcgis_address",
+  "display_name": "新北市林口區文化三路一段356號, 244015",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "桃園市蘆竹區南崁路一段112號1F": {
+  "la": 25.053001,
+  "lo": 121.287749,
+  "source": "arcgis_address",
+  "display_name": "桃園市蘆竹區南崁路一段112號, 338217",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "桃園市中壢區春德路107號1樓": {
+  "la": 25.0155538,
+  "lo": 121.2134845,
+  "source": "arcgis_address",
+  "display_name": "桃園市中厝春德路107號, 320016",
+  "type": "StreetAddressExt",
+  "score": 90.9
+ },
+ "高雄市左營區博愛二路777號4F": {
+  "la": 22.669549,
+  "lo": 120.303159,
+  "source": "arcgis_address",
+  "display_name": "高雄市左營區博愛二路777號, 813302",
+  "type": "PointAddress",
+  "score": 100
  }
 }
