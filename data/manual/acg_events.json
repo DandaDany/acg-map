@@ -3080,5 +3080,93 @@
   "_links": {
    "活動連結 / Activity link": "https://frozenheart.com.tw/"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rurouni_kenshin_30th_2026_20260911.webp",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "展覽/Exhibition",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-11 00:00:00",
+  "結束日期 / End Date": "2026-10-11 00:00:00",
+  "IP": "神劍闖江湖（るろうに剣心）",
+  "活動名稱 / Activity Name": "神劍闖江湖展 30th Anniversary Exhibition 志志雄真實篇",
+  "地點 / Location": "微風廣場 8F C廳（台北市松山區復興南路一段39號）",
+  "主辦方 / Organizer": "台灣東販、movic Co., Ltd.",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認（KV版權標示 ©NW/S＝和月伸宏／集英社·NAS）",
+  "活動連結 / Activity link": "https://www.klook.com/zh-TW/activity/220666-the-legend-of-the-swordsman-exhibition-30th-anniversary/",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/30對話指定並提供Klook官方活動頁(klook.com/zh-TW/activity/220666)；原Slack為IG(instagram.com/p/DbXNLuSlNY2)。展期2026/09/11–10/11。地點微風廣場8樓C廳，門牌沿用資料庫既有San-X展同場地(台北市松山區復興南路一段39號)。主辦『台灣東販、movic Co., Ltd.』取自官方KV。授權：KV僅標©NW/S，台灣代理/授權單位未明，標需人工確認。【KV驗證 2026/07/30】採Daniel提供之Klook官方主視覺(res.klook.com/.../cqaniwntq9yh3nh1bhvi.webp)，已用Read肉眼確認為官方正式KV：含標題『神劍闖江湖展 30th Anniversary Exhibition 志志雄真實篇』、日期『2026.9.11–10.11』、地點『微風廣場八樓C廳』、版權©NW/S及主辦『台灣東販、movic Co.,Ltd.』。名稱+日期+地點齊備，已自存commit至_kv_cache並引用repo raw URL。",
+  "IP_std": null,
+  "Licensor_std": null,
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.klook.com/zh-TW/activity/220666-the-legend-of-the-swordsman-exhibition-30th-anniversary/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_revengers_saigo_2026_20260806.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-06 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "東京卍復仇者",
+  "活動名稱 / Activity Name": "東京卍復仇者展 最後的世界線 POP-UP STORE",
+  "地點 / Location": "台中中友百貨 B棟13F 文化大廳（台中市北區三民路三段161號）",
+  "主辦方 / Organizer": "曼迪傳播（Mighty Media）",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認（KV版權標示 ©Ken Wakui, KODANSHA／Tokyo Revengers Exhibition Production Committee）",
+  "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308146",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/30對話指定並提供官方新聞(巴哈gnn.gamer.com.tw sn=308146)；原Slack為IG(instagram.com/p/DbVD5BPnSKE)。展期2026/08/06–08/31。地點台中中友百貨B棟13F文化大廳，門牌沿用資料庫既有中友百貨同場地(台中市北區三民路三段161號)。主辦曼迪傳播取自官方KV。授權：KV標©Ken Wakui, KODANSHA／東京卍復仇者展製作委員會，台灣授權單位未明，標需人工確認。活動類別：官方名稱為POP-UP STORE，歸『快閃店』。【KV驗證 2026/07/30】採Daniel提供之官方KV(p2.bahamut.com.tw/.../e802908201795c4d920006fb4a1zf3c5.JPG)，已用Read肉眼確認為官方正式主視覺：含『TOKYO REVENGERS EXHIBITION／東京卍復仇者展 最後的世界線 POP-UP STORE』標題、日期『2026.08.06(THU)~2026.08.31(MON)』、地點『台中中友百貨B棟13F文化大廳』、主辦『曼迪傳播』及版權標示。名稱+日期+地點齊備，已自存commit至_kv_cache並引用repo raw URL。",
+  "IP_std": null,
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308146"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pokemongo_10th_meetup_2026_20260815.jpg",
+  "類型 / Category": "體驗/Experience",
+  "活動類別 / Activity Category": "體驗活動/Experience Activity",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-15 00:00:00",
+  "結束日期 / End Date": "2026-08-16 00:00:00",
+  "IP": "精靈寶可夢（Pokémon GO）",
+  "活動名稱 / Activity Name": "Pokémon GO 10週年「皮卡丘」與「伊布」見面會",
+  "地點 / Location": "大安森林公園（台北市大安區新生南路二段1號）",
+  "主辦方 / Organizer": "需人工確認（Pokémon GO 官方 × 台北捷運聯名企劃）",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認（KV版權標示 ©Niantic、©Pokémon／Nintendo／Creatures／GAME FREAK）",
+  "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308568",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/30對話指定並將原Slack『Pokémon GO 10週年特展』改名為『皮卡丘與伊布見面會』，提供官方新聞(巴哈gnn.gamer.com.tw sn=308568)；原Slack為IG(instagram.com/p/DbTkvwzj25s)。日期/場次：見面會場次11:00、12:30、14:00、15:30、17:00，日期2026/08/15–08/16(依GNN sn=308568及4Gamers『10週年特展8/15大安森林公園站登場』；IG原載08/15–09/13為整體10週年活動期間，見面會僅8/15–8/16兩日)。地點大安森林公園(台北市大安區新生南路二段1號)。主辦為Pokémon GO官方×台北捷運聯名，正式主辦名稱未明，標需人工確認。活動類別：見面會歸『體驗活動』(AI判斷，供Daniel調整)。【KV驗證 2026/07/30】採Daniel提供之官方主視覺(p2.bahamut.com.tw/.../1b1ded8e36b4944ee838de8a661ziwm5.JPG)，已用Read肉眼確認為©Niantic官方10週年×Metro Taipei聯名視覺；⚠️此圖僅含IP與『Pokémon GO 10th Anniversary／Metro Taipei』字樣，未含日期與地點文字(日期地點取自GNN內文)。已自存commit至_kv_cache並引用repo raw URL。",
+  "IP_std": null,
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://gnn.gamer.com.tw/detail.php?sn=308568"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_run_2026_20261024.webp",
+  "類型 / Category": "體驗/Experience",
+  "活動類別 / Activity Category": "體驗活動/Experience Activity",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q4",
+  "開始日期 / Start Date": "2026-10-24 00:00:00",
+  "結束日期 / End Date": "2026-10-24 00:00:00",
+  "IP": "新世紀福音戰士",
+  "活動名稱 / Activity Name": "2026 新世紀福音戰士路跑（2KM）",
+  "地點 / Location": "馬場町紀念公園（台北市萬華區青年路188巷1弄7號）",
+  "主辦方 / Organizer": "展通虹策略整合行銷股份有限公司",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認（KV版權標示 ©khara）",
+  "活動連結 / Activity link": "https://irunner.biji.co/2026NeonGenesisEvangelion",
+  "備註 / NOTE": "資料來源：Daniel於2026/07/30對話指定並提供官方報名頁(irunner.biji.co/2026NeonGenesisEvangelion)；原Slack為IG(instagram.com/p/DbXbCS7iTjr)。官方簡章載明：活動日期2026/10/24(六)、活動時間09:00–12:00(分梯起跑09:30–10:00)、地點馬場町紀念公園(台北市萬華區青年路188巷1弄7號)、主辦展通虹策略整合行銷股份有限公司、2公里組。⚠️Slack原情報寫『06:30』有誤，已依官方簡章更正為09:00–12:00。授權©khara。活動類別：路跑歸『體驗活動』(與資料庫既有伊藤潤二/咒術路跑一致)。【KV驗證 2026/07/30】採Daniel提供之KV(media.nownews.com/.../55b57458087943a2a15dad117dab0156-805x562.webp)，已用Read肉眼確認：含『2026新世紀福音戰士路跑』、地點『臺北 馬場町紀念公園』、日期『10.24』、『2km距離』及版權©khara。名稱+日期+地點齊備，已自存commit至_kv_cache並引用repo raw URL。",
+  "IP_std": null,
+  "Licensor_std": null,
+  "月份": "2026-10-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://irunner.biji.co/2026NeonGenesisEvangelion"
+  }
  }
 ]
