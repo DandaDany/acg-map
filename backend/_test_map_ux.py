@@ -35,6 +35,14 @@ class MapUxTests(unittest.TestCase):
         self.assertIn('id="mq"', self.html)
         self.assertIn("function queueSearch(value,source)", self.html)
 
+    def test_kv_images_use_a_bounded_cover_frame(self):
+        self.assertIn(".evcard .evmedia{", self.html)
+        self.assertIn("aspect-ratio:16/9", self.html)
+        self.assertIn("overflow:hidden", self.html)
+        self.assertIn("object-fit:cover", self.html)
+        self.assertIn("object-position:center", self.html)
+        self.assertIn('<div class="evmedia"><img class="evimg"', self.html)
+
 
 if __name__ == "__main__":
     unittest.main()
