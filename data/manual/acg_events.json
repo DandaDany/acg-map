@@ -2421,7 +2421,7 @@
   "月份": "2026-07-01 00:00:00"
  },
  {
-  "KV": null,
+  "KV": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "體驗活動/Experience Activity",
   "年度 / Start Year": 2026,
@@ -2433,14 +2433,14 @@
   "地點 / Location": "新北微風運河（確切門牌新聞未載明，需人工確認）",
   "主辦方 / Organizer": "木棉花",
   "授權單位 / Authorized unit (Licensor)": "木棉花",
-  "活動連結 / Activity link": "https://www.bryte-fun.com",
-  "備註 / NOTE": "資料來源：木棉花Muse官方新聞稿(ccpa.org.tw/ccpa/data.php?id=661)、中央社CNA(howlife.cna.com.tw/life/20260610s003.aspx)、巴哈姆特GNN(sn=306474)等多家新聞確認日期。報名連結修正為官方網域bryte-fun.com（原Slack訊息網域bryte.event有誤，查無該網域）。活動類別「體驗活動」為AI判斷（沉浸式夜跑非典型四類之一，請確認是否合適）。",
+  "活動連結 / Activity link": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
+  "備註 / NOTE": "資料來源：木棉花Muse官方新聞稿與朗朗報名網活動專頁。2026/07/30依Daniel提供修正為活動專頁，KV改用朗朗活動CDN正式主視覺。活動類別「體驗活動」為AI判斷（沉浸式夜跑非典型四類之一，請確認是否合適）。",
   "IP_std": "伊藤潤二",
   "Licensor_std": "木棉花",
   "月份": "2026-08-01 00:00:00"
  },
  {
-  "KV": null,
+  "KV": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "體驗活動/Experience Activity",
   "年度 / Start Year": 2026,
@@ -2452,8 +2452,8 @@
   "地點 / Location": "台中東海大學（台中市西屯區台灣大道四段1727號）",
   "主辦方 / Organizer": "木棉花",
   "授權單位 / Authorized unit (Licensor)": "木棉花",
-  "活動連結 / Activity link": "https://www.bryte-fun.com",
-  "備註 / NOTE": "資料來源：木棉花Muse官方新聞稿(ccpa.org.tw/ccpa/data.php?id=661)、中央社CNA(howlife.cna.com.tw/life/20260610s003.aspx)、巴哈姆特GNN(sn=306474)等多家新聞確認日期。報名連結修正為官方網域bryte-fun.com（原Slack訊息網域bryte.event有誤，查無該網域）。活動類別「體驗活動」為AI判斷（沉浸式夜跑非典型四類之一，請確認是否合適）。",
+  "活動連結 / Activity link": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
+  "備註 / NOTE": "資料來源：木棉花Muse官方新聞稿與朗朗報名網活動專頁。2026/07/30依Daniel提供修正為活動專頁，KV改用朗朗活動CDN正式主視覺。活動類別「體驗活動」為AI判斷（沉浸式夜跑非典型四類之一，請確認是否合適）。",
   "IP_std": "伊藤潤二",
   "Licensor_std": "木棉花",
   "月份": "2026-08-01 00:00:00"
@@ -2714,7 +2714,7 @@
   "結束日期 / End Date": "2026-09-13 00:00:00",
   "IP": "頭文字D（Initial D）",
   "活動名稱 / Activity Name": "頭文字D（Initial D）快閃店（第二站）",
-  "地點 / Location": "高雄車站一番街 北站 B2（高雄市三民區，高雄捷運高雄車站鄰3、4號出口；門牌以現場為準）",
+  "地點 / Location": "高雄駅一番街・北站 高雄捷運高雄車站B2（高雄市三民區建國二路320號B2；鄰3、4號出口）",
   "主辦方 / Organizer": "TRENDIC、INCUBASE Studio",
   "授權單位 / Authorized unit (Licensor)": "講談社（KODANSHA，Licensed through Medialink）",
   "活動連結 / Activity link": "https://www.mofan.co.com/news-detail/133/",
