@@ -825,11 +825,18 @@ html,body{margin:0;height:100%;font-family:"PingFang TC","Noto Sans TC","Microso
 /* 矩形 card：移除下方箭頭尾巴與其留白 */
 .leaflet-popup.evpop{margin-bottom:0}
 .evpop .leaflet-popup-tip-container,.evpop .leaflet-popup-tip{display:none}
-/* 統一 16:9 KV 裁切框：圖片等比例放大／縮小填滿，比例不同只裁切邊緣，不會變形或溢出。 */
+/* KV 依實際比例切換版型：橫式圖上／資訊下，直式圖左／資訊右。
+   主要活動卡採同一組長短邊，兩版只互換寬高；圖片等比例 cover，不變形或溢出。 */
 .evcard{display:flex;flex-direction:column;gap:8px;min-width:0}
 .evcard .evmedia{position:relative;flex:none;width:100%;max-width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:10px;background:#0c0f14}
 .evcard .evimg{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;object-position:center}
-.evinfo{display:flex;flex-direction:column;gap:6px;min-width:0}
+.evcard.kv-port{flex-direction:row}
+.evcard.kv-port .evmedia{width:auto;height:100%;max-width:none;aspect-ratio:9/16}
+.evinfo{display:flex;flex:1;flex-direction:column;gap:6px;min-width:0;min-height:0}
+/* 單一活動卡：橫式 340×440、直式 440×340；窄畫面等比例縮小，長短邊仍互換。 */
+.evpop .leaflet-popup-content>.evcard.kv-land,.mobile-venue-body>.evcard.kv-land{aspect-ratio:340/440;overflow:hidden}
+.evpop .leaflet-popup-content>.evcard.kv-port,.mobile-venue-body>.evcard.kv-port{aspect-ratio:440/340;overflow:hidden}
+.evpop .leaflet-popup-content>.evcard .evinfo,.mobile-venue-body>.evcard .evinfo{overflow-y:auto;overscroll-behavior:contain}
 .evcard h3{margin:0;font-size:15px;line-height:1.35;color:var(--text)}
 .evtags{display:flex;gap:6px;flex-wrap:wrap}
 .evrow{font-size:12.5px;color:var(--muted)}
@@ -1333,7 +1340,7 @@ function popupCardHtml(e,v,hideTitle){
   if(st.k==='soon') tags+='<span class="tag soon">'+esc(st.t)+'</span>';
   const meta=[e.c2,venueRegion(v)].filter(Boolean).map(esc).join('・');
   const addr=venueAddr(v);
-  return '<div class="evcard kv-land">'
+  return '<div class="evcard '+(imgUrl?'kv-auto kv-land':'kv-noimg')+'">'
     +(imgUrl?'<div class="evmedia"><img class="evimg" src="'+esc(imgUrl)+'" alt="" loading="lazy" decoding="async"></div>':'')
     +'<div class="evinfo">'
     +(tags?'<div class="evtags">'+tags+'</div>':'')
@@ -1463,6 +1470,7 @@ function closeVenueFocus(zoomBack){
 }
 function wireVenueDetail(root,v,exs,nearby,pop){
   if(!root) return;
+  applyKvLayouts(root,pop);
   root.querySelectorAll('details.evitem').forEach(d=>{
     const summary=d.querySelector('summary');
     summary.addEventListener('click',()=>{
@@ -1503,6 +1511,43 @@ function wireVenueDetail(root,v,exs,nearby,pop){
       const nv=it.v, mk=markers.find(x=>x._v===nv);
       closeVenueFocus(false);
       toggleVenueFocus(nv,mk,L.latLng(nv.la,nv.lo));
+    }
+  });
+}
+/* 圖片載入後依 naturalWidth/naturalHeight 自動選版；桌面 popup 同步切換 340×440 / 440×340。 */
+function applyKvLayouts(root,pop){
+  const content=root.querySelector('.leaflet-popup-content')||root;
+  const primary=[...content.children].find(el=>el.classList&&el.classList.contains('evcard'))||null;
+  const setOrientation=(target,portrait)=>{
+    if(!target) return;
+    target.classList.toggle('kv-port',portrait);
+    target.classList.toggle('kv-land',!portrait);
+    target.classList.remove('kv-auto');
+  };
+  root.querySelectorAll('.evcard.kv-auto').forEach(card=>{
+    const img=card.querySelector('.evimg'); if(!img) return;
+    const classify=()=>{
+      if(!img.naturalWidth||!img.naturalHeight) return;
+      const portrait=img.naturalHeight>img.naturalWidth;
+      setOrientation(card,portrait);
+      if(pop&&card===primary){
+        const cont=map.getContainer(), hud=document.querySelector('.hud');
+        let avail=cont.clientWidth-(hud&&!isMobileViewport()?hud.offsetWidth:0);
+        const target=portrait?440:340;
+        const width=Math.max(240,Math.min(target,avail-24));
+        pop.options.minWidth=width;
+        pop.options.maxWidth=width;
+        pop.update(); /* Leaflet 會重建 content，需把方向 class 同步套回新節點。 */
+        const refreshedContent=pop.getElement().querySelector('.leaflet-popup-content');
+        const refreshed=refreshedContent&&[...refreshedContent.children].find(el=>el.classList&&el.classList.contains('evcard'));
+        setOrientation(refreshed,portrait);
+        centerPopup(pop);
+      }
+    };
+    if(img.complete&&img.naturalWidth&&img.naturalHeight) classify();
+    else{
+      img.addEventListener('load',classify,{once:true});
+      img.addEventListener('error',()=>card.classList.remove('kv-auto'),{once:true});
     }
   });
 }
