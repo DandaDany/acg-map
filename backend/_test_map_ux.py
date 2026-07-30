@@ -43,10 +43,19 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("aspect-ratio:440/340", self.html)
         self.assertIn("overflow:hidden", self.html)
         self.assertIn("object-fit:cover", self.html)
+        self.assertIn(".evcard.kv-contain .evimg{object-fit:contain}", self.html)
+        self.assertIn('class="evback"', self.html)
         self.assertIn("object-position:center", self.html)
-        self.assertIn('<div class="evmedia"><img class="evimg"', self.html)
+        self.assertIn('<div class="evmedia"><img class="evback"', self.html)
         self.assertIn("function applyKvLayouts(root,pop)", self.html)
         self.assertIn("img.naturalHeight>img.naturalWidth", self.html)
+
+    def test_map_search_has_suggestions(self):
+        self.assertIn('class="mapsearch"', self.html)
+        self.assertIn('id="searchSuggestions"', self.html)
+        self.assertIn('id="mobileSearchSuggestions"', self.html)
+        self.assertIn("function searchSuggestions(value)", self.html)
+        self.assertIn("function chooseSearchSuggestion(item)", self.html)
 
 
 if __name__ == "__main__":

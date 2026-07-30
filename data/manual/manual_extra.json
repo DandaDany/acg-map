@@ -377,14 +377,14 @@
   "lng": 120.6025048,
   "loc": "exact",
   "addr": "台中市西屯區台灣大道四段1727號",
-  "url": "https://www.bryte-fun.com",
+  "url": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
   "ex": [
    {
     "t": "伊藤潤二狂熱城市夜行路跑",
     "s": "2026/08/29",
     "e": "2026/08/29",
-    "l": "https://www.bryte-fun.com",
-    "img": "",
+    "l": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
+    "img": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
     "cat2": "體驗活動/Experience Activity"
    }
   ]
@@ -1117,10 +1117,10 @@
  },
  "高雄車站一番街 北站 B2": {
   "city": "高雄市",
-  "lat": 23.27494,
-  "lng": 120.69859,
-  "loc": "區級",
-  "addr": "高雄市三民區，高雄捷運高雄車站鄰3、4號出口；門牌以現場為準",
+  "lat": 22.6377809,
+  "lng": 120.3034814,
+  "loc": "exact",
+  "addr": "高雄市三民區建國二路320號B2，高雄捷運高雄車站鄰3、4號出口",
   "url": "https://www.mofan.co.com/news-detail/133/",
   "ex": [
    {
