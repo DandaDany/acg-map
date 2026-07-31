@@ -1371,5 +1371,21 @@
   "display_name": "高雄市左營區博愛二路777號, 813302",
   "type": "PointAddress",
   "score": 100
+ },
+ "台北市大安區新生南路二段1號": {
+  "la": 25.030152,
+  "lo": 121.5353507,
+  "source": "arcgis_address",
+  "display_name": "台北市大安區龍門里新生南路二段1號, 10657",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市萬華區青年路188巷1弄7號": {
+  "la": 25.0199329,
+  "lo": 121.5035063,
+  "source": "arcgis_address",
+  "display_name": "台北市萬華區青年路188巷1弄7號, 108",
+  "type": "StreetAddress",
+  "score": 100
  }
 }

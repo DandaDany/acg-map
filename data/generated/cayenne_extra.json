@@ -1,6 +1,68 @@
 {
  "_note": "ACG-related Cayenne Cafe events generated from cayenne_stores.json.",
  "venues": {
+  "凱岩咖啡 - 永康店": {
+   "addr": "台北市大安區金華街243巷27號1樓",
+   "url": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24",
+   "ex": [
+    {
+     "t": "蛋仔派對 x 凱岩主題餐廳",
+     "s": "2026/08/07",
+     "e": "2026/09/06",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24",
+     "img": ""
+    },
+    {
+     "t": "賽爾號 x 凱岩主題餐廳",
+     "s": "2026/06/12",
+     "e": "2026/08/02",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22",
+     "img": ""
+    },
+    {
+     "t": "卡厄思夢境 𝘅 凱岩主題餐廳",
+     "s": "2026/04/22",
+     "e": "2026/05/24",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=19",
+     "img": ""
+    },
+    {
+     "t": "摩爾莊園 x 凱岩主題餐廳",
+     "s": "2026/03/19",
+     "e": "2026/04/19",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=18",
+     "img": ""
+    },
+    {
+     "t": "PINK&VEN x 凱岩主題餐廳",
+     "s": "2026/01/22",
+     "e": "2026/02/22",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=16",
+     "img": ""
+    },
+    {
+     "t": "The Butters 奶油家族 X 凱岩主題餐廳",
+     "s": "2025/12/04",
+     "e": "2026/01/18",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=13",
+     "img": ""
+    },
+    {
+     "t": "KINGJUN x 凱岩主題餐廳",
+     "s": "2025/10/17",
+     "e": "2025/11/30",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=10",
+     "img": ""
+    },
+    {
+     "t": "車銀優 x 凱岩主題餐廳",
+     "s": "2025/09/16",
+     "e": "2025/10/12",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=11",
+     "img": ""
+    }
+   ]
+  },
   "凱岩咖啡 - 忠孝店": {
    "addr": "台北市大安區忠孝東路四段205巷7弄7號1樓",
    "url": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=23",
@@ -108,61 +170,6 @@
      "s": "2024/09/30",
      "e": "2024/11/17",
      "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=2",
-     "img": ""
-    }
-   ]
-  },
-  "凱岩咖啡 - 永康店": {
-   "addr": "台北市大安區金華街243巷27號1樓",
-   "url": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22",
-   "ex": [
-    {
-     "t": "賽爾號 x 凱岩主題餐廳",
-     "s": "2026/06/12",
-     "e": "2026/08/02",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22",
-     "img": ""
-    },
-    {
-     "t": "卡厄思夢境 𝘅 凱岩主題餐廳",
-     "s": "2026/04/22",
-     "e": "2026/05/24",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=19",
-     "img": ""
-    },
-    {
-     "t": "摩爾莊園 x 凱岩主題餐廳",
-     "s": "2026/03/19",
-     "e": "2026/04/19",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=18",
-     "img": ""
-    },
-    {
-     "t": "PINK&VEN x 凱岩主題餐廳",
-     "s": "2026/01/22",
-     "e": "2026/02/22",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=16",
-     "img": ""
-    },
-    {
-     "t": "The Butters 奶油家族 X 凱岩主題餐廳",
-     "s": "2025/12/04",
-     "e": "2026/01/18",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=13",
-     "img": ""
-    },
-    {
-     "t": "KINGJUN x 凱岩主題餐廳",
-     "s": "2025/10/17",
-     "e": "2025/11/30",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=10",
-     "img": ""
-    },
-    {
-     "t": "車銀優 x 凱岩主題餐廳",
-     "s": "2025/09/16",
-     "e": "2025/10/12",
-     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=11",
      "img": ""
     }
    ]
