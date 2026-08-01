@@ -13,8 +13,9 @@ name: Daily Update
 
 on:
   schedule:
-    # UTC 00:30 ≈ 台灣時間 (UTC+8) 08:30
-    - cron: '30 0 * * *'
+    # UTC 16:30 = 台灣時間 (UTC+8) 次日 00:30
+    # GitHub Actions 的排程可能因平台負載延遲；cron 是預定觸發時間，不保證準點。
+    - cron: '30 16 * * *'
   workflow_dispatch: {}
 
 permissions:
