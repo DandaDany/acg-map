@@ -35,12 +35,10 @@ class MapUxTests(unittest.TestCase):
         self.assertIn('id="mq"', self.html)
         self.assertIn("function queueSearch(value,source)", self.html)
 
-    def test_kv_images_use_adaptive_bounded_frames(self):
+    def test_kv_images_use_fixed_bounded_frames(self):
         self.assertIn(".evcard .evmedia{", self.html)
         self.assertIn("aspect-ratio:16/9", self.html)
-        self.assertIn("aspect-ratio:9/16", self.html)
         self.assertIn("aspect-ratio:340/440", self.html)
-        self.assertIn("aspect-ratio:440/340", self.html)
         self.assertIn("overflow:hidden", self.html)
         self.assertIn("object-fit:cover", self.html)
         self.assertIn(".evcard.kv-contain .evimg{object-fit:contain}", self.html)
@@ -49,6 +47,14 @@ class MapUxTests(unittest.TestCase):
         self.assertIn('<div class="evmedia"><img class="evback"', self.html)
         self.assertIn("function applyKvLayouts(root,pop)", self.html)
         self.assertIn("img.naturalHeight>img.naturalWidth", self.html)
+        self.assertNotIn("pop.options.minWidth=width", self.html)
+        self.assertNotIn("pop.options.maxWidth=width", self.html)
+        self.assertNotIn("pop.update();", self.html)
+
+    def test_fee_badges_exist_in_list_and_popup_cards(self):
+        self.assertIn(".tag.fee-free{", self.html)
+        self.assertIn(".tag.fee-paid{", self.html)
+        self.assertIn("e.fee==='免費'?'fee-free':'fee-paid'", self.html)
 
     def test_map_search_has_suggestions(self):
         self.assertIn('class="mapsearch"', self.html)

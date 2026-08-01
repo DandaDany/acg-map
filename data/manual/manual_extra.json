@@ -13,7 +13,8 @@
     "e": "2026/08/16",
     "l": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
     "img": "https://www.facebook.com/photo/?fbid=122141725047055906&set=pcb.122141725071055906",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "付費"
    },
    {
     "t": "《相反的你和我》雪人睡衣派對 FAIR in animate 活動紀念 Gratte",
@@ -21,7 +22,8 @@
     "e": "2026/08/09",
     "l": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/you_and_i_gratte_20260718.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -40,6 +42,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -60,6 +63,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -80,6 +84,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -100,6 +105,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -120,6 +126,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -140,6 +147,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -160,6 +168,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -180,6 +189,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -200,6 +210,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -220,6 +231,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -240,6 +252,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -260,6 +273,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -280,6 +294,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -300,6 +315,7 @@
     "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -319,7 +335,8 @@
     "e": "2026/08/23",
     "l": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/marshville_quokscout_20260619.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -355,7 +372,8 @@
     "e": "2026/08/02",
     "l": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
     "img": "",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -373,7 +391,8 @@
     "e": "2026/08/20",
     "l": "https://www.instagram.com/p/DY3xo0lDO42/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bocchi_animation_exhibition_taichung_20260720.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    }
   ]
  },
@@ -391,7 +410,8 @@
     "e": "2026/09/30",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308160",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eslite_acgfest_2026_20260801.jpg",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "fee": "免費"
    }
   ]
  },
@@ -410,6 +430,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -430,6 +451,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -450,6 +472,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -470,6 +493,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -490,6 +514,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -510,6 +535,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -530,6 +556,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -550,6 +577,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -570,6 +598,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -590,6 +619,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -610,6 +640,7 @@
     "l": "https://frozenheart.com.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "凍心",
     "ms": 28
    }
@@ -665,7 +696,8 @@
     "e": "2026/08/02",
     "l": "https://www.instagram.com/p/DaUNtsBJxu0",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_retro_chungyo_20260702.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -701,7 +733,8 @@
     "e": "2026/08/03",
     "l": "https://www.tcrp.com.tw/activity/221",
     "img": "https://www.tcrp.com.tw/storage/upload/activity/image/2026-07-10/aXWQfWYvBuDuguVtyi7m72aZxQH72ARYpGShHAbW.jpeg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -719,7 +752,8 @@
     "e": "2026/09/14",
     "l": "https://www.instagram.com/p/Da2DfOEj_9k",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anpanman_lihpao_20260716.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    },
    {
     "t": "Sirotan期間限定快閃店",
@@ -727,7 +761,8 @@
     "e": "2026/09/14",
     "l": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
     "img": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -745,7 +780,8 @@
     "e": "2026/08/30",
     "l": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dungeon_meshi_taipei_20260715.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    }
   ]
  },
@@ -763,7 +799,8 @@
     "e": "2026/08/30",
     "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_ghoul_incubase_20260731.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    },
    {
     "t": "HUNTER×HUNTER POP UP SHOP",
@@ -807,7 +844,8 @@
     "e": "2026/08/11",
     "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
     "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -825,7 +863,8 @@
     "e": "2026/08/20",
     "l": "https://www.facebook.com/balloontaiwan",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_balloon_festival_20260704.jpg",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "fee": "免費"
    }
   ]
  },
@@ -843,7 +882,8 @@
     "e": "2026/08/23",
     "l": "https://universe.oneone.com.tw/posts/6309",
     "img": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    },
    {
     "t": "2026高雄翻轉動漫祭",
@@ -851,7 +891,8 @@
     "e": "2026/08/23",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308179",
     "img": "https://news.qoo-app.com/wp-content/uploads/2026/07/2026%E9%AB%98%E9%9B%84%E7%BF%BB%E8%BD%89%E5%8B%95%E6%BC%AB%E7%A5%AD%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -869,7 +910,8 @@
     "e": "2026/11/01",
     "l": "https://www.instagram.com/p/DYWFmd8jRZ2/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anifest_dreammall_20260520.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -905,7 +947,8 @@
     "e": "2026/08/31",
     "l": "https://www.huashandin.com.tw/events/20260623/",
     "img": "https://www.huashandin.com.tw/wp-content/uploads/sites/224/2026/06/1-9.jpg",
-    "cat2": "主題餐廳/Theme Restaurant"
+    "cat2": "主題餐廳/Theme Restaurant",
+    "fee": "付費"
    }
   ]
  },
@@ -923,7 +966,8 @@
     "e": "2026/10/11",
     "l": "https://www.facebook.com/pingtungamazing/photos/%F0%93%87%BB%F0%93%82%83%F0%93%82%82%F0%93%82%83%F0",
     "img": "https://res.klook.com/image/upload/c_crop,h_460,w_736,x_212,y_0,z_0.7/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/bvqtev3vdromwbwgbh27.webp",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "免費"
    }
   ]
  },
@@ -977,7 +1021,8 @@
     "e": "2026/08/30",
     "l": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanx90_breeze_20260627.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    }
   ]
  },
@@ -1013,7 +1058,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lashinbang.tw/photos/-%E6%8C%87%E5%8D%97%E9%87%9D-%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E6%AD%A6%E6%98%8C%E5%BA%97%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E9%A0%90%E5%91%8A%E8%97%8D%E8%89%B2%E7%9B%A3%E7%8D%84%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E7%89%B9%E8%B3%A3%E7%86%B1%E8%A1%80%E9%96%8B%E8%B7%91%E9%9B%86%E7%B5%90%E4%BA%BA%E6%B0%A3%E8%A7%92%E8%89%B2%E5%91%A8%E9%82%8A%E7%84%A1%E8%AB%96%E6%98%AF%E6%94%B6%E8%97%8F%E9%82%84%E6%98%AF%E6%87%89%E6%8F%B4%E9%80%99%E6%AC%A1%E9%83%BD%E4%B8%8D%E8%83%BD%E9%8C%AF%E9%81%8E-%E6%B4%BB%E5%8B%95%E6%9C%9F%E9%96%9320260801%E5%85%AD20260831%E4%B8%80-/1408262328094553/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_lashinbang_wuchang_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1031,7 +1077,8 @@
     "e": "2026/08/19",
     "l": "https://www.instagram.com/p/DazKEteDD38",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tamagotchi_taichung_20260727.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1067,7 +1114,8 @@
     "e": "2026/09/03",
     "l": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_popup_20260731.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1103,7 +1151,8 @@
     "e": "2026/08/11",
     "l": "https://www.facebook.com/emuse.com.tw/photos/%F0%9D%97%9D%F0%9D%97%A2%F0%9D%97%9D%F0%9D%97%A2-%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A5%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%A1-%E5%8D%B3%E5%B0%87%E7%99%BB%E5%A0%B4%E7%82%BA%E7%B4%80%E5%BF%B5jojo-%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%9A%AA%E7%AC%AC%E4%B8%83%E9%83%A8steel-ball-run-%E9%A3%86%E9%A6%AC%E9%87%8E%E9%83%8E%E6%AD%A3%E5%BC%8F%E5%8B%95%E7%95%AB%E5%8C%96%E5%AE%98%E6%96%B9%E5%B7%A1%E8%BF%B4%E5%B1%95%E8%A6%BDjojo-caravan%E5%8D%B3%E5%B0%87%E4%BE%86%E5%8F%B0%E7%8F%BE/1478337260995605/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_20260626.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1121,7 +1170,8 @@
     "e": "2026/08/03",
     "l": "https://www.instagram.com/p/DaT8RkDAeAX",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/godzilla_tainan_20260703.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1139,7 +1189,8 @@
     "e": "2026/08/30",
     "l": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hello_kitty_kaohsiung_20260703.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    }
   ]
  },
@@ -1211,7 +1262,8 @@
     "e": "2026/08/25",
     "l": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
     "img": "",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "fee": "免費"
    }
   ]
  },
@@ -1229,7 +1281,8 @@
     "e": "2026/09/20",
     "l": "https://capsule1111.kktix.cc/events/artofmiku",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/artofmiku_whitestone_taipei_20260801.png",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    }
   ]
  },
@@ -1247,7 +1300,8 @@
     "e": "2026/08/30",
     "l": "https://woman.udn.com/woman/story/123164/9629395",
     "img": "",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1265,7 +1319,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1283,7 +1338,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1301,7 +1357,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1319,7 +1376,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1337,7 +1395,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1355,7 +1414,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1373,7 +1433,8 @@
     "e": "2026/08/31",
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1391,7 +1452,8 @@
     "e": "2026/08/16",
     "l": "https://www.instagram.com/p/DZrU9yxgT5x/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hualien_fun_onepiece_20260711.webp",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "fee": "免費"
    }
   ]
  },
@@ -1409,7 +1471,8 @@
     "e": "2026/09/27",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=305017",
     "img": "",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    }
   ]
  },
@@ -1427,7 +1490,8 @@
     "e": "2026/08/23",
     "l": "https://www.instagram.com/p/DaURh41Sp6r",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mofusand_r79_20260703.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1445,7 +1509,8 @@
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "免費"
    }
   ]
  },
@@ -1463,7 +1528,8 @@
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "免費"
    }
   ]
  },
@@ -1481,7 +1547,8 @@
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "免費"
    }
   ]
  },
@@ -1499,7 +1566,8 @@
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "fee": "免費"
    }
   ]
  },
@@ -1517,7 +1585,8 @@
     "e": "2026/08/31",
     "l": "https://www.farglory-oceanpark.com.tw/info-in/cc1zMAarQdpZ6xJB/607Yn54nx4Ms0PI0",
     "img": "https://www.farglory-oceanpark.com.tw/files/images/News/KV_2445X1729%20%281%29.png",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "fee": "付費"
    }
   ]
  },
@@ -1553,7 +1622,8 @@
     "e": "2026/09/27",
     "l": "https://www.instagram.com/p/DZZ0g9UpJHY/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rose_of_versailles_pier2_20260612.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1589,7 +1659,8 @@
     "e": "2026/08/23",
     "l": "https://www.instagram.com/p/DaU5z0TFPTd",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/primaniacs_dreammall_20260717.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1607,7 +1678,8 @@
     "e": "2026/08/11",
     "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
     "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
-    "cat2": "主題餐廳/Theme Cafe"
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費"
    }
   ]
  },
@@ -1624,8 +1696,9 @@
     "s": "2026/07/17",
     "e": "2026/09/13",
     "l": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/apothecary_diaries_exhibition_20260717.png",
-    "cat2": "展覽/Exhibition"
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/apothecary_diaries_exhibition_20260717.jpg",
+    "cat2": "展覽/Exhibition",
+    "fee": "付費"
    },
    {
     "t": "頭文字D（Initial D）快閃店（第二站）",
@@ -1633,7 +1706,8 @@
     "e": "2026/09/13",
     "l": "https://www.mofan.co.com/news-detail/133/",
     "img": "https://www.mofan.co.com/upload/news_b/ALL_news_26G14_g2uycgadbc.png",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費"
    }
   ]
  },
@@ -1652,6 +1726,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1672,6 +1747,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1692,6 +1768,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1712,6 +1789,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1732,6 +1810,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1752,6 +1831,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1772,6 +1852,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1792,6 +1873,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1812,6 +1894,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1832,6 +1915,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1852,6 +1936,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1872,6 +1957,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1892,6 +1978,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1912,6 +1999,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1932,6 +2020,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1952,6 +2041,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1972,6 +2062,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -1992,6 +2083,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -2012,6 +2104,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
@@ -2032,6 +2125,7 @@
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
     "mf": "點點心",
     "ms": 20
    }
