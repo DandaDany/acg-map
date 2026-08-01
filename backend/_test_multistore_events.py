@@ -33,10 +33,10 @@ class MultiStoreEventTests(unittest.TestCase):
             encoding="utf-8",
         ) as fh:
             html = fh.read()
-        self.assertIn('id="fmultiSec"', html)
-        self.assertIn("function renderMultiStoreFilters()", html)
-        self.assertIn("if(state.multi!=='all' && e.mf!==state.multi)", html)
-
+        self.assertIn('data-filter="multi"', html)
+        self.assertIn("if(key==='multi')", html)
+        self.assertIn("if(multi!=='all' && e.mf!==multi)", html)
+        self.assertIn("function eventKey(e)", html)
 
 if __name__ == "__main__":
     unittest.main()
