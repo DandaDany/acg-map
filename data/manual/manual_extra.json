@@ -20,7 +20,7 @@
     "s": "2026/07/18",
     "e": "2026/08/09",
     "l": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/",
-    "img": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.99422-6/750922523_27488611297473352_4729811146430164864_n.png?stp=dst-jpg_tt6&cstp=mx2048x1446&ctp=p960x960&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XfwenmqwL-8Q7kNvwHln8ko&_nc_oc=AdpP4LO9BsDKWO8S8xM7tigMTsOCpPlN7aP7CRUKa2_r1eK4StLMNHDRotaMtWPNlqI&_nc_zt=14&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=I6MCHqiC7ZXlxEA8ow2hWg&_nc_ss=7b2a8&oh=00_AQB9vpdoeylyNrGgvsyjmTf_kHOZXV73PRGO8Sd0Yz-8uA&oe=6A635136",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/you_and_i_gratte_20260718.jpg",
     "cat2": "主題餐廳/Theme Cafe"
    }
   ]
@@ -47,9 +47,9 @@
  },
  "bb.q CHICKEN 中友百貨店": {
   "city": "台中市",
-  "lat": 24.14763,
-  "lng": 120.67422,
-  "loc": "區級",
+  "lat": 24.1522668,
+  "lng": 120.6847123,
+  "loc": "exact",
   "addr": "台中市北區三民路三段161號B棟B2",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -318,7 +318,7 @@
     "s": "2026/06/19",
     "e": "2026/08/23",
     "l": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
-    "img": "https://scontent-tpe1-1.cdninstagram.com/v/t51.82787-15/723942022_17919184356390448_2022661587572240851_n.jpg",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/marshville_quokscout_20260619.jpg",
     "cat2": "快閃店/Pop-up Store"
    }
   ]
@@ -372,7 +372,7 @@
     "s": "2026/07/20",
     "e": "2026/08/20",
     "l": "https://www.instagram.com/p/DY3xo0lDO42/",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bocchi_animation_exhibition_taichung_20260720.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -664,7 +664,7 @@
     "s": "2026/07/02",
     "e": "2026/08/02",
     "l": "https://www.instagram.com/p/DaUNtsBJxu0",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_retro_chungyo_20260702.jpg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -718,7 +718,7 @@
     "s": "2026/07/16",
     "e": "2026/09/14",
     "l": "https://www.instagram.com/p/Da2DfOEj_9k",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anpanman_lihpao_20260716.jpg",
     "cat2": "快閃店/Pop-up Store"
    },
    {
@@ -741,10 +741,10 @@
   "ex": [
    {
     "t": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
-    "s": "2026/07/14",
-    "e": "2026/08/29",
+    "s": "2026/07/15",
+    "e": "2026/08/30",
     "l": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dungeon_meshi_taipei_20260715.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -762,7 +762,7 @@
     "s": "2026/07/31",
     "e": "2026/08/30",
     "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_ghoul_incubase_20260731.jpg",
     "cat2": "快閃店/Pop-up Store"
    },
    {
@@ -770,7 +770,7 @@
     "s": "2026/09/04",
     "e": "2026/10/04",
     "l": "https://www.instagram.com/p/DaNEtndDFyn/",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hunter_incubase_taipei_20260904.jpg",
     "cat2": "快閃店/Pop-up Store"
    }
   ]
@@ -824,7 +824,7 @@
     "s": "2026/07/04",
     "e": "2026/08/20",
     "l": "https://www.facebook.com/balloontaiwan",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_balloon_festival_20260704.jpg",
     "cat2": "活動/Event"
    }
   ]
@@ -868,7 +868,7 @@
     "s": "2026/05/20",
     "e": "2026/11/01",
     "l": "https://www.instagram.com/p/DYWFmd8jRZ2/",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anifest_dreammall_20260520.jpg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -976,7 +976,7 @@
     "s": "2026/06/27",
     "e": "2026/08/30",
     "l": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanx90_breeze_20260627.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -1030,7 +1030,7 @@
     "s": "2026/07/27",
     "e": "2026/08/19",
     "l": "https://www.instagram.com/p/DazKEteDD38",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tamagotchi_taichung_20260727.jpg",
     "cat2": "快閃店/Pop-up Store"
    }
   ]
@@ -1055,9 +1055,9 @@
  },
  "新光三越台北信義新天地A8館5樓": {
   "city": "台北市",
-  "lat": 25.03469,
-  "lng": 121.58098,
-  "loc": "區級",
+  "lat": 25.0388131,
+  "lng": 121.5668002,
+  "loc": "exact",
   "addr": "台北市信義區松高路12號5樓",
   "url": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
   "ex": [
@@ -1120,7 +1120,7 @@
     "s": "2026/07/03",
     "e": "2026/08/03",
     "l": "https://www.instagram.com/p/DaT8RkDAeAX",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/godzilla_tainan_20260703.jpg",
     "cat2": "快閃店/Pop-up Store"
    }
   ]
@@ -1138,7 +1138,7 @@
     "s": "2026/07/03",
     "e": "2026/08/30",
     "l": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hello_kitty_kaohsiung_20260703.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -1307,9 +1307,9 @@
  },
  "肉的長谷川 新竹巨城店": {
   "city": "新竹市",
-  "lat": 24.78217,
-  "lng": 120.98882,
-  "loc": "區級",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
   "addr": "新竹市東區中央路229號4樓美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1325,9 +1325,9 @@
  },
  "肉的長谷川 林口三井店": {
   "city": "新北市",
-  "lat": 25.09418,
-  "lng": 121.34762,
-  "loc": "區級",
+  "lat": 25.0712411,
+  "lng": 121.3635472,
+  "loc": "exact",
   "addr": "新北市林口區文化三路一段356號2樓美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1390,7 +1390,7 @@
     "s": "2026/07/11",
     "e": "2026/08/16",
     "l": "https://www.instagram.com/p/DZrU9yxgT5x/",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hualien_fun_onepiece_20260711.webp",
     "cat2": "活動/Event"
    }
   ]
@@ -1426,7 +1426,7 @@
     "s": "2026/07/03",
     "e": "2026/08/23",
     "l": "https://www.instagram.com/p/DaURh41Sp6r",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mofusand_r79_20260703.jpg",
     "cat2": "快閃店/Pop-up Store"
    }
   ]
@@ -1444,7 +1444,7 @@
     "s": "2026/07/10",
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -1462,7 +1462,7 @@
     "s": "2026/07/10",
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -1480,7 +1480,7 @@
     "s": "2026/07/10",
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -1498,7 +1498,7 @@
     "s": "2026/07/10",
     "e": "2026/08/31",
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://instagram.frmq3-4.fna.fbcdn.net/v/t51.82787-15/742558756_17946124737248420_247882566064131122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzkzNzI0OTM2MzUyNjc2NjIyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMzI3Ny5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=m4rz_JOYoQgQ7kNvwEJ3bXa&_nc_oc=AdpJoPir_hFPgWP7Gnsj738rOfRbTL6bya9_ojV3fqNIVyjxKFnYnZIWaRvLit3rSPDMrmJg3OTKCmFLLqffEf3N&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.frmq3-4.fna&_nc_gid=sMUIuZLLn4zxiBtOKRnYIA&_nc_ss=7a22e&oh=00_AQC1dx_OVNukG9g9BUys1xvntWTl3k02_-ja-eaCAu3ayg&oe=6A5913FC",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition"
    }
   ]
@@ -1552,7 +1552,7 @@
     "s": "2026/06/12",
     "e": "2026/09/27",
     "l": "https://www.instagram.com/p/DZZ0g9UpJHY/",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rose_of_versailles_pier2_20260612.jpg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -1588,7 +1588,7 @@
     "s": "2026/07/17",
     "e": "2026/08/23",
     "l": "https://www.instagram.com/p/DaU5z0TFPTd",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/primaniacs_dreammall_20260717.jpg",
     "cat2": "快閃店/Pop Up Store"
    }
   ]
@@ -1621,10 +1621,10 @@
   "ex": [
    {
     "t": "藥師少女的獨語展",
-    "s": "2026/07/16",
-    "e": "2026/09/12",
+    "s": "2026/07/17",
+    "e": "2026/09/13",
     "l": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
-    "img": "",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/apothecary_diaries_exhibition_20260717.png",
     "cat2": "展覽/Exhibition"
    },
    {
@@ -1650,7 +1650,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1670,7 +1670,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1690,7 +1690,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1710,7 +1710,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1730,7 +1730,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1750,7 +1750,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1770,7 +1770,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1790,7 +1790,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1810,7 +1810,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1830,7 +1830,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1850,7 +1850,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1870,7 +1870,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1890,7 +1890,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1910,7 +1910,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1930,7 +1930,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1950,7 +1950,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1970,7 +1970,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -1990,7 +1990,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -2010,7 +2010,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20
@@ -2030,7 +2030,7 @@
     "s": "2026/07/13",
     "e": "2026/09/13",
     "l": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
-    "img": "https://scontent.frmq3-4.fna.fbcdn.net/v/t39.99422-6/741963951_1030626512952202_6405921444814549059_n.png?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1080x2048&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WLX5NikoKboQ7kNvwFTTE9e&_nc_oc=AdrnHniBqYcUu8eY7hRdCIwfh5-xwHB8Z7l7vl5u0oDBffg2falpQ0H9WqIKPLFY-v0&_nc_zt=14&_nc_ht=scontent.frmq3-4.fna&_nc_gid=GR0CUayI2y7N0pd0KYEgXQ&_nc_ss=7b2a8&oh=00_AQAKF_yRjWVNlPQ8r7oeGgU0likozaPepahIFSOgLr4Phg&oe=6A591B8B",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "mf": "點點心",
     "ms": 20

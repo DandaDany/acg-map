@@ -1,5 +1,5 @@
 {
-  "updated": "2026/07/29",
+  "updated": "2026/08/01",
   "links": {
     "https://www.taoyuantudigong.org.tw/main/exhibition-current/": {
       "ok": true,
@@ -261,9 +261,9 @@
     },
     "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22": {
       "ok": true,
-      "img": "https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/715550246_122207922308512737_2167885398230234641_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x900&ctp=p600x600&_nc_cat=102&ccb=1-7&_nc_sid=cae128&_nc_ohc=E1WJkN2HIzMQ7kNvwGYxZah&_nc_oc=AdqgMMH9stIIscTWLMHzsQteiAfO4IeCMcbjG7GgZEXh8YRAm5P_1840v5Ki1ekcAzwj8w7Bddlvz675L-OtNM1X&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=COXym64iTM6sfQM2vaXtmA&_nc_ss=7f20f&oh=00_Af8WN1I_zP4dB5ZLjc5W16GS6eQlvW4rQs5K1eJo64HQyw&oe=6A3DA8B5",
-      "code": "ok",
-      "updated": "2026/06/21"
+      "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/seer_cayenne_20260612.jpg",
+      "code": "manual_verified",
+      "updated": "2026/08/01"
     },
     "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=21": {
       "ok": true,
@@ -1059,9 +1059,9 @@
     },
     "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=23": {
       "ok": true,
-      "img": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/731131717_122210042576512737_5556270474344509085_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dVo6mxZwdeUQ7kNvwEjqbW-&_nc_oc=AdpTiYYcCFmc0dfLmc9hUpLVvMWpg3BiGWvmnTYtPPUZ5gjPg2P1a8No9Am-fW15flc&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=tCgRj9frZ3CbKFwuciHKmg&_nc_ss=7b289&oh=00_AQCOdiMFVMuHPr7KibblLl_mjeB0yaQiB4yLPmj25ojjhA&oe=6A4BDDAD",
-      "code": "ok_browser",
-      "updated": "2026/07/02"
+      "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/maplestory_cayenne_20260716.jpg",
+      "code": "manual_verified",
+      "updated": "2026/08/01"
     },
     "https://grandview.org.tw/news/?e-filter-02df351-news-tag=exhibition-info": {
       "ok": true,
