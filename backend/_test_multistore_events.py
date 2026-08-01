@@ -21,9 +21,10 @@ class MultiStoreEventTests(unittest.TestCase):
                 found[label] = found.get(label, 0) + 1
                 totals.setdefault(label, set()).add(event.get("ms"))
 
-        self.assertEqual(found, {"點點心": 20, "凍心": 11})
+        self.assertEqual(found, {"點點心": 20, "凍心": 11, "bb.q CHICKEN": 14})
         self.assertEqual(totals["點點心"], {20})
         self.assertEqual(totals["凍心"], {28})
+        self.assertEqual(totals["bb.q CHICKEN"], {14})
         self.assertTrue(all(total > 10 for values in totals.values() for total in values))
 
     def test_frontend_contains_dynamic_multistore_filter(self):

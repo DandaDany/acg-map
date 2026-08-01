@@ -1370,7 +1370,7 @@
   }
  },
  {
-  "KV": null,
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_20260626.jpg",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "快閃店/Pop Up Store",
   "年度 / Start Year": 2026,
@@ -1383,7 +1383,7 @@
   "主辦方 / Organizer": null,
   "授權單位 / Authorized unit (Licensor)": "木棉花",
   "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/photos/%F0%9D%97%9D%F0%9D%97%A2%F0%9D%97%9D%F0%9D%97%A2-%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A5%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%A1-%E5%8D%B3%E5%B0%87%E7%99%BB%E5%A0%B4%E7%82%BA%E7%B4%80%E5%BF%B5jojo-%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%9A%AA%E7%AC%AC%E4%B8%83%E9%83%A8steel-ball-run-%E9%A3%86%E9%A6%AC%E9%87%8E%E9%83%8E%E6%AD%A3%E5%BC%8F%E5%8B%95%E7%95%AB%E5%8C%96%E5%AE%98%E6%96%B9%E5%B7%A1%E8%BF%B4%E5%B1%95%E8%A6%BDjojo-caravan%E5%8D%B3%E5%B0%87%E4%BE%86%E5%8F%B0%E7%8F%BE/1478337260995605/",
-  "備註 / NOTE": null,
+  "備註 / NOTE": "【KV補驗證 2026/08/01】採4Gamers活動報導圖片，已下載並目視確認為1600×1600正式KV；圖上含JOJO CARAVAN台北站、2026/06/26–08/11、新光三越南西店一館9F活動會館、主辦木棉花及版權標示。圖片已交接為data/manual/_kv_cache/jojo_caravan_20260626.jpg。",
   "IP_std": "JOJO的奇妙冒險",
   "Licensor_std": "木棉花",
   "月份": "2026-06-01 00:00:00"
@@ -3167,6 +3167,207 @@
   "月份": "2026-10-01 00:00:00",
   "_links": {
    "活動連結 / Activity link": "https://irunner.biji.co/2026NeonGenesisEvangelion"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_popup_20260731.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-31 00:00:00",
+  "結束日期 / End Date": "2026-09-03 00:00:00",
+  "IP": "新世紀福音戰士",
+  "活動名稱 / Activity Name": "《新世紀福音戰士》POP-UP STORE",
+  "地點 / Location": "新光三越台北信義新天地A8館5樓（台北市信義區松高路12號5樓）",
+  "主辦方 / Organizer": "曼迪傳播",
+  "授權單位 / Authorized unit (Licensor)": "khara",
+  "活動連結 / Activity link": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
+  "備註 / NOTE": "資料來源：曼迪傳播官方Facebook及4Gamers活動報導。活動日期2026/07/31–09/03，地點新光三越台北信義新天地A8館5樓。活動類別：官方名稱為POP-UP STORE，歸快閃店。【KV驗證 2026/08/01】採4Gamers報導原圖，1600×1270，已下載並目視確認含EVANGELION／新世紀福音戰士POP UP STORE、7/31–9/3、新光三越台北信義新天地A8及©khara；已交接為data/manual/_kv_cache/eva_popup_20260731.jpg。",
+  "IP_std": "新世紀福音戰士",
+  "Licensor_std": null,
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 SOGO忠孝店（台北市大安區忠孝東路四段45號B1美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31，全台7家合作門市推出合作套餐、角色插卡與餐具紙。本筆為SOGO忠孝店；7間門市為確保地圖各自產生圖釘，已拆為7筆。【KV驗證 2026/08/01】Daniel指出官方貼文內正式KV；已下載原圖並目視確認為1920×1080，含雙方品牌、盛夏美學合作餐廳及完整日期；已交接為data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 誠品南西店（台北市中山區南京西路14號B1美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31。本筆為誠品南西店；共7筆合作門市，共用已驗證官方KV。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 南港LaLaPort店（台北市南港區經貿二路105巷1號5樓美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31。本筆為南港LaLaPort店；共7筆合作門市，共用已驗證官方KV。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 林口三井店（新北市林口區文化三路一段356號2樓美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31。本筆為林口三井店；共7筆合作門市，共用已驗證官方KV。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 新竹巨城店（新竹市東區中央路229號4樓美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31。本筆為新竹巨城店；共7筆合作門市，共用已驗證官方KV。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 台中新光三越中港店（台中市西屯區臺灣大道三段301號12樓美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31。本筆為台中新光三越中港店；共7筆合作門市，共用已驗證官方KV。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "戀與製作人",
+  "活動名稱 / Activity Name": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
+  "地點 / Location": "肉的長谷川 高雄漢神巨蛋店（高雄市左營區博愛二路777號B1美食街）",
+  "主辦方 / Organizer": "戀與製作人台港澳官方 × 肉的長谷川",
+  "授權單位 / Authorized unit (Licensor)": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司",
+  "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+  "備註 / NOTE": "資料來源：《戀與製作人》台港澳官方Facebook、肉的長谷川官方營業據點頁及SouNova活動報導。活動期間2026/08/01–08/31。本筆為高雄漢神巨蛋店；共7筆合作門市，共用已驗證官方KV。",
+  "IP_std": "戀與製作人",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "褲褲兔（Opanchu Usagi）",
+  "活動名稱 / Activity Name": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
+  "地點 / Location": "全台14間bb.q CHICKEN門市（詳細地址清單見 data/manual/bbq_chicken門市地址_20260801.json，來源：bbqchicken.com.tw/location.aspx，2026/08/01查詢）",
+  "主辦方 / Organizer": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
+  "活動連結 / Activity link": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
+  "多店活動 / Multi-store": "bb.q CHICKEN",
+  "門市資料 / Store List": "data/manual/bbq_chicken門市地址_20260801.json",
+  "門市名稱前綴 / Store Prefix": "bb.q CHICKEN",
+  "備註 / NOTE": "資料來源：bb.q CHICKEN官方活動頁與官方店鋪據點頁；Daniel於2026/08/01明確確認聯名活動可收錄。官方活動頁載明2026/08/01–08/31於全台門市推出俱樂部套餐、聯名周邊、聯名主題佈置／拍照區及門市分享任務，故歸餐飲／主題餐廳，而非因含加價購就排除為單純促銷。官網2026/08/01列14間門市，已另存門市地址檔供多店展開。【KV驗證 2026/08/01】Daniel提供bb.q官方Facebook貼文原圖；已下載並目視確認為1200×800，含bb.q×OPANCHU USAGI、下班俱樂部AFTER WORK CLUB、2026.8.1–8.31及R&B Asia／©KAWAISOUNI!標示；已交接為data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg。",
+  "IP_std": "褲褲兔",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127"
   }
  }
 ]

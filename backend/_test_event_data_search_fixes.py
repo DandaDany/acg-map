@@ -24,7 +24,7 @@ class EventDataSearchFixTests(unittest.TestCase):
         cls.public = load("public/venues.json")
 
     def test_initial_d_uses_kaohsiung_station_coordinates(self):
-        venue = self.manual["高雄車站一番街 北站 B2"]
+        venue = self.manual["高雄駅一番街・北站 高雄捷運高雄車站B2"]
         self.assertEqual(venue["loc"], "exact")
         self.assertAlmostEqual(venue["lat"], 22.6377809)
         self.assertAlmostEqual(venue["lng"], 120.3034814)
