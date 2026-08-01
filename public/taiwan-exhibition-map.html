@@ -712,17 +712,18 @@ html,body{margin:0;height:100%;font-family:"PingFang TC","Noto Sans TC","Microso
 .leaflet-bar a{background:#1d2330;color:#e8ecf3;border-color:#2a3140}
 .leaflet-bar a:hover{background:#283042}
 
-/* 左側篩選面板（side navigation） */
-.hud{position:absolute;top:0;left:0;bottom:0;z-index:1000;width:340px;padding:12px;pointer-events:none;display:flex}
-.bar{pointer-events:auto;flex:1;min-width:0;overflow-y:auto;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--line);
+/* 左側常駐篩選：第一層固定；第二層同寬並向右展開，兩層都覆蓋地圖。 */
+.hud{position:absolute;top:0;left:0;bottom:0;z-index:1000;padding:12px;pointer-events:none;display:flex;align-items:stretch;gap:10px}
+.bar,.filter-detail{pointer-events:auto;width:316px;min-width:316px;min-height:0;background:var(--glass);backdrop-filter:blur(10px);border:1px solid var(--line);
   border-radius:16px;padding:14px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.bar{display:flex;flex-direction:column;overflow:hidden}
+.filter-detail{display:none;flex-direction:column;padding:0;overflow:hidden}
+.filter-detail.show{display:flex}
 .row1{display:flex;align-items:center;gap:10px}
 .brand{font-size:17px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
 .brand small{display:block;font-size:10px;color:var(--muted);font-weight:500;letter-spacing:1px}
 .stat{margin-top:6px;font-size:12px;color:var(--muted);line-height:1.5}
 .stat b{color:var(--text);font-size:14px}
-.fbtn{display:none;margin-left:auto;border:1px solid var(--line);background:#141925;color:var(--text);padding:6px 12px;border-radius:999px;font-size:12.5px;cursor:pointer;white-space:nowrap}
-.fbtn.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
 .homebtn{margin-left:auto;width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:11px;background:#141925;color:var(--text);font-size:18px;cursor:pointer;transition:.13s}
 .homebtn:hover,.homebtn:focus-visible{border-color:var(--accent2);background:#1b2433;outline:none}
 .mapsearch{position:fixed;z-index:1200;top:12px;left:calc(340px + (100vw - 340px)/2);transform:translateX(-50%);width:min(480px,calc(100vw - 380px))}
@@ -739,15 +740,33 @@ html,body{margin:0;height:100%;font-family:"PingFang TC","Noto Sans TC","Microso
 .search-label{font-size:13.5px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .search-sub{margin-top:2px;color:var(--muted);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .search-empty{padding:13px 10px;color:var(--muted);font-size:12.5px;text-align:center}
-.pills{display:flex;flex-direction:column;gap:14px;margin-top:14px}
-.pills .ftitle{font-size:11px;color:var(--muted);letter-spacing:1.5px;margin-bottom:6px}
-.pills .grp{display:flex;gap:6px;flex-wrap:wrap}
-.pills button{border:1px solid var(--line);background:#141925;color:var(--text);padding:6px 11px;border-radius:999px;font-size:12.5px;cursor:pointer;transition:.13s;white-space:nowrap}
-.pills button:hover{border-color:#3a4660}
-.pills button.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
-.pills #fmulti button.active{background:#b457d1;border-color:#b457d1}
-.pills #regions button.active{background:var(--accent2);border-color:var(--accent2)}
-.pills #regionCities{margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+.filter-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding:12px 0 8px;border-top:1px solid var(--line)}
+.filter-head h2{margin:0;font-size:14px;letter-spacing:.4px}
+.filter-clear{border:0;background:transparent;color:var(--accent2);font-size:12.5px;font-weight:650;cursor:pointer;padding:4px 0}
+.filter-clear:disabled{color:#667085;cursor:not-allowed;opacity:.65}
+.filter-menu{display:flex;flex-direction:column;gap:4px;min-height:0;overflow-y:auto;padding:3px 0 8px}
+.filter-category{width:100%;display:grid;grid-template-columns:26px minmax(72px,1fr) minmax(76px,1.15fr) 16px;align-items:center;gap:8px;border:0;border-radius:11px;background:transparent;color:var(--text);padding:11px 9px;text-align:left;cursor:pointer;transition:.13s}
+.filter-category:hover,.filter-category.open{background:#273044}
+.filter-category:focus-visible,.filter-option:focus-visible,.filter-back:focus-visible,.filter-clear:focus-visible{outline:2px solid var(--accent2);outline-offset:1px}
+.filter-icon{display:grid;place-items:center;color:var(--muted);font-size:16px}
+.filter-name{font-size:13.5px;font-weight:650}
+.filter-value{min-width:0;color:var(--muted);font-size:12.5px;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.filter-value.changed{color:var(--accent2);font-weight:700}
+.filter-arrow{color:var(--muted);font-size:20px;line-height:1;text-align:right}
+.filter-detail-head{display:flex;align-items:center;gap:8px;min-height:58px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.filter-detail-head h2{margin:0;font-size:15px}
+.filter-back{width:34px;height:34px;display:grid;place-items:center;border:0;border-radius:9px;background:transparent;color:var(--text);font-size:21px;cursor:pointer}
+.filter-back:hover{background:#273044}
+.filter-options{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:8px}
+.filter-group{padding:10px 10px 5px;color:var(--muted);font-size:11px;font-weight:750;letter-spacing:1.2px}
+.filter-option{width:100%;display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:center;gap:9px;border:0;border-radius:10px;background:transparent;color:var(--text);padding:10px;text-align:left;cursor:pointer;transition:.13s}
+.filter-option:hover:not(:disabled),.filter-option.selected{background:#273044}
+.filter-option:disabled{color:#667085;cursor:not-allowed}
+.filter-check{font-size:14px;color:transparent}
+.filter-option.selected .filter-check{color:var(--accent2)}
+.filter-option-label{display:-webkit-box;min-width:0;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;font-size:13.5px;line-height:1.35}
+.filter-count{min-width:26px;padding:2px 7px;border:1px solid #3a4353;border-radius:999px;color:var(--muted);font-size:11.5px;text-align:center}
+.filter-option.selected .filter-count{border-color:var(--accent2);color:#b9d5ff}
 .mobile-tabs,.mhome,.msearch,.mobile-venue-sheet{display:none}
 
 /* pin + cluster */
@@ -798,27 +817,25 @@ html,body{margin:0;height:100%;font-family:"PingFang TC","Noto Sans TC","Microso
 .foot{position:absolute;left:352px;bottom:8px;z-index:1000;font-size:10.5px;color:var(--muted);
   background:rgba(15,17,21,.72);padding:5px 9px;border-radius:7px;max-width:60%;line-height:1.5}
 @media(max-width:760px){
-  .hud{position:fixed;top:auto;right:10px;bottom:10px;left:10px;width:auto;height:38dvh;padding:0;z-index:1100}
-  .bar{display:flex;flex-direction:column;width:100%;max-height:none;overflow:hidden;border-radius:22px;padding:11px 14px calc(12px + env(safe-area-inset-bottom,0px))}
-  .row1{display:none}
-  .stat{flex:none;margin:0 0 6px;padding-right:78px;text-align:left;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hud{position:fixed;top:auto;right:10px;bottom:10px;left:10px;height:42dvh;padding:0;z-index:1100;display:block}
+  .bar,.filter-detail{position:absolute;inset:0;width:100%;min-width:0;border-radius:22px;padding:11px 14px calc(12px + env(safe-area-inset-bottom,0px))}
+  .filter-detail{z-index:4;padding:0;background:rgba(20,25,34,.98)}
+  .row1{display:flex}
+  .brand{font-size:14px}
+  .brand small{display:none}
+  .homebtn{display:none}
+  .stat{flex:none;margin:5px 0 0;padding-right:78px;text-align:left;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .faventry{position:absolute;top:8px;right:12px;margin:0;z-index:2}
   .mapsearch{display:none}
   .msearch{display:flex;position:fixed;z-index:1200;top:calc(10px + env(safe-area-inset-top,0px));left:10px;right:58px;height:44px;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:14px;background:rgba(15,20,29,.94);box-shadow:0 8px 24px rgba(0,0,0,.28)}
   .msearch input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font-size:14.5px}
   .msearch .search-suggestions{top:calc(100% + 7px)}
   .mhome{display:grid;position:fixed;z-index:1200;top:calc(10px + env(safe-area-inset-top,0px));right:10px;width:40px;height:44px;place-items:center;border:1px solid var(--line);border-radius:13px;background:rgba(20,25,37,.96);color:var(--text);font-size:18px;box-shadow:0 8px 24px rgba(0,0,0,.28);cursor:pointer}
-  .mobile-tabs{display:grid;grid-template-columns:repeat(4,1fr);flex:none;border-bottom:1px solid var(--line)}
-  .mobile-tabs button{position:relative;border:0;background:transparent;color:var(--muted);font-size:13.5px;font-weight:700;padding:7px 2px 10px;cursor:pointer}
-  .mobile-tabs button.active{color:var(--text)}
-  .mobile-tabs button.active:after{content:"";position:absolute;left:24%;right:24%;bottom:-1px;height:3px;border-radius:3px;background:var(--accent)}
-  .pills{display:block;flex:1;min-height:0;margin-top:10px;overflow:hidden}
-  .pills .fsec{display:none;height:100%;overflow-y:auto;overscroll-behavior:contain;padding:1px 1px 8px}
-  .pills .fsec.mobile-active{display:block}
-  .pills .ftitle{font-size:12px;margin-bottom:9px}
-  .pills button{min-height:38px;padding:8px 13px}
+  .filter-head{margin-top:9px;padding-top:8px}
+  .filter-menu{flex:1}
+  .filter-category{padding:9px}
   .foot{display:none}
-  .leaflet-bottom.leaflet-right{bottom:calc(38dvh + 20px)}
+  .leaflet-bottom.leaflet-right{bottom:calc(42dvh + 20px)}
   .leaflet-top.leaflet-left{top:calc(56px + env(safe-area-inset-top,0px))}
   .mobile-venue-sheet{display:flex;position:fixed;z-index:1650;left:10px;right:10px;bottom:10px;height:70dvh;transform:translateY(calc(100% + 30px));transition:transform .34s cubic-bezier(.22,1,.36,1);pointer-events:none}
   .mobile-venue-sheet.show{transform:translateY(0);pointer-events:auto}
@@ -932,55 +949,40 @@ html,body{margin:0;height:100%;font-family:"PingFang TC","Noto Sans TC","Microso
   <div class="row1">
     <div class="brand">全台 ACG 活動地圖<small>TAIWAN ACG EVENT MAP</small></div>
     <button class="homebtn" id="homeButton" type="button" title="回到台灣全圖" aria-label="回到台灣全圖">⌂</button>
-    <button class="fbtn" id="fbtn" type="button" aria-expanded="false">篩選</button>
   </div>
   <div class="stat" id="stat">載入中…</div>
   <button type="button" class="faventry" id="favEntry" aria-haspopup="dialog" aria-expanded="false">
     <span class="hrt">♥</span><span>想去</span><span class="n" id="favN">0</span>
   </button>
-  <div class="mobile-tabs" id="mobileTabs" role="tablist" aria-label="篩選分類">
-    <button type="button" role="tab" data-panel="ftimeSec" class="active" aria-selected="true">時間</button>
-    <button type="button" role="tab" data-panel="fformSec" aria-selected="false">形式</button>
-    <button type="button" role="tab" data-panel="fmultiSec" aria-selected="false">多店</button>
-    <button type="button" role="tab" data-panel="fregionSec" aria-selected="false">地區</button>
+  <div class="filter-head">
+    <h2>篩選活動</h2>
+    <button class="filter-clear" id="clearFilters" type="button" disabled>清除全部</button>
   </div>
-  <div class="pills">
-    <div class="fsec mobile-active" id="ftimeSec">
-      <div class="ftitle">時間</div>
-      <div class="grp" id="ftime">
-        <button data-t="all" class="active">全部時段</button>
-        <button data-t="ongoing">進行中</button>
-        <button data-t="upcoming">即將開始</button>
-        <button data-t="ending">即將結束</button>
-      </div>
-    </div>
-    <div class="fsec" id="fformSec">
-      <div class="ftitle">活動形式</div>
-      <div class="grp" id="fform">
-        <button data-f="all" class="active">全部形式</button>
-        <button data-f="展覽">展覽</button>
-        <button data-f="快閃店">快閃店</button>
-        <button data-f="主題餐廳">主題餐廳</button>
-        <button data-f="體驗活動">體驗活動</button>
-      </div>
-    </div>
-    <div class="fsec" id="fmultiSec" style="display:none">
-      <div class="ftitle">多店活動</div>
-      <div class="grp" id="fmulti"></div>
-    </div>
-    <div class="fsec" id="fregionSec">
-      <div class="ftitle">地區</div>
-      <div class="grp" id="regions">
-        <button data-r="all">全台</button>
-        <button data-r="north">北</button>
-        <button data-r="central">中</button>
-        <button data-r="south">南</button>
-        <button data-r="east">東</button>
-      </div>
-      <div class="grp" id="regionCities" style="display:none"></div>
-    </div>
+  <div class="filter-menu" id="filterMenu" aria-label="篩選分類">
+    <button class="filter-category" type="button" data-filter="city" aria-expanded="false">
+      <span class="filter-icon" aria-hidden="true">⌖</span><span class="filter-name">縣市</span><span class="filter-value" data-filter-value="city">全台灣</span><span class="filter-arrow" aria-hidden="true">›</span>
+    </button>
+    <button class="filter-category" type="button" data-filter="time" aria-expanded="false">
+      <span class="filter-icon" aria-hidden="true">◷</span><span class="filter-name">時間</span><span class="filter-value" data-filter-value="time">全部時間</span><span class="filter-arrow" aria-hidden="true">›</span>
+    </button>
+    <button class="filter-category" type="button" data-filter="form" aria-expanded="false">
+      <span class="filter-icon" aria-hidden="true">◇</span><span class="filter-name">活動形式</span><span class="filter-value" data-filter-value="form">全部形式</span><span class="filter-arrow" aria-hidden="true">›</span>
+    </button>
+    <button class="filter-category" type="button" data-filter="fee" aria-expanded="false">
+      <span class="filter-icon" aria-hidden="true">＄</span><span class="filter-name">付費狀態</span><span class="filter-value" data-filter-value="fee">不限</span><span class="filter-arrow" aria-hidden="true">›</span>
+    </button>
+    <button class="filter-category" type="button" data-filter="multi" aria-expanded="false">
+      <span class="filter-icon" aria-hidden="true">⌘</span><span class="filter-name">多店活動</span><span class="filter-value" data-filter-value="multi">全部多店</span><span class="filter-arrow" aria-hidden="true">›</span>
+    </button>
   </div>
-</div></aside>
+</div>
+<section class="filter-detail" id="filterDetail" aria-hidden="true" aria-label="篩選選項">
+  <div class="filter-detail-head">
+    <button class="filter-back" id="filterBack" type="button" aria-label="返回篩選分類">‹</button>
+    <h2 id="filterDetailTitle">縣市</h2>
+  </div>
+  <div class="filter-options" id="filterOptions"></div>
+</section></aside>
 <div class="mapsearch">
   <div class="searchbox">
     <svg viewBox="0 0 24 24" fill="none" stroke="#9aa6b8" stroke-width="2" width="17" height="17" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
@@ -1121,7 +1123,7 @@ function observePinLogos(){
   }
 }
 
-let state={time:'all', type:'all', cat:'ACG', form:'all', multi:'all', q:''};
+let state={city:'all',time:'all',type:'all',cat:'ACG',form:'all',fee:'all',multi:'all',q:''};
 let liveMode=false;
 const MOBILE_QUERY=window.matchMedia('(max-width:760px)');
 const VENUE_FOCUS_ZOOM=13;
@@ -1187,30 +1189,47 @@ map.addLayer(cluster);
 map.on('moveend zoomend',()=>setTimeout(observePinLogos,0));
 cluster.on('animationend spiderfied unspiderfied',()=>setTimeout(observePinLogos,0));
 
-/* 篩選邏輯 */
-function matchEx(e){
-  if(state.cat!=='all' && e.c!==state.cat) return false;  /* 只顯示 ACG（文創園區僅用來確認是否有 ACG 活動，其餘不顯示） */
-  if(state.form!=='all' && e.c2!==state.form) return false;
-  if(state.multi!=='all' && e.mf!==state.multi) return false;
-  if(state.type==='permanent' && e.ty!=='permanent') return false;
-  if(state.type==='special' && e.ty!=='special') return false;
-  if(state.time!=='all'){
-    if(e.ty==='permanent') return state.time==='ongoing';
+/* 篩選邏輯：各選項計數會用 overrides 暫時替換同分類值，只套用其他分類。 */
+function filterValue(key,overrides){
+  return overrides&&Object.prototype.hasOwnProperty.call(overrides,key)?overrides[key]:state[key];
+}
+function eventKey(e){
+  return String(e&&e.t||'').replace(/\s+/g,'').toLowerCase()+'|'+String(e&&e.s||'').replace(/-/g,'/');
+}
+function matchEx(e,v,overrides){
+  const cat=filterValue('cat',overrides), form=filterValue('form',overrides);
+  const fee=filterValue('fee',overrides), multi=filterValue('multi',overrides);
+  const type=filterValue('type',overrides), time=filterValue('time',overrides);
+  const city=filterValue('city',overrides);
+  if(city!=='all' && (!v||v.city!==city)) return false;
+  if(cat!=='all' && e.c!==cat) return false;  /* 公開地圖仍只顯示 ACG */
+  if(form!=='all' && e.c2!==form) return false;
+  if(fee!=='all' && e.fee!==fee) return false;
+  if(multi!=='all' && e.mf!==multi) return false;
+  if(type==='permanent' && e.ty!=='permanent') return false;
+  if(type==='special' && e.ty!=='special') return false;
+  if(time!=='all'){
+    if(e.ty==='permanent') return time==='ongoing';
     const ds=parseD(e.s), de=parseD(e.e);
-    if(state.time==='ongoing'){ if(!((!ds||ds<=TODAY)&&(!de||de>=TODAY))) return false; }
-    else if(state.time==='upcoming'){ if(!(ds&&ds>TODAY)) return false; }
-    else if(state.time==='ending'){ const d=daysLeft(e.e); if(!(d!==null&&d>=0&&d<=ENDING_SOON_DAYS)) return false; }
+    if(time==='ongoing'){ if(!((!ds||ds<=TODAY)&&(!de||de>=TODAY))) return false; }
+    else if(time==='upcoming'){ if(!(ds&&ds>TODAY)) return false; }
+    else if(time==='ending'){ const d=daysLeft(e.e); if(!(d!==null&&d>=0&&d<=ENDING_SOON_DAYS)) return false; }
   }
   return true;
 }
-function venueExs(v){
-  let exs=v.ex.filter(matchEx);
+function venueExs(v,overrides){
+  let exs=v.ex.filter(e=>matchEx(e,v,overrides));
   if(state.q){
     const q=state.q.toLowerCase();
     const hitV=((v.name||'')+(v.city||'')+(v.addr||'')).toLowerCase().includes(q);
     if(!hitV) exs=exs.filter(e=>(e.t||'').toLowerCase().includes(q));
   }
   return exs;
+}
+function uniqueActivityCount(overrides){
+  const keys=new Set();
+  DATA.venues.forEach(v=>venueExs(v,overrides).forEach(e=>keys.add(eventKey(e))));
+  return keys.size;
 }
 
 /* 該批（已通過篩選的）活動是否含「即將結束」（供 pinHtml 紅點；常設展不計） */
@@ -1250,10 +1269,10 @@ function rebuild(){
   closeVenueFocus(false);
   if(pinLogoObserver) pinLogoObserver.disconnect();
   cluster.clearLayers(); markers=[];
-  let vShown=0, eShown=0;
+  let vShown=0; const eventKeys=new Set();
   DATA.venues.forEach(v=>{
     const exs=venueExs(v); if(exs.length===0) return;
-    vShown++; eShown+=exs.length;
+    vShown++; exs.forEach(e=>eventKeys.add(eventKey(e)));
     const icon=L.divIcon({className:'',html:pinHtml(exs.length,v.loc,venueForm(exs),venueHasFav(v),exsHasSoon(exs)),iconSize:[40,52],iconAnchor:[20,50]});
     const m=L.marker([v.la,v.lo],{icon}); m.exCount=exs.length; m._v=v;
     m.on('click',ev=>{
@@ -1264,7 +1283,8 @@ function rebuild(){
   });
   cluster.addLayers(markers);
   observePinLogos();
-  document.getElementById('stat').innerHTML='目前共有 <b>'+eShown+'</b> 場活動';
+  document.getElementById('stat').innerHTML='目前共有 <b>'+eventKeys.size+'</b> 場活動';
+  updateFilterUI();
   updateFavCountUI();
 }
 
@@ -1276,6 +1296,7 @@ function dateTxt(e){
   if(e.s&&e.e) return e.s+' – '+e.e;
   if(e.e) return '至 '+e.e; return '檔期見官網';
 }
+function feeTxt(e){ return e&&(e.fee==='免費'||e.fee==='付費')?e.fee:''; }
 function sameHost(a,b){
   try{
     const ha=new URL(a, location.href).hostname.replace(/^www\./,'');
@@ -1319,8 +1340,8 @@ function cardHtml(e,logo,v){
   else if(logoUrl){ thumb='<div class="thumb logo"><img src="'+esc(logoUrl)+'" alt="" loading="lazy" decoding="async"></div>'; }
   else { thumb=PH; }
   return '<div class="card">'+thumb+'<div class="cbody"><div class="tags"><span class="tag '+cls+'">'+txt+'</span>'
-    +(e.fee?'<span class="tag '+(e.fee==='免費'?'fee-free':'fee-paid')+'">'+esc(e.fee)+'</span>':'')
-    +(soon?'<span class="tag soon">即將結束 · 剩'+d+'天</span>':'')+(e.c?'<span class="tag cat">'+esc(e.c)+'</span>':'')+(e.c2?'<span class="tag form">'+esc(e.c2)+'</span>':'')+'</div>'
+    +(soon?'<span class="tag soon">即將結束 · 剩'+d+'天</span>':'')+(e.c?'<span class="tag cat">'+esc(e.c)+'</span>':'')+(e.c2?'<span class="tag form">'+esc(e.c2)+'</span>':'')
+    +(feeTxt(e)?'<span class="tag '+(e.fee==='免費'?'fee-free':'fee-paid')+'">'+feeTxt(e)+'</span>':'')+'</div>'
     +'<h3>'+esc(e.t)+'</h3><span class="date">'+esc(dateTxt(e))+'</span>'
     +(linkUrl?'<a class="more" href="'+esc(linkUrl)+'" target="_blank" rel="noopener">'+officialLinkLabel(e,v,linkUrl)+'</a>':'')+'</div></div>';
 }
@@ -1353,10 +1374,10 @@ function popupCardHtml(e,v,hideTitle){
   const st=popupStatus(e);
   const imgUrl=safeUrl(e.img,true);
   let linkUrl=safeUrl(e.l); if(!linkUrl&&v) linkUrl=safeUrl(v.url);
-  /* 固定顯示費用；活動形式與即將結束狀態作為輔助標籤。 */
+  /* 活動形式、費用與即將結束狀態標籤。 */
   let tags='';
-  if(e.fee) tags+='<span class="tag '+(e.fee==='免費'?'fee-free':'fee-paid')+'">'+esc(e.fee)+'</span>';
   if(e.c2) tags+='<span class="tag form">'+esc(e.c2)+'</span>';
+  if(feeTxt(e)) tags+='<span class="tag '+(e.fee==='免費'?'fee-free':'fee-paid')+'">'+feeTxt(e)+'</span>';
   if(st.k==='soon') tags+='<span class="tag soon">'+esc(st.t)+'</span>';
   const meta=[e.c2,venueRegion(v)].filter(Boolean).map(esc).join('・');
   const addr=venueAddr(v);
@@ -1722,119 +1743,138 @@ function openSheet(v){
 }
 function closeSheet(){scrim.classList.remove('show');sheet.classList.remove('show');if(typeof map!=='undefined'&&map.closePopup)map.closePopup();}
 scrim.addEventListener('click',closeSheet);
-map.on('click',()=>{ closeSheet(); closeVenueFocus(false); });
+map.on('click',()=>{ closeSheet(); closeVenueFocus(false); closeFilterDetail(); });
 document.getElementById('mobileVenueClose').addEventListener('click',()=>closeVenueFocus(false));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();closeVenueFocus(false);}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();closeVenueFocus(false);closeFilterDetail();}});
 
 /* 側欄篩選 */
-const sidebarEl=document.getElementById('sidebar'), fbtnEl=document.getElementById('fbtn');
-if(fbtnEl) fbtnEl.addEventListener('click',()=>{
-  const open=sidebarEl.classList.toggle('open');
-  fbtnEl.classList.toggle('on',open);
-  fbtnEl.setAttribute('aria-expanded',open?'true':'false');
-});
+const filterDetail=document.getElementById('filterDetail');
+const filterOptionsEl=document.getElementById('filterOptions');
+const filterDetailTitle=document.getElementById('filterDetailTitle');
+const clearFiltersEl=document.getElementById('clearFilters');
+let openFilterKey='';
+const CITY_GROUPS=[
+  {label:'北部',values:['台北市','新北市','桃園市','基隆市','新竹市','新竹縣']},
+  {label:'中部',values:['苗栗縣','台中市','彰化縣','南投縣','雲林縣']},
+  {label:'南部',values:['嘉義市','嘉義縣','台南市','高雄市','屏東縣']},
+  {label:'東部',values:['宜蘭縣','花蓮縣','台東縣']},
+  {label:'離島',values:['澎湖縣','金門縣','連江縣']}
+];
+const FILTER_META={
+  city:{title:'縣市',defaultLabel:'全台灣',all:'all'},
+  time:{title:'時間',defaultLabel:'全部時間',all:'all',options:[
+    {value:'all',label:'全部時間'},{value:'ongoing',label:'進行中'},
+    {value:'upcoming',label:'即將開始'},{value:'ending',label:'即將結束'}]},
+  form:{title:'活動形式',defaultLabel:'全部形式',all:'all',options:[
+    {value:'all',label:'全部形式'},{value:'展覽',label:'展覽'},
+    {value:'快閃店',label:'快閃店'},{value:'主題餐廳',label:'主題餐廳'},
+    {value:'體驗活動',label:'體驗活動'},{value:'其他',label:'其他'}]},
+  fee:{title:'付費狀態',defaultLabel:'不限',all:'all',options:[
+    {value:'all',label:'不限'},{value:'免費',label:'免費'},{value:'付費',label:'付費'}]},
+  multi:{title:'多店活動',defaultLabel:'全部多店',all:'all'}
+};
+function filterOptionsFor(key){
+  if(key==='city'){
+    const out=[{value:'all',label:'全台灣'}];
+    CITY_GROUPS.forEach(group=>{
+      out.push({group:group.label});
+      group.values.forEach(value=>out.push({value,label:value}));
+    });
+    return out;
+  }
+  if(key==='multi'){
+    const labels=new Set();
+    DATA.venues.forEach(v=>(v.ex||[]).forEach(e=>{ if(e.mf) labels.add(e.mf); }));
+    return [{value:'all',label:'全部多店'}].concat([...labels].sort((a,b)=>a.localeCompare(b,'zh-Hant')).map(value=>({value,label:value})));
+  }
+  return FILTER_META[key].options;
+}
+function filterOptionLabel(key,value){
+  const option=filterOptionsFor(key).find(item=>item.value===value);
+  return option?option.label:FILTER_META[key].defaultLabel;
+}
+function renderFilterOptions(){
+  if(!openFilterKey) return;
+  const current=state[openFilterKey];
+  filterOptionsEl.innerHTML=filterOptionsFor(openFilterKey).map(option=>{
+    if(option.group) return '<div class="filter-group">'+esc(option.group)+'</div>';
+    const count=uniqueActivityCount({[openFilterKey]:option.value});
+    const selected=current===option.value;
+    const disabled=count===0&&!selected;
+    return '<button class="filter-option'+(selected?' selected':'')+'" type="button" data-value="'+esc(option.value)+'"'
+      +(disabled?' disabled':'')+' title="'+esc(option.label)+'" aria-pressed="'+(selected?'true':'false')+'">'
+      +'<span class="filter-check" aria-hidden="true">✓</span><span class="filter-option-label">'+esc(option.label)+'</span>'
+      +'<span class="filter-count">'+count+'</span></button>';
+  }).join('');
+}
+function openFilterDetail(key){
+  openFilterKey=key;
+  filterDetailTitle.textContent=FILTER_META[key].title;
+  filterDetail.classList.add('show');
+  filterDetail.setAttribute('aria-hidden','false');
+  document.querySelectorAll('.filter-category').forEach(button=>{
+    const open=button.dataset.filter===key;
+    button.classList.toggle('open',open);
+    button.setAttribute('aria-expanded',open?'true':'false');
+  });
+  renderFilterOptions();
+}
+function closeFilterDetail(){
+  openFilterKey='';
+  filterDetail.classList.remove('show');
+  filterDetail.setAttribute('aria-hidden','true');
+  document.querySelectorAll('.filter-category').forEach(button=>{
+    button.classList.remove('open'); button.setAttribute('aria-expanded','false');
+  });
+}
+function hasActiveFilters(){
+  return ['city','time','form','fee','multi'].some(key=>state[key]!=='all')||!!state.q;
+}
+function updateFilterUI(){
+  document.querySelectorAll('[data-filter-value]').forEach(el=>{
+    const key=el.dataset.filterValue;
+    el.textContent=filterOptionLabel(key,state[key]);
+    el.classList.toggle('changed',state[key]!=='all');
+    el.title=el.textContent;
+  });
+  clearFiltersEl.disabled=!hasActiveFilters();
+  if(openFilterKey) renderFilterOptions();
+}
 function resetMapView(){
   closeVenueFocus(false);
   closeSheet();
   fitTaiwanView();
-  document.querySelectorAll('#regions button').forEach(x=>x.classList.toggle('active',x.dataset.r==='all'));
-  renderRegionCities('all');
 }
 function fitTaiwanView(){
-  if(isMobileViewport()){
-    map.fitBounds([[21.75,119.2],[25.55,122.1]],{
-      paddingTopLeft:[16,70],
-      paddingBottomRight:[16,Math.round(window.innerHeight*.38)+18]
-    });
-  }else{
-    map.fitBounds(TW_BOUNDS,{paddingTopLeft:[352,16],paddingBottomRight:[16,16]});
-  }
+  map.fitBounds(TW_BOUNDS,{padding:[16,16]});
+}
+function fitCityView(city){
+  if(city==='all'){ fitTaiwanView(); return; }
+  const pts=[];
+  DATA.venues.forEach(v=>{ if(v.city===city&&venueExs(v).length) pts.push([v.la,v.lo]); });
+  if(!pts.length) DATA.venues.forEach(v=>{ if(v.city===city) pts.push([v.la,v.lo]); });
+  if(pts.length===1) map.setView(pts[0],13);
+  else if(pts.length) map.fitBounds(pts,{padding:[40,40],maxZoom:13});
 }
 document.getElementById('homeButton').addEventListener('click',resetMapView);
 document.getElementById('mobileHomeButton').addEventListener('click',resetMapView);
-document.getElementById('mobileTabs').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-panel]'); if(!b)return;
-  document.querySelectorAll('#mobileTabs button').forEach(x=>{
-    const on=x===b; x.classList.toggle('active',on); x.setAttribute('aria-selected',on?'true':'false');
-  });
-  document.querySelectorAll('.pills .fsec').forEach(x=>x.classList.toggle('mobile-active',x.id===b.dataset.panel));
+document.getElementById('filterMenu').addEventListener('click',e=>{
+  const button=e.target.closest('.filter-category'); if(!button) return;
+  openFilterDetail(button.dataset.filter);
 });
-document.getElementById('ftime').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-t]'); if(!b)return;
-  document.querySelectorAll('#ftime button').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active'); state.time=b.dataset.t;
-  closeSheet(); rebuild();
+document.getElementById('filterBack').addEventListener('click',closeFilterDetail);
+filterOptionsEl.addEventListener('click',e=>{
+  const button=e.target.closest('.filter-option'); if(!button||button.disabled||!openFilterKey) return;
+  const key=openFilterKey, value=button.dataset.value;
+  state[key]=value;
+  closeFilterDetail(); closeSheet(); rebuild();
+  if(key==='city') fitCityView(value);
 });
-document.getElementById('fform').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-f]'); if(!b)return;
-  document.querySelectorAll('#fform button').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active'); state.form=b.dataset.f; closeSheet(); rebuild();
-});
-function renderMultiStoreFilters(){
-  const section=document.getElementById('fmultiSec'), group=document.getElementById('fmulti');
-  const tab=document.querySelector('#mobileTabs button[data-panel="fmultiSec"]');
-  const counts=new Map();
-  DATA.venues.forEach(v=>(v.ex||[]).forEach(e=>{
-    const total=Number(e.ms||0);
-    if(e.mf && total>10) counts.set(e.mf,Math.max(counts.get(e.mf)||0,total));
-  }));
-  const items=[...counts.entries()].sort((a,b)=>a[0].localeCompare(b[0],'zh-Hant'));
-  if(!items.length){
-    section.style.display='none'; group.innerHTML=''; state.multi='all';
-    if(tab) tab.style.display='none';
-    return;
-  }
-  if(tab) tab.style.display='';
-  if(state.multi!=='all' && !counts.has(state.multi)) state.multi='all';
-  group.innerHTML='<button data-m="all"'+(state.multi==='all'?' class="active"':'')+'>全部多店</button>'
-    +items.map(([label,total])=>'<button data-m="'+esc(label)+'"'+(state.multi===label?' class="active"':'')+'>'
-      +esc(label)+'（'+total+'）</button>').join('');
-  section.style.display='';
-}
-document.getElementById('fmulti').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-m]'); if(!b)return;
-  document.querySelectorAll('#fmulti button').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active'); state.multi=b.dataset.m; closeSheet(); rebuild();
-});
-/* 區域跳轉 */
-const REGION={north:[[24.55,121.2],[25.35,122.05]],central:[[23.45,120.35],[24.6,121.3]],
- south:[[21.9,120.0],[23.5,120.95]],east:[[22.7,121.3],[24.95,122.0]]};
-const REGION_CITIES={
-  north:['台北','新北','桃園','基隆','新竹'],
-  central:['台中','苗栗','彰化','南投','雲林'],
-  south:['嘉義','台南','高雄','屏東'],
-  east:['宜蘭','花蓮','台東']
-};
-const regionCitiesEl=document.getElementById('regionCities');
-function cityBounds(city){
-  const pts=[];
-  DATA.venues.forEach(v=>{ if(v.city && v.city.indexOf(city)!==-1) pts.push([v.la,v.lo]); });
-  return pts.length?pts:null;
-}
-function renderRegionCities(region){
-  if(!region || region==='all' || !REGION_CITIES[region]){
-    regionCitiesEl.style.display='none'; regionCitiesEl.innerHTML=''; return;
-  }
-  regionCitiesEl.innerHTML=REGION_CITIES[region]
-    .map(c=>'<button data-city="'+c+'" data-region="'+region+'">'+c+'</button>').join('');
-  regionCitiesEl.style.display='';
-}
-document.getElementById('regions').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-r]'); if(!b)return;
-  closeSheet();
-  document.querySelectorAll('#regions button').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
-  if(b.dataset.r==='all'){ fitTaiwanView(); renderRegionCities('all'); }
-  else { map.fitBounds(REGION[b.dataset.r]); renderRegionCities(b.dataset.r); }
-});
-regionCitiesEl.addEventListener('click',e=>{
-  const b=e.target.closest('button[data-city]'); if(!b)return;
-  closeSheet();
-  document.querySelectorAll('#regionCities button').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
-  const pts=cityBounds(b.dataset.city);
-  if(pts) map.fitBounds(pts,{padding:[40,40],maxZoom:13});
-  else map.fitBounds(REGION[b.dataset.region]);
+clearFiltersEl.addEventListener('click',()=>{
+  if(clearFiltersEl.disabled) return;
+  state.city=state.time=state.form=state.fee=state.multi='all'; state.q='';
+  desktopSearch.value=''; mobileSearch.value='';
+  hideSearchSuggestions(); closeFilterDetail(); closeSheet(); rebuild(); fitTaiwanView();
 });
 /* 搜尋 */
 let t=null;
@@ -1854,7 +1894,7 @@ function searchSuggestions(value){
   if(!q) return [];
   const eventMap=new Map(), venueItems=[], cityMap=new Map();
   DATA.venues.forEach(v=>{
-    const exs=(v.ex||[]).filter(matchEx);
+    const exs=(v.ex||[]).filter(e=>matchEx(e,v));
     if(!exs.length) return;
     const cleanAddr=(v.addr||'').replace(v.city||'','');
     const venueScore=searchScore(v.name,cleanAddr,q);
@@ -1977,7 +2017,6 @@ MOBILE_QUERY.addEventListener('change',()=>{ closeVenueFocus(false); applyRespon
   }catch(e){}
   document.getElementById('foot').innerHTML='資料來源：'+esc(DATA.source)+'｜更新 '+esc(DATA.updated)
     +(liveMode?'（即時）':'（內建備援）')+'｜地圖範圍：台灣本島與離島｜鄉鎮界 © g0v';
-  renderMultiStoreFilters();
   rebuild();
   fitTaiwanView();
 })();
