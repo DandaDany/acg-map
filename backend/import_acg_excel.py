@@ -462,6 +462,7 @@ def main():
     caco_cafes = load_caco_cafes()
     cat2_col = idx.get("活動類別 / Activity Category")  # 軸B形式欄，可選
     kv_col = idx.get("KV")  # 主視覺欄（可填圖片網址）；有填就用，覆寫自動抓的 KV
+    admission_col = idx.get("付費狀態 / Admission")  # 免費／付費；活動核心體驗是否需要支出
     multi_col = idx.get("多店活動 / Multi-store")
     store_list_col = idx.get("門市資料 / Store List")
     store_prefix_col = idx.get("門市名稱前綴 / Store Prefix")
@@ -492,6 +493,9 @@ def main():
         link = cell_link(ws.cell(row, idx["活動連結 / Activity link"]))
         raw_cat2 = str(ws.cell(row, cat2_col).value or "").strip() if cat2_col else ""
         img = cell_link(ws.cell(row, kv_col)) if kv_col else ""  # KV 欄填的圖片網址（http/https）
+        fee = str(ws.cell(row, admission_col).value or "").strip() if admission_col else ""
+        if fee and fee not in ("免費", "付費"):
+            raise SystemExit(f"第 {row} 列付費狀態不合法：{fee!r}（只接受「免費」或「付費」）")
         entries.append({
             "venue": venue,
             "addr": addr,
@@ -501,6 +505,7 @@ def main():
             "link": link,
             "cat2": raw_cat2,
             "img": img,
+            "fee": fee,
             "multi_filter": str(ws.cell(row, multi_col).value or "").strip() if multi_col else "",
             "store_list": str(ws.cell(row, store_list_col).value or "").strip() if store_list_col else "",
             "store_prefix": str(ws.cell(row, store_prefix_col).value or "").strip() if store_prefix_col else "",
@@ -565,6 +570,8 @@ def main():
             ev = {"t": title, "s": entry["start"], "e": entry["end"], "l": link, "img": entry.get("img", "")}
             if entry.get("cat2"):
                 ev["cat2"] = entry["cat2"]
+            if entry.get("fee"):
+                ev["fee"] = entry["fee"]
             if entry.get("multi_filter") and entry.get("multi_store_count", 0) > 10:
                 ev["mf"] = entry["multi_filter"]
                 ev["ms"] = entry["multi_store_count"]

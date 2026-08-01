@@ -740,6 +740,8 @@ def main():
                       "src": source, "c": "動漫遊戲(ACG)"}
                 if e.get("cat2"):
                     ev["cat2"] = e["cat2"]
+                if e.get("fee") in ("免費", "付費"):
+                    ev["fee"] = e["fee"]
                 if e.get("mf") and int(e.get("ms", 0) or 0) > 10:
                     ev["mf"] = e["mf"]
                     ev["ms"] = int(e["ms"])
@@ -1006,6 +1008,23 @@ def main():
         except Exception as _err:
             log("event_overrides 讀取失敗:", _err)
 
+    # 入場／參與費用覆寫：官方爬蟲與人工資料共用同一份查證結果。
+    # 「免費」代表不需門票即可進入觀看；「付費」包含票券、園區門票、報名費，
+    # 以及主題餐廳等核心體驗必須消費的活動。資料缺漏時不猜測、不輸出 fee。
+    _fee_ov = {}
+    _fee_path = P("event_admission_overrides.json")
+    if os.path.exists(_fee_path):
+        try:
+            _raw_fee = json.load(open(_fee_path, encoding="utf-8"))
+            _fee_ov = {
+                _norm_title(k): v.get("fee")
+                for k, v in _raw_fee.items()
+                if not k.startswith("_") and isinstance(v, dict) and v.get("fee") in ("免費", "付費")
+            }
+            log("讀入手動費用覆蓋:", len(_fee_ov), "筆")
+        except Exception as _err:
+            log("event_admission_overrides 讀取失敗:", _err)
+
     for _v in venues:
         for _e in _v['ex']:
             _src = _e.get('src', '')
@@ -1027,6 +1046,11 @@ def main():
             if _ov:
                 if _ov.get('c'):  _e['c']  = _ov['c']
                 if _ov.get('c2'): _e['c2'] = _ov['c2']
+            _fee = _fee_ov.get(_norm_title(_e.get('t', '')))
+            if _fee:
+                _e['fee'] = _fee
+            elif _e.get('fee') not in ('免費', '付費'):
+                _e.pop('fee', None)
     log("兩軸分類完成")
 
     try:

@@ -20,7 +20,7 @@ VERIFIED = {
     "Hello Kitty展 高雄站": "hello_kitty_kaohsiung_20260703.jpg",
     "吉伊卡哇-2026 臺灣國際熱氣球嘉年華": "chiikawa_balloon_festival_20260704.jpg",
     "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站": "dungeon_meshi_taipei_20260715.jpg",
-    "藥師少女的獨語展": "apothecary_diaries_exhibition_20260717.png",
+    "藥師少女的獨語展": "apothecary_diaries_exhibition_20260717.jpg",
     "孤獨搖滾！動畫展（台中場）": "bocchi_animation_exhibition_taichung_20260720.jpg",
     "2026花蓮FUN暑假": "hualien_fun_onepiece_20260711.webp",
     "「夏日動漫時光機」展": "anime_time_machine_eslite_20260710.jpg",
