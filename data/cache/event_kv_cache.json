@@ -1,5 +1,5 @@
 {
-  "updated": "2026/07/29",
+  "updated": "2026/08/01",
   "links": {
     "https://www.taoyuantudigong.org.tw/main/exhibition-current/": {
       "ok": true,
@@ -1194,6 +1194,12 @@
       "img": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/15/35138005.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=1600&exp=3600",
       "code": "ok",
       "updated": "2026/07/21"
+    },
+    "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24": {
+      "ok": true,
+      "img": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/758915184_122213678306512737_1844956761224022838_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s600x600&_nc_cat=102&ccb=1-7&_nc_sid=cae128&_nc_ohc=1ozHSEXWLv4Q7kNvwGz2ucX&_nc_oc=AdpoSaEx6qA9_3XDLbCyRNiNb-REnSEGZ-gUVYLyGH7yNrIhcIF17GJ6XJKBhn8D3aQ&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=z5rY7Hznzv2Y60_1Bvx01w&_nc_ss=7f20f&oh=00_AQG3e_gnGR6GTnrAzU6F6jEJJJgze_HCCDcwXds7i-JhFQ&oe=6A73508D",
+      "code": "ok",
+      "updated": "2026/08/01"
     }
   }
 }

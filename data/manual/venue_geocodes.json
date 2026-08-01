@@ -1816,5 +1816,149 @@
   "display_name": "高雄市左營區博愛二路777號, 813302",
   "type": "PointAddress",
   "addr_key": "高雄市左營區博愛二路777號4F"
+ },
+ "bb.q CHICKEN 三重三和店": {
+  "la": 25.079326,
+  "lo": 121.481494,
+  "source": "address_geocode",
+  "display_name": "新北市三重區三和路四段398號, 241069",
+  "type": "PointAddress",
+  "addr_key": "新北市三重區三和路四段398之1號1樓"
+ },
+ "bb.q CHICKEN 中和中漢店": {
+  "la": 25.006584,
+  "lo": 121.47232,
+  "source": "address_geocode",
+  "display_name": "新北市中和區中山路三段186號, 235011",
+  "type": "PointAddress",
+  "addr_key": "新北市中和區中山路3段186號"
+ },
+ "bb.q CHICKEN 公館店": {
+  "la": 25.0156631,
+  "lo": 121.5315247,
+  "source": "address_geocode",
+  "display_name": "台北市中正區汀州路三段153號, 100047",
+  "type": "StreetAddress",
+  "addr_key": "台北市中正區汀洲路3段153、155號1樓"
+ },
+ "bb.q CHICKEN 南紡購物店": {
+  "la": 22.990582,
+  "lo": 120.233455,
+  "source": "address_geocode",
+  "display_name": "台南市東區中華東路一段366號, 701",
+  "type": "PointAddress",
+  "addr_key": "台南市東區中華東路1段366號5樓"
+ },
+ "bb.q CHICKEN 台中崇德店": {
+  "la": 24.1707868,
+  "lo": 120.6851669,
+  "source": "address_geocode",
+  "display_name": "台中市崇德路二段67號, 406028",
+  "type": "PointAddress",
+  "addr_key": "台中市北屯區崇德路2段67號1樓"
+ },
+ "bb.q CHICKEN 松山店": {
+  "la": 25.0403043,
+  "lo": 121.5780041,
+  "source": "address_geocode",
+  "display_name": "台北市信義區松光里松山路435號, 11083",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松山路435號"
+ },
+ "bb.q CHICKEN 板橋板農店": {
+  "la": 25.008633,
+  "lo": 121.45876,
+  "source": "address_geocode",
+  "display_name": "新北市府中路29號, 220215",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區府中路29之1號"
+ },
+ "bb.q CHICKEN 桃園統領廣場店": {
+  "la": 24.991113,
+  "lo": 121.312523,
+  "source": "address_geocode",
+  "display_name": "桃園市桃園站前商圈中正路61號, 330002",
+  "type": "PointAddress",
+  "addr_key": "桃園市桃園區中正路61號8樓"
+ },
+ "bb.q CHICKEN 洲子店": {
+  "la": 25.0792389,
+  "lo": 121.5691082,
+  "source": "address_geocode",
+  "display_name": "台北市內湖區西湖里瑞光路517號, 11492",
+  "type": "PointAddress",
+  "addr_key": "台北市內湖區瑞光路517號"
+ },
+ "bb.q CHICKEN 芝山店": {
+  "la": 25.1024587,
+  "lo": 121.5229631,
+  "source": "address_geocode",
+  "display_name": "台北市士林區德行里福華路118號, 11158",
+  "type": "PointAddress",
+  "addr_key": "台北市士林區福華路118號1樓"
+ },
+ "bb.q CHICKEN 鳳山青年店": {
+  "la": 22.63988,
+  "lo": 120.3509,
+  "source": "address_geocode",
+  "display_name": "高雄市鳳山區青年路二段305號, 830013",
+  "type": "PointAddress",
+  "addr_key": "高雄市鳳山區青年路2段305號1樓"
+ },
+ "大安森林公園": {
+  "la": 25.030152,
+  "lo": 121.5353507,
+  "source": "address_geocode",
+  "display_name": "台北市大安區龍門里新生南路二段1號, 10657",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區新生南路二段1號"
+ },
+ "肉的長谷川 SOGO忠孝店": {
+  "la": 25.0417384,
+  "lo": 121.5449554,
+  "source": "address_geocode",
+  "display_name": "台北市大安區忠孝復興SOGO忠孝東路四段45號, 106070",
+  "type": "StreetAddress",
+  "addr_key": "台北市大安區忠孝東路四段45號B1美食街"
+ },
+ "肉的長谷川 南港LaLaPort店": {
+  "la": 25.0586227,
+  "lo": 121.6169879,
+  "source": "address_geocode",
+  "display_name": "台北市南港區經貿二路105號, 115018",
+  "type": "StreetAddress",
+  "addr_key": "台北市南港區經貿二路105巷1號5樓美食街"
+ },
+ "肉的長谷川 台中新光三越中港店": {
+  "la": 24.1650058,
+  "lo": 120.6433984,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道三段301號, 407550",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區台灣大道三段301號12樓美食街"
+ },
+ "肉的長谷川 誠品南西店": {
+  "la": 25.0523804,
+  "lo": 121.5212653,
+  "source": "address_geocode",
+  "display_name": "台北市中山區南西商圈南京西路14號, 104002",
+  "type": "StreetAddress",
+  "addr_key": "台北市中山區南京西路14號B1美食街"
+ },
+ "肉的長谷川 高雄漢神巨蛋店": {
+  "la": 22.669549,
+  "lo": 120.303159,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區博愛二路777號, 813302",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區博愛二路777號B1美食街"
+ },
+ "馬場町紀念公園": {
+  "la": 25.0199329,
+  "lo": 121.5035063,
+  "source": "address_geocode",
+  "display_name": "台北市萬華區青年路188巷1弄7號, 108",
+  "type": "StreetAddress",
+  "addr_key": "台北市萬華區青年路188巷1弄7號"
  }
 }

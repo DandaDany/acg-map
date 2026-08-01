@@ -47,9 +47,9 @@
  },
  "bb.q CHICKEN 中友百貨店": {
   "city": "台中市",
-  "lat": 24.14763,
-  "lng": 120.67422,
-  "loc": "區級",
+  "lat": 24.1522668,
+  "lng": 120.6847123,
+  "loc": "exact",
   "addr": "台中市北區三民路三段161號B棟B2",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -1055,9 +1055,9 @@
  },
  "新光三越台北信義新天地A8館5樓": {
   "city": "台北市",
-  "lat": 25.03469,
-  "lng": 121.58098,
-  "loc": "區級",
+  "lat": 25.0388131,
+  "lng": 121.5668002,
+  "loc": "exact",
   "addr": "台北市信義區松高路12號5樓",
   "url": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
   "ex": [
@@ -1307,9 +1307,9 @@
  },
  "肉的長谷川 新竹巨城店": {
   "city": "新竹市",
-  "lat": 24.78217,
-  "lng": 120.98882,
-  "loc": "區級",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
   "addr": "新竹市東區中央路229號4樓美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1325,9 +1325,9 @@
  },
  "肉的長谷川 林口三井店": {
   "city": "新北市",
-  "lat": 25.09418,
-  "lng": 121.34762,
-  "loc": "區級",
+  "lat": 25.0712411,
+  "lng": 121.3635472,
+  "loc": "exact",
   "addr": "新北市林口區文化三路一段356號2樓美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
