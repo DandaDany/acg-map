@@ -50,12 +50,24 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("function renderMapMarkers()", self.html)
         self.assertIn("new Set(locations.map(location=>location.event.id))", self.html)
 
-    def test_map_has_non_webgl_basemap_and_initial_view(self):
-        self.assertIn("L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'", self.html)
-        self.assertNotIn("baseGL=L.maplibreGL", self.html)
-        fit = self.html.index("map.fitBounds(TW_BOUNDS,{padding:[16,16]});")
-        add_land = self.html.index("land.addTo(map);")
-        self.assertLess(fit, add_land)
+    def test_map_restores_original_positron_visuals(self):
+        self.assertIn("baseGL=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/positron'", self.html)
+        self.assertIn("function boldRoads()", self.html)
+        self.assertIn("W('highway_major_inner','#ffffff'", self.html)
+        self.assertIn("style:{color:'#8fa0b5',weight:.7,fill:false,opacity:.5}", self.html)
+        self.assertIn("const TOWN_C=", self.html)
+        self.assertIn("function syncLabels()", self.html)
+        self.assertNotIn("L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'", self.html)
+
+    def test_pin_mode_restores_activity_form_visuals(self):
+        for color in ("#3f8ad0", "#e05aa0", "#e08a3c", "#8560d8", "#5f7089"):
+            self.assertIn(color, self.html)
+        self.assertIn("const FORM_ICON={", self.html)
+        self.assertIn("function venueForm(locations)", self.html)
+        self.assertIn("return '其他';", self.html)
+        self.assertIn("venue.loc!=='exact'", self.html)
+        self.assertIn("location.status.kind==='ending'", self.html)
+        self.assertIn('class="soondot"', self.html)
 
     def test_desktop_dialog_and_mobile_sheet_exist(self):
         self.assertIn('id="dialogOverlay"', self.html)
