@@ -50,6 +50,24 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("function renderMapMarkers()", self.html)
         self.assertIn("new Set(locations.map(location=>location.event.id))", self.html)
 
+    def test_markers_and_discover_focus_the_map(self):
+        self.assertIn("function focusMapLocation(location,zoom=13)", self.html)
+        self.assertIn("focusMapLocation(locations[0])", self.html)
+        self.assertIn("data-location-id=", self.html)
+        self.assertIn("setTab('map')", self.html)
+
+    def test_image_markers_preserve_kv_orientation(self):
+        self.assertIn('class="kv-marker-shell"', self.html)
+        self.assertIn("function classifyKvMarker(marker)", self.html)
+        self.assertIn("image.naturalWidth>=image.naturalHeight", self.html)
+        self.assertIn(".kv-marker.landscape", self.html)
+
+    def test_marker_toggle_is_centered_over_map(self):
+        self.assertIn('class="segmented map-marker-toggle marker-toggle"', self.html)
+        self.assertIn(".map-marker-toggle{position:absolute", self.html)
+        self.assertIn("left:50%", self.html)
+        self.assertNotIn('class="marker-setting"', self.html)
+
     def test_map_restores_original_positron_visuals(self):
         self.assertIn("baseGL=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/positron'", self.html)
         self.assertIn("function boldRoads()", self.html)
@@ -80,6 +98,19 @@ class MapUxTests(unittest.TestCase):
         self.assertIn('id="mobileVenueSheet"', self.html)
         self.assertIn("function openMobileVenueSheet(", self.html)
         self.assertIn("function expandMobilePanel(", self.html)
+
+    def test_multilocation_details_have_fixed_scrolling_region(self):
+        self.assertIn("其他活動地點（", self.html)
+        self.assertIn("other-location-scroll", self.html)
+        self.assertIn("height:min(760px,calc(100dvh - 72px))", self.html)
+        self.assertIn("height:min(72dvh,640px)", self.html)
+        self.assertIn("overflow-y:auto", self.html)
+
+    def test_navigation_threads_and_private_review_text(self):
+        self.assertIn("https://www.threads.net/intent/post?text=", self.html)
+        self.assertIn('class="threads-share"', self.html)
+        self.assertIn("text.includes('需人工確認')?'':text", self.html)
+        self.assertIn(".location-nav,.threads-share", self.html)
 
     def test_mobile_filters_use_draft_until_done(self):
         self.assertIn("let draftFilters=null", self.html)

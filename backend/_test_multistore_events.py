@@ -38,6 +38,10 @@ class MultiStoreEventTests(unittest.TestCase):
         self.assertIn('data-filter="multi"', html)
         self.assertIn("group.multiFilter!==filters.multi", html)
         self.assertIn("new Set(locations.map(location=>location.event.id))", html)
+        self.assertIn("if(key==='multi')", html)
+        self.assertIn("group.locations.filter(location=>occurrenceVisible(location,filters)).length", html)
+        self.assertIn("const multiStoreMode=uiState.filters.multi!=='all'", html)
+        self.assertIn("entries.length+' 間門市'", html)
 
 
 if __name__ == "__main__":
