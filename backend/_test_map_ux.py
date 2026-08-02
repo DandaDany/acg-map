@@ -106,11 +106,31 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("height:min(72dvh,640px)", self.html)
         self.assertIn("overflow-y:auto", self.html)
 
-    def test_navigation_threads_and_private_review_text(self):
-        self.assertIn("https://www.threads.net/intent/post?text=", self.html)
-        self.assertIn('class="threads-share"', self.html)
+    def test_navigation_copy_link_and_private_review_text(self):
+        self.assertNotIn("https://www.threads.net/intent/post?text=", self.html)
+        self.assertNotIn('class="threads-share"', self.html)
+        self.assertIn("navigator.clipboard", self.html)
+        self.assertIn("showToast('成功複製連結')", self.html)
+        self.assertNotIn("navigator.share", self.html)
         self.assertIn("text.includes('需人工確認')?'':text", self.html)
-        self.assertIn(".location-nav,.threads-share", self.html)
+        self.assertIn(".location-nav{", self.html)
+
+    def test_pin_legend_and_image_badge_rules(self):
+        self.assertIn('id="pinLegend"', self.html)
+        for label in ("展覽", "快閃店", "主題餐廳", "體驗活動", "其他／混合"):
+            self.assertIn(label, self.html)
+        self.assertIn("document.getElementById('pinLegend').hidden=uiState.markerMode!=='pin'", self.html)
+        self.assertIn(".kv-marker>.marker-badge{top:4px;right:4px", self.html)
+        self.assertIn("background:#e53935", self.html)
+        self.assertIn("object-position:center", self.html)
+
+    def test_cluster_expansion_restores_after_returning_to_map(self):
+        self.assertIn("let expandedClusterVenueIds=[]", self.html)
+        self.assertIn("function rememberExpandedCluster(layer)", self.html)
+        self.assertIn("function restoreExpandedCluster()", self.html)
+        self.assertIn("cluster.getVisibleParent(marker)", self.html)
+        self.assertIn("cluster.on('clusterclick'", self.html)
+        self.assertIn("requestAnimationFrame(restoreExpandedCluster)", self.html)
 
     def test_mobile_filters_use_draft_until_done(self):
         self.assertIn("let draftFilters=null", self.html)
@@ -121,7 +141,8 @@ class MapUxTests(unittest.TestCase):
 
     def test_share_lightbox_and_deep_links_exist(self):
         self.assertIn("function createShareUrl(eventId)", self.html)
-        self.assertIn("navigator.share", self.html)
+        self.assertIn("async function shareEvent(eventId)", self.html)
+        self.assertIn("navigator.clipboard.writeText(url)", self.html)
         self.assertIn("function openImageLightbox(", self.html)
         self.assertIn("url.searchParams.set('event',eventId)", self.html)
         self.assertIn("function handleDeepLink()", self.html)

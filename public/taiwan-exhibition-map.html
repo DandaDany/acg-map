@@ -760,6 +760,10 @@ a{color:inherit}
 .filter-option:disabled{color:#667084;cursor:not-allowed}
 .filter-check{color:transparent}.filter-option.selected .filter-check{color:var(--accent2)}
 .filter-count{min-width:28px;padding:2px 7px;border:1px solid #3b465b;border-radius:999px;color:var(--muted);font-size:11px;text-align:center}
+.pin-legend{flex:none;margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#111722}
+.pin-legend[hidden]{display:none}.pin-legend h3{margin:0 0 9px;font-size:12px}.pin-legend-list{display:grid;grid-template-columns:1fr 1fr;gap:7px 10px}
+.pin-legend-item{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:10.5px}.pin-legend-symbol{display:grid;width:16px;height:16px;place-items:center;flex:none;border:2px solid #fff;border-radius:50% 50% 50% 5px;color:#fff;font-size:8px;transform:rotate(-45deg)}
+.pin-legend-symbol>span{transform:rotate(45deg)}
 .segmented{display:grid;grid-template-columns:1fr 1fr;padding:3px;border:1px solid var(--line);border-radius:12px;background:#101620}
 .segmented button{min-height:38px;border:0;border-radius:9px;background:transparent;color:var(--muted);font-size:12.5px;font-weight:750;cursor:pointer}
 .segmented button.active{background:#2b3650;color:var(--text);box-shadow:0 2px 9px rgba(0,0,0,.3)}
@@ -811,8 +815,8 @@ a{color:inherit}
 .kv-marker-shell{position:relative;display:flex;width:94px;height:76px;align-items:flex-end;justify-content:center}
 .kv-marker{position:relative;width:58px;height:74px;overflow:hidden;border:3px solid white;border-radius:12px;background:#18202c;box-shadow:0 5px 16px rgba(0,0,0,.42);transition:width .16s ease,height .16s ease}
 .kv-marker.landscape{width:92px;height:58px}
-.kv-marker .media-back{filter:blur(8px);opacity:.55}.kv-marker .media-front{object-fit:contain}
-.kv-marker-shell>.marker-badge{top:-4px;right:-4px;border-color:#fff;background:#3a86ff}
+.kv-marker .media-back{filter:blur(8px);opacity:.55}.kv-marker .media-front{object-fit:contain;object-position:center}
+.kv-marker>.marker-badge{top:4px;right:4px;border-color:#fff;background:#e53935}
 .cl{display:flex;width:44px;height:44px;align-items:center;justify-content:center;border:3px solid rgba(255,255,255,.9);border-radius:50%;background:#3a86ff;color:white;box-shadow:0 4px 14px rgba(0,0,0,.38);font-size:13px;font-weight:850}.cl-md{background:#ff914d}.cl-lg{width:50px;height:50px;background:#ff6469}
 .leaflet-bottom.leaflet-right{margin:0 8px 8px 0}
 
@@ -840,9 +844,8 @@ a{color:inherit}
 .location-name{font-size:13px;font-weight:750}.location-date,.location-address{margin-top:3px;color:var(--muted);font-size:11.5px;line-height:1.45}
 .text-link,.action-btn{display:inline-flex;min-height:42px;align-items:center;justify-content:center;border-radius:11px;text-decoration:none;font-size:12.5px;font-weight:750;cursor:pointer}
 .location-actions{display:flex;flex:none;align-items:center;gap:9px}
-.location-nav,.threads-share{display:inline-grid;min-height:36px;place-items:center;border:0;background:transparent;color:var(--accent2);text-decoration:none;font-size:11px;font-weight:750}
-.location-nav{min-width:40px}.threads-share{width:32px;color:var(--text);font-size:20px;line-height:1}
-.location-nav:hover,.threads-share:hover{text-decoration:none;color:#9cc4ff}
+.location-nav{display:inline-grid;min-width:40px;min-height:36px;place-items:center;border:0;background:transparent;color:var(--accent2);text-decoration:none;font-size:11px;font-weight:750}
+.location-nav:hover{text-decoration:none;color:#9cc4ff}
 .action-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .action-btn{padding:0 14px;border:1px solid var(--line);background:#151d2a}
 .action-btn.primary{border-color:#3c6da8;background:#203c62;color:#cfe3ff}
@@ -966,6 +969,16 @@ a{color:inherit}
       <button class="filter-category" type="button" data-filter="fee" aria-expanded="false"><span class="filter-icon" aria-hidden="true">＄</span><span class="filter-name">付費狀態</span><span class="filter-value" data-filter-value="fee">不限</span><span class="filter-arrow" aria-hidden="true">›</span></button>
       <button class="filter-category" type="button" data-filter="multi" aria-expanded="false"><span class="filter-icon" aria-hidden="true">⌘</span><span class="filter-name">多店活動</span><span class="filter-value" data-filter-value="multi">全部多店</span><span class="filter-arrow" aria-hidden="true">›</span></button>
     </div>
+    <section class="pin-legend" id="pinLegend" aria-label="圖釘活動形式圖例">
+      <h3>圖釘代表的活動形式</h3>
+      <div class="pin-legend-list">
+        <div class="pin-legend-item"><span class="pin-legend-symbol" style="background:#3f8ad0"><span>▣</span></span>展覽</div>
+        <div class="pin-legend-item"><span class="pin-legend-symbol" style="background:#e05aa0"><span>▱</span></span>快閃店</div>
+        <div class="pin-legend-item"><span class="pin-legend-symbol" style="background:#e08a3c"><span>☕</span></span>主題餐廳</div>
+        <div class="pin-legend-item"><span class="pin-legend-symbol" style="background:#8560d8"><span>★</span></span>體驗活動</div>
+        <div class="pin-legend-item"><span class="pin-legend-symbol" style="background:#5f7089"><span>●</span></span>其他／混合</div>
+      </div>
+    </section>
     <section class="filter-detail" id="filterDetail" aria-hidden="true" aria-label="篩選選項">
       <div class="filter-detail-head"><button class="filter-back" id="filterBack" type="button" aria-label="返回篩選分類">‹</button><h2 id="filterDetailTitle">縣市</h2></div>
       <div class="filter-options" id="filterOptions"></div>
@@ -1321,17 +1334,12 @@ function mediaFrameHtml(image,alt,lightbox=false,lazy=false){
 function navUrl(location){
   return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(location.address||location.venueName||[location.lat,location.lng].join(','));
 }
-function threadsShareUrl(group,location){
-  const text=[group.title,location.venueName,createShareUrl(group.id)].filter(Boolean).join('｜');
-  return 'https://www.threads.net/intent/post?text='+encodeURIComponent(text);
-}
 function locationRowHtml(location,group){
   const heading=[location.venueName,location.city].filter(Boolean).join(' · ');
   return '<div class="location-row"><div class="location-top"><div>'+(heading?'<div class="location-name">'+esc(heading)+'</div>':'')
     +'<div class="location-date">'+esc(locationDateText(location))+' · '+esc(location.status.label)+'</div>'
     +'<div class="location-address">'+esc(location.address||'地址未提供')+'</div></div>'
-    +'<div class="location-actions"><a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a>'
-    +'<a class="threads-share" href="'+esc(threadsShareUrl(group,location))+'" target="_blank" rel="noopener" aria-label="分享到 Threads" title="分享到 Threads">＠</a></div></div></div>';
+    +'<div class="location-actions"><a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a></div></div></div>';
 }
 function primaryLocationFor(group,preferredLocationId=''){
   if(preferredLocationId){const exact=group.locations.find(location=>location.id===preferredLocationId);if(exact)return exact}
@@ -1464,17 +1472,17 @@ function createShareUrl(eventId){
   return url.href;
 }
 async function shareEvent(eventId){
-  const group=activityGroups.get(eventId);
-  if(!group) return;
+  if(!activityGroups.has(eventId)) return;
   const url=createShareUrl(eventId);
   try{
-    if(navigator.share) await navigator.share({title:group.title,text:groupDateText(group),url});
+    if(navigator.clipboard&&window.isSecureContext) await navigator.clipboard.writeText(url);
     else{
-      await navigator.clipboard.writeText(url);
-      showToast('活動連結已複製');
+      const input=document.createElement('textarea');input.value=url;input.setAttribute('readonly','');input.style.position='fixed';input.style.opacity='0';document.body.appendChild(input);input.select();
+      const copied=document.execCommand('copy');input.remove();if(!copied)throw new Error('copy failed');
     }
+    showToast('成功複製連結');
   }catch(error){
-    if(error&&error.name!=='AbortError') showToast('無法分享，請複製網址列連結');
+    showToast('複製失敗，請手動複製網址');
   }
 }
 function showToast(message){
@@ -1600,7 +1608,7 @@ function markerIcon(venueIdValue,locations){
     const image=safeUrl(group.image,true);
     const size=MOBILE_QUERY.matches?[86,68]:[94,76];
     return L.divIcon({className:'',iconSize:size,iconAnchor:[size[0]/2,size[1]-2],
-      html:'<div class="kv-marker-shell"><div class="kv-marker"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""></div><span class="marker-badge">'+count+'</span></div>'});
+      html:'<div class="kv-marker-shell"><div class="kv-marker"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""><span class="marker-badge">'+count+'</span></div></div>'});
   }
   const venue=locations[0]&&locations[0].venue;
   const approximate=!venue||venue.loc!=='exact';
@@ -1623,6 +1631,18 @@ function focusMapLocation(location,zoom=13){
   const nextZoom=Math.max(map.getZoom(),zoom);
   map.flyTo(target,nextZoom,{animate:!matchMedia('(prefers-reduced-motion:reduce)').matches,duration:.55});
   uiState.mapView={center:target,zoom:nextZoom};
+}
+let expandedClusterVenueIds=[];
+function rememberExpandedCluster(layer){
+  if(!layer||typeof layer.getAllChildMarkers!=='function') return;
+  expandedClusterVenueIds=layer.getAllChildMarkers().map(marker=>marker.venueId).filter(Boolean);
+}
+function restoreExpandedCluster(){
+  if(!expandedClusterVenueIds.length) return;
+  const marker=markers.find(item=>expandedClusterVenueIds.includes(item.venueId));
+  if(!marker) return;
+  const parent=cluster.getVisibleParent(marker);
+  if(parent&&typeof parent.spiderfy==='function') parent.spiderfy();
 }
 function renderMapMarkers(){
   cluster.clearLayers();markers=[];
@@ -1660,7 +1680,9 @@ function setMarkerMode(mode){
 }
 function updateMarkerToggles(){
   document.querySelectorAll('[data-marker-mode]').forEach(button=>button.classList.toggle('active',button.dataset.markerMode===uiState.markerMode));
+  document.getElementById('pinLegend').hidden=uiState.markerMode!=='pin';
 }
+cluster.on('clusterclick',event=>rememberExpandedCluster(event.layer));
 map.on('moveend zoomend',()=>{const center=map.getCenter();uiState.mapView={center:[center.lat,center.lng],zoom:map.getZoom()}});
 map.on('click',()=>closeMobileVenueSheet());
 
@@ -1818,7 +1840,7 @@ function setTab(tab){
     if(active) button.setAttribute('aria-current','page'); else button.removeAttribute('aria-current');
   });
   if(tab==='discover') requestAnimationFrame(()=>{list.scrollTop=uiState.discoverScrollTop});
-  else setTimeout(()=>{map.invalidateSize();if(uiState.mapView) map.setView(uiState.mapView.center,uiState.mapView.zoom,{animate:false})},0);
+  else setTimeout(()=>{map.invalidateSize();if(uiState.mapView) map.setView(uiState.mapView.center,uiState.mapView.zoom,{animate:false});requestAnimationFrame(restoreExpandedCluster)},0);
 }
 
 let searchTimer=null;
