@@ -1456,13 +1456,14 @@ function closeImageLightbox(){
 
 const map=L.map('map',{zoomControl:true,minZoom:6,maxZoom:16,attributionControl:false,maxBoundsViscosity:1});
 map.zoomControl.setPosition('bottomright');
-let baseGL=null;
-if(L.maplibreGL){
-  try{baseGL=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/positron',attribution:'© OpenFreeMap｜© OpenMapTiles｜© OpenStreetMap'}).addTo(map)}catch(error){baseGL=null}
-}
-const land=L.geoJSON(TW_GEO,{interactive:false,style:{color:'#8fa0b5',weight:.7,fill:false,opacity:.55}}).addTo(map);
+const land=L.geoJSON(TW_GEO,{interactive:false,style:{color:'#8fa0b5',weight:.7,fill:false,opacity:.55}});
 const TW_BOUNDS=land.getBounds();
 map.setMaxBounds(TW_BOUNDS.pad(MOBILE_QUERY.matches ? .85 : .18));
+map.fitBounds(TW_BOUNDS,{padding:[16,16]});
+const baseRaster=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,attribution:'© OpenStreetMap contributors'
+}).addTo(map);
+land.addTo(map);
 const cluster=L.markerClusterGroup({
   maxClusterRadius:46,showCoverageOnHover:false,spiderfyOnMaxZoom:true,
   iconCreateFunction(group){
