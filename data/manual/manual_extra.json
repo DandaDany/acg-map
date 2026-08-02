@@ -1,9 +1,9 @@
 {
  "DREAM PLAZA": {
   "city": "台北市",
-  "lat": 25.02341,
-  "lng": 121.57426,
-  "loc": "區級",
+  "lat": 25.0395151,
+  "lng": 121.5652423,
+  "loc": "exact",
   "addr": "台北市信義區松高路11號",
   "url": "https://journey2026.bandainamcoth.tw/",
   "ex": [
@@ -57,9 +57,9 @@
  },
  "bb.q CHICKEN 三重三和店": {
   "city": "新北市",
-  "lat": 25.07566,
-  "lng": 121.48562,
-  "loc": "區級",
+  "lat": 25.079326,
+  "lng": 121.481494,
+  "loc": "exact",
   "addr": "新北市三重區三和路四段398之1號1樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -105,9 +105,9 @@
  },
  "bb.q CHICKEN 中和中漢店": {
   "city": "新北市",
-  "lat": 24.98844,
-  "lng": 121.50047,
-  "loc": "區級",
+  "lat": 25.006584,
+  "lng": 121.47232,
+  "loc": "exact",
   "addr": "新北市中和區中山路3段186號",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -129,9 +129,9 @@
  },
  "bb.q CHICKEN 公館店": {
   "city": "台北市",
-  "lat": 25.03828,
-  "lng": 121.52107,
-  "loc": "區級",
+  "lat": 25.0156631,
+  "lng": 121.5315247,
+  "loc": "exact",
   "addr": "台北市中正區汀洲路3段153、155號1樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -153,9 +153,9 @@
  },
  "bb.q CHICKEN 南紡購物店": {
   "city": "台南市",
-  "lat": 22.98036,
-  "lng": 120.22927,
-  "loc": "區級",
+  "lat": 22.990582,
+  "lng": 120.233455,
+  "loc": "exact",
   "addr": "台南市東區中華東路1段366號5樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -201,9 +201,9 @@
  },
  "bb.q CHICKEN 台中崇德店": {
   "city": "台中市",
-  "lat": 24.18789,
-  "lng": 120.76741,
-  "loc": "區級",
+  "lat": 24.1707868,
+  "lng": 120.6851669,
+  "loc": "exact",
   "addr": "台中市北屯區崇德路2段67號1樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -249,9 +249,9 @@
  },
  "bb.q CHICKEN 松山店": {
   "city": "台北市",
-  "lat": 25.03262,
-  "lng": 121.57625,
-  "loc": "區級",
+  "lat": 25.0403043,
+  "lng": 121.5780041,
+  "loc": "exact",
   "addr": "台北市信義區松山路435號",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -273,9 +273,9 @@
  },
  "bb.q CHICKEN 板橋板農店": {
   "city": "新北市",
-  "lat": 25.01732,
-  "lng": 121.46055,
-  "loc": "區級",
+  "lat": 25.008633,
+  "lng": 121.45876,
+  "loc": "exact",
   "addr": "新北市板橋區府中路29之1號",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -297,9 +297,9 @@
  },
  "bb.q CHICKEN 桃園統領廣場店": {
   "city": "桃園市",
-  "lat": 24.96262,
-  "lng": 121.23751,
-  "loc": "市級",
+  "lat": 24.991113,
+  "lng": 121.312523,
+  "loc": "exact",
   "addr": "桃園市桃園區中正路61號8樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -321,9 +321,9 @@
  },
  "bb.q CHICKEN 洲子店": {
   "city": "台北市",
-  "lat": 25.08299,
-  "lng": 121.59218,
-  "loc": "區級",
+  "lat": 25.0792389,
+  "lng": 121.5691082,
+  "loc": "exact",
   "addr": "台北市內湖區瑞光路517號",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -345,9 +345,9 @@
  },
  "bb.q CHICKEN 芝山店": {
   "city": "台北市",
-  "lat": 25.14229,
-  "lng": 121.57937,
-  "loc": "區級",
+  "lat": 25.1024587,
+  "lng": 121.5229631,
+  "loc": "exact",
   "addr": "台北市士林區福華路118號1樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -369,9 +369,9 @@
  },
  "bb.q CHICKEN 鳳山青年店": {
   "city": "高雄市",
-  "lat": 22.6198,
-  "lng": 120.36391,
-  "loc": "區級",
+  "lat": 22.63988,
+  "lng": 120.3509,
+  "loc": "exact",
   "addr": "高雄市鳳山區青年路2段305號1樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -1078,9 +1078,9 @@
  },
  "大安森林公園": {
   "city": "台北市",
-  "lat": 25.03665,
-  "lng": 121.54655,
-  "loc": "區級",
+  "lat": 25.030152,
+  "lng": 121.5353507,
+  "loc": "exact",
   "addr": "台北市大安區新生南路二段1號",
   "url": "https://gnn.gamer.com.tw/detail.php?sn=308568",
   "ex": [
@@ -1508,9 +1508,9 @@
  },
  "統一時代百貨台北店": {
   "city": "台北市",
-  "lat": 25.02415,
-  "lng": 121.56953,
-  "loc": "區級",
+  "lat": 25.0408646,
+  "lng": 121.565417,
+  "loc": "exact",
   "addr": "台北市信義區忠孝東路五段8號",
   "url": "https://journey2026.bandainamcoth.tw/",
   "ex": [
@@ -1552,9 +1552,9 @@
  },
  "肉的長谷川 SOGO忠孝店": {
   "city": "台北市",
-  "lat": 25.03665,
-  "lng": 121.53723,
-  "loc": "區級",
+  "lat": 25.0417384,
+  "lng": 121.5449554,
+  "loc": "exact",
   "addr": "台北市大安區忠孝東路四段45號B1美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1574,9 +1574,9 @@
  },
  "肉的長谷川 南港LaLaPort店": {
   "city": "台北市",
-  "lat": 25.03492,
-  "lng": 121.59876,
-  "loc": "區級",
+  "lat": 25.0586227,
+  "lng": 121.6169879,
+  "loc": "exact",
   "addr": "台北市南港區經貿二路105巷1號5樓美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1596,9 +1596,9 @@
  },
  "肉的長谷川 台中新光三越中港店": {
   "city": "台中市",
-  "lat": 24.18688,
-  "lng": 120.63034,
-  "loc": "區級",
+  "lat": 24.1650058,
+  "lng": 120.6433984,
+  "loc": "exact",
   "addr": "台中市西屯區台灣大道三段301號12樓美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1662,9 +1662,9 @@
  },
  "肉的長谷川 誠品南西店": {
   "city": "台北市",
-  "lat": 25.05951,
-  "lng": 121.53704,
-  "loc": "區級",
+  "lat": 25.0523804,
+  "lng": 121.5212653,
+  "loc": "exact",
   "addr": "台北市中山區南京西路14號B1美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1684,9 +1684,9 @@
  },
  "肉的長谷川 高雄漢神巨蛋店": {
   "city": "高雄市",
-  "lat": 22.67477,
-  "lng": 120.29865,
-  "loc": "區級",
+  "lat": 22.669549,
+  "lng": 120.303159,
+  "loc": "exact",
   "addr": "高雄市左營區博愛二路777號B1美食街",
   "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
   "ex": [
@@ -1750,9 +1750,9 @@
  },
  "藏壽司 三峽學成店": {
   "city": "新北市",
-  "lat": 24.86788,
-  "lng": 121.41236,
-  "loc": "區級",
+  "lat": 24.9442053,
+  "lng": 121.3783061,
+  "loc": "exact",
   "addr": "新北市三峽區學成路398號4樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1774,9 +1774,9 @@
  },
  "藏壽司 三重捷運路店": {
   "city": "新北市",
-  "lat": 25.05871,
-  "lng": 121.49599,
-  "loc": "區級",
+  "lat": 25.056703,
+  "lng": 121.486342,
+  "loc": "exact",
   "addr": "新北市三重區捷運路1號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1798,9 +1798,9 @@
  },
  "藏壽司 三重集賢路店": {
   "city": "新北市",
-  "lat": 25.07309,
-  "lng": 121.4983,
-  "loc": "區級",
+  "lat": 25.08912,
+  "lng": 121.490603,
+  "loc": "exact",
   "addr": "新北市三重區集賢路99號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1822,9 +1822,9 @@
  },
  "藏壽司 中和橋和店": {
   "city": "新北市",
-  "lat": 24.97834,
-  "lng": 121.49317,
-  "loc": "區級",
+  "lat": 25.005189,
+  "lng": 121.488175,
+  "loc": "exact",
   "addr": "新北市中和區橋和路5號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1846,9 +1846,9 @@
  },
  "藏壽司 中壢大江店": {
   "city": "桃園市",
-  "lat": 24.97162,
-  "lng": 121.26007,
-  "loc": "市級",
+  "lat": 24.974727,
+  "lng": 121.2360304,
+  "loc": "exact",
   "addr": "桃園市中壢區中園路二段501號B1",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1870,9 +1870,9 @@
  },
  "藏壽司 中壢站前店": {
   "city": "桃園市",
-  "lat": 24.94342,
-  "lng": 121.24267,
-  "loc": "市級",
+  "lat": 24.9541787,
+  "lng": 121.2240037,
+  "loc": "exact",
   "addr": "桃園市中壢區中正路51號3樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1942,9 +1942,9 @@
  },
  "藏壽司 八德興豐路店": {
   "city": "桃園市",
-  "lat": 24.92998,
-  "lng": 121.26601,
-  "loc": "市級",
+  "lat": 24.9293421,
+  "lng": 121.2795759,
+  "loc": "exact",
   "addr": "桃園市八德區興豐路150號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -1966,9 +1966,9 @@
  },
  "藏壽司 南港CITYLINK店": {
   "city": "台北市",
-  "lat": 25.04596,
-  "lng": 121.61513,
-  "loc": "區級",
+  "lat": 25.0526702,
+  "lng": 121.6072083,
+  "loc": "exact",
   "addr": "台北市南港區忠孝東路七段369號3樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2014,9 +2014,9 @@
  },
  "藏壽司 台中中清路店": {
   "city": "台中市",
-  "lat": 24.18031,
-  "lng": 120.76345,
-  "loc": "區級",
+  "lat": 24.1868359,
+  "lng": 120.6631052,
+  "loc": "exact",
   "addr": "台中市北屯區中清路二段777號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2038,9 +2038,9 @@
  },
  "藏壽司 台中大遠百店": {
   "city": "台中市",
-  "lat": 24.1862,
-  "lng": 120.63514,
-  "loc": "區級",
+  "lat": 24.1646717,
+  "lng": 120.6445694,
+  "loc": "exact",
   "addr": "台中市西屯區台灣大道三段251號9樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2062,9 +2062,9 @@
  },
  "藏壽司 台中崇德店": {
   "city": "台中市",
-  "lat": 24.19871,
-  "lng": 120.75313,
-  "loc": "區級",
+  "lat": 24.1893775,
+  "lng": 120.6870695,
+  "loc": "exact",
   "addr": "台中市北屯區崇德十一路118號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2086,9 +2086,9 @@
  },
  "藏壽司 台中廣三SOGO店": {
   "city": "台中市",
-  "lat": 24.14718,
-  "lng": 120.66577,
-  "loc": "區級",
+  "lat": 24.1552672,
+  "lng": 120.6617778,
+  "loc": "exact",
   "addr": "台中市西區台灣大道二段459號14樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2110,9 +2110,9 @@
  },
  "藏壽司 台中惠文路店": {
   "city": "台中市",
-  "lat": 24.19091,
-  "lng": 120.6344,
-  "loc": "區級",
+  "lat": 24.155291,
+  "lng": 120.6438069,
+  "loc": "exact",
   "addr": "台中市西屯區惠文路767號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2134,9 +2134,9 @@
  },
  "藏壽司 台中文心秀泰店": {
   "city": "台中市",
-  "lat": 24.13054,
-  "lng": 120.61059,
-  "loc": "區級",
+  "lat": 24.129285,
+  "lng": 120.646017,
+  "loc": "exact",
   "addr": "台中市南屯區文心南路289號6樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2182,9 +2182,9 @@
  },
  "藏壽司 台中福科路店": {
   "city": "台中市",
-  "lat": 24.18047,
-  "lng": 120.61647,
-  "loc": "區級",
+  "lat": 24.1812466,
+  "lng": 120.6264272,
+  "loc": "exact",
   "addr": "台中市西屯區福科路231號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2230,9 +2230,9 @@
  },
  "藏壽司 台南FOCUS店": {
   "city": "台南市",
-  "lat": 23.00622,
-  "lng": 120.20462,
-  "loc": "區級",
+  "lat": 22.9956299,
+  "lng": 120.2101669,
+  "loc": "exact",
   "addr": "台南市中西區中山路166號10樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2254,9 +2254,9 @@
  },
  "藏壽司 台南中華西路店": {
   "city": "台南市",
-  "lat": 23.0006,
-  "lng": 120.20374,
-  "loc": "區級",
+  "lat": 23.0002709,
+  "lng": 120.18657,
+  "loc": "exact",
   "addr": "台南市中西區中華西路二段625號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2278,9 +2278,9 @@
  },
  "藏壽司 台南開元路店": {
   "city": "台南市",
-  "lat": 23.02085,
-  "lng": 120.20266,
-  "loc": "區級",
+  "lat": 23.007312,
+  "lng": 120.218977,
+  "loc": "exact",
   "addr": "台南市北區開元路163號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2302,9 +2302,9 @@
  },
  "藏壽司 嘉義博愛路店": {
   "city": "嘉義市",
-  "lat": 23.47505,
-  "lng": 120.42986,
-  "loc": "區級",
+  "lat": 23.4818064,
+  "lng": 120.4396035,
+  "loc": "exact",
   "addr": "嘉義市西區博愛路二段150號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2326,9 +2326,9 @@
  },
  "藏壽司 嘉義耐斯店": {
   "city": "嘉義市",
-  "lat": 23.49161,
-  "lng": 120.47052,
-  "loc": "區級",
+  "lat": 23.496523,
+  "lng": 120.4525275,
+  "loc": "exact",
   "addr": "嘉義市東區忠孝路600號3樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2350,9 +2350,9 @@
  },
  "藏壽司 土城金城路店": {
   "city": "新北市",
-  "lat": 24.97427,
-  "lng": 121.45679,
-  "loc": "區級",
+  "lat": 24.980435,
+  "lng": 121.45334,
+  "loc": "exact",
   "addr": "新北市土城區金城路二段80號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2374,9 +2374,9 @@
  },
  "藏壽司 基隆中正信三店": {
   "city": "基隆市",
-  "lat": 25.78461,
-  "lng": 123.51836,
-  "loc": "區級",
+  "lat": 25.1392405,
+  "lng": 121.7533893,
+  "loc": "exact",
   "addr": "基隆市中正區中正路3號1樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2398,9 +2398,9 @@
  },
  "藏壽司 宜蘭新月店": {
   "city": "宜蘭縣",
-  "lat": 24.74546,
-  "lng": 121.75285,
-  "loc": "區級",
+  "lat": 24.7543756,
+  "lng": 121.7500262,
+  "loc": "exact",
   "addr": "宜蘭縣宜蘭市民權路二段38巷6號1樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2422,9 +2422,9 @@
  },
  "藏壽司 屏東勝利路店": {
   "city": "屏東縣",
-  "lat": 22.66193,
-  "lng": 120.4794,
-  "loc": "區級",
+  "lat": 22.679528,
+  "lng": 120.484344,
+  "loc": "exact",
   "addr": "屏東縣屏東市勝利路130號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2446,9 +2446,9 @@
  },
  "藏壽司 彰化中華西路店": {
   "city": "彰化縣",
-  "lat": 24.08139,
-  "lng": 120.55947,
-  "loc": "區級",
+  "lat": 24.070492,
+  "lng": 120.5282487,
+  "loc": "exact",
   "addr": "彰化縣彰化市中華西路320號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2470,9 +2470,9 @@
  },
  "藏壽司 彰化員林大道店": {
   "city": "彰化縣",
-  "lat": 23.99085,
-  "lng": 120.51636,
-  "loc": "市級",
+  "lat": 23.9723164,
+  "lng": 120.5722063,
+  "loc": "exact",
   "addr": "彰化縣員林市員林大道四段473號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2494,9 +2494,9 @@
  },
  "藏壽司 微風松高店": {
   "city": "台北市",
-  "lat": 25.03308,
-  "lng": 121.57829,
-  "loc": "區級",
+  "lat": 25.0387288,
+  "lng": 121.567277,
+  "loc": "exact",
   "addr": "台北市信義區松高路16號B1",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2518,9 +2518,9 @@
  },
  "藏壽司 新店威秀裕隆店": {
   "city": "新北市",
-  "lat": 24.93266,
-  "lng": 121.52895,
-  "loc": "區級",
+  "lat": 24.9777493,
+  "lng": 121.5463634,
+  "loc": "exact",
   "addr": "新北市新店區中興路三段70號6樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2542,9 +2542,9 @@
  },
  "藏壽司 新竹巨城店": {
   "city": "新竹市",
-  "lat": 24.79527,
-  "lng": 121.00212,
-  "loc": "區級",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
   "addr": "新竹市東區中央路229號2樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2566,9 +2566,9 @@
  },
  "藏壽司 新竹經國路店": {
   "city": "新竹市",
-  "lat": 24.76022,
-  "lng": 120.92725,
-  "loc": "區級",
+  "lat": 24.7995904,
+  "lng": 120.9538841,
+  "loc": "exact",
   "addr": "新竹市香山區經國路三段33號2樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2614,9 +2614,9 @@
  },
  "藏壽司 新莊思源路店": {
   "city": "新北市",
-  "lat": 25.03604,
-  "lng": 121.45028,
-  "loc": "區級",
+  "lat": 25.048912,
+  "lng": 121.460344,
+  "loc": "exact",
   "addr": "新北市新莊區思源路168號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2638,9 +2638,9 @@
  },
  "藏壽司 松江南京店": {
   "city": "台北市",
-  "lat": 25.06589,
-  "lng": 121.54217,
-  "loc": "區級",
+  "lat": 25.0521785,
+  "lng": 121.5325997,
+  "loc": "exact",
   "addr": "台北市中山區南京東路二段101號B1",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2662,9 +2662,9 @@
  },
  "藏壽司 板橋中山遠百店": {
   "city": "新北市",
-  "lat": 25.00119,
-  "lng": 121.45469,
-  "loc": "區級",
+  "lat": 25.01104,
+  "lng": 121.464423,
+  "loc": "exact",
   "addr": "新北市板橋區中山路一段152號5樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2710,9 +2710,9 @@
  },
  "藏壽司 林口三井OUTLET店": {
   "city": "新北市",
-  "lat": 25.11093,
-  "lng": 121.33665,
-  "loc": "區級",
+  "lat": 25.0712411,
+  "lng": 121.3635472,
+  "loc": "exact",
   "addr": "新北市林口區文化三路一段356號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2734,9 +2734,9 @@
  },
  "藏壽司 林園沿海路店": {
   "city": "高雄市",
-  "lat": 22.50603,
-  "lng": 120.40276,
-  "loc": "區級",
+  "lat": 22.5007394,
+  "lng": 120.3964213,
+  "loc": "exact",
   "addr": "高雄市林園區沿海路二段166號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2758,9 +2758,9 @@
  },
  "藏壽司 桃園大興西店": {
   "city": "桃園市",
-  "lat": 24.96712,
-  "lng": 121.21795,
-  "loc": "市級",
+  "lat": 25.0034561,
+  "lng": 121.2884746,
+  "loc": "exact",
   "addr": "桃園市桃園區大興西路三段259號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2782,9 +2782,9 @@
  },
  "藏壽司 桃園春日路店": {
   "city": "桃園市",
-  "lat": 24.92458,
-  "lng": 121.24621,
-  "loc": "市級",
+  "lat": 25.008732,
+  "lng": 121.3116637,
+  "loc": "exact",
   "addr": "桃園市桃園區春日路618-1號2樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2806,9 +2806,9 @@
  },
  "藏壽司 桃園遠百店": {
   "city": "桃園市",
-  "lat": 24.92974,
-  "lng": 121.24171,
-  "loc": "市級",
+  "lat": 25.044295,
+  "lng": 121.294049,
+  "loc": "exact",
   "addr": "桃園市桃園區中正路20號11樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2830,9 +2830,9 @@
  },
  "藏壽司 桃園青埔店": {
   "city": "桃園市",
-  "lat": 24.97078,
-  "lng": 121.23133,
-  "loc": "市級",
+  "lat": 25.0102442,
+  "lng": 121.2200924,
+  "loc": "exact",
   "addr": "桃園市中壢區領航南路三段395號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2854,9 +2854,9 @@
  },
  "藏壽司 楠梓藍田路店": {
   "city": "高雄市",
-  "lat": 22.73663,
-  "lng": 120.29367,
-  "loc": "區級",
+  "lat": 22.7269275,
+  "lng": 120.2929178,
+  "loc": "exact",
   "addr": "高雄市楠梓區藍田路267號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2878,9 +2878,9 @@
  },
  "藏壽司 永和比漾店": {
   "city": "新北市",
-  "lat": 25.00627,
-  "lng": 121.50591,
-  "loc": "區級",
+  "lat": 25.0078365,
+  "lng": 121.5076461,
+  "loc": "exact",
   "addr": "新北市永和區中山路一段238號4樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2902,9 +2902,9 @@
  },
  "藏壽司 永康永大路店": {
   "city": "台南市",
-  "lat": 23.02379,
-  "lng": 120.2491,
-  "loc": "區級",
+  "lat": 23.0366911,
+  "lng": 120.2593024,
+  "loc": "exact",
   "addr": "台南市永康區永大路三段500號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2926,9 +2926,9 @@
  },
  "藏壽司 沙鹿中山路店": {
   "city": "台中市",
-  "lat": 24.22471,
-  "lng": 120.56928,
-  "loc": "區級",
+  "lat": 24.2488618,
+  "lng": 120.564909,
+  "loc": "exact",
   "addr": "台中市沙鹿區中山路520號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2950,9 +2950,9 @@
  },
  "藏壽司 淡水站前店": {
   "city": "新北市",
-  "lat": 25.18608,
-  "lng": 121.45768,
-  "loc": "區級",
+  "lat": 25.170418,
+  "lng": 121.442545,
+  "loc": "exact",
   "addr": "新北市淡水區中山路8號5樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2974,9 +2974,9 @@
  },
  "藏壽司 竹北文興店": {
   "city": "新竹縣",
-  "lat": 24.82276,
-  "lng": 120.99724,
-  "loc": "區級",
+  "lat": 24.8087394,
+  "lng": 121.0325503,
+  "loc": "exact",
   "addr": "新竹縣竹北市文興路一段301號2樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -2998,9 +2998,9 @@
  },
  "藏壽司 羅東中山路店": {
   "city": "宜蘭縣",
-  "lat": 24.68872,
-  "lng": 121.75605,
-  "loc": "區級",
+  "lat": 24.6745349,
+  "lng": 121.7783061,
+  "loc": "exact",
   "addr": "宜蘭縣羅東鎮中山路二段346號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3022,9 +3022,9 @@
  },
  "藏壽司 花蓮自由店": {
   "city": "花蓮縣",
-  "lat": 24.00512,
-  "lng": 121.60716,
-  "loc": "區級",
+  "lat": 23.9738684,
+  "lng": 121.608113,
+  "loc": "exact",
   "addr": "花蓮縣花蓮市自由街20號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3046,9 +3046,9 @@
  },
  "藏壽司 豐原太平洋店": {
   "city": "台中市",
-  "lat": 24.23853,
-  "lng": 120.74213,
-  "loc": "區級",
+  "lat": 24.2507263,
+  "lng": 120.7208161,
+  "loc": "exact",
   "addr": "台中市豐原區復興路2號B2",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3070,9 +3070,9 @@
  },
  "藏壽司 頭份運動公園店": {
   "city": "苗栗縣",
-  "lat": 24.52198,
-  "lng": 120.87717,
-  "loc": "市級",
+  "lat": 24.6917144,
+  "lng": 120.891058,
+  "loc": "exact",
   "addr": "苗栗縣頭份市公北一路67號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3094,9 +3094,9 @@
  },
  "藏壽司 高雄SKM Park店": {
   "city": "高雄市",
-  "lat": 22.57778,
-  "lng": 120.30535,
-  "loc": "區級",
+  "lat": 22.581273,
+  "lng": 120.329602,
+  "loc": "exact",
   "addr": "高雄市前鎮區中安路1-1號3樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3118,9 +3118,9 @@
  },
  "藏壽司 高雄五福光華店": {
   "city": "高雄市",
-  "lat": 22.63439,
-  "lng": 120.33521,
-  "loc": "區級",
+  "lat": 22.6279094,
+  "lng": 120.3150706,
+  "loc": "exact",
   "addr": "高雄市苓雅區五福一路38號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3142,9 +3142,9 @@
  },
  "藏壽司 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.59772,
-  "lng": 120.31145,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號綠區B1",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3190,9 +3190,9 @@
  },
  "藏壽司 高雄時代大道店（全球旗艦店）": {
   "city": "高雄市",
-  "lat": 22.58481,
-  "lng": 120.29988,
-  "loc": "區級",
+  "lat": 22.5959552,
+  "lng": 120.315745,
+  "loc": "exact",
   "addr": "高雄市前鎮區中山三路11號",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3214,9 +3214,9 @@
  },
  "藏壽司 高雄漢神巨蛋店": {
   "city": "高雄市",
-  "lat": 22.67393,
-  "lng": 120.30472,
-  "loc": "區級",
+  "lat": 22.669549,
+  "lng": 120.303159,
+  "loc": "exact",
   "addr": "高雄市左營區博愛二路777號7樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3238,9 +3238,9 @@
  },
  "藏壽司 高雄漢神本館店": {
   "city": "高雄市",
-  "lat": 22.63558,
-  "lng": 120.28805,
-  "loc": "區級",
+  "lat": 22.619148,
+  "lng": 120.296095,
+  "loc": "exact",
   "addr": "高雄市前金區成功一路266-1號6樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3393,9 +3393,9 @@
  },
  "馬場町紀念公園": {
   "city": "台北市",
-  "lat": 25.02929,
-  "lng": 121.48375,
-  "loc": "區級",
+  "lat": 25.0199329,
+  "lng": 121.5035063,
+  "loc": "exact",
   "addr": "台北市萬華區青年路188巷1弄7號",
   "url": "https://irunner.biji.co/2026NeonGenesisEvangelion",
   "ex": [
