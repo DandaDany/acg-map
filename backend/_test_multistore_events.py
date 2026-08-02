@@ -8,35 +8,37 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 class MultiStoreEventTests(unittest.TestCase):
-    def test_generated_map_has_expected_multistore_markers(self):
+    @classmethod
+    def setUpClass(cls):
         with open(os.path.join(ROOT, "public", "venues.json"), encoding="utf-8") as fh:
-            data = json.load(fh)
+            cls.data = json.load(fh)
+
+    def test_generated_map_has_expected_multistore_markers(self):
         found = {}
         totals = {}
-        for venue in data["venues"]:
+        ids = {}
+        for venue in self.data["venues"]:
             for event in venue.get("ex", []):
                 label = event.get("mf")
                 if not label:
                     continue
                 found[label] = found.get(label, 0) + 1
                 totals.setdefault(label, set()).add(event.get("ms"))
+                ids.setdefault(label, set()).add(event.get("id"))
 
         self.assertEqual(found, {"點點心": 20, "凍心": 11, "bb.q CHICKEN": 14})
         self.assertEqual(totals["點點心"], {20})
         self.assertEqual(totals["凍心"], {28})
         self.assertEqual(totals["bb.q CHICKEN"], {14})
-        self.assertTrue(all(total > 10 for values in totals.values() for total in values))
+        self.assertTrue(all(len(group_ids) == 1 for group_ids in ids.values()))
 
-    def test_frontend_contains_dynamic_multistore_filter(self):
-        with open(
-            os.path.join(ROOT, "public", "taiwan-exhibition-map.html"),
-            encoding="utf-8",
-        ) as fh:
+    def test_frontend_filters_multistore_by_activity_group(self):
+        with open(os.path.join(ROOT, "public", "taiwan-exhibition-map.html"), encoding="utf-8") as fh:
             html = fh.read()
         self.assertIn('data-filter="multi"', html)
-        self.assertIn("if(key==='multi')", html)
-        self.assertIn("if(multi!=='all' && e.mf!==multi)", html)
-        self.assertIn("function eventKey(e)", html)
+        self.assertIn("group.multiFilter!==filters.multi", html)
+        self.assertIn("new Set(locations.map(location=>location.event.id))", html)
+
 
 if __name__ == "__main__":
     unittest.main()
