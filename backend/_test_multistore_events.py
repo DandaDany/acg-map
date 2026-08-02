@@ -26,10 +26,16 @@ class MultiStoreEventTests(unittest.TestCase):
                 totals.setdefault(label, set()).add(event.get("ms"))
                 ids.setdefault(label, set()).add(event.get("id"))
 
-        self.assertEqual(found, {"點點心": 20, "凍心": 11, "bb.q CHICKEN": 14})
+        self.assertEqual(found, {
+            "點點心": 20,
+            "凍心": 11,
+            "bb.q CHICKEN": 14,
+            "藏壽司": 63,
+        })
         self.assertEqual(totals["點點心"], {20})
         self.assertEqual(totals["凍心"], {28})
         self.assertEqual(totals["bb.q CHICKEN"], {14})
+        self.assertEqual(totals["藏壽司"], {63})
         self.assertTrue(all(len(group_ids) == 1 for group_ids in ids.values()))
 
     def test_frontend_filters_multistore_by_activity_group(self):

@@ -1,5 +1,29 @@
 {
   "_readme": "目前活動的入場／參與費用覆寫。fee 僅接受「免費」或「付費」；免費＝不需門票即可進入觀看（商品購買可選），付費＝需購票、園區門票、報名費或核心體驗必須消費。每日更新新增活動時必須查官方來源後補入。",
+  "Bandai Namco Asia JOURNEY TAIWAN": {
+    "fee": "免費",
+    "source": "https://journey2026.bandainamcoth.tw/",
+    "checked": "2026-08-02",
+    "basis": "官方活動網站載明免費入場"
+  },
+  "PEANUTS夏日海灘祭": {
+    "fee": "免費",
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26061109500377541",
+    "checked": "2026-08-02",
+    "basis": "華山官方活動頁載明免費入場"
+  },
+  "藏壽司 × 三麗鷗家族「泳池派對」": {
+    "fee": "付費",
+    "source": "https://kurasushi.tw/activities/588",
+    "checked": "2026-08-02",
+    "basis": "核心扭蛋活動需於藏壽司用餐消費"
+  },
+  "蛋仔派對 x 凱岩主題餐廳": {
+    "fee": "付費",
+    "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24",
+    "checked": "2026-08-02",
+    "basis": "核心主題餐廳體驗需消費"
+  },
   ".Bloom10周年＆メロキス8周年記念 Gratte": {
     "fee": "付費",
     "source": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",

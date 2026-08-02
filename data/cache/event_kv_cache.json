@@ -1,6 +1,18 @@
 {
   "updated": "2026/08/01",
   "links": {
+    "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24": {
+      "ok": true,
+      "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/egg_party_cayenne_20260807.jpg",
+      "code": "manual_verified",
+      "updated": "2026/08/02"
+    },
+    "https://www.huashan1914.com/w/huashan1914/exhibition_26061109500377541": {
+      "ok": true,
+      "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/peanuts_summer_20260618.jpg",
+      "code": "manual_verified",
+      "updated": "2026/08/02"
+    },
     "https://www.taoyuantudigong.org.tw/main/exhibition-current/": {
       "ok": true,
       "img": "https://www.taoyuantudigong.org.tw/main/wp-content/uploads/2019/08/5f-502-2.jpg",

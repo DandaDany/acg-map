@@ -1,4 +1,26 @@
 {
+ "DREAM PLAZA": {
+  "city": "台北市",
+  "lat": 25.02341,
+  "lng": 121.57426,
+  "loc": "區級",
+  "addr": "台北市信義區松高路11號",
+  "url": "https://journey2026.bandainamcoth.tw/",
+  "ex": [
+   {
+    "t": "Bandai Namco Asia JOURNEY TAIWAN",
+    "s": "2026/07/31",
+    "e": "2026/08/09",
+    "l": "https://journey2026.bandainamcoth.tw/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bandai_namco_journey_taiwan_20260731.jpg",
+    "cat2": "實體體驗/Experience",
+    "fee": "免費",
+    "ip": "Bandai Namco（鋼彈、航海王、哥吉拉、Tamagotchi、超人力霸王）",
+    "org": "Bandai Namco Asia",
+    "lic": "Bandai Namco Holdings Inc.及各作品權利人"
+   }
+  ]
+ },
  "animate Gratte 西門站": {
   "city": "台北市",
   "lat": 25.0179,
@@ -14,7 +36,10 @@
     "l": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
     "img": "https://www.facebook.com/photo/?fbid=122141725047055906&set=pcb.122141725071055906",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": ".Bloom×メロキス",
+    "org": "animate（安利美特台灣）",
+    "lic": "官方"
    },
    {
     "t": "《相反的你和我》雪人睡衣派對 FAIR in animate 活動紀念 Gratte",
@@ -23,7 +48,10 @@
     "l": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/you_and_i_gratte_20260718.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "相反的你和我（正反対な君と僕）",
+    "org": "animate（安利美特台灣）",
+    "lic": "官方"
    }
   ]
  },
@@ -43,6 +71,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -64,6 +95,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -85,6 +119,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -106,6 +143,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -127,6 +167,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -148,6 +191,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -169,6 +215,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -190,6 +239,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -211,6 +263,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -232,6 +287,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -253,6 +311,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -274,6 +335,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -295,6 +359,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -316,6 +383,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "褲褲兔（Opanchu Usagi）",
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
     "mf": "bb.q CHICKEN",
     "ms": 14
    }
@@ -336,7 +406,9 @@
     "l": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/marshville_quokscout_20260619.jpg",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "Marshville Quokscout",
+    "org": "object taipei"
    }
   ]
  },
@@ -354,7 +426,10 @@
     "e": "2026/08/17",
     "l": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_anique_sanchuang_20260805.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "藍色監獄（BLUE LOCK）",
+    "org": "Anique Taiwan（榮日股份有限公司）",
+    "lic": "講談社／BLUE LOCK Production Committee"
    }
   ]
  },
@@ -373,7 +448,10 @@
     "l": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
     "img": "",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "角落小夥伴",
+    "org": "勝明文具",
+    "lic": "SAN-X"
    }
   ]
  },
@@ -392,7 +470,10 @@
     "l": "https://www.instagram.com/p/DY3xo0lDO42/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bocchi_animation_exhibition_taichung_20260720.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "孤獨搖滾！",
+    "org": "曼迪",
+    "lic": "曼迪"
    }
   ]
  },
@@ -411,7 +492,10 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308160",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eslite_acgfest_2026_20260801.jpg",
     "cat2": "活動/Event",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "多IP（葬送的芙莉蓮／全知讀者視角／排球少年／我的英雄學院／NANA／極樂街 等）",
+    "org": "誠品書店",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -431,6 +515,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -452,6 +539,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -473,6 +563,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -494,6 +587,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -515,6 +611,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -536,6 +635,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -557,6 +659,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -578,6 +683,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -599,6 +707,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -620,6 +731,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -641,6 +755,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frozenheart_frieren_20260715.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "凍心 Frozen Heart（動心國際股份有限公司）",
+    "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
    }
@@ -660,7 +777,10 @@
     "e": "2026/09/06",
     "l": "https://realescapeconan.oen.tw/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_realescape_taichung_20260828.jpg",
-    "cat2": "體驗活動/Experience Activity"
+    "cat2": "體驗活動/Experience Activity",
+    "ip": "名偵探柯南",
+    "org": "SCRAP／頂級豬排遊戲工作室（台灣代理）",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -678,7 +798,10 @@
     "e": "2026/08/31",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308146",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_revengers_saigo_2026_20260806.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "東京卍復仇者",
+    "org": "曼迪傳播（Mighty Media）",
+    "lic": "需人工確認（KV版權標示 ©Ken Wakui, KODANSHA／Tokyo Revengers Exhibition Production Committee）"
    }
   ]
  },
@@ -697,7 +820,9 @@
     "l": "https://www.instagram.com/p/DaUNtsBJxu0",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_retro_chungyo_20260702.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "三麗鷗",
+    "org": "中友百貨"
    }
   ]
  },
@@ -715,7 +840,10 @@
     "e": "2026/08/29",
     "l": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
     "img": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
-    "cat2": "體驗活動/Experience Activity"
+    "cat2": "體驗活動/Experience Activity",
+    "ip": "伊藤潤二",
+    "org": "木棉花",
+    "lic": "木棉花"
    }
   ]
  },
@@ -734,7 +862,9 @@
     "l": "https://www.tcrp.com.tw/activity/221",
     "img": "https://www.tcrp.com.tw/storage/upload/activity/image/2026-07-10/aXWQfWYvBuDuguVtyi7m72aZxQH72ARYpGShHAbW.jpeg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "藥師少女的獨語",
+    "org": "臺中驛鐵道文化園區"
    }
   ]
  },
@@ -753,7 +883,8 @@
     "l": "https://www.instagram.com/p/Da2DfOEj_9k",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anpanman_lihpao_20260716.jpg",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "麵包超人"
    },
    {
     "t": "Sirotan期間限定快閃店",
@@ -762,7 +893,10 @@
     "l": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
     "img": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "Sirotan",
+    "org": "Sirotan台灣官方粉絲團",
+    "lic": "CREATIVE YOKO"
    }
   ]
  },
@@ -781,7 +915,10 @@
     "l": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dungeon_meshi_taipei_20260715.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "迷宮飯",
+    "org": "INCUBASE Studio X TRENDIC",
+    "lic": "INCUBASE Studio"
    }
   ]
  },
@@ -800,7 +937,10 @@
     "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_ghoul_incubase_20260731.jpg",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "東京喰種",
+    "org": "INCUBASE",
+    "lic": "INCUBASE"
    },
    {
     "t": "HUNTER×HUNTER POP UP SHOP",
@@ -808,7 +948,10 @@
     "e": "2026/10/04",
     "l": "https://www.instagram.com/p/DaNEtndDFyn/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hunter_incubase_taipei_20260904.jpg",
-    "cat2": "快閃店/Pop-up Store"
+    "cat2": "快閃店/Pop-up Store",
+    "ip": "HUNTER×HUNTER",
+    "org": "INCUBASE",
+    "lic": "AMNIBUS"
    }
   ]
  },
@@ -826,7 +969,10 @@
     "e": "2026/10/11",
     "l": "https://tw.portal-pokemon.com/30th/topics/20260701_01/",
     "img": "https://tw.portal-pokemon.com/images/9c328b4f479c4b18107bb8782ce33498.jpg",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "ip": "寶可夢",
+    "org": "The Pokémon Company（新光三越信義新天地協辦）",
+    "lic": "The Pokémon Company"
    }
   ]
  },
@@ -845,7 +991,10 @@
     "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
     "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "異環",
+    "org": "FanFans Café",
+    "lic": "Hotta Studio（a Perfect World company）"
    }
   ]
  },
@@ -864,7 +1013,10 @@
     "l": "https://www.facebook.com/balloontaiwan",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_balloon_festival_20260704.jpg",
     "cat2": "活動/Event",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "吉伊卡哇",
+    "org": "2026臺灣國際熱氣球嘉年華",
+    "lic": "三貝多"
    }
   ]
  },
@@ -883,7 +1035,10 @@
     "l": "https://universe.oneone.com.tw/posts/6309",
     "img": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "家庭教師HITMAN REBORN!",
+    "org": "木棉花國際",
+    "lic": "木棉花"
    },
    {
     "t": "2026高雄翻轉動漫祭",
@@ -892,7 +1047,10 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308179",
     "img": "https://news.qoo-app.com/wp-content/uploads/2026/07/2026%E9%AB%98%E9%9B%84%E7%BF%BB%E8%BD%89%E5%8B%95%E6%BC%AB%E7%A5%AD%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "多動漫IP（Muse木棉花代理，含蠟筆小新、JOJO的奇妙冒險、暗殺教室、戀上換裝娃娃、86—不存在的戰區—、入間同學入魔了！、擅長逃跑的殿下、葬送的芙莉蓮 等17大動漫）",
+    "org": "木棉花國際（Muse木棉花）× 統一夢時代",
+    "lic": "木棉花"
    }
   ]
  },
@@ -911,7 +1069,10 @@
     "l": "https://www.instagram.com/p/DYWFmd8jRZ2/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anifest_dreammall_20260520.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "綜合",
+    "org": "野獸國 X SUNRISEPOP",
+    "lic": "官方"
    }
   ]
  },
@@ -929,7 +1090,10 @@
     "e": "2026/08/16",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308568",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pokemongo_10th_meetup_2026_20260815.jpg",
-    "cat2": "體驗活動/Experience Activity"
+    "cat2": "體驗活動/Experience Activity",
+    "ip": "精靈寶可夢（Pokémon GO）",
+    "org": "需人工確認（Pokémon GO 官方 × 台北捷運聯名企劃）",
+    "lic": "需人工確認（KV版權標示 ©Niantic、©Pokémon／Nintendo／Creatures／GAME FREAK）"
    }
   ]
  },
@@ -948,7 +1112,10 @@
     "l": "https://www.huashandin.com.tw/events/20260623/",
     "img": "https://www.huashandin.com.tw/wp-content/uploads/sites/224/2026/06/1-9.jpg",
     "cat2": "主題餐廳/Theme Restaurant",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "貓咪大戰爭（The Battle Cats）",
+    "org": "天成文旅 華山町餐酒館（天成飯店集團）",
+    "lic": "PONOS Corp."
    }
   ]
  },
@@ -967,7 +1134,10 @@
     "l": "https://www.facebook.com/pingtungamazing/photos/%F0%93%87%BB%F0%93%82%83%F0%93%82%82%F0%93%82%83%F0",
     "img": "https://res.klook.com/image/upload/c_crop,h_460,w_736,x_212,y_0,z_0.7/w_1265,h_791,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/bvqtev3vdromwbwgbh27.webp",
     "cat2": "展覽/Exhibition",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "蠟筆小新",
+    "org": "Incubase X 法碼創意",
+    "lic": "INCUBASE Studio"
    }
   ]
  },
@@ -985,7 +1155,10 @@
     "e": "2026/10/11",
     "l": "https://www.klook.com/zh-TW/activity/220666-the-legend-of-the-swordsman-exhibition-30th-anniversary/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rurouni_kenshin_30th_2026_20260911.webp",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "ip": "神劍闖江湖（るろうに剣心）",
+    "org": "台灣東販、movic Co., Ltd.",
+    "lic": "需人工確認（KV版權標示 ©NW/S＝和月伸宏／集英社·NAS）"
    }
   ]
  },
@@ -1003,7 +1176,10 @@
     "e": "2026/08/10",
     "l": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/avemujica_exitus_taipei_popup_20260807.jpg",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "BanG Dream!／Ave Mujica",
+    "org": "寶島製造",
+    "lic": "Bushiroad／BanG Dream! Project"
    }
   ]
  },
@@ -1022,7 +1198,10 @@
     "l": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanx90_breeze_20260627.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "San-X",
+    "org": "曼迪",
+    "lic": "曼迪"
    }
   ]
  },
@@ -1040,7 +1219,10 @@
     "e": "2026/11/08",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308477",
     "img": "https://p2.bahamut.com.tw/B/2KU/89/fde0a9d0b7051c772d010d99fa1zi555.JPG",
-    "cat2": "體驗活動/Experience"
+    "cat2": "體驗活動/Experience",
+    "ip": "咒術迴戰（懷玉·玉折）",
+    "org": "需人工確認",
+    "lic": "羚邦 Medialink"
    }
   ]
  },
@@ -1059,7 +1241,10 @@
     "l": "https://www.facebook.com/lashinbang.tw/photos/-%E6%8C%87%E5%8D%97%E9%87%9D-%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E6%AD%A6%E6%98%8C%E5%BA%97%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E9%A0%90%E5%91%8A%E8%97%8D%E8%89%B2%E7%9B%A3%E7%8D%84%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E7%89%B9%E8%B3%A3%E7%86%B1%E8%A1%80%E9%96%8B%E8%B7%91%E9%9B%86%E7%B5%90%E4%BA%BA%E6%B0%A3%E8%A7%92%E8%89%B2%E5%91%A8%E9%82%8A%E7%84%A1%E8%AB%96%E6%98%AF%E6%94%B6%E8%97%8F%E9%82%84%E6%98%AF%E6%87%89%E6%8F%B4%E9%80%99%E6%AC%A1%E9%83%BD%E4%B8%8D%E8%83%BD%E9%8C%AF%E9%81%8E-%E6%B4%BB%E5%8B%95%E6%9C%9F%E9%96%9320260801%E5%85%AD20260831%E4%B8%80-/1408262328094553/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_lashinbang_wuchang_20260801.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "藍色監獄（BLUE LOCK）",
+    "org": "指南針 Lashinbang（台灣指南針）",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1078,7 +1263,10 @@
     "l": "https://www.instagram.com/p/DazKEteDD38",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tamagotchi_taichung_20260727.jpg",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "Tamagotchi塔麻可吉",
+    "org": "萬代國際(wangjungintl)",
+    "lic": "BANDAI"
    }
   ]
  },
@@ -1096,7 +1284,10 @@
     "e": "2026/10/04",
     "l": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
     "img": "https://p2.bahamut.com.tw/B/2KU/76/c42f612014824e36b5cb31018a1z6mw5.JPG",
-    "cat2": "展覽/Exhibition"
+    "cat2": "展覽/Exhibition",
+    "ip": "新世紀福音戰士（EVANGELION）",
+    "org": "popacg（波波動漫）",
+    "lic": "官方"
    }
   ]
  },
@@ -1115,7 +1306,10 @@
     "l": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_popup_20260731.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "新世紀福音戰士",
+    "org": "曼迪傳播",
+    "lic": "khara"
    }
   ]
  },
@@ -1133,7 +1327,10 @@
     "e": "2026/09/13",
     "l": "https://sounova.com/anime/chainsaw-man-the-movie-reze-arc-pop-up",
     "img": "https://cdn.sounova.com/upload/DP44qZL6j0x5w-gKR5Fng.webp",
-    "cat2": "快閃店/Pop Up Store"
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "鏈鋸人",
+    "org": "樂玩多 WAYTOFUN／Vision Toys",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1152,7 +1349,9 @@
     "l": "https://www.facebook.com/emuse.com.tw/photos/%F0%9D%97%9D%F0%9D%97%A2%F0%9D%97%9D%F0%9D%97%A2-%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A5%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%A1-%E5%8D%B3%E5%B0%87%E7%99%BB%E5%A0%B4%E7%82%BA%E7%B4%80%E5%BF%B5jojo-%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%9A%AA%E7%AC%AC%E4%B8%83%E9%83%A8steel-ball-run-%E9%A3%86%E9%A6%AC%E9%87%8E%E9%83%8E%E6%AD%A3%E5%BC%8F%E5%8B%95%E7%95%AB%E5%8C%96%E5%AE%98%E6%96%B9%E5%B7%A1%E8%BF%B4%E5%B1%95%E8%A6%BDjojo-caravan%E5%8D%B3%E5%B0%87%E4%BE%86%E5%8F%B0%E7%8F%BE/1478337260995605/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_20260626.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "JOJO的奇妙冒險",
+    "lic": "木棉花"
    }
   ]
  },
@@ -1171,7 +1370,10 @@
     "l": "https://www.instagram.com/p/DaT8RkDAeAX",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/godzilla_tainan_20260703.jpg",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "GODZILLA",
+    "org": "需人工確認",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1190,7 +1392,10 @@
     "l": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hello_kitty_kaohsiung_20260703.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "Hello Kitty",
+    "org": "曼迪",
+    "lic": "曼迪"
    }
   ]
  },
@@ -1208,7 +1413,10 @@
     "e": "2026/08/22",
     "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=686",
     "img": "",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "ip": "進擊的巨人",
+    "org": "富邦悍將",
+    "lic": "木棉花"
    }
   ]
  },
@@ -1226,7 +1434,10 @@
     "e": "2026/10/25",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308477",
     "img": "https://p2.bahamut.com.tw/B/2KU/89/fde0a9d0b7051c772d010d99fa1zi555.JPG",
-    "cat2": "體驗活動/Experience"
+    "cat2": "體驗活動/Experience",
+    "ip": "咒術迴戰（懷玉·玉折）",
+    "org": "需人工確認",
+    "lic": "羚邦 Medialink"
    }
   ]
  },
@@ -1244,7 +1455,10 @@
     "e": "2026/09/13",
     "l": "https://monkeys.rakuten.com.tw/news_detail/927",
     "img": "https://storage.googleapis.com/hhg-images/news/16/1784279096.jpg",
-    "cat2": "活動/Event"
+    "cat2": "活動/Event",
+    "ip": "NIJISANJI",
+    "org": "樂天桃猿、NIJISANJI（ANYCOLOR）、CyberAgent",
+    "lic": "官方"
    }
   ]
  },
@@ -1263,7 +1477,10 @@
     "l": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
     "img": "",
     "cat2": "活動/Event",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "七龍珠Z",
+    "org": "澎湖縣政府",
+    "lic": "東映"
    }
   ]
  },
@@ -1282,7 +1499,32 @@
     "l": "https://capsule1111.kktix.cc/events/artofmiku",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/artofmiku_whitestone_taipei_20260801.png",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "初音未來",
+    "org": "需人工確認",
+    "lic": "需人工確認"
+   }
+  ]
+ },
+ "統一時代百貨台北店": {
+  "city": "台北市",
+  "lat": 25.02415,
+  "lng": 121.56953,
+  "loc": "區級",
+  "addr": "台北市信義區忠孝東路五段8號",
+  "url": "https://journey2026.bandainamcoth.tw/",
+  "ex": [
+   {
+    "t": "Bandai Namco Asia JOURNEY TAIWAN",
+    "s": "2026/07/31",
+    "e": "2026/08/09",
+    "l": "https://journey2026.bandainamcoth.tw/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bandai_namco_journey_taiwan_20260731.jpg",
+    "cat2": "實體體驗/Experience",
+    "fee": "免費",
+    "ip": "Bandai Namco（鋼彈、航海王、哥吉拉、Tamagotchi、超人力霸王）",
+    "org": "Bandai Namco Asia",
+    "lic": "Bandai Namco Holdings Inc.及各作品權利人"
    }
   ]
  },
@@ -1301,7 +1543,10 @@
     "l": "https://woman.udn.com/woman/story/123164/9629395",
     "img": "",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "Monchhichi（蒙奇奇）",
+    "org": "ipnjoy",
+    "lic": "官方"
    }
   ]
  },
@@ -1320,7 +1565,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1339,7 +1587,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1358,7 +1609,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1377,7 +1631,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1396,7 +1653,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1415,7 +1675,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1434,7 +1697,10 @@
     "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "戀與製作人",
+    "org": "戀與製作人台港澳官方 × 肉的長谷川",
+    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -1453,7 +1719,10 @@
     "l": "https://www.instagram.com/p/DZrU9yxgT5x/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hualien_fun_onepiece_20260711.webp",
     "cat2": "活動/Event",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "航海王",
+    "org": "花蓮縣政府",
+    "lic": "東映"
    }
   ]
  },
@@ -1472,7 +1741,1522 @@
     "l": "https://gnn.gamer.com.tw/detail.php?sn=305017",
     "img": "",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "Chiikawa",
+    "org": "OMOLABO",
+    "lic": "OMOLABO"
+   }
+  ]
+ },
+ "藏壽司 三峽學成店": {
+  "city": "新北市",
+  "lat": 24.86788,
+  "lng": 121.41236,
+  "loc": "區級",
+  "addr": "新北市三峽區學成路398號4樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 三重捷運路店": {
+  "city": "新北市",
+  "lat": 25.05871,
+  "lng": 121.49599,
+  "loc": "區級",
+  "addr": "新北市三重區捷運路1號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 三重集賢路店": {
+  "city": "新北市",
+  "lat": 25.07309,
+  "lng": 121.4983,
+  "loc": "區級",
+  "addr": "新北市三重區集賢路99號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 中和橋和店": {
+  "city": "新北市",
+  "lat": 24.97834,
+  "lng": 121.49317,
+  "loc": "區級",
+  "addr": "新北市中和區橋和路5號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 中壢大江店": {
+  "city": "桃園市",
+  "lat": 24.97162,
+  "lng": 121.26007,
+  "loc": "市級",
+  "addr": "桃園市中壢區中園路二段501號B1",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 中壢站前店": {
+  "city": "桃園市",
+  "lat": 24.94342,
+  "lng": 121.24267,
+  "loc": "市級",
+  "addr": "桃園市中壢區中正路51號3樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 中山南西店": {
+  "city": "台北市",
+  "lat": 25.06472,
+  "lng": 121.51628,
+  "loc": "區級",
+  "addr": "台北市大同區南京西路57號2樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 信義ATT店": {
+  "city": "台北市",
+  "lat": 25.0356681,
+  "lng": 121.5660209,
+  "loc": "exact",
+  "addr": "台北市信義區松壽路12號4樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 八德興豐路店": {
+  "city": "桃園市",
+  "lat": 24.92998,
+  "lng": 121.26601,
+  "loc": "市級",
+  "addr": "桃園市八德區興豐路150號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 南港CITYLINK店": {
+  "city": "台北市",
+  "lat": 25.04596,
+  "lng": 121.61513,
+  "loc": "區級",
+  "addr": "台北市南港區忠孝東路七段369號3樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中三井LaLaport店": {
+  "city": "台中市",
+  "lat": 24.13888,
+  "lng": 120.69483,
+  "loc": "區級",
+  "addr": "台中市東區進德路600號北館5樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中中清路店": {
+  "city": "台中市",
+  "lat": 24.18031,
+  "lng": 120.76345,
+  "loc": "區級",
+  "addr": "台中市北屯區中清路二段777號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中大遠百店": {
+  "city": "台中市",
+  "lat": 24.1862,
+  "lng": 120.63514,
+  "loc": "區級",
+  "addr": "台中市西屯區台灣大道三段251號9樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中崇德店": {
+  "city": "台中市",
+  "lat": 24.19871,
+  "lng": 120.75313,
+  "loc": "區級",
+  "addr": "台中市北屯區崇德十一路118號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中廣三SOGO店": {
+  "city": "台中市",
+  "lat": 24.14718,
+  "lng": 120.66577,
+  "loc": "區級",
+  "addr": "台中市西區台灣大道二段459號14樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中惠文路店": {
+  "city": "台中市",
+  "lat": 24.19091,
+  "lng": 120.6344,
+  "loc": "區級",
+  "addr": "台中市西屯區惠文路767號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中文心秀泰店": {
+  "city": "台中市",
+  "lat": 24.13054,
+  "lng": 120.61059,
+  "loc": "區級",
+  "addr": "台中市南屯區文心南路289號6樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中港三井OUTLET店": {
+  "city": "台中市",
+  "lat": 24.2575504,
+  "lng": 120.5176497,
+  "loc": "exact",
+  "addr": "台中市梧棲區台灣大道十段168號2樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台中福科路店": {
+  "city": "台中市",
+  "lat": 24.18047,
+  "lng": 120.61647,
+  "loc": "區級",
+  "addr": "台中市西屯區福科路231號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台北館前店": {
+  "city": "台北市",
+  "lat": 25.0299,
+  "lng": 121.51476,
+  "loc": "區級",
+  "addr": "台北市中正區館前路12號5樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台南FOCUS店": {
+  "city": "台南市",
+  "lat": 23.00622,
+  "lng": 120.20462,
+  "loc": "區級",
+  "addr": "台南市中西區中山路166號10樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台南中華西路店": {
+  "city": "台南市",
+  "lat": 23.0006,
+  "lng": 120.20374,
+  "loc": "區級",
+  "addr": "台南市中西區中華西路二段625號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 台南開元路店": {
+  "city": "台南市",
+  "lat": 23.02085,
+  "lng": 120.20266,
+  "loc": "區級",
+  "addr": "台南市北區開元路163號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 嘉義博愛路店": {
+  "city": "嘉義市",
+  "lat": 23.47505,
+  "lng": 120.42986,
+  "loc": "區級",
+  "addr": "嘉義市西區博愛路二段150號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 嘉義耐斯店": {
+  "city": "嘉義市",
+  "lat": 23.49161,
+  "lng": 120.47052,
+  "loc": "區級",
+  "addr": "嘉義市東區忠孝路600號3樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 土城金城路店": {
+  "city": "新北市",
+  "lat": 24.97427,
+  "lng": 121.45679,
+  "loc": "區級",
+  "addr": "新北市土城區金城路二段80號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 基隆中正信三店": {
+  "city": "基隆市",
+  "lat": 25.78461,
+  "lng": 123.51836,
+  "loc": "區級",
+  "addr": "基隆市中正區中正路3號1樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 宜蘭新月店": {
+  "city": "宜蘭縣",
+  "lat": 24.74546,
+  "lng": 121.75285,
+  "loc": "區級",
+  "addr": "宜蘭縣宜蘭市民權路二段38巷6號1樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 屏東勝利路店": {
+  "city": "屏東縣",
+  "lat": 22.66193,
+  "lng": 120.4794,
+  "loc": "區級",
+  "addr": "屏東縣屏東市勝利路130號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 彰化中華西路店": {
+  "city": "彰化縣",
+  "lat": 24.08139,
+  "lng": 120.55947,
+  "loc": "區級",
+  "addr": "彰化縣彰化市中華西路320號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 彰化員林大道店": {
+  "city": "彰化縣",
+  "lat": 23.99085,
+  "lng": 120.51636,
+  "loc": "市級",
+  "addr": "彰化縣員林市員林大道四段473號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 微風松高店": {
+  "city": "台北市",
+  "lat": 25.03308,
+  "lng": 121.57829,
+  "loc": "區級",
+  "addr": "台北市信義區松高路16號B1",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 新店威秀裕隆店": {
+  "city": "新北市",
+  "lat": 24.93266,
+  "lng": 121.52895,
+  "loc": "區級",
+  "addr": "新北市新店區中興路三段70號6樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 新竹巨城店": {
+  "city": "新竹市",
+  "lat": 24.79527,
+  "lng": 121.00212,
+  "loc": "區級",
+  "addr": "新竹市東區中央路229號2樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 新竹經國路店": {
+  "city": "新竹市",
+  "lat": 24.76022,
+  "lng": 120.92725,
+  "loc": "區級",
+  "addr": "新竹市香山區經國路三段33號2樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 新莊宏匯店": {
+  "city": "新北市",
+  "lat": 25.059944,
+  "lng": 121.449451,
+  "loc": "exact",
+  "addr": "新北市新莊區新北大道四段3號7樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 新莊思源路店": {
+  "city": "新北市",
+  "lat": 25.03604,
+  "lng": 121.45028,
+  "loc": "區級",
+  "addr": "新北市新莊區思源路168號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 松江南京店": {
+  "city": "台北市",
+  "lat": 25.06589,
+  "lng": 121.54217,
+  "loc": "區級",
+  "addr": "台北市中山區南京東路二段101號B1",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 板橋中山遠百店": {
+  "city": "新北市",
+  "lat": 25.00119,
+  "lng": 121.45469,
+  "loc": "區級",
+  "addr": "新北市板橋區中山路一段152號5樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 板橋遠科店": {
+  "city": "新北市",
+  "lat": 25.01386,
+  "lng": 121.45006,
+  "loc": "區級",
+  "addr": "新北市板橋區遠東路62之3號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 林口三井OUTLET店": {
+  "city": "新北市",
+  "lat": 25.11093,
+  "lng": 121.33665,
+  "loc": "區級",
+  "addr": "新北市林口區文化三路一段356號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 林園沿海路店": {
+  "city": "高雄市",
+  "lat": 22.50603,
+  "lng": 120.40276,
+  "loc": "區級",
+  "addr": "高雄市林園區沿海路二段166號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 桃園大興西店": {
+  "city": "桃園市",
+  "lat": 24.96712,
+  "lng": 121.21795,
+  "loc": "市級",
+  "addr": "桃園市桃園區大興西路三段259號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 桃園春日路店": {
+  "city": "桃園市",
+  "lat": 24.92458,
+  "lng": 121.24621,
+  "loc": "市級",
+  "addr": "桃園市桃園區春日路618-1號2樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 桃園遠百店": {
+  "city": "桃園市",
+  "lat": 24.92974,
+  "lng": 121.24171,
+  "loc": "市級",
+  "addr": "桃園市桃園區中正路20號11樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 桃園青埔店": {
+  "city": "桃園市",
+  "lat": 24.97078,
+  "lng": 121.23133,
+  "loc": "市級",
+  "addr": "桃園市中壢區領航南路三段395號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 楠梓藍田路店": {
+  "city": "高雄市",
+  "lat": 22.73663,
+  "lng": 120.29367,
+  "loc": "區級",
+  "addr": "高雄市楠梓區藍田路267號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 永和比漾店": {
+  "city": "新北市",
+  "lat": 25.00627,
+  "lng": 121.50591,
+  "loc": "區級",
+  "addr": "新北市永和區中山路一段238號4樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 永康永大路店": {
+  "city": "台南市",
+  "lat": 23.02379,
+  "lng": 120.2491,
+  "loc": "區級",
+  "addr": "台南市永康區永大路三段500號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 沙鹿中山路店": {
+  "city": "台中市",
+  "lat": 24.22471,
+  "lng": 120.56928,
+  "loc": "區級",
+  "addr": "台中市沙鹿區中山路520號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 淡水站前店": {
+  "city": "新北市",
+  "lat": 25.18608,
+  "lng": 121.45768,
+  "loc": "區級",
+  "addr": "新北市淡水區中山路8號5樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 竹北文興店": {
+  "city": "新竹縣",
+  "lat": 24.82276,
+  "lng": 120.99724,
+  "loc": "區級",
+  "addr": "新竹縣竹北市文興路一段301號2樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 羅東中山路店": {
+  "city": "宜蘭縣",
+  "lat": 24.68872,
+  "lng": 121.75605,
+  "loc": "區級",
+  "addr": "宜蘭縣羅東鎮中山路二段346號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 花蓮自由店": {
+  "city": "花蓮縣",
+  "lat": 24.00512,
+  "lng": 121.60716,
+  "loc": "區級",
+  "addr": "花蓮縣花蓮市自由街20號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 豐原太平洋店": {
+  "city": "台中市",
+  "lat": 24.23853,
+  "lng": 120.74213,
+  "loc": "區級",
+  "addr": "台中市豐原區復興路2號B2",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 頭份運動公園店": {
+  "city": "苗栗縣",
+  "lat": 24.52198,
+  "lng": 120.87717,
+  "loc": "市級",
+  "addr": "苗栗縣頭份市公北一路67號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄SKM Park店": {
+  "city": "高雄市",
+  "lat": 22.57778,
+  "lng": 120.30535,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中安路1-1號3樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄五福光華店": {
+  "city": "高雄市",
+  "lat": 22.63439,
+  "lng": 120.33521,
+  "loc": "區級",
+  "addr": "高雄市苓雅區五福一路38號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄夢時代店": {
+  "city": "高雄市",
+  "lat": 22.59772,
+  "lng": 120.31145,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路789號綠區B1",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄岡山店": {
+  "city": "高雄市",
+  "lat": 22.80505,
+  "lng": 120.28673,
+  "loc": "區級",
+  "addr": "高雄市岡山區捷安路25號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄時代大道店（全球旗艦店）": {
+  "city": "高雄市",
+  "lat": 22.58481,
+  "lng": 120.29988,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中山三路11號",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄漢神巨蛋店": {
+  "city": "高雄市",
+  "lat": 22.67393,
+  "lng": 120.30472,
+  "loc": "區級",
+  "addr": "高雄市左營區博愛二路777號7樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
+   }
+  ]
+ },
+ "藏壽司 高雄漢神本館店": {
+  "city": "高雄市",
+  "lat": 22.63558,
+  "lng": 120.28805,
+  "loc": "區級",
+  "addr": "高雄市前金區成功一路266-1號6樓",
+  "url": "https://kurasushi.tw/activities/588",
+  "ex": [
+   {
+    "t": "藏壽司 × 三麗鷗家族「泳池派對」",
+    "s": "2026/08/07",
+    "e": "2026/09/16",
+    "l": "https://kurasushi.tw/activities/588",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "三麗鷗家族",
+    "org": "亞洲藏壽司股份有限公司",
+    "lic": "Sanrio Co., Ltd.",
+    "mf": "藏壽司",
+    "ms": 63
    }
   ]
  },
@@ -1491,7 +3275,10 @@
     "l": "https://www.instagram.com/p/DaURh41Sp6r",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mofusand_r79_20260703.jpg",
     "cat2": "快閃店/Pop-up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "mofusand",
+    "org": "需人工確認",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1510,7 +3297,10 @@
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
+    "org": "回歸線娛樂 X 誠品生活",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1529,7 +3319,10 @@
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
+    "org": "回歸線娛樂 X 誠品生活",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1548,7 +3341,10 @@
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
+    "org": "回歸線娛樂 X 誠品生活",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1567,7 +3363,10 @@
     "l": "https://www.instagram.com/p/Daj62-JJU6Q",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
+    "org": "回歸線娛樂 X 誠品生活",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1586,7 +3385,9 @@
     "l": "https://www.farglory-oceanpark.com.tw/info-in/cc1zMAarQdpZ6xJB/607Yn54nx4Ms0PI0",
     "img": "https://www.farglory-oceanpark.com.tw/files/images/News/KV_2445X1729%20%281%29.png",
     "cat2": "活動/Event",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "進擊的巨人",
+    "lic": "木棉花"
    }
   ]
  },
@@ -1604,7 +3405,10 @@
     "e": "2026/10/24",
     "l": "https://irunner.biji.co/2026NeonGenesisEvangelion",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_run_2026_20261024.webp",
-    "cat2": "體驗活動/Experience Activity"
+    "cat2": "體驗活動/Experience Activity",
+    "ip": "新世紀福音戰士",
+    "org": "展通虹策略整合行銷股份有限公司",
+    "lic": "需人工確認（KV版權標示 ©khara）"
    }
   ]
  },
@@ -1623,7 +3427,10 @@
     "l": "https://www.instagram.com/p/DZZ0g9UpJHY/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rose_of_versailles_pier2_20260612.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "凡爾賽玫瑰",
+    "org": "高雄市政府文化局 X 回歸線",
+    "lic": "回歸線"
    }
   ]
  },
@@ -1641,7 +3448,10 @@
     "e": "2026/10/04",
     "l": "https://gnn.gamer.com.tw/detail.php?sn=308477",
     "img": "https://p2.bahamut.com.tw/B/2KU/89/fde0a9d0b7051c772d010d99fa1zi555.JPG",
-    "cat2": "體驗活動/Experience"
+    "cat2": "體驗活動/Experience",
+    "ip": "咒術迴戰（懷玉·玉折）",
+    "org": "需人工確認",
+    "lic": "羚邦 Medialink"
    }
   ]
  },
@@ -1660,7 +3470,10 @@
     "l": "https://www.instagram.com/p/DaU5z0TFPTd",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/primaniacs_dreammall_20260717.jpg",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "進擊的巨人／鬼滅之刃／One Piece等",
+    "org": "primaniacs",
+    "lic": "primaniacs"
    }
   ]
  },
@@ -1679,7 +3492,10 @@
     "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
     "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
     "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "異環",
+    "org": "FanFans Café",
+    "lic": "Hotta Studio（a Perfect World company）"
    }
   ]
  },
@@ -1698,7 +3514,10 @@
     "l": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/apothecary_diaries_exhibition_20260717.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "付費"
+    "fee": "付費",
+    "ip": "藥師少女的獨語",
+    "org": "INCUBASE Studio",
+    "lic": "INCUBASE Studio"
    },
    {
     "t": "頭文字D（Initial D）快閃店（第二站）",
@@ -1707,7 +3526,10 @@
     "l": "https://www.mofan.co.com/news-detail/133/",
     "img": "https://www.mofan.co.com/upload/news_b/ALL_news_26G14_g2uycgadbc.png",
     "cat2": "快閃店/Pop Up Store",
-    "fee": "免費"
+    "fee": "免費",
+    "ip": "頭文字D（Initial D）",
+    "org": "TRENDIC、INCUBASE Studio",
+    "lic": "講談社（KODANSHA，Licensed through Medialink）"
    }
   ]
  },
@@ -1727,6 +3549,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1748,6 +3573,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1769,6 +3597,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1790,6 +3621,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1811,6 +3645,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1832,6 +3669,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1853,6 +3693,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1874,6 +3717,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1895,6 +3741,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1916,6 +3765,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1937,6 +3789,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1958,6 +3813,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -1979,6 +3837,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2000,6 +3861,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2021,6 +3885,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2042,6 +3909,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2063,6 +3933,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2084,6 +3957,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2105,6 +3981,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
@@ -2126,6 +4005,9 @@
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dimdimsum_sanrio_20260713.jpg",
     "cat2": "主題餐廳/Theme Cafe",
     "fee": "付費",
+    "ip": "三麗鷗",
+    "org": "點點心",
+    "lic": "三麗鷗",
     "mf": "點點心",
     "ms": 20
    }
