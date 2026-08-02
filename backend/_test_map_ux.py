@@ -57,7 +57,10 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("style:{color:'#8fa0b5',weight:.7,fill:false,opacity:.5}", self.html)
         self.assertIn("const TOWN_C=", self.html)
         self.assertIn("function syncLabels()", self.html)
-        self.assertNotIn("L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'", self.html)
+        self.assertIn("function canUseWebGL()", self.html)
+        self.assertIn("function useRasterFallback()", self.html)
+        self.assertIn("if(L.maplibreGL&&canUseWebGL())", self.html)
+        self.assertIn("L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'", self.html)
 
     def test_pin_mode_restores_activity_form_visuals(self):
         for color in ("#3f8ad0", "#e05aa0", "#e08a3c", "#8560d8", "#5f7089"):
