@@ -17,7 +17,7 @@
 """
 import json, re, hashlib, urllib.request, datetime, os, sys, ssl, html
 from paths import path as P
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from concurrent.futures import ThreadPoolExecutor
 
 # 部分政府網站（如文化部 API）的憑證鏈缺少 Subject Key Identifier 欄位，
@@ -390,6 +390,77 @@ def stable_event_key(venue_name, title, start):
     return f"{_norm_key_text(venue_name)}|{_norm_key_text(title)}|{date}"
 
 
+_TRACKING_QUERY_KEYS = {
+    "fbclid", "gclid", "igsh", "mc_cid", "mc_eid", "ref", "source",
+}
+
+
+def canonical_activity_url(url):
+    """Return a stable activity URL without fragments or tracking parameters."""
+    raw = str(url or "").strip()
+    if not raw:
+        return ""
+    try:
+        parsed = urlparse(raw)
+        query = [
+            (key, value)
+            for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+            if not key.lower().startswith("utm_") and key.lower() not in _TRACKING_QUERY_KEYS
+        ]
+        path = parsed.path.rstrip("/") or "/"
+        return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), path, "", urlencode(query), ""))
+    except Exception:
+        return raw.split("#", 1)[0].rstrip("/")
+
+
+def event_group_id(event):
+    """Build the public activity-group id, preserving an explicit editorial id."""
+    explicit = str(event.get("id") or "").strip()
+    if explicit:
+        return explicit
+    year_match = re.search(r"\b(20\d{2})\b", str(event.get("s") or ""))
+    year = year_match.group(1) if year_match else ""
+    parts = (
+        _norm_key_text(event.get("t", "")).lower(),
+        canonical_activity_url(event.get("l", "")),
+        _norm_key_text(event.get("ip", "")).lower(),
+        _norm_key_text(event.get("org", "")).lower(),
+        year,
+    )
+    digest = hashlib.sha256("\x1f".join(parts).encode("utf-8")).hexdigest()[:16]
+    return f"auto-{digest}"
+
+
+def assign_event_group_ids(venues):
+    """Assign stable ids and reject conflicting core fields within a group."""
+    groups = {}
+    for venue in venues:
+        for event in venue.get("ex", []):
+            if event.get("c") != "ACG":
+                continue
+            event["id"] = event_group_id(event)
+            group = groups.setdefault(event["id"], [])
+            group.append((venue, event))
+
+    for event_id, occurrences in groups.items():
+        titles = {_norm_title(event.get("t", "")) for _, event in occurrences}
+        if len(titles) > 1:
+            raise RuntimeError(f"活動群組 {event_id} 有不同標題: {sorted(titles)}")
+        fees = {event.get("fee") for _, event in occurrences if event.get("fee")}
+        if len(fees) > 1:
+            raise RuntimeError(f"活動群組 {event_id} 的付費狀態衝突: {sorted(fees)}")
+        for field in ("ip", "org", "lic"):
+            values = {str(event.get(field) or "").strip() for _, event in occurrences if event.get(field)}
+            if len(values) > 1:
+                log(f"⚠️ 活動群組 {event_id} 的 {field} 欄位有多個值: {sorted(values)}")
+            if values:
+                preferred = sorted(values, key=lambda value: (-len(value), value))[0]
+                for _, event in occurrences:
+                    if not event.get(field):
+                        event[field] = preferred
+    return groups
+
+
 def load_rejected_keys():
     """讀 review_decisions.json 的 rejected 名單，回傳穩定鍵集合；檔案缺失/壞掉時回空集合（不擋管線）。"""
     path = P("review_decisions.json")
@@ -733,6 +804,16 @@ def main():
                 if end and end < TODAY: continue   # 過期略過
                 # 去重：官網（official）為主，手動若標題與官網重複則不寫入（跨場館名比對）
                 if skip_titles and _norm_title(e.get("t", "")) in skip_titles:
+                    # 官網保留活動本體，但仍補上 Excel 維護的穩定 ID 與權利資訊。
+                    # 否則每次完整更新都會因去重而把 Discover/地圖分組所需的 metadata 洗掉。
+                    normalized = _norm_title(e.get("t", ""))
+                    for venue in venues:
+                        for existing in venue.get("ex", []):
+                            if _norm_title(existing.get("t", "")) != normalized:
+                                continue
+                            for field in ("id", "ip", "org", "lic"):
+                                if e.get(field) and not existing.get(field):
+                                    existing[field] = e[field]
                     _skipped += 1
                     continue
                 ev = {"t": e["t"], "s": e.get("s", ""), "e": end, "l": e.get("l", ""),
@@ -742,6 +823,9 @@ def main():
                     ev["cat2"] = e["cat2"]
                 if e.get("fee") in ("免費", "付費"):
                     ev["fee"] = e["fee"]
+                for field in ("id", "ip", "org", "lic"):
+                    if e.get(field):
+                        ev[field] = e[field]
                 if e.get("mf") and int(e.get("ms", 0) or 0) > 10:
                     ev["mf"] = e["mf"]
                     ev["ms"] = int(e["ms"])
@@ -1095,6 +1179,11 @@ def main():
     # 審核決策持久層：使用者於 PR 審核中拒絕（刪掉）的活動，依穩定鍵於輸出前過濾，
     # 確保下次自動更新不會再冒出來。名單為空或檔案不存在時完全不影響輸出。
     venues = filter_rejected_events(venues, load_rejected_keys())
+
+    # Discover 以活動群組為單位；Map 仍保留場館 occurrence。所有公開 ACG 活動
+    # 必須在輸出前取得穩定 id，並驗證同群組的標題與費用不衝突。
+    groups = assign_event_group_ids(venues)
+    log("活動群組完成:", len(groups), "組")
 
     venues.sort(key=lambda v: -len(v['ex']))
     out = {'updated': TODAY, 'source': '文化部開放資料 藝文活動-展覽 + 編輯整理重點館/常設層', 'venues': venues}
