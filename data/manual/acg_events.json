@@ -3532,5 +3532,100 @@
   "_links": {
    "活動連結 / Activity link": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/kurasushi_sanrio_20260807.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "付費狀態 / Admission": "付費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-07 00:00:00",
+  "結束日期 / End Date": "2026-09-16 00:00:00",
+  "IP": "三麗鷗家族",
+  "活動名稱 / Activity Name": "藏壽司 × 三麗鷗家族「泳池派對」",
+  "地點 / Location": "全台63間藏壽司門市（詳細地址清單見 data/manual/藏壽司門市地址_20260802.json，來源：kurasushi.tw/shops，2026/08/02查詢）",
+  "主辦方 / Organizer": "亞洲藏壽司股份有限公司",
+  "授權單位 / Authorized unit (Licensor)": "Sanrio Co., Ltd.",
+  "活動連結 / Activity link": "https://kurasushi.tw/activities/588",
+  "多店活動 / Multi-store": "藏壽司",
+  "門市資料 / Store List": "data/manual/藏壽司門市地址_20260802.json",
+  "門市名稱前綴 / Store Prefix": "藏壽司",
+  "備註 / NOTE": "官方活動頁載明2026/08/07–09/16於全台藏壽司推出三麗鷗家族18款限定扭蛋；核心活動需用餐消費，故標記付費。官方門市頁於2026/08/02列63間門市，完整地址另存供本次與未來藏壽司聯名活動重用。【KV驗證 2026/08/02】Daniel提供官方Instagram輪播原圖；已下載並目視確認為2048×2048，含藏壽司×SANRIO CHARACTERS、8/7–9/16、18款限定扭蛋與©2026 SANRIO授權標示。",
+  "IP_std": "三麗鷗",
+  "Licensor_std": "Sanrio",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://kurasushi.tw/activities/588"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bandai_namco_journey_taiwan_20260731.jpg",
+  "類型 / Category": "展覽/Exhibition",
+  "活動類別 / Activity Category": "實體體驗/Experience",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-31 00:00:00",
+  "結束日期 / End Date": "2026-08-09 00:00:00",
+  "IP": "Bandai Namco（鋼彈、航海王、哥吉拉、Tamagotchi、超人力霸王）",
+  "活動名稱 / Activity Name": "Bandai Namco Asia JOURNEY TAIWAN",
+  "地點 / Location": "統一時代百貨台北店（臺北市信義區忠孝東路五段8號）",
+  "主辦方 / Organizer": "Bandai Namco Asia",
+  "授權單位 / Authorized unit (Licensor)": "Bandai Namco Holdings Inc.及各作品權利人",
+  "活動連結 / Activity link": "https://journey2026.bandainamcoth.tw/",
+  "備註 / NOTE": "官方網站載明2026/07/31–08/09於統一時代百貨台北店及DREAM PLAZA舉辦，免費入場。本筆為統一時代百貨台北店；共2筆場地，共用已驗證官方KV。",
+  "IP_std": "Bandai Namco",
+  "Licensor_std": "Bandai Namco",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://journey2026.bandainamcoth.tw/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bandai_namco_journey_taiwan_20260731.jpg",
+  "類型 / Category": "展覽/Exhibition",
+  "活動類別 / Activity Category": "實體體驗/Experience",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-31 00:00:00",
+  "結束日期 / End Date": "2026-08-09 00:00:00",
+  "IP": "Bandai Namco（鋼彈、航海王、哥吉拉、Tamagotchi、超人力霸王）",
+  "活動名稱 / Activity Name": "Bandai Namco Asia JOURNEY TAIWAN",
+  "地點 / Location": "DREAM PLAZA（臺北市信義區松高路11號）",
+  "主辦方 / Organizer": "Bandai Namco Asia",
+  "授權單位 / Authorized unit (Licensor)": "Bandai Namco Holdings Inc.及各作品權利人",
+  "活動連結 / Activity link": "https://journey2026.bandainamcoth.tw/",
+  "備註 / NOTE": "官方網站載明2026/07/31–08/09於統一時代百貨台北店及DREAM PLAZA舉辦，免費入場。本筆為DREAM PLAZA；共2筆場地，共用已驗證官方KV。",
+  "IP_std": "Bandai Namco",
+  "Licensor_std": "Bandai Namco",
+  "月份": "2026-07-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://journey2026.bandainamcoth.tw/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/peanuts_summer_20260618.jpg",
+  "類型 / Category": "展覽/Exhibition",
+  "活動類別 / Activity Category": "快閃店/Pop-up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q2",
+  "開始日期 / Start Date": "2026-06-18 00:00:00",
+  "結束日期 / End Date": "2026-09-14 00:00:00",
+  "IP": "PEANUTS（Snoopy）",
+  "活動名稱 / Activity Name": "PEANUTS夏日海灘祭",
+  "地點 / Location": "華山1914文化創意產業園區 中4A館（臺北市中正區八德路一段1號）",
+  "主辦方 / Organizer": "華山1914文化創意產業園區",
+  "授權單位 / Authorized unit (Licensor)": "Peanuts Worldwide LLC",
+  "活動連結 / Activity link": "https://www.huashan1914.com/w/huashan1914/exhibition_26061109500377541",
+  "備註 / NOTE": "華山官方活動頁載明2026/06/18–09/14於中4A館舉辦並可免費入場；商品購買為選擇性消費。【KV驗證 2026/08/02】自華山官方活動頁下載1920×1080主視覺，圖面直接標示場地、期間與©2026 Peanuts Worldwide LLC。此人工列用於將同名官方場館活動判為ACG；地圖圖釘仍由華山官方來源維護。",
+  "IP_std": "PEANUTS",
+  "Licensor_std": "Peanuts Worldwide",
+  "月份": "2026-06-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.huashan1914.com/w/huashan1914/exhibition_26061109500377541"
+  }
  }
 ]

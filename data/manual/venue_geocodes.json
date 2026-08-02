@@ -1,4 +1,148 @@
 {
+ "bb.q CHICKEN 三重三和店": {
+  "la": 25.079326,
+  "lo": 121.481494,
+  "source": "address_geocode",
+  "display_name": "新北市三重區三和路四段398號, 241069",
+  "type": "PointAddress",
+  "addr_key": "新北市三重區三和路四段398之1號1樓"
+ },
+ "bb.q CHICKEN 中和中漢店": {
+  "la": 25.006584,
+  "lo": 121.47232,
+  "source": "address_geocode",
+  "display_name": "新北市中和區中山路三段186號, 235011",
+  "type": "PointAddress",
+  "addr_key": "新北市中和區中山路3段186號"
+ },
+ "bb.q CHICKEN 公館店": {
+  "la": 25.0156631,
+  "lo": 121.5315247,
+  "source": "address_geocode",
+  "display_name": "臺北市中正區汀州路三段153號, 100047",
+  "type": "StreetAddress",
+  "addr_key": "臺北市中正區汀洲路3段153、155號1樓"
+ },
+ "bb.q CHICKEN 南紡購物店": {
+  "la": 22.990582,
+  "lo": 120.233455,
+  "source": "address_geocode",
+  "display_name": "臺南市東區中華東路一段366號, 701",
+  "type": "PointAddress",
+  "addr_key": "臺南市東區中華東路1段366號5樓"
+ },
+ "bb.q CHICKEN 台中崇德店": {
+  "la": 24.1707868,
+  "lo": 120.6851669,
+  "source": "address_geocode",
+  "display_name": "臺中市崇德路二段67號, 406028",
+  "type": "PointAddress",
+  "addr_key": "臺中市北屯區崇德路2段67號1樓"
+ },
+ "bb.q CHICKEN 松山店": {
+  "la": 25.0403043,
+  "lo": 121.5780041,
+  "source": "address_geocode",
+  "display_name": "臺北市信義區松光里松山路435號, 11083",
+  "type": "PointAddress",
+  "addr_key": "臺北市信義區松山路435號"
+ },
+ "bb.q CHICKEN 板橋板農店": {
+  "la": 25.008633,
+  "lo": 121.45876,
+  "source": "address_geocode",
+  "display_name": "新北市府中路29號, 220215",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區府中路29之1號"
+ },
+ "bb.q CHICKEN 桃園統領廣場店": {
+  "la": 24.991113,
+  "lo": 121.312523,
+  "source": "address_geocode",
+  "display_name": "桃園市桃園站前商圈中正路61號, 330002",
+  "type": "PointAddress",
+  "addr_key": "桃園市桃園區中正路61號8樓"
+ },
+ "bb.q CHICKEN 洲子店": {
+  "la": 25.0792389,
+  "lo": 121.5691082,
+  "source": "address_geocode",
+  "display_name": "臺北市內湖區西湖里瑞光路517號, 11492",
+  "type": "PointAddress",
+  "addr_key": "臺北市內湖區瑞光路517號"
+ },
+ "bb.q CHICKEN 芝山店": {
+  "la": 25.1024587,
+  "lo": 121.5229631,
+  "source": "address_geocode",
+  "display_name": "臺北市士林區德行里福華路118號, 11158",
+  "type": "PointAddress",
+  "addr_key": "臺北市士林區福華路118號1樓"
+ },
+ "bb.q CHICKEN 鳳山青年店": {
+  "la": 22.63988,
+  "lo": 120.3509,
+  "source": "address_geocode",
+  "display_name": "高雄市鳳山區青年路二段305號, 830013",
+  "type": "PointAddress",
+  "addr_key": "高雄市鳳山區青年路2段305號1樓"
+ },
+ "大安森林公園": {
+  "la": 25.030152,
+  "lo": 121.5353507,
+  "source": "address_geocode",
+  "display_name": "臺北市大安區龍門里新生南路二段1號, 10657",
+  "type": "PointAddress",
+  "addr_key": "臺北市大安區新生南路二段1號"
+ },
+ "肉的長谷川 SOGO忠孝店": {
+  "la": 25.0417384,
+  "lo": 121.5449554,
+  "source": "address_geocode",
+  "display_name": "臺北市大安區忠孝復興SOGO忠孝東路四段45號, 106070",
+  "type": "StreetAddress",
+  "addr_key": "臺北市大安區忠孝東路四段45號B1美食街"
+ },
+ "肉的長谷川 南港LaLaPort店": {
+  "la": 25.0586227,
+  "lo": 121.6169879,
+  "source": "address_geocode",
+  "display_name": "臺北市南港區經貿二路105號, 115018",
+  "type": "StreetAddress",
+  "addr_key": "臺北市南港區經貿二路105巷1號5樓美食街"
+ },
+ "肉的長谷川 台中新光三越中港店": {
+  "la": 24.1650058,
+  "lo": 120.6433984,
+  "source": "address_geocode",
+  "display_name": "臺中市臺灣大道三段301號, 407550",
+  "type": "PointAddress",
+  "addr_key": "臺中市西屯區臺灣大道三段301號12樓美食街"
+ },
+ "肉的長谷川 誠品南西店": {
+  "la": 25.0523804,
+  "lo": 121.5212653,
+  "source": "address_geocode",
+  "display_name": "臺北市中山區南西商圈南京西路14號, 104002",
+  "type": "StreetAddress",
+  "addr_key": "臺北市中山區南京西路14號B1美食街"
+ },
+ "肉的長谷川 高雄漢神巨蛋店": {
+  "la": 22.669549,
+  "lo": 120.303159,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區博愛二路777號, 813302",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區博愛二路777號B1美食街"
+ },
+ "馬場町紀念公園": {
+  "la": 25.0199329,
+  "lo": 121.5035063,
+  "source": "address_geocode",
+  "display_name": "臺北市萬華區青年路188巷1弄7號, 108",
+  "type": "StreetAddress",
+  "addr_key": "臺北市萬華區青年路188巷1弄7號"
+ },
  "索卡藝術": {
   "la": 25.07965141055217,
   "lo": 121.56333144232764,
@@ -1816,5 +1960,437 @@
   "display_name": "高雄市左營區博愛二路777號, 813302",
   "type": "PointAddress",
   "addr_key": "高雄市左營區博愛二路777號4F"
+ },
+ "DREAM PLAZA": {
+  "la": 25.0395151,
+  "lo": 121.5652423,
+  "source": "address_geocode",
+  "display_name": "台北市信義區興雅里松高路11號, 11073",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松高路11號"
+ },
+ "統一時代百貨台北店": {
+  "la": 25.0408646,
+  "lo": 121.565417,
+  "source": "address_geocode",
+  "display_name": "台北市信義區興雅里忠孝東路五段8號, 11065",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區忠孝東路五段8號"
+ },
+ "藏壽司 三峽學成店": {
+  "la": 24.9442053,
+  "lo": 121.3783061,
+  "source": "address_geocode",
+  "display_name": "新北市三峽區學成路398號, 237020",
+  "type": "PointAddress",
+  "addr_key": "新北市三峽區學成路398號4樓"
+ },
+ "藏壽司 三重捷運路店": {
+  "la": 25.056703,
+  "lo": 121.486342,
+  "source": "address_geocode",
+  "display_name": "新北市三重區捷運路1號, 241014",
+  "type": "PointAddress",
+  "addr_key": "新北市三重區捷運路1號"
+ },
+ "藏壽司 三重集賢路店": {
+  "la": 25.08912,
+  "lo": 121.490603,
+  "source": "address_geocode",
+  "display_name": "新北市三重區集賢路99號, 241765",
+  "type": "PointAddress",
+  "addr_key": "新北市三重區集賢路99號"
+ },
+ "藏壽司 中和橋和店": {
+  "la": 25.005189,
+  "lo": 121.488175,
+  "source": "address_geocode",
+  "display_name": "新北市中和區橋和路5號, 235029",
+  "type": "PointAddress",
+  "addr_key": "新北市中和區橋和路5號"
+ },
+ "藏壽司 中壢大江店": {
+  "la": 24.974727,
+  "lo": 121.2360304,
+  "source": "address_geocode",
+  "display_name": "桃園市中壢區中園路501號, 320675",
+  "type": "StreetAddressExt",
+  "addr_key": "桃園市中壢區中園路二段501號B1"
+ },
+ "藏壽司 中壢站前店": {
+  "la": 24.9541787,
+  "lo": 121.2240037,
+  "source": "address_geocode",
+  "display_name": "桃園市中壢區中正路51號, 320001",
+  "type": "PointAddress",
+  "addr_key": "桃園市中壢區中正路51號3樓"
+ },
+ "藏壽司 八德興豐路店": {
+  "la": 24.9293421,
+  "lo": 121.2795759,
+  "source": "address_geocode",
+  "display_name": "桃園市八德區興豐路150號, 334014",
+  "type": "StreetAddressExt",
+  "addr_key": "桃園市八德區興豐路150號"
+ },
+ "藏壽司 南港CITYLINK店": {
+  "la": 25.0526702,
+  "lo": 121.6072083,
+  "source": "address_geocode",
+  "display_name": "台北市南港區中南里忠孝東路七段369號, 11561",
+  "type": "PointAddress",
+  "addr_key": "台北市南港區忠孝東路七段369號3樓"
+ },
+ "藏壽司 台中中清路店": {
+  "la": 24.1868359,
+  "lo": 120.6631052,
+  "source": "address_geocode",
+  "display_name": "台中市中清路二段777號, 406040",
+  "type": "PointAddress",
+  "addr_key": "台中市北屯區中清路二段777號"
+ },
+ "藏壽司 台中大遠百店": {
+  "la": 24.1646717,
+  "lo": 120.6445694,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道三段251號, 407550",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區台灣大道三段251號9樓"
+ },
+ "藏壽司 台中崇德店": {
+  "la": 24.1893775,
+  "lo": 120.6870695,
+  "source": "address_geocode",
+  "display_name": "台中市崇德十一路118號, 406034",
+  "type": "StreetAddress",
+  "addr_key": "台中市北屯區崇德十一路118號"
+ },
+ "藏壽司 台中廣三SOGO店": {
+  "la": 24.1552672,
+  "lo": 120.6617778,
+  "source": "address_geocode",
+  "display_name": "台中市台灣大道二段459號, 403407",
+  "type": "PointAddress",
+  "addr_key": "台中市西區台灣大道二段459號14樓"
+ },
+ "藏壽司 台中惠文路店": {
+  "la": 24.155291,
+  "lo": 120.6438069,
+  "source": "address_geocode",
+  "display_name": "台中市惠文路767號, 407028",
+  "type": "StreetAddress",
+  "addr_key": "台中市西屯區惠文路767號"
+ },
+ "藏壽司 台中文心秀泰店": {
+  "la": 24.129285,
+  "lo": 120.646017,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區文心南路289號, 408008",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區文心南路289號6樓"
+ },
+ "藏壽司 台中福科路店": {
+  "la": 24.1812466,
+  "lo": 120.6264272,
+  "source": "address_geocode",
+  "display_name": "台中市西屯區福科路231號, 407009",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區福科路231號"
+ },
+ "藏壽司 台南FOCUS店": {
+  "la": 22.9956299,
+  "lo": 120.2101669,
+  "source": "address_geocode",
+  "display_name": "台南市台南站前商圈中山路166號, 700007",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區中山路166號10樓"
+ },
+ "藏壽司 台南中華西路店": {
+  "la": 23.0002709,
+  "lo": 120.18657,
+  "source": "address_geocode",
+  "display_name": "台南市中華西路二段625號, 700026",
+  "type": "PointAddress",
+  "addr_key": "台南市中西區中華西路二段625號"
+ },
+ "藏壽司 台南開元路店": {
+  "la": 23.007312,
+  "lo": 120.218977,
+  "source": "address_geocode",
+  "display_name": "台南市北區開元路163號, 704002",
+  "type": "PointAddress",
+  "addr_key": "台南市北區開元路163號"
+ },
+ "藏壽司 嘉義博愛路店": {
+  "la": 23.4818064,
+  "lo": 120.4396035,
+  "source": "address_geocode",
+  "display_name": "嘉義市西區博愛路二段150號, 600075",
+  "type": "StreetAddressExt",
+  "addr_key": "嘉義市西區博愛路二段150號"
+ },
+ "藏壽司 嘉義耐斯店": {
+  "la": 23.496523,
+  "lo": 120.4525275,
+  "source": "address_geocode",
+  "display_name": "嘉義市忠孝路600號, 600052",
+  "type": "PointAddress",
+  "addr_key": "嘉義市東區忠孝路600號3樓"
+ },
+ "藏壽司 土城金城路店": {
+  "la": 24.980435,
+  "lo": 121.45334,
+  "source": "address_geocode",
+  "display_name": "新北市土城區金城路二段80號, 236043",
+  "type": "PointAddress",
+  "addr_key": "新北市土城區金城路二段80號"
+ },
+ "藏壽司 基隆中正信三店": {
+  "la": 25.1392405,
+  "lo": 121.7533893,
+  "source": "address_geocode",
+  "display_name": "基隆市中正路31號, 202",
+  "type": "PointAddress",
+  "addr_key": "基隆市中正區中正路3號1樓"
+ },
+ "藏壽司 宜蘭新月店": {
+  "la": 24.7543756,
+  "lo": 121.7500262,
+  "source": "address_geocode",
+  "display_name": "宜蘭縣宜蘭市民權路二段38巷6號, 260",
+  "type": "PointAddress",
+  "addr_key": "宜蘭縣宜蘭市民權路二段38巷6號1樓"
+ },
+ "藏壽司 屏東勝利路店": {
+  "la": 22.679528,
+  "lo": 120.484344,
+  "source": "address_geocode",
+  "display_name": "屏東縣勝利路130號, 900067",
+  "type": "PointAddress",
+  "addr_key": "屏東縣屏東市勝利路130號"
+ },
+ "藏壽司 彰化中華西路店": {
+  "la": 24.070492,
+  "lo": 120.5282487,
+  "source": "address_geocode",
+  "display_name": "彰化縣中華西路320號, 500015",
+  "type": "StreetAddress",
+  "addr_key": "彰化縣彰化市中華西路320號"
+ },
+ "藏壽司 彰化員林大道店": {
+  "la": 23.9723164,
+  "lo": 120.5722063,
+  "source": "address_geocode",
+  "display_name": "彰化縣員林市員林大道四段473號, 510020",
+  "type": "StreetAddress",
+  "addr_key": "彰化縣員林市員林大道四段473號"
+ },
+ "藏壽司 微風松高店": {
+  "la": 25.0387288,
+  "lo": 121.567277,
+  "source": "address_geocode",
+  "display_name": "台北市信義區西村里松高路16號, 11073",
+  "type": "PointAddress",
+  "addr_key": "台北市信義區松高路16號B1"
+ },
+ "藏壽司 新竹巨城店": {
+  "la": 24.809384,
+  "lo": 120.975509,
+  "source": "address_geocode",
+  "display_name": "新竹市東區中央路229號, 300197",
+  "type": "PointAddress",
+  "addr_key": "新竹市東區中央路229號2樓"
+ },
+ "藏壽司 新竹經國路店": {
+  "la": 24.7995904,
+  "lo": 120.9538841,
+  "source": "address_geocode",
+  "display_name": "新竹市香山區經國路三段33號, 300022",
+  "type": "PointAddress",
+  "addr_key": "新竹市香山區經國路三段33號2樓"
+ },
+ "藏壽司 新莊思源路店": {
+  "la": 25.048912,
+  "lo": 121.460344,
+  "source": "address_geocode",
+  "display_name": "新北市新莊區思源路168號, 242033",
+  "type": "PointAddress",
+  "addr_key": "新北市新莊區思源路168號"
+ },
+ "藏壽司 松江南京店": {
+  "la": 25.0521785,
+  "lo": 121.5325997,
+  "source": "address_geocode",
+  "display_name": "台北市中山區南京東路二段101號, 104089",
+  "type": "StreetAddress",
+  "addr_key": "台北市中山區南京東路二段101號B1"
+ },
+ "藏壽司 板橋中山遠百店": {
+  "la": 25.01104,
+  "lo": 121.464423,
+  "source": "address_geocode",
+  "display_name": "新北市中山路一段152號, 220073",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區中山路一段152號5樓"
+ },
+ "藏壽司 林園沿海路店": {
+  "la": 22.5007394,
+  "lo": 120.3964213,
+  "source": "address_geocode",
+  "display_name": "高雄市林園區沿海路二段166號, 832005",
+  "type": "StreetAddress",
+  "addr_key": "高雄市林園區沿海路二段166號"
+ },
+ "藏壽司 桃園大興西店": {
+  "la": 25.0034561,
+  "lo": 121.2884746,
+  "source": "address_geocode",
+  "display_name": "桃園市大興西路三段259號, 330",
+  "type": "StreetAddressExt",
+  "addr_key": "桃園市桃園區大興西路三段259號"
+ },
+ "藏壽司 桃園春日路店": {
+  "la": 25.008732,
+  "lo": 121.3116637,
+  "source": "address_geocode",
+  "display_name": "桃園市春日路618-1號, 330017",
+  "type": "PointAddress",
+  "addr_key": "桃園市桃園區春日路618-1號2樓"
+ },
+ "藏壽司 桃園遠百店": {
+  "la": 25.044295,
+  "lo": 121.294049,
+  "source": "address_geocode",
+  "display_name": "桃園市蘆竹區中正路20號, 338023",
+  "type": "PointAddress",
+  "addr_key": "桃園市桃園區中正路20號11樓"
+ },
+ "藏壽司 桃園青埔店": {
+  "la": 25.0102442,
+  "lo": 121.2200924,
+  "source": "address_geocode",
+  "display_name": "桃園市中厝領航南路三段, 320016",
+  "type": "StreetName",
+  "addr_key": "桃園市中壢區領航南路三段395號"
+ },
+ "藏壽司 楠梓藍田路店": {
+  "la": 22.7269275,
+  "lo": 120.2929178,
+  "source": "address_geocode",
+  "display_name": "高雄市楠梓區藍田路267號, 811028",
+  "type": "StreetAddress",
+  "addr_key": "高雄市楠梓區藍田路267號"
+ },
+ "藏壽司 永和比漾店": {
+  "la": 25.0078365,
+  "lo": 121.5076461,
+  "source": "address_geocode",
+  "display_name": "新北市永和區中山路一段238號, 234011",
+  "type": "PointAddress",
+  "addr_key": "新北市永和區中山路一段238號4樓"
+ },
+ "藏壽司 永康永大路店": {
+  "la": 23.0366911,
+  "lo": 120.2593024,
+  "source": "address_geocode",
+  "display_name": "台南市永康區永大路三段500號, 710048",
+  "type": "StreetAddressExt",
+  "addr_key": "台南市永康區永大路三段500號"
+ },
+ "藏壽司 沙鹿中山路店": {
+  "la": 24.2488618,
+  "lo": 120.564909,
+  "source": "address_geocode",
+  "display_name": "台中市沙鹿區中山路520號, 433106",
+  "type": "StreetAddressExt",
+  "addr_key": "台中市沙鹿區中山路520號"
+ },
+ "藏壽司 淡水站前店": {
+  "la": 25.170418,
+  "lo": 121.442545,
+  "source": "address_geocode",
+  "display_name": "新北市淡水區中山路85號, 251011",
+  "type": "PointAddress",
+  "addr_key": "新北市淡水區中山路8號5樓"
+ },
+ "藏壽司 竹北文興店": {
+  "la": 24.8087394,
+  "lo": 121.0325503,
+  "source": "address_geocode",
+  "display_name": "新竹縣文興路一段301號, 302052",
+  "type": "PointAddress",
+  "addr_key": "新竹縣竹北市文興路一段301號2樓"
+ },
+ "藏壽司 羅東中山路店": {
+  "la": 24.6745349,
+  "lo": 121.7783061,
+  "source": "address_geocode",
+  "display_name": "宜蘭縣羅東鎮中山路二段346號, 265012",
+  "type": "StreetAddress",
+  "addr_key": "宜蘭縣羅東鎮中山路二段346號"
+ },
+ "藏壽司 花蓮自由店": {
+  "la": 23.9738684,
+  "lo": 121.608113,
+  "source": "address_geocode",
+  "display_name": "花蓮縣自由街20號, 970013",
+  "type": "StreetAddress",
+  "addr_key": "花蓮縣花蓮市自由街20號"
+ },
+ "藏壽司 豐原太平洋店": {
+  "la": 24.2507263,
+  "lo": 120.7208161,
+  "source": "address_geocode",
+  "display_name": "台中市豐原區豐原廟東復興商圈復興路2號, 420403",
+  "type": "StreetAddress",
+  "addr_key": "台中市豐原區復興路2號B2"
+ },
+ "藏壽司 頭份運動公園店": {
+  "la": 24.6917144,
+  "lo": 120.891058,
+  "source": "address_geocode",
+  "display_name": "苗栗縣頭份市公北一路, 351",
+  "type": "StreetName",
+  "addr_key": "苗栗縣頭份市公北一路67號"
+ },
+ "藏壽司 高雄SKM Park店": {
+  "la": 22.581273,
+  "lo": 120.329602,
+  "source": "address_geocode",
+  "display_name": "高雄市前鎮區中安路1號, 806035",
+  "type": "PointAddress",
+  "addr_key": "高雄市前鎮區中安路1-1號3樓"
+ },
+ "藏壽司 高雄五福光華店": {
+  "la": 22.6279094,
+  "lo": 120.3150706,
+  "source": "address_geocode",
+  "display_name": "高雄市五福一路38號, 802019",
+  "type": "StreetAddress",
+  "addr_key": "高雄市苓雅區五福一路38號"
+ },
+ "藏壽司 高雄時代大道店（全球旗艦店）": {
+  "la": 22.5959552,
+  "lo": 120.315745,
+  "source": "address_geocode",
+  "display_name": "高雄市前鎮區中山三路11號, 806025",
+  "type": "StreetAddressExt",
+  "addr_key": "高雄市前鎮區中山三路11號"
+ },
+ "藏壽司 高雄漢神巨蛋店": {
+  "la": 22.669549,
+  "lo": 120.303159,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區博愛二路777號, 813302",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區博愛二路777號7樓"
+ },
+ "藏壽司 高雄漢神本館店": {
+  "la": 22.619148,
+  "lo": 120.296095,
+  "source": "address_geocode",
+  "display_name": "高雄市前金區成功一路266-1號, 801747",
+  "type": "PointAddress",
+  "addr_key": "高雄市前金區成功一路266-1號6樓"
  }
 }

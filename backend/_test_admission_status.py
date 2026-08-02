@@ -8,7 +8,7 @@ import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VALID_FEES = {"免費", "付費"}
-TODAY = datetime.date(2026, 8, 1)
+TODAY = datetime.date(2026, 8, 2)
 
 
 def load(relative_path):
@@ -43,7 +43,8 @@ class AdmissionStatusTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertIn(record.get("fee"), VALID_FEES)
                 self.assertTrue(str(record.get("source") or "").startswith("https://"))
-                self.assertEqual(record.get("checked"), "2026-08-01")
+                checked = datetime.date.fromisoformat(record.get("checked"))
+                self.assertLessEqual(checked, TODAY)
                 self.assertTrue(record.get("basis"))
 
     def test_every_current_acg_map_event_has_a_fee_badge_value(self):

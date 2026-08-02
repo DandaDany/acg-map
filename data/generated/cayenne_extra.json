@@ -114,8 +114,15 @@
   },
   "凱岩咖啡 - 永康店": {
    "addr": "台北市大安區金華街243巷27號1樓",
-   "url": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22",
+   "url": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24",
    "ex": [
+    {
+     "t": "蛋仔派對 x 凱岩主題餐廳",
+     "s": "2026/08/07",
+     "e": "2026/09/06",
+     "l": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24",
+     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/egg_party_cayenne_20260807.jpg"
+    },
     {
      "t": "賽爾號 x 凱岩主題餐廳",
      "s": "2026/06/12",

@@ -34,6 +34,9 @@ VERIFIED = {
     "Tamagotchi電子雞30週年紀念快閃店": "tamagotchi_taichung_20260727.jpg",
     "primaniacs 夢時代POPUP 2026": "primaniacs_dreammall_20260717.jpg",
     "點點心×三麗鷗「萌友來點心」": "dimdimsum_sanrio_20260713.jpg",
+    "藏壽司 × 三麗鷗家族「泳池派對」": "kurasushi_sanrio_20260807.jpg",
+    "Bandai Namco Asia JOURNEY TAIWAN": "bandai_namco_journey_taiwan_20260731.jpg",
+    "PEANUTS夏日海灘祭": "peanuts_summer_20260618.jpg",
 }
 
 
@@ -69,6 +72,7 @@ class VerifiedEventKvTests(unittest.TestCase):
         expected = {
             "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22": "seer_cayenne_20260612.jpg",
             "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=23": "maplestory_cayenne_20260716.jpg",
+            "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24": "egg_party_cayenne_20260807.jpg",
         }
         for source, filename in expected.items():
             with self.subTest(source=source):
@@ -103,10 +107,11 @@ class VerifiedEventKvTests(unittest.TestCase):
         )
         self.assertIsNone(row.get("KV"))
 
-    def test_verified_images_reach_all_45_map_pins(self):
+    def test_verified_images_reach_all_112_map_pins(self):
         expected_titles = set(VERIFIED) | {
             "楓之谷 x 凱岩主題餐廳",
             "賽爾號 x 凱岩主題餐廳",
+            "蛋仔派對 x 凱岩主題餐廳",
         }
         pins = [
             event
@@ -115,7 +120,7 @@ class VerifiedEventKvTests(unittest.TestCase):
             if event.get("t") in expected_titles
         ]
         self.assertEqual({event["t"] for event in pins}, expected_titles)
-        self.assertEqual(len(pins), 45)
+        self.assertEqual(len(pins), 112)
         for event in pins:
             self.assertTrue(
                 str(event.get("img") or "").startswith(RAW_PREFIX),
