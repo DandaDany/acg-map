@@ -1420,6 +1420,50 @@
    }
   ]
  },
+ "有點市松菸旗艦店／松菸 island 133": {
+  "city": "台北市",
+  "lat": 25.01918,
+  "lng": 121.57839,
+  "loc": "區級",
+  "addr": "台北市信義區光復南路133號",
+  "url": "https://www.instagram.com/p/Dbfd7tWDB0f/",
+  "ex": [
+   {
+    "t": "Maniani World 限定快閃店",
+    "s": "2026/08/08",
+    "e": "2026/10/01",
+    "l": "https://www.instagram.com/p/Dbfd7tWDB0f/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/maniani_world_popup_20260808.jpg",
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費",
+    "ip": "Maniani World",
+    "org": "unicreative 有點共創",
+    "lic": "Maniani／Frontier Works Inc."
+   }
+  ]
+ },
+ "有點市高雄旗艦店／高雄統一夢時代 時代百貨B1連通口": {
+  "city": "高雄市",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
+  "addr": "高雄市前鎮區中華五路789號B1",
+  "url": "https://www.instagram.com/p/Dbfd7tWDB0f/",
+  "ex": [
+   {
+    "t": "Maniani World 限定快閃店",
+    "s": "2026/08/08",
+    "e": "2026/10/01",
+    "l": "https://www.instagram.com/p/Dbfd7tWDB0f/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/maniani_world_popup_20260808.jpg",
+    "cat2": "快閃店/Pop-up Store",
+    "fee": "免費",
+    "ip": "Maniani World",
+    "org": "unicreative 有點共創",
+    "lic": "Maniani／Frontier Works Inc."
+   }
+  ]
+ },
  "東海大學": {
   "city": "台中市",
   "lat": 24.1822604,
@@ -1547,6 +1591,50 @@
     "ip": "Monchhichi（蒙奇奇）",
     "org": "ipnjoy",
     "lic": "官方"
+   }
+  ]
+ },
+ "義式屋古拉爵 南港中信店": {
+  "city": "台北市",
+  "lat": 25.0409,
+  "lng": 121.61323,
+  "loc": "區級",
+  "addr": "台北市南港區經貿二路166號中國信託金融廣場A棟2樓",
+  "url": "https://www.grazie.com.tw/data-414071",
+  "ex": [
+   {
+    "t": "第五人格 × 義式屋古拉爵 8週年聯名",
+    "s": "2026/07/22",
+    "e": "2026/08/23",
+    "l": "https://www.grazie.com.tw/data-414071",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/identityv_grazie_20260722.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "第五人格（Identity V）",
+    "org": "義式屋古拉爵",
+    "lic": "Joker Studio／NetEase Inc."
+   }
+  ]
+ },
+ "義式屋古拉爵 高雄大遠百店": {
+  "city": "高雄市",
+  "lat": 22.615,
+  "lng": 120.33758,
+  "loc": "區級",
+  "addr": "高雄市苓雅區三多四路21號12樓",
+  "url": "https://www.grazie.com.tw/data-414071",
+  "ex": [
+   {
+    "t": "第五人格 × 義式屋古拉爵 8週年聯名",
+    "s": "2026/07/22",
+    "e": "2026/08/23",
+    "l": "https://www.grazie.com.tw/data-414071",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/identityv_grazie_20260722.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "第五人格（Identity V）",
+    "org": "義式屋古拉爵",
+    "lic": "Joker Studio／NetEase Inc."
    }
   ]
  },
