@@ -1456,11 +1456,14 @@ function openDesktopVenuePicker(venueIdValue,updateHistory=true){
   if(updateHistory) updateEventParam('', 'replace');
 }
 function closeDesktopDialog(updateHistory=true){
-  document.getElementById('dialogOverlay').classList.remove('show');
-  document.getElementById('dialogOverlay').setAttribute('aria-hidden','true');
+  const overlay=document.getElementById('dialogOverlay');
+  const wasOpen=overlay.classList.contains('show');
+  overlay.classList.remove('show');
+  overlay.setAttribute('aria-hidden','true');
   activeDialogMode='';dialogReturn=null;uiState.selectedEventId=null;uiState.selectedVenueId=null;
   if(updateHistory) updateEventParam('','replace');
   if(lastFocus&&lastFocus.focus) lastFocus.focus({preventScroll:true});
+  if(wasOpen) requestAnimationFrame(restoreExpandedCluster);
 }
 function pickerCardHandler(event){
   const button=event.target.closest('[data-picker-event]');
@@ -1711,10 +1714,13 @@ function openMobileVenueSheet(venueIdValue){
   body.scrollTop=0;
 }
 function closeMobileVenueSheet(){
-  document.getElementById('mobileVenueSheet').classList.remove('show');
-  document.getElementById('mobileVenueSheet').setAttribute('aria-hidden','true');
+  const sheet=document.getElementById('mobileVenueSheet');
+  const wasOpen=sheet.classList.contains('show');
+  sheet.classList.remove('show');
+  sheet.setAttribute('aria-hidden','true');
   document.getElementById('mobileVenueBody').classList.remove('single-event');
   uiState.selectedVenueId=null;
+  if(wasOpen) requestAnimationFrame(restoreExpandedCluster);
 }
 function expandMobilePanel(panel){
   document.querySelectorAll('.mobile-event-panel').forEach(item=>{
