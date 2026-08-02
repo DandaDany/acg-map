@@ -130,7 +130,9 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("function restoreExpandedCluster()", self.html)
         self.assertIn("cluster.getVisibleParent(marker)", self.html)
         self.assertIn("cluster.on('clusterclick'", self.html)
-        self.assertIn("requestAnimationFrame(restoreExpandedCluster)", self.html)
+        self.assertGreaterEqual(self.html.count("requestAnimationFrame(restoreExpandedCluster)"), 3)
+        self.assertIn("function closeDesktopDialog(updateHistory=true)", self.html)
+        self.assertIn("function closeMobileVenueSheet()", self.html)
 
     def test_mobile_filters_use_draft_until_done(self):
         self.assertIn("let draftFilters=null", self.html)
