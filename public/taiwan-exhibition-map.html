@@ -760,8 +760,6 @@ a{color:inherit}
 .filter-option:disabled{color:#667084;cursor:not-allowed}
 .filter-check{color:transparent}.filter-option.selected .filter-check{color:var(--accent2)}
 .filter-count{min-width:28px;padding:2px 7px;border:1px solid #3b465b;border-radius:999px;color:var(--muted);font-size:11px;text-align:center}
-.marker-setting{margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
-.marker-setting h3{margin:0 0 9px;color:var(--muted);font-size:11px;letter-spacing:.6px}
 .segmented{display:grid;grid-template-columns:1fr 1fr;padding:3px;border:1px solid var(--line);border-radius:12px;background:#101620}
 .segmented button{min-height:38px;border:0;border-radius:9px;background:transparent;color:var(--muted);font-size:12.5px;font-weight:750;cursor:pointer}
 .segmented button.active{background:#2b3650;color:var(--text);box-shadow:0 2px 9px rgba(0,0,0,.3)}
@@ -797,7 +795,7 @@ a{color:inherit}
 #map{position:absolute;inset:0;z-index:1;background:#e8ebe6}
 .map-tools{position:absolute;z-index:1000;top:14px;right:14px;display:flex;gap:8px}
 .map-tool{display:grid;min-width:44px;height:44px;place-items:center;border:1px solid rgba(25,31,42,.18);border-radius:13px;background:rgba(255,255,255,.94);color:#1b2430;box-shadow:0 7px 22px rgba(0,0,0,.16);cursor:pointer}
-.mobile-marker-toggle{display:none}
+.map-marker-toggle{position:absolute;z-index:1000;top:14px;left:50%;width:160px;transform:translateX(-50%);background:rgba(16,22,32,.94);box-shadow:0 7px 22px rgba(0,0,0,.22)}
 .leaflet-tooltip.lbl{background:transparent;border:0;box-shadow:none;padding:0;white-space:nowrap;font-weight:700;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;pointer-events:none}
 .leaflet-tooltip.lbl:before{display:none;border:0}
 .lbl-city{font-size:15px;color:#1b1b1b;letter-spacing:.5px}
@@ -810,9 +808,11 @@ a{color:inherit}
 .marker-badge{position:absolute;z-index:3;top:-3px;right:-3px;display:grid;min-width:18px;height:18px;place-items:center;padding:0 4px;border:2px solid var(--bg);border-radius:999px;background:var(--accent2);color:#fff;font-size:11px;font-weight:800}
 .pinwrap.approx .marker-badge{background:#7c8aa6}
 .soondot{position:absolute;z-index:3;top:-2px;left:-2px;width:12px;height:12px;border:2px solid var(--bg);border-radius:50%;background:var(--accent);box-shadow:0 0 0 1px rgba(255,90,95,.4)}
-.kv-marker{position:relative;width:58px;height:74px;overflow:hidden;border:3px solid white;border-radius:12px;background:#18202c;box-shadow:0 5px 16px rgba(0,0,0,.42)}
+.kv-marker-shell{position:relative;display:flex;width:94px;height:76px;align-items:flex-end;justify-content:center}
+.kv-marker{position:relative;width:58px;height:74px;overflow:hidden;border:3px solid white;border-radius:12px;background:#18202c;box-shadow:0 5px 16px rgba(0,0,0,.42);transition:width .16s ease,height .16s ease}
+.kv-marker.landscape{width:92px;height:58px}
 .kv-marker .media-back{filter:blur(8px);opacity:.55}.kv-marker .media-front{object-fit:contain}
-.kv-marker .marker-badge{top:-5px;right:-5px;border-color:#fff;background:#3a86ff}
+.kv-marker-shell>.marker-badge{top:-4px;right:-4px;border-color:#fff;background:#3a86ff}
 .cl{display:flex;width:44px;height:44px;align-items:center;justify-content:center;border:3px solid rgba(255,255,255,.9);border-radius:50%;background:#3a86ff;color:white;box-shadow:0 4px 14px rgba(0,0,0,.38);font-size:13px;font-weight:850}.cl-md{background:#ff914d}.cl-lg{width:50px;height:50px;background:#ff6469}
 .leaflet-bottom.leaflet-right{margin:0 8px 8px 0}
 
@@ -820,23 +820,33 @@ a{color:inherit}
 .dialog-overlay.show,.lightbox.show,.mobile-filter-overlay.show{display:flex}
 .dialog-overlay{align-items:center;justify-content:center;padding:36px 48px}
 .dialog-close{position:fixed;z-index:2;top:18px;right:20px;border-color:rgba(255,255,255,.28);background:rgba(14,18,25,.78);font-size:22px}
-.dialog-panel{width:min(920px,calc(100vw - 96px));max-height:calc(100dvh - 72px);overflow:auto;border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:0 28px 80px rgba(0,0,0,.62)}
+.dialog-panel{width:min(920px,calc(100vw - 96px));height:min(760px,calc(100dvh - 72px));overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:0 28px 80px rgba(0,0,0,.62)}
 .dialog-back{margin:14px 14px 0;border:0;background:transparent;color:var(--accent2);font-weight:750;cursor:pointer}
-.event-detail{display:grid;grid-template-columns:minmax(280px,42%) minmax(0,1fr);gap:22px;padding:20px}
+.dialog-panel:has(.dialog-back) .event-detail{height:calc(100% - 48px);padding-top:8px}
+.event-detail{display:grid;height:100%;min-height:0;grid-template-columns:minmax(280px,42%) minmax(0,1fr);gap:22px;padding:20px;overflow:hidden}
 .event-detail>.media-frame{min-height:430px;border-radius:14px}
+.detail-copy{display:flex;min-height:0;flex-direction:column;overflow:hidden}
 .detail-copy h2{margin:11px 0;font-size:25px;line-height:1.35}
 .detail-section{margin-top:17px;padding-top:14px;border-top:1px solid var(--line)}
 .detail-section h3{margin:0 0 10px;font-size:13px}
 .location-list{display:flex;flex-direction:column;gap:8px}
+.location-list.primary-location{flex:none}
+.locations-section{display:flex;min-height:0;flex-direction:column}
+.other-locations-title{margin:12px 0 8px;color:var(--muted);font-size:12px;font-weight:750}
+.other-location-scroll{max-height:238px;overflow-y:auto;overscroll-behavior:contain;padding-right:4px;scrollbar-gutter:stable}
+.other-location-scroll .location-row{min-height:74px}
 .location-row{padding:10px;border:1px solid var(--line);border-radius:11px;background:#111722}
 .location-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
 .location-name{font-size:13px;font-weight:750}.location-date,.location-address{margin-top:3px;color:var(--muted);font-size:11.5px;line-height:1.45}
 .text-link,.action-btn{display:inline-flex;min-height:42px;align-items:center;justify-content:center;border-radius:11px;text-decoration:none;font-size:12.5px;font-weight:750;cursor:pointer}
-.location-nav{min-width:58px;min-height:36px;padding:0 10px;border:1px solid var(--line);border-radius:10px;background:#192234;color:var(--accent2);text-decoration:none;font-size:11px}
+.location-actions{display:flex;flex:none;align-items:center;gap:9px}
+.location-nav,.threads-share{display:inline-grid;min-height:36px;place-items:center;border:0;background:transparent;color:var(--accent2);text-decoration:none;font-size:11px;font-weight:750}
+.location-nav{min-width:40px}.threads-share{width:32px;color:var(--text);font-size:20px;line-height:1}
+.location-nav:hover,.threads-share:hover{text-decoration:none;color:#9cc4ff}
 .action-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .action-btn{padding:0 14px;border:1px solid var(--line);background:#151d2a}
 .action-btn.primary{border-color:#3c6da8;background:#203c62;color:#cfe3ff}
-.event-picker{padding:20px}.event-picker h2{margin:0 0 16px;font-size:22px}
+.event-picker{height:100%;overflow:auto;padding:20px}.event-picker h2{margin:0 0 16px;font-size:22px}
 .event-picker-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
 .picker-card{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--card);text-align:left;cursor:pointer}
 .picker-card:hover{border-color:var(--accent2)}
@@ -879,9 +889,11 @@ a{color:inherit}
   body.mobile-map .discover-pane{display:none}
   body.mobile-map .map-pane{display:block}
   .map-tools{top:66px;right:10px}
-  .mobile-marker-toggle{display:grid;position:absolute;z-index:1000;top:10px;left:10px;width:132px}
-  .mobile-marker-toggle button{min-height:38px}
+  .map-marker-toggle{top:10px;width:148px}
+  .map-marker-toggle button{min-height:38px}
+  .kv-marker-shell{width:86px;height:68px}
   .kv-marker{width:50px;height:64px}
+  .kv-marker.landscape{width:84px;height:52px}
   .mobile-top{display:flex;position:fixed;z-index:1900;top:0;left:0;right:0;height:var(--mobile-top);align-items:flex-end;gap:8px;padding:calc(8px + env(safe-area-inset-top,0px)) 10px 8px;background:rgba(13,16,22,.96);border-bottom:1px solid var(--line)}
   .mobile-top .search-shell{min-width:0;flex:1}.mobile-top .searchbox{height:44px}
   .mobile-filter-btn{width:44px;height:44px}
@@ -901,13 +913,21 @@ a{color:inherit}
   .mobile-category{display:grid;width:100%;grid-template-columns:28px 1fr auto 16px;align-items:center;gap:8px;padding:13px 9px;border:0;border-radius:12px;background:transparent;text-align:left}
   .mobile-category:hover{background:#242d3e}
   .mobile-filter-content .filter-option{min-height:48px}
-  .mobile-venue-sheet{display:flex;position:fixed;z-index:2800;right:8px;bottom:calc(var(--mobile-nav) + env(safe-area-inset-bottom,0px) + 8px);left:8px;max-height:85dvh;transform:translateY(calc(100% + 100px));transition:transform .3s cubic-bezier(.2,.85,.2,1);pointer-events:none}
+  .mobile-venue-sheet{display:flex;position:fixed;z-index:2800;right:8px;bottom:calc(var(--mobile-nav) + env(safe-area-inset-bottom,0px) + 8px);left:8px;height:min(72dvh,640px);transform:translateY(calc(100% + 100px));transition:transform .3s cubic-bezier(.2,.85,.2,1);pointer-events:none}
   .mobile-venue-sheet.show{transform:translateY(0);pointer-events:auto}
-  .mobile-venue-card{display:flex;min-height:180px;max-height:85dvh;flex:1;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--panel);box-shadow:0 -12px 52px rgba(0,0,0,.5)}
+  .mobile-venue-card{display:flex;min-height:180px;flex:1;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--panel);box-shadow:0 -12px 52px rgba(0,0,0,.5)}
   .mobile-venue-head{position:relative;min-height:46px;flex:none}
   .mobile-venue-head .sheet-grip{margin-top:9px}
   .mobile-venue-close{position:absolute;top:5px;right:7px;width:44px;height:44px;border:0;background:transparent;font-size:20px;cursor:pointer}
   .mobile-venue-body{min-height:0;flex:1;overflow:auto;padding:2px 12px 18px}
+  .mobile-venue-body.single-event{overflow:hidden}
+  .mobile-venue-body.single-event .mobile-event-panel,.mobile-venue-body.single-event .mobile-event-content,.mobile-venue-body.single-event .detail-copy{height:100%;min-height:0}
+  .mobile-venue-body.single-event .mobile-event-panel{display:flex;flex-direction:column}
+  .mobile-venue-body.single-event .mobile-event-summary{flex:none}
+  .mobile-venue-body.single-event .mobile-event-content{flex:1;overflow:hidden}
+  .mobile-venue-body.single-event .mobile-event-content>.media-frame{display:none}
+  .mobile-venue-body.single-event .locations-section{flex:1}
+  .mobile-venue-body.single-event .other-location-scroll{max-height:none;flex:1}
   .mobile-event-panel{overflow:hidden;margin-bottom:8px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
   .mobile-event-summary{display:grid;width:100%;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:12px;border:0;background:transparent;text-align:left;cursor:pointer}
   .mobile-event-summary h3{margin:0;font-size:14px}.mobile-event-summary small{display:block;margin-top:4px;color:var(--muted)}
@@ -946,13 +966,6 @@ a{color:inherit}
       <button class="filter-category" type="button" data-filter="fee" aria-expanded="false"><span class="filter-icon" aria-hidden="true">＄</span><span class="filter-name">付費狀態</span><span class="filter-value" data-filter-value="fee">不限</span><span class="filter-arrow" aria-hidden="true">›</span></button>
       <button class="filter-category" type="button" data-filter="multi" aria-expanded="false"><span class="filter-icon" aria-hidden="true">⌘</span><span class="filter-name">多店活動</span><span class="filter-value" data-filter-value="multi">全部多店</span><span class="filter-arrow" aria-hidden="true">›</span></button>
     </div>
-    <div class="marker-setting">
-      <h3>地圖 MARKER 顯示</h3>
-      <div class="segmented marker-toggle" aria-label="Marker 顯示模式">
-        <button type="button" data-marker-mode="pin" class="active">⌖ 圖釘</button>
-        <button type="button" data-marker-mode="image">▣ 圖片</button>
-      </div>
-    </div>
     <section class="filter-detail" id="filterDetail" aria-hidden="true" aria-label="篩選選項">
       <div class="filter-detail-head"><button class="filter-back" id="filterBack" type="button" aria-label="返回篩選分類">‹</button><h2 id="filterDetailTitle">縣市</h2></div>
       <div class="filter-options" id="filterOptions"></div>
@@ -966,7 +979,7 @@ a{color:inherit}
 
   <section class="map-pane" id="mapPane" aria-label="活動地圖">
     <div id="map"></div>
-    <div class="segmented mobile-marker-toggle marker-toggle" aria-label="Marker 顯示模式">
+    <div class="segmented map-marker-toggle marker-toggle" aria-label="地圖 Marker 顯示模式">
       <button type="button" data-marker-mode="pin" class="active">⌖ 圖釘</button>
       <button type="button" data-marker-mode="image">▣ 圖片</button>
     </div>
@@ -1106,6 +1119,10 @@ function safeUrl(value,asset=false){
   return '';
 }
 function normalizeText(value){return String(value||'').replace(/臺/g,'台').replace(/\s+/g,' ').trim().toLowerCase()}
+function publicText(value){
+  const text=String(value||'').trim();
+  return text.includes('需人工確認')?'':text;
+}
 function canonicalUrl(value){
   const raw=String(value||'').trim();
   if(!raw) return '';
@@ -1176,8 +1193,8 @@ function buildActivityGroups(data){
       event.id=id;
       const location={
         id:venue._id+'-'+id,
-        venue,venueId:venue._id,venueName:venue.name||'未命名場館',
-        city:venue.city||'',address:venue.addr||'',lat:+venue.la,lng:+venue.lo,
+        venue,venueId:venue._id,venueName:publicText(venue.name),
+        city:publicText(venue.city),address:publicText(venue.addr),lat:+venue.la,lng:+venue.lo,
         start:event.s||'',end:event.e||'',event
       };
       location.status=occurrenceStatus(location);
@@ -1195,10 +1212,10 @@ function buildActivityGroups(data){
     const starts=locations.map(location=>dateValue(location.start,Infinity)).filter(Number.isFinite);
     const ends=locations.map(location=>dateValue(location.end,-Infinity)).filter(Number.isFinite);
     const group={
-      id,title:event.t||'未命名活動',ip:chooseValue(items,'ip'),organizer:chooseValue(items,'org'),
-      licensor:chooseValue(items,'lic'),link:chooseValue(items,'l'),image:chooseImage(items),
-      fee:chooseValue(items,'fee'),form:chooseValue(items,'c2')||'其他',
-      multiFilter:chooseValue(items,'mf'),locations,
+      id,title:publicText(event.t)||'未命名活動',ip:publicText(chooseValue(items,'ip')),organizer:publicText(chooseValue(items,'org')),
+      licensor:publicText(chooseValue(items,'lic')),link:chooseValue(items,'l'),image:chooseImage(items),
+      fee:publicText(chooseValue(items,'fee')),form:publicText(chooseValue(items,'c2'))||'其他',
+      multiFilter:publicText(chooseValue(items,'mf')),locations,
       overallStart:starts.length?new Date(Math.min(...starts)) : null,
       overallEnd:ends.length?new Date(Math.max(...ends)) : null
     };
@@ -1262,6 +1279,13 @@ function getFilteredActivityGroups(state=uiState,overrides={},ignoreKey=''){
 }
 function getFacetCount(key,value,state=uiState){
   const filters={...state.filters,[key]:value};
+  if(key==='multi'){
+    const groups=[...activityGroups.values()].filter(group=>
+      group.status.kind!=='ended'&&group.multiFilter&&(value==='all'||group.multiFilter===value)
+      &&groupMatchesFilters(group,filters,'multi')&&groupMatchesQuery(group,state.query)
+    );
+    return groups.reduce((sum,group)=>sum+group.locations.filter(location=>occurrenceVisible(location,filters)).length,0);
+  }
   return [...activityGroups.values()].filter(group=>
     group.status.kind!=='ended'&&groupMatchesFilters(group,filters,'')&&groupMatchesQuery(group,state.query)
   ).length;
@@ -1297,13 +1321,24 @@ function mediaFrameHtml(image,alt,lightbox=false,lazy=false){
 function navUrl(location){
   return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(location.address||location.venueName||[location.lat,location.lng].join(','));
 }
-function locationRowHtml(location){
-  return '<div class="location-row"><div class="location-top"><div><div class="location-name">'+esc(location.venueName)+' · '+esc(location.city)+'</div>'
+function threadsShareUrl(group,location){
+  const text=[group.title,location.venueName,createShareUrl(group.id)].filter(Boolean).join('｜');
+  return 'https://www.threads.net/intent/post?text='+encodeURIComponent(text);
+}
+function locationRowHtml(location,group){
+  const heading=[location.venueName,location.city].filter(Boolean).join(' · ');
+  return '<div class="location-row"><div class="location-top"><div>'+(heading?'<div class="location-name">'+esc(heading)+'</div>':'')
     +'<div class="location-date">'+esc(locationDateText(location))+' · '+esc(location.status.label)+'</div>'
     +'<div class="location-address">'+esc(location.address||'地址未提供')+'</div></div>'
-    +'<a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a></div></div>';
+    +'<div class="location-actions"><a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a>'
+    +'<a class="threads-share" href="'+esc(threadsShareUrl(group,location))+'" target="_blank" rel="noopener" aria-label="分享到 Threads" title="分享到 Threads">＠</a></div></div></div>';
 }
-function renderLocationList(group,activeCity){
+function primaryLocationFor(group,preferredLocationId=''){
+  if(preferredLocationId){const exact=group.locations.find(location=>location.id===preferredLocationId);if(exact)return exact}
+  const visible=group.locations.filter(location=>occurrenceVisible(location,uiState.filters));
+  return visible[0]||group.locations[0];
+}
+function renderLocationList(group,activeCity,preferredLocationId=''){
   const sorted=[...group.locations].sort((a,b)=>{
     if(activeCity&&activeCity!=='all'){
       const cityOrder=Number(b.city===activeCity)-Number(a.city===activeCity);
@@ -1311,13 +1346,10 @@ function renderLocationList(group,activeCity){
     }
     return dateValue(a.start,Infinity)-dateValue(b.start,Infinity)||a.city.localeCompare(b.city,'zh-Hant')||a.venueName.localeCompare(b.venueName,'zh-Hant');
   });
-  if(activeCity&&activeCity!=='all'){
-    const primary=sorted.filter(location=>location.city===activeCity);
-    const other=sorted.filter(location=>location.city!==activeCity);
-    return '<div class="location-list">'+primary.map(locationRowHtml).join('')+'</div>'
-      +(other.length?'<details class="other-locations"><summary>其他地區地點（'+other.length+'）</summary><div class="location-list">'+other.map(locationRowHtml).join('')+'</div></details>':'');
-  }
-  return '<div class="location-list">'+sorted.map(locationRowHtml).join('')+'</div>';
+  const primary=primaryLocationFor(group,preferredLocationId);
+  const other=sorted.filter(location=>location.id!==primary.id);
+  return '<div class="location-list primary-location">'+locationRowHtml(primary,group)+'</div>'
+    +(other.length?'<div class="other-locations-title">其他活動地點（'+other.length+'）</div><div class="other-location-scroll"><div class="location-list">'+other.map(location=>locationRowHtml(location,group)).join('')+'</div></div>':'');
 }
 function metadataHtml(group){
   return (group.ip?'<div class="meta-row"><strong>IP：</strong>'+esc(group.ip)+'</div>':'')
@@ -1330,16 +1362,16 @@ function actionHtml(group){
     +(link?'<a class="action-btn primary" href="'+esc(link)+'" target="_blank" rel="noopener">官方活動頁 ↗</a>':'')
     +'<button class="action-btn" type="button" data-share="'+esc(group.id)+'">分享活動</button></div>';
 }
-function eventCardHtml(group){
-  const first=group.locations[0];
-  return '<article class="event-card desktop-clickable" data-event-id="'+esc(group.id)+'">'
+function eventCardHtml(group,preferredLocation=null){
+  const first=preferredLocation||primaryLocationFor(group);
+  return '<article class="event-card desktop-clickable" data-event-id="'+esc(group.id)+'" data-location-id="'+esc(first.id)+'">'
     +mediaFrameHtml(group.image,group.title,true)
     +'<div class="card-body">'+tagHtml(group)+'<h2>'+esc(group.title)+'</h2>'
     +'<div class="desktop-only-summary"><div class="card-summary">'+esc(groupDateText(group))+'</div>'
-    +'<div class="card-summary">'+(group.locations.length>1?'共 '+group.locations.length+' 個地點':esc(first.venueName+' · '+first.city))+'</div>'
+    +'<div class="card-summary">'+(preferredLocation?esc(first.venueName+' · '+first.city):(group.locations.length>1?'共 '+group.locations.length+' 個地點':esc(first.venueName+' · '+first.city)))+'</div>'
     +metadataHtml(group)+'</div>'
     +'<div class="mobile-detail"><div class="meta-row"><strong>日期：</strong>'+esc(groupDateText(group))+'</div>'
-    +metadataHtml(group)+'<section class="detail-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city)+'</section>'
+    +metadataHtml(group)+'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,first.id)+'</section>'
     +actionHtml(group)+'</div></div></article>';
 }
 function wireImages(root){
@@ -1352,21 +1384,23 @@ function wireImages(root){
 }
 function renderDiscover(groups){
   const list=document.getElementById('discoverList');
-  document.getElementById('discoverCount').textContent=groups.length+' 場';
+  const multiStoreMode=uiState.filters.multi!=='all';
+  const entries=multiStoreMode?groups.flatMap(group=>group.locations.filter(location=>occurrenceVisible(location,uiState.filters)).map(location=>({group,location}))):groups.map(group=>({group,location:null}));
+  document.getElementById('discoverCount').textContent=multiStoreMode?entries.length+' 間門市':groups.length+' 場';
   if(!groups.length){
     list.innerHTML='<div class="empty-state"><div><p>沒有符合條件的活動</p><button class="primary-btn" id="emptyClear" type="button">清除篩選</button></div></div>';
     document.getElementById('emptyClear').addEventListener('click',clearAllFilters);
     return;
   }
-  list.innerHTML=groups.map(eventCardHtml).join('');
+  list.innerHTML=entries.map(entry=>eventCardHtml(entry.group,entry.location)).join('');
   wireImages(list);
   requestAnimationFrame(()=>{list.scrollTop=uiState.discoverScrollTop});
 }
-function detailHtml(group){
+function detailHtml(group,preferredLocationId=''){
   return '<div class="event-detail">'+mediaFrameHtml(group.image,group.title,false)
     +'<div class="detail-copy">'+tagHtml(group)+'<h2>'+esc(group.title)+'</h2>'
     +'<div class="meta-row"><strong>日期：</strong>'+esc(groupDateText(group))+'</div>'+metadataHtml(group)
-    +'<section class="detail-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city)+'</section>'
+    +'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,preferredLocationId)+'</section>'
     +actionHtml(group)+'</div></div>';
 }
 function updateEventParam(eventId,mode='push'){
@@ -1379,13 +1413,14 @@ function focusDialog(){
   panel.setAttribute('tabindex','-1');
   panel.focus({preventScroll:true});
 }
-function openDesktopEventModal(eventId,returnTarget=null,historyMode='push'){
+function openDesktopEventModal(eventId,returnTarget=null,historyMode='push',preferredLocationId=''){
   const group=activityGroups.get(eventId);
   if(!group) return;
   lastFocus=document.activeElement;
   activeDialogMode='event';dialogReturn=returnTarget;uiState.selectedEventId=eventId;
   const panel=document.getElementById('dialogPanel');
-  panel.innerHTML=(returnTarget?'<button class="dialog-back" id="dialogBack" type="button">‹ 返回活動選擇</button>':'')+detailHtml(group);
+  const venueLocation=returnTarget?group.locations.find(location=>location.venueId===returnTarget):null;
+  panel.innerHTML=(returnTarget?'<button class="dialog-back" id="dialogBack" type="button">‹ 返回活動選擇</button>':'')+detailHtml(group,preferredLocationId||(venueLocation&&venueLocation.id)||'');
   document.getElementById('dialogOverlay').classList.add('show');
   document.getElementById('dialogOverlay').setAttribute('aria-hidden','false');
   wireImages(panel);focusDialog();
@@ -1396,7 +1431,10 @@ function openDesktopVenuePicker(venueIdValue,updateHistory=true){
   const locations=getFilteredVenueOccurrences(venueIdValue);
   const groups=sortDiscoverActivities([...new Set(locations.map(location=>location.event.id))].map(id=>activityGroups.get(id)).filter(Boolean));
   if(!groups.length) return;
-  if(groups.length===1){openDesktopEventModal(groups[0].id,null,updateHistory?'push':false);return}
+  if(groups.length===1){
+    const preferred=groups[0].locations.find(location=>location.venueId===venueIdValue);
+    openDesktopEventModal(groups[0].id,null,updateHistory?'push':false,preferred?preferred.id:'');return
+  }
   lastFocus=document.activeElement;
   activeDialogMode='picker';dialogReturn=venueIdValue;uiState.selectedVenueId=venueIdValue;
   const panel=document.getElementById('dialogPanel');
@@ -1560,8 +1598,9 @@ function markerIcon(venueIdValue,locations){
   const group=activityGroups.get(ids[0]);
   if(uiState.markerMode==='image'&&group&&safeUrl(group.image,true)){
     const image=safeUrl(group.image,true);
-    return L.divIcon({className:'',iconSize:MOBILE_QUERY.matches?[50,64]:[58,74],iconAnchor:MOBILE_QUERY.matches?[25,62]:[29,72],
-      html:'<div class="kv-marker"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""><span class="marker-badge">'+count+'</span></div>'});
+    const size=MOBILE_QUERY.matches?[86,68]:[94,76];
+    return L.divIcon({className:'',iconSize:size,iconAnchor:[size[0]/2,size[1]-2],
+      html:'<div class="kv-marker-shell"><div class="kv-marker"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""></div><span class="marker-badge">'+count+'</span></div>'});
   }
   const venue=locations[0]&&locations[0].venue;
   const approximate=!venue||venue.loc!=='exact';
@@ -1570,7 +1609,21 @@ function markerIcon(venueIdValue,locations){
   return L.divIcon({className:'',iconSize:[40,52],iconAnchor:[20,50],
     html:'<div class="'+classes+'">'+pinSvg(venueForm(locations))+'<span class="marker-badge">'+count+'</span>'+(soon?'<span class="soondot" aria-label="含即將結束活動"></span>':'')+'</div>'});
 }
+function classifyKvMarker(marker){
+  const element=marker.getElement();
+  const image=element&&element.querySelector('.kv-marker .media-front');
+  if(!image) return;
+  const apply=()=>{const card=image.closest('.kv-marker');if(card)card.classList.toggle('landscape',image.naturalWidth>=image.naturalHeight)};
+  if(image.complete&&image.naturalWidth) apply(); else image.addEventListener('load',apply,{once:true});
+}
 function sortVenueGroups(groups){return sortDiscoverActivities(groups)}
+function focusMapLocation(location,zoom=13){
+  if(!location||!Number.isFinite(+location.lat)||!Number.isFinite(+location.lng)) return;
+  const target=[+location.lat,+location.lng];
+  const nextZoom=Math.max(map.getZoom(),zoom);
+  map.flyTo(target,nextZoom,{animate:!matchMedia('(prefers-reduced-motion:reduce)').matches,duration:.55});
+  uiState.mapView={center:target,zoom:nextZoom};
+}
 function renderMapMarkers(){
   cluster.clearLayers();markers=[];
   (DATA.venues||[]).forEach(venue=>{
@@ -1580,9 +1633,11 @@ function renderMapMarkers(){
     const marker=L.marker([+venue.la,+venue.lo],{icon});
     marker.groupCount=new Set(locations.map(location=>location.event.id)).size;
     marker.venueId=venue._id;
+    marker.on('add',()=>requestAnimationFrame(()=>classifyKvMarker(marker)));
     marker.on('click',event=>{
       L.DomEvent.stopPropagation(event);
       uiState.selectedVenueId=venue._id;
+      focusMapLocation(locations[0]);
       if(MOBILE_QUERY.matches) openMobileVenueSheet(venue._id);
       else openDesktopVenuePicker(venue._id);
     });
@@ -1609,13 +1664,13 @@ function updateMarkerToggles(){
 map.on('moveend zoomend',()=>{const center=map.getCenter();uiState.mapView={center:[center.lat,center.lng],zoom:map.getZoom()}});
 map.on('click',()=>closeMobileVenueSheet());
 
-function eventPanelHtml(group,index){
+function eventPanelHtml(group,index,preferredLocationId=''){
   const open=index===0;
   return '<section class="mobile-event-panel'+(open?' open':'')+'" data-mobile-event="'+esc(group.id)+'">'
     +'<button class="mobile-event-summary" type="button" aria-expanded="'+(open?'true':'false')+'"><span><h3>'+esc(group.title)+'</h3><small>'+esc(groupDateText(group))+' · '+esc(group.fee||'費用未標示')+'</small></span><span aria-hidden="true">'+(open?'−':'+')+'</span></button>'
     +'<div class="mobile-event-content">'+mediaFrameHtml(group.image,group.title,false,!open)
     +'<div class="detail-copy">'+tagHtml(group)+'<h2>'+esc(group.title)+'</h2>'+metadataHtml(group)
-    +'<section class="detail-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city)+'</section>'+actionHtml(group)+'</div></div></section>';
+    +'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,preferredLocationId)+'</section>'+actionHtml(group)+'</div></div></section>';
 }
 function openMobileVenueSheet(venueIdValue){
   const locations=getFilteredVenueOccurrences(venueIdValue);
@@ -1623,7 +1678,11 @@ function openMobileVenueSheet(venueIdValue){
   if(!groups.length) return;
   uiState.selectedVenueId=venueIdValue;
   const body=document.getElementById('mobileVenueBody');
-  body.innerHTML=groups.map(eventPanelHtml).join('');
+  body.classList.toggle('single-event',groups.length===1);
+  body.innerHTML=groups.map((group,index)=>{
+    const preferred=group.locations.find(location=>location.venueId===venueIdValue);
+    return eventPanelHtml(group,index,preferred?preferred.id:'');
+  }).join('');
   wireImages(body);
   document.getElementById('mobileVenueSheet').classList.add('show');
   document.getElementById('mobileVenueSheet').setAttribute('aria-hidden','false');
@@ -1632,6 +1691,7 @@ function openMobileVenueSheet(venueIdValue){
 function closeMobileVenueSheet(){
   document.getElementById('mobileVenueSheet').classList.remove('show');
   document.getElementById('mobileVenueSheet').setAttribute('aria-hidden','true');
+  document.getElementById('mobileVenueBody').classList.remove('single-event');
   uiState.selectedVenueId=null;
 }
 function expandMobilePanel(panel){
@@ -1874,7 +1934,15 @@ document.getElementById('discoverList').addEventListener('click',event=>{
   const share=event.target.closest('[data-share]');if(share){event.stopPropagation();shareEvent(share.dataset.share);return}
   const lightbox=event.target.closest('[data-lightbox]');if(lightbox){event.stopPropagation();openImageLightbox(lightbox.dataset.lightbox,lightbox.dataset.lightboxAlt,lightbox);return}
   const card=event.target.closest('[data-event-id]');
-  if(card&&!MOBILE_QUERY.matches&&!event.target.closest('a,button')) openDesktopEventModal(card.dataset.eventId,null,'push');
+  if(card&&!event.target.closest('a,button')){
+    const group=activityGroups.get(card.dataset.eventId);
+    const preferred=group&&primaryLocationFor(group,card.dataset.locationId);
+    if(preferred) focusMapLocation(preferred);
+    if(MOBILE_QUERY.matches&&preferred){
+      setTab('map');
+      setTimeout(()=>{map.invalidateSize();focusMapLocation(preferred);openMobileVenueSheet(preferred.venueId)},40);
+    }else if(!MOBILE_QUERY.matches) openDesktopEventModal(card.dataset.eventId,null,'push',preferred?preferred.id:'');
+  }
 });
 document.getElementById('dialogPanel').addEventListener('click',event=>{
   pickerCardHandler(event);
