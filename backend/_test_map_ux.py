@@ -50,6 +50,13 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("function renderMapMarkers()", self.html)
         self.assertIn("new Set(locations.map(location=>location.event.id))", self.html)
 
+    def test_map_has_non_webgl_basemap_and_initial_view(self):
+        self.assertIn("L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'", self.html)
+        self.assertNotIn("baseGL=L.maplibreGL", self.html)
+        fit = self.html.index("map.fitBounds(TW_BOUNDS,{padding:[16,16]});")
+        add_land = self.html.index("land.addTo(map);")
+        self.assertLess(fit, add_land)
+
     def test_desktop_dialog_and_mobile_sheet_exist(self):
         self.assertIn('id="dialogOverlay"', self.html)
         self.assertIn('role="dialog" aria-modal="true"', self.html)
