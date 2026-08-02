@@ -463,6 +463,10 @@ def main():
     cat2_col = idx.get("活動類別 / Activity Category")  # 軸B形式欄，可選
     kv_col = idx.get("KV")  # 主視覺欄（可填圖片網址）；有填就用，覆寫自動抓的 KV
     admission_col = idx.get("付費狀態 / Admission")  # 免費／付費；活動核心體驗是否需要支出
+    event_id_col = idx.get("活動群組ID / Event Group ID")
+    ip_col = idx.get("IP")
+    organizer_col = idx.get("主辦方 / Organizer")
+    licensor_col = idx.get("授權單位 / Authorized unit (Licensor)")
     multi_col = idx.get("多店活動 / Multi-store")
     store_list_col = idx.get("門市資料 / Store List")
     store_prefix_col = idx.get("門市名稱前綴 / Store Prefix")
@@ -506,6 +510,10 @@ def main():
             "cat2": raw_cat2,
             "img": img,
             "fee": fee,
+            "id": str(ws.cell(row, event_id_col).value or "").strip() if event_id_col else "",
+            "ip": str(ws.cell(row, ip_col).value or "").strip() if ip_col else "",
+            "org": str(ws.cell(row, organizer_col).value or "").strip() if organizer_col else "",
+            "lic": str(ws.cell(row, licensor_col).value or "").strip() if licensor_col else "",
             "multi_filter": str(ws.cell(row, multi_col).value or "").strip() if multi_col else "",
             "store_list": str(ws.cell(row, store_list_col).value or "").strip() if store_list_col else "",
             "store_prefix": str(ws.cell(row, store_prefix_col).value or "").strip() if store_prefix_col else "",
@@ -572,6 +580,9 @@ def main():
                 ev["cat2"] = entry["cat2"]
             if entry.get("fee"):
                 ev["fee"] = entry["fee"]
+            for field in ("id", "ip", "org", "lic"):
+                if entry.get(field):
+                    ev[field] = entry[field]
             if entry.get("multi_filter") and entry.get("multi_store_count", 0) > 10:
                 ev["mf"] = entry["multi_filter"]
                 ev["ms"] = entry["multi_store_count"]
