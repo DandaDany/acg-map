@@ -52,7 +52,7 @@ def build_report():
     }
     json.dump(
         report,
-        open("_approx_location_report.json", "w", encoding="utf-8"),
+        open(P("_approx_location_report.json"), "w", encoding="utf-8"),
         ensure_ascii=False,
         indent=1,
     )

@@ -40,6 +40,7 @@ _FILES = {
     "event_link_overrides.json": MANUAL_DIR / "event_link_overrides.json",
     "event_overrides.json": MANUAL_DIR / "event_overrides.json",
     "event_admission_overrides.json": MANUAL_DIR / "event_admission_overrides.json",
+    "event_metadata_overrides.json": MANUAL_DIR / "event_metadata_overrides.json",
     "venue_event_sources.json": MANUAL_DIR / "venue_event_sources.json",
     "venue_geocodes.json": MANUAL_DIR / "venue_geocodes.json",
     "address_geocodes.json": MANUAL_DIR / "address_geocodes.json",

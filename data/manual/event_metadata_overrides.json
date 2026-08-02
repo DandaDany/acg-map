@@ -1,0 +1,600 @@
+{
+  "_readme": "目前地圖 ACG 活動的主辦、授權／權利方、形式與官方來源覆寫。活動連結優先級：1=IP／品牌／主辦／場館官方活動頁或官方貼文，2=正式售票／報名頁，3=前兩級皆無時的可信媒體（必須填 fallback_reason）。org 是實際主辦／執行方；lic 是授權商或 KV 版權列所示權利方。禁止填『需人工確認』『官方』或『其他』。",
+  ".Bloom10周年＆メロキス8周年記念 Gratte": {
+    "org": "animate（安利美特台灣）",
+    "lic": "集英社／HOME-SHA 及各作品權利人",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
+    "checked": "2026-08-02"
+  },
+  "100% 哆啦 A 夢櫻花節 in 台北": {
+    "org": "AllRightsReserved",
+    "lic": "藤子・F・不二雄製作公司／小學館",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/8e248f11-734d-4987-bbbe-7bfceab13e3e",
+    "checked": "2026-08-02"
+  },
+  "2026 Taichung 萌魂動漫祭": {
+    "org": "臺中驛鐵道文化園區",
+    "lic": "木棉花國際及各參展作品權利人",
+    "source_tier": 1,
+    "source": "https://www.tcrp.com.tw/activity/221",
+    "checked": "2026-08-02"
+  },
+  "2026 咒術迴戰 懷玉·玉折 最強路跑 南部場（高雄）": {
+    "org": "朗朗報名網",
+    "lic": "羚邦 Medialink",
+    "link": "https://irunner.biji.co/2026JujutsuKaisenRUN",
+    "source_tier": 2,
+    "source": "https://irunner.biji.co/2026JujutsuKaisenRUN",
+    "checked": "2026-08-02"
+  },
+  "2026 咒術迴戰 懷玉·玉折 最強路跑 中部場（台中）": {
+    "org": "朗朗報名網",
+    "lic": "羚邦 Medialink",
+    "link": "https://irunner.biji.co/2026JujutsuKaisenRUN2",
+    "source_tier": 2,
+    "source": "https://irunner.biji.co/2026JujutsuKaisenRUN2",
+    "checked": "2026-08-02"
+  },
+  "2026 咒術迴戰 懷玉·玉折 最強路跑 北部場（新北）": {
+    "org": "朗朗報名網",
+    "lic": "羚邦 Medialink",
+    "link": "https://irunner.biji.co/2026JujutsuKaisenRUN3",
+    "source_tier": 2,
+    "source": "https://irunner.biji.co/2026JujutsuKaisenRUN3",
+    "checked": "2026-08-02"
+  },
+  "2026 新世紀福音戰士路跑（2KM）": {
+    "org": "展通虹策略整合行銷股份有限公司",
+    "lic": "khara, Inc.",
+    "source_tier": 2,
+    "source": "https://irunner.biji.co/2026NeonGenesisEvangelion",
+    "checked": "2026-08-02"
+  },
+  "2026 誠品動漫祭": {
+    "org": "誠品書店",
+    "lic": "各參展出版社與作品權利人",
+    "link": "https://meet.eslite.com/tw/tc/news/202607140007",
+    "source_tier": 1,
+    "source": "https://meet.eslite.com/tw/tc/news/202607140007",
+    "checked": "2026-08-02"
+  },
+  "2026高雄翻轉動漫祭": {
+    "link": "https://www.dreammall.com.tw/news/p/X9IXCalag2Cw03Ji",
+    "source_tier": 1,
+    "source": "https://www.dreammall.com.tw/news/p/X9IXCalag2Cw03Ji",
+    "checked": "2026-08-02"
+  },
+  "2026貓貓蟲咖波 咖波小浪漫快閃店臺北站": {
+    "org": "卡特島有限公司",
+    "lic": "亞拉／卡特島有限公司",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26060620421857466",
+    "checked": "2026-08-02"
+  },
+  "Baby Shark 守護海洋大冒險": {
+    "org": "綠雷德創新股份有限公司（聯合主辦：富邦兒少內容有限合夥）",
+    "lic": "The Pinkfong Company, Inc.",
+    "c2": "體驗活動",
+    "source_tier": 1,
+    "source": "https://pier2.org/exhibition/info/1921/",
+    "checked": "2026-08-02"
+  },
+  "Bandai Namco Asia JOURNEY TAIWAN": {
+    "org": "Bandai Namco Asia",
+    "lic": "Bandai Namco Holdings Inc. 及各作品權利人",
+    "c2": "體驗活動",
+    "source_tier": 1,
+    "source": "https://journey2026.bandainamcoth.tw/",
+    "checked": "2026-08-02"
+  },
+  "Ave Mujica LIVE TOUR 2026「Exitus」台北限定快閃店": {
+    "link": "https://tickets.funone.io/activity/activity_detail/AveMujicaPopup",
+    "source_tier": 2,
+    "source": "https://tickets.funone.io/activity/activity_detail/AveMujicaPopup",
+    "checked": "2026-08-02"
+  },
+  "ANI-FEST期間限定店": {
+    "org": "野獸國／SUNRISEPOP",
+    "lic": "Bandai Namco Filmworks／SUNRISE 及各作品權利人",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DYWFmd8jRZ2/",
+    "checked": "2026-08-02"
+  },
+  "ChiikawaBaby": {
+    "org": "0% TAIPEI",
+    "lic": "nagano／chiikawa committee",
+    "c2": "快閃店",
+    "link": "https://www.instagram.com/p/Daupsr8AbB7/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/Daupsr8AbB7/",
+    "checked": "2026-08-02"
+  },
+  "GODZILLA STORE 台南期間限定快閃店": {
+    "org": "GODZILLA STORE Taipei／新光三越台南小北門店",
+    "lic": "TOHO CO., LTD.",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DaT8RkDAeAX",
+    "checked": "2026-08-02"
+  },
+  "CHIIKAWA DAYS 台北特展": {
+    "link": "https://www.huashan1914.com/w/huashan1914/exhibition_26061619433530946",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26061619433530946",
+    "checked": "2026-08-02"
+  },
+  "JOJO CARAVAN 飆馬野郎複製原畫展": {
+    "org": "木棉花國際股份有限公司",
+    "lic": "荒木飛呂彥／集英社・JOJO的奇妙冒險 SBR 製作委員會",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/emuse.com.tw/photos/1478337260995605/",
+    "checked": "2026-08-02"
+  },
+  "NishimuraYuji's shop! in TAIWAN 台北松菸快閃店": {
+    "org": "活動官方未公開",
+    "lic": "studio UG／西村優志",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/ee93708c-f375-465d-ab95-784869a050ef",
+    "checked": "2026-08-02"
+  },
+  "OSAMU GOODS 50週年展：原田治的OSAMU GOODS STYLE": {
+    "org": "Alleco Co., LTD.",
+    "lic": "KOJI HONPO／原田治",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26070817500503214",
+    "checked": "2026-08-02"
+  },
+  "PEANUTS夏日海灘祭": {
+    "org": "代代木國際精品股份有限公司",
+    "lic": "Peanuts Worldwide LLC",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26061109500377541",
+    "checked": "2026-08-02"
+  },
+  "PPULBATU <Hey! APPUL Market> POP-UP in TAIPEI": {
+    "org": "BIGHIT MUSIC／HYBE",
+    "lic": "BIGHIT MUSIC／HYBE",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/e0053678-92f0-4331-a4dd-9e6bf1d996a8",
+    "checked": "2026-08-02"
+  },
+  "Pokémon GO 10週年「皮卡丘」與「伊布」見面會": {
+    "org": "Pokémon GO（Scopely）／台北捷運公司",
+    "lic": "The Pokémon Company／Nintendo／Creatures／GAME FREAK",
+    "link": "https://pokemongo.com/zh-Hant/news/2026daanpark",
+    "source_tier": 1,
+    "source": "https://pokemongo.com/zh-Hant/news/2026daanpark",
+    "checked": "2026-08-02"
+  },
+  "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」": {
+    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
+    "lic": "R&B Asia／KAWAISOUNI!",
+    "source_tier": 1,
+    "source": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
+    "checked": "2026-08-02"
+  },
+  "mofusand快閃店": {
+    "org": "IP POPUP STORE",
+    "lic": "mofusand／Juno",
+    "link": "https://www.instagram.com/ippopupstore/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/ippopupstore/",
+    "checked": "2026-08-02"
+  },
+  "Monchhichi Summer Vibe in Taiwan 2026 台灣快閃店": {
+    "org": "IPnJoy 樂展所",
+    "lic": "Sekiguchi Co., Ltd.",
+    "link": "https://www.instagram.com/p/DWshB3Zkr-k/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DWshB3Zkr-k/",
+    "checked": "2026-08-02"
+  },
+  "NIJISANJI × 樂天桃猿「NIJISANJI 野球日」官方聯名企劃": {
+    "org": "樂天桃猿／ANYCOLOR Inc.／CyberAgent",
+    "lic": "ANYCOLOR Inc.",
+    "source_tier": 1,
+    "source": "https://monkeys.rakuten.com.tw/news_detail/927",
+    "checked": "2026-08-02"
+  },
+  "《新世紀福音戰士》展：線（Lines of EVANGELION）": {
+    "org": "popacg（波波動漫）",
+    "lic": "khara, Inc.",
+    "source_tier": 2,
+    "source": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
+    "checked": "2026-08-02"
+  },
+  "《相反的你和我》雪人睡衣派對 FAIR in animate 活動紀念 Gratte": {
+    "org": "animate（安利美特台灣）",
+    "lic": "阿賀澤紅茶／集英社・《相反的你和我》製作委員會",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/",
+    "checked": "2026-08-02"
+  },
+  "pickles the frog 萌蛙匹克 台北松菸快閃店": {
+    "org": "活動官方未公開",
+    "lic": "Nakajima Corporation",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/992619e4-20fd-45a5-acc4-a94e326ca160",
+    "checked": "2026-08-02"
+  },
+  "《Marshville Quokscout》": {
+    "org": "object taipei",
+    "lic": "Quokscout",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
+    "checked": "2026-08-02"
+  },
+  "《我獨自升級》": {
+    "org": "網銀國際影視股份有限公司／優時代有限公司臺灣分公司",
+    "lic": "D&C Media／JBK／WAYSBE／Moat Experience",
+    "c2": "展覽",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/2391ff28-68ff-4c14-a61a-82adc1a98a02",
+    "checked": "2026-08-02"
+  },
+  "「B-SIDE LABEL POP UP STORE in Taiwan」": {
+    "org": "B-SIDE LABEL",
+    "lic": "B-SIDE LABEL",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26060811015739534",
+    "checked": "2026-08-02"
+  },
+  "「夏日動漫時光機」展": {
+    "org": "回歸線娛樂／誠品生活",
+    "lic": "回歸線娛樂（台灣代理發行）及各作品權利人",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/Daj62-JJU6Q",
+    "checked": "2026-08-02"
+  },
+  "【櫻桃小丸子原作 40 週年】特展": {
+    "org": "活動官方未公開",
+    "lic": "櫻製作股份有限公司／日本動畫公司",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/a6f48ac9-995d-4755-bef9-6c81b27bd2a7",
+    "checked": "2026-08-02"
+  },
+  "三麗鷗甜心復古快閃店": {
+    "org": "中友百貨",
+    "lic": "Sanrio Co., Ltd.",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DaUNtsBJxu0",
+    "checked": "2026-08-02"
+  },
+  "伊藤潤二展「誘惑」": {
+    "org": "活動官方未公開",
+    "lic": "伊藤潤二／朝日新聞出版",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/4a0b13cc-bd6b-4d63-ad90-c29cfd2a07e2",
+    "checked": "2026-08-02"
+  },
+  "初音未來 現代藝術展「ART OF MIKU -Taipei Exhibition-」": {
+    "org": "W.creation Inc.",
+    "lic": "Crypton Future Media, INC.",
+    "source_tier": 2,
+    "source": "https://capsule1111.kktix.cc/events/artofmiku",
+    "checked": "2026-08-02"
+  },
+  "劇場版《鏈鋸人 蕾潔篇》快閃店": {
+    "org": "Vision Toys／樂玩多 WAYTOFUN",
+    "lic": "藤本樹／集英社・MAPPA／Chainsaw Man Project",
+    "link": "https://www.instagram.com/p/Da-iAR6Dp4R/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/Da-iAR6Dp4R/",
+    "kv_source": "https://www.instagram.com/p/Da-iAR6Dp4R/",
+    "checked": "2026-08-02"
+  },
+  "動漫最高祭 Anime Max Festival": {
+    "org": "金儀創意有限公司／木棉花國際股份有限公司",
+    "lic": "木棉花國際及各參展作品權利人",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26060620531407778",
+    "checked": "2026-08-02"
+  },
+  "名偵探柯南 大型實境解謎遊戲《逃脫！疾風的高速追逐》台中場": {
+    "org": "SCRAP／頂級豬排遊戲工作室",
+    "lic": "青山剛昌／小學館・讀賣電視台・TMS／SCRAP",
+    "link": "https://realdgame.jp/s/conan2026/taiwan/",
+    "source_tier": 1,
+    "source": "https://realdgame.jp/s/conan2026/taiwan/",
+    "checked": "2026-08-02"
+  },
+  "好想兔10週年特展": {
+    "org": "謙謙創藝",
+    "lic": "好想兔／謙謙創藝",
+    "link": "https://www.instagram.com/chien_chien0608/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/chien_chien0608/",
+    "checked": "2026-08-02"
+  },
+  "小熊維尼—友你相繪 100 週年限定快閃店": {
+    "org": "活動官方未公開",
+    "lic": "Disney Enterprises, Inc.",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/4a7f533a-7537-4dd0-af44-d074a73d47c2",
+    "checked": "2026-08-02"
+  },
+  "布丁狗30週年快閃店": {
+    "org": "0% TAIPEI",
+    "lic": "Sanrio Co., Ltd.",
+    "source_tier": 1,
+    "source": "https://pier2.org/exhibition/info/1917/",
+    "checked": "2026-08-02"
+  },
+  "愛麗絲夢遊仙境:兔子洞的秘密｜沈浸式互動故事特展": {
+    "org": "活動官方未公開",
+    "lic": "Les Enfants Terribles／Lewis Carroll 作品權利方",
+    "c2": "體驗活動",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/18a71ab7-0063-4b7d-a43c-fe95ca9f8d36",
+    "checked": "2026-08-02"
+  },
+  "我適文創快閃-夏日降溫計畫": {
+    "org": "我適文創",
+    "lic": "我適文創及各參展作品權利人",
+    "source_tier": 1,
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/fcd1a6b8-a956-4759-9f45-a218bc759feb",
+    "checked": "2026-08-02"
+  },
+  "早點出發 / EATWITHGO / 日式喫茶店 / 貝果專賣 / 神奇寶貝同好交流": {
+    "org": "EATWITHGO 早點出發",
+    "lic": "非官方授權之 Pokémon 同好交流",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/eatwithgo/",
+    "checked": "2026-08-02"
+  },
+  "星際大戰華山限定快閃店_Mission Cantina": {
+    "org": "台歐企業股份有限公司（協辦：和萃整合行銷設計有限公司）",
+    "lic": "Lucasfilm Ltd.／Disney Enterprises, Inc.",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26061714315963638",
+    "checked": "2026-08-02"
+  },
+  "東京卍復仇者展 最後的世界線 POP-UP STORE": {
+    "org": "曼迪傳播（Mighty Media）",
+    "lic": "和久井健／講談社／Tokyo Revengers Exhibition Production Committee",
+    "link": "https://www.instagram.com/p/DbcyU0pDvM6/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DbcyU0pDvM6/",
+    "checked": "2026-08-02"
+  },
+  "楓之谷 x 凱岩主題餐廳": {
+    "org": "凱岩咖啡／遊戲橘子",
+    "lic": "NEXON Korea Corporation／遊戲橘子",
+    "source_tier": 1,
+    "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=23",
+    "checked": "2026-08-02"
+  },
+  "漫畫便當店 COMIC BENTO": {
+    "org": "高雄市政府文化局／駁二藝術特區",
+    "lic": "參展漫畫家及作品權利人",
+    "source_tier": 1,
+    "source": "https://pier2.org/exhibition/info/1927/",
+    "checked": "2026-08-02"
+  },
+  "神劍闖江湖展 30th Anniversary Exhibition 志志雄真實篇": {
+    "org": "台灣東販／movic Co., Ltd.",
+    "lic": "和月伸宏／集英社・NAS",
+    "source_tier": 2,
+    "source": "https://www.klook.com/zh-TW/activity/220666-the-legend-of-the-swordsman-exhibition-30th-anniversary/",
+    "checked": "2026-08-02"
+  },
+  "萌町園遊會 Kawaii Spot (小突兔x溫柔的大白狼沃爾夫)": {
+    "org": "詠悅國際有限公司",
+    "lic": "小突兔／溫柔的大白狼沃爾夫原創作者",
+    "c2": "快閃店",
+    "source_tier": 1,
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26070312025827025",
+    "checked": "2026-08-02"
+  },
+  "藍色監獄 期間限定特賣（指南針 誠品生活武昌店）": {
+    "org": "指南針 Lashinbang（台灣指南針）",
+    "lic": "金城宗幸・野村優介／講談社・BLUE LOCK Production Committee",
+    "link": "https://www.instagram.com/p/DbA8Zscm08s/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DbA8Zscm08s/",
+    "checked": "2026-08-02"
+  },
+  "蛋仔派對 x 凱岩主題餐廳": {
+    "org": "凱岩咖啡／蛋仔派對台灣營運團隊",
+    "lic": "NetEase Games／蛋仔派對",
+    "source_tier": 1,
+    "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24",
+    "checked": "2026-08-02"
+  },
+  "賽爾號 x 凱岩主題餐廳": {
+    "org": "凱岩咖啡／賽爾號台灣營運團隊",
+    "lic": "上海淘米網絡科技有限公司",
+    "source_tier": 1,
+    "source": "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=22",
+    "checked": "2026-08-02"
+  },
+  "進擊的巨人 × 遠雄海洋公園": {
+    "org": "遠雄海洋公園",
+    "lic": "木棉花國際股份有限公司",
+    "source_tier": 1,
+    "source": "https://www.farglory-oceanpark.com.tw/info-in/cc1zMAarQdpZ6xJB/607Yn54nx4Ms0PI0",
+    "checked": "2026-08-02"
+  },
+  "2026 澎湖花火節 × 七龍珠Z": {
+    "link": "https://www.2026ptif.com/",
+    "source_tier": 1,
+    "source": "https://www.2026ptif.com/",
+    "checked": "2026-08-02"
+  },
+  "蠟筆小新玩轉時空大冒險": {
+    "link": "https://www.facebook.com/pingtungamazing/posts/1461125076057486/",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/pingtungamazing/posts/1461125076057486/",
+    "checked": "2026-08-02"
+  },
+  "麵包超人夏日萌萌主題店": {
+    "org": "麵包超人台灣官方／麗寶 OUTLET MALL",
+    "lic": "柳瀨嵩／Froebel-kan・TMS・NTV",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/Da2DfOEj_9k",
+    "checked": "2026-08-02"
+  },
+  "2026花蓮FUN暑假": {
+    "link": "https://www.instagram.com/p/DZrU9yxgT5x/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZrU9yxgT5x/",
+    "checked": "2026-08-02"
+  },
+  "HUNTER×HUNTER POP UP SHOP": {
+    "link": "https://www.instagram.com/p/DaNEtndDFyn/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DaNEtndDFyn/",
+    "checked": "2026-08-02"
+  },
+  "Hello Kitty展 高雄站": {
+    "link": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
+    "checked": "2026-08-02"
+  },
+  "PokéXciting! in 台北（寶可夢30週年慶典）": {
+    "link": "https://tw.portal-pokemon.com/30th/topics/20260701_01/",
+    "source_tier": 1,
+    "source": "https://tw.portal-pokemon.com/30th/topics/20260701_01/",
+    "checked": "2026-08-02"
+  },
+  "San-X 90週年紀念展in台灣": {
+    "link": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
+    "checked": "2026-08-02"
+  },
+  "Sirotan期間限定快閃店": {
+    "link": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
+    "checked": "2026-08-02"
+  },
+  "Tamagotchi電子雞30週年紀念快閃店": {
+    "link": "https://www.instagram.com/p/DazKEteDD38",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DazKEteDD38",
+    "checked": "2026-08-02"
+  },
+  "primaniacs 夢時代POPUP 2026": {
+    "link": "https://www.instagram.com/p/DaU5z0TFPTd",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DaU5z0TFPTd",
+    "checked": "2026-08-02"
+  },
+  "《凡爾賽玫瑰》快閃空間": {
+    "link": "https://www.instagram.com/p/DZZ0g9UpJHY/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZZ0g9UpJHY/",
+    "checked": "2026-08-02"
+  },
+  "《家庭教師HITMAN REBORN!》動畫20週年快閃店（高雄場）": {
+    "link": "https://universe.oneone.com.tw/posts/6309",
+    "source_tier": 1,
+    "source": "https://universe.oneone.com.tw/posts/6309",
+    "checked": "2026-08-02"
+  },
+  "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」": {
+    "link": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
+    "checked": "2026-08-02"
+  },
+  "《新世紀福音戰士》POP-UP STORE": {
+    "link": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
+    "checked": "2026-08-02"
+  },
+  "《東京喰種》期間限定快閃店": {
+    "link": "https://www.instagram.com/p/DZpKKNpDIN3/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZpKKNpDIN3/",
+    "checked": "2026-08-02"
+  },
+  "《葬送的芙莉蓮》× 凍心 Frozen Heart 限定主題門市": {
+    "link": "https://frozenheart.com.tw/",
+    "source_tier": 1,
+    "source": "https://frozenheart.com.tw/",
+    "checked": "2026-08-02"
+  },
+  "《藍色監獄》台灣 POP UP SHOP": {
+    "link": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
+    "checked": "2026-08-02"
+  },
+  "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站": {
+    "link": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
+    "checked": "2026-08-02"
+  },
+  "伊藤潤二狂熱城市夜行路跑": {
+    "link": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
+    "source_tier": 2,
+    "source": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
+    "checked": "2026-08-02"
+  },
+  "吉伊卡哇-2026 臺灣國際熱氣球嘉年華": {
+    "link": "https://www.facebook.com/balloontaiwan",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/balloontaiwan",
+    "checked": "2026-08-02"
+  },
+  "孤獨搖滾！動畫展（台中場）": {
+    "link": "https://www.instagram.com/p/DY3xo0lDO42/",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DY3xo0lDO42/",
+    "checked": "2026-08-02"
+  },
+  "異環 x FanFans Café｜期間限定主題餐廳": {
+    "link": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+    "source_tier": 1,
+    "source": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+    "checked": "2026-08-02"
+  },
+  "藏壽司 × 三麗鷗家族「泳池派對」": {
+    "link": "https://kurasushi.tw/activities/588",
+    "source_tier": 1,
+    "source": "https://kurasushi.tw/activities/588",
+    "checked": "2026-08-02"
+  },
+  "藥師少女的獨語展": {
+    "link": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DZXNgpEH63L/?igsh=aTBkbWdxNGp3cXBl",
+    "checked": "2026-08-02"
+  },
+  "角落小夥伴水族館第2彈": {
+    "link": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
+    "checked": "2026-08-02"
+  },
+  "貓咪大戰爭13週年「LOUNGE貓咪」× 天成文旅 華山町餐酒館": {
+    "link": "https://www.huashandin.com.tw/events/20260623/",
+    "source_tier": 1,
+    "source": "https://www.huashandin.com.tw/events/20260623/",
+    "checked": "2026-08-02"
+  },
+  "進擊的巨人 × 富邦棒球主題日": {
+    "link": "https://www.fubonguardians.com/content/info/NewsDetail?id=686",
+    "source_tier": 1,
+    "source": "https://www.fubonguardians.com/content/info/NewsDetail?id=686",
+    "checked": "2026-08-02"
+  },
+  "頭文字D（Initial D）快閃店（第二站）": {
+    "link": "https://www.mofan.co.com/news-detail/133/",
+    "source_tier": 1,
+    "source": "https://www.mofan.co.com/news-detail/133/",
+    "checked": "2026-08-02"
+  },
+  "點點心×三麗鷗「萌友來點心」": {
+    "link": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
+    "checked": "2026-08-02"
+  }
+}

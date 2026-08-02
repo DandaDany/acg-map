@@ -1,11 +1,83 @@
 {
  "summary": {
-  "venues_total": 211,
-  "exact": 211,
-  "approx_total": 0,
-  "has_road_or_addr": 0,
-  "only_area": 0
+  "venues_total": 180,
+  "exact": 170,
+  "approx_total": 10,
+  "has_road_or_addr": 9,
+  "only_area": 1
  },
- "has_road_or_addr": [],
- "only_area": []
+ "has_road_or_addr": [
+  {
+   "name": "animate Gratte 西門站",
+   "city": "台北市",
+   "addr": "台北市中正區西門地下街，近西門捷運站6號/1號出口；門牌依第三方報導為寶慶路32-1號B1，未經animate官方管道二次確認",
+   "loc": "區級",
+   "url": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/"
+  },
+  {
+   "name": "bb.q CHICKEN 南西店",
+   "city": "台北市",
+   "addr": "台北市中山區南京西路15號7樓",
+   "loc": "區級",
+   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127"
+  },
+  {
+   "name": "凍心 Frozen Heart 桃園中正店",
+   "city": "桃園市",
+   "addr": "桃園市桃園區中正路512號（花現烤物門口）",
+   "loc": "市級",
+   "url": "https://frozenheart.com.tw/"
+  },
+  {
+   "name": "微風運河園區",
+   "city": "新北市",
+   "addr": "新北市蘆洲區二重疏洪道",
+   "loc": "區級",
+   "url": "https://irunner.biji.co/2026JujutsuKaisenRUN3"
+  },
+  {
+   "name": "藏壽司 中山南西店",
+   "city": "台北市",
+   "addr": "台北市大同區南京西路57號2樓",
+   "loc": "區級",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 台中三井LaLaport店",
+   "city": "台中市",
+   "addr": "台中市東區進德路600號北館5樓",
+   "loc": "區級",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 台北館前店",
+   "city": "台北市",
+   "addr": "台北市中正區館前路12號5樓",
+   "loc": "區級",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 板橋遠科店",
+   "city": "新北市",
+   "addr": "新北市板橋區遠東路62之3號",
+   "loc": "區級",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 高雄岡山店",
+   "city": "高雄市",
+   "addr": "高雄市岡山區捷安路25號",
+   "loc": "區級",
+   "url": "https://kurasushi.tw/activities/588"
+  }
+ ],
+ "only_area": [
+  {
+   "name": "全台誠品書店（誠品線上、誠品蝦皮同步；北中南逾20家主題IP店，含誠品生活新店、誠品書店恆春限定店、誠品R79、誠品書店中友店、松菸誠品表演廳、誠品板橋、誠品新板、高雄大遠百店等）",
+   "city": "高雄市",
+   "addr": "",
+   "loc": "市級",
+   "url": "https://meet.eslite.com/tw/tc/news/202607140007"
+  }
+ ]
 }

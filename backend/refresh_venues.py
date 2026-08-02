@@ -296,7 +296,7 @@ FORM_KW = [
 def classify_form(title, venue=''):
     for name, pat in FORM_KW:
         if re.search(pat, title or ''): return name
-    return '其他'
+    return ''
 
 THEME_ACG_KW = r'(?i)動漫|動畫|漫畫|聲優|Vtuber|遊戲|角色|IP|航海王|鬼滅|咒術|三麗鷗|Chiikawa|吉伊卡哇|寶可夢|Pok[eé]mon|哆啦|蠟筆小新|迪士尼|Disney|Sanrio|Hello\s*Kitty|布丁狗|美樂蒂|庫洛米|史努比|SNOOPY|PEANUTS|麵包超人|漫威|Marvel|卡通|Anime|ACG'
 THEME_ART_KW  = r'美術|畫展|攝影|設計|工藝|陶|書法|雕塑'
@@ -1079,8 +1079,8 @@ def main():
                 return False, True
         return False, False
 
-    # 手動覆蓋（2026/07/12）：event_overrides.json 讓人逐筆指定形式(c2)或主題(c)，優先於自動分類——
-    # 供 classify_form 判不出「其他」或誤判時由人決定；官網與手動來源皆適用。
+    # 手動覆蓋（2026/07/12）：event_overrides.json 讓人逐筆指定形式(c2)或主題(c)，優先於自動分類。
+    # classify_form 無法判定時保持空白並由品質檢查阻擋，禁止再把「其他」送到公開地圖。
     _ev_ov = {}
     _ovp = P("event_overrides.json")
     if os.path.exists(_ovp):
@@ -1109,6 +1109,22 @@ def main():
         except Exception as _err:
             log("event_admission_overrides 讀取失敗:", _err)
 
+    # 主辦／授權／來源覆寫：把人工查證結果與分類、連結放在同一份可稽核資料中。
+    # source_tier 1=官方活動頁或官方帳號、2=正式售票／報名、3=找不到前兩級時的可信媒體。
+    _meta_ov = {}
+    _meta_path = P("event_metadata_overrides.json")
+    if os.path.exists(_meta_path):
+        try:
+            _raw_meta = json.load(open(_meta_path, encoding="utf-8"))
+            _meta_ov = {
+                _norm_title(k): v
+                for k, v in _raw_meta.items()
+                if not k.startswith("_") and isinstance(v, dict)
+            }
+            log("讀入活動主辦/授權/來源覆寫:", len(_meta_ov), "筆")
+        except Exception as _err:
+            log("event_metadata_overrides 讀取失敗:", _err)
+
     for _v in venues:
         for _e in _v['ex']:
             _src = _e.get('src', '')
@@ -1135,6 +1151,23 @@ def main():
                 _e['fee'] = _fee
             elif _e.get('fee') not in ('免費', '付費'):
                 _e.pop('fee', None)
+            _meta = _meta_ov.get(_norm_title(_e.get('t', '')))
+            if _meta:
+                for _field in ('org', 'lic'):
+                    if _meta.get(_field):
+                        _e[_field] = _meta[_field]
+                if _meta.get('c2') in FORM_VALUES:
+                    _e['c2'] = _meta['c2']
+                if _meta.get('link'):
+                    _old_link = _e.get('l')
+                    _e['l'] = _meta['link']
+                    _e['h'] = 0
+                    if _v.get('url') == _old_link:
+                        _v['url'] = _meta['link']
+                if _e.get('c2') in FORM_VALUES:
+                    _e.pop('c_flag', None)
+            if _e.get('c') == 'ACG' and _e.get('c2') not in FORM_VALUES:
+                _e['c_flag'] = '形式待編輯確認'
     log("兩軸分類完成")
 
     try:
