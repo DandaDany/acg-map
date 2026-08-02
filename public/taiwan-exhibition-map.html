@@ -1463,11 +1463,23 @@ function closeImageLightbox(){
 /* 地圖：MapLibre 向量底圖（Positron，類 Google 簡單版）＋ 鄉鎮界框線 */
 const map=L.map('map',{zoomControl:true,minZoom:6,maxZoom:16,attributionControl:false,maxBoundsViscosity:1.0,closePopupOnClick:false});
 map.zoomControl.setPosition('bottomright'); /* 左側欄改版後避免縮放鈕被側欄遮住 */
-let baseGL=null;
-if(L.maplibreGL){
-  try{ baseGL=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/positron',attribution:'© OpenFreeMap｜© OpenMapTiles｜© OpenStreetMap'}).addTo(map); }
-  catch(e){ baseGL=null; }
+let baseGL=null,baseRaster=null;
+function canUseWebGL(){
+  try{
+    const canvas=document.createElement('canvas');
+    return !!(canvas.getContext('webgl2')||canvas.getContext('webgl')||canvas.getContext('experimental-webgl'));
+  }catch(e){ return false; }
 }
+function useRasterFallback(){
+  if(baseRaster) return;
+  baseRaster=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    maxZoom:19,attribution:'© OpenStreetMap contributors'
+  }).addTo(map);
+}
+if(L.maplibreGL&&canUseWebGL()){
+  try{ baseGL=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/positron',attribution:'© OpenFreeMap｜© OpenMapTiles｜© OpenStreetMap'}).addTo(map); }
+  catch(e){ baseGL=null;useRasterFallback(); }
+}else useRasterFallback();
 /* 道路加粗為白線（樣式載入後微調，仍保留淡灰外框定義邊界）*/
 function boldRoads(){
   if(!baseGL) return;
