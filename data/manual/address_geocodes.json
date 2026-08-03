@@ -1803,5 +1803,29 @@
   "display_name": "高雄市前金區成功一路266-1號, 801747",
   "type": "PointAddress",
   "score": 100
+ },
+ "台北市信義區光復南路133號": {
+  "la": 25.0436882,
+  "lo": 121.5597379,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區新仁里光復南路133號, 11072",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台北市南港區經貿二路166號中國信託金融廣場A棟2樓": {
+  "la": 25.0583953,
+  "lo": 121.6161248,
+  "source": "arcgis_address",
+  "display_name": "台北市南港區三重里經貿二路166號, 11568",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "高雄市苓雅區三多四路21號12樓": {
+  "la": 22.613424,
+  "lo": 120.303549,
+  "source": "arcgis_address",
+  "display_name": "高雄市三多四路21號, 802760",
+  "type": "PointAddress",
+  "score": 97.88
  }
 }

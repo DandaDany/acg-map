@@ -8,7 +8,7 @@ import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VALID_FEES = {"免費", "付費"}
-TODAY = datetime.date(2026, 8, 2)
+TODAY = datetime.date(2026, 8, 3)
 
 
 def load(relative_path):

@@ -9,11 +9,20 @@
 - `venue_corrections.json`：場館修正規則。
 - `venue_address_overrides.json`：場館地址覆寫。
 - `event_link_overrides.json`：活動連結覆寫。
+- `event_metadata_overrides.json`：主辦方、授權／權利方、形式與來源層級的人工查證覆寫。
 - `venue_event_sources.json`：官方展覽來源補強。
 - `venue_geocodes.json`、`address_geocodes.json`：已確認精準座標。
 - `點點心門市地址_dimdimsum.json`、`凍心門市地址_frozenheart.json`：多門市聯名活動的人工門市參考清單。
 
 原則：這裡的資料不要被爬蟲任意覆蓋。
+
+## ACG 活動品質門檻
+
+- 主辦方是實際策劃／執行單位；授權欄是授權商，若官方只公開版權列則記錄權利方。不得填「官方」、「需人工確認」或空白。
+- 活動連結優先使用 IP、品牌、主辦、場館的官方活動頁或官方貼文；其次才是正式售票／報名頁。只有前兩級都找不到時才可使用可信媒體，並在 `event_metadata_overrides.json` 填寫 `fallback_reason`。
+- KV 必須保留原始來源。連結與 KV 可以來自不同頁，但兩者都必須是官方來源；若沒有更完整的官方活動頁，活動連結應與 KV 來源一致。社群 CDN 圖片需下載到 repository 保存。
+- 形式只接受「展覽、快閃店、主題餐廳、體驗活動」。分類不明時停止輸出並交由編輯判定，不得回落到「其他」。
+- `backend/_test_event_metadata_quality.py` 是硬性檢查；每日排程必須在開 PR 前通過，PR 不會自動合併。
 
 ## acg_events.json（Excel 的 diff 友善文字鏡像）
 
