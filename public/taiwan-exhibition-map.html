@@ -878,7 +878,7 @@ a{color:inherit}
   .discover-head h1{font-size:21px}.discover-head p{display:none}
   .discover-list{padding:10px 12px 22px}
   .event-card.desktop-clickable{display:block;min-height:0;cursor:default;transform:none}
-  .event-card.desktop-clickable>.media-frame{height:auto;aspect-ratio:4/5}
+  .event-card.desktop-clickable>.media-frame{height:auto;max-height:200px;aspect-ratio:16/9}
   .card-body{padding:14px}
   .event-card h2{font-size:18px}
   .mobile-detail{display:block}
@@ -924,13 +924,14 @@ a{color:inherit}
   .mobile-venue-close{position:absolute;top:5px;right:7px;width:44px;height:44px;border:0;background:transparent;font-size:20px;cursor:pointer}
   .mobile-venue-body{min-height:0;flex:1;overflow:auto;padding:2px 12px 18px}
   .mobile-venue-body.single-event{overflow:hidden}
-  .mobile-venue-body.single-event .mobile-event-panel,.mobile-venue-body.single-event .mobile-event-content,.mobile-venue-body.single-event .detail-copy{height:100%;min-height:0}
-  .mobile-venue-body.single-event .mobile-event-panel{display:flex;flex-direction:column}
+  .mobile-venue-body.single-event .mobile-event-panel{display:flex;height:100%;min-height:0;flex-direction:column}
   .mobile-venue-body.single-event .mobile-event-summary{flex:none}
-  .mobile-venue-body.single-event .mobile-event-content{flex:1;overflow:hidden}
-  .mobile-venue-body.single-event .mobile-event-content>.media-frame{display:none}
-  .mobile-venue-body.single-event .locations-section{flex:1}
-  .mobile-venue-body.single-event .other-location-scroll{max-height:none;flex:1}
+  .mobile-venue-body.single-event .mobile-event-content{display:flex;flex:1;min-height:0;flex-direction:column;overflow:hidden}
+  .mobile-venue-body.single-event .mobile-event-content>.media-frame{display:block;flex:none;height:148px}
+  .mobile-venue-body.single-event .detail-copy{flex:1;min-height:0}
+  .mobile-venue-body.single-event .locations-section{position:relative;flex:1;min-height:0}
+  .mobile-venue-body.single-event .other-location-scroll{max-height:none;flex:1;min-height:120px}
+  .mobile-venue-body.single-event .locations-section::after{content:"";position:absolute;right:0;bottom:0;left:0;height:22px;background:linear-gradient(to top,var(--card),transparent);pointer-events:none}
   .mobile-event-panel{overflow:hidden;margin-bottom:8px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
   .mobile-event-summary{display:grid;width:100%;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:12px;border:0;background:transparent;text-align:left;cursor:pointer}
   .mobile-event-summary h3{margin:0;font-size:14px}.mobile-event-summary small{display:block;margin-top:4px;color:var(--muted)}
@@ -1628,12 +1629,22 @@ function classifyKvMarker(marker){
   if(image.complete&&image.naturalWidth) apply(); else image.addEventListener('load',apply,{once:true});
 }
 function sortVenueGroups(groups){return sortDiscoverActivities(groups)}
-function focusMapLocation(location,zoom=13){
+function focusMapLocation(location,zoom=13,mobileSheetOffset=false){
   if(!location||!Number.isFinite(+location.lat)||!Number.isFinite(+location.lng)) return;
   const target=[+location.lat,+location.lng];
   const nextZoom=Math.max(map.getZoom(),zoom);
-  map.flyTo(target,nextZoom,{animate:!matchMedia('(prefers-reduced-motion:reduce)').matches,duration:.55});
-  uiState.mapView={center:target,zoom:nextZoom};
+  let center=target;
+  if(mobileSheetOffset&&MOBILE_QUERY.matches){
+    // 手機開啟活動 bottom sheet 時，把 marker 定位在 sheet 上方仍可見的地圖區域中央，
+    // 而不是整個螢幕中央（sheet 高度與 CSS 的 min(72dvh,640px) 一致）。
+    const sheetHeight=Math.min(window.innerHeight*0.72,640);
+    const point=map.project(target,nextZoom);
+    point.y+=sheetHeight/2+4;
+    const shifted=map.unproject(point,nextZoom);
+    center=[shifted.lat,shifted.lng];
+  }
+  map.flyTo(center,nextZoom,{animate:!matchMedia('(prefers-reduced-motion:reduce)').matches,duration:.55});
+  uiState.mapView={center:Array.isArray(center)?center:[center.lat,center.lng],zoom:nextZoom};
 }
 let expandedClusterVenueIds=[];
 function rememberExpandedCluster(layer){
@@ -1660,7 +1671,7 @@ function renderMapMarkers(){
     marker.on('click',event=>{
       L.DomEvent.stopPropagation(event);
       uiState.selectedVenueId=venue._id;
-      focusMapLocation(locations[0]);
+      focusMapLocation(locations[0],13,true);
       if(MOBILE_QUERY.matches) openMobileVenueSheet(venue._id);
       else openDesktopVenuePicker(venue._id);
     });
@@ -1895,7 +1906,7 @@ function chooseSuggestion(item){
     const venue=(DATA.venues||[]).find(entry=>entry._id===item.venueId);
     if(!venue) return;
     if(MOBILE_QUERY.matches) setTab('map');
-    setTimeout(()=>{map.invalidateSize();map.setView([venue.la,venue.lo],13);if(MOBILE_QUERY.matches)openMobileVenueSheet(item.venueId);else openDesktopVenuePicker(item.venueId)},80);
+    setTimeout(()=>{map.invalidateSize();focusMapLocation({lat:venue.la,lng:venue.lo},13,true);if(MOBILE_QUERY.matches)openMobileVenueSheet(item.venueId);else openDesktopVenuePicker(item.venueId)},80);
   }
 }
 function moveSearchSelection(panel,delta){
@@ -1968,7 +1979,7 @@ document.getElementById('discoverList').addEventListener('click',event=>{
     if(preferred) focusMapLocation(preferred);
     if(MOBILE_QUERY.matches&&preferred){
       setTab('map');
-      setTimeout(()=>{map.invalidateSize();focusMapLocation(preferred);openMobileVenueSheet(preferred.venueId)},40);
+      setTimeout(()=>{map.invalidateSize();focusMapLocation(preferred,13,true);openMobileVenueSheet(preferred.venueId)},40);
     }else if(!MOBILE_QUERY.matches) openDesktopEventModal(card.dataset.eventId,null,'push',preferred?preferred.id:'');
   }
 });
