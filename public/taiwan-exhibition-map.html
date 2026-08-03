@@ -809,6 +809,7 @@ a{color:inherit}
 .pinsvg{display:block;overflow:visible;filter:drop-shadow(0 3px 5px rgba(0,0,0,.45));transition:transform .12s ease;transform-origin:50% 100%}
 .pinwrap:hover .pinsvg{transform:scale(1.12)}
 .pinwrap.approx .pinsvg{opacity:.7}
+.pinwrap::after{content:"";position:absolute;inset:-6px;border-radius:14px}
 .marker-badge{position:absolute;z-index:3;top:-3px;right:-3px;display:grid;min-width:18px;height:18px;place-items:center;padding:0 4px;border:2px solid var(--bg);border-radius:999px;background:var(--accent2);color:#fff;font-size:11px;font-weight:800}
 .pinwrap.approx .marker-badge{background:#7c8aa6}
 .soondot{position:absolute;z-index:3;top:-2px;left:-2px;width:12px;height:12px;border:2px solid var(--bg);border-radius:50%;background:var(--accent);box-shadow:0 0 0 1px rgba(255,90,95,.4)}
@@ -844,7 +845,7 @@ a{color:inherit}
 .location-name{font-size:13px;font-weight:750}.location-date,.location-address{margin-top:3px;color:var(--muted);font-size:11.5px;line-height:1.45}
 .text-link,.action-btn{display:inline-flex;min-height:42px;align-items:center;justify-content:center;border-radius:11px;text-decoration:none;font-size:12.5px;font-weight:750;cursor:pointer}
 .location-actions{display:flex;flex:none;align-items:center;gap:9px}
-.location-nav{display:inline-grid;min-width:40px;min-height:36px;place-items:center;border:0;background:transparent;color:var(--accent2);text-decoration:none;font-size:11px;font-weight:750}
+.location-nav{display:inline-grid;min-width:44px;min-height:44px;place-items:center;border:0;background:transparent;color:var(--accent2);text-decoration:none;font-size:11px;font-weight:750}
 .location-nav:hover{text-decoration:none;color:#9cc4ff}
 .action-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .action-btn{padding:0 14px;border:1px solid var(--line);background:#151d2a}
@@ -883,7 +884,7 @@ a{color:inherit}
   .event-card h2{font-size:18px}
   .mobile-detail{display:block}
   .desktop-only-summary{display:none}
-  .mobile-detail .meta-row{margin-top:5px}
+  .mobile-detail .card-summary{margin-top:5px}
   .mobile-detail .detail-section{margin-top:13px;padding-top:11px}
   .mobile-detail .location-row{background:#161d29}
   .mobile-detail .action-row{margin-top:12px}
@@ -893,7 +894,7 @@ a{color:inherit}
   body.mobile-map .map-pane{display:block}
   .map-tools{top:66px;right:10px}
   .map-marker-toggle{top:10px;width:148px}
-  .map-marker-toggle button{min-height:38px}
+  .map-marker-toggle button{min-height:44px}
   .kv-marker-shell{width:86px;height:68px}
   .kv-marker{width:50px;height:64px}
   .kv-marker.landscape{width:84px;height:52px}
@@ -1379,9 +1380,8 @@ function eventCardHtml(group,preferredLocation=null){
     +'<div class="desktop-only-summary"><div class="card-summary">'+esc(groupDateText(group))+'</div>'
     +'<div class="card-summary">'+(preferredLocation?esc(first.venueName+' · '+first.city):(group.locations.length>1?'共 '+group.locations.length+' 個地點':esc(first.venueName+' · '+first.city)))+'</div>'
     +metadataHtml(group)+'</div>'
-    +'<div class="mobile-detail"><div class="meta-row"><strong>日期：</strong>'+esc(groupDateText(group))+'</div>'
-    +metadataHtml(group)+'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,first.id)+'</section>'
-    +actionHtml(group)+'</div></div></article>';
+    +'<div class="mobile-detail"><div class="card-summary">'+esc(groupDateText(group))+'</div>'
+    +'<div class="card-summary">'+esc(preferredLocation?first.venueName+' · '+first.city:(group.locations.length>1?first.city+'等 '+group.locations.length+' 個地點':first.venueName+' · '+first.city))+'</div></div></div></article>';
 }
 function wireImages(root){
   root.querySelectorAll('.media-front').forEach(image=>{
@@ -1608,18 +1608,19 @@ function markerIcon(venueIdValue,locations){
   const ids=[...new Set(locations.map(location=>location.event.id))];
   const count=ids.length;
   const group=activityGroups.get(ids[0]);
+  const markerLabel=esc((locations[0]&&locations[0].venueName||'活動地點')+'，'+count+' 場活動，按下查看');
   if(uiState.markerMode==='image'&&group&&safeUrl(group.image,true)){
     const image=safeUrl(group.image,true);
     const size=MOBILE_QUERY.matches?[86,68]:[94,76];
     return L.divIcon({className:'',iconSize:size,iconAnchor:[size[0]/2,size[1]-2],
-      html:'<div class="kv-marker-shell"><div class="kv-marker"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""><span class="marker-badge">'+count+'</span></div></div>'});
+      html:'<div class="kv-marker-shell" role="button" aria-label="'+markerLabel+'"><div class="kv-marker"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""><span class="marker-badge">'+count+'</span></div></div>'});
   }
   const venue=locations[0]&&locations[0].venue;
   const approximate=!venue||venue.loc!=='exact';
   const soon=venueHasSoon(locations);
   const classes='pinwrap'+(approximate?' approx':'')+(soon?' hassoon':'');
   return L.divIcon({className:'',iconSize:[40,52],iconAnchor:[20,50],
-    html:'<div class="'+classes+'">'+pinSvg(venueForm(locations))+'<span class="marker-badge">'+count+'</span>'+(soon?'<span class="soondot" aria-label="含即將結束活動"></span>':'')+'</div>'});
+    html:'<div class="'+classes+'" role="button" aria-label="'+markerLabel+'">'+pinSvg(venueForm(locations))+'<span class="marker-badge">'+count+'</span>'+(soon?'<span class="soondot" aria-label="含即將結束活動"></span>':'')+'</div>'});
 }
 function classifyKvMarker(marker){
   const element=marker.getElement();
