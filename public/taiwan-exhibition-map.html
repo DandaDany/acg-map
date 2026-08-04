@@ -1092,6 +1092,7 @@ const uiState={
   filters:{city:'all',time:'all',form:'all',fee:'all',multi:'all'},
   markerMode:'pin',
   selectedVenueId:null,
+  selectedLocationId:null,
   selectedEventId:null,
   discoverScrollTop:0,
   mapView:null
@@ -1468,7 +1469,7 @@ function closeDesktopDialog(updateHistory=true){
   const returnEventId=mapSelectionActive?uiState.selectedEventId:null;
   overlay.classList.remove('show');
   overlay.setAttribute('aria-hidden','true');
-  activeDialogMode='';dialogReturn=null;uiState.selectedEventId=null;uiState.selectedVenueId=null;
+  activeDialogMode='';dialogReturn=null;uiState.selectedEventId=null;uiState.selectedVenueId=null;uiState.selectedLocationId=null;
   mapSelectionActive=false;
   highlightSelectedMarker();
   if(updateHistory) updateEventParam('','replace');
@@ -1615,19 +1616,20 @@ function markerIcon(venueIdValue,locations){
   const ids=[...new Set(locations.map(location=>location.event.id))];
   const count=ids.length;
   const group=activityGroups.get(ids[0]);
-  const markerLabel=esc((locations[0]&&locations[0].venueName||'活動地點')+'，'+count+' 場活動，按下查看');
+  const markerLabel=esc((locations[0]&&locations[0].venueName||'活動地點')+' · '+((group&&group.title)||'活動')+'，按下查看');
+  const badge=count>1?'<span class="marker-badge">'+count+'</span>':'';
   if(uiState.markerMode==='image'&&group&&safeUrl(group.image,true)){
     const image=safeUrl(group.image,true);
     const size=MOBILE_QUERY.matches?[86,68]:[94,76];
     return L.divIcon({className:'',iconSize:size,iconAnchor:[size[0]/2,size[1]-2],
-      html:'<div class="kv-marker-shell" role="button" aria-label="'+markerLabel+'"><div class="kv-marker"><div class="kv-marker-body"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""></div><span class="marker-badge">'+count+'</span></div></div>'});
+      html:'<div class="kv-marker-shell" role="button" aria-label="'+markerLabel+'"><div class="kv-marker"><div class="kv-marker-body"><img class="media-back" src="'+esc(image)+'" alt=""><img class="media-front" src="'+esc(image)+'" alt=""></div>'+badge+'</div></div>'});
   }
   const venue=locations[0]&&locations[0].venue;
   const approximate=!venue||venue.loc!=='exact';
   const soon=venueHasSoon(locations);
   const classes='pinwrap'+(approximate?' approx':'')+(soon?' hassoon':'');
   return L.divIcon({className:'',iconSize:[40,52],iconAnchor:[20,50],
-    html:'<div class="'+classes+'" role="button" aria-label="'+markerLabel+'">'+pinSvg(venueForm(locations))+'<span class="marker-badge">'+count+'</span>'+(soon?'<span class="soondot" aria-label="含即將結束活動"></span>':'')+'</div>'});
+    html:'<div class="'+classes+'" role="button" aria-label="'+markerLabel+'">'+pinSvg(venueForm(locations))+badge+(soon?'<span class="soondot" aria-label="含即將結束活動"></span>':'')+'</div>'});
 }
 function classifyKvMarker(marker){
   const element=marker.getElement();
@@ -1659,29 +1661,36 @@ function restoreExpandedCluster(){
 function renderMapMarkers(){
   cluster.clearLayers();markers=[];
   (DATA.venues||[]).forEach(venue=>{
+    if(!Number.isFinite(+venue.la)||!Number.isFinite(+venue.lo)) return;
     const locations=getFilteredVenueOccurrences(venue._id);
-    if(!locations.length||!Number.isFinite(+venue.la)||!Number.isFinite(+venue.lo)) return;
-    const icon=markerIcon(venue._id,locations);
-    const marker=L.marker([+venue.la,+venue.lo],{icon});
-    marker.groupCount=new Set(locations.map(location=>location.event.id)).size;
-    marker.venueId=venue._id;
-    marker.on('add',()=>requestAnimationFrame(()=>classifyKvMarker(marker)));
-    marker.on('click',event=>{
-      L.DomEvent.stopPropagation(event);
-      uiState.selectedVenueId=venue._id;
-      highlightSelectedMarker();
-      focusMapLocation(locations[0]);
-      if(MOBILE_QUERY.matches) openMobileVenueSheet(venue._id);
-      else{mapSelectionActive=true;openDesktopVenuePicker(venue._id);}
+    if(!locations.length) return;
+    const seen=new Set();
+    locations.forEach(location=>{
+      if(seen.has(location.event.id)) return;
+      seen.add(location.event.id);
+      const marker=L.marker([+venue.la,+venue.lo],{icon:markerIcon(venue._id,[location])});
+      marker.groupCount=1;
+      marker.venueId=venue._id;
+      marker.eventId=location.event.id;
+      marker.locationId=location.id;
+      marker.on('add',()=>requestAnimationFrame(()=>classifyKvMarker(marker)));
+      marker.on('click',event=>{
+        L.DomEvent.stopPropagation(event);
+        uiState.selectedVenueId=venue._id;
+        uiState.selectedLocationId=location.id;
+        highlightSelectedMarker();
+        if(MOBILE_QUERY.matches) openMobileVenueSheet(venue._id,location.event.id);
+        else{mapSelectionActive=true;openDesktopEventModal(location.event.id,null,'push',location.id);}
+      });
+      markers.push(marker);
     });
-    markers.push(marker);
   });
   cluster.addLayers(markers);
   requestAnimationFrame(highlightSelectedMarker);
 }
 function highlightSelectedMarker(){
   markers.forEach(marker=>{
-    const on=marker.venueId===uiState.selectedVenueId;
+    const on=marker.locationId===uiState.selectedLocationId;
     marker.setZIndexOffset(on?1000:0);
     const element=marker.getElement();
     const root=element&&element.querySelector('.pinwrap,.kv-marker-shell');
@@ -1708,10 +1717,11 @@ function updateMarkerToggles(){
 }
 cluster.on('clusterclick',event=>rememberExpandedCluster(event.layer));
 map.on('moveend zoomend',()=>{const center=map.getCenter();uiState.mapView={center:[center.lat,center.lng],zoom:map.getZoom()}});
-map.on('click',()=>closeMobileVenueSheet());
+map.on('click',()=>{if(Date.now()-mobileSheetOpenedAt<350)return;closeMobileVenueSheet()});
 
 let mobileCards=[];
 let mobileCardIndex=0;
+let mobileSheetOpenedAt=0;
 function occurrenceDistance(a,b){
   const dLat=a.lat-b.lat;
   const dLng=(a.lng-b.lng)*Math.cos((a.lat+b.lat)/2*Math.PI/180);
@@ -1747,6 +1757,7 @@ function renderMobileCard(recenter){
   body.innerHTML=mobileCardHtml(card.group,card.location);
   wireImages(body);
   uiState.selectedVenueId=card.location.venueId;
+  uiState.selectedLocationId=card.location.id;
   highlightSelectedMarker();
   if(recenter) focusMapLocation(card.location);
 }
@@ -1769,6 +1780,7 @@ function openMobileVenueSheet(venueIdValue,preferredEventId){
   const sheet=document.getElementById('mobileVenueSheet');
   sheet.classList.add('show');
   sheet.setAttribute('aria-hidden','false');
+  mobileSheetOpenedAt=Date.now();
 }
 function closeMobileVenueSheet(){
   const sheet=document.getElementById('mobileVenueSheet');
@@ -1776,6 +1788,7 @@ function closeMobileVenueSheet(){
   sheet.classList.remove('show');
   sheet.setAttribute('aria-hidden','true');
   uiState.selectedVenueId=null;
+  uiState.selectedLocationId=null;
   highlightSelectedMarker();
   if(wasOpen) requestAnimationFrame(restoreExpandedCluster);
 }
