@@ -800,6 +800,7 @@ a{color:inherit}
 .map-tools{position:absolute;z-index:1000;top:14px;right:14px;display:flex;gap:8px}
 .map-tool{display:grid;min-width:44px;height:44px;place-items:center;border:1px solid rgba(25,31,42,.18);border-radius:13px;background:rgba(255,255,255,.94);color:#1b2430;box-shadow:0 7px 22px rgba(0,0,0,.16);cursor:pointer}
 .map-marker-toggle{position:absolute;z-index:1000;top:14px;left:50%;width:160px;transform:translateX(-50%);background:rgba(16,22,32,.94);box-shadow:0 7px 22px rgba(0,0,0,.22)}
+.map-legend{display:none}
 .leaflet-tooltip.lbl{background:transparent;border:0;box-shadow:none;padding:0;white-space:nowrap;font-weight:700;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;pointer-events:none}
 .leaflet-tooltip.lbl:before{display:none;border:0}
 .lbl-city{font-size:15px;color:#1b1b1b;letter-spacing:.5px}
@@ -895,6 +896,11 @@ a{color:inherit}
   .map-tools{top:66px;right:10px}
   .map-marker-toggle{top:10px;width:148px}
   .map-marker-toggle button{min-height:44px}
+  .map-legend{display:flex;position:absolute;z-index:1000;top:68px;left:50%;max-width:calc(100vw - 132px);gap:11px;overflow-x:auto;transform:translateX(-50%);padding:6px 13px;border-radius:999px;background:rgba(16,22,32,.94);box-shadow:0 7px 22px rgba(0,0,0,.22);scrollbar-width:none}
+  .map-legend::-webkit-scrollbar{display:none}
+  .map-legend[hidden]{display:none}
+  .map-legend-item{display:flex;flex:none;align-items:center;gap:5px;color:#e6ecf5;font-size:11px;font-weight:650;white-space:nowrap}
+  .map-legend-dot{width:11px;height:11px;flex:none;border-radius:50%;border:1.5px solid rgba(255,255,255,.85)}
   .kv-marker-shell{width:86px;height:68px}
   .kv-marker{width:50px;height:64px}
   .kv-marker.landscape{width:84px;height:52px}
@@ -997,6 +1003,13 @@ a{color:inherit}
     <div class="segmented map-marker-toggle marker-toggle" aria-label="地圖 Marker 顯示模式">
       <button type="button" data-marker-mode="pin" class="active">⌖ 圖釘</button>
       <button type="button" data-marker-mode="image">▣ 圖片</button>
+    </div>
+    <div class="map-legend" id="mapLegend" hidden aria-label="圖釘顏色代表的活動形式">
+      <span class="map-legend-item"><span class="map-legend-dot" style="background:#3f8ad0"></span>展覽</span>
+      <span class="map-legend-item"><span class="map-legend-dot" style="background:#e05aa0"></span>快閃店</span>
+      <span class="map-legend-item"><span class="map-legend-dot" style="background:#e08a3c"></span>主題餐廳</span>
+      <span class="map-legend-item"><span class="map-legend-dot" style="background:#8560d8"></span>體驗活動</span>
+      <span class="map-legend-item"><span class="map-legend-dot" style="background:#5f7089"></span>其他</span>
     </div>
     <div class="map-tools"><button class="map-tool" id="mapHomeButton" type="button" aria-label="回到台灣全圖" title="回到台灣全圖">⌂</button></div>
   </section>
@@ -1701,6 +1714,7 @@ function setMarkerMode(mode){
 function updateMarkerToggles(){
   document.querySelectorAll('[data-marker-mode]').forEach(button=>button.classList.toggle('active',button.dataset.markerMode===uiState.markerMode));
   document.getElementById('pinLegend').hidden=uiState.markerMode!=='pin';
+  document.getElementById('mapLegend').hidden=uiState.markerMode!=='pin';
 }
 cluster.on('clusterclick',event=>rememberExpandedCluster(event.layer));
 map.on('moveend zoomend',()=>{const center=map.getCenter();uiState.mapView={center:[center.lat,center.lng],zoom:map.getZoom()}});
