@@ -1327,7 +1327,7 @@ function tagHtml(group){
 }
 function mediaFrameHtml(image,alt,lightbox=false,lazy=false){
   const src=safeUrl(image,true);
-  if(!src) return '<div class="media-frame"><div class="media-placeholder" aria-label="此活動沒有主視覺">▣<br>暫無 KV</div></div>';
+  if(!src) return '<div class="media-frame"><div class="media-placeholder" aria-label="此活動主視覺敬請期待">▣<br>敬請期待</div></div>';
   const attr=lazy?'data-src="'+esc(src)+'"':'src="'+esc(src)+'"';
   const content='<img class="media-back" '+attr+' alt="" loading="lazy" decoding="async"><img class="media-front" '+attr+' alt="'+esc(alt)+'" loading="lazy" decoding="async">';
   if(lightbox) return '<button type="button" class="media-frame kv-lightbox-btn" data-lightbox="'+esc(src)+'" data-lightbox-alt="'+esc(alt)+'" aria-label="放大 '+esc(alt)+' 主視覺">'+content+'</button>';
@@ -1387,7 +1387,7 @@ function wireImages(root){
   root.querySelectorAll('.media-front').forEach(image=>{
     image.addEventListener('error',()=>{
       const frame=image.closest('.media-frame');
-      if(frame) frame.innerHTML='<div class="media-placeholder">▣<br>圖片載入失敗</div>';
+      if(frame) frame.innerHTML='<div class="media-placeholder" aria-label="此活動主視覺敬請期待">▣<br>敬請期待</div>';
     },{once:true});
   });
 }
@@ -1422,6 +1422,7 @@ function focusDialog(){
   panel.setAttribute('tabindex','-1');
   panel.focus({preventScroll:true});
 }
+let mapSelectionActive=false;
 function openDesktopEventModal(eventId,returnTarget=null,historyMode='push',preferredLocationId=''){
   const group=activityGroups.get(eventId);
   if(!group) return;
@@ -1459,12 +1460,16 @@ function openDesktopVenuePicker(venueIdValue,updateHistory=true){
 function closeDesktopDialog(updateHistory=true){
   const overlay=document.getElementById('dialogOverlay');
   const wasOpen=overlay.classList.contains('show');
+  // 桌機反向同步：從地圖 marker 進來看完活動、關閉視窗後，把 Discover 清單捲到並高亮該活動。
+  const returnEventId=mapSelectionActive?uiState.selectedEventId:null;
   overlay.classList.remove('show');
   overlay.setAttribute('aria-hidden','true');
   activeDialogMode='';dialogReturn=null;uiState.selectedEventId=null;uiState.selectedVenueId=null;
+  mapSelectionActive=false;
   if(updateHistory) updateEventParam('','replace');
   if(lastFocus&&lastFocus.focus) lastFocus.focus({preventScroll:true});
   if(wasOpen) requestAnimationFrame(restoreExpandedCluster);
+  if(wasOpen&&returnEventId&&!MOBILE_QUERY.matches) scrollToEvent(returnEventId,true);
 }
 function pickerCardHandler(event){
   const button=event.target.closest('[data-picker-event]');
@@ -1674,7 +1679,7 @@ function renderMapMarkers(){
       uiState.selectedVenueId=venue._id;
       focusMapLocation(locations[0],13,true);
       if(MOBILE_QUERY.matches) openMobileVenueSheet(venue._id);
-      else openDesktopVenuePicker(venue._id);
+      else{mapSelectionActive=true;openDesktopVenuePicker(venue._id);}
     });
     markers.push(marker);
   });
