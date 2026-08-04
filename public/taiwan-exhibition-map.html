@@ -931,20 +931,19 @@ a{color:inherit}
   .mobile-venue-close{position:absolute;top:5px;right:7px;width:44px;height:44px;border:0;background:transparent;font-size:20px;cursor:pointer}
   .mobile-venue-body{min-height:0;flex:1;overflow:auto;padding:2px 12px 18px}
   .mobile-venue-body.single-event{overflow:hidden}
-  .mobile-venue-body.single-event .mobile-event-panel{display:flex;height:100%;min-height:0;flex-direction:column}
-  .mobile-venue-body.single-event .mobile-event-summary{flex:none}
-  .mobile-venue-body.single-event .mobile-event-content{display:flex;flex:1;min-height:0;flex-direction:column;overflow:hidden}
-  .mobile-venue-body.single-event .mobile-event-content>.media-frame{display:block;flex:none;height:148px}
+  .mobile-venue-body.single-event .mobile-event-content{display:flex;height:100%;min-height:0;flex-direction:column;overflow:hidden}
+  .mobile-venue-body.single-event .mobile-event-content>.media-frame{flex:none;height:148px}
   .mobile-venue-body.single-event .detail-copy{flex:1;min-height:0}
   .mobile-venue-body.single-event .locations-section{position:relative;flex:1;min-height:0}
   .mobile-venue-body.single-event .other-location-scroll{max-height:none;flex:1;min-height:120px}
   .mobile-venue-body.single-event .locations-section::after{content:"";position:absolute;right:0;bottom:0;left:0;height:22px;background:linear-gradient(to top,var(--card),transparent);pointer-events:none}
-  .mobile-event-panel{overflow:hidden;margin-bottom:8px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
-  .mobile-event-summary{display:grid;width:100%;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:12px;border:0;background:transparent;text-align:left;cursor:pointer}
-  .mobile-event-summary h3{margin:0;font-size:14px}.mobile-event-summary small{display:block;margin-top:4px;color:var(--muted)}
-  .mobile-event-content{display:none;padding:0 11px 13px}.mobile-event-panel.open .mobile-event-content{display:block}
-  .mobile-event-content>.media-frame{height:310px;border-radius:11px}
+  .mobile-event-content{padding:0}.mobile-event-content>.media-frame{margin-bottom:11px;border-radius:11px}
   .mobile-event-content .detail-copy h2{font-size:20px}
+  .mobile-venue-back{position:absolute;top:5px;left:7px;width:44px;height:44px;border:0;background:transparent;color:var(--accent2);font-size:24px;cursor:pointer}
+  .mobile-venue-back[hidden]{display:none}
+  .mobile-venue-picker h2{margin:4px 2px 12px;font-size:17px}
+  .mobile-picker-grid{display:grid;grid-template-columns:1fr;gap:12px}
+  .mobile-picker-grid .picker-card .media-frame{height:180px}
   .dialog-overlay{display:none!important}
   .lightbox{padding:18px}
   .toast{bottom:calc(var(--mobile-nav) + env(safe-area-inset-bottom,0px) + 16px)}
@@ -1051,7 +1050,7 @@ a{color:inherit}
 
 <div class="mobile-venue-sheet" id="mobileVenueSheet" aria-hidden="true">
   <section class="mobile-venue-card" role="dialog" aria-modal="true" aria-label="活動資訊">
-    <header class="mobile-venue-head"><div class="sheet-grip" id="mobileVenueGrip" aria-hidden="true"></div><button class="mobile-venue-close" id="mobileVenueClose" type="button" aria-label="關閉活動資訊">×</button></header>
+    <header class="mobile-venue-head"><button class="mobile-venue-back" id="mobileVenueBack" type="button" aria-label="返回活動選擇" hidden>‹</button><div class="sheet-grip" id="mobileVenueGrip" aria-hidden="true"></div><button class="mobile-venue-close" id="mobileVenueClose" type="button" aria-label="關閉活動資訊">×</button></header>
     <div class="mobile-venue-body" id="mobileVenueBody"></div>
   </section>
 </div>
@@ -1349,11 +1348,15 @@ function mediaFrameHtml(image,alt,lightbox=false,lazy=false){
 function navUrl(location){
   return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(location.address||location.venueName||[location.lat,location.lng].join(','));
 }
+function cleanAddress(address){
+  const text=String(address||'').trim();
+  if(!text) return '';
+  return text.split(/[，,；;]/)[0].trim();
+}
 function locationRowHtml(location,group){
-  const heading=[location.venueName,location.city].filter(Boolean).join(' · ');
+  const heading=location.venueName||location.city||'';
   return '<div class="location-row"><div class="location-top"><div>'+(heading?'<div class="location-name">'+esc(heading)+'</div>':'')
-    +'<div class="location-date">'+esc(locationDateText(location))+' · '+esc(location.status.label)+'</div>'
-    +'<div class="location-address">'+esc(location.address||'地址未提供')+'</div></div>'
+    +'<div class="location-address">'+esc(cleanAddress(location.address)||'地址未提供')+'</div></div>'
     +'<div class="location-actions"><a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a></div></div></div>';
 }
 function primaryLocationFor(group,preferredLocationId=''){
@@ -1720,48 +1723,61 @@ cluster.on('clusterclick',event=>rememberExpandedCluster(event.layer));
 map.on('moveend zoomend',()=>{const center=map.getCenter();uiState.mapView={center:[center.lat,center.lng],zoom:map.getZoom()}});
 map.on('click',()=>closeMobileVenueSheet());
 
-function eventPanelHtml(group,index,preferredLocationId=''){
-  const open=index===0;
-  return '<section class="mobile-event-panel'+(open?' open':'')+'" data-mobile-event="'+esc(group.id)+'">'
-    +'<button class="mobile-event-summary" type="button" aria-expanded="'+(open?'true':'false')+'"><span><h3>'+esc(group.title)+'</h3><small>'+esc(groupDateText(group))+' · '+esc(group.fee||'費用未標示')+'</small></span><span aria-hidden="true">'+(open?'−':'+')+'</span></button>'
-    +'<div class="mobile-event-content">'+mediaFrameHtml(group.image,group.title,false,!open)
-    +'<div class="detail-copy">'+tagHtml(group)+'<h2>'+esc(group.title)+'</h2>'+metadataHtml(group)
-    +'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,preferredLocationId)+'</section>'+actionHtml(group)+'</div></div></section>';
+function mobileEventDetailHtml(group,preferredLocationId=''){
+  return '<div class="mobile-event-content">'+mediaFrameHtml(group.image,group.title,false)
+    +'<div class="detail-copy">'+tagHtml(group)+'<h2>'+esc(group.title)+'</h2>'
+    +'<div class="meta-row"><strong>日期：</strong>'+esc(groupDateText(group))+'</div>'+metadataHtml(group)
+    +'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,preferredLocationId)+'</section>'
+    +actionHtml(group)+'</div></div>';
 }
-function openMobileVenueSheet(venueIdValue){
+function mobileVenuePickerHtml(groups){
+  return '<div class="mobile-venue-picker"><h2>這個地點有 '+groups.length+' 場活動</h2><div class="mobile-picker-grid">'
+    +groups.map(group=>'<button class="picker-card" type="button" data-picker-event="'+esc(group.id)+'">'+mediaFrameHtml(group.image,group.title,false)
+      +'<span class="picker-copy"><h3>'+esc(group.title)+'</h3><span class="meta-row">'+esc(groupDateText(group))+' · '+esc(group.fee||'費用未標示')+'</span></span></button>').join('')
+    +'</div></div>';
+}
+let mobileVenueGroups=[];
+function showMobileEventDetail(group,venueIdValue,fromPicker){
+  const body=document.getElementById('mobileVenueBody');
+  const preferred=group.locations.find(location=>location.venueId===venueIdValue);
+  body.classList.add('single-event');body.classList.remove('picker-mode');
+  body.innerHTML=mobileEventDetailHtml(group,preferred?preferred.id:'');
+  wireImages(body);
+  document.getElementById('mobileVenueBack').hidden=!fromPicker;
+  body.scrollTop=0;
+}
+function showMobileVenuePicker(groups){
+  const body=document.getElementById('mobileVenueBody');
+  body.classList.remove('single-event');body.classList.add('picker-mode');
+  body.innerHTML=mobileVenuePickerHtml(groups);
+  wireImages(body);
+  document.getElementById('mobileVenueBack').hidden=true;
+  body.scrollTop=0;
+}
+function openMobileVenueSheet(venueIdValue,preferredEventId){
   const locations=getFilteredVenueOccurrences(venueIdValue);
   const groups=sortVenueGroups([...new Set(locations.map(location=>location.event.id))].map(id=>activityGroups.get(id)).filter(Boolean));
   if(!groups.length) return;
   uiState.selectedVenueId=venueIdValue;
-  const body=document.getElementById('mobileVenueBody');
-  body.classList.toggle('single-event',groups.length===1);
-  body.innerHTML=groups.map((group,index)=>{
-    const preferred=group.locations.find(location=>location.venueId===venueIdValue);
-    return eventPanelHtml(group,index,preferred?preferred.id:'');
-  }).join('');
-  wireImages(body);
-  document.getElementById('mobileVenueSheet').classList.add('show');
-  document.getElementById('mobileVenueSheet').setAttribute('aria-hidden','false');
-  body.scrollTop=0;
+  mobileVenueGroups=groups;
+  const preferredGroup=preferredEventId&&groups.find(group=>group.id===preferredEventId);
+  if(groups.length===1) showMobileEventDetail(groups[0],venueIdValue,false);
+  else if(preferredGroup) showMobileEventDetail(preferredGroup,venueIdValue,true);
+  else showMobileVenuePicker(groups);
+  const sheet=document.getElementById('mobileVenueSheet');
+  sheet.classList.add('show');
+  sheet.setAttribute('aria-hidden','false');
 }
 function closeMobileVenueSheet(){
   const sheet=document.getElementById('mobileVenueSheet');
   const wasOpen=sheet.classList.contains('show');
   sheet.classList.remove('show');
   sheet.setAttribute('aria-hidden','true');
-  document.getElementById('mobileVenueBody').classList.remove('single-event');
+  const body=document.getElementById('mobileVenueBody');
+  body.classList.remove('single-event','picker-mode');
+  document.getElementById('mobileVenueBack').hidden=true;
   uiState.selectedVenueId=null;
   if(wasOpen) requestAnimationFrame(restoreExpandedCluster);
-}
-function expandMobilePanel(panel){
-  document.querySelectorAll('.mobile-event-panel').forEach(item=>{
-    const open=item===panel;item.classList.toggle('open',open);
-    const button=item.querySelector('.mobile-event-summary');
-    button.setAttribute('aria-expanded',open?'true':'false');
-    button.lastElementChild.textContent=open?'−':'+';
-  });
-  panel.querySelectorAll('[data-src]').forEach(image=>{image.src=image.dataset.src;image.removeAttribute('data-src')});
-  panel.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
 }
 
 function filterOptionsFor(key){
@@ -1999,7 +2015,7 @@ document.getElementById('discoverList').addEventListener('click',event=>{
     if(preferred) focusMapLocation(preferred);
     if(MOBILE_QUERY.matches&&preferred){
       setTab('map');
-      setTimeout(()=>{map.invalidateSize();focusMapLocation(preferred,13,true);openMobileVenueSheet(preferred.venueId)},40);
+      setTimeout(()=>{map.invalidateSize();focusMapLocation(preferred,13,true);openMobileVenueSheet(preferred.venueId,card.dataset.eventId)},40);
     }else if(!MOBILE_QUERY.matches) openDesktopEventModal(card.dataset.eventId,null,'push',preferred?preferred.id:'');
   }
 });
@@ -2038,8 +2054,9 @@ document.getElementById('mobileFilterGrip').addEventListener('pointerup',event=>
 document.getElementById('mobileVenueClose').addEventListener('click',closeMobileVenueSheet);
 document.getElementById('mobileVenueBody').addEventListener('click',event=>{
   const share=event.target.closest('[data-share]');if(share){shareEvent(share.dataset.share);return}
-  const summary=event.target.closest('.mobile-event-summary');if(summary)expandMobilePanel(summary.closest('.mobile-event-panel'));
+  const pick=event.target.closest('[data-picker-event]');if(pick){const group=activityGroups.get(pick.dataset.pickerEvent);if(group)showMobileEventDetail(group,uiState.selectedVenueId,true);return}
 });
+document.getElementById('mobileVenueBack').addEventListener('click',()=>{if(mobileVenueGroups.length>1)showMobileVenuePicker(mobileVenueGroups)});
 document.getElementById('mobileVenueGrip').addEventListener('pointerdown',event=>{mobileVenueStartY=event.clientY});
 document.getElementById('mobileVenueGrip').addEventListener('pointerup',event=>{if(event.clientY-mobileVenueStartY>70)closeMobileVenueSheet()});
 wireSearch(desktopSearch,desktopSuggestions);wireSearch(mobileSearch,mobileSuggestions);
