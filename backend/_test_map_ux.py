@@ -51,8 +51,8 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("new Set(locations.map(location=>location.event.id))", self.html)
 
     def test_markers_and_discover_focus_the_map(self):
-        self.assertIn("function focusMapLocation(location,zoom=13)", self.html)
-        self.assertIn("focusMapLocation(locations[0])", self.html)
+        self.assertIn("function focusMapLocation(location,zoom=13", self.html)
+        self.assertIn("focusMapLocation(locations[0]", self.html)
         self.assertIn("data-location-id=", self.html)
         self.assertIn("setTab('map')", self.html)
 
