@@ -109,7 +109,11 @@ class VerifiedEventKvTests(unittest.TestCase):
         )
         self.assertIsNone(row.get("KV"))
 
-    def test_verified_images_reach_all_116_map_pins(self):
+    def test_verified_events_on_map_use_repository_owned_images(self):
+        # 不變式：凡是仍在地圖上的已驗證活動，KV 必須指向 repo 內永久 raw URL，
+        # 不得退回會過期的 Facebook/Instagram CDN 連結。
+        # 不再硬編死釘數或要求已結束活動仍在圖上——活動隨結束日自然下架時，
+        # 這裡不應讓每日更新失敗。
         expected_titles = set(VERIFIED) | {
             "楓之谷 x 凱岩主題餐廳",
             "賽爾號 x 凱岩主題餐廳",
@@ -121,8 +125,7 @@ class VerifiedEventKvTests(unittest.TestCase):
             for event in venue.get("ex", [])
             if event.get("t") in expected_titles
         ]
-        self.assertEqual({event["t"] for event in pins}, expected_titles)
-        self.assertEqual(len(pins), 116)
+        self.assertTrue(pins, "no verified events currently on the map")
         for event in pins:
             self.assertTrue(
                 str(event.get("img") or "").startswith(RAW_PREFIX),

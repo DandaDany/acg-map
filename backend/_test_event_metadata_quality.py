@@ -93,15 +93,14 @@ class EventMetadataQualityTests(unittest.TestCase):
                 if record.get("c2"):
                     self.assertIn(record["c2"], ALLOWED_FORMS)
 
-    def test_every_metadata_override_matches_a_public_event(self):
+    def test_every_current_public_event_has_metadata(self):
+        # 完整性檢查：目前地圖上的每個 ACG 活動都要有主辦／授權／來源覆寫。
+        # 不再做雙向 set 相等——覆寫檔可保留已結束活動的稽核紀錄，
+        # 活動每日隨結束日自然下架時，這裡不應誤判為「孤兒」而讓每日更新失敗。
         public_titles = {event.get("t") for event in self.events}
         metadata_titles = {title for title in self.metadata if not title.startswith("_")}
-        self.assertSetEqual(public_titles, metadata_titles)
-        for title in self.metadata:
-            if title.startswith("_"):
-                continue
-            with self.subTest(title=title):
-                self.assertIn(title, public_titles)
+        missing = public_titles - metadata_titles
+        self.assertFalse(missing, f"目前地圖活動缺少 metadata 覆寫: {sorted(missing)}")
 
 
 if __name__ == "__main__":

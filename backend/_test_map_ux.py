@@ -52,7 +52,7 @@ class MapUxTests(unittest.TestCase):
 
     def test_markers_and_discover_focus_the_map(self):
         self.assertIn("function focusMapLocation(location,zoom=13", self.html)
-        self.assertIn("focusMapLocation(locations[0]", self.html)
+        self.assertIn("focusMapLocation(card.location)", self.html)
         self.assertIn("data-location-id=", self.html)
         self.assertIn("setTab('map')", self.html)
 
@@ -81,11 +81,14 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png'", self.html)
 
     def test_pin_mode_restores_activity_form_visuals(self):
-        for color in ("#3f8ad0", "#e05aa0", "#e08a3c", "#8560d8", "#5f7089"):
+        # ACG 只有四種活動形式，沒有「其他」分類（decision.md）。
+        for color in ("#3f8ad0", "#e05aa0", "#e08a3c", "#8560d8"):
             self.assertIn(color, self.html)
         self.assertIn("const FORM_ICON={", self.html)
         self.assertIn("function venueForm(locations)", self.html)
-        self.assertIn("return '其他';", self.html)
+        # 無法辨識活動形式時退回「展覽」，不得再落入已移除的「其他」分類。
+        self.assertIn("return '展覽';", self.html)
+        self.assertNotIn("return '其他';", self.html)
         self.assertIn("venue.loc!=='exact'", self.html)
         self.assertIn("location.status.kind==='ending'", self.html)
         self.assertIn('class="soondot"', self.html)
@@ -97,14 +100,21 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("function openDesktopVenuePicker(", self.html)
         self.assertIn('id="mobileVenueSheet"', self.html)
         self.assertIn("function openMobileVenueSheet(", self.html)
-        self.assertIn("function expandMobilePanel(", self.html)
+        self.assertIn("function closeMobileVenueSheet(", self.html)
 
-    def test_multilocation_details_have_fixed_scrolling_region(self):
-        self.assertIn("其他活動地點（", self.html)
-        self.assertIn("other-location-scroll", self.html)
+    def test_mobile_popup_is_horizontal_swipeable_card(self):
+        # 桌機活動詳情對話框：固定高度、內部捲動。
         self.assertIn("height:min(760px,calc(100dvh - 72px))", self.html)
-        self.assertIn("height:min(72dvh,640px)", self.html)
         self.assertIn("overflow-y:auto", self.html)
+        # 手機活動 popup 為橫式卡片（左 KV、右資訊）、高度約螢幕 1/3（decision.md）。
+        self.assertIn("height:clamp(210px,34dvh,360px)", self.html)
+        self.assertIn("mobile-card-kv", self.html)
+        self.assertIn("function buildMobileCards(origin)", self.html)
+        # 可左右滑切換，順序以目前地點為原點、依距離由近到遠；
+        # 不再另列「其他活動地點」清單。
+        self.assertIn("function moveMobileCard(delta)", self.html)
+        self.assertIn("occurrenceDistance(origin", self.html)
+        self.assertNotIn("其他活動地點（", self.html)
 
     def test_navigation_copy_link_and_private_review_text(self):
         self.assertNotIn("https://www.threads.net/intent/post?text=", self.html)
@@ -117,10 +127,13 @@ class MapUxTests(unittest.TestCase):
 
     def test_pin_legend_and_image_badge_rules(self):
         self.assertIn('id="pinLegend"', self.html)
-        for label in ("展覽", "快閃店", "主題餐廳", "體驗活動", "其他／混合"):
+        # 圖例只列出四種活動形式，不含已移除的「其他」分類（decision.md）。
+        for label in ("展覽", "快閃店", "主題餐廳", "體驗活動"):
             self.assertIn(label, self.html)
+        self.assertNotIn("其他／混合", self.html)
         self.assertIn("document.getElementById('pinLegend').hidden=uiState.markerMode!=='pin'", self.html)
-        self.assertIn(".kv-marker>.marker-badge{top:4px;right:4px", self.html)
+        # 徽章貼齊圖片右上角邊界外緣（手機 App 通知徽章樣式，decision.md）。
+        self.assertIn(".kv-marker>.marker-badge{top:-7px;right:-7px", self.html)
         self.assertIn("background:#e53935", self.html)
         self.assertIn("object-position:center", self.html)
 
