@@ -479,6 +479,33 @@ def load_rejected_keys():
     return keys
 
 
+def filter_unclassifiable_acg(venues):
+    """輸出前過濾：被判為 ACG、卻無法歸入四種活動形式（展覽／快閃店／主題餐廳／
+    體驗活動）的活動不輸出。
+
+    decision.md 明訂 ACG 活動只有四種形式。自動爬蟲以關鍵字（如作品名）命中 ACG，
+    但標題無任何形式關鍵字、也無人工 cat2／metadata 覆寫時，classify_form 會回傳
+    空字串——這類多為電影上映場次、講座等『非四形式』誤判。若放行，會缺 form／
+    fee／metadata 而讓每日更新硬性檢查失敗，且無法在地圖上正確呈現。
+
+    只影響 c=='ACG' 且 c2 不在四形式者；手動活動一律帶有形式，不受影響；
+    非 ACG 活動（藝術設計／其他文化）也不受影響。若某活動實應上圖，於
+    acg_events.json 指定形式、或在 event_metadata_overrides.json 補 c2 即會保留。
+    """
+    removed = 0
+    for v in venues:
+        kept = []
+        for e in v.get("ex", []):
+            if e.get("c") == "ACG" and e.get("c2") not in FORM_VALUES:
+                removed += 1
+            else:
+                kept.append(e)
+        v["ex"] = kept
+    out = [v for v in venues if v.get("ex")]
+    log("形式過濾: 移除無法歸入四形式的 ACG 活動", removed, "場｜移除空場館", len(venues) - len(out), "個")
+    return out
+
+
 def filter_rejected_events(venues, rejected_keys):
     """輸出前過濾：穩定鍵在 rejected 名單的活動不輸出；ex 被清空的場館一併移除。
 
@@ -1211,6 +1238,7 @@ def main():
 
     # 審核決策持久層：使用者於 PR 審核中拒絕（刪掉）的活動，依穩定鍵於輸出前過濾，
     # 確保下次自動更新不會再冒出來。名單為空或檔案不存在時完全不影響輸出。
+    venues = filter_unclassifiable_acg(venues)
     venues = filter_rejected_events(venues, load_rejected_keys())
 
     # Discover 以活動群組為單位；Map 仍保留場館 occurrence。所有公開 ACG 活動

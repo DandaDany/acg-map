@@ -55,7 +55,13 @@ class EventDataSearchFixTests(unittest.TestCase):
         self.assertTrue(generated)
         for event in generated:
             self.assertEqual(event["l"], ITO_LINK)
-            self.assertEqual(event["img"], ITO_KV)
+            # 地圖上的 KV：download_event_kv.py --all 會把這張遠端圖自存到
+            # public/kv/ 並改引用 'kv/<hash>.<ext>'；尚未自存時才是原始遠端網址。
+            img = event["img"]
+            self.assertTrue(
+                img == ITO_KV or img.startswith("kv/"),
+                f"junji ito KV 應為原圖或已自存的站內路徑，實際: {img}",
+            )
 
 
 if __name__ == "__main__":

@@ -127,9 +127,13 @@ class VerifiedEventKvTests(unittest.TestCase):
         ]
         self.assertTrue(pins, "no verified events currently on the map")
         for event in pins:
+            img = str(event.get("img") or "")
+            # repo 內永久圖：download_event_kv.py --all 會把遠端 KV 自存到
+            # public/kv/ 並改引用站內相對路徑 'kv/<hash>.<ext>'；未自存者則保留
+            # repo raw URL。兩者都不會過期，皆屬 repository-owned。
             self.assertTrue(
-                str(event.get("img") or "").startswith(RAW_PREFIX),
-                f"unstable map KV: {event.get('t')} -> {event.get('img')}",
+                img.startswith("kv/") or img.startswith(RAW_PREFIX),
+                f"unstable map KV: {event.get('t')} -> {img}",
             )
 
 
