@@ -433,28 +433,6 @@
    }
   ]
  },
- "三創生活園區1F": {
-  "city": "台北市",
-  "lat": 25.045633,
-  "lng": 121.531021,
-  "loc": "exact",
-  "addr": "台北市中正區市民大道三段2號",
-  "url": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
-  "ex": [
-   {
-    "t": "角落小夥伴水族館第2彈",
-    "s": "2026/07/13",
-    "e": "2026/08/02",
-    "l": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
-    "img": "",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "角落小夥伴",
-    "org": "勝明文具",
-    "lic": "SAN-X"
-   }
-  ]
- },
  "中友百貨": {
   "city": "台中市",
   "lat": 24.1522668,
@@ -805,27 +783,6 @@
    }
   ]
  },
- "台中中友百貨B棟13樓 文化大廳": {
-  "city": "台中市",
-  "lat": 24.1522668,
-  "lng": 120.6847123,
-  "loc": "exact",
-  "addr": "台中市北區三民路三段161號",
-  "url": "https://www.instagram.com/p/DaUNtsBJxu0",
-  "ex": [
-   {
-    "t": "三麗鷗甜心復古快閃店",
-    "s": "2026/07/02",
-    "e": "2026/08/02",
-    "l": "https://www.instagram.com/p/DaUNtsBJxu0",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_retro_chungyo_20260702.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "三麗鷗",
-    "org": "中友百貨"
-   }
-  ]
- },
  "台中東海大學": {
   "city": "台中市",
   "lat": 24.1822604,
@@ -844,27 +801,6 @@
     "ip": "伊藤潤二",
     "org": "木棉花",
     "lic": "木棉花"
-   }
-  ]
- },
- "台中驛鐵道文化園區 鐵鹿大街A2": {
-  "city": "台中市",
-  "lat": 24.1450765,
-  "lng": 120.6765664,
-  "loc": "exact",
-  "addr": "台中市中區台灣大道一段1號",
-  "url": "https://www.tcrp.com.tw/activity/221",
-  "ex": [
-   {
-    "t": "2026 Taichung 萌魂動漫祭",
-    "s": "2026/07/04",
-    "e": "2026/08/03",
-    "l": "https://www.tcrp.com.tw/activity/221",
-    "img": "https://www.tcrp.com.tw/storage/upload/activity/image/2026-07-10/aXWQfWYvBuDuguVtyi7m72aZxQH72ARYpGShHAbW.jpeg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "藥師少女的獨語",
-    "org": "臺中驛鐵道文化園區"
    }
   ]
  },
@@ -952,6 +888,28 @@
     "ip": "HUNTER×HUNTER",
     "org": "INCUBASE",
     "lic": "AMNIBUS"
+   }
+  ]
+ },
+ "台北大巨蛋": {
+  "city": "台北市",
+  "lat": 25.03387,
+  "lng": 121.57481,
+  "loc": "區級",
+  "addr": "台北市信義區忠孝東路四段515號",
+  "url": "https://www.brothers.tw/POR0106_?BULLETIN_ID=P1BNF1T5",
+  "ex": [
+   {
+    "t": "中信兄弟 X 鬼滅之刃 決戰無限城 聯名主題週",
+    "s": "2026/09/18",
+    "e": "2026/09/20",
+    "l": "https://www.brothers.tw/POR0106_?BULLETIN_ID=P1BNF1T5",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chinatrust_kimetsu_2026_20260918.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "付費",
+    "ip": "鬼滅之刃",
+    "org": "中信兄弟",
+    "lic": "木棉花"
    }
   ]
  },
@@ -1355,28 +1313,6 @@
    }
   ]
  },
- "新光三越台南小北門店1F": {
-  "city": "台南市",
-  "lat": 23.0091909,
-  "lng": 120.2074748,
-  "loc": "exact",
-  "addr": "台南市北區西門路四段135號",
-  "url": "https://www.instagram.com/p/DaT8RkDAeAX",
-  "ex": [
-   {
-    "t": "GODZILLA STORE 台南期間限定快閃店",
-    "s": "2026/07/03",
-    "e": "2026/08/03",
-    "l": "https://www.instagram.com/p/DaT8RkDAeAX",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/godzilla_tainan_20260703.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "GODZILLA",
-    "org": "需人工確認",
-    "lic": "需人工確認"
-   }
-  ]
- },
  "新光三越高雄左營店 10F": {
   "city": "高雄市",
   "lat": 22.688943,
@@ -1422,9 +1358,9 @@
  },
  "有點市松菸旗艦店／松菸 island 133": {
   "city": "台北市",
-  "lat": 25.01918,
-  "lng": 121.57839,
-  "loc": "區級",
+  "lat": 25.0436882,
+  "lng": 121.5597379,
+  "loc": "exact",
   "addr": "台北市信義區光復南路133號",
   "url": "https://www.instagram.com/p/Dbfd7tWDB0f/",
   "ex": [
@@ -1574,9 +1510,9 @@
  },
  "羊空間 YOUNG SPACE": {
   "city": "台北市",
-  "lat": 25.06747,
-  "lng": 121.53132,
-  "loc": "區級",
+  "lat": 25.0531179,
+  "lng": 121.5219655,
+  "loc": "exact",
   "addr": "台北市中山區中山北路二段16巷1號",
   "url": "https://woman.udn.com/woman/story/123164/9629395",
   "ex": [
@@ -1596,9 +1532,9 @@
  },
  "義式屋古拉爵 南港中信店": {
   "city": "台北市",
-  "lat": 25.0409,
-  "lng": 121.61323,
-  "loc": "區級",
+  "lat": 25.0583953,
+  "lng": 121.6161248,
+  "loc": "exact",
   "addr": "台北市南港區經貿二路166號中國信託金融廣場A棟2樓",
   "url": "https://www.grazie.com.tw/data-414071",
   "ex": [
@@ -1618,9 +1554,9 @@
  },
  "義式屋古拉爵 高雄大遠百店": {
   "city": "高雄市",
-  "lat": 22.615,
-  "lng": 120.33758,
-  "loc": "區級",
+  "lat": 22.613424,
+  "lng": 120.303549,
+  "loc": "exact",
   "addr": "高雄市苓雅區三多四路21號12樓",
   "url": "https://www.grazie.com.tw/data-414071",
   "ex": [
