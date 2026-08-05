@@ -1,5 +1,5 @@
 {
-  "updated": "2026/08/01",
+  "updated": "2026/08/05",
   "links": {
     "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24": {
       "ok": true,
@@ -1206,6 +1206,12 @@
       "img": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/07/15/35138005.jpg&M=1&s=Y&x=0&y=0&sw=1280&sh=1600&exp=3600",
       "code": "ok",
       "updated": "2026/07/21"
+    },
+    "https://www.huashan1914.com/w/huashan1914/exhibition_26073017505992454": {
+      "ok": true,
+      "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/06_上刊處形象2_(W1920_x_H1080).jpeg",
+      "code": "ok",
+      "updated": "2026/08/05"
     }
   }
 }
