@@ -533,5 +533,29 @@
     "source": "https://www.grazie.com.tw/data-414071",
     "checked": "2026-08-03",
     "basis": "核心聯名套餐須於古拉爵消費"
+  },
+  "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」": {
+    "fee": "付費",
+    "source": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "checked": "2026-08-06",
+    "basis": "餐飲聯名須消費用餐，滿額可參加活動"
+  },
+  "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」": {
+    "fee": "付費",
+    "source": "https://www.wagyushabu.com.tw/",
+    "checked": "2026-08-06",
+    "basis": "餐飲聯名須消費用餐，滿額可參加活動"
+  },
+  "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店": {
+    "fee": "付費",
+    "source": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "checked": "2026-08-06",
+    "basis": "餐飲聯名快閃須消費購買"
+  },
+  "動畫『我的英雄學院』10週年 首波衝刺 FAIR × animate Gratte（西門站）": {
+    "fee": "付費",
+    "source": "https://www.facebook.com/ximen.popup.animate/posts/122142941817055906/",
+    "checked": "2026-08-06",
+    "basis": "Gratte 飲品需消費購買"
   }
 }

@@ -626,5 +626,33 @@
     "link": "https://www.brothers.tw/POR0106_?BULLETIN_ID=P1BNF1T5",
     "checked": "2026-08-04",
     "c2": "體驗活動"
+  },
+  "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」": {
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "source_tier": 1,
+    "source": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "checked": "2026-08-06"
+  },
+  "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」": {
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "source_tier": 1,
+    "source": "https://www.wagyushabu.com.tw/",
+    "checked": "2026-08-06"
+  },
+  "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店": {
+    "org": "爆彈燒本舖",
+    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會",
+    "source_tier": 1,
+    "source": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "checked": "2026-08-06"
+  },
+  "動畫『我的英雄學院』10週年 首波衝刺 FAIR × animate Gratte（西門站）": {
+    "org": "animate Gratte（安利美特台灣）",
+    "lic": "堀越耕平／集英社・My Hero Academia Project",
+    "source_tier": 1,
+    "source": "https://www.facebook.com/ximen.popup.animate/posts/122142941817055906/",
+    "checked": "2026-08-06"
   }
 }
