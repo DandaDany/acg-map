@@ -53,6 +53,7 @@ _FILES = {
     "cayenne_extra.json": GENERATED_DIR / "cayenne_extra.json",
     "cayenne_stores.json": GENERATED_DIR / "cayenne_stores.json",
     "excel_overlap_titles.json": GENERATED_DIR / "excel_overlap_titles.json",
+    "quarantined_events.json": GENERATED_DIR / "quarantined_events.json",
 
     # Logo metadata
     "venue_logos.json": LOGO_DATA_DIR / "venue_logos.json",

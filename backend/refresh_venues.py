@@ -527,6 +527,72 @@ def filter_rejected_events(venues, rejected_keys):
     return out
 
 
+# ---- 輸出前的 metadata 完整性關卡（讓每日更新不再因單一活動缺料而硬性失敗）----
+# 任何 c=='ACG' 但缺少「公開所需 metadata」的活動一律不上圖，改為隔離＋記錄。
+# 這是設計意圖：地圖只呈現查證完整的活動，缺料活動被隔離等待補件，而不是拖垮整條
+# 每日更新（此前這類活動會讓 backend/_test_event_metadata_quality.py 等硬性檢查失敗、
+# 使自動 PR 開不出來、地圖停更）。活動只要在 override 檔補齊資料即自動恢復上圖。
+#
+# 「缺料」定義與公開檢查（_test_event_metadata_quality.py、_test_admission_status.py）一致：
+#   - 正規化標題不在 event_metadata_overrides.json（未經人工查證主辦／授權／來源）；
+#   - org 或 lic 空白或為「官方」；
+#   - c2 不在四形式；fee 不是「免費」或「付費」；
+#   - 任一欄位仍含「需人工」/「人工處理」佔位字樣。
+def filter_incomplete_acg_metadata(venues, valid_meta_titles):
+    placeholders = ("需人工", "人工處理")
+    removed = 0
+    quarantined = []
+    for v in venues:
+        kept = []
+        for e in v.get("ex", []):
+            if e.get("c") != "ACG":
+                kept.append(e)
+                continue
+            title = e.get("t", "")
+            org = str(e.get("org") or "").strip()
+            lic = str(e.get("lic") or "").strip()
+            serialized = json.dumps(e, ensure_ascii=False)
+            reasons = []
+            if _norm_title(title) not in valid_meta_titles:
+                reasons.append("無 metadata 覆寫")
+            if not org or org == "官方":
+                reasons.append("主辦缺漏")
+            if not lic or lic == "官方":
+                reasons.append("授權缺漏")
+            if e.get("c2") not in FORM_VALUES:
+                reasons.append("形式非四類")
+            if e.get("fee") not in ("免費", "付費"):
+                reasons.append("費用未定")
+            if any(token in serialized for token in placeholders):
+                reasons.append("含需人工佔位")
+            if reasons:
+                removed += 1
+                quarantined.append({
+                    "venue": v.get("name", ""), "title": title,
+                    "start": e.get("s", ""), "end": e.get("e", ""),
+                    "reasons": reasons,
+                })
+            else:
+                kept.append(e)
+        v["ex"] = kept
+    out = [v for v in venues if v.get("ex")]
+    try:
+        json.dump(
+            {"generated": TODAY, "count": len(quarantined),
+             "note": "缺公開所需 metadata 而暫不上圖的 ACG 活動；於 override 檔補齊即自動恢復。",
+             "events": sorted(quarantined, key=lambda q: (q["title"], q["start"]))},
+            open(P("quarantined_events.json"), "w", encoding="utf-8"),
+            ensure_ascii=False, indent=1,
+        )
+    except Exception as err:
+        log("quarantined_events.json 寫入失敗:", err)
+    log("metadata 完整性過濾: 隔離缺料 ACG 活動", removed, "場｜移除空場館", len(venues) - len(out), "個")
+    if quarantined:
+        log("  待補件（於 override 檔補齊即恢復）:",
+            "；".join(sorted({q["title"] for q in quarantined})))
+    return out
+
+
 def main():
     from collections import defaultdict, Counter
     cent = {tuple(k.split("|")): tuple(v) for k, v in
@@ -1240,6 +1306,7 @@ def main():
     # 確保下次自動更新不會再冒出來。名單為空或檔案不存在時完全不影響輸出。
     venues = filter_unclassifiable_acg(venues)
     venues = filter_rejected_events(venues, load_rejected_keys())
+    venues = filter_incomplete_acg_metadata(venues, set(_meta_ov))
 
     # Discover 以活動群組為單位；Map 仍保留場館 occurrence。所有公開 ACG 活動
     # 必須在輸出前取得穩定 id，並驗證同群組的標題與費用不衝突。

@@ -3763,7 +3763,8 @@
   "月份": "2026-08-01 00:00:00",
   "_links": {
    "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg"
-  }
+  },
+  "付費狀態 / Admission": null
  },
  {
   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
@@ -3785,7 +3786,8 @@
   "月份": "2026-08-01 00:00:00",
   "_links": {
    "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg"
-  }
+  },
+  "付費狀態 / Admission": null
  },
  {
   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
@@ -3807,7 +3809,8 @@
   "月份": "2026-08-01 00:00:00",
   "_links": {
    "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg"
-  }
+  },
+  "付費狀態 / Admission": null
  },
  {
   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
@@ -3832,7 +3835,8 @@
   },
   "多店活動 / Multi-store": "聚",
   "門市資料 / Store List": "data/manual/聚門市地址_giguo.json",
-  "門市名稱前綴 / Store Prefix": "聚"
+  "門市名稱前綴 / Store Prefix": "聚",
+  "付費狀態 / Admission": null
  },
  {
   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
@@ -3857,7 +3861,8 @@
   },
   "多店活動 / Multi-store": "和牛涮",
   "門市資料 / Store List": "data/manual/和牛涮門市地址_wagyushabu.json",
-  "門市名稱前綴 / Store Prefix": "和牛涮"
+  "門市名稱前綴 / Store Prefix": "和牛涮",
+  "付費狀態 / Admission": null
  },
  {
   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg",
@@ -3879,6 +3884,7 @@
   "月份": "2026-07-25 00:00:00",
   "_links": {
    "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg"
-  }
+  },
+  "付費狀態 / Admission": null
  }
 ]

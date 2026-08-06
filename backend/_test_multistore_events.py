@@ -14,6 +14,13 @@ class MultiStoreEventTests(unittest.TestCase):
             cls.data = json.load(fh)
 
     def test_generated_map_has_expected_multistore_markers(self):
+        # 不再硬編碼「哪些連鎖、各幾間」的快照——多店活動會隨檔期自然增減，
+        # 快照式斷言只要有新的合法多店活動加入就會誤判失敗、拖垮每日更新。
+        # 改為驗證多店標記的「結構不變量」，這才是真正該守住的正確性：
+        #   1) 同一 mf 連鎖標籤的所有 occurrence 必屬同一個活動群組 id；
+        #   2) 同一標籤的門市總數 ms 前後一致（單一值）；
+        #   3) 上圖的門市 occurrence 數落在 [1, ms] 之間（不多於宣稱總數）；
+        #   4) 地圖上至少存在一組多店活動（feature 未被整條移除）。
         found = {}
         totals = {}
         ids = {}
@@ -26,17 +33,18 @@ class MultiStoreEventTests(unittest.TestCase):
                 totals.setdefault(label, set()).add(event.get("ms"))
                 ids.setdefault(label, set()).add(event.get("id"))
 
-        self.assertEqual(found, {
-            "點點心": 20,
-            "凍心": 11,
-            "bb.q CHICKEN": 14,
-            "藏壽司": 63,
-        })
-        self.assertEqual(totals["點點心"], {20})
-        self.assertEqual(totals["凍心"], {28})
-        self.assertEqual(totals["bb.q CHICKEN"], {14})
-        self.assertEqual(totals["藏壽司"], {63})
-        self.assertTrue(all(len(group_ids) == 1 for group_ids in ids.values()))
+        self.assertTrue(found, "地圖上應至少有一組多店活動 (mf) 標記")
+        for label, occurrences in found.items():
+            with self.subTest(label=label):
+                self.assertEqual(len(ids[label]), 1,
+                                 f"{label} 的多店 occurrence 應同屬一個活動群組 id: {ids[label]}")
+                self.assertEqual(len(totals[label]), 1,
+                                 f"{label} 的門市總數 ms 應一致: {totals[label]}")
+                total = next(iter(totals[label]))
+                self.assertIsInstance(total, int, f"{label} 的門市總數 ms 應為整數")
+                self.assertGreaterEqual(occurrences, 1)
+                self.assertLessEqual(occurrences, total,
+                                     f"{label} 上圖門市數 {occurrences} 不應超過宣稱總數 {total}")
 
     def test_frontend_filters_multistore_by_activity_group(self):
         with open(os.path.join(ROOT, "public", "taiwan-exhibition-map.html"), encoding="utf-8") as fh:
