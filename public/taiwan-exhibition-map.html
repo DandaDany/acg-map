@@ -798,8 +798,19 @@ a{color:inherit}
 
 .map-pane{position:relative;min-width:0;min-height:0;background:#e8ebe6}
 #map{position:absolute;inset:0;z-index:1;background:#e8ebe6}
-.map-tools{position:absolute;z-index:1000;top:14px;right:14px;display:flex;gap:8px}
+.map-tools{position:absolute;z-index:1000;top:14px;right:14px;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .map-tool{display:grid;min-width:44px;height:44px;place-items:center;border:1px solid rgba(25,31,42,.18);border-radius:13px;background:rgba(255,255,255,.94);color:#1b2430;box-shadow:0 7px 22px rgba(0,0,0,.16);cursor:pointer}
+/* 多店・無單一地址活動：排列在 home 鍵下方的獨立懸浮圓圈 */
+.floating-events{display:flex;flex-direction:column;align-items:center;gap:8px}
+.floating-events:empty{display:none}
+.floating-event{position:relative;width:44px;height:44px;padding:0;border:0;background:transparent;cursor:pointer;transition:transform .12s ease}
+.floating-event:hover,.floating-event:focus-visible{transform:scale(1.1);outline:none}
+.floating-event-face{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;border:2px solid #fff;border-radius:50%;background:var(--fc,#18202c);box-shadow:0 7px 22px rgba(0,0,0,.22)}
+.floating-event:hover .floating-event-face,.floating-event:focus-visible .floating-event-face{border-color:var(--accent2)}
+.floating-event img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.floating-event-glyph{color:#fff;font-size:18px;font-weight:800;line-height:1;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.floating-event-badge{position:absolute;z-index:3;right:-3px;bottom:-3px;display:grid;min-width:17px;height:17px;place-items:center;padding:0 3px;border:2px solid var(--bg);border-radius:999px;background:var(--accent2);color:#fff;font-size:9px;font-weight:800}
+.floating-event .soondot{top:-2px;left:-2px}
 .map-marker-toggle{position:absolute;z-index:1000;top:14px;left:50%;width:160px;transform:translateX(-50%);background:rgba(16,22,32,.94);box-shadow:0 7px 22px rgba(0,0,0,.22)}
 .map-legend{display:none}
 .leaflet-tooltip.lbl{background:transparent;border:0;box-shadow:none;padding:0;white-space:nowrap;font-weight:700;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;pointer-events:none}
@@ -1006,7 +1017,7 @@ a{color:inherit}
       <span class="map-legend-item"><span class="map-legend-dot" style="background:#e08a3c"></span>主題餐廳</span>
       <span class="map-legend-item"><span class="map-legend-dot" style="background:#8560d8"></span>體驗活動</span>
     </div>
-    <div class="map-tools"><button class="map-tool" id="mapHomeButton" type="button" aria-label="回到台灣全圖" title="回到台灣全圖">⌂</button></div>
+    <div class="map-tools"><button class="map-tool" id="mapHomeButton" type="button" aria-label="回到台灣全圖" title="回到台灣全圖">⌂</button><div class="floating-events" id="floatingEvents" aria-label="多店活動（無單一地址）"></div></div>
   </section>
 </div>
 
@@ -1077,6 +1088,7 @@ let liveMode=false;
 let activityGroups=new Map();
 let venueEventIndex=new Map();
 let markers=[];
+let floatingGroups=[];
 let activeDialogMode='';
 let dialogReturn=null;
 let lastFocus=null;
@@ -1118,6 +1130,26 @@ const FILTER_META={
     {value:'all',label:'不限'},{value:'免費',label:'免費'},{value:'付費',label:'付費'}]},
   multi:{title:'多店活動',defaultLabel:'全部多店'}
 };
+
+/* ===== 多店・無單一地址活動（懸浮圓圈）=====
+   這些活動同時在多間門市舉辦、沒有單一詳細地址，因此不以地圖圖釘呈現，
+   而是化為「獨立懸浮圓圈」排列在地圖 home 鍵下方；點開後卡片地點一律顯示
+   「請至官方網站查詢地點」，並附上官方連結。
+   直接在下方陣列增修即可，或由 venues.json 的 "floating" 欄位提供。
+   欄位：title 必填；link 官方連結（供查詢地點用）；其餘皆選填。 */
+const FLOATING_ADDRESS_TEXT='請至官方網站查詢地點';
+const FLOATING_EVENTS=[
+  // 範例（填好官方連結後解除註解）：
+  // {
+  //   title:'○○ 期間限定多店快閃',
+  //   form:'快閃店',           // 展覽 / 快閃店 / 主題餐廳 / 體驗活動
+  //   fee:'',                  // 免費 / 付費（可留空）
+  //   ip:'', organizer:'', licensor:'',
+  //   start:'2026/08/01', end:'2026/08/31',
+  //   image:'',                // 主視覺網址（可留空，留空顯示形式圖示）
+  //   link:'https://官方網站'   // 我會提供的連結
+  // }
+];
 
 function parseD(value){
   if(!value) return null;
@@ -1252,6 +1284,33 @@ function buildActivityGroups(data){
   venueEventIndex=venueIndex;
   return out;
 }
+function buildFloatingGroups(list){
+  floatingGroups=[];
+  (list||[]).forEach((item,index)=>{
+    if(!item||!item.title) return;
+    const link=String(item.link||'').trim();
+    const id=item.id||('floating-'+shortHash([normalizeText(item.title),canonicalUrl(link),index].join('|')));
+    const event={id,t:item.title,c:'ACG',c2:item.form||'',s:item.start||'',e:item.end||'',l:link,img:item.image||'',fee:item.fee||'',ip:item.ip||'',org:item.organizer||'',lic:item.licensor||'',mf:item.multiFilter||''};
+    const location={
+      id:id+'-loc',venueId:'floating-'+id,venue:null,
+      venueName:publicText(item.venueName||''),city:'',address:FLOATING_ADDRESS_TEXT,
+      lat:NaN,lng:NaN,start:item.start||'',end:item.end||'',event,
+      noAddress:true,floatingLink:safeUrl(link)
+    };
+    location.status=occurrenceStatus(location);
+    const group={
+      id,title:publicText(item.title)||'未命名活動',ip:publicText(item.ip||''),organizer:publicText(item.organizer||''),
+      licensor:publicText(item.licensor||''),link,image:item.image||'',fee:publicText(item.fee||''),
+      form:publicText(item.form||'')||'其他',multiFilter:publicText(item.multiFilter||''),locations:[location],
+      overallStart:parseD(item.start),overallEnd:parseD(item.end),floating:true
+    };
+    group.status=deriveActivityStatus(group);
+    group.activeEnd=Math.min(...group.locations.filter(loc=>['ongoing','ending'].includes(loc.status.kind)).map(loc=>dateValue(loc.end,Infinity)));
+    group.nextStart=Math.min(...group.locations.filter(loc=>loc.status.kind==='upcoming').map(loc=>dateValue(loc.start,Infinity)));
+    activityGroups.set(id,group);
+    floatingGroups.push(group);
+  });
+}
 function dateString(date){
   if(!date||!Number.isFinite(date.getTime())) return '';
   return [date.getFullYear(),String(date.getMonth()+1).padStart(2,'0'),String(date.getDate()).padStart(2,'0')].join('/');
@@ -1353,6 +1412,13 @@ function cleanAddress(address){
 }
 function locationRowHtml(location,group){
   const heading=location.venueName||location.city||'';
+  if(location.noAddress){
+    const link=safeUrl(location.floatingLink||(group&&group.link));
+    return '<div class="location-row"><div class="location-top"><div>'+(heading?'<div class="location-name">'+esc(heading)+'</div>':'')
+      +'<div class="location-address">'+esc(FLOATING_ADDRESS_TEXT)+'</div></div>'
+      +(link?'<div class="location-actions"><a class="location-nav" href="'+esc(link)+'" target="_blank" rel="noopener">官方網站 ↗</a></div>':'')
+      +'</div></div>';
+  }
   return '<div class="location-row"><div class="location-top"><div>'+(heading?'<div class="location-name">'+esc(heading)+'</div>':'')
     +'<div class="location-address">'+esc(cleanAddress(location.address)||'地址未提供')+'</div></div>'
     +'<div class="location-actions"><a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a></div></div></div>';
@@ -1697,6 +1763,52 @@ function highlightSelectedMarker(){
     if(root) root.classList.toggle('is-selected',on);
   });
 }
+const FLOATING_FORM_GLYPH={'展覽':'▣','快閃店':'▱','主題餐廳':'☕','體驗活動':'★'};
+const FLOATING_FORM_COLOR={'展覽':'#3f8ad0','快閃店':'#e05aa0','主題餐廳':'#e08a3c','體驗活動':'#8560d8'};
+function floatingVisible(group){
+  const filters=uiState.filters;
+  if(group.status.kind==='ended') return false;
+  if(filters.city!=='all') return false; /* 無單一縣市，選特定縣市時不顯示 */
+  if(filters.time!=='all'&&!(group.status.kind===filters.time||(filters.time==='ongoing'&&group.status.kind==='ending'))) return false;
+  if(filters.form!=='all'&&group.form!==filters.form) return false;
+  if(filters.fee!=='all'&&group.fee!==filters.fee) return false;
+  if(!groupMatchesQuery(group,uiState.query)) return false;
+  return true;
+}
+function floatingCircleHtml(group){
+  const image=safeUrl(group.image,true);
+  const glyph=FLOATING_FORM_GLYPH[group.form]||'⌘';
+  const color=FLOATING_FORM_COLOR[group.form]||'#2b3650';
+  const soon=group.status.kind==='ending';
+  const label=esc(group.title+'（多店活動）· 按下查看');
+  return '<button class="floating-event" type="button" data-floating-id="'+esc(group.id)+'" style="--fc:'+color+'" title="'+label+'" aria-label="'+label+'">'
+    +'<span class="floating-event-face"><span class="floating-event-glyph" aria-hidden="true">'+esc(glyph)+'</span>'
+    +(image?'<img src="'+esc(image)+'" alt="" loading="lazy" decoding="async">':'')+'</span>'
+    +'<span class="floating-event-badge" aria-hidden="true">⌘</span>'
+    +(soon?'<span class="soondot" aria-label="含即將結束活動"></span>':'')
+    +'</button>';
+}
+function renderFloatingEvents(){
+  const host=document.getElementById('floatingEvents');
+  if(!host) return;
+  host.innerHTML=floatingGroups.filter(floatingVisible).map(floatingCircleHtml).join('');
+  host.querySelectorAll('.floating-event img').forEach(image=>image.addEventListener('error',()=>image.remove(),{once:true}));
+}
+function openFloatingEvent(id){
+  const group=activityGroups.get(id);
+  if(!group) return;
+  uiState.selectedVenueId=null;uiState.selectedLocationId=null;highlightSelectedMarker();
+  if(MOBILE_QUERY.matches){
+    mobileCards=[{group,location:group.locations[0]}];mobileCardIndex=0;
+    const body=document.getElementById('mobileVenueBody');
+    body.innerHTML=mobileCardHtml(group,group.locations[0]);wireImages(body);
+    const sheet=document.getElementById('mobileVenueSheet');
+    sheet.classList.add('show');sheet.setAttribute('aria-hidden','false');
+    mobileSheetOpenedAt=Date.now();
+  }else{
+    mapSelectionActive=false;openDesktopEventModal(id,null,'push');
+  }
+}
 function fitTaiwanView(){map.fitBounds(TW_BOUNDS,{padding:[16,16]})}
 function fitCityView(city){
   if(city==='all'){fitTaiwanView();return}
@@ -1739,12 +1851,17 @@ function buildMobileCards(origin){
   return list;
 }
 function mobileCardHtml(group,location){
-  const venueText=[location.venueName,cleanAddress(location.address)].filter(Boolean).join('｜')||'地點未提供';
+  const noAddr=location.noAddress;
+  const venueText=noAddr?FLOATING_ADDRESS_TEXT:([location.venueName,cleanAddress(location.address)].filter(Boolean).join('｜')||'地點未提供');
+  const venueLink=noAddr?safeUrl(location.floatingLink||group.link):navUrl(location);
+  const venueHtml=venueLink
+    ?'<a class="mobile-card-venue" href="'+esc(venueLink)+'" target="_blank" rel="noopener">'+esc(venueText)+' ↗</a>'
+    :'<div class="mobile-card-venue">'+esc(venueText)+'</div>';
   return '<article class="mobile-card">'
     +'<div class="mobile-card-kv">'+mediaFrameHtml(group.image,group.title,false)+'</div>'
     +'<div class="mobile-card-info">'+tagHtml(group,location.city)
     +'<h2>'+esc(group.title)+'</h2>'
-    +'<a class="mobile-card-venue" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">'+esc(venueText)+' ↗</a>'
+    +venueHtml
     +'<div class="mobile-card-date">'+esc(groupDateText(group))+'</div>'
     +actionHtml(group)
     +'</div></article>';
@@ -1995,7 +2112,7 @@ function updateStat(groups){
 }
 function renderAll(){
   const groups=getFilteredActivityGroups();
-  renderDiscover(groups);renderMapMarkers();updateFilterUI();updateMarkerToggles();updateStat(groups);
+  renderDiscover(groups);renderMapMarkers();renderFloatingEvents();updateFilterUI();updateMarkerToggles();updateStat(groups);
 }
 function handleDeepLink(){
   const id=new URL(location.href).searchParams.get('event');
@@ -2004,6 +2121,8 @@ function handleDeepLink(){
     showToast('分享連結中的活動目前不存在');
     updateEventParam('','replace');return;
   }
+  const group=activityGroups.get(id);
+  if(group&&group.floating){openFloatingEvent(id);return}
   if(MOBILE_QUERY.matches){setTab('discover');scrollToEvent(id,true)}
   else openDesktopEventModal(id,null,false);
 }
@@ -2043,6 +2162,7 @@ document.getElementById('lightboxClose').addEventListener('click',closeImageLigh
 document.getElementById('lightbox').addEventListener('click',event=>{if(event.target.id==='lightbox')closeImageLightbox()});
 document.getElementById('homeButton').addEventListener('click',fitTaiwanView);
 document.getElementById('mapHomeButton').addEventListener('click',fitTaiwanView);
+document.getElementById('floatingEvents').addEventListener('click',event=>{const button=event.target.closest('[data-floating-id]');if(button)openFloatingEvent(button.dataset.floatingId)});
 document.querySelectorAll('[data-marker-mode]').forEach(button=>button.addEventListener('click',()=>setMarkerMode(button.dataset.markerMode)));
 document.querySelectorAll('.mobile-tab').forEach(button=>button.addEventListener('click',()=>setTab(button.dataset.tab)));
 document.getElementById('filterMenu').addEventListener('click',event=>{const button=event.target.closest('[data-filter]');if(button)openFilterDetail(button.dataset.filter)});
@@ -2092,6 +2212,8 @@ document.addEventListener('keydown',event=>{
 window.addEventListener('popstate',()=>{
   const id=new URL(location.href).searchParams.get('event');
   if(!id){closeDesktopDialog(false);return}
+  const group=activityGroups.get(id);
+  if(group&&group.floating){openFloatingEvent(id);return}
   if(MOBILE_QUERY.matches){setTab('discover');scrollToEvent(id,true)}
   else openDesktopEventModal(id,null,false);
 });
@@ -2109,6 +2231,7 @@ MOBILE_QUERY.addEventListener('change',()=>{
     }
   }catch(error){}
   buildActivityGroups(DATA);
+  buildFloatingGroups(Array.isArray(DATA.floating)&&DATA.floating.length?DATA.floating:FLOATING_EVENTS);
   renderAll();fitTaiwanView();setTab('discover');handleDeepLink();
 })();
 </script>
