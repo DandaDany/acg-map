@@ -3858,5 +3858,27 @@
   "多店活動 / Multi-store": "和牛涮",
   "門市資料 / Store List": "data/manual/和牛涮門市地址_wagyushabu.json",
   "門市名稱前綴 / Store Prefix": "和牛涮"
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg",
+  "類型 / Category": "餐飲/F&B",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-07-25 00:00:00",
+  "結束日期 / End Date": "2026-08-16 00:00:00",
+  "IP": "我的英雄學院",
+  "活動名稱 / Activity Name": "動畫『我的英雄學院』10週年 首波衝刺 FAIR × animate Gratte（西門站）",
+  "地點 / Location": "animate Gratte 西門站（台北市萬華區西門地下街 4、5號店，直通台北捷運西門站6號出口；⚠️精確門牌與經緯度需人工確認）",
+  "主辦方 / Organizer": "animate Gratte（安利美特台灣）",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認（KV版權標示：©K. Horikoshi／Shueisha, My Hero Academia Project；台灣代理未於視覺標示）",
+  "活動連結 / Activity link": "https://www.facebook.com/ximen.popup.animate/posts/122142941817055906/",
+  "備註 / NOTE": "資料來源：Daniel於2026/08/06對話提供之animate西門站POPUP FB貼文＋KV圖，另有animate官方Gratte頁(animate.co.jp/gratte/36940)與新聞(SouNova)佐證。KV已自存repo data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg，經Read肉眼確認含『我的英雄學院10週年 首波衝刺FAIR』logo、活動地點『animate Gratte 西門站』、活動時間『2026/7/25(六)～8/16(日)』及©K. Horikoshi／Shueisha My Hero Academia Project授權字樣。活動類別『主題餐廳』依Daniel規則『animate Gratte一律主題餐廳』。地點為西門地下街店（單一據點），精確門牌與經緯度需人工確認後補geocode。授權單位(台灣代理)未於視覺標示，標需人工確認。",
+  "IP_std": "我的英雄學院",
+  "Licensor_std": "",
+  "月份": "2026-07-25 00:00:00",
+  "_links": {
+   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg"
+  }
  }
 ]
