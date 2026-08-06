@@ -52,6 +52,17 @@
     "ip": "相反的你和我（正反対な君と僕）",
     "org": "animate（安利美特台灣）",
     "lic": "官方"
+   },
+   {
+    "t": "動畫『我的英雄學院』10週年 首波衝刺 FAIR × animate Gratte（西門站）",
+    "s": "2026/07/25",
+    "e": "2026/08/16",
+    "l": "https://www.facebook.com/ximen.popup.animate/posts/122142941817055906/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "我的英雄學院",
+    "org": "animate Gratte（安利美特台灣）",
+    "lic": "需人工確認（KV版權標示：©K. Horikoshi／Shueisha, My Hero Academia Project；台灣代理未於視覺標示）"
    }
   ]
  },
@@ -433,28 +444,6 @@
    }
   ]
  },
- "三創生活園區1F": {
-  "city": "台北市",
-  "lat": 25.045633,
-  "lng": 121.531021,
-  "loc": "exact",
-  "addr": "台北市中正區市民大道三段2號",
-  "url": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
-  "ex": [
-   {
-    "t": "角落小夥伴水族館第2彈",
-    "s": "2026/07/13",
-    "e": "2026/08/02",
-    "l": "https://www.facebook.com/sanminsupergift/posts/1463007639194294/",
-    "img": "",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "角落小夥伴",
-    "org": "勝明文具",
-    "lic": "SAN-X"
-   }
-  ]
- },
  "中友百貨": {
   "city": "台中市",
   "lat": 24.1522668,
@@ -805,27 +794,6 @@
    }
   ]
  },
- "台中中友百貨B棟13樓 文化大廳": {
-  "city": "台中市",
-  "lat": 24.1522668,
-  "lng": 120.6847123,
-  "loc": "exact",
-  "addr": "台中市北區三民路三段161號",
-  "url": "https://www.instagram.com/p/DaUNtsBJxu0",
-  "ex": [
-   {
-    "t": "三麗鷗甜心復古快閃店",
-    "s": "2026/07/02",
-    "e": "2026/08/02",
-    "l": "https://www.instagram.com/p/DaUNtsBJxu0",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_retro_chungyo_20260702.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "三麗鷗",
-    "org": "中友百貨"
-   }
-  ]
- },
  "台中東海大學": {
   "city": "台中市",
   "lat": 24.1822604,
@@ -844,27 +812,6 @@
     "ip": "伊藤潤二",
     "org": "木棉花",
     "lic": "木棉花"
-   }
-  ]
- },
- "台中驛鐵道文化園區 鐵鹿大街A2": {
-  "city": "台中市",
-  "lat": 24.1450765,
-  "lng": 120.6765664,
-  "loc": "exact",
-  "addr": "台中市中區台灣大道一段1號",
-  "url": "https://www.tcrp.com.tw/activity/221",
-  "ex": [
-   {
-    "t": "2026 Taichung 萌魂動漫祭",
-    "s": "2026/07/04",
-    "e": "2026/08/03",
-    "l": "https://www.tcrp.com.tw/activity/221",
-    "img": "https://www.tcrp.com.tw/storage/upload/activity/image/2026-07-10/aXWQfWYvBuDuguVtyi7m72aZxQH72ARYpGShHAbW.jpeg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "藥師少女的獨語",
-    "org": "臺中驛鐵道文化園區"
    }
   ]
  },
@@ -955,6 +902,28 @@
    }
   ]
  },
+ "台北大巨蛋": {
+  "city": "台北市",
+  "lat": 25.03387,
+  "lng": 121.57481,
+  "loc": "區級",
+  "addr": "台北市信義區忠孝東路四段515號",
+  "url": "https://www.brothers.tw/POR0106_?BULLETIN_ID=P1BNF1T5",
+  "ex": [
+   {
+    "t": "中信兄弟 X 鬼滅之刃 決戰無限城 聯名主題週",
+    "s": "2026/09/18",
+    "e": "2026/09/20",
+    "l": "https://www.brothers.tw/POR0106_?BULLETIN_ID=P1BNF1T5",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chinatrust_kimetsu_2026_20260918.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "付費",
+    "ip": "鬼滅之刃",
+    "org": "中信兄弟",
+    "lic": "木棉花"
+   }
+  ]
+ },
  "台北市信義區香堤大道廣場及周邊": {
   "city": "台北市",
   "lat": 25.03742733240707,
@@ -973,6 +942,27 @@
     "ip": "寶可夢",
     "org": "The Pokémon Company（新光三越信義新天地協辦）",
     "lic": "The Pokémon Company"
+   }
+  ]
+ },
+ "台北市南港區經貿二路131號5樓（三井LaLaport南港 5樓）": {
+  "city": "台北市",
+  "lat": 25.06918,
+  "lng": 121.55342,
+  "loc": "市級",
+  "addr": "",
+  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "葬送的芙莉蓮",
+    "org": "爆彈燒本舖",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1017,6 +1007,397 @@
     "ip": "吉伊卡哇",
     "org": "2026臺灣國際熱氣球嘉年華",
     "lic": "三貝多"
+   }
+  ]
+ },
+ "和牛涮 中壢元化店": {
+  "city": "桃園市",
+  "lat": 24.97762,
+  "lng": 121.21363,
+  "loc": "市級",
+  "addr": "桃園市中壢區元化路245號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 仁德萬家福店": {
+  "city": "台南市",
+  "lat": 22.94201,
+  "lng": 120.25484,
+  "loc": "區級",
+  "addr": "台南市仁德區中山路711號",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台中五權西店": {
+  "city": "台中市",
+  "lat": 24.14333,
+  "lng": 120.61342,
+  "loc": "區級",
+  "addr": "台中市南屯區五權西路二段271號1、2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台中文心崇德店": {
+  "city": "台中市",
+  "lat": 24.19751,
+  "lng": 120.75565,
+  "loc": "區級",
+  "addr": "台中市北屯區文心路四段601號",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台北忠孝東店": {
+  "city": "台北市",
+  "lat": 25.01613,
+  "lng": 121.53925,
+  "loc": "區級",
+  "addr": "台北市大安區忠孝東路四段128號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台北林森北店": {
+  "city": "台北市",
+  "lat": 25.06419,
+  "lng": 121.53195,
+  "loc": "區級",
+  "addr": "台北市中山區林森北路258號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台北羅斯福店": {
+  "city": "台北市",
+  "lat": 25.01615,
+  "lng": 121.54271,
+  "loc": "區級",
+  "addr": "台北市大安區羅斯福路二段27號",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台北西門店": {
+  "city": "台北市",
+  "lat": 25.02108,
+  "lng": 121.5042,
+  "loc": "區級",
+  "addr": "台北市萬華區中華路一段90號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 台南中華西店": {
+  "city": "台南市",
+  "lat": 22.99191,
+  "lng": 120.18,
+  "loc": "區級",
+  "addr": "台南市安平區中華西路二段345號",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 嘉義垂楊店": {
+  "city": "嘉義市",
+  "lat": 23.4684,
+  "lng": 120.42413,
+  "loc": "區級",
+  "addr": "嘉義市西區垂楊路381號",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 新店民權店": {
+  "city": "新北市",
+  "lat": 24.91939,
+  "lng": 121.54055,
+  "loc": "區級",
+  "addr": "新北市新店區民權路100號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 板橋文化店": {
+  "city": "新北市",
+  "lat": 25.01031,
+  "lng": 121.45136,
+  "loc": "區級",
+  "addr": "新北市板橋區文化路一段280號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 桃園同德店": {
+  "city": "桃園市",
+  "lat": 24.9529,
+  "lng": 121.22977,
+  "loc": "市級",
+  "addr": "桃園市桃園區同德五街77號1樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 竹北光明店": {
+  "city": "新竹縣",
+  "lat": 24.82269,
+  "lng": 120.99803,
+  "loc": "區級",
+  "addr": "新竹縣竹北市光明一路112號2樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 頭份尚順店": {
+  "city": "苗栗縣",
+  "lat": 24.5335,
+  "lng": 120.82587,
+  "loc": "市級",
+  "addr": "苗栗縣頭份市育樂街6號1樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 高雄博愛店": {
+  "city": "高雄市",
+  "lat": 22.67484,
+  "lng": 120.28701,
+  "loc": "區級",
+  "addr": "高雄市左營區博愛二路682號",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
+   }
+  ]
+ },
+ "和牛涮 高雄夢時代店": {
+  "city": "高雄市",
+  "lat": 22.59275,
+  "lng": 120.31286,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路789號4樓",
+  "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "和牛涮 日式鍋物放題（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "和牛涮",
+    "ms": 17
    }
   ]
  },
@@ -1355,28 +1736,6 @@
    }
   ]
  },
- "新光三越台南小北門店1F": {
-  "city": "台南市",
-  "lat": 23.0091909,
-  "lng": 120.2074748,
-  "loc": "exact",
-  "addr": "台南市北區西門路四段135號",
-  "url": "https://www.instagram.com/p/DaT8RkDAeAX",
-  "ex": [
-   {
-    "t": "GODZILLA STORE 台南期間限定快閃店",
-    "s": "2026/07/03",
-    "e": "2026/08/03",
-    "l": "https://www.instagram.com/p/DaT8RkDAeAX",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/godzilla_tainan_20260703.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "GODZILLA",
-    "org": "需人工確認",
-    "lic": "需人工確認"
-   }
-  ]
- },
  "新光三越高雄左營店 10F": {
   "city": "高雄市",
   "lat": 22.688943,
@@ -1396,6 +1755,48 @@
     "ip": "Hello Kitty",
     "org": "曼迪",
     "lic": "曼迪"
+   }
+  ]
+ },
+ "新北市新莊區新北大道四段3號7樓（宏匯廣場 7樓）": {
+  "city": "新北市",
+  "lat": 25.05484,
+  "lng": 121.55016,
+  "loc": "市級",
+  "addr": "",
+  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "葬送的芙莉蓮",
+    "org": "爆彈燒本舖",
+    "lic": "需人工確認"
+   }
+  ]
+ },
+ "新竹市東區中央路229號4樓（新竹巨城購物中心 4樓）": {
+  "city": "新竹市",
+  "lat": 24.79724,
+  "lng": 120.9396,
+  "loc": "市級",
+  "addr": "",
+  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "葬送的芙莉蓮",
+    "org": "爆彈燒本舖",
+    "lic": "需人工確認"
    }
   ]
  },
@@ -1422,9 +1823,9 @@
  },
  "有點市松菸旗艦店／松菸 island 133": {
   "city": "台北市",
-  "lat": 25.01918,
-  "lng": 121.57839,
-  "loc": "區級",
+  "lat": 25.0436882,
+  "lng": 121.5597379,
+  "loc": "exact",
   "addr": "台北市信義區光復南路133號",
   "url": "https://www.instagram.com/p/Dbfd7tWDB0f/",
   "ex": [
@@ -1574,9 +1975,9 @@
  },
  "羊空間 YOUNG SPACE": {
   "city": "台北市",
-  "lat": 25.06747,
-  "lng": 121.53132,
-  "loc": "區級",
+  "lat": 25.0531179,
+  "lng": 121.5219655,
+  "loc": "exact",
   "addr": "台北市中山區中山北路二段16巷1號",
   "url": "https://woman.udn.com/woman/story/123164/9629395",
   "ex": [
@@ -1596,9 +1997,9 @@
  },
  "義式屋古拉爵 南港中信店": {
   "city": "台北市",
-  "lat": 25.0409,
-  "lng": 121.61323,
-  "loc": "區級",
+  "lat": 25.0583953,
+  "lng": 121.6161248,
+  "loc": "exact",
   "addr": "台北市南港區經貿二路166號中國信託金融廣場A棟2樓",
   "url": "https://www.grazie.com.tw/data-414071",
   "ex": [
@@ -1618,9 +2019,9 @@
  },
  "義式屋古拉爵 高雄大遠百店": {
   "city": "高雄市",
-  "lat": 22.615,
-  "lng": 120.33758,
-  "loc": "區級",
+  "lat": 22.613424,
+  "lng": 120.303549,
+  "loc": "exact",
   "addr": "高雄市苓雅區三多四路21號12樓",
   "url": "https://www.grazie.com.tw/data-414071",
   "ex": [
@@ -1635,6 +2036,788 @@
     "ip": "第五人格（Identity V）",
     "org": "義式屋古拉爵",
     "lic": "Joker Studio／NetEase Inc."
+   }
+  ]
+ },
+ "聚 三峽學成店": {
+  "city": "新北市",
+  "lat": 24.88012,
+  "lng": 121.42208,
+  "loc": "區級",
+  "addr": "新北市三峽區學成路398號3樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 中壢SOGO店": {
+  "city": "桃園市",
+  "lat": 24.97498,
+  "lng": 121.24795,
+  "loc": "市級",
+  "addr": "桃園市中壢區元化路357號8樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台中公益店": {
+  "city": "台中市",
+  "lat": 24.13637,
+  "lng": 120.61489,
+  "loc": "區級",
+  "addr": "台中市南屯區公益路二段252號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台中米平方店": {
+  "city": "台中市",
+  "lat": 24.18875,
+  "lng": 120.62986,
+  "loc": "區級",
+  "addr": "台中市西屯區國安一路168號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台中豐原大社店": {
+  "city": "台中市",
+  "lat": 24.24352,
+  "lng": 120.74443,
+  "loc": "區級",
+  "addr": "台中市豐原區大社街8號1樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台北SOGO忠孝店": {
+  "city": "台北市",
+  "lat": 25.02597,
+  "lng": 121.52915,
+  "loc": "區級",
+  "addr": "台北市大安區忠孝東路四段45號12樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台北南京東店": {
+  "city": "台北市",
+  "lat": 25.0644,
+  "lng": 121.53747,
+  "loc": "區級",
+  "addr": "台北市中山區南京東路二段72號B1",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台北南昌店": {
+  "city": "台北市",
+  "lat": 25.03828,
+  "lng": 121.51315,
+  "loc": "區級",
+  "addr": "台北市中正區南昌路二段216號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台北衡陽店": {
+  "city": "台北市",
+  "lat": 25.03458,
+  "lng": 121.51433,
+  "loc": "區級",
+  "addr": "台北市中正區衡陽路3號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台南中華西店": {
+  "city": "台南市",
+  "lat": 22.97871,
+  "lng": 120.17141,
+  "loc": "區級",
+  "addr": "台南市安平區中華西路二段317號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台南仁德中山店": {
+  "city": "台南市",
+  "lat": 22.93373,
+  "lng": 120.24889,
+  "loc": "區級",
+  "addr": "台南市仁德區中山路777號1樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台南永康中華店": {
+  "city": "台南市",
+  "lat": 23.02502,
+  "lng": 120.24522,
+  "loc": "區級",
+  "addr": "台南市永康區中華路101號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 台東秀泰店": {
+  "city": "台東縣",
+  "lat": 22.74278,
+  "lng": 121.11162,
+  "loc": "區級",
+  "addr": "台東縣台東市新生路93號秀泰2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 員林中山店": {
+  "city": "彰化縣",
+  "lat": 23.99097,
+  "lng": 120.5211,
+  "loc": "市級",
+  "addr": "彰化縣員林市中山路二段30之3號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 嘉義垂楊店": {
+  "city": "嘉義市",
+  "lat": 23.48498,
+  "lng": 120.42046,
+  "loc": "區級",
+  "addr": "嘉義市西區垂楊路455號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 基隆信一店": {
+  "city": "基隆市",
+  "lat": 25.78783,
+  "lng": 123.52151,
+  "loc": "區級",
+  "addr": "基隆市中正區信一路177號5樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 士林中正店": {
+  "city": "台北市",
+  "lat": 25.12679,
+  "lng": 121.56542,
+  "loc": "區級",
+  "addr": "台北市士林區中正路179號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 大里大買家店": {
+  "city": "台中市",
+  "lat": 24.08789,
+  "lng": 120.68183,
+  "loc": "區級",
+  "addr": "台中市大里區國光路二段710號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 宜蘭新月店": {
+  "city": "宜蘭縣",
+  "lat": 24.74085,
+  "lng": 121.75866,
+  "loc": "區級",
+  "addr": "宜蘭縣宜蘭市民權路二段38巷6號4樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 屏東太平洋店": {
+  "city": "屏東縣",
+  "lat": 22.66452,
+  "lng": 120.47011,
+  "loc": "區級",
+  "addr": "屏東縣屏東市中正路72號B1",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 斗六鎮南店": {
+  "city": "雲林縣",
+  "lat": 23.70754,
+  "lng": 120.35524,
+  "loc": "市級",
+  "addr": "雲林縣斗六市鎮南路313號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 新店民權店": {
+  "city": "新北市",
+  "lat": 24.9365,
+  "lng": 121.53944,
+  "loc": "區級",
+  "addr": "新北市新店區民權路82號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 板橋中山店": {
+  "city": "新北市",
+  "lat": 25.01,
+  "lng": 121.46412,
+  "loc": "區級",
+  "addr": "新北市板橋區中山路一段6號3樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 板橋江子翠店": {
+  "city": "新北市",
+  "lat": 24.99668,
+  "lng": 121.44396,
+  "loc": "區級",
+  "addr": "新北市板橋區文化路二段182巷3弄79號3樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 林口文化店": {
+  "city": "桃園市",
+  "lat": 24.93718,
+  "lng": 121.25515,
+  "loc": "市級",
+  "addr": "桃園市龜山區文化三路256號1樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 桃園統領店": {
+  "city": "桃園市",
+  "lat": 24.9202,
+  "lng": 121.25743,
+  "loc": "市級",
+  "addr": "桃園市桃園區中正路61號5樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 汐止遠雄店": {
+  "city": "新北市",
+  "lat": 25.07795,
+  "lng": 121.65742,
+  "loc": "區級",
+  "addr": "新北市汐止區新台五路一段99號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 淡水淡新萬家福店": {
+  "city": "新北市",
+  "lat": 25.18289,
+  "lng": 121.46046,
+  "loc": "區級",
+  "addr": "新北市淡水區中山北路二段383號3樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 澄清文衡店": {
+  "city": "高雄市",
+  "lat": 23.27196,
+  "lng": 120.69168,
+  "loc": "區級",
+  "addr": "高雄市三民區澄清路536號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 頭份尚順店": {
+  "city": "苗栗縣",
+  "lat": 24.50872,
+  "lng": 120.87417,
+  "loc": "市級",
+  "addr": "苗栗縣頭份市尚順路61號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 高雄夢時代店": {
+  "city": "高雄市",
+  "lat": 22.58817,
+  "lng": 120.30247,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路789號高雄夢時代7F",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 高雄大樂店": {
+  "city": "高雄市",
+  "lat": 23.25811,
+  "lng": 120.69449,
+  "loc": "區級",
+  "addr": "高雄市三民區民族一路463號",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 高雄富民店": {
+  "city": "高雄市",
+  "lat": 22.67265,
+  "lng": 120.30693,
+  "loc": "區級",
+  "addr": "高雄市左營區富民路355號2樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
+   }
+  ]
+ },
+ "聚 高雄新楠萬家福店": {
+  "city": "高雄市",
+  "lat": 22.72213,
+  "lng": 120.29004,
+  "loc": "區級",
+  "addr": "高雄市楠梓區土庫一路60號1樓",
+  "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "ex": [
+   {
+    "t": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "ip": "哆啦A夢",
+    "org": "聚 日式鍋物（王品集團）",
+    "lic": "Animation International Ltd.（Animation Int'l）",
+    "mf": "聚",
+    "ms": 34
    }
   ]
  },

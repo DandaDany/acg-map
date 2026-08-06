@@ -6,62 +6,6 @@
   "url": "https://www.huashan1914.com",
   "ex": [
    {
-    "t": "李亭香 X 未來市",
-    "s": "2026/06/26",
-    "e": "2026/07/30",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26062312331495038",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e5%bd%a2%e8%b1%a12-1920x1080_26062312304671114.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "兔子在做陶 X 未來市",
-    "s": "2026/06/26",
-    "e": "2026/07/30",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26062312361283315",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%ef%bc%b71920%20x%20%ef%bc%a81080.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "流浪蓋婭號 WANDERING GAIA",
-    "s": "2026/07/17",
-    "e": "2026/08/02",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_24112018320160153",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_24112018325719064.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "牧神的午後 | L'Après-midi d’un faune",
-    "s": "2026/07/17",
-    "e": "2026/08/02",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25051417524946560",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_25051417524935674.png",
-    "ty": "special"
-   },
-   {
-    "t": "星球樂園PLANET PARK-全境式互動樂園",
-    "s": "2026/07/17",
-    "e": "2026/08/02",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25062714454943100",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_25062714454940536.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "小梅的奇幻冒險：尋回心意之書",
-    "s": "2026/07/17",
-    "e": "2026/08/02",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25112610341048077",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/DeerMay_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b21920_2026_26010817343487383.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "貓咪大戰爭13th週年慶快閃店｜貓咪夏日慶典",
-    "s": "2026/07/30",
-    "e": "2026/08/03",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26072114444354605",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%b2%93%e6%88%b0_%e8%8f%af%e5%b1%b1%e5%bf%ab%e9%96%8313th_%e8%8f%af%e5%b1%b1%e7%94%a81920x1080px_26072310231588587.jpg",
-    "ty": "special"
-   },
-   {
     "t": "星際大戰華山限定快閃店_Mission Cantina",
     "s": "2026/06/25",
     "e": "2026/08/06",
@@ -94,11 +38,27 @@
     "ty": "special"
    },
    {
+    "t": "太古可口可樂青少年思辨教育推廣",
+    "s": "2026/08/07",
+    "e": "2026/08/09",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26073014294895042",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95-1920x1080.jpg",
+    "ty": "special"
+   },
+   {
     "t": "養元堂",
     "s": "2026/06/09",
     "e": "2026/08/10",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26060920020053282",
     "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/yyt-0001.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "鎖住青春¹ PITERA™ 體驗展",
+    "s": "2026/08/08",
+    "e": "2026/08/16",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26073017323871215",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_1920x1080_26073017261288130.jpg",
     "ty": "special"
    },
    {
@@ -115,6 +75,70 @@
     "e": "2026/08/23",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26060811015739534",
     "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e5%8f%b0%e6%b9%be%e5%86%85%e5%91%8a%e7%9f%a5%e7%94%a82--1_26060917174652823.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "小梅的奇幻冒險：尋回心意之書",
+    "s": "2026/08/01",
+    "e": "2026/08/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25112610341048077",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/DeerMay_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b21920_2026_26010817343487383.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "流浪蓋婭號 WANDERING GAIA",
+    "s": "2026/08/01",
+    "e": "2026/08/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_24112018320160153",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_24112018325719064.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "牧神的午後 | L'Après-midi d’un faune",
+    "s": "2026/08/01",
+    "e": "2026/08/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25051417524946560",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_25051417524935674.png",
+    "ty": "special"
+   },
+   {
+    "t": "星球樂園PLANET PARK-全境式互動樂園",
+    "s": "2026/08/01",
+    "e": "2026/08/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25062714454943100",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920x1080_25062714454940536.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "「劇場版 吉伊卡哇 人魚島的秘密」",
+    "s": "2026/07/10",
+    "e": "2026/08/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26080516163859057",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1_%e5%ae%98%e7%b6%b2%e9%a6%96%e5%9c%96_1920x1080px_26080516135823586.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026文博會聯名選品展 X 未來市",
+    "s": "2026/07/31",
+    "e": "2026/09/03",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26073017505992454",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/06_上刊處形象2_(W1920_x_H1080).jpeg",
+    "ty": "special"
+   },
+   {
+    "t": "米弎豆お菓子処",
+    "s": "2026/07/29",
+    "e": "2026/09/13",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515351894532",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/LINE_ALBUM_2024%e7%a7%8b%e7%af%80%e7%a6%ae%e7%9b%92_260721_3_26072710215821420.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "OSAMU GOODS 50週年展：原田治的OSAMU GOODS STYLE",
+    "s": "2026/06/26",
+    "e": "2026/09/13",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26070817500503214",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_26070817463148727.jpg",
     "ty": "special"
    },
    {
@@ -138,23 +162,63 @@
     "s": "2026/06/18",
     "e": "2026/09/14",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26061109500377541",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/peanuts_summer_20260618.jpg",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e4%bb%a3%e4%bb%a3%e6%9c%a8-%e6%b4%bb%e5%8b%95%e4%b8%bb%e8%a6%96%e8%a6%ba_1920x1080.jpg",
     "ty": "special"
    },
    {
-    "t": "OSAMU GOODS 50週年展：原田治的OSAMU GOODS STYLE",
-    "s": "2026/06/26",
-    "e": "2026/09/13",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26070817500503214",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_26070817463148727.jpg",
+    "t": "夏日萌盒祭",
+    "s": "2026/07/30",
+    "e": "2026/09/15",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26080418184795052",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95%201920x1080px.jpg",
     "ty": "special"
    },
    {
-    "t": "米弎豆お菓子処",
-    "s": "2026/07/29",
-    "e": "2026/09/13",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515351894532",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/LINE_ALBUM_2024%e7%a7%8b%e7%af%80%e7%a6%ae%e7%9b%92_260721_3_26072710215821420.jpg",
+    "t": "CHIIKAWA DAYS 台北特展",
+    "s": "2026/07/04",
+    "e": "2026/09/27",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26061619433530946",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1_%e5%ae%98%e7%b6%b2%e9%a6%96%e5%9c%96_1920x1080px_26061619415485560.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "波隆那世界插畫大獎展",
+    "s": "2026/07/04",
+    "e": "2026/09/28",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26060917342404131",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/2026%e6%b3%a2%e9%9a%86%e9%82%a3_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_1920x1080_26060917312564503.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "島嶼生花",
+    "s": "2026/07/01",
+    "e": "2026/09/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26061615453738958",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/2026-06-%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "《果子們 特展》",
+    "s": "2026/07/01",
+    "e": "2026/09/30",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26070917023475337",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/banner_%e6%b4%bb%e5%8b%95%e4%b8%bb%e8%a6%96%e8%a6%ba1920x1080_0.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "台灣滿枝枒_芬芳美麗",
+    "s": "2026/06/23",
+    "e": "2026/12/08",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_25080713483312043",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e8%8f%af%e5%b1%b1_1920x1080_25080713452709942.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "李亭香",
+    "s": "2026/07/28",
+    "e": "2027/05/31",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515232688455",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/S__90046467_26072715485853978.jpg",
     "ty": "special"
    }
   ]
@@ -166,27 +230,27 @@
   "url": "https://www.songshanculturalpark.org",
   "ex": [
    {
-    "t": "松山文創園區藝術窗框計畫 Songshan Cultural and Creative Park A",
-    "s": "2026/08/01",
-    "e": "2026/11/01",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/8edf6d1e-37fb-41ed-bb12-6b86f30fd6d0",
-    "img": "https://www.songshanculturalpark.org/gallery/1785218226_33ed26ddecfd23b0414c.jpg",
+    "t": "台灣設計榮耀 2025–2026 紅點設計獎特展",
+    "s": "2026/08/11",
+    "e": "2026/10/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/5c934662-a952-4757-84e3-169a0e7707a6",
+    "img": "https://www.songshanculturalpark.org/gallery/1785999388_011d057931abe7bde7ed.jpg",
     "ty": "special"
    },
    {
-    "t": "敲開屬於你的幸福時刻！OHAYO 焦糖烤布蕾冰淇淋 療癒餐車",
-    "s": "2026/08/01",
-    "e": "2026/08/09",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/7d94f08f-0c86-4903-bfa5-ba0fa27d59e3",
-    "img": "https://www.songshanculturalpark.org/gallery/1785224199_f8aac125574b4862d9e1.jpg",
+    "t": "2026 年 iF 設計新秀小聚 | 設計已讀 ECHOES OF JOY",
+    "s": "2026/08/21",
+    "e": "2026/08/11",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/f541389d-f744-49cb-a28a-b48afdfb45e8",
+    "img": "https://www.songshanculturalpark.org/gallery/1786002395_39f650fdfa2efedb0713.jpg",
     "ty": "special"
    },
    {
-    "t": "小鳥時光 6.0｜Animal Party 動物派對",
-    "s": "2026/09/12",
-    "e": "2026/09/13",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/2ffd3ac9-afc7-4008-ba05-7c9b0b0d617c",
-    "img": "https://www.songshanculturalpark.org/gallery/1785225346_9f28d83c92177c4f7a1a.jpg",
+    "t": "臨時公共空間的臨時展覽",
+    "s": "2026/08/11",
+    "e": "2026/10/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/78965588-eee7-4b24-bf52-a785dfefe102",
+    "img": "https://www.songshanculturalpark.org/gallery/1786005300_4242d9a9e16180449cea.jpg",
     "ty": "special"
    },
    {
@@ -227,14 +291,6 @@
     "e": "2026/08/25",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/ee93708c-f375-465d-ab95-784869a050ef",
     "img": "https://www.songshanculturalpark.org/gallery/1780278765_52cb02c1542b9a54bca6.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "映入日常的微光：校園心理支持空間的設計實踐",
-    "s": "2026/06/16",
-    "e": "2026/08/02",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/7fe3d89d-f23a-460a-9e60-87b4f0536acd",
-    "img": "https://www.songshanculturalpark.org/gallery/1780284243_e5ae2204081ac693536a.jpg",
     "ty": "special"
    },
    {
@@ -304,7 +360,7 @@
    {
     "t": "115 年長者量六力互動式展覽「六力時光機，找回健康力」",
     "s": "2026/08/05",
-    "e": "2026/08/06",
+    "e": "2026/08/09",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/f0318dda-c95a-47d3-8914-12612f54c3e7",
     "img": "https://www.songshanculturalpark.org/gallery/1784267023_52fa2e13fdcf715ea56b.png",
     "ty": "special"
@@ -339,6 +395,94 @@
     "e": "2026/08/30",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/e0053678-92f0-4331-a4dd-9e6bf1d996a8",
     "img": "https://www.songshanculturalpark.org/gallery/1784873882_87cbbc0407ad0efaaa63.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "松山文創園區藝術窗框計畫",
+    "s": "2026/08/01",
+    "e": "2026/11/01",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/8edf6d1e-37fb-41ed-bb12-6b86f30fd6d0",
+    "img": "https://www.songshanculturalpark.org/gallery/1785218226_33ed26ddecfd23b0414c.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "敲開屬於你的幸福時刻！OHAYO 焦糖烤布蕾冰淇淋 療癒餐車",
+    "s": "2026/08/01",
+    "e": "2026/08/16",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/7d94f08f-0c86-4903-bfa5-ba0fa27d59e3",
+    "img": "https://www.songshanculturalpark.org/gallery/1786007702_664d295e740684521fd3.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "小鳥時光 6.0｜Animal Party 動物派對",
+    "s": "2026/09/12",
+    "e": "2026/09/13",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/2ffd3ac9-afc7-4008-ba05-7c9b0b0d617c",
+    "img": "https://www.songshanculturalpark.org/gallery/1785225346_9f28d83c92177c4f7a1a.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "伊林娛樂-第十五屆璀璨之星決賽盛典",
+    "s": "2026/08/19",
+    "e": "2026/08/19",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/6b1698cf-2260-4e66-a40f-552c396774ed",
+    "img": "https://www.songshanculturalpark.org/gallery/1785316208_186b92aab880b03cfd9b.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 蛋殼祭 Art Incubation Festival",
+    "s": "2026/08/14",
+    "e": "2026/08/16",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/f19acb18-f6d2-4bae-a8a7-65ac089542ad",
+    "img": "https://www.songshanculturalpark.org/gallery/1785462075_486f696bee3d17464e71.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "水水情人節市集",
+    "s": "2026/08/07",
+    "e": "2026/08/09",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/402e1d88-7dbe-494e-b824-500cbb6f7003",
+    "img": "https://www.songshanculturalpark.org/gallery/1785724341_8ad1a342dcb1cc3ec612.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "500 甜 2026 甜點派對",
+    "s": "2026/08/21",
+    "e": "2026/08/23",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/aabda8a3-396d-4da6-aa04-30e3d25fdcb6",
+    "img": "https://www.songshanculturalpark.org/gallery/1785725479_2f0af9769fd9b0552714.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2027 iF 設計獎說明會Ⅰ｜What the Jury Really Sees 評審看見了什麼？",
+    "s": "2026/08/28",
+    "e": "2026/08/28",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/dfe08d5b-fdc9-4a59-9ee1-29cd866ec84d",
+    "img": "https://www.songshanculturalpark.org/gallery/1785736702_e654643c23348d5db5b7.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2027 iF 設計獎說明會Ⅱ｜What the Jury Really Sees 評審看見了麼？",
+    "s": "2026/09/02",
+    "e": "2026/09/02",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/7ae2428e-b77d-47f3-af82-857ca683aba5",
+    "img": "https://www.songshanculturalpark.org/gallery/1785737487_9b06ab6aebe45f85f845.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 國際住棚節文化市集",
+    "s": "2026/09/26",
+    "e": "2026/09/27",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/ebb54aa0-e9df-4544-b0ae-3cc2b3e27398",
+    "img": "https://www.songshanculturalpark.org/gallery/1785996346_c8c6bc97b0e551eb0449.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "迷路森林夏季市集-迷路動物園",
+    "s": "2026/08/22",
+    "e": "2026/08/23",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/e7952b91-4832-4232-9871-50c4374eb80c",
+    "img": "https://www.songshanculturalpark.org/gallery/1785997765_0420636bf09b525b6c92.jpg",
     "ty": "special"
    }
   ]
@@ -459,14 +603,6 @@
     "e": "2026/06/07",
     "l": "https://pier2.org/exhibition/info/1899/",
     "img": "https://pier2.org/upload/others/files/STS0790.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "漫畫便當店",
-    "s": "2026/05/29",
-    "e": "2026/07/19",
-    "l": "https://pier2.org/exhibition/info/1822/",
-    "img": "https://pier2.org/upload/others/files/JUV2048.jpg",
     "ty": "special"
    }
   ]
@@ -659,78 +795,6 @@
     "e": "",
     "l": "https://www.g9cip.com/activity/brands/%e2%96%b8%e5%bc%b5%e7%a7%80%e5%87%b0%e5%89%b5%e4%bd%9c%e5%b1%95-%e2%9e%ab-%e8%9c%9c%e8%89%b2%e5%91%bc%e5%90%b8-%e5%9c%a8%e9%a1%8f%e6%96%99%e8%a3%a1%e7%a8%ae%e4%b8%80%e6%a0%aa%e6%9c%83/",
     "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/50558674_2101442776582665_8482460186538147840_n-r6r49777o8zbmqm9hiue7kezlcbubkfr2akxymkoio.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸尹信方 Yin Hsin-Fang ➫ 藝術飛越仲夏夜・巴黎展出",
-    "s": "2025/06/06",
-    "e": "",
-    "l": "https://www.g9cip.com/activity/%e2%96%b8%e5%b0%b9%e4%bf%a1%e6%96%b9-yin-hsin-fang-%e2%9e%ab-%e8%97%9d%e8%a1%93%e9%a3%9b%e8%b6%8a%e4%bb%b2%e5%a4%8f%e5%a4%9c%e3%83%bb%e5%b7%b4%e9%bb%8e%e5%b1%95%e5%87%ba/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/499173517_1128611265946438_8171420389256362137_n-r6f6g2ussjg1ba6tn6jr25l6fldd957ydggehgq3a8.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸邱科澄 展覽預告 ➫ 現實與幻想的交會點",
-    "s": "2025/05/01",
-    "e": "",
-    "l": "https://www.g9cip.com/activity/brands/%e2%96%b8%e9%82%b1%e7%a7%91%e6%be%84-%e5%b1%95%e8%a6%bd%e9%a0%90%e5%91%8a-%e2%9e%ab-%e7%8f%be%e5%af%a6%e8%88%87%e5%b9%bb%e6%83%b3%e7%9a%84%e4%ba%a4%e6%9c%83%e9%bb%9e/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/490737262_1236312868502188_471029260940672646_n-r50nzxcm5pye2uivbfwdhb0trbujng2kvzezgv2rkw.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸尹信方創作展 ➫ 大地的形與詩",
-    "s": "2025/04/04",
-    "e": "",
-    "l": "https://www.g9cip.com/activity/brands/%e5%b0%b9%e4%bf%a1%e6%96%b9%e5%89%b5%e4%bd%9c%e5%b1%95-%e5%a4%a7%e5%9c%b0%e7%9a%84%e5%bd%a2%e8%88%87%e8%a9%a9/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/488072471_1091130496361182_2123462427388032681_n-r403erpe3wtjrfjef9crrbag7gegb3n7du6vy5bajk.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸「解癮-解開毒品上癮的真相」➫ 反毒教育特展",
-    "s": "2025/03/28",
-    "e": "",
-    "l": "https://www.g9cip.com/activity/%e3%80%8c%e8%a7%a3%e7%99%ae-%e8%a7%a3%e9%96%8b%e6%af%92%e5%93%81%e4%b8%8a%e7%99%ae%e7%9a%84%e7%9c%9f%e7%9b%b8%e3%80%8d%e5%8f%8d%e6%af%92%e6%95%99%e8%82%b2%e7%89%b9%e5%b1%95/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/%E5%8F%8D%E6%AF%92%E6%88%B6%E5%A4%96%E5%B8%86%E5%B8%83_578x790%EF%BC%88%E6%96%B0%E5%A2%9E%E5%9F%BA%E9%87%91%E6%9C%83%EF%BC%89-scaled-r41gh6wnikx3ynpmrb02029sk3xii57v8tf06w7zfk.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸尹信方創作個展 ➫ 尋名造境 —自我察覺的歷程",
-    "s": "2025/02/24",
-    "e": "",
-    "l": "https://www.g9cip.com/activity/%e5%b0%b9%e4%bf%a1%e6%96%b9%e5%89%b5%e4%bd%9c%e5%80%8b%e5%b1%95-%e5%b0%8b%e5%90%8d%e9%80%a0%e5%a2%83-%e8%87%aa%e6%88%91%e5%af%9f%e8%a6%ba%e7%9a%84%e6%ad%b7%e7%a8%8b/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/mobileadv_3477_8539553_34361-r1ti6iryrers3vm10kcmevg84j61cca300lfgwnnkw.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸邱科澄個展 ➫ 神遊榖倉",
-    "s": "2025/01/25",
-    "e": "",
-    "l": "https://www.g9cip.com/activity/%e9%82%b1%e7%a7%91%e6%be%84%e5%80%8b%e5%b1%95-%e7%a5%9e%e9%81%8a%e6%a6%96%e5%80%89/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/474561416_9023025621077186_4704417978263216658_n-r0d101fc4ljrjsmqgnrqr2y38a6cwjdprdufcgh5pc.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸有事青年節主題展 emo人生 ➫",
-    "s": "2024/10/10",
-    "e": "",
-    "l": "https://www.g9cip.com/uncategorized/%e2%96%b8%e6%9c%89%e4%ba%8b%e9%9d%92%e5%b9%b4%e7%af%80%e4%b8%bb%e9%a1%8c%e5%b1%95-emo%e4%ba%ba%e7%94%9f-%e2%9e%ab-%e5%b1%95%e5%8d%80%e5%b0%8e%e8%a6%bd-%e9%96%8b%e6%94%be%e9%a0%90%e7%b4%84/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/462395386_563232599557439_4022526496956633767_n-qv8k45421e571xwgfimdv1j1qh4o1qip3cspi6rfvk.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸有事青年節主題展 emo人生 ➫ 展覽驚喜亮點",
-    "s": "2024/10/10",
-    "e": "",
-    "l": "https://www.g9cip.com/uncategorized/%e2%96%b8%e6%9c%89%e4%ba%8b%e9%9d%92%e5%b9%b4%e7%af%80%e4%b8%bb%e9%a1%8c%e5%b1%95-emo%e4%ba%ba%e7%94%9f-%e2%9e%ab-%e5%b1%95%e8%a6%bd%e9%a9%9a%e5%96%9c%e4%ba%ae%e9%bb%9e/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/462189174_561924136354952_4788301166091143348_n-qv716kfzdizss6fs2p7602r1esc9qfoqj9sx8qxiqo.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "▸有事青年節主題展 emo人生 ➫ 六大參展團隊一次公開！",
-    "s": "2024/10/10",
-    "e": "",
-    "l": "https://www.g9cip.com/uncategorized/%e2%96%b8%e6%9c%89%e4%ba%8b%e9%9d%92%e5%b9%b4%e7%af%80%e4%b8%bb%e9%a1%8c%e5%b1%95-emo%e4%ba%ba%e7%94%9f-%e2%9e%ab-%e5%85%ad%e5%a4%a7%e5%8f%83%e5%b1%95%e5%9c%98%e9%9a%8a%e4%b8%80%e6%ac%a1/",
-    "img": "https://www.g9cip.com/wp-content/uploads/elementor/thumbs/458218926_539924685221564_1813473454092062_n-qv718ktjzrqvm5inc2hfu2hj5gfj74o2h81b71y7fk.jpg",
     "ty": "special"
    }
   ]
@@ -1197,6 +1261,22 @@
   "lng": 121.5204969,
   "url": "https://www.expopark.taipei",
   "ex": [
+   {
+    "t": "嬰兒與孕媽咪用品展",
+    "s": "2026/09/11",
+    "e": "2026/09/14",
+    "l": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4524",
+    "img": "https://ws.expopark.taipei/001/Upload/400/relpic/9029/4524/5f70d255-fe7d-49da-8679-6fd1442eb2fb@710x470.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "台灣國際觀光旅遊展－秋季展",
+    "s": "2026/09/11",
+    "e": "2026/09/14",
+    "l": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4523",
+    "img": "https://ws.expopark.taipei/001/Upload/400/relpic/9029/4523/d0f9c47f-4967-4911-af37-be14c6d698fb@710x470.jpg",
+    "ty": "special"
+   },
    {
     "t": "2026 台灣兩棲爬蟲特寵嘉年華",
     "s": "2026/08/29",
