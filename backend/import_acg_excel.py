@@ -151,6 +151,42 @@ class _JsonSheet:
         return _JsonCell(record.get(header), links.get(header, ""))
 
 
+def _heal_row_schema(rows):
+    """讓 acg_events.json 的每一列都帶齊「基準欄位骨架」（缺者補 null），
+    並在有變動時原地重寫檔案（冪等）。
+
+    動機：export_excel_to_json.py 由 xlsx 匯出時每列必帶齊全部欄，但若有人直接在
+    acg_events.json 手動附加列（實務上發生過），可能漏欄，導致
+    backend/_test_admission_status.py 的「每列都要有『付費狀態 / Admission』欄」硬性
+    檢查失敗、拖垮整條每日更新。此處於讀取時自我修復欄位骨架，讓來源結構永遠一致。
+
+    「基準欄位」＝出現在過半資料列的欄位（即 xlsx 表頭那一組）。只把基準欄補進缺漏的
+    列，不會把少數手動列才有的選用欄（如多店專用欄）反向灌進其它列——確保修復是最小
+    改動、diff 友善，且只補欄、不動既有值與順序。"""
+    if not rows:
+        return
+    freq = {}
+    for row in rows:
+        for key in row:
+            if key != "_links":
+                freq[key] = freq.get(key, 0) + 1
+    base_columns = [k for k, n in freq.items() if n * 2 >= len(rows)]
+    changed = False
+    for row in rows:
+        for key in base_columns:
+            if key not in row:
+                row[key] = None
+                changed = True
+    if changed:
+        try:
+            with open(ACG_EVENTS_JSON, "w", encoding="utf-8") as fh:
+                json.dump(rows, fh, ensure_ascii=False, indent=1)
+                fh.write("\n")
+            print("acg_events.json 基準欄位骨架已補齊（缺欄補 null）", file=sys.stderr)
+        except Exception as err:
+            print(f"acg_events.json 欄位骨架補齊寫回失敗（{err}）", file=sys.stderr)
+
+
 def load_sheet():
     """優先讀 acg_events.json（純文字、diff 友善）；不存在或格式非預期則退回讀 xlsx。
 
@@ -164,6 +200,7 @@ def load_sheet():
             print(f"acg_events.json 讀取失敗（{err}），退回讀 xlsx", file=sys.stderr)
             rows = None
         if isinstance(rows, list) and all(isinstance(r, dict) for r in rows):
+            _heal_row_schema(rows)
             print(f"讀取來源: acg_events.json（{len(rows)} 列）", file=sys.stderr)
             return _JsonSheet(rows)
         if rows is not None:
