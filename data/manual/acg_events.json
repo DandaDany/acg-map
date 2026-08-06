@@ -3742,5 +3742,121 @@
   "_links": {
    "活動連結 / Activity link": "https://www.brothers.tw/POR0106_?BULLETIN_ID=P1BNF1T5"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "葬送的芙莉蓮",
+  "活動名稱 / Activity Name": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+  "地點 / Location": "台北市南港區經貿二路131號5樓（三井LaLaport南港 5樓）",
+  "主辦方 / Organizer": "爆彈燒本舖",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "備註 / NOTE": "資料來源：Daniel於2026/08/05對話提供之IG貼文(instagram.com/p/DbSzwVIFPRH/)＋聯合新聞網報導(udn.com/news/story/7270/9656244)。KV已自存：官方主視覺下載後commit進repo data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg，已用Read肉眼確認含「葬送的芙莉蓮FRIEREN×ばくだん焼本舖」logo、活動期間「2026年8月1日～9月30日」及©Kanehito Yamada,Tsukasa Abe/Shogakukan『Frieren』Project授權字樣，不再依賴會過期的IG CDN。三館結束日不同(南港9/30、新莊/新竹8/31)依udn新聞，與原始貼文『三館皆到9/30』有出入，已採新聞為準。活動類別『快閃店』為AI判定(限定周邊：壓克力鑰匙圈/徽章/立牌/色紙)。授權單位(台灣代理)未見官方標示，標需人工確認。地址與經緯度為Daniel提供。",
+  "IP_std": "葬送的芙莉蓮",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "葬送的芙莉蓮",
+  "活動名稱 / Activity Name": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+  "地點 / Location": "新北市新莊區新北大道四段3號7樓（宏匯廣場 7樓）",
+  "主辦方 / Organizer": "爆彈燒本舖",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "備註 / NOTE": "資料來源：Daniel於2026/08/05對話提供之IG貼文(instagram.com/p/DbSzwVIFPRH/)＋聯合新聞網報導(udn.com/news/story/7270/9656244)。KV已自存：官方主視覺下載後commit進repo data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg，已用Read肉眼確認含「葬送的芙莉蓮FRIEREN×ばくだん焼本舖」logo、活動期間「2026年8月1日～9月30日」及©Kanehito Yamada,Tsukasa Abe/Shogakukan『Frieren』Project授權字樣，不再依賴會過期的IG CDN。三館結束日不同(南港9/30、新莊/新竹8/31)依udn新聞，與原始貼文『三館皆到9/30』有出入，已採新聞為準。活動類別『快閃店』為AI判定(限定周邊：壓克力鑰匙圈/徽章/立牌/色紙)。授權單位(台灣代理)未見官方標示，標需人工確認。地址與經緯度為Daniel提供。",
+  "IP_std": "葬送的芙莉蓮",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-08-31 00:00:00",
+  "IP": "葬送的芙莉蓮",
+  "活動名稱 / Activity Name": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+  "地點 / Location": "新竹市東區中央路229號4樓（新竹巨城購物中心 4樓）",
+  "主辦方 / Organizer": "爆彈燒本舖",
+  "授權單位 / Authorized unit (Licensor)": "需人工確認",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "備註 / NOTE": "資料來源：Daniel於2026/08/05對話提供之IG貼文(instagram.com/p/DbSzwVIFPRH/)＋聯合新聞網報導(udn.com/news/story/7270/9656244)。KV已自存：官方主視覺下載後commit進repo data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg，已用Read肉眼確認含「葬送的芙莉蓮FRIEREN×ばくだん焼本舖」logo、活動期間「2026年8月1日～9月30日」及©Kanehito Yamada,Tsukasa Abe/Shogakukan『Frieren』Project授權字樣，不再依賴會過期的IG CDN。三館結束日不同(南港9/30、新莊/新竹8/31)依udn新聞，與原始貼文『三館皆到9/30』有出入，已採新聞為準。活動類別『快閃店』為AI判定(限定周邊：壓克力鑰匙圈/徽章/立牌/色紙)。授權單位(台灣代理)未見官方標示，標需人工確認。地址與經緯度為Daniel提供。",
+  "IP_std": "葬送的芙莉蓮",
+  "Licensor_std": null,
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg",
+  "類型 / Category": "餐飲/F&B",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "哆啦A夢",
+  "活動名稱 / Activity Name": "哆啦A夢 × 聚 日式鍋物「任意開鍋 FUN趣吃」",
+  "地點 / Location": "全台聚（日式鍋物）門市（詳細地址清單見 data/manual/聚門市地址_giguo.json，來源：giguo.com.tw/store-list.php，2026/08/05查詢共34間；實際參與門市以官方活動頁 giguo.com.tw/activity.php?newsurl=2026_DORAEMON 為準，需人工確認）",
+  "主辦方 / Organizer": "聚 日式鍋物（王品集團）",
+  "授權單位 / Authorized unit (Licensor)": "Animation International Ltd.（Animation Int'l）",
+  "活動連結 / Activity link": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
+  "備註 / NOTE": "資料來源：Daniel於2026/08/05對話提供之聚官方活動頁(giguo.com.tw/activity.php?newsurl=2026_DORAEMON)。KV已自存repo data/manual/_kv_cache/doraemon_giguo_20260801.jpg，經Read肉眼確認含Doraemon×聚×和牛涮 logo、「任意開鍋 FUN趣吃」、期間限定「2026.08.01-09.30」及©1970-2026 Fujiko Pro、Licensed by Animation Int'l。授權單位依KV版權標示。與『哆啦A夢×和牛涮』為聚集團同一檔聯名跨兩品牌，依Daniel指示拆兩筆。活動類別『主題餐廳』為AI判定。門市清單已建置 data/manual/聚門市地址_giguo.json（官網store-list.php 2026/08/05查得34間）；⚠️實際參與門市以官方活動頁為準，若非全門市參與需人工確認後刪減。",
+  "IP_std": "哆啦A夢",
+  "Licensor_std": "Animation International",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_giguo_20260801.jpg"
+  },
+  "多店活動 / Multi-store": "聚",
+  "門市資料 / Store List": "data/manual/聚門市地址_giguo.json",
+  "門市名稱前綴 / Store Prefix": "聚"
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg",
+  "類型 / Category": "餐飲/F&B",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-01 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "哆啦A夢",
+  "活動名稱 / Activity Name": "哆啦A夢 × 和牛涮「任意開鍋 FUN趣吃」",
+  "地點 / Location": "全台和牛涮日式鍋物放題門市（詳細地址清單見 data/manual/和牛涮門市地址_wagyushabu.json，來源：wagyushabu.com.tw官網分店頁，2026/08/05查詢共17間；實際參與門市以官方活動為準，需人工確認）",
+  "主辦方 / Organizer": "和牛涮 日式鍋物放題（王品集團）",
+  "授權單位 / Authorized unit (Licensor)": "Animation International Ltd.（Animation Int'l）",
+  "活動連結 / Activity link": "https://www.facebook.com/share/p/1EpGc7kLJs/",
+  "備註 / NOTE": "資料來源：Daniel於2026/08/05對話提供之和牛涮FB貼文(facebook.com/share/p/1EpGc7kLJs/)＋官網分店清單，官網首頁亦見『任意開鍋 FUN趣吃』banner佐證。KV已自存repo data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg，經Read肉眼確認含Doraemon×聚×和牛涮 logo、「任意開鍋 FUN趣吃」、期間限定「2026.08.01-09.30」及©1970-2026 Fujiko Pro、Licensed by Animation Int'l。授權單位依KV版權標示。與『哆啦A夢×聚』為同一檔聯名跨兩品牌拆兩筆。活動類別『主題餐廳』為AI判定。門市清單已建置 data/manual/和牛涮門市地址_wagyushabu.json（官網17間，Daniel提供）；⚠️實際參與門市以官方活動為準，需人工確認。",
+  "IP_std": "哆啦A夢",
+  "Licensor_std": "Animation International",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/doraemon_wagyushabu_20260801.jpg"
+  },
+  "多店活動 / Multi-store": "和牛涮",
+  "門市資料 / Store List": "data/manual/和牛涮門市地址_wagyushabu.json",
+  "門市名稱前綴 / Store Prefix": "和牛涮"
  }
 ]
