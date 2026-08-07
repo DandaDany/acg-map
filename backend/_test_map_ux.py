@@ -137,15 +137,50 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("background:#e53935", self.html)
         self.assertIn("object-position:center", self.html)
 
-    def test_cluster_expansion_restores_after_returning_to_map(self):
-        self.assertIn("let expandedClusterVenueIds=[]", self.html)
-        self.assertIn("function rememberExpandedCluster(layer)", self.html)
+    def test_cluster_expansion_tracked_via_spiderfied_events(self):
+        self.assertIn("let expandedClusterLatLng=null", self.html)
+        self.assertIn("cluster.on('spiderfied'", self.html)
+        self.assertIn("cluster.on('unspiderfied'", self.html)
         self.assertIn("function restoreExpandedCluster()", self.html)
         self.assertIn("cluster.getVisibleParent(marker)", self.html)
-        self.assertIn("cluster.on('clusterclick'", self.html)
-        self.assertGreaterEqual(self.html.count("requestAnimationFrame(restoreExpandedCluster)"), 3)
+        self.assertNotIn("rememberExpandedCluster", self.html)
+        self.assertNotIn("expandedClusterVenueIds", self.html)
+
+    def test_selection_decoupled_from_popup_lifecycle(self):
         self.assertIn("function closeDesktopDialog(updateHistory=true)", self.html)
         self.assertIn("function closeMobileVenueSheet()", self.html)
+        close_desktop = self.html[self.html.index("function closeDesktopDialog"):]
+        close_desktop = close_desktop[: close_desktop.index("\n}") + 2]
+        self.assertNotIn("selectedLocationId=null", close_desktop)
+        self.assertNotIn("selectedVenueId=null", close_desktop)
+        close_mobile = self.html[self.html.index("function closeMobileVenueSheet"):]
+        close_mobile = close_mobile[: close_mobile.index("\n}") + 2]
+        self.assertNotIn("selectedLocationId=null", close_mobile)
+        self.assertNotIn("selectedVenueId=null", close_mobile)
+
+    def test_map_click_clears_selection(self):
+        self.assertIn(
+            "map.on('click',()=>{if(Date.now()-mobileSheetOpenedAt<350)return;"
+            "closeMobileVenueSheet();uiState.selectedVenueId=null;"
+            "uiState.selectedLocationId=null;highlightSelectedMarker()})",
+            self.html,
+        )
+
+    def test_unspiderfied_clears_selection(self):
+        unspi = self.html[self.html.index("cluster.on('unspiderfied'"):]
+        unspi = unspi[: unspi.index("});") + 3]
+        self.assertIn("selectedLocationId=null", unspi)
+        self.assertIn("highlightSelectedMarker()", unspi)
+
+    def test_no_settimeout_hacks_for_map_cluster(self):
+        app_js = self.html[self.html.index("const uiState="):]
+        self.assertNotIn("setTimeout(()=>{map.invalidateSize()", app_js)
+        self.assertNotIn("setTimeout(()=>{map.invalidateSize", app_js)
+
+    def test_initial_and_home_view_use_main_bounds(self):
+        self.assertIn("const TW_MAIN_BOUNDS=L.latLngBounds", self.html)
+        self.assertIn("map.fitBounds(TW_MAIN_BOUNDS,{padding:[16,16]})", self.html)
+        self.assertIn("function fitTaiwanView(){map.fitBounds(TW_MAIN_BOUNDS", self.html)
 
     def test_mobile_filters_use_draft_until_done(self):
         self.assertIn("let draftFilters=null", self.html)
