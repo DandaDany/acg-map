@@ -6,22 +6,6 @@
   "url": "https://www.huashan1914.com",
   "ex": [
    {
-    "t": "星際大戰華山限定快閃店_Mission Cantina",
-    "s": "2026/06/25",
-    "e": "2026/08/06",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26061714315963638",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/華山官網活動：JPG格式｜1920(W)-x-1080(H) (1).jpg",
-    "ty": "special"
-   },
-   {
-    "t": "《Not Alone - 與你相伴 印德拉•多迪個展》",
-    "s": "2026/06/24",
-    "e": "2026/08/09",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26061811380375174",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/Not_Alone_under_5MB.jpg",
-    "ty": "special"
-   },
-   {
     "t": "萌町園遊會 Kawaii Spot (小突兔x溫柔的大白狼沃爾夫)",
     "s": "2026/07/11",
     "e": "2026/08/09",
@@ -35,6 +19,14 @@
     "e": "2026/08/09",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26070816140465503",
     "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/20260809%e8%8f%af%e5%b1%b1%e6%96%87%e6%97%85%e5%ad%b8_1920x1080px.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "《Not Alone - 與你相伴 印德拉•多迪個展》",
+    "s": "2026/06/24",
+    "e": "2026/08/09",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26061811380375174",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/Not_Alone_under_5MB.jpg",
     "ty": "special"
    },
    {
@@ -206,6 +198,14 @@
     "ty": "special"
    },
    {
+    "t": "JNP 紀念品 by plain-me 快閃店",
+    "s": "2026/08/13",
+    "e": "2026/10/12",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26080712070005557",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/20260803_JNP%e8%8f%af%e5%b1%b1_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_001.jpg",
+    "ty": "special"
+   },
+   {
     "t": "台灣滿枝枒_芬芳美麗",
     "s": "2026/06/23",
     "e": "2026/12/08",
@@ -230,27 +230,27 @@
   "url": "https://www.songshanculturalpark.org",
   "ex": [
    {
-    "t": "台灣設計榮耀 2025–2026 紅點設計獎特展",
-    "s": "2026/08/11",
-    "e": "2026/10/04",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/5c934662-a952-4757-84e3-169a0e7707a6",
-    "img": "https://www.songshanculturalpark.org/gallery/1785999388_011d057931abe7bde7ed.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "2026 年 iF 設計新秀小聚 | 設計已讀 ECHOES OF JOY",
+    "t": "2026 音協認證｜【88顆芭樂籽 阿強】台灣音樂人如何進軍國際？ 曲風創作策略與市場思維",
     "s": "2026/08/21",
-    "e": "2026/08/11",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/f541389d-f744-49cb-a28a-b48afdfb45e8",
-    "img": "https://www.songshanculturalpark.org/gallery/1786002395_39f650fdfa2efedb0713.jpg",
+    "e": "2026/08/21",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/7a1eb339-8576-450d-a4ad-015aff7f1a25",
+    "img": "https://www.songshanculturalpark.org/gallery/1786070873_38a266622d16841f7602.jpg",
     "ty": "special"
    },
    {
-    "t": "臨時公共空間的臨時展覽",
-    "s": "2026/08/11",
-    "e": "2026/10/04",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/78965588-eee7-4b24-bf52-a785dfefe102",
-    "img": "https://www.songshanculturalpark.org/gallery/1786005300_4242d9a9e16180449cea.jpg",
+    "t": "2026 音協認證｜【尤景文】從舞台到錄音室 職業樂手的實戰養成",
+    "s": "2026/08/26",
+    "e": "2026/08/21",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/97d24aa1-a069-4f4a-b5e1-3d44dedc1539",
+    "img": "https://www.songshanculturalpark.org/gallery/1786071062_fac09244465843e643df.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 音協認證｜【利啟正】音樂創作者的 YouTube 國際內容策略 內容經營與觀眾建立",
+    "s": "2026/08/28",
+    "e": "2026/08/21",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/588c5fd6-abaf-4931-99fa-f99135421aaa",
+    "img": "https://www.songshanculturalpark.org/gallery/1786071204_59fbeeec2071eaac32f8.jpg",
     "ty": "special"
    },
    {
@@ -483,6 +483,30 @@
     "e": "2026/08/23",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/e7952b91-4832-4232-9871-50c4374eb80c",
     "img": "https://www.songshanculturalpark.org/gallery/1785997765_0420636bf09b525b6c92.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "台灣設計榮耀 2025–2026 紅點設計獎特展",
+    "s": "2026/08/11",
+    "e": "2026/10/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/5c934662-a952-4757-84e3-169a0e7707a6",
+    "img": "https://www.songshanculturalpark.org/gallery/1785999388_011d057931abe7bde7ed.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 年 iF 設計新秀小聚 | 設計已讀 ECHOES OF JOY",
+    "s": "2026/08/21",
+    "e": "2026/08/21",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/f541389d-f744-49cb-a28a-b48afdfb45e8",
+    "img": "https://www.songshanculturalpark.org/gallery/1786002395_39f650fdfa2efedb0713.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "臨時公共空間的臨時展覽",
+    "s": "2026/08/11",
+    "e": "2026/10/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/78965588-eee7-4b24-bf52-a785dfefe102",
+    "img": "https://www.songshanculturalpark.org/gallery/1786005300_4242d9a9e16180449cea.jpg",
     "ty": "special"
    }
   ]

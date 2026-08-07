@@ -2400,5 +2400,365 @@
   "display_name": "台北市信義區新仁里忠孝東路四段515號",
   "type": "PointAddress",
   "addr_key": "台北市信義區忠孝東路四段515號"
+ },
+ "和牛涮 中壢元化店": {
+  "la": 24.96177,
+  "lo": 121.22661,
+  "source": "address_geocode",
+  "display_name": "桃園市中壢區六和商圈元化路245號, 320045",
+  "type": "PointAddress",
+  "addr_key": "桃園市中壢區元化路245號2樓"
+ },
+ "和牛涮 仁德萬家福店": {
+  "la": 22.9725878,
+  "lo": 120.2469376,
+  "source": "address_geocode",
+  "display_name": "台南市仁德區中山路711號, 717022",
+  "type": "PointAddress",
+  "addr_key": "台南市仁德區中山路711號"
+ },
+ "和牛涮 台中五權西店": {
+  "la": 24.139796,
+  "lo": 120.647029,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區五權西路二段271號, 408026",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區五權西路二段271號1、2樓"
+ },
+ "和牛涮 台中文心崇德店": {
+  "la": 24.1724231,
+  "lo": 120.6849755,
+  "source": "address_geocode",
+  "display_name": "台中市文心路四段601號, 406019",
+  "type": "PointAddress",
+  "addr_key": "台中市北屯區文心路四段601號"
+ },
+ "和牛涮 台北羅斯福店": {
+  "la": 25.02795,
+  "lo": 121.5220299,
+  "source": "address_geocode",
+  "display_name": "台北市大安區錦華里羅斯福路二段27號, 10643",
+  "type": "PointAddress",
+  "addr_key": "台北市大安區羅斯福路二段27號"
+ },
+ "和牛涮 台北西門店": {
+  "la": 25.0479094,
+  "lo": 121.5097494,
+  "source": "address_geocode",
+  "display_name": "台北市萬華區中華路一段2號, 108",
+  "type": "StreetAddress",
+  "addr_key": "台北市萬華區中華路一段90號2樓"
+ },
+ "和牛涮 台南中華西店": {
+  "la": 22.9931993,
+  "lo": 120.1866,
+  "source": "address_geocode",
+  "display_name": "台南市中華西路二段345號, 708007",
+  "type": "PointAddress",
+  "addr_key": "台南市安平區中華西路二段345號"
+ },
+ "和牛涮 嘉義垂楊店": {
+  "la": 23.473168,
+  "lo": 120.445301,
+  "source": "address_geocode",
+  "display_name": "嘉義市西區垂楊路381號, 600",
+  "type": "PointAddress",
+  "addr_key": "嘉義市西區垂楊路381號"
+ },
+ "和牛涮 新店民權店": {
+  "la": 24.9830005,
+  "lo": 121.5361861,
+  "source": "address_geocode",
+  "display_name": "新北市新店區民權路100號, 231023",
+  "type": "PointAddress",
+  "addr_key": "新北市新店區民權路100號2樓"
+ },
+ "和牛涮 板橋文化店": {
+  "la": 25.02116,
+  "lo": 121.467188,
+  "source": "address_geocode",
+  "display_name": "新北市文化路一段280號, 220003",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區文化路一段280號2樓"
+ },
+ "和牛涮 桃園同德店": {
+  "la": 25.0143234,
+  "lo": 121.2999808,
+  "source": "address_geocode",
+  "display_name": "桃園市中正藝文商圈同德五街77號, 330012",
+  "type": "PointAddress",
+  "addr_key": "桃園市桃園區同德五街77號1樓"
+ },
+ "和牛涮 竹北光明店": {
+  "la": 24.830243,
+  "lo": 121.017256,
+  "source": "address_geocode",
+  "display_name": "新竹縣竹北光明商圈光明一路112號, 302002",
+  "type": "PointAddress",
+  "addr_key": "新竹縣竹北市光明一路112號2樓"
+ },
+ "和牛涮 頭份尚順店": {
+  "la": 24.6878214,
+  "lo": 120.9038082,
+  "source": "address_geocode",
+  "display_name": "苗栗縣頭份市育樂街6號, 351028",
+  "type": "PointAddress",
+  "addr_key": "苗栗縣頭份市育樂街6號1樓"
+ },
+ "和牛涮 高雄博愛店": {
+  "la": 22.670013,
+  "lo": 120.303755,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區博愛二路682號, 813018",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區博愛二路682號"
+ },
+ "聚 三峽學成店": {
+  "la": 24.9442053,
+  "lo": 121.3783061,
+  "source": "address_geocode",
+  "display_name": "新北市三峽區學成路398號, 237020",
+  "type": "PointAddress",
+  "addr_key": "新北市三峽區學成路398號3樓"
+ },
+ "聚 中壢SOGO店": {
+  "la": 24.962685,
+  "lo": 121.2235325,
+  "source": "address_geocode",
+  "display_name": "桃園市中壢區六和商圈元化路357號, 320680",
+  "type": "PointAddress",
+  "addr_key": "桃園市中壢區元化路357號8樓"
+ },
+ "聚 台中公益店": {
+  "la": 24.151294,
+  "lo": 120.6435424,
+  "source": "address_geocode",
+  "display_name": "台中市南屯區公益路二段252號, 408034",
+  "type": "PointAddress",
+  "addr_key": "台中市南屯區公益路二段252號"
+ },
+ "聚 台中米平方店": {
+  "la": 24.1922338,
+  "lo": 120.6120641,
+  "source": "address_geocode",
+  "display_name": "台中市水崛頭國安一路168號, 407001",
+  "type": "PointAddress",
+  "addr_key": "台中市西屯區國安一路168號2樓"
+ },
+ "聚 台中豐原大社店": {
+  "la": 24.251603,
+  "lo": 120.701203,
+  "source": "address_geocode",
+  "display_name": "台中市神岡區大社街81號, 429006",
+  "type": "PointAddress",
+  "addr_key": "台中市豐原區大社街8號1樓"
+ },
+ "聚 台北南京東店": {
+  "la": 25.0518979,
+  "lo": 121.5305,
+  "source": "address_geocode",
+  "display_name": "台北市中山區南京東路二段72號, 104091",
+  "type": "StreetAddress",
+  "addr_key": "台北市中山區南京東路二段72號B1"
+ },
+ "聚 台北衡陽店": {
+  "la": 25.0424158,
+  "lo": 121.5138835,
+  "source": "address_geocode",
+  "display_name": "台北市中正區黎明里衡陽路3號, 10046",
+  "type": "PointAddress",
+  "addr_key": "台北市中正區衡陽路3號2樓"
+ },
+ "聚 台南中華西店": {
+  "la": 22.992961,
+  "lo": 120.186614,
+  "source": "address_geocode",
+  "display_name": "台南市中華西路二段317號, 708007",
+  "type": "PointAddress",
+  "addr_key": "台南市安平區中華西路二段317號2樓"
+ },
+ "聚 台南仁德中山店": {
+  "la": 22.9728652,
+  "lo": 120.2459346,
+  "source": "address_geocode",
+  "display_name": "台南市仁德區中山路777號, 717022",
+  "type": "PointAddress",
+  "addr_key": "台南市仁德區中山路777號1樓"
+ },
+ "聚 台南永康中華店": {
+  "la": 23.001783,
+  "lo": 120.234921,
+  "source": "address_geocode",
+  "display_name": "台南市永康區中華路101號, 710044",
+  "type": "PointAddress",
+  "addr_key": "台南市永康區中華路101號"
+ },
+ "聚 台東秀泰店": {
+  "la": 22.751916,
+  "lo": 121.148403,
+  "source": "address_geocode",
+  "display_name": "台東縣新生路93號, 950",
+  "type": "PointAddress",
+  "addr_key": "台東縣台東市新生路93號秀泰2樓"
+ },
+ "聚 員林中山店": {
+  "la": 23.960229,
+  "lo": 120.570725,
+  "source": "address_geocode",
+  "display_name": "彰化縣員林市中山路二段30號, 510001",
+  "type": "PointAddress",
+  "addr_key": "彰化縣員林市中山路二段30之3號2樓"
+ },
+ "聚 嘉義垂楊店": {
+  "la": 23.4731746,
+  "lo": 120.4434318,
+  "source": "address_geocode",
+  "display_name": "嘉義市西區垂楊路455號, 600001",
+  "type": "StreetAddress",
+  "addr_key": "嘉義市西區垂楊路455號2樓"
+ },
+ "聚 基隆信一店": {
+  "la": 25.130722,
+  "lo": 121.744789,
+  "source": "address_geocode",
+  "display_name": "基隆市環港商圈信一路177號, 202099",
+  "type": "PointAddress",
+  "addr_key": "基隆市中正區信一路177號5樓"
+ },
+ "聚 士林中正店": {
+  "la": 25.0955722,
+  "lo": 121.5275171,
+  "source": "address_geocode",
+  "display_name": "台北市士林區中正路179號, 111011",
+  "type": "StreetAddressExt",
+  "addr_key": "台北市士林區中正路179號"
+ },
+ "聚 大里大買家店": {
+  "la": 24.1156871,
+  "lo": 120.6795967,
+  "source": "address_geocode",
+  "display_name": "台中市大里區國光路二段710號, 412018",
+  "type": "PointAddress",
+  "addr_key": "台中市大里區國光路二段710號2樓"
+ },
+ "聚 宜蘭新月店": {
+  "la": 24.7543756,
+  "lo": 121.7500262,
+  "source": "address_geocode",
+  "display_name": "宜蘭縣宜蘭市民權路二段38巷6號, 260",
+  "type": "PointAddress",
+  "addr_key": "宜蘭縣宜蘭市民權路二段38巷6號4樓"
+ },
+ "聚 屏東太平洋店": {
+  "la": 22.6740881,
+  "lo": 120.4895802,
+  "source": "address_geocode",
+  "display_name": "屏東縣中正路72號, 900603",
+  "type": "StreetAddress",
+  "addr_key": "屏東縣屏東市中正路72號B1"
+ },
+ "聚 斗六鎮南店": {
+  "la": 23.6960733,
+  "lo": 120.54312,
+  "source": "address_geocode",
+  "display_name": "雲林縣斗六市鎮南路313號, 640114",
+  "type": "StreetAddressExt",
+  "addr_key": "雲林縣斗六市鎮南路313號"
+ },
+ "聚 新店民權店": {
+  "la": 24.9830617,
+  "lo": 121.5373632,
+  "source": "address_geocode",
+  "display_name": "新北市新店區民權路82號, 231023",
+  "type": "PointAddress",
+  "addr_key": "新北市新店區民權路82號2樓"
+ },
+ "聚 板橋中山店": {
+  "la": 25.0096222,
+  "lo": 121.4610708,
+  "source": "address_geocode",
+  "display_name": "新北市府中商圈中山路一段63號, 220067",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區中山路一段6號3樓"
+ },
+ "聚 板橋江子翠店": {
+  "la": 25.027394,
+  "lo": 121.471417,
+  "source": "address_geocode",
+  "display_name": "新北市文化路二段182巷3弄79號, 220029",
+  "type": "PointAddress",
+  "addr_key": "新北市板橋區文化路二段182巷3弄79號3樓"
+ },
+ "聚 林口文化店": {
+  "la": 25.0558213,
+  "lo": 121.3652098,
+  "source": "address_geocode",
+  "display_name": "桃園市龜山區文化三路256號, 333004",
+  "type": "StreetAddressExt",
+  "addr_key": "桃園市龜山區文化三路256號1樓"
+ },
+ "聚 桃園統領店": {
+  "la": 24.991113,
+  "lo": 121.312523,
+  "source": "address_geocode",
+  "display_name": "桃園市桃園站前商圈中正路61號, 330002",
+  "type": "PointAddress",
+  "addr_key": "桃園市桃園區中正路61號5樓"
+ },
+ "聚 汐止遠雄店": {
+  "la": 25.061622,
+  "lo": 121.648249,
+  "source": "address_geocode",
+  "display_name": "新北市汐止區新台五路一段99號, 221",
+  "type": "PointAddress",
+  "addr_key": "新北市汐止區新台五路一段99號2樓"
+ },
+ "聚 淡水淡新萬家福店": {
+  "la": 25.1881741,
+  "lo": 121.4435919,
+  "source": "address_geocode",
+  "display_name": "新北市淡水區中山北路二段383號, 251036",
+  "type": "PointAddress",
+  "addr_key": "新北市淡水區中山北路二段383號3樓"
+ },
+ "聚 澄清文衡店": {
+  "la": 22.642144,
+  "lo": 120.346062,
+  "source": "address_geocode",
+  "display_name": "高雄市三民區澄清路536號, 807037",
+  "type": "PointAddress",
+  "addr_key": "高雄市三民區澄清路536號"
+ },
+ "聚 頭份尚順店": {
+  "la": 24.687211,
+  "lo": 120.90125,
+  "source": "address_geocode",
+  "display_name": "苗栗縣頭份市尚順路61號, 351028",
+  "type": "PointAddress",
+  "addr_key": "苗栗縣頭份市尚順路61號"
+ },
+ "聚 高雄大樂店": {
+  "la": 22.659181,
+  "lo": 120.315455,
+  "source": "address_geocode",
+  "display_name": "高雄市三民區民族一路463號, 807676",
+  "type": "PointAddress",
+  "addr_key": "高雄市三民區民族一路463號"
+ },
+ "聚 高雄富民店": {
+  "la": 22.665266,
+  "lo": 120.304751,
+  "source": "address_geocode",
+  "display_name": "高雄市左營區富民路355號, 813018",
+  "type": "PointAddress",
+  "addr_key": "高雄市左營區富民路355號2樓"
+ },
+ "聚 高雄新楠萬家福店": {
+  "la": 22.736127,
+  "lo": 120.330751,
+  "source": "address_geocode",
+  "display_name": "高雄市楠梓區土庫一路60號, 811032",
+  "type": "PointAddress",
+  "addr_key": "高雄市楠梓區土庫一路60號1樓"
  }
 }
