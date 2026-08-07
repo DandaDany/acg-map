@@ -3886,5 +3886,28 @@
    "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg"
   },
   "付費狀態 / Admission": "付費"
+ },
+ {
+  "KV": null,
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": null,
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-13 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "褲褲兔（おぱんちゅうさぎ）",
+  "活動名稱 / Activity Name": "褲褲兔 新竹巨城快閃店",
+  "地點 / Location": "遠東巨城購物中心（新竹市東區中央路229號）",
+  "主辦方 / Organizer": "FANFANS",
+  "授權單位 / Authorized unit (Licensor)": "Rights & Brands Asia",
+  "活動連結 / Activity link": "https://www.facebook.com/share/p/1JsN83hydG/",
+  "備註 / NOTE": "2026/08/06 Slack #社群訊息候選，Daniel 於 2026/08/07 對話同意採納。日期/地點/費用依官方主視覺：8.13(THU)–9.30(WED) 2026、新竹遠東巨城購物中心 6F、免費入場、版權列 R&B Asia ©KAWAISOUNI!。主辦 FANFANS，授權 Rights & Brands Asia。KV 官方主視覺自存於 data/manual/_kv_cache/opanchu_usagi_bigcity_20260813.jpg，來源官方FB貼文。",
+  "IP_std": "褲褲兔",
+  "Licensor_std": "Rights & Brands Asia",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/share/p/1JsN83hydG/"
+  }
  }
 ]
