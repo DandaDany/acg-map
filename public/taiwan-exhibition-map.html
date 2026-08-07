@@ -1458,12 +1458,12 @@ function eventCardHtml(group,preferredLocation=null){
   const first=preferredLocation||primaryLocationFor(group);
   return '<article class="event-card desktop-clickable" data-event-id="'+esc(group.id)+'" data-location-id="'+esc(first.id)+'">'
     +mediaFrameHtml(group.image,group.title,true)
-    +'<div class="card-body">'+tagHtml(group)+'<h2>'+esc(group.title)+'</h2>'
+    +'<div class="card-body">'+tagHtml(group,first.city)+'<h2>'+esc(group.title)+'</h2>'
     +'<div class="desktop-only-summary"><div class="card-summary">'+esc(groupDateText(group))+'</div>'
-    +'<div class="card-summary">'+(preferredLocation?esc(first.venueName+' · '+first.city):(group.locations.length>1?'共 '+group.locations.length+' 個地點':esc(first.venueName+' · '+first.city)))+'</div>'
+    +'<div class="card-summary">'+(preferredLocation?esc(first.venueName):(group.locations.length>1?'共 '+group.locations.length+' 個地點':esc(first.venueName)))+'</div>'
     +metadataHtml(group)+'</div>'
     +'<div class="mobile-detail"><div class="card-summary">'+esc(groupDateText(group))+'</div>'
-    +'<div class="card-summary">'+esc(preferredLocation?first.venueName+' · '+first.city:(group.locations.length>1?first.city+'等 '+group.locations.length+' 個地點':first.venueName+' · '+first.city))+'</div></div></div></article>';
+    +'<div class="card-summary">'+esc(preferredLocation?first.venueName:(group.locations.length>1?'共 '+group.locations.length+' 個地點':first.venueName))+'</div></div></div></article>';
 }
 function wireImages(root){
   root.querySelectorAll('.media-front').forEach(image=>{
