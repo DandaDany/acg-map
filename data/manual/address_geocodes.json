@@ -1827,5 +1827,13 @@
   "display_name": "高雄市三多四路21號, 802760",
   "type": "PointAddress",
   "score": 97.88
+ },
+ "台北市信義區忠孝東路四段515號": {
+  "la": 25.042315,
+  "lo": 121.5595295,
+  "source": "arcgis_address",
+  "display_name": "台北市信義區新仁里忠孝東路四段515號",
+  "type": "PointAddress",
+  "score": 100
  }
 }
