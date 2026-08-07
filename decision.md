@@ -35,6 +35,10 @@
 - Marker 顯示模式切換固定放在地圖上方正中央。
 - 點擊 marker 顯示該活動資訊；被選取的 marker 放大 30% 並以紅色外框標示（取代原本白框）。為避免收合已散開（spiderfy）的聚合，點擊當下不強制移動地圖；由 Discover 進入時仍會定位至該活動。
 - 使用者展開群聚並進入活動資訊後，回到地圖時必須保留該群聚的展開狀態；圖片與圖釘模式行為一致。
+- 群聚展開狀態透過 MarkerCluster 的 `spiderfied` / `unspiderfied` 事件追蹤，以展開群聚內子 marker 的 LatLng 作為識別依據（不依賴 venueId）。篩選、模式切換或重新渲染 marker 時，群聚展開狀態一併清除。
+- 紅框（selected marker）代表「目前選取的活動」，不與 popup 生命週期綁定。紅框持續顯示，直到使用者點擊另一個 marker、點擊地圖空白處、群聚收合（unspiderfied）、或篩選／模式變更。點擊群聚本身不產生紅框——只有實際的活動 marker 才出現。手機活動卡左右滑時，紅框同步更新。
+- 不使用 `setTimeout` 作為群聚恢復或 marker 渲染的修補；使用 `requestAnimationFrame` 搭配 MarkerCluster 實際事件。
+- 地圖初始畫面與 Home 鍵使用 `TW_MAIN_BOUNDS`（主島＋澎湖），避免離島拉大視野。`TW_BOUNDS`（含離島）僅用於 maxBounds 平移限制。
 - 水滴圖釘模式啟用時，桌機左側篩選面板底部需顯示活動形式的顏色與圖案圖例；圖片模式時隱藏。
 
 ## Discover、篩選與活動詳情
@@ -55,4 +59,4 @@
 - 相關決策必須同時落在程式碼測試中；只測「功能存在」不足以保護既有視覺規則。
 - 任何刻意改動本文件內容的 PR，需在 PR 說明中明列差異與 Daniel 的確認依據。
 
-最後更新：2026-08-04（Asia/Taipei）
+最後更新：2026-08-07（Asia/Taipei）
