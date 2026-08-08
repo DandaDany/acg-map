@@ -1398,9 +1398,9 @@
  },
  "和牛涮 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.59275,
-  "lng": 120.31286,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號4樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -2782,9 +2782,9 @@
  },
  "聚 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.58817,
-  "lng": 120.30247,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號高雄夢時代7F",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -4693,6 +4693,27 @@
     "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
     "org": "回歸線娛樂 X 誠品生活",
     "lic": "需人工確認"
+   }
+  ]
+ },
+ "遠東巨城購物中心": {
+  "city": "新竹市",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
+  "addr": "新竹市東區中央路229號",
+  "url": "https://www.facebook.com/share/p/1JsN83hydG/",
+  "ex": [
+   {
+    "t": "褲褲兔 新竹巨城快閃店",
+    "s": "2026/08/13",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1JsN83hydG/",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "褲褲兔（おぱんちゅうさぎ）",
+    "org": "FANFANS",
+    "lic": "Rights & Brands Asia"
    }
   ]
  },
