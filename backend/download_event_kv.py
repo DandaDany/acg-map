@@ -31,9 +31,9 @@
   python3 backend/download_event_kv.py         # 只自存會過期的 KV
   python3 backend/download_event_kv.py --all    # 自存所有遠端 KV（完整自存模式）
 """
-import argparse, json, os, sys, ssl, hashlib, urllib.request
+import argparse, json, os, sys, ssl, hashlib, shutil, urllib.request
 from urllib.parse import quote, unquote, urlparse, urlunparse
-from paths import path as P
+from paths import path as P, root_path
 from refresh_venues import stable_event_key  # 用同一把穩定鍵，檔名跨執行穩定
 
 KV_DIRNAME = "kv"
@@ -101,8 +101,36 @@ def quote_url(url):
         return url
 
 
+def local_repo_source(url, project_root=None):
+    """若 raw.githubusercontent URL 指向本 repo 已存在的手動 KV，回傳本機來源檔。
+
+    新 KV 在 PR 尚未合併前，raw ``main`` URL 會暫時 404；但原圖已先放進
+    ``data/manual/_kv_cache``。優先複製該檔，才能在同一個 commit 內完成
+    ``public/kv`` 自存，不必等合併後再跑一次管線。
+    """
+    try:
+        parsed = urlparse(str(url or ""))
+        prefix = "/DandaDany/acg-map/main/data/manual/_kv_cache/"
+        if parsed.netloc.lower() != "raw.githubusercontent.com" or not parsed.path.startswith(prefix):
+            return ""
+        root = os.path.realpath(project_root or root_path())
+        rel = unquote(parsed.path[len("/DandaDany/acg-map/main/"):])
+        candidate = os.path.realpath(os.path.join(root, rel))
+        if candidate.startswith(root + os.sep) and os.path.isfile(candidate):
+            return candidate
+    except Exception:
+        pass
+    return ""
+
+
 def _default_downloader(url, dest):
     """實際下載器：抓 url 存到 dest。失敗丟例外，由呼叫端決定是否略過。"""
+    local = local_repo_source(url)
+    if local:
+        tmp = dest + ".tmp"
+        shutil.copyfile(local, tmp)
+        os.replace(tmp, dest)
+        return
     req = urllib.request.Request(quote_url(url), headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30, context=_CTX) as r:
         data = r.read()

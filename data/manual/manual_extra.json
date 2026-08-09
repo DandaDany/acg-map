@@ -21,6 +21,182 @@
    }
   ]
  },
+ "IKEA 內湖店": {
+  "city": "台北市",
+  "lat": 25.08693,
+  "lng": 121.60022,
+  "loc": "區級",
+  "addr": "台北市內湖區舊宗路一段128號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 台中店": {
+  "city": "台中市",
+  "lat": 24.1284,
+  "lng": 120.61467,
+  "loc": "區級",
+  "addr": "台中市南屯區向上路二段168號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 台北城市店": {
+  "city": "台北市",
+  "lat": 25.0693,
+  "lng": 121.56666,
+  "loc": "區級",
+  "addr": "台北市松山區敦化北路100號B1",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 嘉義城市店": {
+  "city": "嘉義市",
+  "lat": 23.47903,
+  "lng": 120.42624,
+  "loc": "區級",
+  "addr": "嘉義市西區博愛路二段281號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 新店店": {
+  "city": "新北市",
+  "lat": 24.91864,
+  "lng": 121.53707,
+  "loc": "區級",
+  "addr": "新北市新店區中央路159號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 新莊店": {
+  "city": "新北市",
+  "lat": 25.03331,
+  "lng": 121.43878,
+  "loc": "區級",
+  "addr": "新北市新莊區中正路1號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 桃園店": {
+  "city": "桃園市",
+  "lat": 24.92566,
+  "lng": 121.24207,
+  "loc": "市級",
+  "addr": "桃園市中壢區高鐵站前東路一段1號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 高雄店": {
+  "city": "高雄市",
+  "lat": 22.57951,
+  "lng": 120.30487,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路1201號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
  "animate Gratte 西門站": {
   "city": "台北市",
   "lat": 25.0179,
@@ -64,6 +240,28 @@
     "ip": "我的英雄學院",
     "org": "animate Gratte（安利美特台灣）",
     "lic": "堀越耕平／集英社・My Hero Academia Project"
+   }
+  ]
+ },
+ "animate cafe 台北北門店": {
+  "city": "台北市",
+  "lat": 25.02815,
+  "lng": 121.51034,
+  "loc": "區級",
+  "addr": "台北市中正區博愛路7號",
+  "url": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+  "ex": [
+   {
+    "t": "名偵探柯南 × animate cafe 台北北門店",
+    "s": "2026/07/29",
+    "e": "2026/09/01",
+    "l": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_animate_cafe_beimen_20260729.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "名偵探柯南",
+    "org": "animate cafe（安利美特台灣）",
+    "lic": "青山剛昌／小學館・讀賣電視台・TMS"
    }
   ]
  },
@@ -1398,9 +1596,9 @@
  },
  "和牛涮 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.59275,
-  "lng": 120.31286,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號4樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1667,6 +1865,40 @@
     "ip": "Tamagotchi塔麻可吉",
     "org": "萬代國際(wangjungintl)",
     "lic": "BANDAI"
+   }
+  ]
+ },
+ "新光三越台中中港店 10F天空劇場": {
+  "city": "台中市",
+  "lat": 24.18697,
+  "lng": 120.62864,
+  "loc": "區級",
+  "addr": "台中市西屯區台灣大道三段301號",
+  "url": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+  "ex": [
+   {
+    "t": "吉伊卡哇 POP UP STORE 新光三越台中中港店",
+    "s": "2026/08/22",
+    "e": "2026/09/20",
+    "l": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_popup_taichung_20260822.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "吉伊卡哇（ちいかわ）",
+    "org": "活動官方未公開",
+    "lic": "ナガノ（官方頁版權列權利方）"
+   },
+   {
+    "t": "Sanrio Gift Gate 狗狗派對快閃店（台中站）",
+    "s": "2026/08/07",
+    "e": "2026/08/23",
+    "l": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_dog_party_taichung_20260807.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "三麗鷗家族",
+    "org": "三麗鷗股份有限公司／Sanrio Gift Gate Taiwan",
+    "lic": "Sanrio Co., Ltd."
    }
   ]
  },
@@ -2782,9 +3014,9 @@
  },
  "聚 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.58817,
-  "lng": 120.30247,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號高雄夢時代7F",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -4693,6 +4925,27 @@
     "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
     "org": "回歸線娛樂 X 誠品生活",
     "lic": "需人工確認"
+   }
+  ]
+ },
+ "遠東巨城購物中心": {
+  "city": "新竹市",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
+  "addr": "新竹市東區中央路229號",
+  "url": "https://www.facebook.com/share/p/1JsN83hydG/",
+  "ex": [
+   {
+    "t": "褲褲兔 新竹巨城快閃店",
+    "s": "2026/08/13",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1JsN83hydG/",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "褲褲兔（おぱんちゅうさぎ）",
+    "org": "FANFANS",
+    "lic": "Rights & Brands Asia"
    }
   ]
  },

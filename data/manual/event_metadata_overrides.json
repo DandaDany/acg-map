@@ -664,5 +664,45 @@
   "link": "https://www.facebook.com/share/p/1JsN83hydG/",
   "kv_source": "https://www.facebook.com/share/p/1JsN83hydG/",
   "checked": "2026-08-07"
+ },
+ "Pikmin Bloom × IKEA 台灣 期間限定活動": {
+  "org": "IKEA Taiwan（宜家家居台灣）",
+  "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）",
+  "c2": "體驗活動",
+  "source_tier": 1,
+  "source": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "link": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "kv_source": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "checked": "2026-08-09"
+ },
+ "吉伊卡哇 POP UP STORE 新光三越台中中港店": {
+  "org": "活動官方未公開",
+  "lic": "ナガノ（官方頁版權列權利方）",
+  "c2": "快閃店",
+  "source_tier": 1,
+  "source": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+  "link": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+  "kv_source": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+  "checked": "2026-08-09"
+ },
+ "名偵探柯南 × animate cafe 台北北門店": {
+  "org": "animate cafe（安利美特台灣）",
+  "lic": "青山剛昌／小學館・讀賣電視台・TMS",
+  "c2": "快閃店",
+  "source_tier": 1,
+  "source": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+  "link": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+  "kv_source": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+  "checked": "2026-08-09"
+ },
+ "Sanrio Gift Gate 狗狗派對快閃店（台中站）": {
+  "org": "三麗鷗股份有限公司／Sanrio Gift Gate Taiwan",
+  "lic": "Sanrio Co., Ltd.",
+  "c2": "快閃店",
+  "source_tier": 1,
+  "source": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
+  "link": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
+  "kv_source": "https://www.facebook.com/SanrioGiftGate.tw/posts/1339421831674112/",
+  "checked": "2026-08-09"
  }
 }
