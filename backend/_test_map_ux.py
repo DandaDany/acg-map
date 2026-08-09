@@ -51,10 +51,11 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("new Set(locations.map(location=>location.event.id))", self.html)
 
     def test_markers_and_discover_focus_the_map(self):
-        self.assertIn("function focusMapLocation(location,zoom=13", self.html)
-        self.assertIn("focusMapLocation(card.location)", self.html)
+        self.assertIn("function navigateToEvent(eventId,options={})", self.html)
+        self.assertIn("function selectLocation(locationId,options={})", self.html)
+        self.assertIn("function focusMapLocation(location,zoom=13,onComplete=null)", self.html)
         self.assertIn("data-location-id=", self.html)
-        self.assertIn("setTab('map')", self.html)
+        self.assertIn("ensureMapVisible(version", self.html)
 
     def test_image_markers_preserve_kv_orientation(self):
         self.assertIn('class="kv-marker-shell"', self.html)
@@ -146,31 +147,80 @@ class MapUxTests(unittest.TestCase):
         self.assertNotIn("rememberExpandedCluster", self.html)
         self.assertNotIn("expandedClusterVenueIds", self.html)
 
-    def test_selection_decoupled_from_popup_lifecycle(self):
-        self.assertIn("function closeDesktopDialog(updateHistory=true)", self.html)
-        self.assertIn("function closeMobileVenueSheet()", self.html)
-        close_desktop = self.html[self.html.index("function closeDesktopDialog"):]
-        close_desktop = close_desktop[: close_desktop.index("\n}") + 2]
-        self.assertNotIn("selectedLocationId=null", close_desktop)
-        self.assertNotIn("selectedVenueId=null", close_desktop)
-        close_mobile = self.html[self.html.index("function closeMobileVenueSheet"):]
-        close_mobile = close_mobile[: close_mobile.index("\n}") + 2]
-        self.assertNotIn("selectedLocationId=null", close_mobile)
-        self.assertNotIn("selectedVenueId=null", close_mobile)
+    def test_popup_close_is_unified_with_selection_lifecycle(self):
+        self.assertIn("function closeActiveMapPopup(options={})", self.html)
+        self.assertIn("function clearSelection()", self.html)
+        self.assertIn("if(settings.clearSelection)clearSelection()", self.html)
+        self.assertIn("closeActiveMapPopup({clearSelection:true,updateHistory});", self.html)
+        self.assertIn("if(clear)clearSelection();", self.html)
 
     def test_map_click_clears_selection(self):
-        self.assertIn(
-            "map.on('click',()=>{if(Date.now()-mobileSheetOpenedAt<350)return;"
-            "closeMobileVenueSheet();uiState.selectedVenueId=null;"
-            "uiState.selectedLocationId=null;highlightSelectedMarker()})",
-            self.html,
-        )
+        self.assertIn("map.on('click',()=>{if(Date.now()-mobileSheetOpenedAt<350)return;closeActiveMapPopup({clearSelection:true})})", self.html)
 
-    def test_unspiderfied_clears_selection(self):
+    def test_unspiderfied_preserves_selection(self):
         unspi = self.html[self.html.index("cluster.on('unspiderfied'"):]
         unspi = unspi[: unspi.index("});") + 3]
-        self.assertIn("selectedLocationId=null", unspi)
-        self.assertIn("highlightSelectedMarker()", unspi)
+        self.assertIn("expandedClusterLatLng=null", unspi)
+        self.assertNotIn("selectedLocationId", unspi)
+        self.assertNotIn("clearSelection", unspi)
+
+    def test_latest_switch_first_seen_and_separate_scroll(self):
+        self.assertIn('id="discoverMode"', self.html)
+        self.assertIn('data-discover-mode="discover"', self.html)
+        self.assertIn('data-discover-mode="latest"', self.html)
+        self.assertIn("discoverMode:'discover'", self.html)
+        self.assertIn("firstSeen:chooseValue(items,'first_seen')||null", self.html)
+        self.assertIn("days>=0&&days<=6", self.html)
+        self.assertNotIn("group.overallStart)&&days<=6", self.html)
+        self.assertIn("discoverScrollTop:{discover:0,latest:0}", self.html)
+        self.assertIn("renderDiscover(getDiscoverModeGroups())", self.html)
+
+    def test_latest_mode_does_not_rerender_map(self):
+        handler = self.html[self.html.index("document.getElementById('discoverMode').addEventListener"):]
+        handler = handler[: handler.index("});") + 3]
+        self.assertIn("renderDiscover(getDiscoverModeGroups())", handler)
+        self.assertNotIn("renderMapMarkers", handler)
+        self.assertNotIn("clearSelection", handler)
+        self.assertNotIn("fitTaiwanView", handler)
+
+    def test_mobile_viewport_only_saves_visible_initialized_map(self):
+        self.assertIn("mapHasVisibleView:false", self.html)
+        self.assertIn("if(!MOBILE_QUERY.matches){map.fitBounds(TW_MAIN_BOUNDS", self.html)
+        self.assertIn("(!MOBILE_QUERY.matches||uiState.tab==='map')&&uiState.mapHasVisibleView", self.html)
+        self.assertIn("if(uiState.mapHasVisibleView&&uiState.mapView)map.setView", self.html)
+        self.assertIn("else{fitTaiwanView();uiState.mapHasVisibleView=true}", self.html)
+
+    def test_tab_to_discover_closes_popup_and_selection(self):
+        self.assertIn("const leavingMap=uiState.tab==='map'&&tab==='discover'", self.html)
+        self.assertIn("if(leavingMap)closeActiveMapPopup({clearSelection:true})", self.html)
+        self.assertIn("sheet.classList.remove('show');sheet.setAttribute('aria-hidden','true')", self.html)
+
+    def test_cluster_reveal_is_part_of_selection_pipeline(self):
+        self.assertIn("function revealMarkerForLocation(locationId,version=selectionVersion", self.html)
+        self.assertIn("cluster.zoomToShowLayer(marker", self.html)
+        self.assertIn("cluster.getVisibleParent(marker)", self.html)
+        self.assertIn("cluster.once('spiderfied',finish);parent.spiderfy()", self.html)
+        self.assertIn("selectLocation(cur.id,{openPopup:false,revealMarker:true", self.html)
+
+    def test_selection_version_guards_async_callbacks(self):
+        self.assertIn("let selectionVersion=0", self.html)
+        self.assertIn("const version=++selectionVersion", self.html)
+        self.assertGreaterEqual(self.html.count("version!==selectionVersion"), 3)
+        self.assertIn("uiState.selectedLocationId!==locationId", self.html)
+
+    def test_search_deeplink_and_popstate_share_navigation(self):
+        self.assertIn("navigateToEvent(item.eventId,{updateHistory:true})", self.html)
+        self.assertIn("navigateToEvent(id,{updateHistory:false})", self.html)
+        popstate = self.html[self.html.index("window.addEventListener('popstate'"):]
+        self.assertIn("navigateToEvent(id,{updateHistory:false})", popstate)
+        self.assertIn("closeActiveMapPopup({clearSelection:true,updateHistory:false})", popstate)
+
+    def test_rerender_preserves_selection_if_marker_still_exists(self):
+        render = self.html[self.html.index("function renderMapMarkers()"):]
+        render = render[: render.index("function highlightSelectedMarker")]
+        self.assertNotIn("uiState.selectedLocationId=null", render)
+        self.assertIn("if(selected&&!markers.some", render)
+        self.assertIn("else requestAnimationFrame", render)
 
     def test_no_settimeout_hacks_for_map_cluster(self):
         app_js = self.html[self.html.index("const uiState="):]

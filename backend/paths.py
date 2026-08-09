@@ -33,6 +33,7 @@ _FILES = {
     "全台ACG活動.xlsx": MANUAL_DIR / "全台ACG活動.xlsx",
     "acg_events.json": MANUAL_DIR / "acg_events.json",
     "review_decisions.json": MANUAL_DIR / "review_decisions.json",
+    "event_first_seen.json": DATA_DIR / "event_first_seen.json",
     "manual_extra.json": MANUAL_DIR / "manual_extra.json",
     "manual_permanent_extra.json": MANUAL_DIR / "manual_permanent_extra.json",
     "venue_corrections.json": MANUAL_DIR / "venue_corrections.json",

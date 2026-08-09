@@ -35,14 +35,21 @@
 - Marker 顯示模式切換固定放在地圖上方正中央。
 - 點擊 marker 顯示該活動資訊；被選取的 marker 放大 30% 並以紅色外框標示（取代原本白框）。為避免收合已散開（spiderfy）的聚合，點擊當下不強制移動地圖；由 Discover 進入時仍會定位至該活動。
 - 使用者展開群聚並進入活動資訊後，回到地圖時必須保留該群聚的展開狀態；圖片與圖釘模式行為一致。
-- 群聚展開狀態透過 MarkerCluster 的 `spiderfied` / `unspiderfied` 事件追蹤，以展開群聚內子 marker 的 LatLng 作為識別依據（不依賴 venueId）。篩選、模式切換或重新渲染 marker 時，群聚展開狀態一併清除。
-- 紅框（selected marker）代表「目前選取的活動」，不與 popup 生命週期綁定。紅框持續顯示，直到使用者點擊另一個 marker、點擊地圖空白處、群聚收合（unspiderfied）、或篩選／模式變更。點擊群聚本身不產生紅框——只有實際的活動 marker 才出現。手機活動卡左右滑時，紅框同步更新。
+- 群聚展開狀態透過 MarkerCluster 的 `spiderfied` / `unspiderfied` 事件追蹤，以展開群聚內子 marker 的 LatLng 作為識別依據（不依賴 venueId）。cluster UI state 與活動 selection state 必須分離。
+- `selectedLocationId` 是 map activity selection 的 single source of truth；`selectedEventId`／`selectedVenueId` 只做輔助資料，不可各自決定紅框。
+- 紅框代表 Map popup 目前正在觀看的 activity marker。Discover、Latest、Search、deep link、marker click、popup swipe 與 popstate 必須共用同一 selection pipeline。
+- selected marker 被 cluster 包住時，必須使用 MarkerCluster reveal API 自動顯示；同座標仍無法分辨時自動 spiderfy。
+- `unspiderfied` 只表示 cluster UI 收合，不表示取消 activity selection，也不得清除 `selectedLocationId`。cluster lifecycle、moveend、zoomend、flyTo、invalidateSize 與 redraw 都不得自行取消 selection。
 - 不使用 `setTimeout` 作為群聚恢復或 marker 渲染的修補；使用 `requestAnimationFrame` 搭配 MarkerCluster 實際事件。
 - 地圖初始畫面與 Home 鍵使用 `TW_MAIN_BOUNDS`（主島＋澎湖），避免離島拉大視野。`TW_BOUNDS`（含離島）僅用於 maxBounds 平移限制。
 - 水滴圖釘模式啟用時，桌機左側篩選面板底部需顯示活動形式的顏色與圖案圖例；圖片模式時隱藏。
 
 ## Discover、篩選與活動詳情
 
+- Discover panel 內有 `Discover / Latest` switch；它不是 mobile bottom nav 的第三個 tab。
+- Latest 是最近 7 個 Asia/Taipei 日曆日內第一次加入 ACG Map 的活動（包含今天），不得使用活動開始日、公告日、KV 日期、`DATA.updated` 或 Git 最新 commit 代替。
+- 加入日期使用 stable event ID 對應的 persistent `data/event_first_seen.json`；既有 ID 保留原日期，新 ID 才登記台北當日，無法可靠回填時使用 `null`。
+- Latest 共用 city、time、form、fee、multi 與 search，只改 Discover list，不得改 marker dataset、selection、popup、filters 或 map viewport；Discover 與 Latest 分別保存 scroll position。
 - 點擊 Discover 活動卡時，地圖同步移動至該活動的代表地點；手機版接著切至 Map 並開啟該地點資訊卡。
 - 一般篩選下 Discover 維持一活動一卡；只有選定特定「多店活動」時，改為逐門市列出同一活動。
 - 多店活動篩選選項的數字代表目前其他篩選條件下的可見門市數，不是活動群組數。
@@ -52,6 +59,9 @@
 - 地點列只保留無外框的「導航」文字連結，不顯示 Threads 圖示；手機橫式卡的場館列本身即為導航連結。
 - 「分享活動」一律直接複製目前活動的深連結，成功後顯示「成功複製連結」；Open Graph 連結預覽留待後續設計。
 - 公開顯示值若含「需人工確認」，整個值留白；後台原始稽核資料可保留該文字。
+- Mobile popup 只能存在於 Map；Map → Discover 必須 close popup、clear map selection 並移除紅框。
+- 手機 Map hidden 時不得執行或保存 user viewport。首次進 Map 且無 explicit target 時顯示 `TW_MAIN_BOUNDS`；後續回 Map 恢復離開前真正的 user viewport。
+- viewport 優先序固定為 activity target > city target > user map view > Taiwan default。
 
 ## 變更規則
 
@@ -59,4 +69,4 @@
 - 相關決策必須同時落在程式碼測試中；只測「功能存在」不足以保護既有視覺規則。
 - 任何刻意改動本文件內容的 PR，需在 PR 說明中明列差異與 Daniel 的確認依據。
 
-最後更新：2026-08-07（Asia/Taipei）
+最後更新：2026-08-09（Asia/Taipei）
