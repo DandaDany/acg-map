@@ -16,7 +16,9 @@
 用法：python3 refresh_venues.py
 """
 import json, re, hashlib, urllib.request, datetime, os, sys, ssl, html
+from pathlib import Path
 from paths import path as P
+from event_first_seen import apply_first_seen
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from concurrent.futures import ThreadPoolExecutor
 
@@ -1318,6 +1320,10 @@ def main():
     # 必須在輸出前取得穩定 id，並驗證同群組的標題與費用不衝突。
     groups = assign_event_group_ids(venues)
     log("活動群組完成:", len(groups), "組")
+
+    # Latest 使用 stable event id 的持久 first-seen 日期。舊 id 保留原日期；只有
+    # registry 從未見過的新 id 才以 Asia/Taipei 的今天登記，並同步到公開 event。
+    apply_first_seen(venues, Path(P("event_first_seen.json")))
 
     venues.sort(key=lambda v: -len(v['ex']))
     out = {'updated': TODAY, 'source': '文化部開放資料 藝文活動-展覽 + 編輯整理重點館/常設層', 'venues': venues}
