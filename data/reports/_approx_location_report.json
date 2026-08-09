@@ -1,45 +1,17 @@
 {
  "summary": {
   "venues_total": 246,
-  "exact": 229,
-  "approx_total": 17,
-  "has_road_or_addr": 13,
-  "only_area": 4
+  "exact": 233,
+  "approx_total": 13,
+  "has_road_or_addr": 12,
+  "only_area": 1
  },
  "has_road_or_addr": [
   {
-   "name": "animate Gratte 西門站",
-   "city": "台北市",
-   "addr": "台北市中正區西門地下街，近西門捷運站6號/1號出口；門牌依第三方報導為寶慶路32-1號B1，未經animate官方管道二次確認",
-   "loc": "區級",
-   "url": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/"
-  },
-  {
-   "name": "bb.q CHICKEN 南西店",
-   "city": "台北市",
-   "addr": "台北市中山區南京西路15號7樓",
-   "loc": "區級",
-   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127"
-  },
-  {
-   "name": "凍心 Frozen Heart 桃園中正店",
-   "city": "桃園市",
-   "addr": "桃園市桃園區中正路512號（花現烤物門口）",
-   "loc": "市級",
-   "url": "https://frozenheart.com.tw/"
-  },
-  {
-   "name": "和牛涮 台北忠孝東店",
-   "city": "台北市",
-   "addr": "台北市大安區忠孝東路四段128號2樓",
-   "loc": "區級",
-   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/"
-  },
-  {
-   "name": "和牛涮 台北林森北店",
-   "city": "台北市",
-   "addr": "台北市中山區林森北路258號2樓",
-   "loc": "區級",
+   "name": "和牛涮 仁德萬家福店",
+   "city": "台南市",
+   "addr": "台南市仁德區中山路711號",
+   "loc": "building",
    "url": "https://www.facebook.com/share/p/1EpGc7kLJs/"
   },
   {
@@ -50,52 +22,73 @@
    "url": "https://irunner.biji.co/2026JujutsuKaisenRUN3"
   },
   {
-   "name": "聚 台北SOGO忠孝店",
-   "city": "台北市",
-   "addr": "台北市大安區忠孝東路四段45號12樓",
-   "loc": "區級",
+   "name": "聚 台中豐原大社店",
+   "city": "台中市",
+   "addr": "台中市豐原區大社街8號1樓",
+   "loc": "building",
    "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
   },
   {
-   "name": "聚 台北南昌店",
-   "city": "台北市",
-   "addr": "台北市中正區南昌路二段216號2樓",
-   "loc": "區級",
+   "name": "聚 台南中華西店",
+   "city": "台南市",
+   "addr": "台南市安平區中華西路二段317號2樓",
+   "loc": "building",
+   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
+  },
+  {
+   "name": "聚 員林中山店",
+   "city": "彰化縣",
+   "addr": "彰化縣員林市中山路二段30之3號2樓",
+   "loc": "building",
    "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
   },
   {
    "name": "藏壽司 中山南西店",
    "city": "台北市",
    "addr": "台北市大同區南京西路57號2樓",
-   "loc": "區級",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 台中三井LaLaport店",
-   "city": "台中市",
-   "addr": "台中市東區進德路600號北館5樓",
-   "loc": "區級",
+   "loc": "building",
    "url": "https://kurasushi.tw/activities/588"
   },
   {
    "name": "藏壽司 台北館前店",
    "city": "台北市",
    "addr": "台北市中正區館前路12號5樓",
-   "loc": "區級",
+   "loc": "building",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 基隆中正信三店",
+   "city": "基隆市",
+   "addr": "基隆市中正區中正路3號1樓",
+   "loc": "building",
    "url": "https://kurasushi.tw/activities/588"
   },
   {
    "name": "藏壽司 板橋遠科店",
    "city": "新北市",
    "addr": "新北市板橋區遠東路62之3號",
-   "loc": "區級",
+   "loc": "building",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 桃園遠百店",
+   "city": "桃園市",
+   "addr": "桃園市桃園區中正路20號11樓",
+   "loc": "building",
+   "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "藏壽司 淡水站前店",
+   "city": "新北市",
+   "addr": "新北市淡水區中山路8號5樓",
+   "loc": "building",
    "url": "https://kurasushi.tw/activities/588"
   },
   {
    "name": "藏壽司 高雄岡山店",
    "city": "高雄市",
    "addr": "高雄市岡山區捷安路25號",
-   "loc": "區級",
+   "loc": "building",
    "url": "https://kurasushi.tw/activities/588"
   }
  ],
@@ -106,27 +99,6 @@
    "addr": "",
    "loc": "市級",
    "url": "https://meet.eslite.com/tw/tc/news/202607140007"
-  },
-  {
-   "name": "台北市南港區經貿二路131號5樓（三井LaLaport南港 5樓）",
-   "city": "台北市",
-   "addr": "",
-   "loc": "市級",
-   "url": "https://www.instagram.com/p/DbSzwVIFPRH/"
-  },
-  {
-   "name": "新北市新莊區新北大道四段3號7樓（宏匯廣場 7樓）",
-   "city": "新北市",
-   "addr": "",
-   "loc": "市級",
-   "url": "https://www.instagram.com/p/DbSzwVIFPRH/"
-  },
-  {
-   "name": "新竹市東區中央路229號4樓（新竹巨城購物中心 4樓）",
-   "city": "新竹市",
-   "addr": "",
-   "loc": "市級",
-   "url": "https://www.instagram.com/p/DbSzwVIFPRH/"
   }
  ]
 }

@@ -1023,7 +1023,8 @@ def main():
         if oc:
             log("套用場館地址覆寫:", oc, "個場館")
 
-    # 已確認的 geocode 覆寫表：把有地址但原本只能區級定位的場館升級成 exact。
+    # 已確認的 geocode 覆寫表。預設為 exact；人工查證若只能到同棟／同基地，
+    # 可明確寫 loc=building，避免後續地址 geocode 或同址繼承誤升級為 exact。
     gpath = P("venue_geocodes.json")
     if os.path.exists(gpath):
         try:
@@ -1031,13 +1032,18 @@ def main():
         except Exception:
             geocodes = {}
         gc = 0
+        manual_geocode_names = set()
         for v in venues:
             g = geocodes.get(v["name"])
             if not g: continue
             if valid(g.get("la"), g.get("lo")) and coord_matches_city(v.get("city", ""), float(g["la"]), float(g["lo"])):
-                v["la"] = float(g["la"]); v["lo"] = float(g["lo"]); v["loc"] = "exact"
+                v["la"] = float(g["la"]); v["lo"] = float(g["lo"])
+                v["loc"] = g.get("loc", "exact")
+                manual_geocode_names.add(v["name"])
                 gc += 1
         log("套用 geocode 精確座標:", gc, "個場館")
+    else:
+        manual_geocode_names = set()
 
     # 已確認的地址 geocode：同一地址之後即使場館名不同，也能直接升級 exact。
     def addr_key(addr):
@@ -1053,7 +1059,7 @@ def main():
             address_geocodes = {}
         ac = 0
         for v in venues:
-            if v.get("loc") == "exact":
+            if v.get("loc") == "exact" or v.get("name") in manual_geocode_names:
                 continue
             g = address_geocodes.get(addr_key(v.get("addr", "")))
             if not g:
@@ -1076,7 +1082,7 @@ def main():
             exact_by_addr.setdefault(a, v)
     inherited = 0
     for v in venues:
-        if v.get("loc") == "exact":
+        if v.get("loc") == "exact" or v.get("name") in manual_geocode_names:
             continue
         a = addr_key(v.get("addr", ""))
         if not is_full_addr(a):

@@ -59,6 +59,38 @@ def city_of(addr):
 def full_addr(addr):
     return bool(re.search(r"[路街道段巷弄].*號", clean_addr(addr)))
 
+def _admin_and_street_signature(addr):
+    """Return the address identity required for automatic acceptance.
+
+    Geocoder scores are similarity scores, not proof of an identical address.
+    A candidate is accepted only when city/county, district/town, street (with
+    section), and the main house number all match the requested address.
+    """
+    a = clean_addr(addr).replace("-", "之")
+    city = city_of(a)
+    if not city:
+        return None
+    city_match = CITY_RE.search(a)
+    tail = a[city_match.end():] if city_match else a
+    district_match = re.search(r"([一-龥]{1,5}(?:區|鄉|鎮|市))", tail)
+    if not district_match:
+        return None
+    street_tail = tail[district_match.end():]
+    street_tail = re.sub(r"^(?:[一-龥]{1,6}(?:里|村|商圈))*", "", street_tail)
+    street_match = re.match(r"([一-龥0-9]{1,16}(?:路|街|道)(?:[一二三四五六七八九十0-9]+段)?)", street_tail)
+    if not street_match:
+        return None
+    after_street = street_tail[street_match.end():]
+    house_match = re.search(r"(?:\d+巷)?(?:\d+弄)?(\d+)(?:之\d+)?號", after_street)
+    if not house_match:
+        return None
+    return (norm(city), norm(district_match.group(1)), norm(street_match.group(1)), int(house_match.group(1)))
+
+def same_address_identity(requested, candidate):
+    requested_sig = _admin_and_street_signature(requested)
+    candidate_sig = _admin_and_street_signature(candidate)
+    return bool(requested_sig and candidate_sig and requested_sig == candidate_sig)
+
 def coord_matches_city(city, la, lo):
     b = CITY_BOUNDS.get((city or "").replace("臺", "台"))
     if not b:
@@ -90,10 +122,9 @@ def address_result_ok(addr, result):
     city = city_of(addr)
     if city and not coord_matches_city(city, la, lo):
         return False
-    disp = norm(result.get("display_name", ""))
-    key = norm(clean_addr(addr))
-    if len(key) >= 8 and key[:8] in disp:
-        return True
+    display_name = result.get("display_name", "")
+    if full_addr(addr):
+        return same_address_identity(addr, display_name)
     typ = (result.get("type") or "").lower()
     cls = (result.get("class") or "").lower()
     return typ in {"house", "building", "apartments", "commercial", "yes"} or cls in {"building", "shop", "tourism", "amenity"}
@@ -145,6 +176,9 @@ def arcgis_address_result(addr, data):
         if city and not coord_matches_city(city, la, lo):
             continue
         if addr_type and addr_type not in {"pointaddress", "streetaddress", "streetaddressext", "streetint", "streetname", "locality"}:
+            continue
+        candidate_address = cand.get("address", "") or cand.get("attributes", {}).get("Match_addr", "")
+        if not same_address_identity(addr, candidate_address):
             continue
         return cand
     return None
