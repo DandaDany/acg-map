@@ -2816,5 +2816,13 @@
   "display_name": "高雄市楠梓區土庫一路60號, 811032",
   "type": "PointAddress",
   "addr_key": "高雄市楠梓區土庫一路60號1樓"
+ },
+ "劍湖山渡假大飯店": {
+  "la": 23.61526,
+  "lo": 120.57689,
+  "source": "openstreetmap_way_493549322",
+  "display_name": "劍湖山渡假大飯店, 雲林縣古坑鄉永光村大湖口67之8號",
+  "type": "building",
+  "addr_key": "雲林縣古坑鄉永光村大湖口67之8號"
  }
 }
