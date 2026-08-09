@@ -194,5 +194,265 @@
   "劍湖山渡假大飯店": {
     "addr": "雲林縣古坑鄉永光村大湖口67之8號",
     "source": "https://page.line.me/xat.0000172831.225"
+  },
+  "bb.q CHICKEN 南西店": {
+    "addr": "台北市中山區南京西路15號7樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "爆彈燒本舖 南港 LaLaport": {
+    "addr": "台北市南港區經貿二路131號5樓（三井 LaLaport 南港）",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "爆彈燒本舖 新莊宏匯": {
+    "addr": "新北市新莊區新北大道四段3號7樓（宏匯廣場）",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "爆彈燒本舖 新竹巨城": {
+    "addr": "新竹市東區中央路229號4樓（遠東巨城購物中心）",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 中壢元化店": {
+    "addr": "桃園市中壢區元化路245號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 仁德萬家福店": {
+    "addr": "台南市仁德區中山路711號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台北忠孝東店": {
+    "addr": "台北市大安區忠孝東路四段128號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台北西門店": {
+    "addr": "台北市萬華區中華路一段90號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 三峽學成店": {
+    "addr": "新北市三峽區學成路398號3樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 中壢SOGO店": {
+    "addr": "桃園市中壢區元化路357號8樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台中米平方店": {
+    "addr": "台中市西屯區國安一路168號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台北SOGO忠孝店": {
+    "addr": "台北市大安區忠孝東路四段45號12樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台北南京東店": {
+    "addr": "台北市中山區南京東路二段72號B1",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台北南昌店": {
+    "addr": "台北市中正區南昌路二段216號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台北衡陽店": {
+    "addr": "台北市中正區衡陽路7號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台南中華西店": {
+    "addr": "台南市安平區中華西路二段317號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 基隆信一店": {
+    "addr": "基隆市中正區信一路177號5樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 宜蘭新月店": {
+    "addr": "宜蘭縣宜蘭市民權路二段38巷6號4樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 桃園統領店": {
+    "addr": "桃園市桃園區中正路61號5樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 澄清文衡店": {
+    "addr": "高雄市三民區澄清路536號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 高雄大樂店": {
+    "addr": "高雄市三民區民族一路463號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 中壢大江店": {
+    "addr": "桃園市中壢區中園路二段501號B1",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 基隆中正信三店": {
+    "addr": "基隆市中正區中正路3號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 桃園遠百店": {
+    "addr": "桃園市桃園區中正路20號11樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 淡水站前店": {
+    "addr": "新北市淡水區中山路8號5樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 台中三井LaLaport店": {
+    "addr": "台中市東區進德路600號北館5樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "點點心 LaLaport 台中店": {
+    "addr": "台中市東區進德路600號5樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 台北館前店": {
+    "addr": "台北市中正區館前路12號5樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台中五權西店": {
+    "addr": "台中市南屯區五權西路二段271號1、2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台中文心崇德店": {
+    "addr": "台中市北屯區文心路四段601號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台北林森北店": {
+    "addr": "台北市中山區林森北路258號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台北羅斯福店": {
+    "addr": "台北市大安區羅斯福路二段27號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 台南中華西店": {
+    "addr": "台南市安平區中華西路二段345號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 嘉義垂楊店": {
+    "addr": "嘉義市西區垂楊路381號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 新店民權店": {
+    "addr": "新北市新店區民權路100號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 板橋文化店": {
+    "addr": "新北市板橋區文化路一段280號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 桃園同德店": {
+    "addr": "桃園市桃園區同德五街77號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 竹北光明店": {
+    "addr": "新竹縣竹北市光明一路112號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 頭份尚順店": {
+    "addr": "苗栗縣頭份市育樂街6號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "和牛涮 高雄博愛店": {
+    "addr": "高雄市左營區博愛二路682號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台中公益店": {
+    "addr": "台中市南屯區公益路二段252號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台南仁德中山店": {
+    "addr": "台南市仁德區中山路777號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台南永康中華店": {
+    "addr": "台南市永康區中華路101號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台東秀泰店": {
+    "addr": "台東縣台東市新生路93號秀泰2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 嘉義垂楊店": {
+    "addr": "嘉義市西區垂楊路455號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 士林中正店": {
+    "addr": "台北市士林區中正路179號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 大里大買家店": {
+    "addr": "台中市大里區國光路二段710號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 屏東太平洋店": {
+    "addr": "屏東縣屏東市中正路72號B1",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 斗六鎮南店": {
+    "addr": "雲林縣斗六市鎮南路313號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 新店民權店": {
+    "addr": "新北市新店區民權路82號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 板橋中山店": {
+    "addr": "新北市板橋區中山路一段6號3樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 板橋江子翠店": {
+    "addr": "新北市板橋區文化路二段182巷3弄79號3樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 林口文化店": {
+    "addr": "桃園市龜山區文化三路256號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 汐止遠雄店": {
+    "addr": "新北市汐止區新台五路一段99號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 淡水淡新萬家福店": {
+    "addr": "新北市淡水區中山北路二段383號3樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 頭份尚順店": {
+    "addr": "苗栗縣頭份市尚順路61號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 高雄富民店": {
+    "addr": "高雄市左營區富民路355號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 高雄新楠萬家福店": {
+    "addr": "高雄市楠梓區土庫一路60號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "凍心 Frozen Heart 桃園中正店": {
+    "addr": "桃園市桃園區中正路512號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 台中豐原大社店": {
+    "addr": "台中市豐原區大社街8號1樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "聚 員林中山店": {
+    "addr": "彰化縣員林市中山路二段30之3號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 中山南西店": {
+    "addr": "台北市大同區南京西路57號2樓",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 板橋遠科店": {
+    "addr": "新北市板橋區遠東路62之3號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "藏壽司 高雄岡山店": {
+    "addr": "高雄市岡山區捷安路25號",
+    "source": "Daniel verified 2026-08-09"
+  },
+  "animate Gratte 西門站": {
+    "addr": "台北市中正區中華路一段39號1樓",
+    "source": "Daniel verified 2026-08-09"
   }
 }
