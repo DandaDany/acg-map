@@ -199,10 +199,10 @@
  },
  "animate Gratte 西門站": {
   "city": "台北市",
-  "lat": 25.0179,
-  "lng": 121.52191,
-  "loc": "區級",
-  "addr": "台北市中正區西門地下街，近西門捷運站6號/1號出口；門牌依第三方報導為寶慶路32-1號B1，未經animate官方管道二次確認",
+  "lat": 25.0453368,
+  "lng": 121.5096702,
+  "loc": "exact",
+  "addr": "台北市中正區中華路一段39號1樓",
   "url": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
   "ex": [
    {
@@ -387,9 +387,9 @@
  },
  "bb.q CHICKEN 南西店": {
   "city": "台北市",
-  "lat": 25.07849,
-  "lng": 121.52655,
-  "loc": "區級",
+  "lat": 25.052676,
+  "lng": 121.52096,
+  "loc": "exact",
   "addr": "台北市中山區南京西路15號7樓",
   "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
   "ex": [
@@ -881,10 +881,10 @@
  },
  "凍心 Frozen Heart 桃園中正店": {
   "city": "桃園市",
-  "lat": 24.93568,
-  "lng": 121.26583,
-  "loc": "市級",
-  "addr": "桃園市桃園區中正路512號（花現烤物門口）",
+  "lat": 25.002433,
+  "lng": 121.306245,
+  "loc": "exact",
+  "addr": "桃園市桃園區中正路512號",
   "url": "https://frozenheart.com.tw/",
   "ex": [
    {
@@ -953,9 +953,9 @@
  },
  "劍湖山渡假大飯店": {
   "city": "雲林縣",
-  "lat": 23.63459,
-  "lng": 120.56586,
-  "loc": "區級",
+  "lat": 23.61526,
+  "lng": 120.57689,
+  "loc": "exact",
   "addr": "雲林縣古坑鄉永光村大湖口67之8號",
   "url": "https://www.janfusun.com.tw/html/news/show.php?kid=4&nid=658&unid=3",
   "ex": [
@@ -1166,28 +1166,6 @@
    }
   ]
  },
- "台北市南港區經貿二路131號5樓（三井LaLaport南港 5樓）": {
-  "city": "台北市",
-  "lat": 25.06918,
-  "lng": 121.55342,
-  "loc": "市級",
-  "addr": "",
-  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
-  "ex": [
-   {
-    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
-    "s": "2026/08/01",
-    "e": "2026/09/30",
-    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "付費",
-    "ip": "葬送的芙莉蓮",
-    "org": "爆彈燒本舖",
-    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
-   }
-  ]
- },
  "台北西門店": {
   "city": "台北市",
   "lat": 25.0452564,
@@ -1234,7 +1212,7 @@
  },
  "和牛涮 中壢元化店": {
   "city": "桃園市",
-  "lat": 24.96177,
+  "lat": 24.961725,
   "lng": 121.22661,
   "loc": "exact",
   "addr": "桃園市中壢區元化路245號2樓",
@@ -1258,9 +1236,9 @@
  },
  "和牛涮 仁德萬家福店": {
   "city": "台南市",
-  "lat": 22.9725878,
-  "lng": 120.2469376,
-  "loc": "exact",
+  "lat": 22.94201,
+  "lng": 120.25484,
+  "loc": "區級",
   "addr": "台南市仁德區中山路711號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1306,8 +1284,8 @@
  },
  "和牛涮 台中文心崇德店": {
   "city": "台中市",
-  "lat": 24.1724231,
-  "lng": 120.6849755,
+  "lat": 24.172423,
+  "lng": 120.684976,
   "loc": "exact",
   "addr": "台中市北屯區文心路四段601號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
@@ -1330,9 +1308,9 @@
  },
  "和牛涮 台北忠孝東店": {
   "city": "台北市",
-  "lat": 25.01613,
-  "lng": 121.53925,
-  "loc": "區級",
+  "lat": 25.041122,
+  "lng": 121.548186,
+  "loc": "exact",
   "addr": "台北市大安區忠孝東路四段128號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1354,9 +1332,9 @@
  },
  "和牛涮 台北林森北店": {
   "city": "台北市",
-  "lat": 25.06419,
-  "lng": 121.53195,
-  "loc": "區級",
+  "lat": 25.054485,
+  "lng": 121.525324,
+  "loc": "exact",
   "addr": "台北市中山區林森北路258號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1379,7 +1357,7 @@
  "和牛涮 台北羅斯福店": {
   "city": "台北市",
   "lat": 25.02795,
-  "lng": 121.5220299,
+  "lng": 121.52203,
   "loc": "exact",
   "addr": "台北市大安區羅斯福路二段27號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
@@ -1402,8 +1380,8 @@
  },
  "和牛涮 台北西門店": {
   "city": "台北市",
-  "lat": 25.0479094,
-  "lng": 121.5097494,
+  "lat": 25.044762,
+  "lng": 121.508698,
   "loc": "exact",
   "addr": "台北市萬華區中華路一段90號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
@@ -1426,7 +1404,7 @@
  },
  "和牛涮 台南中華西店": {
   "city": "台南市",
-  "lat": 22.9931993,
+  "lat": 22.993199,
   "lng": 120.1866,
   "loc": "exact",
   "addr": "台南市安平區中華西路二段345號",
@@ -1474,8 +1452,8 @@
  },
  "和牛涮 新店民權店": {
   "city": "新北市",
-  "lat": 24.9830005,
-  "lng": 121.5361861,
+  "lat": 24.983001,
+  "lng": 121.536186,
   "loc": "exact",
   "addr": "新北市新店區民權路100號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
@@ -1522,8 +1500,8 @@
  },
  "和牛涮 桃園同德店": {
   "city": "桃園市",
-  "lat": 25.0143234,
-  "lng": 121.2999808,
+  "lat": 25.014323,
+  "lng": 121.299981,
   "loc": "exact",
   "addr": "桃園市桃園區同德五街77號1樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
@@ -1570,8 +1548,8 @@
  },
  "和牛涮 頭份尚順店": {
   "city": "苗栗縣",
-  "lat": 24.6878214,
-  "lng": 120.9038082,
+  "lat": 24.687821,
+  "lng": 120.903808,
   "loc": "exact",
   "addr": "苗栗縣頭份市育樂街6號1樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
@@ -2031,50 +2009,6 @@
    }
   ]
  },
- "新北市新莊區新北大道四段3號7樓（宏匯廣場 7樓）": {
-  "city": "新北市",
-  "lat": 25.05484,
-  "lng": 121.55016,
-  "loc": "市級",
-  "addr": "",
-  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
-  "ex": [
-   {
-    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "付費",
-    "ip": "葬送的芙莉蓮",
-    "org": "爆彈燒本舖",
-    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
-   }
-  ]
- },
- "新竹市東區中央路229號4樓（新竹巨城購物中心 4樓）": {
-  "city": "新竹市",
-  "lat": 24.79724,
-  "lng": 120.9396,
-  "loc": "市級",
-  "addr": "",
-  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
-  "ex": [
-   {
-    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "付費",
-    "ip": "葬送的芙莉蓮",
-    "org": "爆彈燒本舖",
-    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
-   }
-  ]
- },
  "新莊棒球場": {
   "city": "新北市",
   "lat": 25.0402673,
@@ -2204,6 +2138,72 @@
    }
   ]
  },
+ "爆彈燒本舖 南港 LaLaport": {
+  "city": "台北市",
+  "lat": 25.04061,
+  "lng": 121.61205,
+  "loc": "區級",
+  "addr": "台北市南港區經貿二路131號5樓",
+  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+    "s": "2026/08/01",
+    "e": "2026/09/30",
+    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "爆彈燒本舖",
+    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
+   }
+  ]
+ },
+ "爆彈燒本舖 新竹巨城": {
+  "city": "新竹市",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
+  "addr": "新竹市東區中央路229號4樓",
+  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "爆彈燒本舖",
+    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
+   }
+  ]
+ },
+ "爆彈燒本舖 新莊宏匯": {
+  "city": "新北市",
+  "lat": 25.059944,
+  "lng": 121.449451,
+  "loc": "exact",
+  "addr": "新北市新莊區新北大道四段3號7樓",
+  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
+  "ex": [
+   {
+    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "付費",
+    "ip": "葬送的芙莉蓮",
+    "org": "爆彈燒本舖",
+    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
+   }
+  ]
+ },
  "白石畫廊台北 Whitestone Gallery Taipei": {
   "city": "台北市",
   "lat": 25.0816818,
@@ -2316,8 +2316,8 @@
  },
  "聚 三峽學成店": {
   "city": "新北市",
-  "lat": 24.9442053,
-  "lng": 121.3783061,
+  "lat": 24.944205,
+  "lng": 121.378306,
   "loc": "exact",
   "addr": "新北市三峽區學成路398號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2340,8 +2340,8 @@
  },
  "聚 中壢SOGO店": {
   "city": "桃園市",
-  "lat": 24.962685,
-  "lng": 121.2235325,
+  "lat": 24.962576,
+  "lng": 121.223584,
   "loc": "exact",
   "addr": "桃園市中壢區元化路357號8樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2365,7 +2365,7 @@
  "聚 台中公益店": {
   "city": "台中市",
   "lat": 24.151294,
-  "lng": 120.6435424,
+  "lng": 120.643542,
   "loc": "exact",
   "addr": "台中市南屯區公益路二段252號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2388,8 +2388,8 @@
  },
  "聚 台中米平方店": {
   "city": "台中市",
-  "lat": 24.1922338,
-  "lng": 120.6120641,
+  "lat": 24.192233,
+  "lng": 120.61206,
   "loc": "exact",
   "addr": "台中市西屯區國安一路168號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2412,9 +2412,9 @@
  },
  "聚 台中豐原大社店": {
   "city": "台中市",
-  "lat": 24.251603,
-  "lng": 120.701203,
-  "loc": "exact",
+  "lat": 24.24352,
+  "lng": 120.74443,
+  "loc": "區級",
   "addr": "台中市豐原區大社街8號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2436,9 +2436,9 @@
  },
  "聚 台北SOGO忠孝店": {
   "city": "台北市",
-  "lat": 25.02597,
-  "lng": 121.52915,
-  "loc": "區級",
+  "lat": 25.041738,
+  "lng": 121.544955,
+  "loc": "exact",
   "addr": "台北市大安區忠孝東路四段45號12樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2460,8 +2460,8 @@
  },
  "聚 台北南京東店": {
   "city": "台北市",
-  "lat": 25.0518979,
-  "lng": 121.5305,
+  "lat": 25.051863,
+  "lng": 121.53059,
   "loc": "exact",
   "addr": "台北市中山區南京東路二段72號B1",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2484,9 +2484,9 @@
  },
  "聚 台北南昌店": {
   "city": "台北市",
-  "lat": 25.03828,
-  "lng": 121.51315,
-  "loc": "區級",
+  "lat": 25.023905,
+  "lng": 121.524432,
+  "loc": "exact",
   "addr": "台北市中正區南昌路二段216號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2508,10 +2508,10 @@
  },
  "聚 台北衡陽店": {
   "city": "台北市",
-  "lat": 25.0424158,
-  "lng": 121.5138835,
+  "lat": 25.042413,
+  "lng": 121.51376,
   "loc": "exact",
-  "addr": "台北市中正區衡陽路3號2樓",
+  "addr": "台北市中正區衡陽路7號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
    {
@@ -2532,9 +2532,9 @@
  },
  "聚 台南中華西店": {
   "city": "台南市",
-  "lat": 22.992961,
-  "lng": 120.186614,
-  "loc": "exact",
+  "lat": 22.97871,
+  "lng": 120.17141,
+  "loc": "區級",
   "addr": "台南市安平區中華西路二段317號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2556,8 +2556,8 @@
  },
  "聚 台南仁德中山店": {
   "city": "台南市",
-  "lat": 22.9728652,
-  "lng": 120.2459346,
+  "lat": 22.972865,
+  "lng": 120.245935,
   "loc": "exact",
   "addr": "台南市仁德區中山路777號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2628,9 +2628,9 @@
  },
  "聚 員林中山店": {
   "city": "彰化縣",
-  "lat": 23.960229,
-  "lng": 120.570725,
-  "loc": "exact",
+  "lat": 23.99097,
+  "lng": 120.5211,
+  "loc": "市級",
   "addr": "彰化縣員林市中山路二段30之3號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2652,8 +2652,8 @@
  },
  "聚 嘉義垂楊店": {
   "city": "嘉義市",
-  "lat": 23.4731746,
-  "lng": 120.4434318,
+  "lat": 23.473175,
+  "lng": 120.443432,
   "loc": "exact",
   "addr": "嘉義市西區垂楊路455號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2676,8 +2676,8 @@
  },
  "聚 基隆信一店": {
   "city": "基隆市",
-  "lat": 25.130722,
-  "lng": 121.744789,
+  "lat": 25.130765,
+  "lng": 121.74472,
   "loc": "exact",
   "addr": "基隆市中正區信一路177號5樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2700,8 +2700,8 @@
  },
  "聚 士林中正店": {
   "city": "台北市",
-  "lat": 25.0955722,
-  "lng": 121.5275171,
+  "lat": 25.095572,
+  "lng": 121.527517,
   "loc": "exact",
   "addr": "台北市士林區中正路179號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2724,8 +2724,8 @@
  },
  "聚 大里大買家店": {
   "city": "台中市",
-  "lat": 24.1156871,
-  "lng": 120.6795967,
+  "lat": 24.115687,
+  "lng": 120.679597,
   "loc": "exact",
   "addr": "台中市大里區國光路二段710號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2748,8 +2748,8 @@
  },
  "聚 宜蘭新月店": {
   "city": "宜蘭縣",
-  "lat": 24.7543756,
-  "lng": 121.7500262,
+  "lat": 24.754376,
+  "lng": 121.750026,
   "loc": "exact",
   "addr": "宜蘭縣宜蘭市民權路二段38巷6號4樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2772,8 +2772,8 @@
  },
  "聚 屏東太平洋店": {
   "city": "屏東縣",
-  "lat": 22.6740881,
-  "lng": 120.4895802,
+  "lat": 22.674088,
+  "lng": 120.48958,
   "loc": "exact",
   "addr": "屏東縣屏東市中正路72號B1",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2796,7 +2796,7 @@
  },
  "聚 斗六鎮南店": {
   "city": "雲林縣",
-  "lat": 23.6960733,
+  "lat": 23.696073,
   "lng": 120.54312,
   "loc": "exact",
   "addr": "雲林縣斗六市鎮南路313號",
@@ -2820,8 +2820,8 @@
  },
  "聚 新店民權店": {
   "city": "新北市",
-  "lat": 24.9830617,
-  "lng": 121.5373632,
+  "lat": 24.983062,
+  "lng": 121.537363,
   "loc": "exact",
   "addr": "新北市新店區民權路82號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2844,8 +2844,8 @@
  },
  "聚 板橋中山店": {
   "city": "新北市",
-  "lat": 25.0096222,
-  "lng": 121.4610708,
+  "lat": 25.007644,
+  "lng": 121.459959,
   "loc": "exact",
   "addr": "新北市板橋區中山路一段6號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2892,8 +2892,8 @@
  },
  "聚 林口文化店": {
   "city": "桃園市",
-  "lat": 25.0558213,
-  "lng": 121.3652098,
+  "lat": 25.055821,
+  "lng": 121.36521,
   "loc": "exact",
   "addr": "桃園市龜山區文化三路256號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2964,8 +2964,8 @@
  },
  "聚 淡水淡新萬家福店": {
   "city": "新北市",
-  "lat": 25.1881741,
-  "lng": 121.4435919,
+  "lat": 25.188174,
+  "lng": 121.443592,
   "loc": "exact",
   "addr": "新北市淡水區中山北路二段383號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -2988,8 +2988,8 @@
  },
  "聚 澄清文衡店": {
   "city": "高雄市",
-  "lat": 22.642144,
-  "lng": 120.346062,
+  "lat": 22.64215,
+  "lng": 120.34606,
   "loc": "exact",
   "addr": "高雄市三民區澄清路536號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -3060,8 +3060,8 @@
  },
  "聚 高雄大樂店": {
   "city": "高雄市",
-  "lat": 22.659181,
-  "lng": 120.315455,
+  "lat": 22.65895,
+  "lng": 120.31481,
   "loc": "exact",
   "addr": "高雄市三民區民族一路463號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
@@ -3426,8 +3426,8 @@
  },
  "藏壽司 中壢大江店": {
   "city": "桃園市",
-  "lat": 24.974727,
-  "lng": 121.2360304,
+  "lat": 25.000698,
+  "lng": 121.229504,
   "loc": "exact",
   "addr": "桃園市中壢區中園路二段501號B1",
   "url": "https://kurasushi.tw/activities/588",
@@ -3570,9 +3570,9 @@
  },
  "藏壽司 台中三井LaLaport店": {
   "city": "台中市",
-  "lat": 24.13888,
-  "lng": 120.69483,
-  "loc": "區級",
+  "lat": 24.134169,
+  "lng": 120.69217,
+  "loc": "exact",
   "addr": "台中市東區進德路600號北館5樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -3954,9 +3954,9 @@
  },
  "藏壽司 基隆中正信三店": {
   "city": "基隆市",
-  "lat": 25.1392405,
-  "lng": 121.7533893,
-  "loc": "exact",
+  "lat": 25.78461,
+  "lng": 123.51836,
+  "loc": "區級",
   "addr": "基隆市中正區中正路3號1樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -4386,9 +4386,9 @@
  },
  "藏壽司 桃園遠百店": {
   "city": "桃園市",
-  "lat": 25.044295,
-  "lng": 121.294049,
-  "loc": "exact",
+  "lat": 24.92974,
+  "lng": 121.24171,
+  "loc": "市級",
   "addr": "桃園市桃園區中正路20號11樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -4530,9 +4530,9 @@
  },
  "藏壽司 淡水站前店": {
   "city": "新北市",
-  "lat": 25.170418,
-  "lng": 121.442545,
-  "loc": "exact",
+  "lat": 25.18608,
+  "lng": 121.45768,
+  "loc": "區級",
   "addr": "新北市淡水區中山路8號5樓",
   "url": "https://kurasushi.tw/activities/588",
   "ex": [
@@ -5160,8 +5160,8 @@
  },
  "點點心 LaLaport 台中店": {
   "city": "台中市",
-  "lat": 24.1476593,
-  "lng": 120.6925429,
+  "lat": 24.134169,
+  "lng": 120.69217,
   "loc": "exact",
   "addr": "台中市東區進德路600號5F",
   "url": "https://www.facebook.com/dimdimsumtw/posts/-%E9%BB%9E%E9%BB%9E%E5%BF%83x%E4%B8%89%E9%BA%97%E9%B7%972026%E8%81%AF%E5%90%8D-%E8%90%8C%E5%8F%8B%E4%BE%86%E9%BB%9E%E5%BF%83-%E4%B8%89%E4%BD%8D%E8%B6%85%E4%BA%BA%E6%B0%A3%E6%98%8E%E6%98%9F%E5%85%AC%E9%96%8B%EF%B8%8F-hello-kitty-%E5%B8%83%E4%B8%81%E7%8B%97-pompompurin-%E9%85%B7%E4%BC%81%E9%B5%9D-bad-badtz-maru%E6%BA%96%E5%82%99/1332089852470373/",
