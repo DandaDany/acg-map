@@ -13,131 +13,16 @@
 > （2）把下面這六欄**覆蓋更新**成最新狀態。兩者都做完才算工作結束。
 
 ```
-目標：     依「ACG 活動地圖 UI 更改建議書」把站台從「全台展覽地圖」收斂定位為「全台 ACG 活動地圖」，
-           公開端預設只顯示 ACG、以活動為主角，UI 精簡並改為活動優先的圖釘 popup。
-目前檔案： 前端公開檔在 public/（唯一前端檔 public/taiwan-exhibition-map.html，約 730KB 單一大檔，
-           內嵌 DATA 與 Leaflet／MarkerCluster 函式庫）；後台程式在 backend/；資料層在 data/；
-           文件在 docs/；維運在 ops/；執行期 log/profile/debug 在 runtime/；歷史備份在 archive/。
-已完成：   【第一階段 UI 收斂 ＋ 版型改側欄 ＋ 第二階段使用者功能，2026/07/11，皆已驗證通過】
-           ▍第一階段：①站名／文案改「全台 ACG 活動地圖」②移除 #fcat 主題篩選（state.cat='ACG'）
-             ③時段文案「進行中／即將開始」、「即將結束」統一 ENDING_SOON_DAYS=7 ④地區加縣市次級（#regionCities）
-             ⑤活動數「目前共有 N 場活動」、搜尋擴充 v.name/v.city/v.addr/e.t ⑥點圖釘改活動優先 popup card
-           ▍版型改側欄（建議書 §三 桌機版）：移除「自選日期」與「常設活動」兩項篩選；原頂部懸浮篩選列（.hud/.bar）
-             改為固定左側、寬 340px、滿版可捲動深色玻璃側欄（站名→#stat→搜尋→時間／活動形式／地區三分區）；
-             手機版（≤600px）退化為頂部面板＋「篩選」(#fbtn)展開；縮放鈕移右下、.foot 右移避欄；popup autoPan 動態量測閃避
-           ▍第二階段使用者功能：⑦「想去」收藏（localStorage key='acg_favs'，favKey=[v.name,e.t,e.s,e.l].join('¦')，
-             免登入不跨裝置）＋側欄「♥ 想去 N」入口與收藏浮層 ⑧popup「導航」外部 Google Maps 連結（優先座標否則地址）
-             ⑨popup「附近 2km 內還有 N 個活動」（haversine、通過篩選、依距離排序、點擊跳轉切換 popup）
-             ⑩圖釘狀態：已收藏愛心 .favdot（頭部右側）、即將結束左上紅點 .soondot、活動數 .bd 右上，三者共存
-           ▍圖釘外觀（2026/07/12，建議書 §5.2）：圓形＋場館 logo 圖釘改為「水滴造型＋依活動形式圖示」，
-             不再用 logo；FORM_ICON（展覽=畫框／快閃店=購物袋／主題餐廳=杯子／體驗=星號／其他=定位點）＋
-             venueForm(exs)＋pinSvg(form)；顏色僅作輔助。iconAnchor 移到水滴尖端 [20,50]、popup offset 改 (0,-46)。
-目前錯誤： ①#sheet/#scrim/openSheet/cardHtml 及場館 logo 相關（loadPinLogo/observePinLogos/logoThumbUrl/ART）
-           保留為休眠碼（未觸發，僅備用，未刪以縮小改動面）。②現資料（TODAY 基準）暫無「即將結束」活動，
-           .soondot 紅點在現資料不會出現（邏輯已 runtime 模擬驗證）；已收藏愛心在群集併入時不顯示（叢集正常行為）。
-           ③同一場館多形式時 pin 顯示「其他」定位圖示（代表形式無法唯一判定）。
-           ▍來源收斂（2026/07/12）：政府（文化部）API 全停（refresh_venues.py USE_MOC=False，
-             並關掉 moc 快照補填）；官網爬蟲只留六大園區（華山/松山/圓山花博/駁二/嘉義文創/花蓮文創，
-             collect_venues.py VENUES 精簡＋update_all.py 停用 collect_public/collect_soka_art）；
-             ANCHORS 精簡為四園區座標錨；新增官網優先「全域標題去重」（手動標題與官網重複則不寫入）。
-             保留：手動 Excel（含早點出發）、CACO、Cayenne、補件層。已用過濾腳本清理現有 venues.json：
-             場館 199→44、活動 406→128、ACG 49→46，並同步 HTML 內嵌備援。
-目前錯誤： ①#sheet/#scrim/openSheet/cardHtml 及場館 logo 相關（loadPinLogo/observePinLogos/logoThumbUrl/ART）
-           保留為休眠碼（未觸發，僅備用，未刪以縮小改動面）。②現資料（TODAY 基準）暫無「即將結束」活動，
-           .soondot 紅點在現資料不會出現（邏輯已 runtime 模擬驗證）；已收藏愛心在群集併入時不顯示（叢集正常行為）。
-           ③同一場館多形式時 pin 顯示「其他」定位圖示。④venue_extra.json 目前可能仍含舊的非六園區官網場館
-           （上次爬蟲留下），下次 collect_venues 重跑才會覆蓋；如要提前乾淨可手動清該檔非六園區鍵。
-           ⑤後台管線仍沿用舊 schema，schema 擴充/待審核流程尚未做。
-下一步：   【第三階段：資料穩定（剩餘）】候選/待審核流程、資料異常偵測（突然消失/日期異常/重複）、schema 擴充。
-           ⚠️ 任何 schema 擴充 / venues.json 欄位結構變更前，須先確認 DECISIONS.md（架構級決策不可貿然推翻）。
-不要改動： ①data/manual/manual_extra.json / data/manual/全台ACG活動.xlsx 既有列 ②archive/backups/ 內歷史備份
-           ③venues.json 欄位結構 ④前端請只改 public/taiwan-exhibition-map.html 這一個檔，
-           不要新增檔案、不要動內嵌 DATA 與 Leaflet 函式庫區塊、不要重新引入已放棄的 build 流程
-           ⑤政府 API 已「刻意」停用：重跑 update_all.py 後筆數大幅下降是預期結果，不要視為異常而回退或觸發警報
-           （恢復政府來源才改 refresh_venues.py 的 USE_MOC=True）
-目前錯誤： （續）▍維護回報排呈（2026/07/12）：backend/report_status.py 已調整，配合地圖收斂為
-           「ACG＋六大園區」後不再有logo問題：移除「缺場館logo」統計/建議（⚠️AI判斷，非逐字指示，
-           需你覆核是否同意）；保留缺KV／約略定位／缺連結；新增「分類複核」章節，逐筆列出
-           src=='official' 且 c!='ACG' 的官網活動，供人工複核後補 data/manual/event_overrides.json
-           （不用改程式碼）。✅已驗證：py_compile 通過、實際跑過一次對照真實 public/venues.json
-           輸出正確；⚠️未驗證：尚未跑到下次 Claude 排程 exhibition-map-maintenance-report 的正式觸發。
-           ▍分類複核＋補Excel（2026/07/12 續）：逐筆過官網六大園區70筆非ACG候選（另3筆已由前一輪
-           流程補進Excel改判成功：好想兔/nagano market/MONSTER STRIKE），查證後與你確認，3筆高信心
-           候選（Baby Shark守護海洋大冒險、星際大戰Mission Cantina、NishimuraYuji's shop!）已補進
-           data/manual/全台ACG活動.xlsx（先備份於archive/backups/excel/，111→114列原始資料不動、
-           末新增3列）；B-SIDE LABEL／開心馬場×2／果子們特展／鮮乳偵探事務所查無角色IP授權來源，
-           經你確認暫不列入。✅已驗證：openpyxl讀回檔案dims=A1:Q115，原有列內容比對備份未變、
-           新增3列17欄逐欄核對正確。⚠️未驗證：尚未跑import_acg_excel.py/update_all.py（需Mac端瀏覽器）
-           讓這3筆真正合併回venues.json；Baby Shark的主辦/授權資訊取自同巡迴台北科教館場次，
-           非駁二官網頁面直接證實，待你覆核。詳見 Agent交流工作日誌.txt 同日條目。
-已完成：   【2026/07/13 排程回報延伸手動修資料缺口，Cowork】KV補3場（GANADI/蠟筆小新/狗狗派對）；
-           event_overrides.json補2場分類為ACG（B-SIDE LABEL POP UP STORE in Taiwan、愛麗絲夢遊仙境）
-           ⚠️B-SIDE LABEL與07/12日誌記載的「已確認排除ACG」矛盾，需你覆核是否刻意改變心意；
-           GANADI POP-UP依規則9從1列展開為4列（台北微風南山/新竹巨城/台中綠園道/高雄夢時代，地址
-           皆已查證且你已確認無誤）；花蓮鯉魚潭/香堤大道廣場補座標（香堤大道用你提供的座標，查無
-           正式門牌）。跑完import→refresh→geocode→refresh後51館全數loc=exact（原8館約略定位→0）。
-           同步修好HTML內嵌DATA備援（之前手動分段跑腳本漏了這步，導致你回報「地圖沒更新」）。
-           排程任務 exhibition-map-maintenance-report 已改版：機械性地址/座標缺口可自動修正+跑
-           pipeline+同步HTML內嵌，ACG分類複核維持只列清單人工確認（你已用AskUserQuestion確認此邊界）。
-           ✅已驗證：重讀venues.json/xlsx/event_overrides.json/HTML內嵌逐項核對，見Agent交流工作
-           日誌.txt同日條目。
-目前錯誤：（續）▍2026/07/13 踩到 openpyxl `insert_rows()` 不會搬移既有儲存格 Hyperlink 物件的坑，
-           曾一度讓不相關資料的舊超連結覆蓋新資料KV欄，已修好並改用「附加表尾」方式，詳見日誌；
-           之後任何人編輯 全台ACG活動.xlsx 展開多列，禁止用 insert_rows。
-           ▍`data/manual/_excel_backups/全台ACG活動_CORRUPTED_had_stray_hyperlink_20260713.xlsx`
-           是修復過程中留下的損毀中間版本備份，Cowork沙盒環境對這個掛載資料夾裡的既有檔案沒有
-           刪除權限，刪不掉，需 Daniel 自己在 Finder 刪除。
-下一步：   ⚠️請 Daniel 覆核「B-SIDE LABEL POP UP STORE in Taiwan」分類矛盾（07/12排除ACG vs
-           07/13指示是ACG），確認後續以哪個為準。
-已完成：   【2026/07/16 排程回報，Cowork】本次跑 report_status.py 顯示 51館/132場，約略定位／缺連結／
-           缺KV三項缺口皆為0%，第二步A/B/C（geocode／WebSearch查證／重跑Excel管線）無項目可做，
-           本輪未動 xlsx／venues.json／HTML。✅已驗證：獨立重新逐欄位核對 venues.json（loc/addr/
-           連結/KV），結論與腳本一致；另用python逐位元組比對確認HTML內嵌DATA與venues.json完全相同
-           （hd==vj為True），無07/13發生過的「HTML沒同步」問題。
-目前錯誤： ⚠️新發現（07/16）：排程 launchd 疑似路徑設定錯誤，Mac端每週一/四11:30自動跑update_all.py
-           這件事本週四「沒有真的成功執行」——public/venues.json、taiwan-exhibition-map.html、
-           全台ACG活動.xlsx 三檔修改時間都停在07/13 12:13–12:25，07/16當天完全沒有新異動。追查到
-           ops/run_scheduled_update.sh 與 ops/_install_schedule.command 內 DIR 變數寫的是
-           `/Users/daniel0522/Desktop/Claude playground/全台展覽地圖`（無.nosync），但專案實際在
-           `Claude playground.nosync/全台展覽地圖`（有.nosync）；且在錯路徑資料夾下找到殘留log證實
-           launchd有觸發但找不到run_scheduled_update.sh，執行失敗。這是排程/路徑問題非資料問題，
-           Cowork沙箱這邊改不到Daniel Mac上的launchd設定，需Daniel自己確認資料夾是否改過名、
-           修好ops/兩支腳本的DIR路徑後重跑_install_schedule.command重新載入排程。
-下一步：   ①Daniel 自行在Mac端修正ops/run_scheduled_update.sh與ops/_install_schedule.command的
-           DIR路徑（補上.nosync），重跑_install_schedule.command重新載入launchd。
-           ②修好路徑後建議手動跑一次ops/_final_update.command確認完整流程能正常產出新資料，
-           而不是等下一個週一/四。
-           ③承07/13：B-SIDE LABEL分類矛盾仍待Daniel回覆。
-不要改動： （沿用上方原有規定：①manual_extra.json/全台ACG活動.xlsx既有列②archive/backups內歷史備份
-           ③venues.json欄位結構④前端只改taiwan-exhibition-map.html這一個檔⑤政府API刻意停用不算異常）
-已完成：   【2026/07/16同日續，Daniel直接指示】①分類複核確認1筆：「我適文創快閃-夏日降溫計畫」
-           （松山文創）是ACG，已寫入data/manual/event_overrides.json（c:"ACG"）。⚠️尚未生效，需等
-           排程修好或Daniel手動跑ops/_final_update.command才會反映到venues.json。
-           ②Daniel確認不用「Claude playground」（非.nosync）這個工作資料夾，經AskUserQuestion問清楚
-           刪除範圍（有另一個無關專案「小紅書爬蟲」在裡面）並得到「整個都刪」的明確答覆後，已呼叫
-           allow_cowork_file_delete取得授權清空該資料夾（全台展覽地圖殘留log＋小紅書爬蟲整個Chrome
-           profile）。✅已驗證：find確認資料夾內容已清空。⚠️這不等於修好launchd排程路徑錯誤，
-           下一步仍是Daniel要做的事（見上方「目前錯誤」①的路徑修正）。
-下一步：   （承上）①②③不變，另外Daniel下次若要驗證分類override有沒有生效，記得看
-           event_overrides.json的「我適文創快閃-夏日降溫計畫」有沒有真的反映到venues.json的c欄。
-已完成：   【2026/07/20 Claude（Claude Code/web）：KV匯入改為完整自存模式】把活動主視覺（KV）從
-           「大多直接引用外站遠端網址」改為「所有遠端KV先自存到public/kv/再改引用站內路徑」，
-           不再依賴外站（避免站方改版/搬移/擋外連破圖）。改動：backend/download_event_kv.py新增
-           is_remote()＋localize()加predicate參數＋--all旗標；update_all.py管線改用--all；補離線
-           單元測試；docs/後台資料夾結構.md新增KV自存流程章節；docs/Agent交流工作日誌.txt追加一筆。
-           已合進main（PR#8程式碼＋PR#9文件）。✅已驗證：6項離線單元測試全過；用egress允許主機做過
-           真實下載→落地→改寫站內路徑→冪等重跑（下載0）；官網圖跑--all確認下載失敗保留原網址不寫壞。
-           ⚠️本沙箱網路擋活動圖床（403），無法在此整批下載真實活動圖，要等Mac端/正式CI跑update_all.py
-           時public/kv/才會實際擴充為全部活動的圖。
-目前錯誤： ⚠️（KV相關）本次未在真實活動圖床上完成整批自存驗證，僅機制驗證＋容錯驗證通過；正式環境
-           首次跑--all會整批下載約150+張圖並一起commit，repo會變大（不依賴外站的取捨，若要避免膨脹
-           可改成自存但不進git追蹤，需再討論）。
-下一步：   ①（沿用）B-SIDE LABEL POP UP STORE in Taiwan 分類矛盾（07/12排除ACG vs 07/13指示ACG）
-           仍待Daniel覆核。②（沿用）Daniel修好ops/兩支腳本DIR路徑（補.nosync）重載launchd排程，
-           修好後手動跑一次ops/_final_update.command確認完整流程；屆時KV自存也會首次在真實圖床上
-           整批生效，可順便抽查public/kv/是否確實擴充、地圖圖片正常。③其他agent注意：venues.json的
-           e.img現多為站內路徑kv/<hash>.<ext>，非外連網址，處理方式同logo（接網站根路徑）。
-不要改動： （沿用上方原有規定；另補）public/kv/是自動產物，別手動增刪（過期活動圖會被GC自動清除）。
+目標：     修正 2026/08/09 維護報告的皮克敏歸屬，並把 Daniel 提供的劍湖山 × 名偵探柯南正式 KV 補入 PR #78。
+目前檔案： 人工活動來源為 data/manual/acg_events.json；主辦／授權／來源與費用覆寫在 data/manual/；
+           穩定 KV 在 data/manual/_kv_cache/；公開輸出在 public/；後端管線與測試在 backend/。
+已完成：   確認皮克敏8店已存在於2026/08/08的PR #78舊head，但尚未進main；本輪沒有重複新增，只是乾淨重建時保留。
+           新增劍湖山渡假大飯店 × 名偵探柯南主題房：2026/08/07–12/29、體驗活動、付費、精確地址與1圖釘。
+           公開 ACG 資料由PR前版93群組／268圖釘增為94／269；48項backend測試與Python／JSON／JavaScript檢查通過。
+目前錯誤： 本輪執行環境缺Playwright／Chromium，未重跑六場館即時蒐集；六館網站本身未判定失敗，暫沿用main快取。
+           既有EATWITHGO場館圖仍有1張失效Instagram CDN；不能保證下次新環境一定可成功下載Chromium。
+下一步：   更新PR #78說明與提交並等待CI／Daniel審核；另評估為Playwright browser加入持久快取，避免每次重新下載。
+不要改動： 未經 Daniel 明確同意不得合併；不得覆蓋原有 179 筆人工來源、已驗證座標／KV／費用、現行 UI 與使用者決策。
 ```
 
 ---

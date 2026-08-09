@@ -154,5 +154,45 @@
   "財團法人鴻梅文化藝術基金會": {
     "addr": "新竹縣新埔鎮新關路五埔段1170巷42弄17號",
     "source": "user_supplied_2026-07-05"
+  },
+  "IKEA 新莊店": {
+    "addr": "新北市新莊區中正路1號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 內湖店": {
+    "addr": "台北市內湖區舊宗路一段128號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 新店店": {
+    "addr": "新北市新店區中央路159號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 台北城市店": {
+    "addr": "台北市松山區敦化北路100號B1",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 桃園店": {
+    "addr": "桃園市中壢區高鐵站前東路一段1號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 台中店": {
+    "addr": "台中市南屯區向上路二段168號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 嘉義城市店": {
+    "addr": "嘉義市西區博愛路二段281號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "IKEA 高雄店": {
+    "addr": "高雄市前鎮區中華五路1201號",
+    "source": "https://www.ikea.com.tw/zh/store/index"
+  },
+  "animate cafe 台北北門店": {
+    "addr": "台北市中正區博愛路7號",
+    "source": "https://www.facebook.com/animatecafetw/posts/1373629048207729/"
+  },
+  "劍湖山渡假大飯店": {
+    "addr": "雲林縣古坑鄉永光村大湖口67之8號",
+    "source": "https://page.line.me/xat.0000172831.225"
   }
 }

@@ -1,10 +1,10 @@
 {
  "summary": {
-  "venues_total": 184,
-  "exact": 174,
-  "approx_total": 10,
-  "has_road_or_addr": 9,
-  "only_area": 1
+  "venues_total": 246,
+  "exact": 229,
+  "approx_total": 17,
+  "has_road_or_addr": 13,
+  "only_area": 4
  },
  "has_road_or_addr": [
   {
@@ -29,11 +29,39 @@
    "url": "https://frozenheart.com.tw/"
   },
   {
+   "name": "和牛涮 台北忠孝東店",
+   "city": "台北市",
+   "addr": "台北市大安區忠孝東路四段128號2樓",
+   "loc": "區級",
+   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/"
+  },
+  {
+   "name": "和牛涮 台北林森北店",
+   "city": "台北市",
+   "addr": "台北市中山區林森北路258號2樓",
+   "loc": "區級",
+   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/"
+  },
+  {
    "name": "微風運河園區",
    "city": "新北市",
    "addr": "新北市蘆洲區二重疏洪道",
    "loc": "區級",
    "url": "https://irunner.biji.co/2026JujutsuKaisenRUN3"
+  },
+  {
+   "name": "聚 台北SOGO忠孝店",
+   "city": "台北市",
+   "addr": "台北市大安區忠孝東路四段45號12樓",
+   "loc": "區級",
+   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
+  },
+  {
+   "name": "聚 台北南昌店",
+   "city": "台北市",
+   "addr": "台北市中正區南昌路二段216號2樓",
+   "loc": "區級",
+   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
   },
   {
    "name": "藏壽司 中山南西店",
@@ -78,6 +106,27 @@
    "addr": "",
    "loc": "市級",
    "url": "https://meet.eslite.com/tw/tc/news/202607140007"
+  },
+  {
+   "name": "台北市南港區經貿二路131號5樓（三井LaLaport南港 5樓）",
+   "city": "台北市",
+   "addr": "",
+   "loc": "市級",
+   "url": "https://www.instagram.com/p/DbSzwVIFPRH/"
+  },
+  {
+   "name": "新北市新莊區新北大道四段3號7樓（宏匯廣場 7樓）",
+   "city": "新北市",
+   "addr": "",
+   "loc": "市級",
+   "url": "https://www.instagram.com/p/DbSzwVIFPRH/"
+  },
+  {
+   "name": "新竹市東區中央路229號4樓（新竹巨城購物中心 4樓）",
+   "city": "新竹市",
+   "addr": "",
+   "loc": "市級",
+   "url": "https://www.instagram.com/p/DbSzwVIFPRH/"
   }
  ]
 }

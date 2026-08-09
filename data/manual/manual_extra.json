@@ -21,6 +21,182 @@
    }
   ]
  },
+ "IKEA 內湖店": {
+  "city": "台北市",
+  "lat": 25.06084,
+  "lng": 121.578244,
+  "loc": "exact",
+  "addr": "台北市內湖區舊宗路一段128號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 台中店": {
+  "city": "台中市",
+  "lat": 24.147418,
+  "lng": 120.643179,
+  "loc": "exact",
+  "addr": "台中市南屯區向上路二段168號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 台北城市店": {
+  "city": "台北市",
+  "lat": 25.052912,
+  "lng": 121.548088,
+  "loc": "exact",
+  "addr": "台北市松山區敦化北路100號B1",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 嘉義城市店": {
+  "city": "嘉義市",
+  "lat": 23.478217,
+  "lng": 120.438062,
+  "loc": "exact",
+  "addr": "嘉義市西區博愛路二段281號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 新店店": {
+  "city": "新北市",
+  "lat": 24.972116,
+  "lng": 121.530795,
+  "loc": "exact",
+  "addr": "新北市新店區中央路159號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 新莊店": {
+  "city": "新北市",
+  "lat": 25.041438,
+  "lng": 121.465269,
+  "loc": "exact",
+  "addr": "新北市新莊區中正路1號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 桃園店": {
+  "city": "桃園市",
+  "lat": 25.013196,
+  "lng": 121.217479,
+  "loc": "exact",
+  "addr": "桃園市中壢區高鐵站前東路一段1號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
+ "IKEA 高雄店": {
+  "city": "高雄市",
+  "lat": 22.605661,
+  "lng": 120.303915,
+  "loc": "exact",
+  "addr": "高雄市前鎮區中華五路1201號",
+  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "ex": [
+   {
+    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
+    "s": "2026/08/01",
+    "e": "2026/08/31",
+    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "免費",
+    "ip": "皮克敏（Pikmin）",
+    "org": "IKEA Taiwan（宜家家居台灣）",
+    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
+   }
+  ]
+ },
  "animate Gratte 西門站": {
   "city": "台北市",
   "lat": 25.0179,
@@ -64,6 +240,28 @@
     "ip": "我的英雄學院",
     "org": "animate Gratte（安利美特台灣）",
     "lic": "堀越耕平／集英社・My Hero Academia Project"
+   }
+  ]
+ },
+ "animate cafe 台北北門店": {
+  "city": "台北市",
+  "lat": 25.046082644279,
+  "lng": 121.511411565128,
+  "loc": "exact",
+  "addr": "台北市中正區博愛路7號",
+  "url": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+  "ex": [
+   {
+    "t": "名偵探柯南 × animate cafe 台北北門店",
+    "s": "2026/07/29",
+    "e": "2026/09/01",
+    "l": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_animate_cafe_beimen_20260729.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "名偵探柯南",
+    "org": "animate cafe（安利美特台灣）",
+    "lic": "青山剛昌／小學館・讀賣電視台・TMS"
    }
   ]
  },
@@ -753,6 +951,28 @@
    }
   ]
  },
+ "劍湖山渡假大飯店": {
+  "city": "雲林縣",
+  "lat": 23.63459,
+  "lng": 120.56586,
+  "loc": "區級",
+  "addr": "雲林縣古坑鄉永光村大湖口67之8號",
+  "url": "https://www.janfusun.com.tw/html/news/show.php?kid=4&nid=658&unid=3",
+  "ex": [
+   {
+    "t": "劍湖山渡假大飯店 × 名偵探柯南 主題房住宿專案",
+    "s": "2026/08/07",
+    "e": "2026/12/29",
+    "l": "https://www.janfusun.com.tw/html/news/show.php?kid=4&nid=658&unid=3",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_janfusun_hotel_20260807.jpeg",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "付費",
+    "ip": "名偵探柯南",
+    "org": "劍湖山世界股份有限公司／劍湖山渡假大飯店",
+    "lic": "曼迪傳播有限公司（Mighty Media Co., Ltd.）"
+   }
+  ]
+ },
  "台中世界貿易中心 大禮堂": {
   "city": "台中市",
   "lat": 24.176085,
@@ -1014,9 +1234,9 @@
  },
  "和牛涮 中壢元化店": {
   "city": "桃園市",
-  "lat": 24.97762,
-  "lng": 121.21363,
-  "loc": "市級",
+  "lat": 24.96177,
+  "lng": 121.22661,
+  "loc": "exact",
   "addr": "桃園市中壢區元化路245號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1038,9 +1258,9 @@
  },
  "和牛涮 仁德萬家福店": {
   "city": "台南市",
-  "lat": 22.94201,
-  "lng": 120.25484,
-  "loc": "區級",
+  "lat": 22.9725878,
+  "lng": 120.2469376,
+  "loc": "exact",
   "addr": "台南市仁德區中山路711號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1062,9 +1282,9 @@
  },
  "和牛涮 台中五權西店": {
   "city": "台中市",
-  "lat": 24.14333,
-  "lng": 120.61342,
-  "loc": "區級",
+  "lat": 24.139796,
+  "lng": 120.647029,
+  "loc": "exact",
   "addr": "台中市南屯區五權西路二段271號1、2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1086,9 +1306,9 @@
  },
  "和牛涮 台中文心崇德店": {
   "city": "台中市",
-  "lat": 24.19751,
-  "lng": 120.75565,
-  "loc": "區級",
+  "lat": 24.1724231,
+  "lng": 120.6849755,
+  "loc": "exact",
   "addr": "台中市北屯區文心路四段601號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1158,9 +1378,9 @@
  },
  "和牛涮 台北羅斯福店": {
   "city": "台北市",
-  "lat": 25.01615,
-  "lng": 121.54271,
-  "loc": "區級",
+  "lat": 25.02795,
+  "lng": 121.5220299,
+  "loc": "exact",
   "addr": "台北市大安區羅斯福路二段27號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1182,9 +1402,9 @@
  },
  "和牛涮 台北西門店": {
   "city": "台北市",
-  "lat": 25.02108,
-  "lng": 121.5042,
-  "loc": "區級",
+  "lat": 25.0479094,
+  "lng": 121.5097494,
+  "loc": "exact",
   "addr": "台北市萬華區中華路一段90號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1206,9 +1426,9 @@
  },
  "和牛涮 台南中華西店": {
   "city": "台南市",
-  "lat": 22.99191,
-  "lng": 120.18,
-  "loc": "區級",
+  "lat": 22.9931993,
+  "lng": 120.1866,
+  "loc": "exact",
   "addr": "台南市安平區中華西路二段345號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1230,9 +1450,9 @@
  },
  "和牛涮 嘉義垂楊店": {
   "city": "嘉義市",
-  "lat": 23.4684,
-  "lng": 120.42413,
-  "loc": "區級",
+  "lat": 23.473168,
+  "lng": 120.445301,
+  "loc": "exact",
   "addr": "嘉義市西區垂楊路381號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1254,9 +1474,9 @@
  },
  "和牛涮 新店民權店": {
   "city": "新北市",
-  "lat": 24.91939,
-  "lng": 121.54055,
-  "loc": "區級",
+  "lat": 24.9830005,
+  "lng": 121.5361861,
+  "loc": "exact",
   "addr": "新北市新店區民權路100號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1278,9 +1498,9 @@
  },
  "和牛涮 板橋文化店": {
   "city": "新北市",
-  "lat": 25.01031,
-  "lng": 121.45136,
-  "loc": "區級",
+  "lat": 25.02116,
+  "lng": 121.467188,
+  "loc": "exact",
   "addr": "新北市板橋區文化路一段280號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1302,9 +1522,9 @@
  },
  "和牛涮 桃園同德店": {
   "city": "桃園市",
-  "lat": 24.9529,
-  "lng": 121.22977,
-  "loc": "市級",
+  "lat": 25.0143234,
+  "lng": 121.2999808,
+  "loc": "exact",
   "addr": "桃園市桃園區同德五街77號1樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1326,9 +1546,9 @@
  },
  "和牛涮 竹北光明店": {
   "city": "新竹縣",
-  "lat": 24.82269,
-  "lng": 120.99803,
-  "loc": "區級",
+  "lat": 24.830243,
+  "lng": 121.017256,
+  "loc": "exact",
   "addr": "新竹縣竹北市光明一路112號2樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1350,9 +1570,9 @@
  },
  "和牛涮 頭份尚順店": {
   "city": "苗栗縣",
-  "lat": 24.5335,
-  "lng": 120.82587,
-  "loc": "市級",
+  "lat": 24.6878214,
+  "lng": 120.9038082,
+  "loc": "exact",
   "addr": "苗栗縣頭份市育樂街6號1樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1374,9 +1594,9 @@
  },
  "和牛涮 高雄博愛店": {
   "city": "高雄市",
-  "lat": 22.67484,
-  "lng": 120.28701,
-  "loc": "區級",
+  "lat": 22.670013,
+  "lng": 120.303755,
+  "loc": "exact",
   "addr": "高雄市左營區博愛二路682號",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1398,9 +1618,9 @@
  },
  "和牛涮 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.59275,
-  "lng": 120.31286,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號4樓",
   "url": "https://www.facebook.com/share/p/1EpGc7kLJs/",
   "ex": [
@@ -1667,6 +1887,40 @@
     "ip": "Tamagotchi塔麻可吉",
     "org": "萬代國際(wangjungintl)",
     "lic": "BANDAI"
+   }
+  ]
+ },
+ "新光三越台中中港店 10F天空劇場": {
+  "city": "台中市",
+  "lat": 24.1650058,
+  "lng": 120.6433984,
+  "loc": "exact",
+  "addr": "台中市西屯區台灣大道三段301號",
+  "url": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+  "ex": [
+   {
+    "t": "吉伊卡哇 POP UP STORE 新光三越台中中港店",
+    "s": "2026/08/22",
+    "e": "2026/09/20",
+    "l": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_popup_taichung_20260822.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "吉伊卡哇（ちいかわ）",
+    "org": "活動官方未公開",
+    "lic": "ナガノ（官方頁版權列權利方）"
+   },
+   {
+    "t": "Sanrio Gift Gate 狗狗派對快閃店（台中站）",
+    "s": "2026/08/07",
+    "e": "2026/08/23",
+    "l": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_dog_party_taichung_20260807.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "三麗鷗家族",
+    "org": "三麗鷗股份有限公司／Sanrio Gift Gate Taiwan",
+    "lic": "Sanrio Co., Ltd."
    }
   ]
  },
@@ -2062,9 +2316,9 @@
  },
  "聚 三峽學成店": {
   "city": "新北市",
-  "lat": 24.88012,
-  "lng": 121.42208,
-  "loc": "區級",
+  "lat": 24.9442053,
+  "lng": 121.3783061,
+  "loc": "exact",
   "addr": "新北市三峽區學成路398號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2086,9 +2340,9 @@
  },
  "聚 中壢SOGO店": {
   "city": "桃園市",
-  "lat": 24.97498,
-  "lng": 121.24795,
-  "loc": "市級",
+  "lat": 24.962685,
+  "lng": 121.2235325,
+  "loc": "exact",
   "addr": "桃園市中壢區元化路357號8樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2110,9 +2364,9 @@
  },
  "聚 台中公益店": {
   "city": "台中市",
-  "lat": 24.13637,
-  "lng": 120.61489,
-  "loc": "區級",
+  "lat": 24.151294,
+  "lng": 120.6435424,
+  "loc": "exact",
   "addr": "台中市南屯區公益路二段252號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2134,9 +2388,9 @@
  },
  "聚 台中米平方店": {
   "city": "台中市",
-  "lat": 24.18875,
-  "lng": 120.62986,
-  "loc": "區級",
+  "lat": 24.1922338,
+  "lng": 120.6120641,
+  "loc": "exact",
   "addr": "台中市西屯區國安一路168號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2158,9 +2412,9 @@
  },
  "聚 台中豐原大社店": {
   "city": "台中市",
-  "lat": 24.24352,
-  "lng": 120.74443,
-  "loc": "區級",
+  "lat": 24.251603,
+  "lng": 120.701203,
+  "loc": "exact",
   "addr": "台中市豐原區大社街8號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2206,9 +2460,9 @@
  },
  "聚 台北南京東店": {
   "city": "台北市",
-  "lat": 25.0644,
-  "lng": 121.53747,
-  "loc": "區級",
+  "lat": 25.0518979,
+  "lng": 121.5305,
+  "loc": "exact",
   "addr": "台北市中山區南京東路二段72號B1",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2254,9 +2508,9 @@
  },
  "聚 台北衡陽店": {
   "city": "台北市",
-  "lat": 25.03458,
-  "lng": 121.51433,
-  "loc": "區級",
+  "lat": 25.0424158,
+  "lng": 121.5138835,
+  "loc": "exact",
   "addr": "台北市中正區衡陽路3號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2278,9 +2532,9 @@
  },
  "聚 台南中華西店": {
   "city": "台南市",
-  "lat": 22.97871,
-  "lng": 120.17141,
-  "loc": "區級",
+  "lat": 22.992961,
+  "lng": 120.186614,
+  "loc": "exact",
   "addr": "台南市安平區中華西路二段317號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2302,9 +2556,9 @@
  },
  "聚 台南仁德中山店": {
   "city": "台南市",
-  "lat": 22.93373,
-  "lng": 120.24889,
-  "loc": "區級",
+  "lat": 22.9728652,
+  "lng": 120.2459346,
+  "loc": "exact",
   "addr": "台南市仁德區中山路777號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2326,9 +2580,9 @@
  },
  "聚 台南永康中華店": {
   "city": "台南市",
-  "lat": 23.02502,
-  "lng": 120.24522,
-  "loc": "區級",
+  "lat": 23.001783,
+  "lng": 120.234921,
+  "loc": "exact",
   "addr": "台南市永康區中華路101號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2350,9 +2604,9 @@
  },
  "聚 台東秀泰店": {
   "city": "台東縣",
-  "lat": 22.74278,
-  "lng": 121.11162,
-  "loc": "區級",
+  "lat": 22.751916,
+  "lng": 121.148403,
+  "loc": "exact",
   "addr": "台東縣台東市新生路93號秀泰2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2374,9 +2628,9 @@
  },
  "聚 員林中山店": {
   "city": "彰化縣",
-  "lat": 23.99097,
-  "lng": 120.5211,
-  "loc": "市級",
+  "lat": 23.960229,
+  "lng": 120.570725,
+  "loc": "exact",
   "addr": "彰化縣員林市中山路二段30之3號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2398,9 +2652,9 @@
  },
  "聚 嘉義垂楊店": {
   "city": "嘉義市",
-  "lat": 23.48498,
-  "lng": 120.42046,
-  "loc": "區級",
+  "lat": 23.4731746,
+  "lng": 120.4434318,
+  "loc": "exact",
   "addr": "嘉義市西區垂楊路455號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2422,9 +2676,9 @@
  },
  "聚 基隆信一店": {
   "city": "基隆市",
-  "lat": 25.78783,
-  "lng": 123.52151,
-  "loc": "區級",
+  "lat": 25.130722,
+  "lng": 121.744789,
+  "loc": "exact",
   "addr": "基隆市中正區信一路177號5樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2446,9 +2700,9 @@
  },
  "聚 士林中正店": {
   "city": "台北市",
-  "lat": 25.12679,
-  "lng": 121.56542,
-  "loc": "區級",
+  "lat": 25.0955722,
+  "lng": 121.5275171,
+  "loc": "exact",
   "addr": "台北市士林區中正路179號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2470,9 +2724,9 @@
  },
  "聚 大里大買家店": {
   "city": "台中市",
-  "lat": 24.08789,
-  "lng": 120.68183,
-  "loc": "區級",
+  "lat": 24.1156871,
+  "lng": 120.6795967,
+  "loc": "exact",
   "addr": "台中市大里區國光路二段710號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2494,9 +2748,9 @@
  },
  "聚 宜蘭新月店": {
   "city": "宜蘭縣",
-  "lat": 24.74085,
-  "lng": 121.75866,
-  "loc": "區級",
+  "lat": 24.7543756,
+  "lng": 121.7500262,
+  "loc": "exact",
   "addr": "宜蘭縣宜蘭市民權路二段38巷6號4樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2518,9 +2772,9 @@
  },
  "聚 屏東太平洋店": {
   "city": "屏東縣",
-  "lat": 22.66452,
-  "lng": 120.47011,
-  "loc": "區級",
+  "lat": 22.6740881,
+  "lng": 120.4895802,
+  "loc": "exact",
   "addr": "屏東縣屏東市中正路72號B1",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2542,9 +2796,9 @@
  },
  "聚 斗六鎮南店": {
   "city": "雲林縣",
-  "lat": 23.70754,
-  "lng": 120.35524,
-  "loc": "市級",
+  "lat": 23.6960733,
+  "lng": 120.54312,
+  "loc": "exact",
   "addr": "雲林縣斗六市鎮南路313號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2566,9 +2820,9 @@
  },
  "聚 新店民權店": {
   "city": "新北市",
-  "lat": 24.9365,
-  "lng": 121.53944,
-  "loc": "區級",
+  "lat": 24.9830617,
+  "lng": 121.5373632,
+  "loc": "exact",
   "addr": "新北市新店區民權路82號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2590,9 +2844,9 @@
  },
  "聚 板橋中山店": {
   "city": "新北市",
-  "lat": 25.01,
-  "lng": 121.46412,
-  "loc": "區級",
+  "lat": 25.0096222,
+  "lng": 121.4610708,
+  "loc": "exact",
   "addr": "新北市板橋區中山路一段6號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2614,9 +2868,9 @@
  },
  "聚 板橋江子翠店": {
   "city": "新北市",
-  "lat": 24.99668,
-  "lng": 121.44396,
-  "loc": "區級",
+  "lat": 25.027394,
+  "lng": 121.471417,
+  "loc": "exact",
   "addr": "新北市板橋區文化路二段182巷3弄79號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2638,9 +2892,9 @@
  },
  "聚 林口文化店": {
   "city": "桃園市",
-  "lat": 24.93718,
-  "lng": 121.25515,
-  "loc": "市級",
+  "lat": 25.0558213,
+  "lng": 121.3652098,
+  "loc": "exact",
   "addr": "桃園市龜山區文化三路256號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2662,9 +2916,9 @@
  },
  "聚 桃園統領店": {
   "city": "桃園市",
-  "lat": 24.9202,
-  "lng": 121.25743,
-  "loc": "市級",
+  "lat": 24.991113,
+  "lng": 121.312523,
+  "loc": "exact",
   "addr": "桃園市桃園區中正路61號5樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2686,9 +2940,9 @@
  },
  "聚 汐止遠雄店": {
   "city": "新北市",
-  "lat": 25.07795,
-  "lng": 121.65742,
-  "loc": "區級",
+  "lat": 25.061622,
+  "lng": 121.648249,
+  "loc": "exact",
   "addr": "新北市汐止區新台五路一段99號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2710,9 +2964,9 @@
  },
  "聚 淡水淡新萬家福店": {
   "city": "新北市",
-  "lat": 25.18289,
-  "lng": 121.46046,
-  "loc": "區級",
+  "lat": 25.1881741,
+  "lng": 121.4435919,
+  "loc": "exact",
   "addr": "新北市淡水區中山北路二段383號3樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2734,9 +2988,9 @@
  },
  "聚 澄清文衡店": {
   "city": "高雄市",
-  "lat": 23.27196,
-  "lng": 120.69168,
-  "loc": "區級",
+  "lat": 22.642144,
+  "lng": 120.346062,
+  "loc": "exact",
   "addr": "高雄市三民區澄清路536號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2758,9 +3012,9 @@
  },
  "聚 頭份尚順店": {
   "city": "苗栗縣",
-  "lat": 24.50872,
-  "lng": 120.87417,
-  "loc": "市級",
+  "lat": 24.687211,
+  "lng": 120.90125,
+  "loc": "exact",
   "addr": "苗栗縣頭份市尚順路61號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2782,9 +3036,9 @@
  },
  "聚 高雄夢時代店": {
   "city": "高雄市",
-  "lat": 22.58817,
-  "lng": 120.30247,
-  "loc": "區級",
+  "lat": 22.5953429,
+  "lng": 120.3087795,
+  "loc": "exact",
   "addr": "高雄市前鎮區中華五路789號高雄夢時代7F",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2806,9 +3060,9 @@
  },
  "聚 高雄大樂店": {
   "city": "高雄市",
-  "lat": 23.25811,
-  "lng": 120.69449,
-  "loc": "區級",
+  "lat": 22.659181,
+  "lng": 120.315455,
+  "loc": "exact",
   "addr": "高雄市三民區民族一路463號",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2830,9 +3084,9 @@
  },
  "聚 高雄富民店": {
   "city": "高雄市",
-  "lat": 22.67265,
-  "lng": 120.30693,
-  "loc": "區級",
+  "lat": 22.665266,
+  "lng": 120.304751,
+  "loc": "exact",
   "addr": "高雄市左營區富民路355號2樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -2854,9 +3108,9 @@
  },
  "聚 高雄新楠萬家福店": {
   "city": "高雄市",
-  "lat": 22.72213,
-  "lng": 120.29004,
-  "loc": "區級",
+  "lat": 22.736127,
+  "lng": 120.330751,
+  "loc": "exact",
   "addr": "高雄市楠梓區土庫一路60號1樓",
   "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON",
   "ex": [
@@ -4693,6 +4947,27 @@
     "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
     "org": "回歸線娛樂 X 誠品生活",
     "lic": "需人工確認"
+   }
+  ]
+ },
+ "遠東巨城購物中心": {
+  "city": "新竹市",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
+  "addr": "新竹市東區中央路229號",
+  "url": "https://www.facebook.com/share/p/1JsN83hydG/",
+  "ex": [
+   {
+    "t": "褲褲兔 新竹巨城快閃店",
+    "s": "2026/08/13",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/share/p/1JsN83hydG/",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store",
+    "ip": "褲褲兔（おぱんちゅうさぎ）",
+    "org": "FANFANS",
+    "lic": "Rights & Brands Asia"
    }
   ]
  },

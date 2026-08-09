@@ -41,6 +41,26 @@ def test_quote_url():
     print("test_quote_url: PASS")
 
 
+def test_local_repo_source():
+    """尚未合併的 repo KV 可直接從工作樹取得，且不得越出專案根目錄。"""
+    d = tempfile.mkdtemp()
+    try:
+        local = os.path.join(d, "data", "manual", "_kv_cache", "new.jpg")
+        os.makedirs(os.path.dirname(local), exist_ok=True)
+        with open(local, "wb") as f:
+            f.write(b"x" * 1024)
+        raw = "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/new.jpg"
+        assert m.local_repo_source(raw, d) == local
+        assert m.local_repo_source("https://example.com/new.jpg", d) == ""
+        assert m.local_repo_source(
+            "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/../../secret",
+            d,
+        ) == ""
+        print("test_local_repo_source: PASS")
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_localize_all_mode():
     """--all 模式（predicate=is_remote）：連穩定官網圖也一併自存、改站內路徑。"""
     d = tempfile.mkdtemp()
@@ -125,6 +145,7 @@ if __name__ == "__main__":
     test_is_expiring()
     test_is_remote()
     test_quote_url()
+    test_local_repo_source()
     test_localize_and_gc()
     test_localize_all_mode()
     print("ALL TESTS PASS")

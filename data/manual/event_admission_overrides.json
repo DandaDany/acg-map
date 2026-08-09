@@ -563,5 +563,35 @@
   "source": "https://www.facebook.com/share/p/1JsN83hydG/",
   "checked": "2026-08-07",
   "basis": "官方主視覺標示『免費入場』"
+ },
+ "Pikmin Bloom × IKEA 台灣 期間限定活動": {
+  "fee": "免費",
+  "source": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
+  "checked": "2026-08-09",
+  "basis": "官方頁所列APP特殊地點、店內尋找任務與遊戲試玩均未收門票；宜家卡可免費申請"
+ },
+ "吉伊卡哇 POP UP STORE 新光三越台中中港店": {
+  "fee": "免費",
+  "source": "https://chiikawa-info.jp/p26/pus_smtc/index.html",
+  "checked": "2026-08-09",
+  "basis": "官方頁未列入場費，商品選購不等於付費入場"
+ },
+ "名偵探柯南 × animate cafe 台北北門店": {
+  "fee": "免費",
+  "source": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
+  "checked": "2026-08-09",
+  "basis": "官方公告不須預約且只列商品／特典，未公告入場費或強制消費；商品選購不等於付費入場"
+ },
+ "Sanrio Gift Gate 狗狗派對快閃店（台中站）": {
+  "fee": "免費",
+  "source": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
+  "checked": "2026-08-09",
+  "basis": "場館官方活動頁未列入場費，商品選購不等於付費入場"
+ },
+ "劍湖山渡假大飯店 × 名偵探柯南 主題房住宿專案": {
+  "fee": "付費",
+  "source": "https://www.janfusun.com.tw/html/news/show.php?kid=4&nid=658&unid=3",
+  "checked": "2026-08-09",
+  "basis": "官方住宿專案為2人成行一泊二食每房NT$5,000，核心主題房體驗必須付費訂房"
  }
 }
