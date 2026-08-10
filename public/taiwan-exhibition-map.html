@@ -883,10 +883,10 @@ a{color:inherit}
 .activity-picker-head h2{margin:0 0 4px;font-size:clamp(22px,3vw,34px)}.activity-picker-count{color:var(--muted)}
 .activity-picker-close{display:grid;width:44px;height:44px;flex:none;place-items:center;border:1px solid rgba(255,255,255,.28);border-radius:12px;background:#151d2a;color:#fff;font-size:24px;cursor:pointer}
 .activity-picker-grid{display:grid;max-width:1200px;margin:0 auto;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px}
-.activity-picker-slot{display:grid;min-height:340px;place-items:center;padding:12%}
+.activity-picker-slot{display:grid;min-height:426px;place-items:center;padding:12%}
 .activity-picker-card{width:77%;min-width:0;padding:0;overflow:hidden;border:1px solid var(--line);border-radius:15px;background:var(--card);color:var(--text);text-align:left;cursor:pointer;transition:transform .16s ease,border-color .16s ease}
 .activity-picker-card.is-hovered{z-index:1;border-color:#ff9a4d;transform:scale(1.3)}
-.activity-picker-card .media-frame{height:220px}.activity-picker-copy{display:block;padding:11px}.activity-picker-copy h3{margin:0 0 7px;font-size:14px;line-height:1.4}
+.activity-picker-card .media-frame{height:220px}.activity-picker-copy{display:block;min-height:105px;padding:11px}.activity-picker-copy h3{display:-webkit-box;min-height:58.8px;margin:0 0 7px;overflow:hidden;font-size:14px;line-height:1.4;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 .activity-picker-secondary{display:block;color:var(--muted);font-size:12px;line-height:1.45}
 
 .lightbox{align-items:center;justify-content:center;padding:36px}
@@ -974,7 +974,7 @@ a{color:inherit}
   .mobile-card-info .popup-metadata{font-size:11px}.mobile-card-info .nearby-cta{font-size:11.5px}
   .mobile-card-info .popup-nav{margin-top:auto}.mobile-card-info .popup-arrow{width:44px;height:44px}
   .activity-picker-panel{padding:18px 10px 40px}.activity-picker-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .activity-picker-slot{min-height:245px;padding:0}.activity-picker-card{width:100%}.activity-picker-card .media-frame{height:170px}
+  .activity-picker-slot{min-height:245px;padding:0}.activity-picker-card{width:100%}.activity-picker-card .media-frame{height:170px}.activity-picker-copy{min-height:0}.activity-picker-copy h3{min-height:0}
   .dialog-overlay{display:none!important}
   .lightbox{padding:18px}
   .toast{bottom:calc(var(--mobile-nav) + env(safe-area-inset-bottom,0px) + 16px)}
@@ -1735,7 +1735,7 @@ const cluster=L.markerClusterGroup({
   iconCreateFunction(group){
     let sum=0;group.getAllChildMarkers().forEach(marker=>sum+=marker.groupCount||0);
     const size=sum>=20?'lg':sum>=8?'md':'sm';
-    return L.divIcon({html:'<div class="cl cl-'+size+'">'+sum+'</div>',className:'',iconSize:[48,48]});
+    return L.divIcon({html:'<div class="cl cl-'+size+'">'+sum+'</div>',className:'marker-cluster',iconSize:[48,48]});
   }
 });
 map.addLayer(cluster);
