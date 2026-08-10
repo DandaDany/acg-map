@@ -110,11 +110,12 @@ class MapUxTests(unittest.TestCase):
         # 手機活動 popup 為橫式卡片（左 KV、右資訊）、高度約螢幕 1/3（decision.md）。
         self.assertIn("height:clamp(210px,34dvh,360px)", self.html)
         self.assertIn("mobile-card-kv", self.html)
-        self.assertIn("function buildMobileCards(origin)", self.html)
+        self.assertIn("function buildPopupCards(origin)", self.html)
         # 可左右滑切換，順序以目前地點為原點、依距離由近到遠；
         # 不再另列「其他活動地點」清單。
-        self.assertIn("function moveMobileCard(delta)", self.html)
+        self.assertIn("function movePopupCard(delta)", self.html)
         self.assertIn("occurrenceDistance(origin", self.html)
+        self.assertIn("a.location.id===origin.id?-1", self.html)
         self.assertNotIn("其他活動地點（", self.html)
 
     def test_navigation_copy_link_and_private_review_text(self):
@@ -200,7 +201,7 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("cluster.zoomToShowLayer(marker", self.html)
         self.assertIn("cluster.getVisibleParent(marker)", self.html)
         self.assertIn("cluster.once('spiderfied',finish);parent.spiderfy()", self.html)
-        self.assertIn("selectLocation(cur.id,{openPopup:false,revealMarker:true", self.html)
+        self.assertIn("selectLocation(cur.id,{openPopup:!MOBILE_QUERY.matches,revealMarker:true", self.html)
 
     def test_selection_version_guards_async_callbacks(self):
         self.assertIn("let selectionVersion=0", self.html)
@@ -219,8 +220,93 @@ class MapUxTests(unittest.TestCase):
         render = self.html[self.html.index("function renderMapMarkers()"):]
         render = render[: render.index("function highlightSelectedMarker")]
         self.assertNotIn("uiState.selectedLocationId=null", render)
-        self.assertIn("if(selected&&!markers.some", render)
+        self.assertIn("if(selected&&!visibleLocationIds.has(selected))", render)
         self.assertIn("else requestAnimationFrame", render)
+
+    def test_last_viewed_is_visual_only_and_survives_popup_close(self):
+        self.assertIn("lastViewedLocationId:null", self.html)
+        select = self.html[self.html.index("function selectLocation("):self.html.index("function navigateToEvent(")]
+        self.assertIn("uiState.lastViewedLocationId=location.id", select)
+        clear = self.html[self.html.index("function clearSelection()"):self.html.index("function revealMarkerForLocation")]
+        self.assertNotIn("lastViewedLocationId", clear)
+        highlight = self.html[self.html.index("function applyMarkerVisualState"):self.html.index("function locationById")]
+        self.assertIn("uiState.selectedLocationId||uiState.lastViewedLocationId", highlight)
+        self.assertIn("closeActiveMapPopup({clearSelection:true", self.html)
+
+    def test_last_viewed_is_cleared_only_when_marker_is_invalid_or_floating(self):
+        render = self.html[self.html.index("function renderMapMarkers()"):self.html.index("function applyMarkerVisualState")]
+        self.assertIn("if(uiState.lastViewedLocationId&&!visibleLocationIds.has(uiState.lastViewedLocationId))uiState.lastViewedLocationId=null", render)
+        floating = self.html[self.html.index("function openFloatingEvent"):self.html.index("function fitTaiwanView")]
+        self.assertIn("uiState.lastViewedLocationId=null", floating)
+        self.assertIn("if(group.floating){popupCards=[{group,location:popupOrigin}];popupCardIndex=0}", self.html)
+
+    def test_popup_arrows_share_one_sequence_and_selection_pipeline(self):
+        self.assertIn("function popupNavigationHtml()", self.html)
+        self.assertIn('data-popup-move="-1"', self.html)
+        self.assertIn('data-popup-move="1"', self.html)
+        self.assertIn("popupCardIndex===0?'disabled'", self.html)
+        self.assertIn("popupCardIndex===popupCards.length-1?'disabled'", self.html)
+        self.assertIn("movePopupCard(dx<0?1:-1)", self.html)
+        move = self.html[self.html.index("function movePopupCard"):self.html.index("function openMobileVenueSheet")]
+        self.assertIn("selectLocation(cur.id", move)
+        self.assertIn("preservePopupCards:true", move)
+        self.assertIn("activeDialogMode==='event'", self.html)
+        self.assertIn("event.key==='ArrowLeft'", self.html)
+
+    def test_desktop_marker_hover_uses_inner_marker_state(self):
+        self.assertIn("marker.on('mouseover'", self.html)
+        self.assertIn("marker.on('mouseout'", self.html)
+        self.assertIn("root.classList.toggle('is-hovered'", self.html)
+        self.assertIn("marker.isHovered?2000:(highlighted?1000:0)", self.html)
+        self.assertIn(".pinwrap.is-selected,.pinwrap.is-hovered,.kv-marker-shell.is-selected,.kv-marker-shell.is-hovered{transform:scale(1.3)}", self.html)
+        self.assertNotIn(".leaflet-marker-icon{transform:scale(1.3)", self.html)
+
+    def test_nearby_uses_filtered_unique_events_and_nearest_occurrence(self):
+        self.assertIn("const NEARBY_RADIUS_M=2000", self.html)
+        nearby = self.html[self.html.index("function buildNearbyActivities"):self.html.index("function formatDistance")]
+        self.assertIn("buildPopupCards(originLocation)", nearby)
+        self.assertIn("if(item.group.id===originLocation.event.id)return", nearby)
+        self.assertIn("if(distanceMeters>NEARBY_RADIUS_M)return", nearby)
+        self.assertIn("const nearestByEvent=new Map()", nearby)
+        self.assertIn("!current||distanceMeters<current.distanceMeters", nearby)
+        self.assertNotIn("venueId===originLocation.venueId", nearby)
+        self.assertIn("return [...nearestByEvent.values()].sort", nearby)
+
+    def test_nearby_cta_hides_zero_and_formats_distance(self):
+        cta = self.html[self.html.index("function nearbyCtaHtml"):self.html.index("function detailHtml")]
+        self.assertIn("nearby.length?", cta)
+        self.assertIn("附近 2 公里還有 '+nearby.length+' 個活動", cta)
+        self.assertIn("if(distanceMeters<1)return '同地點'", self.html)
+        self.assertIn("if(distanceMeters<1000)return Math.round(distanceMeters)+' 公尺'", self.html)
+
+    def test_cluster_and_nearby_share_activity_picker(self):
+        self.assertEqual(self.html.count('id="activityPickerOverlay"'), 1)
+        self.assertIn("function openActivityPicker({mode,items,title,sourceLocationId=null})", self.html)
+        self.assertIn("openActivityPicker({mode:'cluster'", self.html)
+        self.assertIn("openActivityPicker({mode:'nearby'", self.html)
+        self.assertIn("zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false", self.html)
+        cluster_handler = self.html[self.html.index("function handleClusterActivate"):self.html.index("cluster.on('clusterclick'")]
+        self.assertIn("if(MOBILE_QUERY.matches)", cluster_handler)
+        self.assertIn("clusterLayer.zoomToBounds()", cluster_handler)
+        self.assertIn("clusterLayer.spiderfy()", cluster_handler)
+
+    def test_picker_close_is_transient_and_selection_is_unified(self):
+        close = self.html[self.html.index("function closeActivityPicker()"):self.html.index("function openNearbyPicker")]
+        for forbidden in ("clearSelection", "selectedLocationId", "lastViewedLocationId", "updateEventParam", "flyTo", "spiderfy"):
+            self.assertNotIn(forbidden, close)
+        select = self.html[self.html.index("function selectActivityPickerItem"):self.html.index("function mobileCardHtml")]
+        self.assertLess(select.index("closeActivityPicker()"), select.index("selectLocation(locationId"))
+        self.assertIn("if(document.getElementById('activityPickerOverlay').classList.contains('show'))closeActivityPicker()", self.html)
+
+    def test_popup_metadata_and_empty_address_rules(self):
+        popup_meta = self.html[self.html.index("function popupMetadataHtml"):self.html.index("function actionHtml")]
+        self.assertIn("group.ip?", popup_meta)
+        self.assertIn("group.organizer?", popup_meta)
+        self.assertNotIn("licensor", popup_meta)
+        app_js = self.html[self.html.index("const uiState="):]
+        self.assertNotIn("地址未提供", app_js)
+        self.assertNotIn("地點未提供", app_js)
+        self.assertIn("FLOATING_ADDRESS_TEXT", app_js)
 
     def test_no_settimeout_hacks_for_map_cluster(self):
         app_js = self.html[self.html.index("const uiState="):]
