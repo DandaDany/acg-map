@@ -2,6 +2,8 @@
 import json
 import os
 import re
+import shutil
+import subprocess
 import unittest
 
 
@@ -271,6 +273,116 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("!current||distanceMeters<current.distanceMeters", nearby)
         self.assertNotIn("venueId===originLocation.venueId", nearby)
         self.assertIn("return [...nearestByEvent.values()].sort", nearby)
+
+    def test_nearby_runtime_algorithm_cases(self):
+        node = shutil.which("node")
+        if not node:
+            self.skipTest("node is unavailable")
+
+        start = self.html.index("function buildNearbyActivities")
+        end = self.html.index("function formatDistance", start)
+        build_nearby = self.html[start:end]
+        filter_start = self.html.index("function groupMatchesQuery")
+        filter_end = self.html.index("function statusClass", filter_start)
+        filter_pipeline = self.html[filter_start:filter_end]
+        popup_start = self.html.index("function occurrenceDistance")
+        popup_end = self.html.index("function preparePopupCards", popup_start)
+        popup_pipeline = self.html[popup_start:popup_end]
+        script = f"""
+const NEARBY_RADIUS_M=2000;
+const normalizeText=value=>String(value||'').toLowerCase();
+const sortDiscoverActivities=items=>items;
+const L={{latLng:(lat,lng)=>({{lat,lng,distanceTo:other=>Math.abs(other.lat-lat)}})}};
+let DATA={{venues:[]}},activityGroups=new Map(),venueEventIndex=new Map();
+let uiState={{filters:{{city:'all',time:'all',form:'all',fee:'all',multi:'all'}},query:''}};
+{filter_pipeline}
+{popup_pipeline}
+{build_nearby}
+const origin={{id:'A1',event:{{id:'A'}},venueId:'shared',lat:0,lng:0,status:{{kind:'ongoing'}},city:'台北市'}};
+function item(eventId,id,distanceMeters,options={{}}){{
+  const location={{id,event:{{id:eventId}},venueId:options.venueId||id,lat:distanceMeters,lng:0,status:{{kind:options.time||'ongoing'}},city:options.city||'台北市'}};
+  const group={{id:eventId,title:options.title||eventId,ip:'',organizer:'',licensor:'',status:{{kind:'ongoing'}},form:options.form||'展覽',fee:options.fee||'免費',multiFilter:options.multi||'single',locations:[location]}};
+  return {{group,location}};
+}}
+function setWorld(items,filters={{}},query=''){{
+  activityGroups=new Map();venueEventIndex=new Map();
+  for(const entry of items){{
+    const existing=activityGroups.get(entry.group.id);
+    if(existing)existing.locations.push(entry.location);else activityGroups.set(entry.group.id,entry.group);
+    const rows=venueEventIndex.get(entry.location.venueId)||[];rows.push(entry.location);venueEventIndex.set(entry.location.venueId,rows);
+  }}
+  DATA={{venues:[...venueEventIndex.keys()].map(_id=>({{_id}}))}};
+  uiState={{filters:{{city:'all',time:'all',form:'all',fee:'all',multi:'all',...filters}},query}};
+}}
+function ids(result){{return result.map(x=>x.eventId);}}
+function assert(condition,message){{if(!condition)throw new Error(message);}}
+
+setWorld([item('A','A2',300),item('B','B1',500)]);
+assert(buildPopupCards(origin).length===2,'popup filter pipeline returned unexpected cards');
+let result=buildNearbyActivities(origin);
+assert(result.length===1&&result[0].eventId==='B','current event occurrences must be excluded');
+
+setWorld([item('A','A1',0,{{venueId:'shared'}}),item('B','B1',0,{{venueId:'shared'}})]);
+result=buildNearbyActivities(origin);
+assert(result.length===1&&result[0].eventId==='B'&&result[0].distanceMeters===0,'same venue event must be included at zero distance');
+
+setWorld([item('B','B1',400),item('B','B2',1200)]);
+result=buildNearbyActivities(origin);
+assert(result.length===1&&result[0].locationId==='B1'&&result[0].distanceMeters===400,'multi-location event must use nearest occurrence once');
+
+setWorld([item('C','C1',2000),item('D','D1',2001)]);
+result=buildNearbyActivities(origin);
+assert(ids(result).join(',')==='C','2000m must be included and 2001m excluded');
+
+const filterCases=[
+  ['city',{{city:'台北市'}},'',{{city:'台北市'}},{{city:'高雄市'}}],
+  ['time',{{time:'ongoing'}},'',{{time:'ongoing'}},{{time:'upcoming'}}],
+  ['form',{{form:'展覽'}},'',{{form:'展覽'}},{{form:'快閃店'}}],
+  ['fee',{{fee:'免費'}},'',{{fee:'免費'}},{{fee:'付費'}}],
+  ['multi',{{multi:'multi'}},'',{{multi:'multi'}},{{multi:'single'}}],
+  ['search',{{}},'needle',{{title:'needle event'}},{{title:'other event'}}],
+];
+for(const [filter,filters,query,visibleOptions,excludedOptions] of filterCases){{
+  setWorld([item('VISIBLE','V-'+filter,500,visibleOptions),item('EXCLUDED','X-'+filter,400,excludedOptions)],filters,query);
+  result=buildNearbyActivities(origin);
+  assert(ids(result).join(',')==='VISIBLE',filter+'-excluded activity leaked into Nearby');
+}}
+"""
+        completed = subprocess.run(
+            [node, "-e", script],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stderr)
+
+    def test_desktop_cluster_keyboard_contract(self):
+        cluster = self.html[self.html.index("const cluster=L.markerClusterGroup") : self.html.index("const FORM_ICON=")]
+        self.assertIn("className:'marker-cluster'", cluster)
+        self.assertIn("icon.tabIndex=0", cluster)
+        self.assertIn("icon.setAttribute('role','button')", cluster)
+        self.assertIn("icon.setAttribute('aria-label','查看這個區域的活動')", cluster)
+        self.assertIn("event.key!=='Enter'||MOBILE_QUERY.matches", cluster)
+        self.assertIn("event.preventDefault();handleClusterActivate(layer)", cluster)
+        desktop = cluster[cluster.index("function handleClusterActivate") : cluster.index("cluster.on('clusterclick'")]
+        self.assertIn("openActivityPicker({mode:'cluster'", desktop)
+        self.assertNotIn("selectLocation", desktop)
+        self.assertNotIn("updateEventParam", desktop)
+        self.assertNotIn("setTimeout", desktop)
+
+    def test_activity_picker_focus_and_hover_geometry_contract(self):
+        self.assertIn(".activity-picker-slot{display:grid;min-height:426px", self.html)
+        self.assertIn(".activity-picker-copy{display:block;min-height:105px", self.html)
+        self.assertIn("-webkit-line-clamp:3", self.html)
+        self.assertIn(".activity-picker-card.is-hovered{z-index:1;border-color:#ff9a4d;transform:scale(1.3)}", self.html)
+        self.assertIn("document.getElementById('activityPickerClose').focus({preventScroll:true})", self.html)
+        self.assertIn("addEventListener('keydown',event=>trapFocus(event,document.getElementById('activityPickerOverlay')))", self.html)
+        self.assertIn("if(document.getElementById('activityPickerOverlay').classList.contains('show'))closeActivityPicker()", self.html)
+        close = self.html[self.html.index("function closeActivityPicker()") : self.html.index("function openNearbyPicker")]
+        self.assertIn("activityPickerReturnFocus.focus({preventScroll:true})", close)
+        for forbidden in ("clearSelection", "updateEventParam", "history."):
+            self.assertNotIn(forbidden, close)
 
     def test_nearby_cta_hides_zero_and_formats_distance(self):
         cta = self.html[self.html.index("function nearbyCtaHtml"):self.html.index("function detailHtml")]
