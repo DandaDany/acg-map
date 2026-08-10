@@ -15,5 +15,49 @@
     "img": "https://instagram.ftpe7-3.fna.fbcdn.net/v/t51.82787-19/568687837_18205120360314459_5761462485831570811_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.ftpe7-3.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2gE_Y5TtbhaVx0XaHTCC_yH031L1MMct8mRNY35EmE0j-r8udu5bY8T5IpY7THKHiqs&_nc_ohc=6mZ9pK7b3YUQ7kNvwFpahcM&_nc_gid=CizvvJyQIC-LDr_17OsMiQ&edm=APoiHPcBAAAA&ccb=7-5&oh=00_Af-qblg6iL4ULAhBW7WLb_EEwq7BcqJ67OLgoQUorizQAw&oe=6A3E713D&_nc_sid=22de04"
    }
   ]
+ },
+ "高雄夢時代購物中心 8F": {
+  "city": "高雄市",
+  "lat": 22.594937485198145,
+  "lng": 120.3069923509266,
+  "loc": "exact",
+  "addr": "高雄市前鎮區中華五路789號",
+  "url": "https://www.facebook.com/nikonikohk/posts/950401191432638/",
+  "ex": [
+   {
+    "t": "迪士尼《愛麗絲夢遊仙境》牡蠣寶寶主題養殖中心 期間限定店",
+    "s": "2026/08/07",
+    "e": "2026/09/13",
+    "l": "https://www.facebook.com/nikonikohk/posts/950401191432638/",
+    "img": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/762553781_950400438099380_790507354584271803_n.jpg",
+    "cat2": "快閃店",
+    "fee": "免費",
+    "ip": "愛麗絲夢遊仙境",
+    "org": "NIKO-NIKO",
+    "lic": "Disney Enterprises, Inc."
+   }
+  ]
+ },
+ "臺中市民廣場": {
+  "city": "台中市",
+  "lat": 24.150193273804103,
+  "lng": 120.66353200705628,
+  "loc": "exact",
+  "addr": "台中市西區公益路163-1號",
+  "url": "https://www.instagram.com/p/Db2GvBpjGvd/",
+  "ex": [
+   {
+    "t": "臺中市交通宣導 × 史努比快閃店",
+    "s": "2026/08/14",
+    "e": "2026/10/04",
+    "l": "https://www.instagram.com/p/Db2GvBpjGvd/",
+    "img": "https://instagram.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/767540663_1469665995200928_3462049038479779898_n.jpg",
+    "cat2": "快閃店",
+    "fee": "免費",
+    "ip": "史努比（PEANUTS）",
+    "org": "臺中市政府交通局",
+    "lic": "Peanuts Worldwide LLC"
+   }
+  ]
  }
 }
