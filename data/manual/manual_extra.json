@@ -1,26 +1,4 @@
 {
- "DREAM PLAZA": {
-  "city": "台北市",
-  "lat": 25.0395151,
-  "lng": 121.5652423,
-  "loc": "exact",
-  "addr": "台北市信義區松高路11號",
-  "url": "https://journey2026.bandainamcoth.tw/",
-  "ex": [
-   {
-    "t": "Bandai Namco Asia JOURNEY TAIWAN",
-    "s": "2026/07/31",
-    "e": "2026/08/09",
-    "l": "https://journey2026.bandainamcoth.tw/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bandai_namco_journey_taiwan_20260731.jpg",
-    "cat2": "實體體驗/Experience",
-    "fee": "免費",
-    "ip": "Bandai Namco（鋼彈、航海王、哥吉拉、Tamagotchi、超人力霸王）",
-    "org": "Bandai Namco Asia",
-    "lic": "Bandai Namco Holdings Inc.及各作品權利人"
-   }
-  ]
- },
  "IKEA 內湖店": {
   "city": "台北市",
   "lat": 25.06084,
@@ -214,18 +192,6 @@
     "cat2": "快閃店/Pop-up Store",
     "fee": "付費",
     "ip": ".Bloom×メロキス",
-    "org": "animate（安利美特台灣）",
-    "lic": "官方"
-   },
-   {
-    "t": "《相反的你和我》雪人睡衣派對 FAIR in animate 活動紀念 Gratte",
-    "s": "2026/07/18",
-    "e": "2026/08/09",
-    "l": "https://www.facebook.com/ximen.popup.animate/posts/122141800413055906/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/you_and_i_gratte_20260718.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "相反的你和我（正反対な君と僕）",
     "org": "animate（安利美特台灣）",
     "lic": "官方"
    },
@@ -2223,28 +2189,6 @@
     "ip": "初音未來",
     "org": "需人工確認",
     "lic": "需人工確認"
-   }
-  ]
- },
- "統一時代百貨台北店": {
-  "city": "台北市",
-  "lat": 25.0408646,
-  "lng": 121.565417,
-  "loc": "exact",
-  "addr": "台北市信義區忠孝東路五段8號",
-  "url": "https://journey2026.bandainamcoth.tw/",
-  "ex": [
-   {
-    "t": "Bandai Namco Asia JOURNEY TAIWAN",
-    "s": "2026/07/31",
-    "e": "2026/08/09",
-    "l": "https://journey2026.bandainamcoth.tw/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bandai_namco_journey_taiwan_20260731.jpg",
-    "cat2": "實體體驗/Experience",
-    "fee": "免費",
-    "ip": "Bandai Namco（鋼彈、航海王、哥吉拉、Tamagotchi、超人力霸王）",
-    "org": "Bandai Namco Asia",
-    "lic": "Bandai Namco Holdings Inc.及各作品權利人"
    }
   ]
  },
