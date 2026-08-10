@@ -139,11 +139,17 @@ def parse_dates(text):
         if 90 <= y < 1911:  # 民國年，例如 115-07-25
             y += 1911
         return f"{y}/{int(m):02d}/{int(d):02d}"
+    def ordered(start, end):
+        # 列表卡片的容器偶爾會包含下一張卡的日期，造成第二個日期早於
+        # 第一個日期。這種結果不可能是合法展期；保守視為單日活動，
+        # 避免把錯誤日期送進公開資料。
+        return (start, start) if end and end < start else (start, end)
     m = re.search(r'((?:20)?\d{2,3})[.\-/](\d{1,2})[.\-/](\d{1,2})\s*[-~]\s*(\d{1,2})[.\-/](\d{1,2})(?![.\-/\d])', text)
     if m:
-        y,mo,d,em,ed = m.groups(); return fmt(y,mo,d), fmt(y,em,ed)
+        y,mo,d,em,ed = m.groups()
+        return ordered(fmt(y,mo,d), fmt(y,em,ed))
     ds = re.findall(r'((?:20)?\d{2,3})[.\-/](\d{1,2})[.\-/](\d{1,2})', text)
-    if len(ds) >= 2: return fmt(*ds[0]), fmt(*ds[1])
+    if len(ds) >= 2: return ordered(fmt(*ds[0]), fmt(*ds[1]))
     if len(ds) == 1: return fmt(*ds[0]), ""
     return "", ""
 
