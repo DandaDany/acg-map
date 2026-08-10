@@ -819,24 +819,23 @@ a{color:inherit}
 .lbl-city{font-size:15px;color:#1b1b1b;letter-spacing:.5px}
 .lbl-town{font-size:12px;color:#46505e}
 .leaflet-container{font-family:inherit}
-.pinwrap{position:relative;width:40px;height:52px;cursor:pointer}
+.pinwrap{position:relative;width:40px;height:52px;cursor:pointer;transition:transform .16s ease;transform-origin:50% 100%}
 .pinsvg{display:block;overflow:visible;filter:drop-shadow(0 3px 5px rgba(0,0,0,.45));transition:transform .12s ease;transform-origin:50% 100%}
-.pinwrap:hover .pinsvg{transform:scale(1.12)}
 .pinwrap.approx .pinsvg{opacity:.7}
 .pinwrap::after{content:"";position:absolute;inset:-6px;border-radius:14px}
 .marker-badge{position:absolute;z-index:3;top:-3px;right:-3px;display:grid;min-width:18px;height:18px;place-items:center;padding:0 4px;border:2px solid var(--bg);border-radius:999px;background:var(--accent2);color:#fff;font-size:11px;font-weight:800}
 .pinwrap.approx .marker-badge{background:#7c8aa6}
 .soondot{position:absolute;z-index:3;top:-2px;left:-2px;width:12px;height:12px;border:2px solid var(--bg);border-radius:50%;background:var(--accent);box-shadow:0 0 0 1px rgba(255,90,95,.4)}
-.kv-marker-shell{position:relative;display:flex;width:94px;height:76px;align-items:flex-end;justify-content:center}
+.kv-marker-shell{position:relative;display:flex;width:94px;height:76px;align-items:flex-end;justify-content:center;transition:transform .16s ease;transform-origin:50% 100%}
 .kv-marker{position:relative;width:58px;height:74px;border:3px solid white;border-radius:12px;background:#18202c;box-shadow:0 5px 16px rgba(0,0,0,.42);transition:width .16s ease,height .16s ease,transform .16s ease}
 .kv-marker.landscape{width:92px;height:58px}
 .kv-marker-body{position:absolute;inset:0;overflow:hidden;border-radius:9px}
 .kv-marker .media-back{filter:blur(8px);opacity:.55}.kv-marker .media-front{object-fit:contain;object-position:center}
 .kv-marker>.marker-badge{top:-7px;right:-7px;border-color:#fff;background:#e53935}
-.pinwrap.is-selected{transform:scale(1.3);transform-origin:50% 100%}
+.pinwrap.is-selected,.pinwrap.is-hovered,.kv-marker-shell.is-selected,.kv-marker-shell.is-hovered{transform:scale(1.3)}
 .pinwrap.is-selected .pinsvg{transform:none}
 .pinwrap.is-selected .pinsvg>path:first-child{stroke:#ff2d2d}
-.kv-marker-shell.is-selected .kv-marker{border-color:#ff2d2d;transform:scale(1.3);transform-origin:bottom center}
+.kv-marker-shell.is-selected .kv-marker{border-color:#ff2d2d}
 .cl{display:flex;width:44px;height:44px;align-items:center;justify-content:center;border:3px solid rgba(255,255,255,.9);border-radius:50%;background:#3a86ff;color:white;box-shadow:0 4px 14px rgba(0,0,0,.38);font-size:13px;font-weight:850}.cl-md{background:#ff914d}.cl-lg{width:50px;height:50px;background:#ff6469}
 .leaflet-bottom.leaflet-right{margin:0 8px 8px 0}
 
@@ -866,11 +865,29 @@ a{color:inherit}
 .action-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .action-btn{padding:0 14px;border:1px solid var(--line);background:#151d2a}
 .action-btn.primary{border-color:#3c6da8;background:#203c62;color:#cfe3ff}
+.popup-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
+.popup-arrow{display:grid;width:44px;height:44px;place-items:center;border:1px solid var(--line);border-radius:50%;background:#151d2a;color:#aab4c3;font-size:22px;cursor:pointer}
+.popup-arrow:hover:not(:disabled){border-color:#66748a;color:#fff}.popup-arrow:disabled{opacity:.28;cursor:default}
+.popup-position{color:var(--muted);font-size:11px}
+.popup-metadata{display:grid;gap:2px;margin-top:7px}
+.nearby-cta{display:flex;width:100%;min-height:44px;align-items:center;justify-content:space-between;margin-top:10px;padding:0;border:0;background:transparent;color:#ff9a4d;font-size:13px;font-weight:700;text-align:left;cursor:pointer}
+.nearby-cta:hover{color:#ffb478;text-decoration:underline}
 .event-picker{height:100%;overflow:auto;padding:20px}.event-picker h2{margin:0 0 16px;font-size:22px}
 .event-picker-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
 .picker-card{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--card);text-align:left;cursor:pointer}
 .picker-card:hover{border-color:var(--accent2)}
 .picker-card .media-frame{height:220px}.picker-copy{padding:11px}.picker-copy h3{margin:0 0 6px;font-size:14px;line-height:1.4}
+.activity-picker-overlay{display:none;position:fixed;z-index:3600;inset:0;background:rgba(4,7,12,.92);overflow:auto}
+.activity-picker-overlay.show{display:block}.activity-picker-panel{min-height:100dvh;padding:clamp(22px,4vw,52px)}
+.activity-picker-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;max-width:1200px;margin:0 auto 18px}
+.activity-picker-head h2{margin:0 0 4px;font-size:clamp(22px,3vw,34px)}.activity-picker-count{color:var(--muted)}
+.activity-picker-close{display:grid;width:44px;height:44px;flex:none;place-items:center;border:1px solid rgba(255,255,255,.28);border-radius:12px;background:#151d2a;color:#fff;font-size:24px;cursor:pointer}
+.activity-picker-grid{display:grid;max-width:1200px;margin:0 auto;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:28px}
+.activity-picker-slot{display:grid;min-height:340px;place-items:center;padding:12%}
+.activity-picker-card{width:77%;min-width:0;padding:0;overflow:hidden;border:1px solid var(--line);border-radius:15px;background:var(--card);color:var(--text);text-align:left;cursor:pointer;transition:transform .16s ease,border-color .16s ease}
+.activity-picker-card.is-hovered{z-index:1;border-color:#ff9a4d;transform:scale(1.3)}
+.activity-picker-card .media-frame{height:220px}.activity-picker-copy{display:block;padding:11px}.activity-picker-copy h3{margin:0 0 7px;font-size:14px;line-height:1.4}
+.activity-picker-secondary{display:block;color:var(--muted);font-size:12px;line-height:1.45}
 
 .lightbox{align-items:center;justify-content:center;padding:36px}
 .lightbox img{display:block;max-width:100%;max-height:100%;object-fit:contain;touch-action:auto}
@@ -954,6 +971,10 @@ a{color:inherit}
   .mobile-card-date{color:var(--text);font-size:12.5px;font-weight:650}
   .mobile-card-info .action-row{margin-top:auto;flex-wrap:wrap;gap:6px}
   .mobile-card-info .action-btn{min-height:36px;padding:0 11px;font-size:11.5px}
+  .mobile-card-info .popup-metadata{font-size:11px}.mobile-card-info .nearby-cta{font-size:11.5px}
+  .mobile-card-info .popup-nav{margin-top:auto}.mobile-card-info .popup-arrow{width:44px;height:44px}
+  .activity-picker-panel{padding:18px 10px 40px}.activity-picker-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .activity-picker-slot{min-height:245px;padding:0}.activity-picker-card{width:100%}.activity-picker-card .media-frame{height:170px}
   .dialog-overlay{display:none!important}
   .lightbox{padding:18px}
   .toast{bottom:calc(var(--mobile-nav) + env(safe-area-inset-bottom,0px) + 16px)}
@@ -1056,6 +1077,13 @@ a{color:inherit}
   <section class="dialog-panel" id="dialogPanel" role="dialog" aria-modal="true" aria-label="活動資訊"></section>
 </div>
 
+<div class="activity-picker-overlay" id="activityPickerOverlay" aria-hidden="true">
+  <section class="activity-picker-panel" id="activityPickerPanel" role="dialog" aria-modal="true" aria-labelledby="activityPickerTitle">
+    <header class="activity-picker-head"><div><h2 id="activityPickerTitle"></h2><div class="activity-picker-count" id="activityPickerCount"></div></div><button class="activity-picker-close" id="activityPickerClose" type="button" aria-label="關閉活動選擇">×</button></header>
+    <div class="activity-picker-grid" id="activityPickerGrid"></div>
+  </section>
+</div>
+
 <div class="mobile-venue-sheet" id="mobileVenueSheet" aria-hidden="true">
   <section class="mobile-venue-card" role="dialog" aria-modal="true" aria-label="活動資訊">
     <header class="mobile-venue-head"><div class="sheet-grip" id="mobileVenueGrip" aria-hidden="true"></div><button class="mobile-venue-close" id="mobileVenueClose" type="button" aria-label="關閉活動資訊">×</button></header>
@@ -1108,6 +1136,7 @@ const uiState={
   selectedVenueId:null,
   selectedLocationId:null,
   selectedEventId:null,
+  lastViewedLocationId:null,
   discoverScrollTop:{discover:0,latest:0},
   mapView:null,
   mapHasVisibleView:false
@@ -1449,8 +1478,9 @@ function locationRowHtml(location,group){
       +(link?'<div class="location-actions"><a class="location-nav" href="'+esc(link)+'" target="_blank" rel="noopener">官方網站 ↗</a></div>':'')
       +'</div></div>';
   }
+  const address=cleanAddress(location.address);
   return '<div class="location-row"><div class="location-top"><div>'+(heading?'<div class="location-name">'+esc(heading)+'</div>':'')
-    +'<div class="location-address">'+esc(cleanAddress(location.address)||'地址未提供')+'</div></div>'
+    +(address?'<div class="location-address">'+esc(address)+'</div>':'')+'</div>'
     +'<div class="location-actions"><a class="location-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航</a></div></div></div>';
 }
 function primaryLocationFor(group,preferredLocationId=''){
@@ -1466,6 +1496,11 @@ function metadataHtml(group){
   return (group.ip?'<div class="meta-row"><strong>IP：</strong>'+esc(group.ip)+'</div>':'')
     +(group.organizer?'<div class="meta-row"><strong>主辦：</strong>'+esc(group.organizer)+'</div>':'')
     +(group.licensor?'<div class="meta-row"><strong>授權：</strong>'+esc(group.licensor)+'</div>':'');
+}
+function popupMetadataHtml(group){
+  const rows=(group.ip?'<div class="meta-row"><strong>IP：</strong>'+esc(group.ip)+'</div>':'')
+    +(group.organizer?'<div class="meta-row"><strong>主辦：</strong>'+esc(group.organizer)+'</div>':'');
+  return rows?'<div class="popup-metadata">'+rows+'</div>':'';
 }
 function actionHtml(group){
   const link=safeUrl(group.link);
@@ -1514,12 +1549,25 @@ function renderDiscover(groups){
   wireImages(list);
   requestAnimationFrame(()=>{list.scrollTop=uiState.discoverScrollTop[uiState.discoverMode]||0});
 }
+function popupNavigationHtml(){
+  if(popupCards.length<=1)return '';
+  return '<div class="popup-nav"><button class="popup-arrow" type="button" data-popup-move="-1" aria-label="上一個活動" '+(popupCardIndex===0?'disabled':'')+'>‹</button>'
+    +'<span class="popup-position">'+(popupCardIndex+1)+' / '+popupCards.length+'</span>'
+    +'<button class="popup-arrow" type="button" data-popup-move="1" aria-label="下一個活動" '+(popupCardIndex===popupCards.length-1?'disabled':'')+'>›</button></div>';
+}
+function nearbyCtaHtml(location){
+  if(!location||location.noAddress)return '';
+  const nearby=buildNearbyActivities(location);
+  return nearby.length?'<button class="nearby-cta" type="button" data-nearby-location="'+esc(location.id)+'"><span>附近 2 公里還有 '+nearby.length+' 個活動</span><span aria-hidden="true">›</span></button>':'';
+}
 function detailHtml(group,preferredLocationId=''){
+  const location=primaryLocationFor(group,preferredLocationId);
   return '<div class="event-detail">'+mediaFrameHtml(group.image,group.title,false)
-    +'<div class="detail-copy">'+tagHtml(group,primaryLocationFor(group,preferredLocationId).city)+'<h2>'+esc(group.title)+'</h2>'
+    +'<div class="detail-copy">'+tagHtml(group,location.city)+'<h2>'+esc(group.title)+'</h2>'
+    +popupMetadataHtml(group)
     +'<div class="meta-row"><strong>日期：</strong>'+esc(groupDateText(group))+'</div>'
     +'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,preferredLocationId)+'</section>'
-    +actionHtml(group)+'</div></div>';
+    +nearbyCtaHtml(location)+actionHtml(group)+popupNavigationHtml()+'</div></div>';
 }
 function updateEventParam(eventId,mode='push'){
   const url=new URL(location.href);
@@ -1532,9 +1580,12 @@ function focusDialog(){
   panel.focus({preventScroll:true});
 }
 let mapSelectionActive=false;
-function openDesktopEventModal(eventId,returnTarget=null,historyMode='push',preferredLocationId=''){
+function openDesktopEventModal(eventId,returnTarget=null,historyMode='push',preferredLocationId='',preservePopupCards=false){
   const group=activityGroups.get(eventId);
   if(!group) return;
+  const popupOrigin=primaryLocationFor(group,preferredLocationId);
+  if(group.floating){popupCards=[{group,location:popupOrigin}];popupCardIndex=0}
+  else preparePopupCards(popupOrigin,preservePopupCards);
   lastFocus=document.activeElement;
   activeDialogMode='event';dialogReturn=returnTarget;uiState.selectedEventId=eventId;
   const panel=document.getElementById('dialogPanel');
@@ -1680,7 +1731,7 @@ function syncLabels(){ const z=map.getZoom();
 map.on('zoomend',syncLabels); syncLabels();
 
 const cluster=L.markerClusterGroup({
-  maxClusterRadius:46,showCoverageOnHover:false,spiderfyOnMaxZoom:true,
+  maxClusterRadius:46,showCoverageOnHover:false,zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false,
   iconCreateFunction(group){
     let sum=0;group.getAllChildMarkers().forEach(marker=>sum+=marker.groupCount||0);
     const size=sum>=20?'lg':sum>=8?'md':'sm';
@@ -1688,6 +1739,36 @@ const cluster=L.markerClusterGroup({
   }
 });
 map.addLayer(cluster);
+function clusterPickerItems(clusterLayer){
+  const seen=new Set();
+  return clusterLayer.getAllChildMarkers().map(marker=>{
+    if(!marker.locationId||seen.has(marker.locationId))return null;
+    seen.add(marker.locationId);
+    const location=locationById(marker.locationId);
+    const group=location&&activityGroups.get(location.event.id);
+    return location&&group?{eventId:group.id,locationId:location.id,group,location}:null;
+  }).filter(Boolean);
+}
+function handleClusterActivate(clusterLayer){
+  if(!clusterLayer)return;
+  if(MOBILE_QUERY.matches){
+    if(map.getZoom()<map.getMaxZoom())clusterLayer.zoomToBounds();
+    else clusterLayer.spiderfy();
+    return;
+  }
+  openActivityPicker({mode:'cluster',items:clusterPickerItems(clusterLayer),title:'這個區域的活動'});
+}
+cluster.on('clusterclick',event=>{L.DomEvent.stopPropagation(event);handleClusterActivate(event.layer)});
+function wireClusterKeyboard(){
+  document.querySelectorAll('.marker-cluster').forEach(icon=>{icon.tabIndex=0;icon.setAttribute('role','button');icon.setAttribute('aria-label','查看這個區域的活動')});
+}
+cluster.on('animationend spiderfied unspiderfied',()=>requestAnimationFrame(wireClusterKeyboard));
+map.getContainer().addEventListener('keydown',event=>{
+  if(event.key!=='Enter'||MOBILE_QUERY.matches)return;
+  const icon=event.target.closest('.marker-cluster');if(!icon)return;
+  const layer=Object.values(map._layers).find(item=>item&&item._icon===icon&&typeof item.getAllChildMarkers==='function');
+  if(layer){event.preventDefault();handleClusterActivate(layer)}
+});
 const FORM_ICON={
   '展覽':{c:'#3f8ad0',g:'<g transform="translate(20 19)" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="-8" y="-6" width="16" height="12" rx="1.6"/><circle cx="-3.6" cy="-1.6" r="1.5" fill="#fff" stroke="none"/><path d="M8 5.4 L1.4 -1 L-4.2 4.6"/></g>'},
   '快閃店':{c:'#e05aa0',g:'<g transform="translate(20 19)" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M-6 -2 L-5.2 6.6 a1.3 1.3 0 0 0 1.3 1.2 L3.9 7.8 a1.3 1.3 0 0 0 1.3 -1.2 L6 -2 Z"/><path d="M-3 -2 a3 3 0 0 1 6 0"/></g>'},
@@ -1780,7 +1861,10 @@ function renderMapMarkers(){
       marker.venueId=venue._id;
       marker.eventId=location.event.id;
       marker.locationId=location.id;
-      marker.on('add',()=>requestAnimationFrame(()=>classifyKvMarker(marker)));
+      marker.isHovered=false;
+      marker.on('add',()=>requestAnimationFrame(()=>{classifyKvMarker(marker);applyMarkerVisualState(marker)}));
+      marker.on('mouseover',()=>{if(MOBILE_QUERY.matches)return;marker.isHovered=true;applyMarkerVisualState(marker)});
+      marker.on('mouseout',()=>{if(MOBILE_QUERY.matches)return;marker.isHovered=false;applyMarkerVisualState(marker)});
       marker.on('click',event=>{
         L.DomEvent.stopPropagation(event);
         selectLocation(location.id,{openPopup:true,revealMarker:true,recenter:false,updateHistory:true});
@@ -1789,8 +1873,11 @@ function renderMapMarkers(){
     });
   });
   cluster.addLayers(markers);
+  requestAnimationFrame(wireClusterKeyboard);
   const selected=uiState.selectedLocationId;
-  if(selected&&!markers.some(marker=>marker.locationId===selected)) closeActiveMapPopup({clearSelection:true,updateHistory:true});
+  const visibleLocationIds=new Set(markers.map(marker=>marker.locationId));
+  if(uiState.lastViewedLocationId&&!visibleLocationIds.has(uiState.lastViewedLocationId))uiState.lastViewedLocationId=null;
+  if(selected&&!visibleLocationIds.has(selected)) closeActiveMapPopup({clearSelection:true,updateHistory:true});
   else requestAnimationFrame(()=>{
     highlightSelectedMarker();
     if(selected&&uiState.tab==='map')revealMarkerForLocation(selected,selectionVersion);
@@ -1799,14 +1886,15 @@ function renderMapMarkers(){
     }
   });
 }
+function applyMarkerVisualState(marker){
+  const highlighted=marker.locationId===(uiState.selectedLocationId||uiState.lastViewedLocationId);
+  marker.setZIndexOffset(marker.isHovered?2000:(highlighted?1000:0));
+  const element=marker.getElement();
+  const root=element&&element.querySelector('.pinwrap,.kv-marker-shell');
+  if(root){root.classList.toggle('is-selected',highlighted);root.classList.toggle('is-hovered',!!marker.isHovered)}
+}
 function highlightSelectedMarker(){
-  markers.forEach(marker=>{
-    const on=marker.locationId===uiState.selectedLocationId;
-    marker.setZIndexOffset(on?1000:0);
-    const element=marker.getElement();
-    const root=element&&element.querySelector('.pinwrap,.kv-marker-shell');
-    if(root) root.classList.toggle('is-selected',on);
-  });
+  markers.forEach(applyMarkerVisualState);
 }
 function locationById(locationId){
   for(const locations of venueEventIndex.values()){
@@ -1851,6 +1939,7 @@ function selectLocation(locationId,options={}){
   }
   const version=++selectionVersion;
   uiState.selectedLocationId=location.id;uiState.selectedVenueId=location.venueId;uiState.selectedEventId=location.event.id;
+  uiState.lastViewedLocationId=location.id;
   mapSelectionActive=true;
   ensureMapVisible(version,()=>{
     const reveal=()=>{
@@ -1858,8 +1947,8 @@ function selectLocation(locationId,options={}){
       if(settings.revealMarker)revealMarkerForLocation(location.id,version);
       else highlightSelectedMarker();
       if(settings.openPopup){
-        if(MOBILE_QUERY.matches){openMobileVenueSheet(location.venueId,location.event.id);if(settings.updateHistory)updateEventParam(location.event.id,'push')}
-        else openDesktopEventModal(location.event.id,null,settings.updateHistory?'push':false,location.id);
+        if(MOBILE_QUERY.matches){openMobileVenueSheet(location.venueId,location.event.id,!!settings.preservePopupCards);if(settings.updateHistory)updateEventParam(location.event.id,'push')}
+        else openDesktopEventModal(location.event.id,null,settings.updateHistory?'push':false,location.id,!!settings.preservePopupCards);
       }else if(settings.updateHistory)updateEventParam(location.event.id,'push');
     };
     if(settings.recenter)focusMapLocation(location,13,reveal);else reveal();
@@ -1907,9 +1996,9 @@ function renderFloatingEvents(){
 function openFloatingEvent(id,updateHistory=true){
   const group=activityGroups.get(id);
   if(!group) return;
-  clearSelection();uiState.selectedEventId=id;
+  clearSelection();uiState.lastViewedLocationId=null;uiState.selectedEventId=id;
   if(MOBILE_QUERY.matches){
-    mobileCards=[{group,location:group.locations[0]}];mobileCardIndex=0;
+    popupCards=[{group,location:group.locations[0]}];popupCardIndex=0;
     const body=document.getElementById('mobileVenueBody');
     body.innerHTML=mobileCardHtml(group,group.locations[0]);wireImages(body);
     const sheet=document.getElementById('mobileVenueSheet');
@@ -1941,15 +2030,14 @@ function updateMarkerToggles(){
 map.on('moveend zoomend',()=>{if((!MOBILE_QUERY.matches||uiState.tab==='map')&&uiState.mapHasVisibleView){const center=map.getCenter();uiState.mapView={center:[center.lat,center.lng],zoom:map.getZoom()}}});
 map.on('click',()=>{if(Date.now()-mobileSheetOpenedAt<350)return;closeActiveMapPopup({clearSelection:true})});
 
-let mobileCards=[];
-let mobileCardIndex=0;
+let popupCards=[];
+let popupCardIndex=0;
 let mobileSheetOpenedAt=0;
+const NEARBY_RADIUS_M=2000;
 function occurrenceDistance(a,b){
-  const dLat=a.lat-b.lat;
-  const dLng=(a.lng-b.lng)*Math.cos((a.lat+b.lat)/2*Math.PI/180);
-  return dLat*dLat+dLng*dLng;
+  return L.latLng(+a.lat,+a.lng).distanceTo(L.latLng(+b.lat,+b.lng));
 }
-function buildMobileCards(origin){
+function buildPopupCards(origin){
   const list=[];
   (DATA.venues||[]).forEach(venue=>{
     getFilteredVenueOccurrences(venue._id).forEach(location=>{
@@ -1957,50 +2045,109 @@ function buildMobileCards(origin){
       if(group&&Number.isFinite(+location.lat)&&Number.isFinite(+location.lng)) list.push({group,location});
     });
   });
-  list.sort((a,b)=>occurrenceDistance(origin,a.location)-occurrenceDistance(origin,b.location));
+  list.sort((a,b)=>(a.location.id===origin.id?-1:b.location.id===origin.id?1:occurrenceDistance(origin,a.location)-occurrenceDistance(origin,b.location)||a.group.title.localeCompare(b.group.title)||a.group.id.localeCompare(b.group.id)));
   return list;
+}
+function preparePopupCards(origin,preserve=false){
+  if(!origin)return;
+  if(!preserve||!popupCards.some(card=>card.location.id===origin.id))popupCards=buildPopupCards(origin);
+  popupCardIndex=Math.max(0,popupCards.findIndex(card=>card.location.id===origin.id));
+}
+function buildNearbyActivities(originLocation){
+  if(!originLocation||!Number.isFinite(+originLocation.lat)||!Number.isFinite(+originLocation.lng))return [];
+  const nearestByEvent=new Map();
+  buildPopupCards(originLocation).forEach(item=>{
+    if(item.group.id===originLocation.event.id)return;
+    const distanceMeters=occurrenceDistance(originLocation,item.location);
+    if(distanceMeters>NEARBY_RADIUS_M)return;
+    const current=nearestByEvent.get(item.group.id);
+    if(!current||distanceMeters<current.distanceMeters)nearestByEvent.set(item.group.id,{eventId:item.group.id,locationId:item.location.id,group:item.group,location:item.location,distanceMeters});
+  });
+  return [...nearestByEvent.values()].sort((a,b)=>a.distanceMeters-b.distanceMeters||a.group.title.localeCompare(b.group.title)||a.eventId.localeCompare(b.eventId));
+}
+function formatDistance(distanceMeters){
+  if(distanceMeters<1)return '同地點';
+  if(distanceMeters<1000)return Math.round(distanceMeters)+' 公尺';
+  return (distanceMeters/1000).toFixed(1)+' 公里';
+}
+let activityPickerMode='';
+let activityPickerItems=[];
+let activityPickerSource=null;
+let activityPickerReturnFocus=null;
+function openActivityPicker({mode,items,title,sourceLocationId=null}){
+  if(!items||!items.length)return;
+  activityPickerMode=mode;activityPickerItems=items;activityPickerSource=sourceLocationId;activityPickerReturnFocus=document.activeElement;
+  document.getElementById('activityPickerTitle').textContent=title;
+  document.getElementById('activityPickerCount').textContent=items.length+' 個活動';
+  const grid=document.getElementById('activityPickerGrid');
+  grid.innerHTML=items.map(item=>{
+    const secondary=mode==='nearby'?formatDistance(item.distanceMeters):(item.location.venueName||'');
+    return '<div class="activity-picker-slot"><button class="activity-picker-card" type="button" data-activity-picker-location="'+esc(item.locationId)+'">'
+      +mediaFrameHtml(item.group.image,item.group.title,false)
+      +'<span class="activity-picker-copy"><h3>'+esc(item.group.title)+'</h3>'+(secondary?'<span class="activity-picker-secondary">'+esc(secondary)+'</span>':'')+'</span></button></div>';
+  }).join('');
+  wireImages(grid);
+  const overlay=document.getElementById('activityPickerOverlay');
+  overlay.classList.add('show');overlay.setAttribute('aria-hidden','false');
+  document.getElementById('activityPickerClose').focus({preventScroll:true});
+}
+function closeActivityPicker(){
+  const overlay=document.getElementById('activityPickerOverlay');
+  overlay.classList.remove('show');overlay.setAttribute('aria-hidden','true');
+  activityPickerMode='';activityPickerItems=[];activityPickerSource=null;
+  if(activityPickerReturnFocus&&activityPickerReturnFocus.focus)activityPickerReturnFocus.focus({preventScroll:true});
+  activityPickerReturnFocus=null;
+}
+function openNearbyPicker(locationId){
+  const location=locationById(locationId);
+  const items=buildNearbyActivities(location);
+  if(items.length)openActivityPicker({mode:'nearby',items,title:'附近 2 公里的活動',sourceLocationId:locationId});
+}
+function selectActivityPickerItem(locationId){
+  closeActivityPicker();
+  selectLocation(locationId,{updateHistory:true});
 }
 function mobileCardHtml(group,location){
   const noAddr=location.noAddress;
-  const venueText=noAddr?FLOATING_ADDRESS_TEXT:([location.venueName,cleanAddress(location.address)].filter(Boolean).join('｜')||'地點未提供');
+  const venueText=noAddr?FLOATING_ADDRESS_TEXT:[location.venueName,cleanAddress(location.address)].filter(Boolean).join('｜');
   const venueLink=noAddr?safeUrl(location.floatingLink||group.link):navUrl(location);
-  const venueHtml=venueLink
+  const venueHtml=venueText&&venueLink
     ?'<a class="mobile-card-venue" href="'+esc(venueLink)+'" target="_blank" rel="noopener">'+esc(venueText)+' ↗</a>'
-    :'<div class="mobile-card-venue">'+esc(venueText)+'</div>';
+    :(venueText?'<div class="mobile-card-venue">'+esc(venueText)+'</div>':'');
   return '<article class="mobile-card">'
     +'<div class="mobile-card-kv">'+mediaFrameHtml(group.image,group.title,false)+'</div>'
     +'<div class="mobile-card-info">'+tagHtml(group,location.city)
     +'<h2>'+esc(group.title)+'</h2>'
+    +popupMetadataHtml(group)
     +venueHtml
     +'<div class="mobile-card-date">'+esc(groupDateText(group))+'</div>'
-    +actionHtml(group)
+    +nearbyCtaHtml(location)+actionHtml(group)+popupNavigationHtml()
     +'</div></article>';
 }
 function renderMobileCard(recenter){
   const body=document.getElementById('mobileVenueBody');
-  if(!mobileCards.length){body.innerHTML='';return;}
-  mobileCardIndex=Math.max(0,Math.min(mobileCardIndex,mobileCards.length-1));
-  const card=mobileCards[mobileCardIndex];
+  if(!popupCards.length){body.innerHTML='';return;}
+  popupCardIndex=Math.max(0,Math.min(popupCardIndex,popupCards.length-1));
+  const card=popupCards[popupCardIndex];
   body.innerHTML=mobileCardHtml(card.group,card.location);
   wireImages(body);
   if(recenter) selectLocation(card.location.id,{openPopup:false,revealMarker:true,recenter:true,updateHistory:true});
 }
-function moveMobileCard(delta){
-  const next=mobileCardIndex+delta;
-  if(next<0||next>=mobileCards.length) return;
-  const prev=mobileCards[mobileCardIndex].location;
-  mobileCardIndex=next;
-  const cur=mobileCards[mobileCardIndex].location;
-  renderMobileCard(false);
-  selectLocation(cur.id,{openPopup:false,revealMarker:true,recenter:prev.lat!==cur.lat||prev.lng!==cur.lng,updateHistory:true});
+function movePopupCard(delta){
+  const next=popupCardIndex+delta;
+  if(next<0||next>=popupCards.length)return;
+  const prev=popupCards[popupCardIndex].location;
+  popupCardIndex=next;
+  const cur=popupCards[popupCardIndex].location;
+  if(MOBILE_QUERY.matches)renderMobileCard(false);
+  selectLocation(cur.id,{openPopup:!MOBILE_QUERY.matches,revealMarker:true,recenter:prev.lat!==cur.lat||prev.lng!==cur.lng,updateHistory:true,preservePopupCards:true});
 }
-function openMobileVenueSheet(venueIdValue,preferredEventId){
+function openMobileVenueSheet(venueIdValue,preferredEventId,preservePopupCards=false){
   const locations=getFilteredVenueOccurrences(venueIdValue);
   if(!locations.length) return;
   let origin=locations[0];
   if(preferredEventId){const match=locations.find(location=>location.event.id===preferredEventId);if(match)origin=match;}
-  mobileCards=buildMobileCards(origin);
-  mobileCardIndex=Math.max(0,mobileCards.findIndex(card=>card.location.id===origin.id));
+  preparePopupCards(origin,preservePopupCards);
   renderMobileCard();
   const sheet=document.getElementById('mobileVenueSheet');
   sheet.classList.add('show');
@@ -2011,14 +2158,14 @@ function closeMobileVenueSheet(clear=true,updateHistory=true){
   const sheet=document.getElementById('mobileVenueSheet');
   sheet.classList.remove('show');
   sheet.setAttribute('aria-hidden','true');
-  mobileCards=[];mobileCardIndex=0;
+  popupCards=[];popupCardIndex=0;
   if(clear)clearSelection();
   if(updateHistory)updateEventParam('','replace');
 }
 function closeActiveMapPopup(options={}){
   const settings={clearSelection:true,updateHistory:true,...options};
   const sheet=document.getElementById('mobileVenueSheet');
-  sheet.classList.remove('show');sheet.setAttribute('aria-hidden','true');mobileCards=[];mobileCardIndex=0;
+  sheet.classList.remove('show');sheet.setAttribute('aria-hidden','true');popupCards=[];popupCardIndex=0;
   const overlay=document.getElementById('dialogOverlay');
   overlay.classList.remove('show');overlay.setAttribute('aria-hidden','true');activeDialogMode='';dialogReturn=null;
   if(settings.clearSelection)clearSelection();
@@ -2272,10 +2419,18 @@ document.getElementById('discoverList').addEventListener('click',event=>{
 document.getElementById('dialogPanel').addEventListener('click',event=>{
   pickerCardHandler(event);
   const share=event.target.closest('[data-share]');if(share)shareEvent(share.dataset.share);
+  const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
+  const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
 });
 document.getElementById('dialogClose').addEventListener('click',()=>closeDesktopDialog());
 document.getElementById('dialogOverlay').addEventListener('click',event=>{if(event.target.id==='dialogOverlay')closeDesktopDialog()});
 document.getElementById('dialogOverlay').addEventListener('keydown',event=>trapFocus(event,document.getElementById('dialogOverlay')));
+document.getElementById('activityPickerClose').addEventListener('click',closeActivityPicker);
+document.getElementById('activityPickerOverlay').addEventListener('click',event=>{if(event.target.id==='activityPickerOverlay')closeActivityPicker()});
+document.getElementById('activityPickerOverlay').addEventListener('keydown',event=>trapFocus(event,document.getElementById('activityPickerOverlay')));
+document.getElementById('activityPickerGrid').addEventListener('click',event=>{const card=event.target.closest('[data-activity-picker-location]');if(card)selectActivityPickerItem(card.dataset.activityPickerLocation)});
+document.getElementById('activityPickerGrid').addEventListener('pointerover',event=>{if(MOBILE_QUERY.matches)return;const card=event.target.closest('.activity-picker-card');if(card)card.classList.add('is-hovered')});
+document.getElementById('activityPickerGrid').addEventListener('pointerout',event=>{const card=event.target.closest('.activity-picker-card');if(card&&!card.contains(event.relatedTarget))card.classList.remove('is-hovered')});
 document.getElementById('lightboxClose').addEventListener('click',closeImageLightbox);
 document.getElementById('lightbox').addEventListener('click',event=>{if(event.target.id==='lightbox')closeImageLightbox()});
 document.getElementById('homeButton').addEventListener('click',fitTaiwanView);
@@ -2314,13 +2469,15 @@ document.getElementById('mobileVenueClose').addEventListener('click',closeMobile
   const body=document.getElementById('mobileVenueBody');
   body.addEventListener('click',event=>{
     const share=event.target.closest('[data-share]');if(share){shareEvent(share.dataset.share)}
+    const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
+    const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
   });
   let startX=0,startY=0,swiping=false;
   body.addEventListener('touchstart',event=>{const t=event.changedTouches[0];startX=t.clientX;startY=t.clientY;swiping=true},{passive:true});
   body.addEventListener('touchend',event=>{
     if(!swiping) return; swiping=false;
     const t=event.changedTouches[0],dx=t.clientX-startX,dy=t.clientY-startY;
-    if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.4) moveMobileCard(dx<0?1:-1);
+    if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.4) movePopupCard(dx<0?1:-1);
   },{passive:true});
 })();
 document.getElementById('mobileVenueGrip').addEventListener('pointerdown',event=>{mobileVenueStartY=event.clientY});
@@ -2328,8 +2485,12 @@ document.getElementById('mobileVenueGrip').addEventListener('pointerup',event=>{
 wireSearch(desktopSearch,desktopSuggestions);wireSearch(mobileSearch,mobileSuggestions);
 document.addEventListener('pointerdown',event=>{if(!event.target.closest('.search-shell'))hideSearchSuggestions()});
 document.addEventListener('keydown',event=>{
+  if((event.key==='ArrowLeft'||event.key==='ArrowRight')&&activeDialogMode==='event'&&!document.getElementById('activityPickerOverlay').classList.contains('show')&&!event.target.matches('input,textarea,select,[contenteditable="true"]')){
+    event.preventDefault();movePopupCard(event.key==='ArrowLeft'?-1:1);return;
+  }
   if(event.key!=='Escape')return;
-  if(document.getElementById('lightbox').classList.contains('show'))closeImageLightbox();
+  if(document.getElementById('activityPickerOverlay').classList.contains('show'))closeActivityPicker();
+  else if(document.getElementById('lightbox').classList.contains('show'))closeImageLightbox();
   else if(document.getElementById('dialogOverlay').classList.contains('show'))closeDesktopDialog();
   else if(document.getElementById('mobileFilterOverlay').classList.contains('show'))closeMobileFilters(true);
   else closeMobileVenueSheet();
