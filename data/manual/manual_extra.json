@@ -2140,9 +2140,9 @@
  },
  "爆彈燒本舖 南港 LaLaport": {
   "city": "台北市",
-  "lat": 25.04061,
-  "lng": 121.61205,
-  "loc": "區級",
+  "lat": 25.059345,
+  "lng": 121.617583,
+  "loc": "exact",
   "addr": "台北市南港區經貿二路131號5樓",
   "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
   "ex": [
