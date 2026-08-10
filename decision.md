@@ -24,7 +24,7 @@
 
 - ACG 活動只有上述四種形式，沒有「其他」分類；圖例與篩選皆不列出「其他」。
 - 圖釘為白框水滴造型。
-- 每個活動各自一個 marker；同場館／同座標的多個活動會聚合，點擊聚合會像煙火般散開（spiderfy），可逐一點選。個別 marker 不顯示數字徽章；聚合徽章顯示該處活動數。
+- 每個活動各自一個 marker；同場館／同座標的多個活動會聚合。桌機點擊聚合開啟共用的全螢幕 Activity Picker，不同步縮放；手機維持 zoom／最大層級 spiderfy。個別 marker 不顯示數字徽章；聚合徽章顯示該處活動數。
 - 每個活動依自身活動形式顯示對應顏色的圖釘。
 - 座標不是 `exact` 時，圖釘透明度降為 70%。
 - 場館包含七日內即將結束的非常設活動時，顯示紅色提示點。
@@ -33,11 +33,11 @@
 - 圖片 marker 依 KV 實際寬高比顯示為橫式或直式，不得強制裁成單一直式比例。
 - 圖片 marker 的 KV 必須置中完整呈現，剩餘空間以同圖模糊背景補齊；活動數徽章固定在圖片右上角、貼齊邊界外緣（手機 App 通知徽章樣式），使用紅底白字。
 - Marker 顯示模式切換固定放在地圖上方正中央。
-- 點擊 marker 顯示該活動資訊；被選取的 marker 放大 30% 並以紅色外框標示（取代原本白框）。為避免收合已散開（spiderfy）的聚合，點擊當下不強制移動地圖；由 Discover 進入時仍會定位至該活動。
+- 點擊 marker 顯示該活動資訊；被選取的 marker 放大 30% 並以紅色外框標示（取代原本白框）。關閉 popup 後 active selection 仍清除，但最後看過的 marker 保留紅框；`lastViewedLocationId` 只能控制視覺，不得控制定位、popup、URL、history 或 spiderfy。桌機滑鼠移入水滴與圖片 marker 時放大 30%，只縮放 marker 內層元素，不修改 Leaflet 定位 transform。
 - 使用者展開群聚並進入活動資訊後，回到地圖時必須保留該群聚的展開狀態；圖片與圖釘模式行為一致。
 - 群聚展開狀態透過 MarkerCluster 的 `spiderfied` / `unspiderfied` 事件追蹤，以展開群聚內子 marker 的 LatLng 作為識別依據（不依賴 venueId）。cluster UI state 與活動 selection state 必須分離。
 - `selectedLocationId` 是 map activity selection 的 single source of truth；`selectedEventId`／`selectedVenueId` 只做輔助資料，不可各自決定紅框。
-- 紅框代表 Map popup 目前正在觀看的 activity marker。Discover、Latest、Search、deep link、marker click、popup swipe 與 popstate 必須共用同一 selection pipeline。
+- 紅框優先代表 Map popup 目前正在觀看的 activity marker；沒有 active selection 時代表最後看過的 marker。同時間只顯示一個主要紅框。Discover、Latest、Search、deep link、marker click、popup swipe／arrow、Cluster Picker、Nearby Picker 與 popstate 必須共用同一 selection pipeline。
 - selected marker 被 cluster 包住時，必須使用 MarkerCluster reveal API 自動顯示；同座標仍無法分辨時自動 spiderfy。
 - `unspiderfied` 只表示 cluster UI 收合，不表示取消 activity selection，也不得清除 `selectedLocationId`。cluster lifecycle、moveend、zoomend、flyTo、invalidateSize 與 redraw 都不得自行取消 selection。
 - 不使用 `setTimeout` 作為群聚恢復或 marker 渲染的修補；使用 `requestAnimationFrame` 搭配 MarkerCluster 實際事件。
@@ -54,12 +54,16 @@
 - 一般篩選下 Discover 維持一活動一卡；只有選定特定「多店活動」時，改為逐門市列出同一活動。
 - 多店活動篩選選項的數字代表目前其他篩選條件下的可見門市數，不是活動群組數。
 - 活動 popup 只顯示目前定位的主要地點，不再列出其他活動地點。
-- 手機版活動 popup 為橫式卡片（左 KV、右資訊）、高度約螢幕 1/3；可左右滑切換，順序為以目前地點為原點、依距離由近到遠的其他活動（跨場館）。單一場館多場活動不再另出選擇格。
+- 桌機與手機 popup 共用同一個活動序列：以目前地點為原點，將目前篩選後的有效 map locations 依距離由近到遠排列；灰色左右箭頭不循環，手機 swipe 與箭頭走同一個移動函式，桌機另支援方向鍵。
+- 手機版活動 popup 為橫式卡片（左 KV、右資訊）、高度約螢幕 1/3。單一場館多場活動不再另出選擇格。
+- 桌機與手機 popup 顯示 IP、主辦、日期、目前活動地點；空 IP、空主辦與空地址整列不顯示，不以 placeholder 代替。浮動活動仍顯示「請至官方網站查詢地點」。本次 popup 不新增授權商。
+- Popup 以目前 location 為中心顯示 2 公里內其他活動的 Nearby CTA。Nearby 尊重所有 active filters、排除目前 event、包含同場館的其他 event，並以 event 去重及最近 occurrence 作為目標。
+- Nearby CTA 與桌機 Cluster 共用同一個 Fullscreen Activity Picker。Picker 是 transient UI，不寫入核心 selection 或 history；Nearby Picker 關閉後保留底層 popup，點卡片後一律關閉 Picker 再呼叫 `selectLocation()`。
 - 桌機與手機的活動 popup 皆顯示目前地點所在縣市的 hashtag（例：`#台北市`）。
 - 地點列只保留無外框的「導航」文字連結，不顯示 Threads 圖示；手機橫式卡的場館列本身即為導航連結。
 - 「分享活動」一律直接複製目前活動的深連結，成功後顯示「成功複製連結」；Open Graph 連結預覽留待後續設計。
 - 公開顯示值若含「需人工確認」，整個值留白；後台原始稽核資料可保留該文字。
-- Mobile popup 只能存在於 Map；Map → Discover 必須 close popup、clear map selection 並移除紅框。
+- Mobile popup 只能存在於 Map；Map → Discover 必須 close popup 並 clear active map selection，但保留合法的 last-viewed 紅框供回到 Map 時恢復。若 filter 或 rerender 已排除該 location，才清除 last viewed。
 - 手機 Map hidden 時不得執行或保存 user viewport。首次進 Map 且無 explicit target 時顯示 `TW_MAIN_BOUNDS`；後續回 Map 恢復離開前真正的 user viewport。
 - viewport 優先序固定為 activity target > city target > user map view > Taiwan default。
 
@@ -69,4 +73,4 @@
 - 相關決策必須同時落在程式碼測試中；只測「功能存在」不足以保護既有視覺規則。
 - 任何刻意改動本文件內容的 PR，需在 PR 說明中明列差異與 Daniel 的確認依據。
 
-最後更新：2026-08-09（Asia/Taipei）
+最後更新：2026-08-10（Asia/Taipei）
