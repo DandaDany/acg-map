@@ -1,19 +1,6 @@
 {
- "generated": "2026/08/10",
- "count": 1,
+ "generated": "2026/08/11",
+ "count": 0,
  "note": "缺公開所需 metadata 而暫不上圖的 ACG 活動；於 override 檔補齊即自動恢復。",
- "events": [
-  {
-   "venue": "松山文創園區",
-   "title": "史努比的藝術人生：快閃小巡迴（台北站）",
-   "start": "2026/08/06",
-   "end": "2026/09/28",
-   "reasons": [
-    "無 metadata 覆寫",
-    "主辦缺漏",
-    "授權缺漏",
-    "費用未定"
-   ]
-  }
- ]
+ "events": []
 }

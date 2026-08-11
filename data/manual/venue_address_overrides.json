@@ -454,5 +454,13 @@
   "animate Gratte 西門站": {
     "addr": "台北市中正區中華路一段39號1樓",
     "source": "Daniel verified 2026-08-09"
+  },
+  "華山1914文化創意產業園區": {
+    "addr": "台北市中正區八德路一段1號",
+    "source": "https://www.huashan1914.com/w/huashan1914/exhibition_26081015572829013"
+  },
+  "松山文創園區": {
+    "addr": "台北市信義區光復南路133號",
+    "source": "https://www.songshanculturalpark.org/exhibition/activity/c64a0dee-b436-408d-b527-b141ab24a202"
   }
 }
