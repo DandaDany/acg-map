@@ -1,5 +1,13 @@
+.F.........................................
+======================================================================
+FAIL: test_cluster_and_nearby_share_activity_picker (__main__.MapUxTests.test_cluster_and_nearby_share_activity_picker)
+----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/runner/work/acg-map/acg-map/backend/_test_editorial_c_home.py", line 22, in <module>
-    assert "day,day+6" in text
-           ^^^^^^^^^^^^^^^^^^^
-AssertionError
+  File "/home/runner/work/acg-map/acg-map/backend/_test_map_ux.py", line 403, in test_cluster_and_nearby_share_activity_picker
+    self.assertIn("if(MOBILE_QUERY.matches)", cluster_handler)
+AssertionError: 'if(MOBILE_QUERY.matches)' not found in "function handleClusterActivate(clusterLayer){\n  if(!clusterLayer)return;\n  const items=clusterPickerItems(clusterLayer);\n  const venueIds=new Set(items.map(item=>item.location.venueId));\n  const eventIds=new Set(items.map(item=>item.eventId));\n  const sameVenueMultiActivity=!MOBILE_QUERY.matches&&venueIds.size===1&&eventIds.size>1;\n  if(sameVenueMultiActivity){openActivityPicker({mode:'cluster',items,title:'這個地點的活動'});return}\n  if(map.getZoom()<map.getMaxZoom())clusterLayer.zoomToBounds();\n  else clusterLayer.spiderfy();\n}\n"
+
+----------------------------------------------------------------------
+Ran 43 tests in 2.809s
+
+FAILED (failures=1)
