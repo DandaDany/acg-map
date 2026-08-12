@@ -27,8 +27,10 @@ jobs:
         run: python tools/patch_polish_2.py
       - name: Apply decisions and regression updates
         run: python tools/patch_polish_3.py
-      - name: Update rolling-week regression
+      - name: Update legacy regressions
         run: python tools/patch_polish_4.py
+      - name: Normalize decision EOF
+        run: python tools/patch_polish_5.py
       - name: Map exploration regression
         run: python backend/_test_map_exploration_polish.py
       - name: Editorial C regression
@@ -55,24 +57,11 @@ jobs:
       - name: Protect activity data
         run: test -z "$(git diff --name-only origin/main -- public/venues.json data/event_first_seen.json data/manual data/auto)"
       - name: Validate diff
-        run: |
-          set +e
-          git diff --check > /tmp/polish-diff.log 2>&1
-          code=$?
-          cat /tmp/polish-diff.log
-          if [ "$code" -ne 0 ]; then
-            cp /tmp/polish-diff.log tools/_polish_failure.txt
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add tools/_polish_failure.txt
-            git commit -m "chore: capture polish diff failure"
-            git push
-            exit "$code"
-          fi
+        run: git diff --check
       - name: Commit implementation
         run: |
           rm -f tools/_polish_failure.txt
-          rm tools/patch_polish_1.py tools/patch_polish_2.py tools/patch_polish_3.py tools/patch_polish_4.py
+          rm tools/patch_polish_1.py tools/patch_polish_2.py tools/patch_polish_3.py tools/patch_polish_4.py tools/patch_polish_5.py
           rm .github/workflows/agent-map-exploration-polish.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
