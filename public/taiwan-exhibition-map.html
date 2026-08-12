@@ -803,7 +803,9 @@ a{color:inherit}
 #map{position:absolute;inset:0;z-index:1;background:#e8ebe6}
 .desktop-map-search{position:absolute;z-index:1100;top:14px;left:14px;width:min(430px,calc(100% - 220px))}.desktop-map-search .searchbox{box-shadow:0 7px 22px rgba(0,0,0,.18)}
 .map-tools{position:absolute;z-index:1000;top:66px;right:14px;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.map-nav-stack{display:flex;flex-direction:column;align-items:center;gap:7px}
 .map-tool{display:grid;min-width:44px;height:44px;place-items:center;border:1px solid rgba(25,31,42,.18);border-radius:13px;background:rgba(255,255,255,.94);color:#1b2430;box-shadow:0 7px 22px rgba(0,0,0,.16);cursor:pointer}
+.map-zoom-tool{font-size:21px;font-weight:700;line-height:1}.leaflet-control-zoom{display:none}
 /* 多店・無單一地址活動：排列在 home 鍵下方的獨立懸浮圓圈 */
 .floating-events{display:flex;flex-direction:column;align-items:center;gap:8px}
 .floating-events:empty{display:none}
@@ -1279,18 +1281,18 @@ html[data-theme="dark"] .collection-filter{color:#eef2f8}
 .filter-calendar-day i{position:absolute;bottom:4px;width:4px;height:4px;border-radius:50%;background:transparent}.filter-calendar-day.has-events i{background:var(--accent2)}.filter-calendar-day.selected i{background:#fff}
 .user-location-dot{background:#ff2d2d;box-shadow:0 0 0 7px rgba(255,45,45,.18),0 3px 13px rgba(111,23,23,.32)}
 html[data-theme="dark"] .user-location-dot{border-color:#fff;background:#ff2d2d;box-shadow:0 0 0 7px rgba(255,45,45,.22),0 3px 13px rgba(0,0,0,.42)}
-.desktop-map-card{position:absolute;z-index:1450;left:16px;bottom:18px;width:min(760px,calc(100% - 96px));height:clamp(214px,27dvh,260px);padding:12px;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:rgba(255,250,245,.98);box-shadow:0 20px 58px rgba(54,39,28,.24);opacity:0;pointer-events:none;transform:translateY(calc(100% + 34px));transition:transform .24s cubic-bezier(.2,.82,.2,1),opacity .18s ease;backdrop-filter:blur(14px)}
-.desktop-map-card.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.desktop-map-card{position:absolute;z-index:1450;left:50%;bottom:18px;width:min(960px,calc(100% - 32px));min-height:286px;height:auto;padding:12px;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:rgba(255,250,245,.98);box-shadow:0 20px 58px rgba(54,39,28,.24);opacity:0;pointer-events:none;transform:translate(-50%,calc(100% + 34px));transition:transform .24s cubic-bezier(.2,.82,.2,1),opacity .18s ease;backdrop-filter:blur(14px)}
+.desktop-map-card.show{opacity:1;pointer-events:auto;transform:translate(-50%,0)}
 .desktop-map-card-close{position:absolute;z-index:3;top:7px;right:7px;display:grid;width:38px;height:38px;place-items:center;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#5b4c43;font-size:20px;cursor:pointer;box-shadow:0 3px 12px rgba(64,47,36,.08)}
-.desktop-map-card-body{height:100%;padding-right:34px}
-.desktop-map-card .mobile-card{display:flex;height:100%;gap:15px;overflow:hidden}.desktop-map-card .mobile-card-kv{width:42%;height:100%;flex:none}.desktop-map-card .mobile-card-kv .media-frame{height:100%;border-radius:15px}.desktop-map-card .mobile-card-info{display:flex;min-width:0;flex:1;flex-direction:column;gap:7px;overflow-y:auto;padding:2px 2px 2px 0}.desktop-map-card .mobile-card-info h2{margin:0;font-size:18px;line-height:1.32;padding-right:8px}.desktop-map-card .mobile-card-date{font-size:12.5px;font-weight:700;color:var(--text)}
+.desktop-map-card-body{min-height:262px;padding-right:34px}
+.desktop-map-card .mobile-card{display:flex;min-height:262px;gap:15px;overflow:hidden}.desktop-map-card .mobile-card-kv{width:40%;min-height:262px;flex:none}.desktop-map-card .mobile-card-kv .media-frame{height:100%;min-height:262px;border-radius:15px}.desktop-map-card .mobile-card-info{display:flex;min-width:0;min-height:262px;flex:1;flex-direction:column;gap:7px;overflow:visible;padding:2px 2px 2px 0}.desktop-map-card .mobile-card-info h2{margin:0;font-size:18px;line-height:1.32;padding-right:8px}.desktop-map-card .mobile-card-date{font-size:12.5px;font-weight:700;color:var(--text)}
 .map-card-location{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:12.5px;line-height:1.45}.map-card-location>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.map-card-nav{flex:none;color:var(--accent2);font-size:11.5px;font-weight:800;text-decoration:none}.map-card-nav:hover{text-decoration:underline}
 .map-card-context{display:flex;flex-wrap:wrap;gap:8px;color:var(--accent2);font-size:11px;font-weight:800}.map-card-context span{white-space:nowrap}
 .desktop-map-card .action-row{margin-top:2px}.desktop-map-card .action-btn{min-height:36px;padding:0 11px;font-size:11.5px}.desktop-map-card .nearby-cta{min-height:34px;margin-top:0;font-size:11.5px}.desktop-map-card .popup-nav{margin-top:auto}
 html[data-theme="dark"] .home-filter-close{border-color:#2a3344;background:#171d28;color:#eef2f8;box-shadow:none}html[data-theme="dark"] .home-filter-close:hover{border-color:#465674;background:#232c3d;color:#ff8a74}
 html[data-theme="dark"] .filter-calendar{border-color:#2a3344}html[data-theme="dark"] .filter-calendar-head button:hover:not(:disabled),html[data-theme="dark"] .filter-calendar-day:hover:not(:disabled){background:#232c3d}html[data-theme="dark"] .filter-calendar-day:disabled{color:#596579}html[data-theme="dark"] .filter-calendar-day.today{box-shadow:inset 0 0 0 1px #58657a}
 html[data-theme="dark"] .desktop-map-card{border-color:#2a3344;background:rgba(21,26,36,.98);box-shadow:0 20px 58px rgba(0,0,0,.5)}html[data-theme="dark"] .desktop-map-card-close{background:rgba(28,35,48,.94);color:#eef2f8}
-@media(max-width:760px){.desktop-map-card{display:none!important}.filter-calendar{margin-right:3px;margin-left:3px}.filter-calendar-day{height:42px}.filter-calendar-spacer{height:42px}.mobile-card-info .map-card-context{margin-top:1px}.mobile-card-info .map-card-location{font-size:12px}}
+@media(max-width:760px){.desktop-map-card{display:none!important}.map-zoom-tool{display:none}.leaflet-control-zoom{display:block}.filter-calendar{margin-right:3px;margin-left:3px}.filter-calendar-day{height:42px}.filter-calendar-spacer{height:42px}.mobile-card-info .map-card-context{margin-top:1px}.mobile-card-info .map-card-location{font-size:12px}}
 
 </style></head>
 <body><div id="app">
@@ -1384,7 +1386,7 @@ html[data-theme="dark"] .desktop-map-card{border-color:#2a3344;background:rgba(2
       <span class="map-legend-item"><span class="map-legend-dot" style="background:#e08a3c"></span>主題餐廳</span>
       <span class="map-legend-item"><span class="map-legend-dot" style="background:#8560d8"></span>體驗活動</span>
     </div>
-    <div class="map-tools"><button class="map-tool" id="mapHomeButton" type="button" aria-label="回到台灣全圖" title="回到台灣全圖">⌂</button><div class="floating-events" id="floatingEvents" aria-label="多店活動（無單一地址）"></div></div>
+    <div class="map-tools"><div class="map-nav-stack" aria-label="地圖控制"><button class="map-tool" id="mapHomeButton" type="button" aria-label="回到台灣全圖" title="回到台灣全圖">⌂</button><button class="map-tool map-zoom-tool" id="mapZoomInButton" type="button" aria-label="放大地圖" title="放大地圖">＋</button><button class="map-tool map-zoom-tool" id="mapZoomOutButton" type="button" aria-label="縮小地圖" title="縮小地圖">−</button></div><div class="floating-events" id="floatingEvents" aria-label="多店活動（無單一地址）"></div></div>
     <aside class="desktop-map-card" id="desktopMapCard" aria-hidden="true" aria-label="活動資訊"><button class="desktop-map-card-close" id="desktopMapCardClose" type="button" aria-label="關閉活動資訊">×</button><div class="desktop-map-card-body" id="desktopMapCardBody"></div></aside>
   </section>
 </div>
@@ -1523,7 +1525,8 @@ const uiState={
   lastViewedLocationId:null,
   discoverScrollTop:{discover:0,latest:0},
   mapView:null,
-  mapHasVisibleView:false
+  mapHasVisibleView:false,
+  pendingCityView:null
 };
 let selectionVersion=0;
 
@@ -2207,12 +2210,6 @@ function setHomeMarkerHover(locationId,hovered){
   marker.isHovered=hovered;applyMarkerVisualState(marker);
 }
 
-function popupNavigationHtml(){
-  if(popupCards.length<=1)return '';
-  return '<div class="popup-nav"><button class="popup-arrow" type="button" data-popup-move="-1" aria-label="上一個活動" '+(popupCardIndex===0?'disabled':'')+'>‹</button>'
-    +'<span class="popup-position">'+(popupCardIndex+1)+' / '+popupCards.length+'</span>'
-    +'<button class="popup-arrow" type="button" data-popup-move="1" aria-label="下一個活動" '+(popupCardIndex===popupCards.length-1?'disabled':'')+'>›</button></div>';
-}
 function nearbyCtaHtml(location){
   if(!location||location.noAddress)return '';
   const nearby=buildNearbyActivities(location);
@@ -2225,7 +2222,7 @@ function detailHtml(group,preferredLocationId=''){
     +popupMetadataHtml(group)
     +'<div class="meta-row"><strong>日期：</strong>'+esc(groupDateText(group))+'</div>'
     +'<section class="detail-section locations-section"><h3>活動地點</h3>'+renderLocationList(group,uiState.filters.city,preferredLocationId)+'</section>'
-    +nearbyCtaHtml(location)+actionHtml(group)+popupNavigationHtml()+'</div></div>';
+    +nearbyCtaHtml(location)+actionHtml(group)+'</div></div>';
 }
 function updateEventParam(eventId,mode='push'){
   const url=new URL(location.href);
@@ -2390,6 +2387,26 @@ const cluster=L.markerClusterGroup({
   }
 });
 map.addLayer(cluster);
+const DESTINATION_VENUE_GROUPS=[
+  {id:'huashan1914',label:'華山1914文化創意產業園區',aliases:['華山1914文化創意產業園區']},
+  {id:'songshan-cultural-park',label:'松山文創園區',aliases:['松山文創園區']},
+  {id:'pier2',label:'駁二藝術特區',aliases:['高雄市駁二藝術特區','駁二藝術特區']},
+  {id:'hualien-cultural-park',label:'花蓮文化創意產業園區',aliases:['花蓮文化創意產業園區']},
+  {id:'chiayi-cultural-park',label:'嘉義文化創意產業園區',aliases:['嘉義文化創意產業園區']}
+];
+function destinationVenueGroup(location){
+  const name=normalizeText(location&&location.venueName);
+  return DESTINATION_VENUE_GROUPS.find(group=>group.aliases.some(alias=>normalizeText(alias)===name))||null;
+}
+function destinationClusterInfo(items){
+  if(!items.length)return null;
+  const groups=items.map(item=>destinationVenueGroup(item.location));
+  if(groups.some(group=>!group))return null;
+  const ids=new Set(groups.map(group=>group.id));
+  if(ids.size!==1)return null;
+  const eventIds=new Set(items.map(item=>item.eventId));
+  return eventIds.size>1?{group:groups[0],eventIds}:null;
+}
 function clusterPickerItems(clusterLayer){
   const seen=new Set();
   return clusterLayer.getAllChildMarkers().map(marker=>{
@@ -2403,10 +2420,8 @@ function clusterPickerItems(clusterLayer){
 function handleClusterActivate(clusterLayer){
   if(!clusterLayer)return;
   const items=clusterPickerItems(clusterLayer);
-  const venueIds=new Set(items.map(item=>item.location.venueId));
-  const eventIds=new Set(items.map(item=>item.eventId));
-  const sameVenueMultiActivity=!MOBILE_QUERY.matches&&venueIds.size===1&&eventIds.size>1;
-  if(sameVenueMultiActivity){openActivityPicker({mode:'cluster',items,title:'這個地點的活動'});return}
+  const destination=!MOBILE_QUERY.matches?destinationClusterInfo(items):null;
+  if(destination){openActivityPicker({mode:'cluster',items,title:destination.group.label+'的活動'});return}
   if(map.getZoom()<map.getMaxZoom())clusterLayer.zoomToBounds();
   else clusterLayer.spiderfy();
 }
@@ -2801,7 +2816,7 @@ function mapCardHtml(group,location){
     +mapCardLocationHtml(group,location)
     +'<div class="mobile-card-date">'+esc(locationDateText(location))+'</div>'
     +popupContextHtml(group,location)
-    +actionHtml(group)+nearbyCtaHtml(location)+popupNavigationHtml()
+    +actionHtml(group)+nearbyCtaHtml(location)
     +'</div></article>';
 }
 function mobileCardHtml(group,location){return mapCardHtml(group,location)}
@@ -2813,15 +2828,6 @@ function renderMobileCard(recenter){
   body.innerHTML=mobileCardHtml(card.group,card.location);
   wireImages(body);
   if(recenter) selectLocation(card.location.id,{openPopup:false,revealMarker:true,recenter:true,updateHistory:true});
-}
-function movePopupCard(delta){
-  const next=popupCardIndex+delta;
-  if(next<0||next>=popupCards.length)return;
-  const prev=popupCards[popupCardIndex].location;
-  popupCardIndex=next;
-  const cur=popupCards[popupCardIndex].location;
-  if(MOBILE_QUERY.matches)renderMobileCard(false);
-  selectLocation(cur.id,{openPopup:!MOBILE_QUERY.matches,revealMarker:true,recenter:prev.lat!==cur.lat||prev.lng!==cur.lng,updateHistory:true,preservePopupCards:true});
 }
 function openMobileVenueSheet(venueIdValue,preferredEventId,preservePopupCards=false){
   const locations=getFilteredVenueOccurrences(venueIdValue);
@@ -2959,6 +2965,7 @@ function clearAllFilters(){
   uiState.query='';uiState.discoverSort='default';
   document.getElementById('q').value='';document.getElementById('mq').value='';
   closeFilterDetail();hideSearchSuggestions();renderAll();
+  uiState.pendingCityView=null;
   if(!MOBILE_QUERY.matches||uiState.tab==='map')fitTaiwanView();
   else{uiState.mapView=null;uiState.mapHasVisibleView=false}
 }
@@ -3001,8 +3008,12 @@ function closeMobileFilters(cancel=true){
   document.getElementById('mobileFilterOverlay').setAttribute('aria-hidden','true');
 }
 function applyMobileFilters(){
+  const previousCity=uiState.filters.city;
   uiState.filters={...draftFilters};if(draftClearSort)uiState.discoverSort='default';draftFilters=null;draftClearSort=false;closeMobileFilters(false);renderAll();
-  if(uiState.tab==='map') fitCityView(uiState.filters.city);
+  if(previousCity!==uiState.filters.city){
+    if(uiState.tab==='map'){uiState.pendingCityView=null;fitCityView(uiState.filters.city)}
+    else uiState.pendingCityView=uiState.filters.city;
+  }
 }
 function setTab(tab,options={}){
   if(!['discover','map'].includes(tab)) return;
@@ -3024,7 +3035,8 @@ function setTab(tab,options={}){
   }else requestAnimationFrame(()=>{
     map.invalidateSize();
     if(options.explicitTarget)return;
-    if(uiState.mapHasVisibleView&&uiState.mapView)map.setView(uiState.mapView.center,uiState.mapView.zoom,{animate:false});
+    if(uiState.pendingCityView!==null){const city=uiState.pendingCityView;uiState.pendingCityView=null;uiState.mapHasVisibleView=true;fitCityView(city)}
+    else if(uiState.mapHasVisibleView&&uiState.mapView)map.setView(uiState.mapView.center,uiState.mapView.zoom,{animate:false});
     else{fitTaiwanView();uiState.mapHasVisibleView=true}
     restoreExpandedCluster();
   });
@@ -3166,13 +3178,11 @@ document.getElementById('dialogPanel').addEventListener('click',event=>{
   pickerCardHandler(event);
   const share=event.target.closest('[data-share]');if(share)shareEvent(share.dataset.share);
   const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
-  const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
 });
 document.getElementById('desktopMapCardClose').addEventListener('click',()=>closeDesktopMapCard());
 document.getElementById('desktopMapCardBody').addEventListener('click',event=>{
   const share=event.target.closest('[data-share]');if(share)shareEvent(share.dataset.share);
   const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
-  const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
 });
 document.getElementById('dialogClose').addEventListener('click',()=>closeDesktopDialog());
 document.getElementById('dialogOverlay').addEventListener('click',event=>{if(event.target.id==='dialogOverlay')closeDesktopDialog()});
@@ -3187,6 +3197,8 @@ document.getElementById('lightboxClose').addEventListener('click',closeImageLigh
 document.getElementById('lightbox').addEventListener('click',event=>{if(event.target.id==='lightbox')closeImageLightbox()});
 document.getElementById('homeButton').addEventListener('click',fitTaiwanView);
 document.getElementById('mapHomeButton').addEventListener('click',fitTaiwanView);
+document.getElementById('mapZoomInButton').addEventListener('click',()=>map.zoomIn());
+document.getElementById('mapZoomOutButton').addEventListener('click',()=>map.zoomOut());
 document.getElementById('floatingEvents').addEventListener('click',event=>{const button=event.target.closest('[data-floating-id]');if(button)openFloatingEvent(button.dataset.floatingId)});
 document.getElementById('collectionBack').addEventListener('click',returnEditorialHome);
 document.getElementById('collectionFilterButton').addEventListener('click',openHomeFilterDrawer);
@@ -3221,7 +3233,7 @@ document.getElementById('filterOptions').addEventListener('click',event=>{
   const shift=event.target.closest('[data-calendar-shift]');if(shift&&!shift.disabled){filterCalendarMonth=shiftCalendarMonth(filterCalendarMonth,+shift.dataset.calendarShift);renderDesktopFilterOptions();return}
   const day=event.target.closest('[data-calendar-date]');if(day&&!day.disabled){uiState.filters.time='date:'+day.dataset.calendarDate;filterCalendarMonth=day.dataset.calendarDate.slice(0,7);closeFilterDetail();renderAll();return}
   const button=event.target.closest('[data-value]');if(!button||button.disabled||!openFilterKey)return;
-  const key=openFilterKey,value=button.dataset.value;uiState.filters[key]=value;closeFilterDetail();renderAll();if(key==='city'&&uiState.exploreView==='results')fitCityView(value);
+  const key=openFilterKey,value=button.dataset.value;uiState.filters[key]=value;closeFilterDetail();renderAll();if(key==='city'&&!MOBILE_QUERY.matches){uiState.pendingCityView=null;fitCityView(value)}
 });
 document.getElementById('clearFilters').addEventListener('click',clearAllFilters);
 function openMobileSearchPanel(){const panel=document.getElementById('mobileSearchPanel');panel.classList.add('show');panel.setAttribute('aria-hidden','false');requestAnimationFrame(()=>document.getElementById('mq').focus())}
@@ -3243,29 +3255,15 @@ document.getElementById('mobileFilterOverlay').addEventListener('click',event=>{
 document.getElementById('mobileFilterGrip').addEventListener('pointerdown',event=>{mobileFilterStartY=event.clientY});
 document.getElementById('mobileFilterGrip').addEventListener('pointerup',event=>{if(event.clientY-mobileFilterStartY>70)closeMobileFilters(true)});
 document.getElementById('mobileVenueClose').addEventListener('click',closeMobileVenueSheet);
-(function(){
-  const body=document.getElementById('mobileVenueBody');
-  body.addEventListener('click',event=>{
-    const share=event.target.closest('[data-share]');if(share){shareEvent(share.dataset.share)}
-    const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
-    const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
-  });
-  let startX=0,startY=0,swiping=false;
-  body.addEventListener('touchstart',event=>{const t=event.changedTouches[0];startX=t.clientX;startY=t.clientY;swiping=true},{passive:true});
-  body.addEventListener('touchend',event=>{
-    if(!swiping) return; swiping=false;
-    const t=event.changedTouches[0],dx=t.clientX-startX,dy=t.clientY-startY;
-    if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.4) movePopupCard(dx<0?1:-1);
-  },{passive:true});
-})();
+document.getElementById('mobileVenueBody').addEventListener('click',event=>{
+  const share=event.target.closest('[data-share]');if(share){shareEvent(share.dataset.share)}
+  const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
+});
 document.getElementById('mobileVenueGrip').addEventListener('pointerdown',event=>{mobileVenueStartY=event.clientY});
 document.getElementById('mobileVenueGrip').addEventListener('pointerup',event=>{if(event.clientY-mobileVenueStartY>70)closeMobileVenueSheet()});
 wireSearch(desktopSearch,desktopSuggestions);wireSearch(mobileSearch,mobileSuggestions);
 document.addEventListener('pointerdown',event=>{if(!event.target.closest('.search-shell'))hideSearchSuggestions()});
 document.addEventListener('keydown',event=>{
-  if((event.key==='ArrowLeft'||event.key==='ArrowRight')&&activeDialogMode==='event'&&!document.getElementById('activityPickerOverlay').classList.contains('show')&&!event.target.matches('input,textarea,select,[contenteditable="true"]')){
-    event.preventDefault();movePopupCard(event.key==='ArrowLeft'?-1:1);return;
-  }
   if(event.key!=='Escape')return;
   if(document.getElementById('activityPickerOverlay').classList.contains('show'))closeActivityPicker();
   else if(document.getElementById('lightbox').classList.contains('show'))closeImageLightbox();

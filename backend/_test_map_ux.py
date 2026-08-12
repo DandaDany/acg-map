@@ -109,17 +109,17 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("function closeMobileVenueSheet(", self.html)
 
     def test_mobile_and_desktop_popup_share_horizontal_card(self):
-        # 手機約螢幕 1/3；桌機則是地圖內 bottom dock，不阻斷地圖探索。
+        # 手機維持橫式 bottom sheet；桌機 bottom dock 更寬、內容撐高且不內捲。
         self.assertIn("height:clamp(210px,34dvh,360px)", self.html)
-        self.assertIn("height:clamp(214px,27dvh,260px)", self.html)
+        self.assertIn("width:min(960px,calc(100% - 32px))", self.html)
+        self.assertIn("min-height:286px", self.html)
+        desktop_css = self.html[self.html.index(".desktop-map-card{"):self.html.index('html[data-theme="dark"] .home-filter-close')]
+        self.assertNotIn("overflow-y:auto", desktop_css)
         self.assertIn("mobile-card-kv", self.html)
         self.assertIn("function mapCardHtml(group,location)", self.html)
         self.assertIn("function buildPopupCards(origin)", self.html)
-        # 可左右滑切換，順序以目前地點為原點、依距離由近到遠；
-        # 不再另列「其他活動地點」清單。
-        self.assertIn("function movePopupCard(delta)", self.html)
-        self.assertIn("occurrenceDistance(origin", self.html)
-        self.assertIn("a.location.id===origin.id?-1", self.html)
+        self.assertNotIn("function movePopupCard(delta)", self.html)
+        self.assertNotIn('data-popup-move=', self.html)
         self.assertNotIn("其他活動地點（", self.html)
 
     def test_navigation_copy_link_and_private_review_text(self):
@@ -205,7 +205,7 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("cluster.zoomToShowLayer(marker", self.html)
         self.assertIn("cluster.getVisibleParent(marker)", self.html)
         self.assertIn("cluster.once('spiderfied',finish);parent.spiderfy()", self.html)
-        self.assertIn("selectLocation(cur.id,{openPopup:!MOBILE_QUERY.matches,revealMarker:true", self.html)
+        self.assertIn("selectLocation(location.id,{openPopup:true,revealMarker:true,recenter:false,updateHistory:true})", self.html)
 
     def test_selection_version_guards_async_callbacks(self):
         self.assertIn("let selectionVersion=0", self.html)
@@ -244,18 +244,17 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("uiState.lastViewedLocationId=null", floating)
         self.assertIn("if(group.floating){popupCards=[{group,location:popupOrigin}];popupCardIndex=0}", self.html)
 
-    def test_popup_arrows_share_one_sequence_and_selection_pipeline(self):
-        self.assertIn("function popupNavigationHtml()", self.html)
-        self.assertIn('data-popup-move="-1"', self.html)
-        self.assertIn('data-popup-move="1"', self.html)
-        self.assertIn("popupCardIndex===0?'disabled'", self.html)
-        self.assertIn("popupCardIndex===popupCards.length-1?'disabled'", self.html)
-        self.assertIn("movePopupCard(dx<0?1:-1)", self.html)
-        move = self.html[self.html.index("function movePopupCard"):self.html.index("function openMobileVenueSheet")]
-        self.assertIn("selectLocation(cur.id", move)
-        self.assertIn("preservePopupCards:true", move)
-        self.assertIn("activeDialogMode==='event'", self.html)
-        self.assertIn("event.key==='ArrowLeft'", self.html)
+    def test_popup_does_not_expose_cross_activity_carousel(self):
+        self.assertNotIn("function popupNavigationHtml()", self.html)
+        self.assertNotIn('data-popup-move=', self.html)
+        self.assertNotIn("function movePopupCard(delta)", self.html)
+        self.assertNotIn("movePopupCard(dx<0?1:-1)", self.html)
+        self.assertNotIn("event.key==='ArrowLeft'", self.html)
+        mobile_wiring = self.html[self.html.index("document.getElementById('mobileVenueBody').addEventListener"):self.html.index("document.getElementById('mobileVenueGrip')")]
+        self.assertNotIn("touchstart", mobile_wiring)
+        self.assertNotIn("touchend", mobile_wiring)
+        # Nearby may still build a distance-sorted list internally, but it is not a popup carousel.
+        self.assertIn("function buildNearbyActivities", self.html)
 
     def test_desktop_marker_hover_uses_inner_marker_state(self):
         self.assertIn("marker.on('mouseover'", self.html)
@@ -400,8 +399,9 @@ for(const [filter,filters,query,visibleOptions,excludedOptions] of filterCases){
         self.assertIn("openActivityPicker({mode:'nearby'", self.html)
         self.assertIn("zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false", self.html)
         cluster_handler = self.html[self.html.index("function handleClusterActivate"):self.html.index("cluster.on('clusterclick'")]
-        self.assertIn("venueIds.size===1&&eventIds.size>1", cluster_handler)
-        self.assertIn("if(sameVenueMultiActivity)", cluster_handler)
+        self.assertIn("destinationClusterInfo(items)", cluster_handler)
+        self.assertNotIn("venueIds.size===1", cluster_handler)
+        self.assertIn("if(destination)", cluster_handler)
         self.assertIn("clusterLayer.zoomToBounds()", cluster_handler)
         self.assertIn("clusterLayer.spiderfy()", cluster_handler)
 
