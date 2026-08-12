@@ -20,7 +20,7 @@ class MapUxTests(unittest.TestCase):
         with open(VENUES_JSON, encoding="utf-8") as fh:
             cls.data = json.load(fh)
 
-    def test_desktop_home_and_results_shells_exist(self):
+    def test_desktop_home_and_collection_shells_exist(self):
         self.assertIn('class="desktop-shell home-mode"', self.html)
         self.assertIn('class="filter-pane"', self.html)
         self.assertIn('class="discover-pane"', self.html)
@@ -28,6 +28,8 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("grid-template-columns:var(--sidebar) var(--discover) minmax(0,1fr)", self.html)
         self.assertIn(".desktop-shell.home-mode{grid-template-columns:minmax(560px,55%) minmax(0,45%)}", self.html)
         self.assertIn(".desktop-shell.home-mode>.filter-pane{display:none}", self.html)
+        self.assertIn(".desktop-shell.collection-mode{grid-template-columns:minmax(560px,55%) minmax(0,45%)}", self.html)
+        self.assertIn(".desktop-shell.collection-mode>.filter-pane{display:none}", self.html)
 
     def test_mobile_has_only_discover_and_map_tabs(self):
         ui_html = re.sub(r"^let DATA = .+;$", "", self.html, flags=re.MULTILINE)
@@ -170,7 +172,7 @@ class MapUxTests(unittest.TestCase):
 
     def test_latest_is_editorial_recent_discovery_and_keeps_first_seen(self):
         self.assertIn('id="homeRecentSection"', self.html)
-        self.assertIn('data-home-action="latest-results"', self.html)
+        self.assertIn('data-home-action="latest-collection"', self.html)
         self.assertNotIn('id="discoverMode"', self.html)
         self.assertNotIn('data-discover-mode="discover"', self.html)
         self.assertNotIn('data-discover-mode="latest"', self.html)
@@ -181,13 +183,11 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("getLatestActivityGroups().filter(group=>!excludedIds.has(group.id)", self.html)
         self.assertIn("discoverScrollTop:{discover:0,latest:0}", self.html)
 
-    def test_latest_results_do_not_change_marker_dataset(self):
-        enter = self.html[self.html.index("function enterResults(context='all')"):self.html.index("function returnEditorialHome")]
-        self.assertIn("if(context==='latest')", enter)
-        latest_branch = enter[enter.index("if(context==='latest')"):]
-        self.assertIn("renderDiscover(getDiscoverModeGroups())", latest_branch)
-        self.assertNotIn("renderMapMarkers", latest_branch.split("else renderAll()",1)[0])
-        self.assertNotIn("fitTaiwanView", latest_branch.split("else renderAll()",1)[0])
+    def test_latest_collection_does_not_change_marker_dataset(self):
+        collection = self.html[self.html.index("function getCollectionEntries()"):self.html.index("function collectionCardHtml")]
+        self.assertIn("if(context==='latest')return collectionGroupEntries(getLatestActivityGroups(),'latest')", collection)
+        self.assertNotIn("renderMapMarkers", collection)
+        self.assertNotIn("fitTaiwanView", collection)
 
     def test_mobile_viewport_only_saves_visible_initialized_map(self):
         self.assertIn("mapHasVisibleView:false", self.html)

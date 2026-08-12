@@ -46,7 +46,7 @@
 
 ## Discover、篩選與活動詳情
 
-- 探索首頁採 Editorial C：首頁直接呈現「這週想去哪？／附近／最近發現」，不顯示 `Discover / Latest` switch；Latest 的資料定義保留，並由「最近發現」與其完整 Results view 使用。
+- 探索首頁採 Editorial C：首頁直接呈現「這週想去哪？／附近／最近發現」，不顯示 `Discover / Latest` switch；Latest 的資料定義保留，並由「最近發現」與其完整 Collection view 使用。
 - Latest 是最近 7 個 Asia/Taipei 日曆日內第一次加入 ACG Map 的活動（包含今天），不得使用活動開始日、公告日、KV 日期、`DATA.updated` 或 Git 最新 commit 代替。
 - 加入日期使用 stable event ID 對應的 persistent `data/event_first_seen.json`；既有 ID 保留原日期，新 ID 才登記台北當日，無法可靠回填時使用 `null`。
 - Latest 共用 city、time、form、fee、multi 與 search，只改 Discover list，不得改 marker dataset、selection、popup、filters 或 map viewport；Discover 與 Latest 分別保存 scroll position。
@@ -79,13 +79,22 @@
 
 - 探索首頁不是 Filter/List 工具首頁；第一層固定為「這週想去哪？／附近／最近發現」三個 editorial sections。首頁不得顯示 Today／Weekend 數字 chip、活動總數 badge、`Discover / Latest` switch 或排名數字。
 - 「這週想去哪？」實際範圍為 Asia/Taipei 今天起未來 7 個日曆日；手機最多 5 張橫向 Hero cards，桌機只呈現前 3 張（1 大 2 小）。首頁 selection 使用可解釋規則：快結束 → 7 日內新開始 → first_seen 最近 → 其他有效活動，並做 IP／活動形式多樣化；沒有可用 KV 的活動不進 Hero，但仍可出現在完整 Results。
-- 「查看更多」進入完整 Results mode，使用既有 Filter/List/Map 架構，並將 `未來 7 天` 作為正式 time filter preset；返回首頁時只撤回這個 route 注入的 time preset，不清除使用者在 Results 中主動修改的其他 Filter。
-- 「附近」是首頁內容 section，不是 quick-sort pill。未授權時只顯示「使用目前位置」CTA；必須由使用者點擊後才呼叫 geolocation。授權後顯示 20 公里內最近 3 個不同 event，多店活動只取最近 eligible location；點卡片仍走 `selectLocation()`。使用者位置以獨立 marker 顯示；只有點「看地圖」才可主動調整 map viewport。
+- 「這週想去哪？」的「查看全部」進入 Weekly Collection：桌機以 2 欄等權 KV cards＋右側 persistent Map 呈現，手機以單欄 image-first cards 呈現；首批直接增加可瀏覽的 KV 數量，之後可用「載入更多」續載。不得因查看全部而切回舊 Filter/List/Map 三欄工具版。
+- 「附近」是首頁內容 section，不是 quick-sort pill。未授權時只顯示「使用目前位置」CTA；必須由使用者點擊後才呼叫 geolocation。授權後首頁顯示 20 公里內最近 3 個不同 event，多店活動只取最近 eligible location；「查看更多」進入距離排序的 Nearby Collection，「地圖查看」才主動調整 map viewport。兩者都沿用同一 location target 與 `selectLocation()`。
 - 「最近發現」沿用 first_seen / Latest 最近 7 日定義；手機最多 3 筆 compact rows，桌機最多 4 張 2×2 cards。它可避開已出現在「這週想去哪？」的 event；Nearby 不為視覺去重而犧牲真實距離排序。
-- Desktop Home 為 `Editorial content × persistent map` 兩欄；Filter sidebar 在 Home 隱藏，Filter 由 trigger 開啟 drawer。搜尋固定放在右側地圖上方，Marker 圖釘／圖片切換放右上。只有 Results mode 才恢復 Filter / List / Map 三欄工具架構。
+- Desktop Home 與 Collection 都維持 `Editorial content × persistent map` 兩欄；Filter sidebar 不常駐，只有使用者主動點「篩選」才以 drawer overlay 開啟。搜尋固定放在右側地圖上方，Marker 圖釘／圖片切換放右上。Collection 不得切回舊三欄工具架構。
 - Desktop Home card hover 只 highlight 對應 marker，不 flyTo；click 才走既有 `selectLocation()` / reveal / popup pipeline。
-- Mobile Home 頂部是 `ACG MAP` brand + search icon + filter icon；底部只有「探索／地圖」。首頁不把 search input 常駐成工具列；搜尋 icon 展開搜尋面板，輸入後進 Results mode。
-- Home 與 Results 共用 light editorial consumer-product visual system；Positron 地圖與既有 pin 類型配色不變。Filter facet counts、日期、距離、Map cluster counts 屬功能性資訊，可保留；禁止的是把首頁做成統計儀表板。
+- Mobile Home 頂部是 `ACG MAP` brand + search icon + filter icon；底部只有「探索／地圖」。首頁不把 search input 常駐成工具列；搜尋 icon 展開搜尋面板，輸入後進 image-first Search Collection。
+- Home 與所有 Collection 共用同一套 light/dark editorial consumer-product visual system；首頁 teaser 可用不對稱 hierarchy，Collection 為方便比較改用規律 grid，但 KV 尺寸不得因「查看更多」反而縮成工具型小縮圖。Positron 地圖與既有 pin 類型配色不變。Filter facet counts、日期、距離、Map cluster counts 屬功能性資訊，可保留；禁止的是把首頁做成統計儀表板。
 - `selectLocation()`、Nearby popup、Popup carousel、lastViewed、Activity Picker、MarkerCluster/spiderfy、selectedLocationId SSOT、deep link、popstate 與 first_seen 定義不得因本次首頁重排而重構。
 
 - 2026-08-12：Editorial C 介面提供暖白／黑色小型主題 switch。暖白為預設；使用者手動選擇會以 `localStorage` 的 `acg-map-theme` 保存。主題切換只改 UI visual chrome，不改活動資料、filter、selection、popup、cluster 或 map viewport state。
+
+
+## 2026-08-12 — Collection Page UX
+
+- 首頁 section CTA 的語意固定：`查看全部／查看更多／探索更多` 代表進入同主題的完整 Collection，必須增加同類內容供瀏覽；不得讓 Filter sidebar 自動出現、不得把 KV 卡縮成舊工具 List，也不得改成不同視覺系統。
+- Weekly／Nearby／Recent Collection 共用同一套 image-first Collection template；桌機 2 欄 cards＋persistent Map，手機單欄 cards。Search results 也使用相同 Collection card system。
+- Collection 首批桌機顯示 8 張、手機顯示 6 張；若仍有內容，底部「載入更多」以同樣卡片規格追加下一批。
+- Filter 與「查看更多」是不同 intent：Filter 只有使用者主動點擊才開 drawer，套用後只改 Collection 內容，不改版型。
+- Nearby 同時提供「查看更多」與「地圖查看」：前者維持內容瀏覽，後者才切換／調整空間視角。
