@@ -27,6 +27,13 @@ jobs:
         run: python tools/patch_map_followup_ux.py
       - name: Normalize generated map UX test
         run: python tools/fix_generated_map_test.py
+      - name: Normalize decision EOF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path=Path('decision.md')
+          path.write_text(path.read_text(encoding='utf-8').rstrip()+'\n',encoding='utf-8')
+          PY
       - name: Follow-up UX regression
         run: python backend/_test_map_followup_ux.py
       - name: Map exploration regression
