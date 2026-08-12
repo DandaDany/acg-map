@@ -1,0 +1,63 @@
+name: Agent Map Follow-up UX
+
+on:
+  push:
+    branches:
+      - agent/map-controls-destination-cluster-city-view
+
+permissions:
+  contents: write
+
+jobs:
+  patch-test-commit:
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply map follow-up UX patch
+        run: python tools/patch_map_followup_ux.py
+      - name: Follow-up UX regression
+        run: python backend/_test_map_followup_ux.py
+      - name: Map exploration regression
+        run: python backend/_test_map_exploration_polish.py
+      - name: Existing map UX regression
+        run: python backend/_test_map_ux.py
+      - name: Editorial C regression
+        run: python backend/_test_editorial_c_home.py
+      - name: Collection regression
+        run: python backend/_test_editorial_collection_pages.py
+      - name: Theme regression
+        run: python backend/_test_theme_switch.py
+      - name: Python compile check
+        run: python -m py_compile backend/*.py
+      - name: JavaScript syntax check
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html=Path('public/taiwan-exhibition-map.html').read_text(encoding='utf-8')
+          scripts=re.findall(r'<script>(.*?)</script>',html,flags=re.S)
+          if not scripts: raise SystemExit('no inline script found')
+          Path('/tmp/acg-map-inline.js').write_text(scripts[-1],encoding='utf-8')
+          PY
+          node --check /tmp/acg-map-inline.js
+      - name: Protect activity data
+        run: test -z "$(git diff --name-only origin/main -- public/venues.json data/event_first_seen.json data/manual data/auto)"
+      - name: Validate diff
+        run: git diff --check
+      - name: Commit implementation
+        run: |
+          rm tools/patch_map_followup_ux.py
+          rm .github/workflows/agent-map-followup-ux.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: refine map navigation and destination clusters"
+          git push
