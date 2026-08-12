@@ -18,8 +18,8 @@ assert 'id="discoverMode"' not in text
 assert 'data-discover-mode=' not in text
 
 # Week = rolling seven days; Home stays editorial and opens a Collection.
-assert "if(value==='next7')" in text
-assert "day,day+6" in text
+assert "locationOverlapsCalendarRange(location,todayDay,todayDay+6)" in text
+assert "todayDay,todayDay+6" in text
 assert 'function homeEditorialRank' in text
 assert 'function pickEditorialDiverse' in text
 assert "safeUrl(group.image,true)&&homeWeekLocations" in text

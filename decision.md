@@ -24,7 +24,7 @@
 
 - ACG 活動只有上述四種形式，沒有「其他」分類；圖例與篩選皆不列出「其他」。
 - 圖釘為白框水滴造型。
-- 每個活動各自一個 marker；同場館／同座標的多個活動會聚合。桌機點擊聚合開啟共用的全螢幕 Activity Picker，不同步縮放；手機維持 zoom／最大層級 spiderfy。個別 marker 不顯示數字徽章；聚合徽章顯示該處活動數。
+- 每個活動各自一個 marker；同場館／同座標的多個活動會聚合。桌機 cluster 只有在所有子 marker 都屬於同一 venue/location 且確實有多活動時，才開啟全螢幕 Activity Picker；一般由不同地點組成的 cluster 必須持續 zoom-to-bounds，最大層級再 spiderfy。手機維持 zoom／最大層級 spiderfy。個別 marker 不顯示數字徽章；聚合徽章顯示該處活動數。
 - 每個活動依自身活動形式顯示對應顏色的圖釘。
 - 座標不是 `exact` 時，圖釘透明度降為 70%。
 - 場館包含七日內即將結束的非常設活動時，顯示紅色提示點。
@@ -55,11 +55,11 @@
 - 多店活動篩選選項的數字代表目前其他篩選條件下的可見門市數，不是活動群組數。
 - 活動 popup 只顯示目前定位的主要地點，不再列出其他活動地點。
 - 桌機與手機 popup 共用同一個活動序列：以目前地點為原點，將目前篩選後的有效 map locations 依距離由近到遠排列；灰色左右箭頭不循環，手機 swipe 與箭頭走同一個移動函式，桌機另支援方向鍵。
-- 手機版活動 popup 為橫式卡片（左 KV、右資訊）、高度約螢幕 1/3。單一場館多場活動不再另出選擇格。
-- 桌機與手機 popup 顯示 IP、主辦、日期、目前活動地點；空 IP、空主辦與空地址整列不顯示，不以 placeholder 代替。浮動活動仍顯示「請至官方網站查詢地點」。本次 popup 不新增授權商。
+- 桌機與手機活動 popup 共用橫式卡片資訊結構：左 KV、右資訊。手機高度約螢幕 1/3；桌機使用地圖內底部 docked card，不使用阻斷探索的全螢幕 event modal。單一活動直接顯示卡片；只有同一 location 的多活動才使用 Fullscreen Activity Picker。
+- Popup 的閱讀順序固定為活動名稱 → 目前地點／導航 → 目前 location 日期 → `#縣市`／`#付費狀態` → 官方資訊／分享；IP、主辦與授權商都不進 compact popup。浮動活動仍顯示「請至官方網站查詢地點」。Nearby CTA 與活動序列導覽屬 secondary interaction，可保留在主要資訊之後。
 - Popup 以目前 location 為中心顯示 2 公里內其他活動的 Nearby CTA。Nearby 尊重所有 active filters、排除目前 event、包含同場館的其他 event，並以 event 去重及最近 occurrence 作為目標。
-- Nearby CTA 與桌機 Cluster 共用同一個 Fullscreen Activity Picker。Picker 是 transient UI，不寫入核心 selection 或 history；Nearby Picker 關閉後保留底層 popup，點卡片後一律關閉 Picker 再呼叫 `selectLocation()`。
-- 桌機與手機的活動 popup 皆顯示目前地點所在縣市的 hashtag（例：`#台北市`）。
+- Nearby CTA 與「同地點多活動」的桌機 Cluster／venue selection 共用 Fullscreen Activity Picker。Picker 是 transient UI，不寫入核心 selection 或 history；一般多地點 Cluster 不得開 Picker。Nearby Picker 關閉後保留底層 popup，點卡片後一律關閉 Picker 再呼叫 `selectLocation()`。
+- 桌機與手機活動 popup 皆保留純文字 tertiary context：`#縣市` 與 `#付費狀態`（例：`#台北市 #免費`）；不擴張成活動形式／IP 等大量 chips。
 - 地點列只保留無外框的「導航」文字連結，不顯示 Threads 圖示；手機橫式卡的場館列本身即為導航連結。
 - 「分享活動」一律直接複製目前活動的深連結，成功後顯示「成功複製連結」；Open Graph 連結預覽留待後續設計。
 - 公開顯示值若含「需人工確認」，整個值留白；後台原始稽核資料可保留該文字。
@@ -98,3 +98,11 @@
 - Collection 首批桌機顯示 8 張、手機顯示 6 張；若仍有內容，底部「載入更多」以同樣卡片規格追加下一批。
 - Filter 與「查看更多」是不同 intent：Filter 只有使用者主動點擊才開 drawer，套用後只改 Collection 內容，不改版型。
 - Nearby 同時提供「查看更多」與「地圖查看」：前者維持內容瀏覽，後者才切換／調整空間視角。
+
+## 2026-08-12 — Map exploration / Filter 微調
+
+- 篩選的「活動時段」只保留 `不限／進行中／即將開始／即將結束`，不再提供「今天／週末／未來 7 天」preset；`進行中` 與 `即將結束` 為互斥狀態。
+- 「活動時段」下方提供月曆。點單一日期代表 `event.start <= selected_date <= event.end`；日期選擇與狀態選擇互斥，選其中一種會取代另一種。月曆只以小點提示當天有符合其他 active filters 的活動，不在日期格顯示活動數。
+- 「最近發現」Collection 的母集合固定為 `first_seen` 最近 7 個 Asia/Taipei 日曆日；進入這頁後仍可篩選，但所有 facet count、disabled 狀態與摘要統計都必須先限制在這個 7 日母集合，再套 city／time／form／fee／multi／query。
+- 暖白模式的 Filter 關閉 X 使用 warm semantic surface／text token，不得維持黑底高對比；dark mode 使用對應深色 surface。
+- 使用者自己的位置 marker 使用鮮紅實心圓＋白色 halo＋淡紅外圈；活動 selected marker 仍用原 marker shape 的紅色 outline，兩者不得混為同一語意。

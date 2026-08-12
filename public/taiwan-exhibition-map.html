@@ -1260,6 +1260,38 @@ html[data-theme="dark"] .collection-filter{color:#eef2f8}
   html[data-theme="dark"] .collection-panel{background:linear-gradient(180deg,#151a24 0%,#0f141d 100%)}
 }
 
+
+/* ===== Map exploration polish ===== */
+.home-filter-close{display:none;margin-left:auto;border-color:var(--line);background:#fff;color:#51463e;box-shadow:0 4px 14px rgba(70,52,38,.06)}
+.home-filter-close:hover,.home-filter-close:focus-visible{border-color:#e7ad9d;background:#fff0eb;color:var(--accent2)}
+.filter-calendar{margin:12px 5px 4px;padding-top:14px;border-top:1px solid var(--line)}
+.filter-calendar-label{margin:0 4px 9px;color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.4px}
+.filter-calendar-head{display:grid;grid-template-columns:38px 1fr 38px;align-items:center;gap:6px;margin-bottom:8px}
+.filter-calendar-head strong{text-align:center;font-size:13px}
+.filter-calendar-head button{display:grid;width:38px;height:38px;place-items:center;border:0;border-radius:10px;background:transparent;color:var(--text);font-size:20px;cursor:pointer}
+.filter-calendar-head button:hover:not(:disabled){background:#f6eee8}.filter-calendar-head button:disabled{opacity:.25;cursor:default}
+.filter-calendar-weekdays,.filter-calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.filter-calendar-weekdays{margin-bottom:4px}.filter-calendar-weekdays span{padding:4px 0;color:var(--muted);font-size:10px;text-align:center}
+.filter-calendar-spacer{height:38px}
+.filter-calendar-day{position:relative;display:grid;height:38px;place-items:center;padding:0;border:0;border-radius:10px;background:transparent;color:var(--text);font-size:11.5px;cursor:pointer}
+.filter-calendar-day:hover:not(:disabled){background:#f6eee8}.filter-calendar-day:disabled{color:#b9aea5;cursor:default;opacity:.45}
+.filter-calendar-day.today{box-shadow:inset 0 0 0 1px #e4c1b5}.filter-calendar-day.selected{background:var(--accent);color:#fff;font-weight:850;box-shadow:none}
+.filter-calendar-day i{position:absolute;bottom:4px;width:4px;height:4px;border-radius:50%;background:transparent}.filter-calendar-day.has-events i{background:var(--accent2)}.filter-calendar-day.selected i{background:#fff}
+.user-location-dot{background:#ff2d2d;box-shadow:0 0 0 7px rgba(255,45,45,.18),0 3px 13px rgba(111,23,23,.32)}
+html[data-theme="dark"] .user-location-dot{border-color:#fff;background:#ff2d2d;box-shadow:0 0 0 7px rgba(255,45,45,.22),0 3px 13px rgba(0,0,0,.42)}
+.desktop-map-card{position:absolute;z-index:1450;left:16px;bottom:18px;width:min(760px,calc(100% - 96px));height:clamp(214px,27dvh,260px);padding:12px;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:rgba(255,250,245,.98);box-shadow:0 20px 58px rgba(54,39,28,.24);opacity:0;pointer-events:none;transform:translateY(calc(100% + 34px));transition:transform .24s cubic-bezier(.2,.82,.2,1),opacity .18s ease;backdrop-filter:blur(14px)}
+.desktop-map-card.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.desktop-map-card-close{position:absolute;z-index:3;top:7px;right:7px;display:grid;width:38px;height:38px;place-items:center;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#5b4c43;font-size:20px;cursor:pointer;box-shadow:0 3px 12px rgba(64,47,36,.08)}
+.desktop-map-card-body{height:100%;padding-right:34px}
+.desktop-map-card .mobile-card{display:flex;height:100%;gap:15px;overflow:hidden}.desktop-map-card .mobile-card-kv{width:42%;height:100%;flex:none}.desktop-map-card .mobile-card-kv .media-frame{height:100%;border-radius:15px}.desktop-map-card .mobile-card-info{display:flex;min-width:0;flex:1;flex-direction:column;gap:7px;overflow-y:auto;padding:2px 2px 2px 0}.desktop-map-card .mobile-card-info h2{margin:0;font-size:18px;line-height:1.32;padding-right:8px}.desktop-map-card .mobile-card-date{font-size:12.5px;font-weight:700;color:var(--text)}
+.map-card-location{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:12.5px;line-height:1.45}.map-card-location>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.map-card-nav{flex:none;color:var(--accent2);font-size:11.5px;font-weight:800;text-decoration:none}.map-card-nav:hover{text-decoration:underline}
+.map-card-context{display:flex;flex-wrap:wrap;gap:8px;color:var(--accent2);font-size:11px;font-weight:800}.map-card-context span{white-space:nowrap}
+.desktop-map-card .action-row{margin-top:2px}.desktop-map-card .action-btn{min-height:36px;padding:0 11px;font-size:11.5px}.desktop-map-card .nearby-cta{min-height:34px;margin-top:0;font-size:11.5px}.desktop-map-card .popup-nav{margin-top:auto}
+html[data-theme="dark"] .home-filter-close{border-color:#2a3344;background:#171d28;color:#eef2f8;box-shadow:none}html[data-theme="dark"] .home-filter-close:hover{border-color:#465674;background:#232c3d;color:#ff8a74}
+html[data-theme="dark"] .filter-calendar{border-color:#2a3344}html[data-theme="dark"] .filter-calendar-head button:hover:not(:disabled),html[data-theme="dark"] .filter-calendar-day:hover:not(:disabled){background:#232c3d}html[data-theme="dark"] .filter-calendar-day:disabled{color:#596579}html[data-theme="dark"] .filter-calendar-day.today{box-shadow:inset 0 0 0 1px #58657a}
+html[data-theme="dark"] .desktop-map-card{border-color:#2a3344;background:rgba(21,26,36,.98);box-shadow:0 20px 58px rgba(0,0,0,.5)}html[data-theme="dark"] .desktop-map-card-close{background:rgba(28,35,48,.94);color:#eef2f8}
+@media(max-width:760px){.desktop-map-card{display:none!important}.filter-calendar{margin-right:3px;margin-left:3px}.filter-calendar-day{height:42px}.filter-calendar-spacer{height:42px}.mobile-card-info .map-card-context{margin-top:1px}.mobile-card-info .map-card-location{font-size:12px}}
+
 </style></head>
 <body><div id="app">
 <div class="desktop-shell home-mode">
@@ -1273,7 +1305,7 @@ html[data-theme="dark"] .collection-filter{color:#eef2f8}
     <div class="filter-head"><h2>篩選活動</h2><button class="filter-clear" id="clearFilters" type="button" disabled>清除全部</button></div>
     <div class="filter-menu" id="filterMenu" aria-label="篩選分類">
       <button class="filter-category" type="button" data-filter="city" aria-expanded="false"><span class="filter-icon" aria-hidden="true">⌖</span><span class="filter-name">縣市</span><span class="filter-value" data-filter-value="city">全台灣</span><span class="filter-arrow" aria-hidden="true">›</span></button>
-      <button class="filter-category" type="button" data-filter="time" aria-expanded="false"><span class="filter-icon" aria-hidden="true">◷</span><span class="filter-name">時間</span><span class="filter-value" data-filter-value="time">全部時間</span><span class="filter-arrow" aria-hidden="true">›</span></button>
+      <button class="filter-category" type="button" data-filter="time" aria-expanded="false"><span class="filter-icon" aria-hidden="true">◷</span><span class="filter-name">活動時段</span><span class="filter-value" data-filter-value="time">不限</span><span class="filter-arrow" aria-hidden="true">›</span></button>
       <button class="filter-category" type="button" data-filter="form" aria-expanded="false"><span class="filter-icon" aria-hidden="true">◇</span><span class="filter-name">活動形式</span><span class="filter-value" data-filter-value="form">全部形式</span><span class="filter-arrow" aria-hidden="true">›</span></button>
       <button class="filter-category" type="button" data-filter="fee" aria-expanded="false"><span class="filter-icon" aria-hidden="true">＄</span><span class="filter-name">付費狀態</span><span class="filter-value" data-filter-value="fee">不限</span><span class="filter-arrow" aria-hidden="true">›</span></button>
       <button class="filter-category" type="button" data-filter="multi" aria-expanded="false"><span class="filter-icon" aria-hidden="true">⌘</span><span class="filter-name">多店活動</span><span class="filter-value" data-filter-value="multi">全部多店</span><span class="filter-arrow" aria-hidden="true">›</span></button>
@@ -1353,6 +1385,7 @@ html[data-theme="dark"] .collection-filter{color:#eef2f8}
       <span class="map-legend-item"><span class="map-legend-dot" style="background:#8560d8"></span>體驗活動</span>
     </div>
     <div class="map-tools"><button class="map-tool" id="mapHomeButton" type="button" aria-label="回到台灣全圖" title="回到台灣全圖">⌂</button><div class="floating-events" id="floatingEvents" aria-label="多店活動（無單一地址）"></div></div>
+    <aside class="desktop-map-card" id="desktopMapCard" aria-hidden="true" aria-label="活動資訊"><button class="desktop-map-card-close" id="desktopMapCardClose" type="button" aria-label="關閉活動資訊">×</button><div class="desktop-map-card-body" id="desktopMapCardBody"></div></aside>
   </section>
 </div>
 
@@ -1503,9 +1536,9 @@ const CITY_GROUPS=[
 ];
 const FILTER_META={
   city:{title:'縣市',defaultLabel:'全台灣'},
-  time:{title:'時間',defaultLabel:'全部時間',options:[
-    {value:'all',label:'全部時間'},{value:'next7',label:'未來 7 天'},{value:'today',label:'今天'},{value:'weekend',label:'本週末'},
-    {value:'ongoing',label:'進行中'},{value:'upcoming',label:'即將開始'},{value:'ending',label:'即將結束'}]},
+  time:{title:'活動時段',defaultLabel:'不限',options:[
+    {value:'all',label:'不限'},{value:'ongoing',label:'進行中'},
+    {value:'upcoming',label:'即將開始'},{value:'ending',label:'即將結束'}]},
   form:{title:'活動形式',defaultLabel:'全部形式',options:[
     {value:'all',label:'全部形式'},{value:'展覽',label:'展覽'},
     {value:'快閃店',label:'快閃店'},{value:'主題餐廳',label:'主題餐廳'},
@@ -1765,23 +1798,23 @@ function calendarDayNumber(value){
   return match?Date.UTC(+match[1],+match[2]-1,+match[3])/86400000:NaN;
 }
 function eventCalendarDayNumber(value){return calendarDayNumber(String(value||'').replace(/\//g,'-'))}
-function currentWeekendRange(today=taipeiCalendarToday()){
-  const todayDay=calendarDayNumber(today);
-  const weekday=new Date(todayDay*86400000).getUTCDay();
-  if(weekday===0)return {start:todayDay,end:todayDay};
-  const saturday=todayDay+(weekday===6?0:6-weekday);
-  return {start:saturday,end:saturday+1};
-}
 function locationOverlapsCalendarRange(location,startDay,endDay){
   const rawStart=eventCalendarDayNumber(location.start),rawEnd=eventCalendarDayNumber(location.end);
   const start=Number.isFinite(rawStart)?rawStart:rawEnd,end=Number.isFinite(rawEnd)?rawEnd:rawStart;
   return Number.isFinite(start)&&Number.isFinite(end)&&start<=endDay&&end>=startDay;
 }
+function timeFilterDate(value){const match=String(value||'').match(/^date:(\d{4}-\d{2}-\d{2})$/);return match?match[1]:''}
+function locationActiveOnCalendarDay(location,day){
+  const start=eventCalendarDayNumber(location.start),end=eventCalendarDayNumber(location.end);
+  if(Number.isFinite(start)&&day<start)return false;
+  if(Number.isFinite(end)&&day>end)return false;
+  return Number.isFinite(start)||Number.isFinite(end)||location.status.kind==='ongoing'||location.status.kind==='ending';
+}
 function locationMatchesTimeFilter(location,value){
-  if(value==='today'){const day=calendarDayNumber(taipeiCalendarToday());return locationOverlapsCalendarRange(location,day,day)}
-  if(value==='next7'){const day=calendarDayNumber(taipeiCalendarToday());return locationOverlapsCalendarRange(location,day,day+6)}
-  if(value==='weekend'){const range=currentWeekendRange();return locationOverlapsCalendarRange(location,range.start,range.end)}
-  return location.status.kind===value||(value==='ongoing'&&location.status.kind==='ending');
+  const selectedDate=timeFilterDate(value);
+  if(selectedDate){const day=calendarDayNumber(selectedDate);return Number.isFinite(day)&&locationActiveOnCalendarDay(location,day)}
+  if(value==='all')return true;
+  return location.status.kind===value;
 }
 function formatMonthDay(dayNumber){const date=new Date(dayNumber*86400000);return (date.getUTCMonth()+1)+'/'+date.getUTCDate()}
 function isLatestGroup(group,today=taipeiCalendarToday()){
@@ -1794,18 +1827,22 @@ function sortDiscoverModeGroups(groups){
   return [...groups].sort((a,b)=>(nearestLocationForGroup(a)?.distanceMeters??Infinity)-(nearestLocationForGroup(b)?.distanceMeters??Infinity)||a.title.localeCompare(b.title,'zh-Hant')||a.id.localeCompare(b.id));
 }
 function getDiscoverModeGroups(){const groups=uiState.discoverMode==='latest'?getLatestActivityGroups():getFilteredActivityGroups();return sortDiscoverModeGroups(groups)}
+function facetBaseGroups(state=uiState){
+  let groups=[...activityGroups.values()].filter(group=>group.status.kind!=='ended');
+  if(state.exploreView==='collection'&&state.collectionContext==='latest')groups=groups.filter(group=>isLatestGroup(group));
+  return groups;
+}
 function getFacetCount(key,value,state=uiState){
   const filters={...state.filters,[key]:value};
+  const base=facetBaseGroups(state);
   if(key==='multi'){
-    const groups=[...activityGroups.values()].filter(group=>
-      group.status.kind!=='ended'&&group.multiFilter&&(value==='all'||group.multiFilter===value)
+    const groups=base.filter(group=>
+      group.multiFilter&&(value==='all'||group.multiFilter===value)
       &&groupMatchesFilters(group,filters,'multi')&&groupMatchesQuery(group,state.query)
     );
     return groups.reduce((sum,group)=>sum+group.locations.filter(location=>occurrenceVisible(location,filters)).length,0);
   }
-  return [...activityGroups.values()].filter(group=>
-    group.status.kind!=='ended'&&groupMatchesFilters(group,filters,'')&&groupMatchesQuery(group,state.query)
-  ).length;
+  return base.filter(group=>groupMatchesFilters(group,filters,'')&&groupMatchesQuery(group,state.query)).length;
 }
 function occurrenceVisible(location,filters){
   if(location.status.kind==='ended') return false;
@@ -1877,7 +1914,7 @@ function popupMetadataHtml(group){
 function actionHtml(group){
   const link=safeUrl(group.link);
   return '<div class="action-row">'
-    +(link?'<a class="action-btn primary" href="'+esc(link)+'" target="_blank" rel="noopener">官方活動頁 ↗</a>':'')
+    +(link?'<a class="action-btn primary" href="'+esc(link)+'" target="_blank" rel="noopener">官方資訊 ↗</a>':'')
     +'<button class="action-btn" type="button" data-share="'+esc(group.id)+'">分享活動</button></div>';
 }
 function eventCardHtml(group,preferredLocation=null){
@@ -1917,12 +1954,8 @@ function renderDiscover(groups){
       list.innerHTML='<div class="empty-state"><div><p>'+message+'</p>'+(anyLatest?'<button class="primary-btn" id="emptyClear" type="button">清除篩選</button>':'')+'</div></div>';
       if(anyLatest)document.getElementById('emptyClear').addEventListener('click',clearAllFilters);
     }else{
-      const time=uiState.filters.time;
-      const message=time==='today'?'今天沒有符合條件的活動':time==='weekend'?'這個週末沒有符合條件的活動':'沒有符合條件的活動';
-      const weekendCta=time==='today'?'<button class="primary-btn" id="emptyWeekend" type="button">看這個週末</button>':'';
-      list.innerHTML='<div class="empty-state"><div><p>'+message+'</p><div class="empty-actions">'+weekendCta+'<button class="secondary-btn" id="emptyClear" type="button">清除篩選</button></div></div></div>';
+      list.innerHTML='<div class="empty-state"><div><p>沒有符合條件的活動</p><div class="empty-actions"><button class="secondary-btn" id="emptyClear" type="button">清除篩選</button></div></div></div>';
       document.getElementById('emptyClear').addEventListener('click',clearAllFilters);
-      if(time==='today')document.getElementById('emptyWeekend').addEventListener('click',()=>{uiState.filters.time='weekend';renderAll()});
     }
     return;
   }
@@ -2096,7 +2129,7 @@ function updateCollectionHeader(){
   const context=uiState.collectionContext;
   if(context==='week'){title.textContent='這週想去哪？';subtitle.textContent='接下來 7 天可以參加的活動'}
   else if(context==='nearby'){title.textContent='附近';subtitle.textContent='依你目前的位置，由近到遠瀏覽活動'}
-  else if(context==='latest'){title.textContent='最近發現';subtitle.textContent='最近加入 ACG Map 的活動'}
+  else if(context==='latest'){title.textContent='最近發現';subtitle.textContent='最近 7 天新加入 ACG Map 的活動'}
   else if(context==='search'){title.textContent='搜尋結果';subtitle.textContent=uiState.query?'「'+uiState.query+'」':'輸入作品、活動或地點'}
   else{title.textContent='探索活動';subtitle.textContent='依目前條件瀏覽活動'}
   mapLink.hidden=!(context==='nearby'&&uiState.userLocation);
@@ -2205,42 +2238,29 @@ function focusDialog(){
   panel.focus({preventScroll:true});
 }
 let mapSelectionActive=false;
-function openDesktopEventModal(eventId,returnTarget=null,historyMode='push',preferredLocationId='',preservePopupCards=false){
-  const group=activityGroups.get(eventId);
-  if(!group) return;
+function openDesktopMapCard(eventId,historyMode='push',preferredLocationId='',preservePopupCards=false){
+  const group=activityGroups.get(eventId);if(!group)return;
   const popupOrigin=primaryLocationFor(group,preferredLocationId);
-  if(group.floating){popupCards=[{group,location:popupOrigin}];popupCardIndex=0}
-  else preparePopupCards(popupOrigin,preservePopupCards);
-  lastFocus=document.activeElement;
-  activeDialogMode='event';dialogReturn=returnTarget;uiState.selectedEventId=eventId;
-  const panel=document.getElementById('dialogPanel');
-  const venueLocation=returnTarget?group.locations.find(location=>location.venueId===returnTarget):null;
-  panel.innerHTML=(returnTarget?'<button class="dialog-back" id="dialogBack" type="button">‹ 返回活動選擇</button>':'')+detailHtml(group,preferredLocationId||(venueLocation&&venueLocation.id)||'');
-  document.getElementById('dialogOverlay').classList.add('show');
-  document.getElementById('dialogOverlay').setAttribute('aria-hidden','false');
-  wireImages(panel);focusDialog();
-  if(returnTarget) document.getElementById('dialogBack').addEventListener('click',()=>openDesktopVenuePicker(returnTarget,false));
-  if(historyMode) updateEventParam(eventId,historyMode);
+  if(group.floating){popupCards=[{group,location:popupOrigin}];popupCardIndex=0}else preparePopupCards(popupOrigin,preservePopupCards);
+  activeDialogMode='event';dialogReturn=null;uiState.selectedEventId=eventId;
+  const body=document.getElementById('desktopMapCardBody');body.innerHTML=mapCardHtml(group,popupOrigin);wireImages(body);
+  const card=document.getElementById('desktopMapCard');card.classList.add('show');card.setAttribute('aria-hidden','false');
+  if(historyMode)updateEventParam(eventId,historyMode);
+}
+function closeDesktopMapCard(updateHistory=true){closeActiveMapPopup({clearSelection:true,updateHistory})}
+
+function openDesktopEventModal(eventId,returnTarget=null,historyMode='push',preferredLocationId='',preservePopupCards=false){
+  openDesktopMapCard(eventId,historyMode,preferredLocationId,preservePopupCards);
 }
 function openDesktopVenuePicker(venueIdValue,updateHistory=true){
   const locations=getFilteredVenueOccurrences(venueIdValue);
-  const groups=sortDiscoverActivities([...new Set(locations.map(location=>location.event.id))].map(id=>activityGroups.get(id)).filter(Boolean));
-  if(!groups.length) return;
-  if(groups.length===1){
-    const preferred=groups[0].locations.find(location=>location.venueId===venueIdValue);
-    if(preferred)selectLocation(preferred.id,{recenter:false,updateHistory});return
-  }
-  lastFocus=document.activeElement;
-  activeDialogMode='picker';dialogReturn=venueIdValue;uiState.selectedVenueId=venueIdValue;
-  const panel=document.getElementById('dialogPanel');
-  panel.innerHTML='<div class="event-picker"><h2>這個地點有 '+groups.length+' 場活動</h2><div class="event-picker-grid">'
-    +groups.map(group=>'<button class="picker-card" type="button" data-picker-event="'+esc(group.id)+'">'+mediaFrameHtml(group.image,group.title,false)
-      +'<span class="picker-copy"><h3>'+esc(group.title)+'</h3><span class="meta-row">'+esc(groupDateText(group))+' · '+esc(group.fee||'費用未標示')+'</span></span></button>').join('')
-    +'</div></div>';
-  document.getElementById('dialogOverlay').classList.add('show');
-  document.getElementById('dialogOverlay').setAttribute('aria-hidden','false');
-  wireImages(panel);focusDialog();
-  if(updateHistory) updateEventParam('', 'replace');
+  const items=sortDiscoverActivities([...new Set(locations.map(location=>location.event.id))].map(id=>activityGroups.get(id)).filter(Boolean)).map(group=>{
+    const location=locations.find(item=>item.event.id===group.id);return location?{eventId:group.id,locationId:location.id,group,location}:null;
+  }).filter(Boolean);
+  if(!items.length)return;
+  if(items.length===1){selectLocation(items[0].locationId,{recenter:false,updateHistory});return}
+  openActivityPicker({mode:'cluster',items,title:'這個地點的活動'});
+  if(updateHistory)updateEventParam('','replace');
 }
 function closeDesktopDialog(updateHistory=true){
   const overlay=document.getElementById('dialogOverlay');
@@ -2382,12 +2402,13 @@ function clusterPickerItems(clusterLayer){
 }
 function handleClusterActivate(clusterLayer){
   if(!clusterLayer)return;
-  if(MOBILE_QUERY.matches){
-    if(map.getZoom()<map.getMaxZoom())clusterLayer.zoomToBounds();
-    else clusterLayer.spiderfy();
-    return;
-  }
-  openActivityPicker({mode:'cluster',items:clusterPickerItems(clusterLayer),title:'這個區域的活動'});
+  const items=clusterPickerItems(clusterLayer);
+  const venueIds=new Set(items.map(item=>item.location.venueId));
+  const eventIds=new Set(items.map(item=>item.eventId));
+  const sameVenueMultiActivity=!MOBILE_QUERY.matches&&venueIds.size===1&&eventIds.size>1;
+  if(sameVenueMultiActivity){openActivityPicker({mode:'cluster',items,title:'這個地點的活動'});return}
+  if(map.getZoom()<map.getMaxZoom())clusterLayer.zoomToBounds();
+  else clusterLayer.spiderfy();
 }
 cluster.on('clusterclick',event=>{L.DomEvent.stopPropagation(event);handleClusterActivate(event.layer)});
 function wireClusterKeyboard(){
@@ -2765,23 +2786,25 @@ function selectActivityPickerItem(locationId){
   closeActivityPicker();
   selectLocation(locationId,{updateHistory:true});
 }
-function mobileCardHtml(group,location){
-  const noAddr=location.noAddress;
-  const venueText=noAddr?FLOATING_ADDRESS_TEXT:[location.venueName,cleanAddress(location.address)].filter(Boolean).join('｜');
-  const venueLink=noAddr?safeUrl(location.floatingLink||group.link):navUrl(location);
-  const venueHtml=venueText&&venueLink
-    ?'<a class="mobile-card-venue" href="'+esc(venueLink)+'" target="_blank" rel="noopener">'+esc(venueText)+' ↗</a>'
-    :(venueText?'<div class="mobile-card-venue">'+esc(venueText)+'</div>':'');
-  return '<article class="mobile-card">'
+function popupContextHtml(group,location){
+  const tags=[location.city,group.fee].filter(Boolean);return tags.length?'<div class="map-card-context">'+tags.map(value=>'<span>#'+esc(value)+'</span>').join('')+'</div>':'';
+}
+function mapCardLocationHtml(group,location){
+  if(location.noAddress)return '<div class="map-card-location"><span>'+esc(FLOATING_ADDRESS_TEXT)+'</span></div>';
+  const label=location.venueName||cleanAddress(location.address)||location.city||'';
+  return label?'<div class="map-card-location"><span>'+esc(label)+'</span><a class="map-card-nav" href="'+esc(navUrl(location))+'" target="_blank" rel="noopener">導航 ↗</a></div>':'';
+}
+function mapCardHtml(group,location){
+  return '<article class="mobile-card map-event-card">'
     +'<div class="mobile-card-kv">'+mediaFrameHtml(group.image,group.title,false)+'</div>'
-    +'<div class="mobile-card-info">'+tagHtml(group,location.city)
-    +'<h2>'+esc(group.title)+'</h2>'
-    +popupMetadataHtml(group)
-    +venueHtml
-    +'<div class="mobile-card-date">'+esc(groupDateText(group))+'</div>'
-    +nearbyCtaHtml(location)+actionHtml(group)+popupNavigationHtml()
+    +'<div class="mobile-card-info"><h2>'+esc(group.title)+'</h2>'
+    +mapCardLocationHtml(group,location)
+    +'<div class="mobile-card-date">'+esc(locationDateText(location))+'</div>'
+    +popupContextHtml(group,location)
+    +actionHtml(group)+nearbyCtaHtml(location)+popupNavigationHtml()
     +'</div></article>';
 }
+function mobileCardHtml(group,location){return mapCardHtml(group,location)}
 function renderMobileCard(recenter){
   const body=document.getElementById('mobileVenueBody');
   if(!popupCards.length){body.innerHTML='';return;}
@@ -2824,6 +2847,7 @@ function closeActiveMapPopup(options={}){
   const settings={clearSelection:true,updateHistory:true,...options};
   const sheet=document.getElementById('mobileVenueSheet');
   sheet.classList.remove('show');sheet.setAttribute('aria-hidden','true');popupCards=[];popupCardIndex=0;
+  const dock=document.getElementById('desktopMapCard');dock.classList.remove('show');dock.setAttribute('aria-hidden','true');document.getElementById('desktopMapCardBody').innerHTML='';
   const overlay=document.getElementById('dialogOverlay');
   overlay.classList.remove('show');overlay.setAttribute('aria-hidden','true');activeDialogMode='';dialogReturn=null;
   if(settings.clearSelection)clearSelection();
@@ -2843,14 +2867,58 @@ function filterOptionsFor(key){
   return FILTER_META[key].options;
 }
 function filterOptionLabel(key,value){
+  if(key==='time'){
+    const date=timeFilterDate(value);
+    if(date){const day=calendarDayNumber(date);return Number.isFinite(day)?formatMonthDay(day):FILTER_META[key].defaultLabel}
+  }
   const item=filterOptionsFor(key).find(option=>option.value===value);
   return item?item.label:FILTER_META[key].defaultLabel;
+}
+let filterCalendarMonth='';
+function initialFilterCalendarMonth(state=uiState){
+  const selected=timeFilterDate(state.filters.time);
+  return (selected||taipeiCalendarToday()).slice(0,7);
+}
+function calendarMonthDay(month){return calendarDayNumber(month+'-01')}
+function shiftCalendarMonth(month,delta){
+  const day=calendarMonthDay(month);if(!Number.isFinite(day))return initialFilterCalendarMonth();
+  const date=new Date(day*86400000);date.setUTCMonth(date.getUTCMonth()+delta);
+  return date.getUTCFullYear()+'-'+String(date.getUTCMonth()+1).padStart(2,'0');
+}
+function filterCalendarMaxDay(state=uiState){
+  const today=calendarDayNumber(taipeiCalendarToday());let max=today;let hasOpenEnded=false;
+  facetBaseGroups(state).forEach(group=>group.locations.forEach(location=>{
+    const candidate=eventCalendarDayNumber(location.end||location.start);if(Number.isFinite(candidate))max=Math.max(max,candidate);
+    if(!location.end&&(location.status.kind==='ongoing'||location.status.kind==='ending'))hasOpenEnded=true;
+  }));
+  return hasOpenEnded?Math.max(max,today+365):max;
+}
+function filterCalendarHtml(state=uiState){
+  if(!filterCalendarMonth)filterCalendarMonth=initialFilterCalendarMonth(state);
+  const first=calendarMonthDay(filterCalendarMonth),today=calendarDayNumber(taipeiCalendarToday()),maxDay=filterCalendarMaxDay(state);
+  const firstDate=new Date(first*86400000),year=firstDate.getUTCFullYear(),month=firstDate.getUTCMonth();
+  const daysInMonth=new Date(Date.UTC(year,month+1,0)).getUTCDate();
+  const offset=(firstDate.getUTCDay()+6)%7;
+  const selected=timeFilterDate(state.filters.time);
+  const cells=[];
+  for(let i=0;i<42;i++){
+    const dayNumber=i-offset+1;
+    if(dayNumber<1||dayNumber>daysInMonth){cells.push('<span class="filter-calendar-spacer"></span>');continue}
+    const iso=year+'-'+String(month+1).padStart(2,'0')+'-'+String(dayNumber).padStart(2,'0');
+    const absolute=calendarDayNumber(iso),count=getFacetCount('time','date:'+iso,state),isSelected=selected===iso,isToday=absolute===today;
+    const disabled=(absolute<today||absolute>maxDay||count===0)&&!isSelected;
+    cells.push('<button class="filter-calendar-day'+(isSelected?' selected':'')+(isToday?' today':'')+(count>0?' has-events':'')+'" type="button" data-calendar-date="'+iso+'" '+(disabled?'disabled':'')+' aria-pressed="'+(isSelected?'true':'false')+'" aria-label="'+(month+1)+' 月 '+dayNumber+' 日"><span>'+dayNumber+'</span><i aria-hidden="true"></i></button>');
+  }
+  const prevMonth=shiftCalendarMonth(filterCalendarMonth,-1),nextMonth=shiftCalendarMonth(filterCalendarMonth,1);
+  const prevDisabled=calendarMonthDay(prevMonth)<calendarMonthDay(taipeiCalendarToday().slice(0,7));
+  const nextDisabled=calendarMonthDay(nextMonth)>calendarMonthDay(new Date(maxDay*86400000).getUTCFullYear()+'-'+String(new Date(maxDay*86400000).getUTCMonth()+1).padStart(2,'0'));
+  return '<section class="filter-calendar" aria-label="選擇活動日期"><div class="filter-calendar-label">選擇日期</div><div class="filter-calendar-head"><button type="button" data-calendar-shift="-1" '+(prevDisabled?'disabled':'')+' aria-label="上一個月">‹</button><strong>'+year+' 年 '+(month+1)+' 月</strong><button type="button" data-calendar-shift="1" '+(nextDisabled?'disabled':'')+' aria-label="下一個月">›</button></div><div class="filter-calendar-weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div><div class="filter-calendar-grid">'+cells.join('')+'</div></section>';
 }
 let openFilterKey='';
 function renderDesktopFilterOptions(){
   if(!openFilterKey) return;
   const root=document.getElementById('filterOptions');
-  root.innerHTML=filterOptionsFor(openFilterKey).map(option=>{
+  const options=filterOptionsFor(openFilterKey).map(option=>{
     if(option.group) return '<div class="filter-group">'+esc(option.group)+'</div>';
     const count=getFacetCount(openFilterKey,option.value);
     const selected=uiState.filters[openFilterKey]===option.value;
@@ -2858,9 +2926,10 @@ function renderDesktopFilterOptions(){
     return '<button class="filter-option'+(selected?' selected':'')+'" type="button" data-value="'+esc(option.value)+'" '+(disabled?'disabled':'')+' aria-pressed="'+(selected?'true':'false')+'">'
       +'<span class="filter-check">✓</span><span>'+esc(option.label)+'</span><span class="filter-count">'+count+'</span></button>';
   }).join('');
+  root.innerHTML=options+(openFilterKey==='time'?filterCalendarHtml(uiState):'');
 }
 function openFilterDetail(key){
-  openFilterKey=key;
+  openFilterKey=key;if(key==='time'&&!filterCalendarMonth)filterCalendarMonth=initialFilterCalendarMonth(uiState);
   document.getElementById('filterDetailTitle').textContent=FILTER_META[key].title;
   document.getElementById('filterDetail').classList.add('show');
   document.getElementById('filterDetail').setAttribute('aria-hidden','false');
@@ -2893,7 +2962,7 @@ function clearAllFilters(){
   if(!MOBILE_QUERY.matches||uiState.tab==='map')fitTaiwanView();
   else{uiState.mapView=null;uiState.mapHasVisibleView=false}
 }
-function mobileFilterState(){return {query:uiState.query,filters:draftFilters||uiState.filters}}
+function mobileFilterState(){return {query:uiState.query,filters:draftFilters||uiState.filters,exploreView:uiState.exploreView,collectionContext:uiState.collectionContext}}
 function renderMobileFilterCategories(){
   mobileFilterKey='';
   document.getElementById('mobileFilterTitle').textContent='篩選活動';
@@ -2908,9 +2977,9 @@ function renderMobileFilterOptions(key){
   mobileFilterKey=key;
   document.getElementById('mobileFilterTitle').textContent=FILTER_META[key].title;
   document.getElementById('mobileFilterBack').hidden=false;
-  const state=mobileFilterState();
+  const state=mobileFilterState();if(key==='time'&&!filterCalendarMonth)filterCalendarMonth=initialFilterCalendarMonth(state);
   const root=document.getElementById('mobileFilterContent');
-  root.innerHTML=filterOptionsFor(key).map(option=>{
+  const options=filterOptionsFor(key).map(option=>{
     if(option.group) return '<div class="filter-group">'+esc(option.group)+'</div>';
     const count=getFacetCount(key,option.value,state);
     const selected=state.filters[key]===option.value;
@@ -2918,6 +2987,7 @@ function renderMobileFilterOptions(key){
     return '<button class="filter-option'+(selected?' selected':'')+'" type="button" data-mobile-value="'+esc(option.value)+'" '+(disabled?'disabled':'')+' aria-pressed="'+(selected?'true':'false')+'">'
       +'<span class="filter-check">✓</span><span>'+esc(option.label)+'</span><span class="filter-count">'+count+'</span></button>';
   }).join('');
+  root.innerHTML=options+(key==='time'?filterCalendarHtml(state):'');
 }
 function openMobileFilters(){
   draftFilters={...uiState.filters};draftClearSort=false;renderMobileFilterCategories();
@@ -3047,14 +3117,19 @@ function scrollToEvent(eventId,highlight=false){
     if(highlight){card.animate([{boxShadow:'0 0 0 0 rgba(101,162,255,0)'},{boxShadow:'0 0 0 4px rgba(101,162,255,.75)'},{boxShadow:'0 0 0 0 rgba(101,162,255,0)'}],{duration:1500})}
   });
 }
+function filterSummaryGroups(){
+  if(uiState.exploreView==='collection'&&uiState.collectionContext==='latest')return getLatestActivityGroups();
+  return getFilteredActivityGroups();
+}
 function updateStat(groups){
-  const occurrences=[...venueEventIndex.values()].flat().filter(location=>getFilteredVenueOccurrences(location.venueId).some(item=>item.id===location.id));
+  const allowed=new Set(groups.map(group=>group.id));
+  const occurrences=[...venueEventIndex.values()].flat().filter(location=>allowed.has(location.event.id)&&occurrenceVisible(location,uiState.filters));
   document.getElementById('stat').innerHTML='目前共有 <b>'+groups.length+'</b> 場活動<br>'+new Set(occurrences.map(location=>location.venueId)).size+' 個地點符合條件';
 }
 function renderAll(){
   const groups=getFilteredActivityGroups();
   if(uiState.exploreView==='home')renderEditorialHome();else if(uiState.exploreView==='collection')renderCollection();
-  renderMapMarkers();renderFloatingEvents();updateFilterUI();updateMarkerToggles();updateStat(groups);updateExploreViewUI();
+  renderMapMarkers();renderFloatingEvents();updateFilterUI();updateMarkerToggles();updateStat(filterSummaryGroups());updateExploreViewUI();
 }
 function handleDeepLink(){
   const id=new URL(location.href).searchParams.get('event');
@@ -3089,6 +3164,12 @@ document.getElementById('discoverList').addEventListener('click',event=>{
 });
 document.getElementById('dialogPanel').addEventListener('click',event=>{
   pickerCardHandler(event);
+  const share=event.target.closest('[data-share]');if(share)shareEvent(share.dataset.share);
+  const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
+  const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
+});
+document.getElementById('desktopMapCardClose').addEventListener('click',()=>closeDesktopMapCard());
+document.getElementById('desktopMapCardBody').addEventListener('click',event=>{
   const share=event.target.closest('[data-share]');if(share)shareEvent(share.dataset.share);
   const nearby=event.target.closest('[data-nearby-location]');if(nearby)openNearbyPicker(nearby.dataset.nearbyLocation);
   const move=event.target.closest('[data-popup-move]');if(move)movePopupCard(+move.dataset.popupMove);
@@ -3137,6 +3218,8 @@ document.querySelectorAll('.mobile-tab').forEach(button=>button.addEventListener
 document.getElementById('filterMenu').addEventListener('click',event=>{const button=event.target.closest('[data-filter]');if(button)openFilterDetail(button.dataset.filter)});
 document.getElementById('filterBack').addEventListener('click',closeFilterDetail);
 document.getElementById('filterOptions').addEventListener('click',event=>{
+  const shift=event.target.closest('[data-calendar-shift]');if(shift&&!shift.disabled){filterCalendarMonth=shiftCalendarMonth(filterCalendarMonth,+shift.dataset.calendarShift);renderDesktopFilterOptions();return}
+  const day=event.target.closest('[data-calendar-date]');if(day&&!day.disabled){uiState.filters.time='date:'+day.dataset.calendarDate;filterCalendarMonth=day.dataset.calendarDate.slice(0,7);closeFilterDetail();renderAll();return}
   const button=event.target.closest('[data-value]');if(!button||button.disabled||!openFilterKey)return;
   const key=openFilterKey,value=button.dataset.value;uiState.filters[key]=value;closeFilterDetail();renderAll();if(key==='city'&&uiState.exploreView==='results')fitCityView(value);
 });
@@ -3152,6 +3235,8 @@ document.getElementById('mobileFilterClear').addEventListener('click',()=>{draft
 document.getElementById('mobileFilterDone').addEventListener('click',applyMobileFilters);
 document.getElementById('mobileFilterContent').addEventListener('click',event=>{
   const category=event.target.closest('[data-mobile-filter]');if(category){renderMobileFilterOptions(category.dataset.mobileFilter);return}
+  const shift=event.target.closest('[data-calendar-shift]');if(shift&&!shift.disabled){filterCalendarMonth=shiftCalendarMonth(filterCalendarMonth,+shift.dataset.calendarShift);renderMobileFilterOptions('time');return}
+  const day=event.target.closest('[data-calendar-date]');if(day&&!day.disabled){draftFilters.time='date:'+day.dataset.calendarDate;filterCalendarMonth=day.dataset.calendarDate.slice(0,7);renderMobileFilterOptions('time');return}
   const option=event.target.closest('[data-mobile-value]');if(option&&!option.disabled&&mobileFilterKey){draftFilters[mobileFilterKey]=option.dataset.mobileValue;renderMobileFilterOptions(mobileFilterKey)}
 });
 document.getElementById('mobileFilterOverlay').addEventListener('click',event=>{if(event.target.id==='mobileFilterOverlay')closeMobileFilters(true)});
@@ -3184,6 +3269,7 @@ document.addEventListener('keydown',event=>{
   if(event.key!=='Escape')return;
   if(document.getElementById('activityPickerOverlay').classList.contains('show'))closeActivityPicker();
   else if(document.getElementById('lightbox').classList.contains('show'))closeImageLightbox();
+  else if(document.getElementById('desktopMapCard').classList.contains('show'))closeDesktopMapCard();
   else if(document.getElementById('dialogOverlay').classList.contains('show'))closeDesktopDialog();
   else if(document.getElementById('mobileFilterOverlay').classList.contains('show'))closeMobileFilters(true);
   else closeMobileVenueSheet();

@@ -99,22 +99,21 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("location.status.kind==='ending'", self.html)
         self.assertIn('class="soondot"', self.html)
 
-    def test_desktop_dialog_and_mobile_sheet_exist(self):
-        self.assertIn('id="dialogOverlay"', self.html)
-        self.assertIn('role="dialog" aria-modal="true"', self.html)
-        self.assertIn("function openDesktopEventModal(", self.html)
+    def test_desktop_map_dock_and_mobile_sheet_exist(self):
+        self.assertIn('id="desktopMapCard"', self.html)
+        self.assertIn('id="desktopMapCardBody"', self.html)
+        self.assertIn("function openDesktopMapCard(", self.html)
         self.assertIn("function openDesktopVenuePicker(", self.html)
         self.assertIn('id="mobileVenueSheet"', self.html)
         self.assertIn("function openMobileVenueSheet(", self.html)
         self.assertIn("function closeMobileVenueSheet(", self.html)
 
-    def test_mobile_popup_is_horizontal_swipeable_card(self):
-        # 桌機活動詳情對話框：固定高度、內部捲動。
-        self.assertIn("height:min(760px,calc(100dvh - 72px))", self.html)
-        self.assertIn("overflow-y:auto", self.html)
-        # 手機活動 popup 為橫式卡片（左 KV、右資訊）、高度約螢幕 1/3（decision.md）。
+    def test_mobile_and_desktop_popup_share_horizontal_card(self):
+        # 手機約螢幕 1/3；桌機則是地圖內 bottom dock，不阻斷地圖探索。
         self.assertIn("height:clamp(210px,34dvh,360px)", self.html)
+        self.assertIn("height:clamp(214px,27dvh,260px)", self.html)
         self.assertIn("mobile-card-kv", self.html)
+        self.assertIn("function mapCardHtml(group,location)", self.html)
         self.assertIn("function buildPopupCards(origin)", self.html)
         # 可左右滑切換，順序以目前地點為原點、依距離由近到遠；
         # 不再另列「其他活動地點」清單。
@@ -401,7 +400,8 @@ for(const [filter,filters,query,visibleOptions,excludedOptions] of filterCases){
         self.assertIn("openActivityPicker({mode:'nearby'", self.html)
         self.assertIn("zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false", self.html)
         cluster_handler = self.html[self.html.index("function handleClusterActivate"):self.html.index("cluster.on('clusterclick'")]
-        self.assertIn("if(MOBILE_QUERY.matches)", cluster_handler)
+        self.assertIn("venueIds.size===1&&eventIds.size>1", cluster_handler)
+        self.assertIn("if(sameVenueMultiActivity)", cluster_handler)
         self.assertIn("clusterLayer.zoomToBounds()", cluster_handler)
         self.assertIn("clusterLayer.spiderfy()", cluster_handler)
 
@@ -414,10 +414,12 @@ for(const [filter,filters,query,visibleOptions,excludedOptions] of filterCases){
         self.assertIn("if(document.getElementById('activityPickerOverlay').classList.contains('show'))closeActivityPicker()", self.html)
 
     def test_popup_metadata_and_empty_address_rules(self):
-        popup_meta = self.html[self.html.index("function popupMetadataHtml"):self.html.index("function actionHtml")]
-        self.assertIn("group.ip?", popup_meta)
-        self.assertIn("group.organizer?", popup_meta)
-        self.assertNotIn("licensor", popup_meta)
+        compact = self.html[self.html.index("function mapCardHtml(group,location)"):self.html.index("function mobileCardHtml")]
+        self.assertNotIn("popupMetadataHtml", compact)
+        self.assertNotIn("group.ip", compact)
+        self.assertNotIn("group.organizer", compact)
+        self.assertIn("popupContextHtml", compact)
+        self.assertIn("mapCardLocationHtml", compact)
         app_js = self.html[self.html.index("const uiState="):]
         self.assertNotIn("地址未提供", app_js)
         self.assertNotIn("地點未提供", app_js)
