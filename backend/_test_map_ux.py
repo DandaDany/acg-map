@@ -20,22 +20,23 @@ class MapUxTests(unittest.TestCase):
         with open(VENUES_JSON, encoding="utf-8") as fh:
             cls.data = json.load(fh)
 
-    def test_desktop_three_column_shell_exists(self):
-        self.assertIn('class="desktop-shell"', self.html)
+    def test_desktop_home_and_results_shells_exist(self):
+        self.assertIn('class="desktop-shell home-mode"', self.html)
         self.assertIn('class="filter-pane"', self.html)
         self.assertIn('class="discover-pane"', self.html)
         self.assertIn('class="map-pane"', self.html)
         self.assertIn("grid-template-columns:var(--sidebar) var(--discover) minmax(0,1fr)", self.html)
+        self.assertIn(".desktop-shell.home-mode{grid-template-columns:minmax(560px,55%) minmax(0,45%)}", self.html)
+        self.assertIn(".desktop-shell.home-mode>.filter-pane{display:none}", self.html)
 
     def test_mobile_has_only_discover_and_map_tabs(self):
         ui_html = re.sub(r"^let DATA = .+;$", "", self.html, flags=re.MULTILINE)
         self.assertIn('id="discoverTab"', self.html)
         self.assertIn('id="mapTab"', self.html)
         self.assertNotIn('>Save<', ui_html)
-        self.assertNotIn("想去", ui_html)
+        self.assertNotIn('data-tab="save"', ui_html)
+        self.assertNotIn('id="saveTab"', ui_html)
         self.assertNotIn("收藏", ui_html)
-        self.assertNotIn("localStorage", ui_html)
-        self.assertNotIn("sessionStorage", ui_html)
 
     def test_shared_state_and_activity_groups_exist(self):
         self.assertIn("const uiState={", self.html)
@@ -65,10 +66,10 @@ class MapUxTests(unittest.TestCase):
         self.assertIn("image.naturalWidth>=image.naturalHeight", self.html)
         self.assertIn(".kv-marker.landscape", self.html)
 
-    def test_marker_toggle_is_centered_over_map(self):
+    def test_marker_toggle_is_right_on_desktop_and_centered_on_mobile(self):
         self.assertIn('class="segmented map-marker-toggle marker-toggle"', self.html)
-        self.assertIn(".map-marker-toggle{position:absolute", self.html)
-        self.assertIn("left:50%", self.html)
+        self.assertIn(".map-marker-toggle{position:absolute;z-index:1000;top:14px;right:14px", self.html)
+        self.assertIn(".map-marker-toggle{top:10px;right:auto;left:50%;width:148px;transform:translateX(-50%);background:rgba(255,255,255,.96)}", self.html)
         self.assertNotIn('class="marker-setting"', self.html)
 
     def test_map_restores_original_positron_visuals(self):
@@ -167,24 +168,26 @@ class MapUxTests(unittest.TestCase):
         self.assertNotIn("selectedLocationId", unspi)
         self.assertNotIn("clearSelection", unspi)
 
-    def test_latest_switch_first_seen_and_separate_scroll(self):
-        self.assertIn('id="discoverMode"', self.html)
-        self.assertIn('data-discover-mode="discover"', self.html)
-        self.assertIn('data-discover-mode="latest"', self.html)
+    def test_latest_is_editorial_recent_discovery_and_keeps_first_seen(self):
+        self.assertIn('id="homeRecentSection"', self.html)
+        self.assertIn('data-home-action="latest-results"', self.html)
+        self.assertNotIn('id="discoverMode"', self.html)
+        self.assertNotIn('data-discover-mode="discover"', self.html)
+        self.assertNotIn('data-discover-mode="latest"', self.html)
         self.assertIn("discoverMode:'discover'", self.html)
         self.assertIn("firstSeen:chooseValue(items,'first_seen')||null", self.html)
         self.assertIn("days>=0&&days<=6", self.html)
-        self.assertNotIn("group.overallStart)&&days<=6", self.html)
+        self.assertIn("function getHomeRecentGroups(excludedIds)", self.html)
+        self.assertIn("getLatestActivityGroups().filter(group=>!excludedIds.has(group.id)", self.html)
         self.assertIn("discoverScrollTop:{discover:0,latest:0}", self.html)
-        self.assertIn("renderDiscover(getDiscoverModeGroups())", self.html)
 
-    def test_latest_mode_does_not_rerender_map(self):
-        handler = self.html[self.html.index("document.getElementById('discoverMode').addEventListener"):]
-        handler = handler[: handler.index("});") + 3]
-        self.assertIn("renderDiscover(getDiscoverModeGroups())", handler)
-        self.assertNotIn("renderMapMarkers", handler)
-        self.assertNotIn("clearSelection", handler)
-        self.assertNotIn("fitTaiwanView", handler)
+    def test_latest_results_do_not_change_marker_dataset(self):
+        enter = self.html[self.html.index("function enterResults(context='all')"):self.html.index("function returnEditorialHome")]
+        self.assertIn("if(context==='latest')", enter)
+        latest_branch = enter[enter.index("if(context==='latest')"):]
+        self.assertIn("renderDiscover(getDiscoverModeGroups())", latest_branch)
+        self.assertNotIn("renderMapMarkers", latest_branch.split("else renderAll()",1)[0])
+        self.assertNotIn("fitTaiwanView", latest_branch.split("else renderAll()",1)[0])
 
     def test_mobile_viewport_only_saves_visible_initialized_map(self):
         self.assertIn("mapHasVisibleView:false", self.html)
