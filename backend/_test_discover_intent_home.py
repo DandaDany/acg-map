@@ -11,6 +11,8 @@ assert "{value:'today',label:'今天'}" in text
 assert "{value:'weekend',label:'本週末'}" in text
 assert "locationMatchesTimeFilter(location,filters.time)" in text
 assert "time:value" in text  # quick counts replace their own time dimension
+assert "const saturday=todayDay+(weekday===0?-1:6-weekday)" in text
+assert "locationOverlapsCalendarRange(location,range.start,range.end)" in text
 assert "navigator.geolocation.getCurrentPosition" in text
 assert "uiState.discoverSort='distance'" in text
 assert "nearestLocationForGroup" in text
@@ -25,4 +27,5 @@ assert "const nearestLabel=distanceInfo&&group.locations.length>1&&!preferredLoc
 assert "今天沒有符合條件的活動" in text and 'id="emptyWeekend"' in text
 assert 'draftClearSort=true' in text
 assert "if(draftClearSort)uiState.discoverSort='default'" in text
+assert "if(cancel){draftFilters=null;draftClearSort=false}" in text
 print('discover intent home UX: PASS')
