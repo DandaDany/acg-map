@@ -1,0 +1,62 @@
+name: Agent Editorial Collection Pages
+
+on:
+  push:
+    branches:
+      - agent/editorial-collection-pages
+
+permissions:
+  contents: write
+
+jobs:
+  patch-test-commit:
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply collection UX patch
+        run: python tools/patch_editorial_collection_pages.py
+      - name: Editorial C regression
+        run: python backend/_test_editorial_c_home.py
+      - name: Collection page regression
+        run: python backend/_test_editorial_collection_pages.py
+      - name: Theme switch regression
+        run: python backend/_test_theme_switch.py
+      - name: Existing map UX regression
+        run: python backend/_test_map_ux.py
+      - name: Python compile check
+        run: python -m py_compile backend/*.py
+      - name: JavaScript syntax check
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path('public/taiwan-exhibition-map.html').read_text(encoding='utf-8')
+          scripts = re.findall(r'<script(?: [^>]*)?>(.*?)</script>', html, flags=re.S)
+          inline = [s for s in scripts if 'let DATA =' not in s and s.strip()]
+          if not inline:
+              raise SystemExit('no inline script found')
+          Path('/tmp/acg-map-inline.js').write_text(inline[-1], encoding='utf-8')
+          PY
+          node --check /tmp/acg-map-inline.js
+      - name: Protect activity data
+        run: |
+          test -z "$(git diff --name-only origin/main -- public/venues.json data/event_first_seen.json data/manual data/auto)"
+      - name: Validate diff
+        run: git diff --check
+      - name: Commit implementation
+        run: |
+          rm tools/patch_editorial_collection_pages.py
+          rm .github/workflows/agent-editorial-collection-pages.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: add editorial collection pages"
+          git push
