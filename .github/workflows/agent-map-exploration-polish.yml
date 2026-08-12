@@ -32,26 +32,26 @@ jobs:
       - name: Map exploration regression
         run: python backend/_test_map_exploration_polish.py
       - name: Editorial C regression
-        run: |
-          set +e
-          python backend/_test_editorial_c_home.py > /tmp/editorial-polish.log 2>&1
-          code=$?
-          cat /tmp/editorial-polish.log
-          if [ "$code" -ne 0 ]; then
-            cp /tmp/editorial-polish.log tools/_polish_failure.txt
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add tools/_polish_failure.txt
-            git commit -m "chore: capture polish regression failure"
-            git push
-            exit "$code"
-          fi
+        run: python backend/_test_editorial_c_home.py
       - name: Collection regression
         run: python backend/_test_editorial_collection_pages.py
       - name: Theme regression
         run: python backend/_test_theme_switch.py
       - name: Existing map UX regression
-        run: python backend/_test_map_ux.py
+        run: |
+          set +e
+          python backend/_test_map_ux.py > /tmp/map-ux-polish.log 2>&1
+          code=$?
+          cat /tmp/map-ux-polish.log
+          if [ "$code" -ne 0 ]; then
+            cp /tmp/map-ux-polish.log tools/_polish_failure.txt
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add tools/_polish_failure.txt
+            git commit -m "chore: capture map ux regression failure"
+            git push
+            exit "$code"
+          fi
       - name: Python compile check
         run: python -m py_compile backend/*.py
       - name: JavaScript syntax check
