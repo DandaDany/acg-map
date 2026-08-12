@@ -19,6 +19,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Normalize patch source quoting
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path=Path('tools/patch_discover_intent_home.py')
+          text=path.read_text(encoding='utf-8')
+          text=text.replace('[data-discover-sort="distance"]','[data-discover-sort=distance]')
+          path.write_text(text,encoding='utf-8')
+          PY
       - name: Apply UX patch
         run: python tools/patch_discover_intent_home.py
       - name: Run targeted regression
