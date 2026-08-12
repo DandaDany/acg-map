@@ -1216,6 +1216,50 @@ html[data-theme="dark"] .map-legend-item{color:#e6ecf5!important}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
+
+/* ===== Editorial collection pages ===== */
+.desktop-shell.collection-mode{grid-template-columns:minmax(560px,55%) minmax(0,45%)}
+.desktop-shell.collection-mode>.filter-pane{display:none}
+.desktop-shell.collection-mode>.discover-pane{grid-column:1}
+.desktop-shell.collection-mode>.map-pane{grid-column:2}
+body.home-filter-open .desktop-shell.collection-mode>.filter-pane{display:flex;position:fixed;z-index:2050;top:0;bottom:0;left:0;width:var(--sidebar);box-shadow:22px 0 60px rgba(55,40,28,.16)}
+.collection-panel{min-height:0;flex:1;overflow-y:auto;overscroll-behavior:contain;background:linear-gradient(180deg,#fffaf5 0%,#f8f3ed 100%);scrollbar-gutter:stable}
+.collection-panel[hidden]{display:none!important}
+.collection-head{display:flex;position:sticky;z-index:31;top:0;align-items:center;gap:12px;padding:18px 24px 16px;border-bottom:1px solid #eadfd5;background:rgba(255,250,245,.95);backdrop-filter:blur(14px)}
+.collection-back{display:grid;width:42px;height:42px;flex:0 0 auto;place-items:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--text);font-size:22px;cursor:pointer}
+.collection-head-copy{min-width:0;flex:1}.collection-head-copy h1{margin:0;color:var(--text);font-size:24px;font-weight:900;letter-spacing:-.35px}.collection-head-copy p{margin:4px 0 0;color:var(--muted);font-size:11.5px;line-height:1.45}
+.collection-head-actions{display:flex;align-items:center;gap:8px}.collection-link,.collection-filter{min-height:38px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:var(--accent2);font-size:12px;font-weight:850;cursor:pointer;white-space:nowrap}.collection-filter{border:1px solid var(--line);background:#fff;color:#51463e}.collection-link:hover{text-decoration:underline}.collection-filter:hover{border-color:#ebb5a6;color:var(--accent2)}
+.collection-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:20px 24px 8px}
+.collection-card{display:block;min-width:0;padding:0;overflow:hidden;border:1px solid #eadfd5;border-radius:19px;background:#fff;color:var(--text);text-align:left;cursor:pointer;box-shadow:0 7px 24px rgba(70,52,38,.07);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.collection-card:hover{transform:translateY(-2px);border-color:#eab3a4;box-shadow:0 12px 30px rgba(70,52,38,.12)}
+.collection-card-media{display:block;position:relative;overflow:hidden;width:100%;aspect-ratio:4/3;background:#eee5de}.collection-card-media img{display:block;width:100%;height:100%;object-fit:cover}.collection-card-media .home-placeholder{position:absolute}
+.collection-card-copy{display:block;padding:14px 15px 16px}.collection-card-title{display:-webkit-box;overflow:hidden;color:var(--text);font-size:15px;font-weight:900;line-height:1.42;-webkit-box-orient:vertical;-webkit-line-clamp:2}.collection-card-meta,.collection-card-place{display:block;margin-top:6px;color:var(--muted);font-size:11.5px;line-height:1.45}.collection-card-distance{color:var(--accent2);font-weight:850}
+.collection-empty{margin:20px 24px;padding:34px 20px;border:1px solid #eadfd5;border-radius:20px;background:#fff;color:var(--muted);text-align:center;font-size:13px}.collection-empty[hidden]{display:none!important}
+.collection-more-wrap{display:flex;justify-content:center;padding:18px 24px 38px}.collection-load-more{min-height:42px;padding:0 18px;border:1px solid #e2d5ca;border-radius:999px;background:#fff;color:var(--accent2);font-size:12.5px;font-weight:850;cursor:pointer;box-shadow:0 5px 18px rgba(70,52,38,.05)}.collection-load-more:hover{border-color:#e6aa99;box-shadow:0 8px 22px rgba(70,52,38,.09)}.collection-load-more[hidden]{display:none!important}
+.home-section-actions{display:flex;align-items:center;gap:12px}
+
+html[data-theme="dark"] .desktop-shell.collection-mode>.discover-pane{background:#0f141d}
+html[data-theme="dark"] .collection-panel{background:linear-gradient(180deg,#151a24 0%,#0f141d 100%)}
+html[data-theme="dark"] .collection-head{border-color:#2a3344;background:rgba(21,26,36,.96)}
+html[data-theme="dark"] .collection-back,html[data-theme="dark"] .collection-filter,html[data-theme="dark"] .collection-card,html[data-theme="dark"] .collection-empty,html[data-theme="dark"] .collection-load-more{border-color:#2a3344;background:#171d28;color:var(--text);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+html[data-theme="dark"] .collection-card:hover{border-color:#465674;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+html[data-theme="dark"] .collection-card-media{background:#111722}
+html[data-theme="dark"] .collection-head-copy h1,html[data-theme="dark"] .collection-card-title{color:#eef2f8}
+html[data-theme="dark"] .collection-filter{color:#eef2f8}
+
+@media(max-width:1100px) and (min-width:761px){
+  .desktop-shell.collection-mode{grid-template-columns:minmax(500px,58%) minmax(0,42%)}
+  .collection-grid{gap:12px;padding-right:20px;padding-left:20px}.collection-head{padding-right:20px;padding-left:20px}
+}
+@media(max-width:760px){
+  .desktop-shell.collection-mode{display:block;min-width:0}.desktop-shell.collection-mode>.filter-pane{display:none}
+  .collection-panel{position:fixed;z-index:5;inset:var(--mobile-top) 0 calc(var(--mobile-nav) + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,#fffaf5 0%,#f8f3ed 100%)}
+  .collection-head{top:0;gap:9px;padding:10px 12px}.collection-back{width:40px;height:40px}.collection-head-copy h1{font-size:20px}.collection-head-copy p{font-size:10.5px}.collection-head-actions{gap:2px}.collection-link,.collection-filter{min-height:38px;padding:0 9px;font-size:11.5px}
+  .collection-grid{grid-template-columns:1fr;gap:14px;padding:14px 14px 6px}.collection-card{border-radius:18px}.collection-card-media{aspect-ratio:16/10}.collection-card-copy{padding:13px 14px 15px}.collection-card-title{font-size:15px}.collection-card-meta,.collection-card-place{font-size:11.5px}
+  .collection-empty{margin:16px 14px}.collection-more-wrap{padding:16px 14px 28px}.collection-load-more{width:100%;max-width:280px}
+  html[data-theme="dark"] .collection-panel{background:linear-gradient(180deg,#151a24 0%,#0f141d 100%)}
+}
+
 </style></head>
 <body><div id="app">
 <div class="desktop-shell home-mode">
@@ -1260,28 +1304,33 @@ html[data-theme="dark"] .map-legend-item{color:#e6ecf5!important}
       </header>
 
       <section class="home-section home-week" id="homeWeekSection">
-        <div class="home-section-head"><h1>這週想去哪？</h1><button class="home-section-link" type="button" data-home-action="week-results">查看更多 ›</button></div>
+        <div class="home-section-head"><h1>這週想去哪？</h1><button class="home-section-link" type="button" data-home-action="week-collection">查看全部 ›</button></div>
         <div class="home-week-grid" id="homeWeekGrid"></div>
       </section>
 
       <section class="home-section home-nearby" id="homeNearbySection">
-        <div class="home-section-head"><h2>附近</h2><button class="home-section-link" id="homeNearbyMap" type="button" data-home-action="nearby-map">看地圖 ›</button></div>
+        <div class="home-section-head"><h2>附近</h2><div class="home-section-actions"><button class="home-section-link" id="homeNearbyMore" type="button" data-home-action="nearby-collection">查看更多 ›</button><button class="home-section-link" id="homeNearbyMap" type="button" data-home-action="nearby-map">地圖查看 ›</button></div></div>
         <div id="homeNearbyContent"></div>
       </section>
 
       <section class="home-section home-recent" id="homeRecentSection">
-        <div class="home-section-head"><h2>最近發現</h2><button class="home-section-link" type="button" data-home-action="latest-results">探索更多 ›</button></div>
+        <div class="home-section-head"><h2>最近發現</h2><button class="home-section-link" type="button" data-home-action="latest-collection">探索更多 ›</button></div>
         <div class="home-recent-grid" id="homeRecentGrid"></div>
       </section>
       <div class="home-empty" id="homeEditorialEmpty" hidden><p>目前篩選條件下沒有可推薦的活動。</p><button class="primary-btn" id="homeEditorialClear" type="button">清除篩選</button></div>
     </section>
 
-    <header class="discover-head results-head" id="resultsHead" hidden>
-      <button class="results-back" id="resultsBack" type="button" aria-label="返回探索首頁">‹</button>
-      <div class="results-head-copy"><h1 id="resultsTitle">所有活動</h1><p id="resultsSubtitle">依目前條件瀏覽活動</p></div>
-      <span class="discover-count" id="discoverCount"></span>
-    </header>
-    <div class="discover-list" id="discoverList" hidden></div>
+    <section class="collection-panel" id="collectionPanel" hidden aria-label="活動集合">
+      <header class="collection-head">
+        <button class="collection-back" id="collectionBack" type="button" aria-label="返回探索首頁">‹</button>
+        <div class="collection-head-copy"><h1 id="collectionTitle">活動</h1><p id="collectionSubtitle"></p></div>
+        <div class="collection-head-actions"><button class="collection-link" id="collectionNearbyMap" type="button" hidden>地圖查看 ›</button><button class="collection-filter" id="collectionFilterButton" type="button">篩選</button></div>
+      </header>
+      <div class="collection-grid" id="collectionGrid"></div>
+      <div class="collection-empty" id="collectionEmpty" hidden></div>
+      <div class="collection-more-wrap"><button class="collection-load-more" id="collectionLoadMore" type="button">載入更多 ↓</button></div>
+    </section>
+    <div class="discover-list" id="discoverList" hidden aria-hidden="true"></div>
   </section>
 
   <section class="map-pane" id="mapPane" aria-label="活動地圖">
@@ -1431,8 +1480,8 @@ const uiState={
   discoverSort:'default',
   userLocation:null,
   exploreView:'home',
-  resultsContext:'all',
-  resultsPreviousTime:null,
+  collectionContext:'all',
+  collectionVisibleCount:0,
   homeScrollTop:0,
   markerMode:'pin',
   selectedVenueId:null,
@@ -1882,6 +1931,7 @@ function renderDiscover(groups){
   requestAnimationFrame(()=>{list.scrollTop=uiState.discoverScrollTop[uiState.discoverMode]||0});
 }
 const HOME_NEARBY_MAX_M=20000;
+const COLLECTION_BATCH_DESKTOP=8,COLLECTION_BATCH_MOBILE=6;
 function homeImageHtml(group,className='home-card-media'){
   const src=safeUrl(group.image,true);
   if(!src)return '<span class="'+className+'"><span class="home-placeholder">主視覺敬請期待</span></span>';
@@ -1984,8 +2034,8 @@ function renderEditorialHome(){
   const weekSection=document.getElementById('homeWeekSection'),weekGrid=document.getElementById('homeWeekGrid');
   weekSection.hidden=!week.length;weekGrid.innerHTML=week.map(homeHeroCardHtml).join('');
 
-  const nearbySection=document.getElementById('homeNearbySection'),nearbyContent=document.getElementById('homeNearbyContent'),nearbyMap=document.getElementById('homeNearbyMap');
-  nearbySection.hidden=false;nearbyMap.hidden=!uiState.userLocation;
+  const nearbySection=document.getElementById('homeNearbySection'),nearbyContent=document.getElementById('homeNearbyContent'),nearbyMap=document.getElementById('homeNearbyMap'),nearbyMore=document.getElementById('homeNearbyMore');
+  nearbySection.hidden=false;nearbyMap.hidden=!uiState.userLocation;nearbyMore.hidden=!uiState.userLocation;
   if(!uiState.userLocation){
     nearbyContent.innerHTML='<div class="home-nearby-prompt"><div class="home-nearby-prompt-copy"><strong>看看你附近有哪些 ACG 活動</strong><span>只有在你主動開啟後才會使用目前位置。</span></div><button class="home-locate-btn" type="button" data-home-action="locate">使用目前位置</button></div>';
   }else{
@@ -2000,6 +2050,74 @@ function renderEditorialHome(){
   const empty=document.getElementById('homeEditorialEmpty');
   empty.hidden=!!(week.length||recent.length||!uiState.userLocation||homeNearbyItems().length);
 }
+
+function collectionBatchSize(){return MOBILE_QUERY.matches?COLLECTION_BATCH_MOBILE:COLLECTION_BATCH_DESKTOP}
+function collectionWeekGroups(){
+  const todayDay=calendarDayNumber(taipeiCalendarToday());
+  const groups=getFilteredActivityGroups().filter(group=>homeWeekLocations(group,todayDay,todayDay+6).length);
+  groups.sort((a,b)=>{const ra=homeEditorialRank(a,todayDay),rb=homeEditorialRank(b,todayDay);return ra[0]-rb[0]||ra[1]-rb[1]||a.title.localeCompare(b.title,'zh-Hant')||a.id.localeCompare(b.id)});
+  return groups;
+}
+function collectionNearbyEntries(){
+  if(!uiState.userLocation)return [];
+  const entries=[];
+  getFilteredActivityGroups().forEach(group=>{const info=nearestLocationForGroup(group);if(info&&info.distanceMeters<=HOME_NEARBY_MAX_M)entries.push({group,location:info.location,distanceMeters:info.distanceMeters})});
+  return entries.sort((a,b)=>a.distanceMeters-b.distanceMeters||a.group.title.localeCompare(b.group.title,'zh-Hant')||a.group.id.localeCompare(b.group.id));
+}
+function collectionGroupEntries(groups,context){
+  const multiStoreMode=uiState.filters.multi!=='all';
+  const todayDay=calendarDayNumber(taipeiCalendarToday());
+  if(multiStoreMode){
+    return groups.flatMap(group=>group.locations.filter(location=>occurrenceVisible(location,uiState.filters)&&(context!=='week'||locationOverlapsCalendarRange(location,todayDay,todayDay+6))).map(location=>({group,location,distanceMeters:null})));
+  }
+  return groups.map(group=>({group,location:homeRepresentativeLocation(group)||primaryLocationFor(group),distanceMeters:null})).filter(entry=>entry.location);
+}
+function getCollectionEntries(){
+  const context=uiState.collectionContext;
+  if(context==='nearby')return collectionNearbyEntries();
+  if(context==='week')return collectionGroupEntries(collectionWeekGroups(),'week');
+  if(context==='latest')return collectionGroupEntries(getLatestActivityGroups(),'latest');
+  return collectionGroupEntries(getFilteredActivityGroups(),context);
+}
+function collectionCardHtml(entry){
+  const group=entry.group,location=entry.location;
+  const meta=[groupDateText(group),group.form,group.fee].filter(Boolean).join(' · ');
+  let place=[location.city,location.venueName].filter(Boolean).join(' · ');
+  if(Number.isFinite(entry.distanceMeters))place+=(place?' · ':'')+formatDistance(entry.distanceMeters);
+  return '<button class="collection-card collection-event-target" type="button" data-collection-location-id="'+esc(location.id)+'">'
+    +homeImageHtml(group,'collection-card-media')
+    +'<span class="collection-card-copy"><span class="collection-card-title">'+esc(group.title)+'</span>'
+    +(meta?'<span class="collection-card-meta">'+esc(meta)+'</span>':'')
+    +(place?'<span class="collection-card-place'+(Number.isFinite(entry.distanceMeters)?' collection-card-distance':'')+'">'+esc(place)+'</span>':'')
+    +'</span></button>';
+}
+function updateCollectionHeader(){
+  const title=document.getElementById('collectionTitle'),subtitle=document.getElementById('collectionSubtitle'),mapLink=document.getElementById('collectionNearbyMap');
+  const context=uiState.collectionContext;
+  if(context==='week'){title.textContent='這週想去哪？';subtitle.textContent='接下來 7 天可以參加的活動'}
+  else if(context==='nearby'){title.textContent='附近';subtitle.textContent='依你目前的位置，由近到遠瀏覽活動'}
+  else if(context==='latest'){title.textContent='最近發現';subtitle.textContent='最近加入 ACG Map 的活動'}
+  else if(context==='search'){title.textContent='搜尋結果';subtitle.textContent=uiState.query?'「'+uiState.query+'」':'輸入作品、活動或地點'}
+  else{title.textContent='探索活動';subtitle.textContent='依目前條件瀏覽活動'}
+  mapLink.hidden=!(context==='nearby'&&uiState.userLocation);
+}
+function renderCollection(){
+  updateCollectionHeader();
+  const entries=getCollectionEntries();
+  if(!uiState.collectionVisibleCount)uiState.collectionVisibleCount=collectionBatchSize();
+  const shown=entries.slice(0,uiState.collectionVisibleCount);
+  const grid=document.getElementById('collectionGrid'),empty=document.getElementById('collectionEmpty'),more=document.getElementById('collectionLoadMore');
+  grid.innerHTML=shown.map(collectionCardHtml).join('');
+  empty.hidden=!!entries.length;
+  if(!entries.length){
+    if(uiState.collectionContext==='nearby')empty.textContent='20 公里內目前沒有符合條件的活動。';
+    else if(uiState.collectionContext==='latest')empty.textContent='目前篩選條件下沒有最近發現的活動。';
+    else if(uiState.collectionContext==='search')empty.textContent='找不到符合搜尋條件的活動。';
+    else empty.textContent='目前篩選條件下沒有符合的活動。';
+  }
+  more.hidden=!entries.length||shown.length>=entries.length;
+}
+
 function requestHomeLocation(button,onReady=null){
   if(uiState.userLocation){if(onReady)onReady();return}
   if(!navigator.geolocation){showToast('此瀏覽器不支援定位功能');return}
@@ -2029,39 +2147,26 @@ function openHomeNearbyMap(){
 }
 function closeHomeFilterDrawer(){document.body.classList.remove('home-filter-open');document.getElementById('homeFilterScrim').setAttribute('aria-hidden','true')}
 function openHomeFilterDrawer(){if(MOBILE_QUERY.matches){openMobileFilters();return}document.body.classList.add('home-filter-open');document.getElementById('homeFilterScrim').setAttribute('aria-hidden','false')}
-function updateResultsHeader(){
-  const title=document.getElementById('resultsTitle'),subtitle=document.getElementById('resultsSubtitle');
-  if(uiState.resultsContext==='week'){title.textContent='這週想去哪？';subtitle.textContent='未來 7 天可以參加的活動'}
-  else if(uiState.resultsContext==='latest'){title.textContent='最近發現';subtitle.textContent='最近 7 天加入 ACG Map 的活動'}
-  else if(uiState.resultsContext==='search'){title.textContent='搜尋結果';subtitle.textContent=uiState.query?'「'+uiState.query+'」':'依目前條件瀏覽活動'}
-  else{title.textContent='所有活動';subtitle.textContent='依目前條件瀏覽活動'}
-}
 function updateExploreViewUI(){
-  const home=uiState.exploreView==='home';
-  const shell=document.querySelector('.desktop-shell');shell.classList.toggle('home-mode',home);shell.classList.toggle('results-mode',!home);
+  const home=uiState.exploreView==='home',collection=uiState.exploreView==='collection';
+  const shell=document.querySelector('.desktop-shell');shell.classList.toggle('home-mode',home);shell.classList.toggle('collection-mode',collection);shell.classList.remove('results-mode');
   document.body.classList.toggle('editorial-home-active',home);
-  document.getElementById('editorialHome').hidden=!home;document.getElementById('resultsHead').hidden=home;document.getElementById('discoverList').hidden=home;
-  if(!home)updateResultsHeader();
-  requestAnimationFrame(()=>{map.invalidateSize();if(home){document.getElementById('editorialHome').scrollTop=uiState.homeScrollTop||0}});
+  document.getElementById('editorialHome').hidden=!home;document.getElementById('collectionPanel').hidden=!collection;document.getElementById('discoverList').hidden=true;
+  if(collection)updateCollectionHeader();
+  requestAnimationFrame(()=>{map.invalidateSize();if(home)document.getElementById('editorialHome').scrollTop=uiState.homeScrollTop||0});
 }
-function enterResults(context='all'){
+function enterCollection(context='all'){
+  if(context==='nearby'&&!uiState.userLocation){requestHomeLocation(null,()=>enterCollection('nearby'));return}
   if(uiState.exploreView==='home')uiState.homeScrollTop=document.getElementById('editorialHome').scrollTop;
-  uiState.resultsContext=context;uiState.resultsPreviousTime=null;
-  if(context==='week'){uiState.resultsPreviousTime=uiState.filters.time;uiState.filters.time='next7';uiState.discoverMode='discover'}
-  else if(context==='latest'){uiState.discoverMode='latest'}
-  else uiState.discoverMode='discover';
-  uiState.exploreView='results';closeHomeFilterDrawer();updateExploreViewUI();
-  if(context==='latest'){
-    renderDiscover(getDiscoverModeGroups());updateFilterUI();updateStat(getFilteredActivityGroups());
-  }else renderAll();
+  uiState.collectionContext=context;uiState.collectionVisibleCount=collectionBatchSize();uiState.exploreView='collection';closeHomeFilterDrawer();
+  if(MOBILE_QUERY.matches&&uiState.tab!=='discover')setTab('discover');
+  renderAll();
 }
 function returnEditorialHome(){
-  if(uiState.resultsContext==='week'&&uiState.filters.time==='next7')uiState.filters.time=uiState.resultsPreviousTime||'all';
-  if(uiState.resultsContext==='search'){
+  if(uiState.collectionContext==='search'){
     uiState.query='';document.getElementById('q').value='';document.getElementById('mq').value='';hideSearchSuggestions();
   }
-  uiState.discoverMode='discover';uiState.resultsContext='all';uiState.resultsPreviousTime=null;uiState.exploreView='home';
-  renderAll();updateExploreViewUI();
+  uiState.collectionContext='all';uiState.collectionVisibleCount=0;uiState.exploreView='home';renderAll();
 }
 function setHomeMarkerHover(locationId,hovered){
   if(MOBILE_QUERY.matches)return;
@@ -2918,8 +3023,11 @@ function wireSearch(input,panel){
     clearTimeout(searchTimer);
     searchTimer=setTimeout(()=>{
       uiState.query=input.value.trim();
-      if(uiState.query&&uiState.exploreView==='home'){uiState.homeScrollTop=document.getElementById('editorialHome').scrollTop;uiState.exploreView='results';uiState.resultsContext='search';uiState.discoverMode='discover';updateExploreViewUI()}
-      renderAll();
+      if(uiState.query){
+        if(uiState.exploreView==='home')enterCollection('search');
+        else{uiState.collectionContext='search';uiState.collectionVisibleCount=collectionBatchSize();renderAll()}
+      }else if(uiState.exploreView==='collection'&&uiState.collectionContext==='search')returnEditorialHome();
+      else renderAll();
     },180);
   });
   input.addEventListener('focus',()=>{if(input.value.trim())renderSearchSuggestions(input.value,input)});
@@ -2945,7 +3053,7 @@ function updateStat(groups){
 }
 function renderAll(){
   const groups=getFilteredActivityGroups();
-  if(uiState.exploreView==='home')renderEditorialHome();else renderDiscover(getDiscoverModeGroups());
+  if(uiState.exploreView==='home')renderEditorialHome();else if(uiState.exploreView==='collection')renderCollection();
   renderMapMarkers();renderFloatingEvents();updateFilterUI();updateMarkerToggles();updateStat(groups);updateExploreViewUI();
 }
 function handleDeepLink(){
@@ -2999,7 +3107,10 @@ document.getElementById('lightbox').addEventListener('click',event=>{if(event.ta
 document.getElementById('homeButton').addEventListener('click',fitTaiwanView);
 document.getElementById('mapHomeButton').addEventListener('click',fitTaiwanView);
 document.getElementById('floatingEvents').addEventListener('click',event=>{const button=event.target.closest('[data-floating-id]');if(button)openFloatingEvent(button.dataset.floatingId)});
-document.getElementById('resultsBack').addEventListener('click',returnEditorialHome);
+document.getElementById('collectionBack').addEventListener('click',returnEditorialHome);
+document.getElementById('collectionFilterButton').addEventListener('click',openHomeFilterDrawer);
+document.getElementById('collectionNearbyMap').addEventListener('click',openHomeNearbyMap);
+document.getElementById('collectionLoadMore').addEventListener('click',()=>{uiState.collectionVisibleCount+=collectionBatchSize();renderCollection()});
 document.getElementById('homeFilterButton').addEventListener('click',openHomeFilterDrawer);
 document.getElementById('homeFilterClose').addEventListener('click',closeHomeFilterDrawer);
 document.getElementById('homeFilterScrim').addEventListener('click',closeHomeFilterDrawer);
@@ -3007,8 +3118,9 @@ document.getElementById('homeEditorialClear').addEventListener('click',clearAllF
 document.getElementById('editorialHome').addEventListener('click',event=>{
   const action=event.target.closest('[data-home-action]');
   if(action){
-    if(action.dataset.homeAction==='week-results')enterResults('week');
-    else if(action.dataset.homeAction==='latest-results')enterResults('latest');
+    if(action.dataset.homeAction==='week-collection')enterCollection('week');
+    else if(action.dataset.homeAction==='latest-collection')enterCollection('latest');
+    else if(action.dataset.homeAction==='nearby-collection')enterCollection('nearby');
     else if(action.dataset.homeAction==='nearby-map')openHomeNearbyMap();
     else if(action.dataset.homeAction==='locate')requestHomeLocation(action);
     return;
@@ -3017,6 +3129,9 @@ document.getElementById('editorialHome').addEventListener('click',event=>{
 });
 document.getElementById('editorialHome').addEventListener('pointerover',event=>{const target=event.target.closest('[data-home-location-id]');if(target)setHomeMarkerHover(target.dataset.homeLocationId,true)});
 document.getElementById('editorialHome').addEventListener('pointerout',event=>{const target=event.target.closest('[data-home-location-id]');if(target&&!target.contains(event.relatedTarget))setHomeMarkerHover(target.dataset.homeLocationId,false)});
+document.getElementById('collectionPanel').addEventListener('click',event=>{const target=event.target.closest('[data-collection-location-id]');if(target)selectLocation(target.dataset.collectionLocationId,{updateHistory:true})});
+document.getElementById('collectionPanel').addEventListener('pointerover',event=>{const target=event.target.closest('[data-collection-location-id]');if(target)setHomeMarkerHover(target.dataset.collectionLocationId,true)});
+document.getElementById('collectionPanel').addEventListener('pointerout',event=>{const target=event.target.closest('[data-collection-location-id]');if(target&&!target.contains(event.relatedTarget))setHomeMarkerHover(target.dataset.collectionLocationId,false)});
 document.querySelectorAll('[data-marker-mode]').forEach(button=>button.addEventListener('click',()=>setMarkerMode(button.dataset.markerMode)));
 document.querySelectorAll('.mobile-tab').forEach(button=>button.addEventListener('click',()=>setTab(button.dataset.tab)));
 document.getElementById('filterMenu').addEventListener('click',event=>{const button=event.target.closest('[data-filter]');if(button)openFilterDetail(button.dataset.filter)});
