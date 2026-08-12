@@ -1,0 +1,94 @@
+name: Agent Discover Intent Polish
+
+on:
+  push:
+    branches:
+      - agent/discover-intent-home-ux
+
+permissions:
+  contents: write
+
+jobs:
+  polish-and-test:
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply edge-case polish
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html=Path('public/taiwan-exhibition-map.html')
+          text=html.read_text(encoding='utf-8')
+          def one(old,new,label):
+              global text
+              count=text.count(old)
+              if count!=1: raise RuntimeError(f'{label}: expected 1 match, found {count}')
+              text=text.replace(old,new,1)
+
+          one(
+              '.empty-state p{margin:0 0 14px;color:var(--muted)}',
+              '.empty-state p{margin:0 0 14px;color:var(--muted)}\n.empty-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}',
+              'empty actions css')
+          one(
+              "let draftFilters=null;\nlet mobileFilterKey='';",
+              "let draftFilters=null;\nlet draftClearSort=false;\nlet mobileFilterKey='';",
+              'mobile draft sort state')
+          one(
+              "  const distanceHtml=distanceInfo?'<div class=\"card-summary card-distance\">⌖ '+esc(formatDistance(distanceInfo.distanceMeters))+(group.locations.length>1&&!preferredLocation?' · 最近分店':'')+'</div>':'';",
+              "  const nearestLabel=distanceInfo&&group.locations.length>1&&!preferredLocation?first.venueName:'';\n  const distanceHtml=distanceInfo?'<div class=\"card-summary card-distance\">⌖ '+(nearestLabel?esc(nearestLabel)+' · ':'')+esc(formatDistance(distanceInfo.distanceMeters))+'</div>':'';",
+              'nearest branch label')
+          one(
+              "    }else{\n      list.innerHTML='<div class=\"empty-state\"><div><p>沒有符合條件的活動</p><button class=\"primary-btn\" id=\"emptyClear\" type=\"button\">清除篩選</button></div></div>';\n      document.getElementById('emptyClear').addEventListener('click',clearAllFilters);\n    }",
+              "    }else{\n      const time=uiState.filters.time;\n      const message=time==='today'?'今天沒有符合條件的活動':time==='weekend'?'這個週末沒有符合條件的活動':'沒有符合條件的活動';\n      const weekendCta=time==='today'?'<button class=\"primary-btn\" id=\"emptyWeekend\" type=\"button\">看這個週末</button>':'';\n      list.innerHTML='<div class=\"empty-state\"><div><p>'+message+'</p><div class=\"empty-actions\">'+weekendCta+'<button class=\"secondary-btn\" id=\"emptyClear\" type=\"button\">清除篩選</button></div></div></div>';\n      document.getElementById('emptyClear').addEventListener('click',clearAllFilters);\n      if(time==='today')document.getElementById('emptyWeekend').addEventListener('click',()=>{uiState.filters.time='weekend';renderAll()});\n    }",
+              'Discover empty state')
+          one(
+              "function openMobileFilters(){\n  draftFilters={...uiState.filters};renderMobileFilterCategories();",
+              "function openMobileFilters(){\n  draftFilters={...uiState.filters};draftClearSort=false;renderMobileFilterCategories();",
+              'open mobile draft')
+          one(
+              "function closeMobileFilters(cancel=true){\n  if(cancel) draftFilters=null;",
+              "function closeMobileFilters(cancel=true){\n  if(cancel){draftFilters=null;draftClearSort=false}",
+              'cancel mobile draft')
+          one(
+              "function applyMobileFilters(){\n  uiState.filters={...draftFilters};draftFilters=null;closeMobileFilters(false);renderAll();",
+              "function applyMobileFilters(){\n  uiState.filters={...draftFilters};if(draftClearSort)uiState.discoverSort='default';draftFilters=null;draftClearSort=false;closeMobileFilters(false);renderAll();",
+              'apply mobile clear sort')
+          one(
+              "document.getElementById('mobileFilterClear').addEventListener('click',()=>{draftFilters={city:'all',time:'all',form:'all',fee:'all',multi:'all'};mobileFilterKey?renderMobileFilterOptions(mobileFilterKey):renderMobileFilterCategories()});",
+              "document.getElementById('mobileFilterClear').addEventListener('click',()=>{draftFilters={city:'all',time:'all',form:'all',fee:'all',multi:'all'};draftClearSort=true;mobileFilterKey?renderMobileFilterOptions(mobileFilterKey):renderMobileFilterCategories()});",
+              'mobile clear all')
+          html.write_text(text,encoding='utf-8')
+
+          test=Path('backend/_test_discover_intent_home.py')
+          t=test.read_text(encoding='utf-8')
+          anchor="assert '現在可去' not in text\n"
+          extra=(
+              "assert \"const nearestLabel=distanceInfo&&group.locations.length>1&&!preferredLocation?first.venueName:''\" in text\n"
+              "assert \"今天沒有符合條件的活動\" in text and 'id=\"emptyWeekend\"' in text\n"
+              "assert 'draftClearSort=true' in text\n"
+              "assert \"if(draftClearSort)uiState.discoverSort='default'\" in text\n"
+          )
+          if extra not in t:
+              t=t.replace(anchor,anchor+extra)
+          test.write_text(t,encoding='utf-8')
+          PY
+      - name: Run targeted regression
+        run: python backend/_test_discover_intent_home.py
+      - name: Run map UX regression
+        run: python backend/_test_map_ux.py
+      - name: Validate diff
+        run: git diff --check
+      - name: Commit polish
+        run: |
+          rm .github/workflows/agent-discover-intent-polish.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "fix: align discover intent edge cases"
+          git push
