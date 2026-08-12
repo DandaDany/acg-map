@@ -2387,43 +2387,23 @@ const cluster=L.markerClusterGroup({
   }
 });
 map.addLayer(cluster);
-const DESTINATION_VENUE_GROUPS=[
-  {id:'huashan1914',label:'華山1914文化創意產業園區',aliases:['華山1914文化創意產業園區']},
-  {id:'songshan-cultural-park',label:'松山文創園區',aliases:['松山文創園區']},
-  {id:'pier2',label:'駁二藝術特區',aliases:['高雄市駁二藝術特區','駁二藝術特區']},
-  {id:'hualien-cultural-park',label:'花蓮文化創意產業園區',aliases:['花蓮文化創意產業園區']},
-  {id:'chiayi-cultural-park',label:'嘉義文化創意產業園區',aliases:['嘉義文化創意產業園區']}
-];
-function destinationVenueGroup(location){
-  const name=normalizeText(location&&location.venueName);
-  return DESTINATION_VENUE_GROUPS.find(group=>group.aliases.some(alias=>normalizeText(alias)===name))||null;
-}
-function destinationClusterInfo(items){
-  if(!items.length)return null;
-  const groups=items.map(item=>destinationVenueGroup(item.location));
-  if(groups.some(group=>!group))return null;
-  const ids=new Set(groups.map(group=>group.id));
-  if(ids.size!==1)return null;
-  const eventIds=new Set(items.map(item=>item.eventId));
-  return eventIds.size>1?{group:groups[0],eventIds}:null;
-}
 function clusterPickerItems(clusterLayer){
-  const seen=new Set();
+  const seenEvents=new Set();
   return clusterLayer.getAllChildMarkers().map(marker=>{
-    if(!marker.locationId||seen.has(marker.locationId))return null;
-    seen.add(marker.locationId);
+    if(!marker.locationId)return null;
     const location=locationById(marker.locationId);
     const group=location&&activityGroups.get(location.event.id);
-    return location&&group?{eventId:group.id,locationId:location.id,group,location}:null;
+    if(!location||!group||seenEvents.has(group.id))return null;
+    seenEvents.add(group.id);
+    return {eventId:group.id,locationId:location.id,group,location};
   }).filter(Boolean);
 }
 function handleClusterActivate(clusterLayer){
   if(!clusterLayer)return;
+  if(map.getZoom()<map.getMaxZoom()){clusterLayer.zoomToBounds();return}
   const items=clusterPickerItems(clusterLayer);
-  const destination=!MOBILE_QUERY.matches?destinationClusterInfo(items):null;
-  if(destination){openActivityPicker({mode:'cluster',items,title:destination.group.label+'的活動'});return}
-  if(map.getZoom()<map.getMaxZoom())clusterLayer.zoomToBounds();
-  else clusterLayer.spiderfy();
+  if(items.length>4){openActivityPicker({mode:'cluster',items,title:'這個地點的活動'});return}
+  clusterLayer.spiderfy();
 }
 cluster.on('clusterclick',event=>{L.DomEvent.stopPropagation(event);handleClusterActivate(event.layer)});
 function wireClusterKeyboard(){
