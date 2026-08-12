@@ -27,6 +27,8 @@ jobs:
         run: python tools/patch_polish_2.py
       - name: Apply decisions and regression updates
         run: python tools/patch_polish_3.py
+      - name: Update rolling-week regression
+        run: python tools/patch_polish_4.py
       - name: Map exploration regression
         run: python backend/_test_map_exploration_polish.py
       - name: Editorial C regression
@@ -70,7 +72,7 @@ jobs:
       - name: Commit implementation
         run: |
           rm -f tools/_polish_failure.txt
-          rm tools/patch_polish_1.py tools/patch_polish_2.py tools/patch_polish_3.py
+          rm tools/patch_polish_1.py tools/patch_polish_2.py tools/patch_polish_3.py tools/patch_polish_4.py
           rm .github/workflows/agent-map-exploration-polish.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
