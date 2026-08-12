@@ -9,7 +9,7 @@
 - 台灣鄉鎮市區邊界為 `#8fa0b5`、線寬 `0.7`、透明度 `0.5`、不填色。
 - 縮放低於 11 顯示縣市名稱；縮放 11 以上顯示鄉鎮市區名稱。
 - 地圖縮放範圍為 6–16，初始畫面涵蓋台灣；桌機與手機沿用既有台灣範圍限制。
-- 縮放控制位於右下角。
+- 桌機地圖導航控制固定在右上：Home 鍵下方依序為 `+ / -`；手機保留既有右下 Leaflet 縮放控制。
 - 不得只因自動驗收環境不支援 WebGL，就把所有使用者的預設底圖改成其他樣式。相容性問題應以不改變正常環境視覺的方式處理，或先取得 Daniel 同意。
 - 不支援 WebGL 的環境可自動改用 OpenStreetMap raster 備援；此備援不得改變支援 WebGL 環境的預設 Positron 視覺。
 
@@ -24,7 +24,7 @@
 
 - ACG 活動只有上述四種形式，沒有「其他」分類；圖例與篩選皆不列出「其他」。
 - 圖釘為白框水滴造型。
-- 每個活動各自一個 marker；同場館／同座標的多個活動會聚合。桌機 cluster 只有在所有子 marker 都屬於同一 venue/location 且確實有多活動時，才開啟全螢幕 Activity Picker；一般由不同地點組成的 cluster 必須持續 zoom-to-bounds，最大層級再 spiderfy。手機維持 zoom／最大層級 spiderfy。個別 marker 不顯示數字徽章；聚合徽章顯示該處活動數。
+- 每個活動各自一個 marker；同場館／同座標的多個活動會聚合。桌機只有 canonical 大型文化園區 destination cluster（華山、松菸、駁二，以及同類花蓮／嘉義文化創意產業園區）在目前篩選後仍含 2 個以上不同活動時，才直接開啟全螢幕 Activity Picker；一般 cluster 必須持續 zoom-to-bounds，最大層級再 spiderfy。若 broad cluster 同時混入園區外 marker，也先 zoom，不能因其中包含園區就提前滿版。手機維持 zoom／最大層級 spiderfy。個別 marker 不顯示數字徽章；聚合徽章顯示該處活動數。
 - 每個活動依自身活動形式顯示對應顏色的圖釘。
 - 座標不是 `exact` 時，圖釘透明度降為 70%。
 - 場館包含七日內即將結束的非常設活動時，顯示紅色提示點。
@@ -37,7 +37,7 @@
 - 使用者展開群聚並進入活動資訊後，回到地圖時必須保留該群聚的展開狀態；圖片與圖釘模式行為一致。
 - 群聚展開狀態透過 MarkerCluster 的 `spiderfied` / `unspiderfied` 事件追蹤，以展開群聚內子 marker 的 LatLng 作為識別依據（不依賴 venueId）。cluster UI state 與活動 selection state 必須分離。
 - `selectedLocationId` 是 map activity selection 的 single source of truth；`selectedEventId`／`selectedVenueId` 只做輔助資料，不可各自決定紅框。
-- 紅框優先代表 Map popup 目前正在觀看的 activity marker；沒有 active selection 時代表最後看過的 marker。同時間只顯示一個主要紅框。Discover、Latest、Search、deep link、marker click、popup swipe／arrow、Cluster Picker、Nearby Picker 與 popstate 必須共用同一 selection pipeline。
+- 紅框優先代表 Map popup 目前正在觀看的 activity marker；沒有 active selection 時代表最後看過的 marker。同時間只顯示一個主要紅框。Discover、Latest、Search、deep link、marker click、Cluster Picker、Nearby Picker 與 popstate 必須共用同一 selection pipeline。Map popup 不提供跨活動 swipe／上一個／下一個 carousel。
 - selected marker 被 cluster 包住時，必須使用 MarkerCluster reveal API 自動顯示；同座標仍無法分辨時自動 spiderfy。
 - `unspiderfied` 只表示 cluster UI 收合，不表示取消 activity selection，也不得清除 `selectedLocationId`。cluster lifecycle、moveend、zoomend、flyTo、invalidateSize 與 redraw 都不得自行取消 selection。
 - 不使用 `setTimeout` 作為群聚恢復或 marker 渲染的修補；使用 `requestAnimationFrame` 搭配 MarkerCluster 實際事件。
@@ -54,11 +54,11 @@
 - 一般篩選下 Discover 維持一活動一卡；只有選定特定「多店活動」時，改為逐門市列出同一活動。
 - 多店活動篩選選項的數字代表目前其他篩選條件下的可見門市數，不是活動群組數。
 - 活動 popup 只顯示目前定位的主要地點，不再列出其他活動地點。
-- 桌機與手機 popup 共用同一個活動序列：以目前地點為原點，將目前篩選後的有效 map locations 依距離由近到遠排列；灰色左右箭頭不循環，手機 swipe 與箭頭走同一個移動函式，桌機另支援方向鍵。
-- 桌機與手機活動 popup 共用橫式卡片資訊結構：左 KV、右資訊。手機高度約螢幕 1/3；桌機使用地圖內底部 docked card，不使用阻斷探索的全螢幕 event modal。單一活動直接顯示卡片；只有同一 location 的多活動才使用 Fullscreen Activity Picker。
-- Popup 的閱讀順序固定為活動名稱 → 目前地點／導航 → 目前 location 日期 → `#縣市`／`#付費狀態` → 官方資訊／分享；IP、主辦與授權商都不進 compact popup。浮動活動仍顯示「請至官方網站查詢地點」。Nearby CTA 與活動序列導覽屬 secondary interaction，可保留在主要資訊之後。
+- Map popup 不提供跨活動上一個／下一個、`1 / N`、桌機方向鍵切換或手機左右 swipe。使用者要看另一活動時直接點另一 marker；同園區大量活動使用 Fullscreen Activity Picker，附近探索使用 Nearby Picker，大量瀏覽使用 Collection。底層距離清單只可作為 Nearby 計算，不得再暴露成 popup carousel。
+- 桌機與手機活動 popup 共用橫式卡片資訊結構：左 KV、右資訊。手機高度約螢幕 1/3；桌機使用地圖內底部 docked card，不使用阻斷探索的全螢幕 event modal。桌機 card 應盡量使用地圖寬度、以內容撐高並一次顯示核心資訊，不提供 card 內垂直捲動。大型文化園區 destination 的多活動 cluster 才使用 Fullscreen Activity Picker。
+- Popup 的閱讀順序固定為活動名稱 → 目前地點／導航 → 目前 location 日期 → `#縣市`／`#付費狀態` → 官方資訊／分享；IP、主辦與授權商都不進 compact popup。浮動活動仍顯示「請至官方網站查詢地點」。Nearby CTA 屬 secondary interaction，可保留在主要資訊之後。
 - Popup 以目前 location 為中心顯示 2 公里內其他活動的 Nearby CTA。Nearby 尊重所有 active filters、排除目前 event、包含同場館的其他 event，並以 event 去重及最近 occurrence 作為目標。
-- Nearby CTA 與「同地點多活動」的桌機 Cluster／venue selection 共用 Fullscreen Activity Picker。Picker 是 transient UI，不寫入核心 selection 或 history；一般多地點 Cluster 不得開 Picker。Nearby Picker 關閉後保留底層 popup，點卡片後一律關閉 Picker 再呼叫 `selectLocation()`。
+- Nearby CTA 與大型文化園區 destination cluster／需要明確選活動的 venue selection 共用 Fullscreen Activity Picker。Picker 是 transient UI，不寫入核心 selection 或 history；一般多地點 Cluster 不得開 Picker。Nearby Picker 關閉後保留底層 popup，點卡片後一律關閉 Picker再呼叫 `selectLocation()`。
 - 桌機與手機活動 popup 皆保留純文字 tertiary context：`#縣市` 與 `#付費狀態`（例：`#台北市 #免費`）；不擴張成活動形式／IP 等大量 chips。
 - 地點列只保留無外框的「導航」文字連結，不顯示 Threads 圖示；手機橫式卡的場館列本身即為導航連結。
 - 「分享活動」一律直接複製目前活動的深連結，成功後顯示「成功複製連結」；Open Graph 連結預覽留待後續設計。
@@ -106,3 +106,11 @@
 - 「最近發現」Collection 的母集合固定為 `first_seen` 最近 7 個 Asia/Taipei 日曆日；進入這頁後仍可篩選，但所有 facet count、disabled 狀態與摘要統計都必須先限制在這個 7 日母集合，再套 city／time／form／fee／multi／query。
 - 暖白模式的 Filter 關閉 X 使用 warm semantic surface／text token，不得維持黑底高對比；dark mode 使用對應深色 surface。
 - 使用者自己的位置 marker 使用鮮紅實心圓＋白色 halo＋淡紅外圈；活動 selected marker 仍用原 marker shape 的紅色 outline，兩者不得混為同一語意。
+
+## 2026-08-12 — Desktop Map controls / Destination cluster / City viewport 微調
+
+- Desktop `Home / + / -` 為同一組 map navigation utility，固定在右上垂直排列；移開右下縮放控制是為了釋放 bottom card 空間，手機仍保留原生右下縮放。
+- Desktop activity card 使用更寬、內容撐高的 bottom dock，一次顯示活動名稱、地點／導航、日期、`#縣市 #付費狀態`、官方資訊／分享與 Nearby；card 本身不得上下捲動。
+- Map popup 不再提供跨活動 carousel：沒有 `1 / N`、左右箭頭、桌機方向鍵或手機左右 swipe。另一個活動由 marker、Destination Picker、Nearby Picker 或 Collection 進入。
+- 大型文化園區以 UI 靜態 canonical destination config 判定，不寫入每日活動資料。現階段包含華山1914、松山文創園區、駁二藝術特區（含官方／既有別名）、花蓮文化創意產業園區、嘉義文化創意產業園區。只有 cluster 的所有目前可見子活動都屬於同一 destination 且至少有 2 個不同活動時才直接 Fullscreen；混合一般地點的 cluster 先 zoom／spiderfy。
+- Desktop 選定縣市 Filter 後立即 `fitCityView(city)`；選全台灣回 `fitTaiwanView()`。此 viewport side effect 不得選活動、開 popup 或改寫 selection。Mobile 若正在 Map 則立即 fit；若仍在 Explore，只記錄 pending city target，下一次使用者自行進 Map 時優先顯示該縣市，不可自動切 tab。

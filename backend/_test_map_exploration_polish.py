@@ -4,12 +4,13 @@ ROOT=Path(__file__).resolve().parents[1]
 text=(ROOT/'public'/'taiwan-exhibition-map.html').read_text(encoding='utf-8')
 decision=(ROOT/'decision.md').read_text(encoding='utf-8')
 
-# 1. Desktop cluster picker is only for one venue/location with multiple activities.
+# 1. Desktop cluster picker is destination-aware; ordinary clusters still zoom/spiderfy.
 cluster=text[text.index('function handleClusterActivate'):text.index("cluster.on('clusterclick'")]
-assert "venueIds.size===1&&eventIds.size>1" in cluster
+assert "destinationClusterInfo(items)" in cluster
 assert "openActivityPicker({mode:'cluster'" in cluster
 assert 'clusterLayer.zoomToBounds()' in cluster
 assert 'clusterLayer.spiderfy()' in cluster
+assert "venueIds.size===1" not in cluster
 
 # 2. Recent Collection keeps Filter, but facet universe and stat summary are Latest/first_seen seven-day scoped.
 assert 'function facetBaseGroups(state=uiState)' in text
