@@ -74,3 +74,12 @@
 - 任何刻意改動本文件內容的 PR，需在 PR 說明中明列差異與 Daniel 的確認依據。
 
 最後更新：2026-08-10（Asia/Taipei）
+
+## 2026-08-12 — Discover 情境入口與桌機地圖搜尋
+
+- Discover / Latest 仍是內容模式，不新增第三種 mode。
+- 「今天」與「本週末」是既有時間 Filter 的正式 preset；兩者共用 `uiState.filters.time`，互斥且同步桌機／手機 Filter。日期以 Asia/Taipei 日曆日判斷。
+- 「離我最近」是 Discover 清單排序，不是半徑 Filter；只在使用者點擊後要求 geolocation，不得自動定位，也不得改 Map viewport。
+- 多店活動在距離排序時以目前條件下最近的可用分店作為卡片目標，仍走既有 `selectLocation()` flow。
+- 桌機搜尋移到地圖上方，圖釘／圖片切換靠右；手機保留頂部搜尋與原本 Map 切換位置。
+- Quick intent 只保留高頻情境（今天／週末／離我最近），完整條件仍由 Filter 負責。
