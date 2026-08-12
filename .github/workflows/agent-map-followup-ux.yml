@@ -25,6 +25,8 @@ jobs:
         run: python tools/fix_map_followup_patch.py
       - name: Apply map follow-up UX patch
         run: python tools/patch_map_followup_ux.py
+      - name: Normalize generated map UX test
+        run: python tools/fix_generated_map_test.py
       - name: Follow-up UX regression
         run: python backend/_test_map_followup_ux.py
       - name: Map exploration regression
@@ -56,7 +58,7 @@ jobs:
         run: git diff --check
       - name: Commit implementation
         run: |
-          rm tools/patch_map_followup_ux.py tools/fix_map_followup_patch.py
+          rm tools/patch_map_followup_ux.py tools/fix_map_followup_patch.py tools/fix_generated_map_test.py
           rm .github/workflows/agent-map-followup-ux.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
