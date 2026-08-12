@@ -21,4 +21,8 @@ assert '.map-marker-toggle{position:absolute;z-index:1000;top:14px;right:14px' i
 assert '<aside class="filter-pane"' in text and text.index('id="q"') > text.index('<section class="map-pane"')
 assert 'id="mq"' in text  # mobile keeps its own top search
 assert '現在可去' not in text
+assert "const nearestLabel=distanceInfo&&group.locations.length>1&&!preferredLocation?first.venueName:''" in text
+assert "今天沒有符合條件的活動" in text and 'id="emptyWeekend"' in text
+assert 'draftClearSort=true' in text
+assert "if(draftClearSort)uiState.discoverSort='default'" in text
 print('discover intent home UX: PASS')

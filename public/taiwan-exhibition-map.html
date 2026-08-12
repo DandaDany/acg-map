@@ -800,6 +800,7 @@ a{color:inherit}
 .mobile-detail{display:none}
 .empty-state{display:grid;min-height:280px;place-items:center;padding:30px;text-align:center}
 .empty-state p{margin:0 0 14px;color:var(--muted)}
+.empty-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
 .primary-btn,.secondary-btn{min-height:44px;padding:0 16px;border-radius:12px;font-weight:750;cursor:pointer}
 .primary-btn{border:0;background:var(--accent2);color:white}.secondary-btn{border:1px solid var(--line);background:#151c28}
 
@@ -1137,6 +1138,7 @@ let dialogReturn=null;
 let lastFocus=null;
 let toastTimer=null;
 let draftFilters=null;
+let draftClearSort=false;
 let mobileFilterKey='';
 let mobileFilterStartY=0;
 let mobileVenueStartY=0;
@@ -1547,7 +1549,8 @@ function eventCardHtml(group,preferredLocation=null){
   const distanceInfo=uiState.discoverSort==='distance'?(preferredLocation?locationDistanceInfo(preferredLocation):nearestLocationForGroup(group)):null;
   const first=preferredLocation||(distanceInfo&&distanceInfo.location)||primaryLocationFor(group);
   const placeText=preferredLocation?first.venueName:(group.locations.length>1?'共 '+group.locations.length+' 個地點':first.venueName);
-  const distanceHtml=distanceInfo?'<div class="card-summary card-distance">⌖ '+esc(formatDistance(distanceInfo.distanceMeters))+(group.locations.length>1&&!preferredLocation?' · 最近分店':'')+'</div>':'';
+  const nearestLabel=distanceInfo&&group.locations.length>1&&!preferredLocation?first.venueName:'';
+  const distanceHtml=distanceInfo?'<div class="card-summary card-distance">⌖ '+(nearestLabel?esc(nearestLabel)+' · ':'')+esc(formatDistance(distanceInfo.distanceMeters))+'</div>':'';
   return '<article class="event-card desktop-clickable" data-event-id="'+esc(group.id)+'" data-location-id="'+esc(first.id)+'">'
     +mediaFrameHtml(group.image,group.title,true)
     +'<div class="card-body">'+tagHtml(group,first.city)+'<h2>'+esc(group.title)+'</h2>'
@@ -1579,8 +1582,12 @@ function renderDiscover(groups){
       list.innerHTML='<div class="empty-state"><div><p>'+message+'</p>'+(anyLatest?'<button class="primary-btn" id="emptyClear" type="button">清除篩選</button>':'')+'</div></div>';
       if(anyLatest)document.getElementById('emptyClear').addEventListener('click',clearAllFilters);
     }else{
-      list.innerHTML='<div class="empty-state"><div><p>沒有符合條件的活動</p><button class="primary-btn" id="emptyClear" type="button">清除篩選</button></div></div>';
+      const time=uiState.filters.time;
+      const message=time==='today'?'今天沒有符合條件的活動':time==='weekend'?'這個週末沒有符合條件的活動':'沒有符合條件的活動';
+      const weekendCta=time==='today'?'<button class="primary-btn" id="emptyWeekend" type="button">看這個週末</button>':'';
+      list.innerHTML='<div class="empty-state"><div><p>'+message+'</p><div class="empty-actions">'+weekendCta+'<button class="secondary-btn" id="emptyClear" type="button">清除篩選</button></div></div></div>';
       document.getElementById('emptyClear').addEventListener('click',clearAllFilters);
+      if(time==='today')document.getElementById('emptyWeekend').addEventListener('click',()=>{uiState.filters.time='weekend';renderAll()});
     }
     return;
   }
@@ -2343,18 +2350,18 @@ function renderMobileFilterOptions(key){
   }).join('');
 }
 function openMobileFilters(){
-  draftFilters={...uiState.filters};renderMobileFilterCategories();
+  draftFilters={...uiState.filters};draftClearSort=false;renderMobileFilterCategories();
   document.getElementById('mobileFilterOverlay').classList.add('show');
   document.getElementById('mobileFilterOverlay').setAttribute('aria-hidden','false');
   document.getElementById('mobileFilterClose').focus();
 }
 function closeMobileFilters(cancel=true){
-  if(cancel) draftFilters=null;
+  if(cancel){draftFilters=null;draftClearSort=false}
   document.getElementById('mobileFilterOverlay').classList.remove('show');
   document.getElementById('mobileFilterOverlay').setAttribute('aria-hidden','true');
 }
 function applyMobileFilters(){
-  uiState.filters={...draftFilters};draftFilters=null;closeMobileFilters(false);renderAll();
+  uiState.filters={...draftFilters};if(draftClearSort)uiState.discoverSort='default';draftFilters=null;draftClearSort=false;closeMobileFilters(false);renderAll();
   if(uiState.tab==='map') fitCityView(uiState.filters.city);
 }
 function setTab(tab,options={}){
@@ -2541,7 +2548,7 @@ document.getElementById('clearFilters').addEventListener('click',clearAllFilters
 document.getElementById('mobileFilterButton').addEventListener('click',openMobileFilters);
 document.getElementById('mobileFilterClose').addEventListener('click',()=>closeMobileFilters(true));
 document.getElementById('mobileFilterBack').addEventListener('click',renderMobileFilterCategories);
-document.getElementById('mobileFilterClear').addEventListener('click',()=>{draftFilters={city:'all',time:'all',form:'all',fee:'all',multi:'all'};mobileFilterKey?renderMobileFilterOptions(mobileFilterKey):renderMobileFilterCategories()});
+document.getElementById('mobileFilterClear').addEventListener('click',()=>{draftFilters={city:'all',time:'all',form:'all',fee:'all',multi:'all'};draftClearSort=true;mobileFilterKey?renderMobileFilterOptions(mobileFilterKey):renderMobileFilterCategories()});
 document.getElementById('mobileFilterDone').addEventListener('click',applyMobileFilters);
 document.getElementById('mobileFilterContent').addEventListener('click',event=>{
   const category=event.target.closest('[data-mobile-filter]');if(category){renderMobileFilterOptions(category.dataset.mobileFilter);return}
