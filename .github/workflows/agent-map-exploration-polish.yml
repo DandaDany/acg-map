@@ -30,7 +30,20 @@ jobs:
       - name: Map exploration regression
         run: python backend/_test_map_exploration_polish.py
       - name: Editorial C regression
-        run: python backend/_test_editorial_c_home.py
+        run: |
+          set +e
+          python backend/_test_editorial_c_home.py > /tmp/editorial-polish.log 2>&1
+          code=$?
+          cat /tmp/editorial-polish.log
+          if [ "$code" -ne 0 ]; then
+            cp /tmp/editorial-polish.log tools/_polish_failure.txt
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add tools/_polish_failure.txt
+            git commit -m "chore: capture polish regression failure"
+            git push
+            exit "$code"
+          fi
       - name: Collection regression
         run: python backend/_test_editorial_collection_pages.py
       - name: Theme regression
@@ -56,6 +69,7 @@ jobs:
         run: git diff --check
       - name: Commit implementation
         run: |
+          rm -f tools/_polish_failure.txt
           rm tools/patch_polish_1.py tools/patch_polish_2.py tools/patch_polish_3.py
           rm .github/workflows/agent-map-exploration-polish.yml
           git config user.name "github-actions[bot]"
