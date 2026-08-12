@@ -1,0 +1,38 @@
+name: Agent Discover Intent Home
+
+on:
+  push:
+    branches:
+      - agent/discover-intent-home-ux
+
+permissions:
+  contents: write
+
+jobs:
+  patch-and-test:
+    if: ${{ github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply UX patch
+        run: python tools/patch_discover_intent_home.py
+      - name: Run targeted regression
+        run: python backend/_test_discover_intent_home.py
+      - name: Run map UX regression
+        run: python backend/_test_map_ux.py
+      - name: Validate diff
+        run: git diff --check
+      - name: Commit implementation
+        run: |
+          rm tools/patch_discover_intent_home.py
+          rm .github/workflows/agent-discover-intent-home.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: add discover intent home UX"
+          git push
