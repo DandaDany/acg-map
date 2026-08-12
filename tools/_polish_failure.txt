@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/runner/work/acg-map/acg-map/backend/_test_editorial_c_home.py", line 22, in <module>
+    assert "day,day+6" in text
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError
