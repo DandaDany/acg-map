@@ -32,7 +32,7 @@
 - 「圖片模式」顯示活動 KV；新增或修改圖片模式不得改掉上述圖釘模式。
 - 圖片 marker 依 KV 實際寬高比顯示為橫式或直式，不得強制裁成單一直式比例。
 - 圖片 marker 的 KV 必須置中完整呈現，剩餘空間以同圖模糊背景補齊；活動數徽章固定在圖片右上角、貼齊邊界外緣（手機 App 通知徽章樣式），使用紅底白字。
-- Marker 顯示模式切換固定放在地圖上方正中央。
+- Marker 顯示模式切換：桌機放在地圖上方右側；手機 Map 維持上方置中。
 - 點擊 marker 顯示該活動資訊；被選取的 marker 放大 30% 並以紅色外框標示（取代原本白框）。關閉 popup 後 active selection 仍清除，但最後看過的 marker 保留紅框；`lastViewedLocationId` 只能控制視覺，不得控制定位、popup、URL、history 或 spiderfy。桌機滑鼠移入水滴與圖片 marker 時放大 30%，只縮放 marker 內層元素，不修改 Leaflet 定位 transform。
 - 使用者展開群聚並進入活動資訊後，回到地圖時必須保留該群聚的展開狀態；圖片與圖釘模式行為一致。
 - 群聚展開狀態透過 MarkerCluster 的 `spiderfied` / `unspiderfied` 事件追蹤，以展開群聚內子 marker 的 LatLng 作為識別依據（不依賴 venueId）。cluster UI state 與活動 selection state 必須分離。
@@ -46,7 +46,7 @@
 
 ## Discover、篩選與活動詳情
 
-- Discover panel 內有 `Discover / Latest` switch；它不是 mobile bottom nav 的第三個 tab。
+- 探索首頁採 Editorial C：首頁直接呈現「這週想去哪？／附近／最近發現」，不顯示 `Discover / Latest` switch；Latest 的資料定義保留，並由「最近發現」與其完整 Results view 使用。
 - Latest 是最近 7 個 Asia/Taipei 日曆日內第一次加入 ACG Map 的活動（包含今天），不得使用活動開始日、公告日、KV 日期、`DATA.updated` 或 Git 最新 commit 代替。
 - 加入日期使用 stable event ID 對應的 persistent `data/event_first_seen.json`；既有 ID 保留原日期，新 ID 才登記台北當日，無法可靠回填時使用 `null`。
 - Latest 共用 city、time、form、fee、multi 與 search，只改 Discover list，不得改 marker dataset、selection、popup、filters 或 map viewport；Discover 與 Latest 分別保存 scroll position。
@@ -75,11 +75,17 @@
 
 最後更新：2026-08-10（Asia/Taipei）
 
-## 2026-08-12 — Discover 情境入口與桌機地圖搜尋
+## 2026-08-12 — Editorial C 探索首頁（取代同日舊 Quick Intent 版）
 
-- Discover / Latest 仍是內容模式，不新增第三種 mode。
-- 「今天」與「本週末」是既有時間 Filter 的正式 preset；兩者共用 `uiState.filters.time`，互斥且同步桌機／手機 Filter。日期以 Asia/Taipei 日曆日判斷。
-- 「離我最近」是 Discover 清單排序，不是半徑 Filter；只在使用者點擊後要求 geolocation，不得自動定位，也不得改 Map viewport。
-- 多店活動在距離排序時以目前條件下最近的可用分店作為卡片目標，仍走既有 `selectLocation()` flow。
-- 桌機搜尋移到地圖上方，圖釘／圖片切換靠右；手機保留頂部搜尋與原本 Map 切換位置。
-- Quick intent 只保留高頻情境（今天／週末／離我最近），完整條件仍由 Filter 負責。
+- 探索首頁不是 Filter/List 工具首頁；第一層固定為「這週想去哪？／附近／最近發現」三個 editorial sections。首頁不得顯示 Today／Weekend 數字 chip、活動總數 badge、`Discover / Latest` switch 或排名數字。
+- 「這週想去哪？」實際範圍為 Asia/Taipei 今天起未來 7 個日曆日；手機最多 5 張橫向 Hero cards，桌機只呈現前 3 張（1 大 2 小）。首頁 selection 使用可解釋規則：快結束 → 7 日內新開始 → first_seen 最近 → 其他有效活動，並做 IP／活動形式多樣化；沒有可用 KV 的活動不進 Hero，但仍可出現在完整 Results。
+- 「查看更多」進入完整 Results mode，使用既有 Filter/List/Map 架構，並將 `未來 7 天` 作為正式 time filter preset；返回首頁時只撤回這個 route 注入的 time preset，不清除使用者在 Results 中主動修改的其他 Filter。
+- 「附近」是首頁內容 section，不是 quick-sort pill。未授權時只顯示「使用目前位置」CTA；必須由使用者點擊後才呼叫 geolocation。授權後顯示 20 公里內最近 3 個不同 event，多店活動只取最近 eligible location；點卡片仍走 `selectLocation()`。使用者位置以獨立 marker 顯示；只有點「看地圖」才可主動調整 map viewport。
+- 「最近發現」沿用 first_seen / Latest 最近 7 日定義；手機最多 3 筆 compact rows，桌機最多 4 張 2×2 cards。它可避開已出現在「這週想去哪？」的 event；Nearby 不為視覺去重而犧牲真實距離排序。
+- Desktop Home 為 `Editorial content × persistent map` 兩欄；Filter sidebar 在 Home 隱藏，Filter 由 trigger 開啟 drawer。搜尋固定放在右側地圖上方，Marker 圖釘／圖片切換放右上。只有 Results mode 才恢復 Filter / List / Map 三欄工具架構。
+- Desktop Home card hover 只 highlight 對應 marker，不 flyTo；click 才走既有 `selectLocation()` / reveal / popup pipeline。
+- Mobile Home 頂部是 `ACG MAP` brand + search icon + filter icon；底部只有「探索／地圖」。首頁不把 search input 常駐成工具列；搜尋 icon 展開搜尋面板，輸入後進 Results mode。
+- Home 與 Results 共用 light editorial consumer-product visual system；Positron 地圖與既有 pin 類型配色不變。Filter facet counts、日期、距離、Map cluster counts 屬功能性資訊，可保留；禁止的是把首頁做成統計儀表板。
+- `selectLocation()`、Nearby popup、Popup carousel、lastViewed、Activity Picker、MarkerCluster/spiderfy、selectedLocationId SSOT、deep link、popstate 與 first_seen 定義不得因本次首頁重排而重構。
+
+- 2026-08-12：Editorial C 介面提供暖白／黑色小型主題 switch。暖白為預設；使用者手動選擇會以 `localStorage` 的 `acg-map-theme` 保存。主題切換只改 UI visual chrome，不改活動資料、filter、selection、popup、cluster 或 map viewport state。
