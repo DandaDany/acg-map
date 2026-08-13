@@ -2188,6 +2188,30 @@
   "type": "PointAddress",
   "score": 100
  },
+ "台北市大同區市民大道一段209號5樓": {
+  "la": 25.048892761138,
+  "lo": 121.518349936939,
+  "source": "arcgis_address",
+  "display_name": "台北市大同區建明里市民大道一段209號5F, 10351",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "台中市東區復興路四段186號4樓": {
+  "la": 24.135473018575,
+  "lo": 120.687673995592,
+  "source": "arcgis_address",
+  "display_name": "台中市東區復興路四段186號, 401211",
+  "type": "PointAddress",
+  "score": 100
+ },
+ "高雄市苓雅區三多四路21號13樓": {
+  "la": 22.613424008067,
+  "lo": 120.303548975058,
+  "source": "arcgis_address",
+  "display_name": "高雄市三多四路21號, 802760",
+  "type": "PointAddress",
+  "score": 97.88
+ },
  "高雄市楠梓區土庫一路60號1樓": {
   "la": 22.736127,
   "lo": 120.330751,

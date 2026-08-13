@@ -1,5 +1,5 @@
 {
-  "updated": "2026/08/10",
+  "updated": "2026/08/12",
   "links": {
     "https://www.cayenne-cafe.com.tw/NewsCount.aspx?id=24": {
       "ok": true,
@@ -1212,6 +1212,12 @@
       "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/opanchu_usagi_bigcity_20260813.jpg",
       "code": "manual_verified",
       "updated": "2026/08/07"
+    },
+    "https://www.instagram.com/eatwithgo/": {
+      "ok": true,
+      "img": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+      "code": "ok",
+      "updated": "2026/08/12"
     }
   }
 }

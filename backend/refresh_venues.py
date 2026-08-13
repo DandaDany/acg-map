@@ -162,11 +162,14 @@ def apply_event_kv_cache(venues):
     applied = 0
     for v in venues:
         for e in v.get("ex", []):
-            if e.get("img") or not e.get("l"):
+            if not e.get("l"):
                 continue
             rec = cache.get(e.get("l", ""))
             img = rec.get("img", "") if isinstance(rec, dict) else ""
-            if img:
+            # 人工目視驗證並自存的 KV 是人工決策，優先於每日爬蟲帶回的
+            # 外站圖片；一般快取仍只補空白，避免舊自動快取倒蓋新官網圖。
+            manual_verified = isinstance(rec, dict) and rec.get("code") == "manual_verified"
+            if img and (manual_verified or not e.get("img")):
                 e["img"] = img
                 applied += 1
     if applied:
