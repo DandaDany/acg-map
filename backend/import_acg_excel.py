@@ -107,6 +107,15 @@ def cell_link(cell):
     return value if value.startswith(("http://", "https://")) else ""
 
 
+def cell_asset_link(cell):
+    """Return an HTTP(S) image URL or a stable repo-local ``/kv/`` asset path."""
+    link = cell_link(cell)
+    if link:
+        return link
+    value = str(cell.value or "").strip()
+    return value if value.startswith("/kv/") else ""
+
+
 class _JsonHyperlink:
     """模擬 openpyxl 的 cell.hyperlink（只需 target 屬性，供 cell_link 使用）。"""
 
@@ -533,7 +542,7 @@ def main():
             no_addr += 1
         link = cell_link(ws.cell(row, idx["活動連結 / Activity link"]))
         raw_cat2 = str(ws.cell(row, cat2_col).value or "").strip() if cat2_col else ""
-        img = cell_link(ws.cell(row, kv_col)) if kv_col else ""  # KV 欄填的圖片網址（http/https）
+        img = cell_asset_link(ws.cell(row, kv_col)) if kv_col else ""  # KV 欄可填圖片網址或 /kv/ 本機素材
         fee = str(ws.cell(row, admission_col).value or "").strip() if admission_col else ""
         if fee and fee not in ("免費", "付費"):
             raise SystemExit(f"第 {row} 列付費狀態不合法：{fee!r}（只接受「免費」或「付費」）")

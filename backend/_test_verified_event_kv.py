@@ -136,6 +136,36 @@ class VerifiedEventKvTests(unittest.TestCase):
                 f"unstable map KV: {event.get('t')} -> {img}",
             )
 
+    def test_crayon_shinchan_vieshow_pins_share_uploaded_kv(self):
+        title = "蠟筆小新快閃店（威秀北中南場）"
+        expected = "/kv/crayon-shinchan-popup-vieshow-20260703.jpg"
+        venues = {
+            "台北京站威秀影城",
+            "台中iFG 遠雄廣場威秀影城",
+            "高雄大遠百威秀影城",
+        }
+        rows = [
+            row for row in self.events
+            if row.get("活動名稱 / Activity Name") == title
+        ]
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(
+            {row["地點 / Location"].split("（", 1)[0] for row in rows},
+            venues,
+        )
+        self.assertTrue(all(row.get("KV") == expected for row in rows))
+
+        pins = {
+            venue["name"]: event.get("img")
+            for venue in self.public["venues"]
+            for event in venue.get("ex", [])
+            if event.get("t") == title
+        }
+        self.assertEqual(pins, {venue: expected for venue in venues})
+        local_path = os.path.join(ROOT, "public", expected.removeprefix("/"))
+        self.assertTrue(os.path.isfile(local_path), local_path)
+        self.assertGreater(os.path.getsize(local_path), 512)
+
 
 if __name__ == "__main__":
     unittest.main()
