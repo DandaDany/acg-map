@@ -939,6 +939,28 @@
    }
   ]
  },
+ "台中iFG 遠雄廣場威秀影城": {
+  "city": "台中市",
+  "lat": 24.14003,
+  "lng": 120.69166,
+  "loc": "區級",
+  "addr": "台中市東區復興路四段186號4樓",
+  "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+  "ex": [
+   {
+    "t": "蠟筆小新快閃店（威秀北中南場）",
+    "s": "2026/07/03",
+    "e": "2026/09/02",
+    "l": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "蠟筆小新（Crayon Shin-chan）",
+    "org": "IP POPUP STORE（宅一番）",
+    "lic": "Animation International Ltd.／臼井儀人・雙葉社・SHIN-EI・テレビ朝日・ADK"
+   }
+  ]
+ },
  "台中世界貿易中心 大禮堂": {
   "city": "台中市",
   "lat": 24.176085,
@@ -1089,6 +1111,28 @@
    }
   ]
  },
+ "台北京站威秀影城": {
+  "city": "台北市",
+  "lat": 25.0738,
+  "lng": 121.54406,
+  "loc": "市級",
+  "addr": "台北市大同區市民大道一段209號5樓",
+  "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+  "ex": [
+   {
+    "t": "蠟筆小新快閃店（威秀北中南場）",
+    "s": "2026/07/03",
+    "e": "2026/09/02",
+    "l": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "蠟筆小新（Crayon Shin-chan）",
+    "org": "IP POPUP STORE（宅一番）",
+    "lic": "Animation International Ltd.／臼井儀人・雙葉社・SHIN-EI・テレビ朝日・ADK"
+   }
+  ]
+ },
  "台北大巨蛋": {
   "city": "台北市",
   "lat": 25.042315,
@@ -1129,28 +1173,6 @@
     "ip": "寶可夢",
     "org": "The Pokémon Company（新光三越信義新天地協辦）",
     "lic": "The Pokémon Company"
-   }
-  ]
- },
- "台北西門店": {
-  "city": "台北市",
-  "lat": 25.0452564,
-  "lng": 121.5053799,
-  "loc": "exact",
-  "addr": "台北市萬華區昆明街92之1號5樓",
-  "url": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
-  "ex": [
-   {
-    "t": "異環 x FanFans Café｜期間限定主題餐廳",
-    "s": "2026/07/17",
-    "e": "2026/08/11",
-    "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
-    "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "異環",
-    "org": "FanFans Café",
-    "lic": "Hotta Studio（a Perfect World company）"
    }
   ]
  },
@@ -1726,27 +1748,6 @@
    }
   ]
  },
- "微風廣場 9F E廳": {
-  "city": "台北市",
-  "lat": 25.0461294,
-  "lng": 121.5441255,
-  "loc": "exact",
-  "addr": "台北市松山區復興南路一段39號9樓",
-  "url": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
-  "ex": [
-   {
-    "t": "Ave Mujica LIVE TOUR 2026「Exitus」台北限定快閃店",
-    "s": "2026/08/07",
-    "e": "2026/08/10",
-    "l": "https://forum.gamer.com.tw/C.php?bsn=47099&snA=5620",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/avemujica_exitus_taipei_popup_20260807.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "ip": "BanG Dream!／Ave Mujica",
-    "org": "寶島製造",
-    "lic": "Bushiroad／BanG Dream! Project"
-   }
-  ]
- },
  "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心": {
   "city": "台北市",
   "lat": 25.0461294,
@@ -1929,27 +1930,6 @@
     "ip": "鏈鋸人",
     "org": "Vision Toys／樂玩多 WAYTOFUN",
     "lic": "藤本樹／集英社・MAPPA／Chainsaw Man Project"
-   }
-  ]
- },
- "新光三越台北南西店 一館 9F 活動會館": {
-  "city": "台北市",
-  "lat": 25.0523272,
-  "lng": 121.5212449,
-  "loc": "exact",
-  "addr": "台北市中山區南京西路12號",
-  "url": "https://www.facebook.com/emuse.com.tw/photos/%F0%9D%97%9D%F0%9D%97%A2%F0%9D%97%9D%F0%9D%97%A2-%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A5%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%A1-%E5%8D%B3%E5%B0%87%E7%99%BB%E5%A0%B4%E7%82%BA%E7%B4%80%E5%BF%B5jojo-%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%9A%AA%E7%AC%AC%E4%B8%83%E9%83%A8steel-ball-run-%E9%A3%86%E9%A6%AC%E9%87%8E%E9%83%8E%E6%AD%A3%E5%BC%8F%E5%8B%95%E7%95%AB%E5%8C%96%E5%AE%98%E6%96%B9%E5%B7%A1%E8%BF%B4%E5%B1%95%E8%A6%BDjojo-caravan%E5%8D%B3%E5%B0%87%E4%BE%86%E5%8F%B0%E7%8F%BE/1478337260995605/",
-  "ex": [
-   {
-    "t": "JOJO CARAVAN 飆馬野郎複製原畫展",
-    "s": "2026/06/26",
-    "e": "2026/08/11",
-    "l": "https://www.facebook.com/emuse.com.tw/photos/%F0%9D%97%9D%F0%9D%97%A2%F0%9D%97%9D%F0%9D%97%A2-%F0%9D%97%96%F0%9D%97%94%F0%9D%97%A5%F0%9D%97%94%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%A1-%E5%8D%B3%E5%B0%87%E7%99%BB%E5%A0%B4%E7%82%BA%E7%B4%80%E5%BF%B5jojo-%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%9A%AA%E7%AC%AC%E4%B8%83%E9%83%A8steel-ball-run-%E9%A3%86%E9%A6%AC%E9%87%8E%E9%83%8E%E6%AD%A3%E5%BC%8F%E5%8B%95%E7%95%AB%E5%8C%96%E5%AE%98%E6%96%B9%E5%B7%A1%E8%BF%B4%E5%B1%95%E8%A6%BDjojo-caravan%E5%8D%B3%E5%B0%87%E4%BE%86%E5%8F%B0%E7%8F%BE/1478337260995605/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_20260626.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "JOJO的奇妙冒險",
-    "lic": "木棉花"
    }
   ]
  },
@@ -3252,9 +3232,9 @@
  },
  "華山1914文創園區 東2館四連棟": {
   "city": "台北市",
-  "lat": 25.02983,
-  "lng": 121.52412,
-  "loc": "區級",
+  "lat": 25.044,
+  "lng": 121.5292,
+  "loc": "exact",
   "addr": "台北市中正區八德路一段1號",
   "url": "https://gnn.gamer.com.tw/detail.php?sn=305017",
   "ex": [
@@ -5022,25 +5002,25 @@
    }
   ]
  },
- "高雄愛河店": {
+ "高雄大遠百威秀影城": {
   "city": "高雄市",
-  "lat": 22.627008,
-  "lng": 120.295574,
-  "loc": "exact",
-  "addr": "高雄市前金區大同二路23號1樓",
-  "url": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
+  "lat": 22.61181,
+  "lng": 120.31929,
+  "loc": "區級",
+  "addr": "高雄市苓雅區三多四路21號13樓",
+  "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [
    {
-    "t": "異環 x FanFans Café｜期間限定主題餐廳",
-    "s": "2026/07/17",
-    "e": "2026/08/11",
-    "l": "https://nte.iwplay.com.tw/news/view/20260708/f261ed96.html",
-    "img": "https://nte.iwplay.com.tw/news/CmsnewsImg/2000213/build/2026070814383629066473.png",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "異環",
-    "org": "FanFans Café",
-    "lic": "Hotta Studio（a Perfect World company）"
+    "t": "蠟筆小新快閃店（威秀北中南場）",
+    "s": "2026/07/03",
+    "e": "2026/09/02",
+    "l": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+    "img": "",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "蠟筆小新（Crayon Shin-chan）",
+    "org": "IP POPUP STORE（宅一番）",
+    "lic": "Animation International Ltd.／臼井儀人・雙葉社・SHIN-EI・テレビ朝日・ADK"
    }
   ]
  },

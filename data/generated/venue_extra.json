@@ -30,6 +30,14 @@
     "ty": "special"
    },
    {
+    "t": "extra® x K-Pop 獵魔女團 夏日限定聯名館",
+    "s": "2026/08/14",
+    "e": "2026/08/23",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26081206570000760",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e5%a0%b4%e5%9c%b0%e7%b4%a0%e6%9d%90_1920X1080_0804.png",
+    "ty": "special"
+   },
+   {
     "t": "「B-SIDE LABEL POP UP STORE in Taiwan」",
     "s": "2026/06/24",
     "e": "2026/08/23",
@@ -206,27 +214,27 @@
   "url": "https://www.songshanculturalpark.org",
   "ex": [
    {
-    "t": "KYBUBI POPUP STORE（台北站）",
-    "s": "2026/08/06",
-    "e": "2026/09/28",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/c5c7e237-cb4a-4c43-af9e-9a37131613cb",
-    "img": "https://www.songshanculturalpark.org/gallery/1786329306_2c4d5c94343280d74e03.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "史努比的藝術人生：快閃小巡迴（台北站）",
-    "s": "2026/08/06",
-    "e": "2026/09/28",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/c64a0dee-b436-408d-b527-b141ab24a202",
-    "img": "https://www.songshanculturalpark.org/gallery/1786329688_c72ab11a4cf9d91d6763.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "CHE 6th Tour「Morning Star」Exhibition 台灣小眾品牌聯合展",
+    "t": "《飲領潮流．果然出色》",
     "s": "2026/08/14",
-    "e": "2026/08/16",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/da5b4085-f6de-4a95-89d7-54583130f1a7",
-    "img": "https://www.songshanculturalpark.org/gallery/1786330558_a13eddfb37a914151be4.jpg",
+    "e": "2026/08/14",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/58e51daa-f8f8-41cd-97e7-9a454be269bf",
+    "img": "https://www.songshanculturalpark.org/gallery/1786520805_6b2b85062aaef8a6d898.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "從品牌到體驗：設計如何被記住 | 2026 年 iF 設計獎系列講座 (II)",
+    "s": "2026/09/04",
+    "e": "2026/09/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/d1d81f2a-65a0-4f0f-a557-d82785b4adb1",
+    "img": "https://www.songshanculturalpark.org/gallery/1786521777_1f9a707ddd0062c5a83d.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "一場夜遊，如何改變一座城市？「森林夜遊」三年城市實驗大公開！",
+    "s": "2026/08/25",
+    "e": "2026/08/25",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/bbcd2203-90e5-429b-876b-2d30ff349527",
+    "img": "https://www.songshanculturalpark.org/gallery/1786527103_7adb0efd48bd67173535.jpg",
     "ty": "special"
    },
    {
@@ -475,6 +483,30 @@
     "e": "2026/08/28",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/588c5fd6-abaf-4931-99fa-f99135421aaa",
     "img": "https://www.songshanculturalpark.org/gallery/1786071204_59fbeeec2071eaac32f8.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "KYBUBI POPUP STORE（台北站）",
+    "s": "2026/08/06",
+    "e": "2026/09/28",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/c5c7e237-cb4a-4c43-af9e-9a37131613cb",
+    "img": "https://www.songshanculturalpark.org/gallery/1786329306_2c4d5c94343280d74e03.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "史努比的藝術人生：快閃小巡迴（台北站）",
+    "s": "2026/08/06",
+    "e": "2026/09/28",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/c64a0dee-b436-408d-b527-b141ab24a202",
+    "img": "https://www.songshanculturalpark.org/gallery/1786329688_c72ab11a4cf9d91d6763.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "CHE 6th Tour「Morning Star」Exhibition 台灣小眾品牌聯合展",
+    "s": "2026/08/14",
+    "e": "2026/08/16",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/da5b4085-f6de-4a95-89d7-54583130f1a7",
+    "img": "https://www.songshanculturalpark.org/gallery/1786330558_a13eddfb37a914151be4.jpg",
     "ty": "special"
    }
   ]
