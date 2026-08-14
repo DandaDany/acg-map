@@ -129,13 +129,22 @@ def test_localize_and_gc():
         orphan = os.path.join(d, "orphan_deadbeef.jpg")
         with open(orphan, "wb") as f:
             f.write(b"z")
-        venues_after_expire = [venues[0]]  # 華山那筆（含活動C）整個過期消失
+        manual_kv = os.path.join(d, "manual_verified.jpg")
+        with open(manual_kv, "wb") as f:
+            f.write(b"m" * 1024)
+        # 人工活動會以網站根目錄路徑 /kv/... 引用；GC 必須和 kv/... 一樣保留。
+        venues_after_expire = [venues[0], {
+            "name": "人工活動場館",
+            "ex": [{"t": "人工KV活動", "img": "/kv/manual_verified.jpg"}],
+        }]  # 華山那筆（含活動C）整個過期消失
         removed = m.gc_orphans(venues_after_expire, d, log=lambda *a, **k: None)
-        # 應刪：活動C 的圖 + orphan = 2；保留：活動A 的圖
+        # 應刪：活動C 的圖 + orphan = 2；保留：活動A 與人工 /kv/ 圖
         assert removed == 2, removed
-        remaining = os.listdir(d)
-        assert len(remaining) == 1
-        assert remaining[0] == os.path.basename(venues[0]["ex"][0]["img"])
+        remaining = set(os.listdir(d))
+        assert remaining == {
+            os.path.basename(venues[0]["ex"][0]["img"]),
+            "manual_verified.jpg",
+        }, remaining
         print("test_gc_orphans: PASS")
     finally:
         shutil.rmtree(d, ignore_errors=True)

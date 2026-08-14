@@ -182,8 +182,12 @@ def gc_orphans(venues, dirpath, log=print):
     for v in venues:
         for e in v.get("ex", []):
             img = str(e.get("img") or "")
-            if img.startswith(KV_DIRNAME + "/"):
-                referenced.add(os.path.basename(img))
+            # 人工資料可用網站根目錄路徑 ``/kv/foo.jpg``，自動下載則寫成
+            # ``kv/foo.jpg``。兩者都指向 public/kv；若只辨識後者，GC 會把
+            # 已提交、仍被活動引用的人工 KV 誤當孤兒刪除。
+            normalized = img.lstrip("/")
+            if normalized.startswith(KV_DIRNAME + "/"):
+                referenced.add(os.path.basename(normalized))
     removed = 0
     for fn in os.listdir(dirpath):
         full = os.path.join(dirpath, fn)
