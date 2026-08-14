@@ -1961,18 +1961,19 @@
   "lng": 121.4474074,
   "loc": "exact",
   "addr": "新北市新莊區和興街66號",
-  "url": "https://www.fubonguardians.com/content/info/NewsDetail?id=686",
+  "url": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
   "ex": [
    {
     "t": "進擊的巨人 × 富邦棒球主題日",
-    "s": "2026/08/22",
-    "e": "2026/08/22",
-    "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=686",
-    "img": "",
+    "s": "2026/08/21",
+    "e": "2026/08/27",
+    "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
+    "img": "/kv/fubon-guardians-attack-on-titan-theme-day-20260821.jpg",
     "cat2": "活動/Event",
     "ip": "進擊的巨人",
     "org": "富邦悍將",
-    "lic": "木棉花"
+    "lic": "木棉花",
+    "fee": "付費"
    }
   ]
  },

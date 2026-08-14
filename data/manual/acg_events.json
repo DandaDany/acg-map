@@ -1708,26 +1708,26 @@
   "月份": "2026-07-01 00:00:00"
  },
  {
-  "KV": null,
+  "KV": "/kv/fubon-guardians-attack-on-titan-theme-day-20260821.jpg",
   "類型 / Category": "物販/Goods",
   "活動類別 / Activity Category": "活動/Event",
-  "付費狀態 / Admission": null,
+  "付費狀態 / Admission": "付費",
   "年度 / Start Year": 2026,
   "季別 / Season": "Q3",
-  "開始日期 / Start Date": "2026-08-22 00:00:00",
-  "結束日期 / End Date": "2026-08-22 00:00:00",
+  "開始日期 / Start Date": "2026-08-21 00:00:00",
+  "結束日期 / End Date": "2026-08-27 00:00:00",
   "IP": "進擊的巨人",
   "活動名稱 / Activity Name": "進擊的巨人 × 富邦棒球主題日",
   "地點 / Location": "新莊棒球場(新北市新莊區和興街66號 ）",
   "主辦方 / Organizer": "富邦悍將",
   "授權單位 / Authorized unit (Licensor)": "木棉花",
-  "活動連結 / Activity link": "https://www.fubonguardians.com/content/info/NewsDetail?id=686",
-  "備註 / NOTE": null,
+  "活動連結 / Activity link": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
+  "備註 / NOTE": "【官方更新 2026/08/14】實際賽事日為 8/21、8/22、8/23、8/26、8/27，共 5 場；地圖以 8/21–8/27 顯示，非賽事日為 8/24–8/25。核心活動需購票入場。KV 取自木棉花官方活動頁，已下載 1920×1080 原圖並目視確認富邦悍將×進擊的巨人識別及 ©Hajime Isayama, KODANSHA／ATTACK ON TITAN The Final Season Production Committee 版權列。",
   "IP_std": "進擊的巨人",
   "Licensor_std": "木棉花",
   "月份": "2026-08-01 00:00:00",
   "_links": {
-   "活動連結 / Activity link": "https://www.fubonguardians.com/content/info/NewsDetail?id=686"
+   "活動連結 / Activity link": "https://www.fubonguardians.com/content/info/NewsDetail?id=696"
   }
  },
  {
