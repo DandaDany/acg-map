@@ -1,7 +1,7 @@
 name: CI
 
 # 針對所有分支的 push 與 pull_request 都會觸發，
-# 目的是在合併前抓出 backend 語法錯誤與 public/venues.json 結構壞掉的問題。
+# 目的是在合併前抓出 backend 語法錯誤、回歸測試與 public/venues.json 結構問題。
 on:
   push:
     branches:
@@ -39,6 +39,9 @@ jobs:
             exit 1
           fi
           echo "== 全部 backend/*.py 編譯通過 =="
+
+      - name: Run backend regression tests
+        run: python3 -m unittest discover -s backend -p '_test_*.py'
 
       - name: Validate public/venues.json structure
         run: |
