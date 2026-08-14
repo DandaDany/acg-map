@@ -941,9 +941,9 @@
  },
  "台中iFG 遠雄廣場威秀影城": {
   "city": "台中市",
-  "lat": 24.14003,
-  "lng": 120.69166,
-  "loc": "區級",
+  "lat": 24.135473018575,
+  "lng": 120.687673995592,
+  "loc": "exact",
   "addr": "台中市東區復興路四段186號4樓",
   "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [
@@ -1113,9 +1113,9 @@
  },
  "台北京站威秀影城": {
   "city": "台北市",
-  "lat": 25.0738,
-  "lng": 121.54406,
-  "loc": "市級",
+  "lat": 25.048892761138,
+  "lng": 121.518349936939,
+  "loc": "exact",
   "addr": "台北市大同區市民大道一段209號5樓",
   "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [
@@ -1970,10 +1970,10 @@
     "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
     "img": "/kv/fubon-guardians-attack-on-titan-theme-day-20260821.jpg",
     "cat2": "活動/Event",
+    "fee": "付費",
     "ip": "進擊的巨人",
     "org": "富邦悍將",
-    "lic": "木棉花",
-    "fee": "付費"
+    "lic": "木棉花"
    }
   ]
  },
@@ -5005,9 +5005,9 @@
  },
  "高雄大遠百威秀影城": {
   "city": "高雄市",
-  "lat": 22.61181,
-  "lng": 120.31929,
-  "loc": "區級",
+  "lat": 22.613424008067,
+  "lng": 120.303548975058,
+  "loc": "exact",
   "addr": "高雄市苓雅區三多四路21號13樓",
   "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [
