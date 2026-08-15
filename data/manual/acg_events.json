@@ -4254,5 +4254,31 @@
   "_links": {
    "活動連結 / Activity link": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/"
   }
+ },
+ {
+  "KV": "/kv/jojo-sushiro-20260817.jpg",
+  "類型 / Category": "餐飲/Food",
+  "活動類別 / Activity Category": "主題餐廳/Theme Cafe",
+  "付費狀態 / Admission": "付費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-17 00:00:00",
+  "結束日期 / End Date": "2026-09-20 00:00:00",
+  "IP": "JOJO的奇妙冒險 星塵遠征軍",
+  "活動名稱 / Activity Name": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+  "地點 / Location": "全台58間台灣壽司郎內用門市（官方公告排除外帶、外送及TOGO店；地址與精確圖釘見 data/manual/台灣壽司郎門市地址_20260815.json）",
+  "主辦方 / Organizer": "台灣壽司郎股份有限公司",
+  "授權單位 / Authorized unit (Licensor)": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+  "活動連結 / Activity link": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "多店活動 / Multi-store": "台灣壽司郎",
+  "門市資料 / Store List": "data/manual/台灣壽司郎門市地址_20260815.json",
+  "門市名稱前綴 / Store Prefix": "台灣壽司郎",
+  "備註 / NOTE": "台灣壽司郎官方Facebook貼文載明活動期間2026/08/17–09/20、僅限內用，恕不適用外帶、外送及TOGO店；官網2026/08/15列59間店舖，故排除To Go站前店後上圖58間。核心聯名餐飲／滿額活動需消費，判定付費。KV為同一官方貼文原圖，已下載1080×1080 JPEG並目視確認壽司郎×JOJO星塵遠征軍、日期、場地品牌及©A&L/S, JOJO SC版權列。完整權利方名稱以JOJO官方動畫頁版權列核對。逐店座標由台灣壽司郎官方門市頁內嵌Google Maps店名查詢取得並保存，非行政區中心。",
+  "IP_std": "JOJO的奇妙冒險",
+  "Licensor_std": "集英社",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/"
+  }
  }
 ]

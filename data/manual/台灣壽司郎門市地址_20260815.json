@@ -1,0 +1,604 @@
+{
+  "_說明": "台灣壽司郎官方門市與 Google Maps 精確店名圖釘，供多店聯名活動展開。",
+  "來源": "https://www.sushiro.com.tw/Shop",
+  "查詢時間": "2026-08-15",
+  "官網全部店舖數": 59,
+  "JOJO活動參與門市數": 58,
+  "座標方法": "逐店讀取官方門市詳細頁內嵌 Google Maps 查詢，再擷取該店名圖釘座標；非地址質心。",
+  "活動範圍來源": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "活動排除規則": "官方貼文載明活動僅限內用，不適用外帶、外送及 TOGO 店。",
+  "排除門市": [
+    {
+      "shop_id": 192,
+      "門市名稱": "To Go 站前店",
+      "地址": "台北市中正區忠孝西路一段49號B1 (台北車站地下街 Metro Corner atre B1 商場內)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=192",
+      "緯度": 25.046174,
+      "經度": 121.5176736,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 To Go 站前店&output=embed"
+    }
+  ],
+  "門市清單": [
+    {
+      "shop_id": 132,
+      "門市名稱": "台北館前路店",
+      "地址": "台北市中正區館前路8號2樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=132",
+      "緯度": 25.0458267,
+      "經度": 121.5147169,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北館前路店&output=embed"
+    },
+    {
+      "shop_id": 133,
+      "門市名稱": "台北中華路店",
+      "地址": "台北市中正區中華路1段41號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=133",
+      "緯度": 25.0449302,
+      "經度": 121.5094773,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北中華路店&output=embed"
+    },
+    {
+      "shop_id": 134,
+      "門市名稱": "高雄夢時代店",
+      "地址": "高雄市前鎮區中華五路789號6樓(統一夢時代購物中心藍鯨館6樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=134",
+      "緯度": 22.5955243,
+      "經度": 120.3069261,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄夢時代店&output=embed"
+    },
+    {
+      "shop_id": 135,
+      "門市名稱": "新北中和環球店",
+      "地址": "新北市中和區中山路三段122號B2F (環球購物中心新北中和B2)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=135",
+      "緯度": 25.0063976,
+      "經度": 121.4747566,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新北中和環球店&output=embed"
+    },
+    {
+      "shop_id": 136,
+      "門市名稱": "台北民權建國店",
+      "地址": "台北市中山區民權東路三段二號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=136",
+      "緯度": 25.062152,
+      "經度": 121.5375431,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北民權建國店&output=embed"
+    },
+    {
+      "shop_id": 137,
+      "門市名稱": "台中黎明市政南店",
+      "地址": "台中市南屯區市政南一路158號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=137",
+      "緯度": 24.1584273,
+      "經度": 120.634174,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中黎明市政南店&output=embed"
+    },
+    {
+      "shop_id": 138,
+      "門市名稱": "台中福科路店",
+      "地址": "台中市西屯區福科路8號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=138",
+      "緯度": 24.1792456,
+      "經度": 120.6372427,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中福科路店&output=embed"
+    },
+    {
+      "shop_id": 139,
+      "門市名稱": "台南南紡店",
+      "地址": "台南市東區中華東路一段366號2樓 (南紡購物中心2樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=139",
+      "緯度": 22.9914868,
+      "經度": 120.2328959,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台南南紡店&output=embed"
+    },
+    {
+      "shop_id": 140,
+      "門市名稱": "台南安平店",
+      "地址": "台南市安平區中華西路二段317號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=140",
+      "緯度": 22.9929663,
+      "經度": 120.1865624,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台南安平店&output=embed"
+    },
+    {
+      "shop_id": 141,
+      "門市名稱": "台中漢口路店",
+      "地址": "台中市北區漢口路四段293號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=141",
+      "緯度": 24.1672659,
+      "經度": 120.6802632,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中漢口路店&output=embed"
+    },
+    {
+      "shop_id": 142,
+      "門市名稱": "高雄中正店",
+      "地址": "高雄市新興區中正三路2號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=142",
+      "緯度": 22.6311537,
+      "經度": 120.3126889,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄中正店&output=embed"
+    },
+    {
+      "shop_id": 143,
+      "門市名稱": "台北松江長安店",
+      "地址": "台北市中山區松江路61-1號2樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=143",
+      "緯度": 25.0485905,
+      "經度": 121.5333568,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北松江長安店&output=embed"
+    },
+    {
+      "shop_id": 144,
+      "門市名稱": "台北永春店",
+      "地址": "台北市信義區忠孝東路五段297-1號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=144",
+      "緯度": 25.041164,
+      "經度": 121.5731624,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北永春店&output=embed"
+    },
+    {
+      "shop_id": 145,
+      "門市名稱": "台南西門路店",
+      "地址": "台南市北區西門路四段61號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=145",
+      "緯度": 23.007564,
+      "經度": 120.2064584,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台南西門路店&output=embed"
+    },
+    {
+      "shop_id": 146,
+      "門市名稱": "高雄鳳山店",
+      "地址": "高雄市鳳山區中山路149號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=146",
+      "緯度": 22.6226132,
+      "經度": 120.3581222,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄鳳山店&output=embed"
+    },
+    {
+      "shop_id": 147,
+      "門市名稱": "台南永康店",
+      "地址": "台南市永康區中正北路161號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=147",
+      "緯度": 23.0418078,
+      "經度": 120.2423347,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台南永康店&output=embed"
+    },
+    {
+      "shop_id": 148,
+      "門市名稱": "台北公館店",
+      "地址": "台北市中正區羅斯福路四段68號2樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=148",
+      "緯度": 25.0145752,
+      "經度": 121.5341988,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北公館店&output=embed"
+    },
+    {
+      "shop_id": 149,
+      "門市名稱": "台北內湖美麗華店",
+      "地址": "台北市中山區敬業三路20號2樓(美麗華百樂園2樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=149",
+      "緯度": 25.0836832,
+      "經度": 121.5579685,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北內湖美麗華店&output=embed"
+    },
+    {
+      "shop_id": 150,
+      "門市名稱": "新竹巨城店",
+      "地址": "新竹市東區中央路229號7樓 (遠東巨城購物中心7樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=150",
+      "緯度": 24.8096231,
+      "經度": 120.9756715,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新竹巨城店&output=embed"
+    },
+    {
+      "shop_id": 151,
+      "門市名稱": "新竹慈雲路店",
+      "地址": "新竹市東區慈雲路91號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=151",
+      "緯度": 24.7915586,
+      "經度": 121.0119351,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新竹慈雲路店&output=embed"
+    },
+    {
+      "shop_id": 152,
+      "門市名稱": "桃園國際路店",
+      "地址": "桃園市桃園區文中里國際路二段358號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=152",
+      "緯度": 24.9969876,
+      "經度": 121.2881189,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 桃園國際路店&output=embed"
+    },
+    {
+      "shop_id": 153,
+      "門市名稱": "高雄義享天地店",
+      "地址": "高雄市鼓山區大順一路115號5樓 (義享天地A館5樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=153",
+      "緯度": 22.6564923,
+      "經度": 120.3064514,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄義享天地店&output=embed"
+    },
+    {
+      "shop_id": 154,
+      "門市名稱": "台北林森店",
+      "地址": "台北市中山區林森北路247號B1 (欣欣大眾百貨B1)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=154",
+      "緯度": 25.0541532,
+      "經度": 121.5259772,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北林森店&output=embed"
+    },
+    {
+      "shop_id": 155,
+      "門市名稱": "土城日月光店",
+      "地址": "新北市土城區學府路二段210號1樓 (日月光廣場1樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=155",
+      "緯度": 24.9787281,
+      "經度": 121.4451237,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 土城日月光店&output=embed"
+    },
+    {
+      "shop_id": 156,
+      "門市名稱": "新莊中平店",
+      "地址": "新北市新莊區中平路416號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=156",
+      "緯度": 25.0550515,
+      "經度": 121.4448614,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新莊中平店&output=embed"
+    },
+    {
+      "shop_id": 157,
+      "門市名稱": "汐止遠雄店",
+      "地址": "新北市汐止區新台五路一段99號1樓 (iFG遠雄廣場1樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=157",
+      "緯度": 25.0624021,
+      "經度": 121.6498736,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 汐止遠雄店&output=embed"
+    },
+    {
+      "shop_id": 158,
+      "門市名稱": "天母高島屋店",
+      "地址": "台北市士林區忠誠路2段55號2樓(大葉高島屋2樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=158",
+      "緯度": 25.111643,
+      "經度": 121.5314902,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 天母高島屋店&output=embed"
+    },
+    {
+      "shop_id": 159,
+      "門市名稱": "彰化金馬店",
+      "地址": "彰化縣彰化市茄南里8鄰金馬路二段81號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=159",
+      "緯度": 24.0960981,
+      "經度": 120.5472033,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 彰化金馬店&output=embed"
+    },
+    {
+      "shop_id": 160,
+      "門市名稱": "宜蘭站前店",
+      "地址": "宜蘭縣宜蘭巿大新里宜興路一段159號 (金東購物商場1樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=160",
+      "緯度": 24.7529498,
+      "經度": 121.7567363,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 宜蘭站前店&output=embed"
+    },
+    {
+      "shop_id": 161,
+      "門市名稱": "高雄岡山樂購廣場店",
+      "地址": "高雄市岡山區大遼里捷安路1巷2號3樓 (岡山樂購廣場3樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=161",
+      "緯度": 22.7800285,
+      "經度": 120.3005471,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄岡山樂購廣場店&output=embed"
+    },
+    {
+      "shop_id": 162,
+      "門市名稱": "台中北屯松竹店",
+      "地址": "台中市北屯區松竹路1段1177號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=162",
+      "緯度": 24.1819758,
+      "經度": 120.7074967,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中北屯松竹店&output=embed"
+    },
+    {
+      "shop_id": 163,
+      "門市名稱": "新店中興路店",
+      "地址": "新北市新店區中興路3段13號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=163",
+      "緯度": 24.9788073,
+      "經度": 121.5447561,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新店中興路店&output=embed"
+    },
+    {
+      "shop_id": 164,
+      "門市名稱": "桃園台茂店",
+      "地址": "桃園市蘆竹區南崁路1段112號4樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=164",
+      "緯度": 25.05366,
+      "經度": 121.288565,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 桃園台茂店&output=embed"
+    },
+    {
+      "shop_id": 165,
+      "門市名稱": "中壢中正店",
+      "地址": "桃園市中壢區中正路170號2樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=165",
+      "緯度": 24.9557136,
+      "經度": 121.2213852,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 中壢中正店&output=embed"
+    },
+    {
+      "shop_id": 166,
+      "門市名稱": "台中豐原家樂福店",
+      "地址": "台中市豐原區成功路500號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=166",
+      "緯度": 24.2522302,
+      "經度": 120.7063815,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中豐原家樂福店&output=embed"
+    },
+    {
+      "shop_id": 167,
+      "門市名稱": "雲林斗六店",
+      "地址": "雲林縣斗六市社口里大學路二段300號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=167",
+      "緯度": 23.6995734,
+      "經度": 120.5455107,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 雲林斗六店&output=embed"
+    },
+    {
+      "shop_id": 168,
+      "門市名稱": "楊梅中山店",
+      "地址": "桃園市楊梅區中山北路一段202號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=168",
+      "緯度": 24.9082621,
+      "經度": 121.1540965,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 楊梅中山店&output=embed"
+    },
+    {
+      "shop_id": 169,
+      "門市名稱": "基隆站前店",
+      "地址": "基隆市仁愛區港西街5號3樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=169",
+      "緯度": 25.1324216,
+      "經度": 121.7394049,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 基隆站前店&output=embed"
+    },
+    {
+      "shop_id": 170,
+      "門市名稱": "林口店",
+      "地址": "新北市林口區南勢里民富街110號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=170",
+      "緯度": 25.0752555,
+      "經度": 121.3705882,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 林口店&output=embed"
+    },
+    {
+      "shop_id": 171,
+      "門市名稱": "彰化員林大道店",
+      "地址": "彰化縣員林市溝皂里員林大道一段68號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=171",
+      "緯度": 23.9493919,
+      "經度": 120.5677152,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 彰化員林大道店&output=embed"
+    },
+    {
+      "shop_id": 173,
+      "門市名稱": "台北內湖大全聯店",
+      "地址": "台北市內湖區舊宗路一段188號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=173",
+      "緯度": 25.0628499,
+      "經度": 121.5757402,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北內湖大全聯店&output=embed"
+    },
+    {
+      "shop_id": 174,
+      "門市名稱": "桃園八德置地店",
+      "地址": "桃園市八德區介壽路一段728號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=174",
+      "緯度": 24.9650432,
+      "經度": 121.2987533,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 桃園八德置地店&output=embed"
+    },
+    {
+      "shop_id": 172,
+      "門市名稱": "台中遠雄店",
+      "地址": "台中市東區復興路四段186號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=172",
+      "緯度": 24.136214,
+      "經度": 120.6877613,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中遠雄店&output=embed"
+    },
+    {
+      "shop_id": 175,
+      "門市名稱": "高雄美術館店",
+      "地址": "高雄市鼓山區明誠四路116號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=175",
+      "緯度": 22.661454,
+      "經度": 120.2905733,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄美術館店&output=embed"
+    },
+    {
+      "shop_id": 176,
+      "門市名稱": "新北板橋府中店",
+      "地址": "新北市板橋區中山路1段10號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=176",
+      "緯度": 25.0078573,
+      "經度": 121.460188,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新北板橋府中店&output=embed"
+    },
+    {
+      "shop_id": 177,
+      "門市名稱": "嘉義垂楊店",
+      "地址": "嘉義市垂楊路455號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=177",
+      "緯度": 23.4730459,
+      "經度": 120.4433767,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 嘉義垂楊店&output=embed"
+    },
+    {
+      "shop_id": 178,
+      "門市名稱": "台北石牌店",
+      "地址": "台北市北投區明德路365號1樓 爾雅樓(第三宿舍大樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=178",
+      "緯度": 25.1183074,
+      "經度": 121.5181285,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台北石牌店&output=embed"
+    },
+    {
+      "shop_id": 179,
+      "門市名稱": "南港CITYLINK店",
+      "地址": "台北市南港區忠孝東路七段369號CITYLINK C棟5樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=179",
+      "緯度": 25.0525264,
+      "經度": 121.6043747,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 南港CITYLINK店&output=embed"
+    },
+    {
+      "shop_id": 180,
+      "門市名稱": "蘆洲徐匯廣場店",
+      "地址": "新北市蘆洲區中山一路8號4樓 (徐匯廣場內4樓)",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=180",
+      "緯度": 25.0805505,
+      "經度": 121.4805085,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 蘆洲徐匯廣場店&output=embed"
+    },
+    {
+      "shop_id": 181,
+      "門市名稱": "新北板橋新埔店",
+      "地址": "新北市板橋區文化路一段368號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=181",
+      "緯度": 25.0234497,
+      "經度": 121.4698223,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新北板橋新埔店&output=embed"
+    },
+    {
+      "shop_id": 182,
+      "門市名稱": "淡水新市店",
+      "地址": "新北市淡水區濱海路1段36號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=182",
+      "緯度": 25.1894691,
+      "經度": 121.4457629,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 淡水新市店&output=embed"
+    },
+    {
+      "shop_id": 183,
+      "門市名稱": "台中文心店",
+      "地址": "台中市南屯區文心南路297號",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=183",
+      "緯度": 24.1293441,
+      "經度": 120.646016,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 台中文心店&output=embed"
+    },
+    {
+      "shop_id": 186,
+      "門市名稱": "屏東環球店",
+      "地址": "屏東縣屏東市仁愛路90號5樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=186",
+      "緯度": 22.6732274,
+      "經度": 120.4935387,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 屏東環球店&output=embed"
+    },
+    {
+      "shop_id": 187,
+      "門市名稱": "桃園青埔IKEA店",
+      "地址": "桃園市中壢區高鐵站前東路一段1號1樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=187",
+      "緯度": 25.0127128,
+      "經度": 121.2173302,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 桃園青埔IKEA店&output=embed"
+    },
+    {
+      "shop_id": 188,
+      "門市名稱": "三重Citylink店",
+      "地址": "新北市三重區捷運路62號2樓",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=188",
+      "緯度": 25.0553247,
+      "經度": 121.4831209,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 三重Citylink店&output=embed"
+    },
+    {
+      "shop_id": 189,
+      "門市名稱": "微風南山店",
+      "地址": "台北市信義區松智路17號B1",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=189",
+      "緯度": 25.034367,
+      "經度": 121.5661283,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 微風南山店&output=embed"
+    },
+    {
+      "shop_id": 191,
+      "門市名稱": "高雄新光三越左營店",
+      "地址": "高雄市左營區高鐵路123號B1",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=191",
+      "緯度": 22.688757,
+      "經度": 120.3102114,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 高雄新光三越左營店&output=embed"
+    },
+    {
+      "shop_id": 193,
+      "門市名稱": "新光三越台南新天地店",
+      "地址": "台南市中西區西門路一段658號B1",
+      "官方門市頁": "https://www.sushiro.com.tw/Shop/ShopInfo?shopId=193",
+      "緯度": 22.9867786,
+      "經度": 120.198797,
+      "座標來源": "Google Maps 店名圖釘（由台灣壽司郎官方門市頁嵌入查詢）",
+      "Google Maps 查詢": "https://www.google.com/maps?q=スシロー壽司郎 新光三越台南新天地店&output=embed"
+    }
+  ]
+}
