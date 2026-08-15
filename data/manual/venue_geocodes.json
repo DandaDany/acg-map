@@ -998,12 +998,14 @@
   "addr_key": "高雄市前鎮區中華五路789號1樓"
  },
  "高雄大遠百威秀影城": {
-  "la": 22.613424,
-  "lo": 120.303549,
-  "source": "address_geocode",
-  "display_name": "高雄市三多四路21號, 80247",
+  "la": 22.613424008067,
+  "lo": 120.303548975058,
+  "source": "arcgis_address_2026-08-13",
+  "display_name": "高雄市三多四路21號, 802760",
   "type": "PointAddress",
-  "addr_key": "高雄市苓雅區三多四路21號13樓"
+  "addr_key": "高雄市苓雅區三多四路21號13樓",
+  "loc": "exact",
+  "precision_note": "ArcGIS門牌97.88分；與既有同址正式座標一致"
  },
  "高雄駅一番街・北站 高雄捷運高雄車站B2": {
   "la": 22.6377809,
@@ -3085,16 +3087,6 @@
   "loc": "exact",
   "precision_note": "ArcGIS門牌100分"
  },
- "高雄大遠百威秀影城": {
-  "la": 22.613424008067,
-  "lo": 120.303548975058,
-  "source": "arcgis_address_2026-08-13",
-  "display_name": "高雄市三多四路21號, 802760",
-  "type": "PointAddress",
-  "addr_key": "高雄市苓雅區三多四路21號13樓",
-  "loc": "exact",
-  "precision_note": "ArcGIS門牌97.88分；與既有同址正式座標一致"
- },
  "animate Gratte 西門站": {
   "la": 25.0453368,
   "lo": 121.5096702,
@@ -3104,5 +3096,585 @@
   "addr_key": "台北市中正區中華路一段39號1樓",
   "loc": "exact",
   "precision_note": "ArcGIS Subaddress 100分，行政區／路名／39號一致"
+ },
+ "台灣壽司郎 台北館前路店": {
+  "la": 25.0458267,
+  "lo": 121.5147169,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北館前路店（台北市中正區館前路8號2樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中正區館前路8號2樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北中華路店": {
+  "la": 25.0449302,
+  "lo": 121.5094773,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北中華路店（台北市中正區中華路1段41號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中正區中華路1段41號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄夢時代店": {
+  "la": 22.5955243,
+  "lo": 120.3069261,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄夢時代店（高雄市前鎮區中華五路789號6樓(統一夢時代購物中心藍鯨館6樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市前鎮區中華五路789號6樓(統一夢時代購物中心藍鯨館6樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新北中和環球店": {
+  "la": 25.0063976,
+  "lo": 121.4747566,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新北中和環球店（新北市中和區中山路三段122號B2F (環球購物中心新北中和B2)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市中和區中山路三段122號B2F(環球購物中心新北中和B2)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北民權建國店": {
+  "la": 25.062152,
+  "lo": 121.5375431,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北民權建國店（台北市中山區民權東路三段二號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中山區民權東路三段二號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中黎明市政南店": {
+  "la": 24.1584273,
+  "lo": 120.634174,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中黎明市政南店（台中市南屯區市政南一路158號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市南屯區市政南一路158號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中福科路店": {
+  "la": 24.1792456,
+  "lo": 120.6372427,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中福科路店（台中市西屯區福科路8號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市西屯區福科路8號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台南南紡店": {
+  "la": 22.9914868,
+  "lo": 120.2328959,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台南南紡店（台南市東區中華東路一段366號2樓 (南紡購物中心2樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台南市東區中華東路一段366號2樓(南紡購物中心2樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台南安平店": {
+  "la": 22.9929663,
+  "lo": 120.1865624,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台南安平店（台南市安平區中華西路二段317號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台南市安平區中華西路二段317號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中漢口路店": {
+  "la": 24.1672659,
+  "lo": 120.6802632,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中漢口路店（台中市北區漢口路四段293號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市北區漢口路四段293號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄中正店": {
+  "la": 22.6311537,
+  "lo": 120.3126889,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄中正店（高雄市新興區中正三路2號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市新興區中正三路2號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北松江長安店": {
+  "la": 25.0485905,
+  "lo": 121.5333568,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北松江長安店（台北市中山區松江路61-1號2樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中山區松江路61-1號2樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北永春店": {
+  "la": 25.041164,
+  "lo": 121.5731624,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北永春店（台北市信義區忠孝東路五段297-1號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市信義區忠孝東路五段297-1號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台南西門路店": {
+  "la": 23.007564,
+  "lo": 120.2064584,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台南西門路店（台南市北區西門路四段61號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台南市北區西門路四段61號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄鳳山店": {
+  "la": 22.6226132,
+  "lo": 120.3581222,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄鳳山店（高雄市鳳山區中山路149號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市鳳山區中山路149號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台南永康店": {
+  "la": 23.0418078,
+  "lo": 120.2423347,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台南永康店（台南市永康區中正北路161號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台南市永康區中正北路161號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北公館店": {
+  "la": 25.0145752,
+  "lo": 121.5341988,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北公館店（台北市中正區羅斯福路四段68號2樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中正區羅斯福路四段68號2樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北內湖美麗華店": {
+  "la": 25.0836832,
+  "lo": 121.5579685,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北內湖美麗華店（台北市中山區敬業三路20號2樓(美麗華百樂園2樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中山區敬業三路20號2樓(美麗華百樂園2樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新竹巨城店": {
+  "la": 24.8096231,
+  "lo": 120.9756715,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新竹巨城店（新竹市東區中央路229號7樓 (遠東巨城購物中心7樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新竹市東區中央路229號7樓(遠東巨城購物中心7樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新竹慈雲路店": {
+  "la": 24.7915586,
+  "lo": 121.0119351,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新竹慈雲路店（新竹市東區慈雲路91號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新竹市東區慈雲路91號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 桃園國際路店": {
+  "la": 24.9969876,
+  "lo": 121.2881189,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 桃園國際路店（桃園市桃園區文中里國際路二段358號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "桃園市桃園區文中里國際路二段358號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄義享天地店": {
+  "la": 22.6564923,
+  "lo": 120.3064514,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄義享天地店（高雄市鼓山區大順一路115號5樓 (義享天地A館5樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市鼓山區大順一路115號5樓(義享天地A館5樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北林森店": {
+  "la": 25.0541532,
+  "lo": 121.5259772,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北林森店（台北市中山區林森北路247號B1 (欣欣大眾百貨B1)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市中山區林森北路247號B1(欣欣大眾百貨B1)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 土城日月光店": {
+  "la": 24.9787281,
+  "lo": 121.4451237,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 土城日月光店（新北市土城區學府路二段210號1樓 (日月光廣場1樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市土城區學府路二段210號1樓(日月光廣場1樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新莊中平店": {
+  "la": 25.0550515,
+  "lo": 121.4448614,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新莊中平店（新北市新莊區中平路416號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市新莊區中平路416號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 汐止遠雄店": {
+  "la": 25.0624021,
+  "lo": 121.6498736,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 汐止遠雄店（新北市汐止區新台五路一段99號1樓 (iFG遠雄廣場1樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市汐止區新台五路一段99號1樓(iFG遠雄廣場1樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 天母高島屋店": {
+  "la": 25.111643,
+  "lo": 121.5314902,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 天母高島屋店（台北市士林區忠誠路2段55號2樓(大葉高島屋2樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市士林區忠誠路2段55號2樓(大葉高島屋2樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 彰化金馬店": {
+  "la": 24.0960981,
+  "lo": 120.5472033,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 彰化金馬店（彰化縣彰化市茄南里8鄰金馬路二段81號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "彰化縣彰化市茄南里8鄰金馬路二段81號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 宜蘭站前店": {
+  "la": 24.7529498,
+  "lo": 121.7567363,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 宜蘭站前店（宜蘭縣宜蘭巿大新里宜興路一段159號 (金東購物商場1樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "宜蘭縣宜蘭巿大新里宜興路一段159號(金東購物商場1樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄岡山樂購廣場店": {
+  "la": 22.7800285,
+  "lo": 120.3005471,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄岡山樂購廣場店（高雄市岡山區大遼里捷安路1巷2號3樓 (岡山樂購廣場3樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市岡山區大遼里捷安路1巷2號3樓(岡山樂購廣場3樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中北屯松竹店": {
+  "la": 24.1819758,
+  "lo": 120.7074967,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中北屯松竹店（台中市北屯區松竹路1段1177號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市北屯區松竹路1段1177號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新店中興路店": {
+  "la": 24.9788073,
+  "lo": 121.5447561,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新店中興路店（新北市新店區中興路3段13號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市新店區中興路3段13號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 桃園台茂店": {
+  "la": 25.05366,
+  "lo": 121.288565,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 桃園台茂店（桃園市蘆竹區南崁路1段112號4樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "桃園市蘆竹區南崁路1段112號4樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 中壢中正店": {
+  "la": 24.9557136,
+  "lo": 121.2213852,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 中壢中正店（桃園市中壢區中正路170號2樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "桃園市中壢區中正路170號2樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中豐原家樂福店": {
+  "la": 24.2522302,
+  "lo": 120.7063815,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中豐原家樂福店（台中市豐原區成功路500號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市豐原區成功路500號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 雲林斗六店": {
+  "la": 23.6995734,
+  "lo": 120.5455107,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 雲林斗六店（雲林縣斗六市社口里大學路二段300號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "雲林縣斗六市社口里大學路二段300號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 楊梅中山店": {
+  "la": 24.9082621,
+  "lo": 121.1540965,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 楊梅中山店（桃園市楊梅區中山北路一段202號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "桃園市楊梅區中山北路一段202號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 基隆站前店": {
+  "la": 25.1324216,
+  "lo": 121.7394049,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 基隆站前店（基隆市仁愛區港西街5號3樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "基隆市仁愛區港西街5號3樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 林口店": {
+  "la": 25.0752555,
+  "lo": 121.3705882,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 林口店（新北市林口區南勢里民富街110號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市林口區南勢里民富街110號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 彰化員林大道店": {
+  "la": 23.9493919,
+  "lo": 120.5677152,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 彰化員林大道店（彰化縣員林市溝皂里員林大道一段68號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "彰化縣員林市溝皂里員林大道一段68號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北內湖大全聯店": {
+  "la": 25.0628499,
+  "lo": 121.5757402,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北內湖大全聯店（台北市內湖區舊宗路一段188號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市內湖區舊宗路一段188號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 桃園八德置地店": {
+  "la": 24.9650432,
+  "lo": 121.2987533,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 桃園八德置地店（桃園市八德區介壽路一段728號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "桃園市八德區介壽路一段728號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中遠雄店": {
+  "la": 24.136214,
+  "lo": 120.6877613,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中遠雄店（台中市東區復興路四段186號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市東區復興路四段186號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄美術館店": {
+  "la": 22.661454,
+  "lo": 120.2905733,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄美術館店（高雄市鼓山區明誠四路116號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市鼓山區明誠四路116號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新北板橋府中店": {
+  "la": 25.0078573,
+  "lo": 121.460188,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新北板橋府中店（新北市板橋區中山路1段10號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市板橋區中山路1段10號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 嘉義垂楊店": {
+  "la": 23.4730459,
+  "lo": 120.4433767,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 嘉義垂楊店（嘉義市垂楊路455號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "嘉義市垂楊路455號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台北石牌店": {
+  "la": 25.1183074,
+  "lo": 121.5181285,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台北石牌店（台北市北投區明德路365號1樓 爾雅樓(第三宿舍大樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市北投區明德路365號1樓爾雅樓(第三宿舍大樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 南港CITYLINK店": {
+  "la": 25.0525264,
+  "lo": 121.6043747,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 南港CITYLINK店（台北市南港區忠孝東路七段369號CITYLINK C棟5樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市南港區忠孝東路七段369號CITYLINKC棟5樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 蘆洲徐匯廣場店": {
+  "la": 25.0805505,
+  "lo": 121.4805085,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 蘆洲徐匯廣場店（新北市蘆洲區中山一路8號4樓 (徐匯廣場內4樓)）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市蘆洲區中山一路8號4樓(徐匯廣場內4樓)",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新北板橋新埔店": {
+  "la": 25.0234497,
+  "lo": 121.4698223,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新北板橋新埔店（新北市板橋區文化路一段368號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市板橋區文化路一段368號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 淡水新市店": {
+  "la": 25.1894691,
+  "lo": 121.4457629,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 淡水新市店（新北市淡水區濱海路1段36號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市淡水區濱海路1段36號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 台中文心店": {
+  "la": 24.1293441,
+  "lo": 120.646016,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 台中文心店（台中市南屯區文心南路297號）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台中市南屯區文心南路297號",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 屏東環球店": {
+  "la": 22.6732274,
+  "lo": 120.4935387,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 屏東環球店（屏東縣屏東市仁愛路90號5樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "屏東縣屏東市仁愛路90號5樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 桃園青埔IKEA店": {
+  "la": 25.0127128,
+  "lo": 121.2173302,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 桃園青埔IKEA店（桃園市中壢區高鐵站前東路一段1號1樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "桃園市中壢區高鐵站前東路一段1號1樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 三重Citylink店": {
+  "la": 25.0553247,
+  "lo": 121.4831209,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 三重Citylink店（新北市三重區捷運路62號2樓）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "新北市三重區捷運路62號2樓",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 微風南山店": {
+  "la": 25.034367,
+  "lo": 121.5661283,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 微風南山店（台北市信義區松智路17號B1）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台北市信義區松智路17號B1",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 高雄新光三越左營店": {
+  "la": 22.688757,
+  "lo": 120.3102114,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 高雄新光三越左營店（高雄市左營區高鐵路123號B1）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "高雄市左營區高鐵路123號B1",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "台灣壽司郎 新光三越台南新天地店": {
+  "la": 22.9867786,
+  "lo": 120.198797,
+  "source": "google_maps_official_sushiro_store_pin_2026-08-15",
+  "display_name": "台灣壽司郎 新光三越台南新天地店（台南市中西區西門路一段658號B1）",
+  "type": "official_store_google_maps_pin",
+  "addr_key": "台南市中西區西門路一段658號B1",
+  "loc": "exact",
+  "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
  }
 }

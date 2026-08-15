@@ -941,9 +941,9 @@
  },
  "台中iFG 遠雄廣場威秀影城": {
   "city": "台中市",
-  "lat": 24.14003,
-  "lng": 120.69166,
-  "loc": "區級",
+  "lat": 24.135473018575,
+  "lng": 120.687673995592,
+  "loc": "exact",
   "addr": "台中市東區復興路四段186號4樓",
   "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [
@@ -1113,9 +1113,9 @@
  },
  "台北京站威秀影城": {
   "city": "台北市",
-  "lat": 25.0738,
-  "lng": 121.54406,
-  "loc": "市級",
+  "lat": 25.048892761138,
+  "lng": 121.518349936939,
+  "loc": "exact",
   "addr": "台北市大同區市民大道一段209號5樓",
   "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [
@@ -1195,6 +1195,1398 @@
     "ip": "吉伊卡哇",
     "org": "2026臺灣國際熱氣球嘉年華",
     "lic": "三貝多"
+   }
+  ]
+ },
+ "台灣壽司郎 三重Citylink店": {
+  "city": "新北市",
+  "lat": 25.0553247,
+  "lng": 121.4831209,
+  "loc": "exact",
+  "addr": "新北市三重區捷運路62號2樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 中壢中正店": {
+  "city": "桃園市",
+  "lat": 24.9557136,
+  "lng": 121.2213852,
+  "loc": "exact",
+  "addr": "桃園市中壢區中正路170號2樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 南港CITYLINK店": {
+  "city": "台北市",
+  "lat": 25.03027,
+  "lng": 121.60538,
+  "loc": "區級",
+  "addr": "台北市南港區忠孝東路七段369號CITYLINK C棟5樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中北屯松竹店": {
+  "city": "台中市",
+  "lat": 24.1819758,
+  "lng": 120.7074967,
+  "loc": "exact",
+  "addr": "台中市北屯區松竹路1段1177號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中文心店": {
+  "city": "台中市",
+  "lat": 24.1293441,
+  "lng": 120.646016,
+  "loc": "exact",
+  "addr": "台中市南屯區文心南路297號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中漢口路店": {
+  "city": "台中市",
+  "lat": 24.1672659,
+  "lng": 120.6802632,
+  "loc": "exact",
+  "addr": "台中市北區漢口路四段293號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中福科路店": {
+  "city": "台中市",
+  "lat": 24.1792456,
+  "lng": 120.6372427,
+  "loc": "exact",
+  "addr": "台中市西屯區福科路8號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中豐原家樂福店": {
+  "city": "台中市",
+  "lat": 24.2522302,
+  "lng": 120.7063815,
+  "loc": "exact",
+  "addr": "台中市豐原區成功路500號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中遠雄店": {
+  "city": "台中市",
+  "lat": 24.136214,
+  "lng": 120.6877613,
+  "loc": "exact",
+  "addr": "台中市東區復興路四段186號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台中黎明市政南店": {
+  "city": "台中市",
+  "lat": 24.1584273,
+  "lng": 120.634174,
+  "loc": "exact",
+  "addr": "台中市南屯區市政南一路158號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北中華路店": {
+  "city": "台北市",
+  "lat": 25.0449302,
+  "lng": 121.5094773,
+  "loc": "exact",
+  "addr": "台北市中正區中華路1段41號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北內湖大全聯店": {
+  "city": "台北市",
+  "lat": 25.0628499,
+  "lng": 121.5757402,
+  "loc": "exact",
+  "addr": "台北市內湖區舊宗路一段188號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北內湖美麗華店": {
+  "city": "台北市",
+  "lat": 25.0836832,
+  "lng": 121.5579685,
+  "loc": "exact",
+  "addr": "台北市中山區敬業三路20號2樓(美麗華百樂園2樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北公館店": {
+  "city": "台北市",
+  "lat": 25.0145752,
+  "lng": 121.5341988,
+  "loc": "exact",
+  "addr": "台北市中正區羅斯福路四段68號2樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北松江長安店": {
+  "city": "台北市",
+  "lat": 25.0485905,
+  "lng": 121.5333568,
+  "loc": "exact",
+  "addr": "台北市中山區松江路61-1號2樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北林森店": {
+  "city": "台北市",
+  "lat": 25.07952,
+  "lng": 121.53953,
+  "loc": "區級",
+  "addr": "台北市中山區林森北路247號B1 (欣欣大眾百貨B1)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北民權建國店": {
+  "city": "台北市",
+  "lat": 25.062152,
+  "lng": 121.5375431,
+  "loc": "exact",
+  "addr": "台北市中山區民權東路三段二號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北永春店": {
+  "city": "台北市",
+  "lat": 25.041164,
+  "lng": 121.5731624,
+  "loc": "exact",
+  "addr": "台北市信義區忠孝東路五段297-1號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北石牌店": {
+  "city": "台北市",
+  "lat": 25.14735,
+  "lng": 121.51218,
+  "loc": "區級",
+  "addr": "台北市北投區明德路365號1樓 爾雅樓(第三宿舍大樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台北館前路店": {
+  "city": "台北市",
+  "lat": 25.0458267,
+  "lng": 121.5147169,
+  "loc": "exact",
+  "addr": "台北市中正區館前路8號2樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台南南紡店": {
+  "city": "台南市",
+  "lat": 22.9692,
+  "lng": 120.21911,
+  "loc": "區級",
+  "addr": "台南市東區中華東路一段366號2樓 (南紡購物中心2樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台南安平店": {
+  "city": "台南市",
+  "lat": 22.9929663,
+  "lng": 120.1865624,
+  "loc": "exact",
+  "addr": "台南市安平區中華西路二段317號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台南永康店": {
+  "city": "台南市",
+  "lat": 23.0418078,
+  "lng": 120.2423347,
+  "loc": "exact",
+  "addr": "台南市永康區中正北路161號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 台南西門路店": {
+  "city": "台南市",
+  "lat": 23.007564,
+  "lng": 120.2064584,
+  "loc": "exact",
+  "addr": "台南市北區西門路四段61號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 嘉義垂楊店": {
+  "city": "嘉義市",
+  "lat": 23.4730459,
+  "lng": 120.4433767,
+  "loc": "exact",
+  "addr": "嘉義市垂楊路455號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 土城日月光店": {
+  "city": "新北市",
+  "lat": 24.95828,
+  "lng": 121.45211,
+  "loc": "區級",
+  "addr": "新北市土城區學府路二段210號1樓 (日月光廣場1樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 基隆站前店": {
+  "city": "基隆市",
+  "lat": 25.1324216,
+  "lng": 121.7394049,
+  "loc": "exact",
+  "addr": "基隆市仁愛區港西街5號3樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 天母高島屋店": {
+  "city": "台北市",
+  "lat": 25.111643,
+  "lng": 121.5314902,
+  "loc": "exact",
+  "addr": "台北市士林區忠誠路2段55號2樓(大葉高島屋2樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 宜蘭站前店": {
+  "city": "宜蘭縣",
+  "lat": 24.67725,
+  "lng": 121.71801,
+  "loc": "市級",
+  "addr": "宜蘭縣宜蘭巿大新里宜興路一段159號 (金東購物商場1樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 屏東環球店": {
+  "city": "屏東縣",
+  "lat": 22.6732274,
+  "lng": 120.4935387,
+  "loc": "exact",
+  "addr": "屏東縣屏東市仁愛路90號5樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 彰化員林大道店": {
+  "city": "彰化縣",
+  "lat": 23.9493919,
+  "lng": 120.5677152,
+  "loc": "exact",
+  "addr": "彰化縣員林市溝皂里員林大道一段68號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 彰化金馬店": {
+  "city": "彰化縣",
+  "lat": 24.0960981,
+  "lng": 120.5472033,
+  "loc": "exact",
+  "addr": "彰化縣彰化市茄南里8鄰金馬路二段81號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 微風南山店": {
+  "city": "台北市",
+  "lat": 25.034367,
+  "lng": 121.5661283,
+  "loc": "exact",
+  "addr": "台北市信義區松智路17號B1",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新光三越台南新天地店": {
+  "city": "台南市",
+  "lat": 22.9867786,
+  "lng": 120.198797,
+  "loc": "exact",
+  "addr": "台南市中西區西門路一段658號B1",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新北中和環球店": {
+  "city": "新北市",
+  "lat": 25.0060212,
+  "lng": 121.475643,
+  "loc": "exact",
+  "addr": "新北市中和區中山路三段122號B2F (環球購物中心新北中和B2)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新北板橋府中店": {
+  "city": "新北市",
+  "lat": 25.0078573,
+  "lng": 121.460188,
+  "loc": "exact",
+  "addr": "新北市板橋區中山路1段10號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新北板橋新埔店": {
+  "city": "新北市",
+  "lat": 25.0234497,
+  "lng": 121.4698223,
+  "loc": "exact",
+  "addr": "新北市板橋區文化路一段368號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新店中興路店": {
+  "city": "新北市",
+  "lat": 24.9788073,
+  "lng": 121.5447561,
+  "loc": "exact",
+  "addr": "新北市新店區中興路3段13號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新竹巨城店": {
+  "city": "新竹市",
+  "lat": 24.809384,
+  "lng": 120.975509,
+  "loc": "exact",
+  "addr": "新竹市東區中央路229號7樓 (遠東巨城購物中心7樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新竹慈雲路店": {
+  "city": "新竹市",
+  "lat": 24.78037,
+  "lng": 120.98282,
+  "loc": "區級",
+  "addr": "新竹市東區慈雲路91號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 新莊中平店": {
+  "city": "新北市",
+  "lat": 25.0550515,
+  "lng": 121.4448614,
+  "loc": "exact",
+  "addr": "新北市新莊區中平路416號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 林口店": {
+  "city": "新北市",
+  "lat": 25.0752555,
+  "lng": 121.3705882,
+  "loc": "exact",
+  "addr": "新北市林口區南勢里民富街110號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 桃園八德置地店": {
+  "city": "桃園市",
+  "lat": 24.9650432,
+  "lng": 121.2987533,
+  "loc": "exact",
+  "addr": "桃園市八德區介壽路一段728號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 桃園台茂店": {
+  "city": "桃園市",
+  "lat": 25.05366,
+  "lng": 121.288565,
+  "loc": "exact",
+  "addr": "桃園市蘆竹區南崁路1段112號4樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 桃園國際路店": {
+  "city": "桃園市",
+  "lat": 24.9969876,
+  "lng": 121.2881189,
+  "loc": "exact",
+  "addr": "桃園市桃園區文中里國際路二段358號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 桃園青埔IKEA店": {
+  "city": "桃園市",
+  "lat": 25.0127128,
+  "lng": 121.2173302,
+  "loc": "exact",
+  "addr": "桃園市中壢區高鐵站前東路一段1號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 楊梅中山店": {
+  "city": "桃園市",
+  "lat": 24.9082621,
+  "lng": 121.1540965,
+  "loc": "exact",
+  "addr": "桃園市楊梅區中山北路一段202號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 汐止遠雄店": {
+  "city": "新北市",
+  "lat": 25.09545,
+  "lng": 121.65759,
+  "loc": "區級",
+  "addr": "新北市汐止區新台五路一段99號1樓 (iFG遠雄廣場1樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 淡水新市店": {
+  "city": "新北市",
+  "lat": 25.1894691,
+  "lng": 121.4457629,
+  "loc": "exact",
+  "addr": "新北市淡水區濱海路1段36號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 蘆洲徐匯廣場店": {
+  "city": "新北市",
+  "lat": 25.07872,
+  "lng": 121.46264,
+  "loc": "區級",
+  "addr": "新北市蘆洲區中山一路8號4樓 (徐匯廣場內4樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 雲林斗六店": {
+  "city": "雲林縣",
+  "lat": 23.6995734,
+  "lng": 120.5455107,
+  "loc": "exact",
+  "addr": "雲林縣斗六市社口里大學路二段300號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄中正店": {
+  "city": "高雄市",
+  "lat": 22.6311537,
+  "lng": 120.3126889,
+  "loc": "exact",
+  "addr": "高雄市新興區中正三路2號",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄夢時代店": {
+  "city": "高雄市",
+  "lat": 22.5955243,
+  "lng": 120.3069261,
+  "loc": "exact",
+  "addr": "高雄市前鎮區中華五路789號6樓(統一夢時代購物中心藍鯨館6樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄岡山樂購廣場店": {
+  "city": "高雄市",
+  "lat": 22.79199,
+  "lng": 120.28539,
+  "loc": "區級",
+  "addr": "高雄市岡山區大遼里捷安路1巷2號3樓 (岡山樂購廣場3樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄新光三越左營店": {
+  "city": "高雄市",
+  "lat": 22.688757,
+  "lng": 120.3102114,
+  "loc": "exact",
+  "addr": "高雄市左營區高鐵路123號B1",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄美術館店": {
+  "city": "高雄市",
+  "lat": 22.661454,
+  "lng": 120.2905733,
+  "loc": "exact",
+  "addr": "高雄市鼓山區明誠四路116號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄義享天地店": {
+  "city": "高雄市",
+  "lat": 22.65453,
+  "lng": 120.25626,
+  "loc": "區級",
+  "addr": "高雄市鼓山區大順一路115號5樓 (義享天地A館5樓)",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
+   }
+  ]
+ },
+ "台灣壽司郎 高雄鳳山店": {
+  "city": "高雄市",
+  "lat": 22.6226132,
+  "lng": 120.3581222,
+  "loc": "exact",
+  "addr": "高雄市鳳山區中山路149號1樓",
+  "url": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動",
+    "s": "2026/08/17",
+    "e": "2026/09/20",
+    "l": "https://www.facebook.com/Sushiro.TW/posts/1485367983629113/",
+    "img": "/kv/jojo-sushiro-20260817.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "台灣壽司郎股份有限公司",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+    "mf": "台灣壽司郎",
+    "ms": 58
    }
   ]
  },
@@ -1875,18 +3267,18 @@
   "lng": 121.5666623,
   "loc": "exact",
   "addr": "台北市信義區松壽路9號",
-  "url": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
+  "url": "https://www.facebook.com/incubase.arena.tp/posts/122246833634787120/",
   "ex": [
    {
     "t": "《新世紀福音戰士》展：線（Lines of EVANGELION）",
     "s": "2026/08/14",
     "e": "2026/10/04",
-    "l": "https://www.klook.com/zh-TW/activity/209385-lines-of-evangelion/",
-    "img": "https://p2.bahamut.com.tw/B/2KU/76/c42f612014824e36b5cb31018a1z6mw5.JPG",
+    "l": "https://www.facebook.com/incubase.arena.tp/posts/122246833634787120/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_lines_taipei_20260814.jpg",
     "cat2": "展覽/Exhibition",
     "ip": "新世紀福音戰士（EVANGELION）",
-    "org": "popacg（波波動漫）",
-    "lic": "官方"
+    "org": "TRENDIC／INCUBASE Studio",
+    "lic": "khara, Inc."
    }
   ]
  },
@@ -1970,10 +3362,10 @@
     "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
     "img": "/kv/fubon-guardians-attack-on-titan-theme-day-20260821.jpg",
     "cat2": "活動/Event",
+    "fee": "付費",
     "ip": "進擊的巨人",
     "org": "富邦悍將",
-    "lic": "木棉花",
-    "fee": "付費"
+    "lic": "木棉花"
    }
   ]
  },
@@ -5005,9 +6397,9 @@
  },
  "高雄大遠百威秀影城": {
   "city": "高雄市",
-  "lat": 22.61181,
-  "lng": 120.31929,
-  "loc": "區級",
+  "lat": 22.613424008067,
+  "lng": 120.303548975058,
+  "loc": "exact",
   "addr": "高雄市苓雅區三多四路21號13樓",
   "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
   "ex": [

@@ -1,7 +1,7 @@
 {
  "summary": {
-  "venues_total": 245,
-  "exact": 232,
+  "venues_total": 303,
+  "exact": 290,
   "approx_total": 13,
   "has_road_or_addr": 12,
   "only_area": 1
