@@ -42,6 +42,9 @@ jobs:
       - name: Run data pipeline (backend/update_all.py)
         run: python3 backend/update_all.py
 
+      - name: Preserve dedicated multi-store map control
+        run: python3 backend/apply_multistore_map_control.py
+
       - name: Validate event metadata, links and categories
         run: python3 -m unittest discover -s backend -p '_test_*.py'
 
