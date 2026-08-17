@@ -2,6 +2,7 @@
 """Hard quality gates for public ACG metadata and source provenance."""
 import json
 import os
+import subprocess
 import unittest
 from urllib.parse import urlparse
 
@@ -71,6 +72,43 @@ class EventMetadataQualityTests(unittest.TestCase):
                 self.assertTrue(venue_link.startswith("https://"), venue_link)
                 host = urlparse(venue_link).netloc.lower().removeprefix("www.")
                 self.assertNotIn(host, DISALLOWED_PRIMARY_HOSTS)
+
+    def test_every_public_acg_kv_is_a_committed_local_file(self):
+        """公開 ACG KV 不可依賴外站，也不可引用未提交的站內檔案。
+
+        Facebook／Instagram CDN 及部分官方站台會讓圖片網址過期、禁止外連，
+        即使資料列仍有 ``img``，網站也會顯示破圖。Daily Update 已負責把遠端
+        KV 自存至 ``public/kv``；這個門檻確保下載失敗或漏交檔案時 CI 直接阻擋。
+        """
+        public_dir = os.path.join(ROOT, "public")
+        for event in self.events:
+            with self.subTest(title=event.get("t")):
+                image = str(event.get("img") or "").strip()
+                self.assertTrue(image, "缺少 KV img")
+                normalized = image.lstrip("/")
+                self.assertTrue(
+                    normalized.startswith("kv/"),
+                    f"KV 必須自存至 public/kv，不可直接引用外站: {image}",
+                )
+                resolved = os.path.realpath(os.path.join(public_dir, normalized))
+                self.assertTrue(
+                    resolved.startswith(os.path.realpath(public_dir) + os.sep),
+                    f"KV 路徑越出 public: {image}",
+                )
+                exists = os.path.isfile(resolved)
+                if not exists:
+                    # Cowork 使用 sparse checkout 時，public/kv blob 可能只存在於
+                    # Git tree、未展開至工作樹；CI 的一般 checkout 則會走上面的
+                    # filesystem 檢查。兩者都必須確認同一個 repository 路徑存在。
+                    tracked = subprocess.run(
+                        ["git", "cat-file", "-e", f"HEAD:public/{normalized}"],
+                        cwd=ROOT,
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                        check=False,
+                    )
+                    exists = tracked.returncode == 0
+                self.assertTrue(exists, f"KV 引用的檔案未提交: {image}")
 
     def test_metadata_override_provenance_schema(self):
         records = {k: v for k, v in self.metadata.items() if not k.startswith("_")}
