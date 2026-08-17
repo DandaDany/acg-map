@@ -1,0 +1,48 @@
+name: Apply Multi-store Follow-up
+
+on:
+  push:
+    branches:
+      - agent/multistore-control-followup
+    paths:
+      - backend/apply_multistore_map_control.py
+      - backend/_test_multistore_events.py
+      - .github/workflows/apply-multistore-followup.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/multistore-control-followup
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply multi-store UI patch
+        run: python backend/apply_multistore_map_control.py
+
+      - name: Run multi-store regression tests
+        run: python backend/_test_multistore_events.py
+
+      - name: Validate diff
+        run: git diff --check
+
+      - name: Commit generated HTML
+        shell: bash
+        run: |
+          git add public/taiwan-exhibition-map.html
+          if git diff --cached --quiet; then
+            echo "No generated HTML changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "fix: apply multistore control follow-up"
+          git push origin HEAD:agent/multistore-control-followup
