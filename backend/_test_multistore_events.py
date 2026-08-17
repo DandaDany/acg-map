@@ -57,6 +57,22 @@ class MultiStoreEventTests(unittest.TestCase):
         self.assertIn("const multiStoreMode=uiState.filters.multi!=='all'", html)
         self.assertIn("entries.length+' 間門市'", html)
 
+    def test_dedicated_multistore_map_control_is_wired(self):
+        with open(os.path.join(ROOT, "public", "taiwan-exhibition-map.html"), encoding="utf-8") as fh:
+            html = fh.read()
+
+        self.assertIn('id="multiStoreControl"', html)
+        self.assertIn('<span class="multi-store-label">多店活動</span>', html)
+        self.assertIn("function isMultiStoreMapGroup(group)", html)
+        self.assertIn("function toggleMultiStoreEvent(id)", html)
+        self.assertIn("function collapseMultiStoreEvent()", html)
+        self.assertIn("group.id===activeMultiStoreEventId", html)
+        self.assertIn("renderMultiStoreControl();updateFilterUI();", html)
+        self.assertIn(
+            "const nextMultiStoreEventId=isMultiStoreMapGroup(selectedGroup)?selectedGroup.id:null;",
+            html,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
