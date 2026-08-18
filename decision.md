@@ -114,3 +114,14 @@
 - Map popup 不再提供跨活動 carousel：沒有 `1 / N`、左右箭頭、桌機方向鍵或手機左右 swipe。另一個活動由 marker、Destination Picker、Nearby Picker 或 Collection 進入。
 - 大型文化園區以 UI 靜態 canonical destination config 判定，不寫入每日活動資料。現階段包含華山1914、松山文創園區、駁二藝術特區（含官方／既有別名）、花蓮文化創意產業園區、嘉義文化創意產業園區。只有 cluster 的所有目前可見子活動都屬於同一 destination 且至少有 2 個不同活動時才直接 Fullscreen；混合一般地點的 cluster 先 zoom／spiderfy。
 - Desktop 選定縣市 Filter 後立即 `fitCityView(city)`；選全台灣回 `fitTaiwanView()`。此 viewport side effect 不得選活動、開 popup 或改寫 selection。Mobile 若正在 Map 則立即 fit；若仍在 Explore，只記錄 pending city target，下一次使用者自行進 Map 時優先顯示該縣市，不可自動切 tab。
+
+## 2026-08-18 — 場館資料生命週期與 geocode SSOT
+
+- `data/manual/venue_geocodes.json`、`venue_address_overrides.json` 等人工場館修正是**持久的人工決策層**。已驗證的地址、座標與精度必須保留，供目前與未來活動重用；它們不是「目前必須出現在地圖上的場館清單」。
+- `public/venues.json` 是**依當期有效活動動態產生的衍生輸出**，不是場館或 geocode 的 SSOT。只有至少一筆活動通過日期、分類、審核與 metadata 門檻的場館才應出現在公開地圖。
+- 場館的最後一筆活動到期、被拒絕或因資料不完整而隔離後，該場館應自然退出 `public/venues.json`；這不等於人工座標遺失。日後同一正規化場館名稱出現新活動時，管線必須重新套用既有人工地址與 geocode，不得要求空場館永久留在公開輸出。
+- 測試必須分開保護兩種不同生命週期：
+  1. **持久決策完整性**：已確認的人工 geocode 記錄仍存在，且地址、座標與精度未被自動流程覆寫。
+  2. **當期輸出正確性**：目前有公開活動的已驗證場館，其公開地址、座標與精度必須與人工決策一致。
+- 不得把某日快照中的場館數、場館名單或精度統計，直接寫成未來每次 `public/venues.json` 都必須維持的永久不變量。2026-08-09 的「65 筆、54 exact／11 building」只代表該批人工 geocode 決策的完整性，不代表公開地圖必須永久顯示 65 個場館。
+- 不得為通過測試而延長已到期活動、製造空白活動、保留空場館，或針對單一到期場館寫例外。若仍有有效且資料完整的活動卻整個場館消失，才屬資料管線 regression，必須另行阻擋並查明原因。

@@ -3676,5 +3676,55 @@
   "addr_key": "台南市中西區西門路一段658號B1",
   "loc": "exact",
   "precision_note": "台灣壽司郎官方門市頁內嵌 Google Maps 店名圖釘"
+ },
+ "夢時代購物中心 8F 時代會館": {
+  "la": 22.5948961,
+  "lo": 120.3079497,
+  "source": "google_maps_place_pin_2026-08-18",
+  "display_name": "時代會館8樓（高雄市前鎮區中華五路789號8樓）",
+  "type": "google_maps_place_pin",
+  "addr_key": "高雄市前鎮區中華五路789號8樓",
+  "loc": "exact",
+  "precision_note": "Google Maps 有獨立『時代會館8樓』場所圖釘"
+ },
+ "高雄夢時代購物中心 1F 時代光廊": {
+  "la": 22.5948656,
+  "lo": 120.3057541,
+  "source": "google_maps_dream_mall_building_pin_2026-08-18",
+  "display_name": "高雄夢時代購物中心（高雄市前鎮區中華五路789號）",
+  "type": "google_maps_building_pin",
+  "addr_key": "高雄市前鎮區中華五路789號1樓",
+  "loc": "building",
+  "precision_note": "Google Maps 無『1F 時代光廊』獨立室內場所圖釘；採官方活動所在夢時代建物圖釘，不誤標為店內 exact"
+ },
+ "A-BASE": {
+  "la": 25.042666,
+  "lo": 121.506814,
+  "source": "google_maps_place_pin_2026-08-18",
+  "display_name": "A-BASE（台北市萬華區成都路29號2樓）",
+  "type": "google_maps_place_pin",
+  "addr_key": "台北市萬華區成都路29號2樓",
+  "loc": "exact",
+  "precision_note": "Google Maps A-BASE 獨立場所圖釘"
+ },
+ "花漾蒔光": {
+  "la": 25.058842,
+  "lo": 121.546792,
+  "source": "google_maps_place_pin_2026-08-18",
+  "display_name": "花漾蒔光（台北市松山區復興北路313巷38號1樓）",
+  "type": "google_maps_place_pin",
+  "addr_key": "台北市松山區復興北路313巷38號1樓",
+  "loc": "exact",
+  "precision_note": "Google Maps 花漾蒔光獨立場所圖釘"
+ },
+ "初覓手作餐坊": {
+  "la": 22.6345934,
+  "lo": 120.3094,
+  "source": "google_maps_place_pin_2026-08-18",
+  "display_name": "初覓手作餐坊（高雄市新興區洛陽街68號）",
+  "type": "google_maps_place_pin",
+  "addr_key": "高雄市新興區洛陽街68號",
+  "loc": "exact",
+  "precision_note": "Google Maps 初覓手作餐坊獨立場所圖釘"
  }
 }
