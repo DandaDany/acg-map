@@ -1,4 +1,26 @@
 {
+ "A-BASE": {
+  "city": "台北市",
+  "lat": 25.0188,
+  "lng": 121.48699,
+  "loc": "區級",
+  "addr": "台北市萬華區成都路29號2樓",
+  "url": "https://x.com/abasetaiwan/status/2078886790556229923",
+  "ex": [
+   {
+    "t": "「我在意的對象 並不是男人」POP UP STORE in A-BASE",
+    "s": "2026/08/28",
+    "e": "2026/09/07",
+    "l": "https://x.com/abasetaiwan/status/2078886790556229923",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/guy_not_guy_abase_20260828.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "我在意的對象 並不是男人",
+    "org": "A-BASE（SENSE LABO Co., Ltd.）",
+    "lic": "新井すみこ（Sumiko Arai）／KADOKAWA CORPORATION"
+   }
+  ]
+ },
  "IKEA 內湖店": {
   "city": "台北市",
   "lat": 25.06084,
@@ -172,40 +194,6 @@
     "ip": "皮克敏（Pikmin）",
     "org": "IKEA Taiwan（宜家家居台灣）",
     "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "animate Gratte 西門站": {
-  "city": "台北市",
-  "lat": 25.0453368,
-  "lng": 121.5096702,
-  "loc": "exact",
-  "addr": "台北市中正區中華路一段39號1樓",
-  "url": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
-  "ex": [
-   {
-    "t": ".Bloom10周年＆メロキス8周年記念 Gratte",
-    "s": "2026/07/17",
-    "e": "2026/08/16",
-    "l": "https://www.facebook.com/ximen.popup.animate/posts/122141725071055906/",
-    "img": "https://www.facebook.com/photo/?fbid=122141725047055906&set=pcb.122141725071055906",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "付費",
-    "ip": ".Bloom×メロキス",
-    "org": "animate（安利美特台灣）",
-    "lic": "官方"
-   },
-   {
-    "t": "動畫『我的英雄學院』10週年 首波衝刺 FAIR × animate Gratte（西門站）",
-    "s": "2026/07/25",
-    "e": "2026/08/16",
-    "l": "https://www.facebook.com/ximen.popup.animate/posts/122142941817055906/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mha_gratte_ximen_20260725.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "我的英雄學院",
-    "org": "animate Gratte（安利美特台灣）",
-    "lic": "堀越耕平／集英社・My Hero Academia Project"
    }
   ]
  },
@@ -588,27 +576,6 @@
    }
   ]
  },
- "三創生活園區 1F 十二立方": {
-  "city": "台北市",
-  "lat": 25.045633,
-  "lng": 121.531021,
-  "loc": "exact",
-  "addr": "台北市中正區市民大道三段2號1樓",
-  "url": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
-  "ex": [
-   {
-    "t": "《藍色監獄》台灣 POP UP SHOP",
-    "s": "2026/08/05",
-    "e": "2026/08/17",
-    "l": "https://www.instagram.com/p/DbNRZcQDgRH/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_anique_sanchuang_20260805.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "ip": "藍色監獄（BLUE LOCK）",
-    "org": "Anique Taiwan（榮日股份有限公司）",
-    "lic": "講談社／BLUE LOCK Production Committee"
-   }
-  ]
- },
  "中友百貨": {
   "city": "台中市",
   "lat": 24.1522668,
@@ -914,6 +881,28 @@
     "lic": "TOHO animation／木棉花 Muse Communication",
     "mf": "凍心",
     "ms": 28
+   }
+  ]
+ },
+ "初覓手作餐坊": {
+  "city": "高雄市",
+  "lat": 22.63624,
+  "lng": 120.31381,
+  "loc": "區級",
+  "addr": "高雄市新興區洛陽街68號",
+  "url": "https://www.instagram.com/p/DcIXeCEIDzX/",
+  "ex": [
+   {
+    "t": "『光逝去的夏天』聯名咖啡廳",
+    "s": "2026/08/19",
+    "e": "2026/09/13",
+    "l": "https://www.instagram.com/p/DcIXeCEIDzX/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hikaru_summer_cafe_20260819.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "光逝去的夏天",
+    "org": "萌番 More Fun／重星戰略有限公司",
+    "lic": "モクモクれん（Mokumokuren）／KADOKAWA／The Summer Hikaru Died Partners"
    }
   ]
  },
@@ -3029,6 +3018,18 @@
     "ip": "多動漫IP（Muse木棉花代理，含蠟筆小新、JOJO的奇妙冒險、暗殺教室、戀上換裝娃娃、86—不存在的戰區—、入間同學入魔了！、擅長逃跑的殿下、葬送的芙莉蓮 等17大動漫）",
     "org": "木棉花國際（Muse木棉花）× 統一夢時代",
     "lic": "木棉花"
+   },
+   {
+    "t": "Ani-One 玩轉動漫遊・高雄場",
+    "s": "2026/08/29",
+    "e": "2026/10/19",
+    "l": "https://www.instagram.com/p/Db75of2D9Uy/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/ani_one_kaohsiung_20260829.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "Ani-One Taiwan 多作品",
+    "org": "羚邦亞洲有限公司（Medialink／Ani-One Taiwan）",
+    "lic": "羚邦亞洲有限公司（Medialink）及各參展作品權利人"
    }
   ]
  },
@@ -3051,27 +3052,6 @@
     "ip": "綜合",
     "org": "野獸國 X SUNRISEPOP",
     "lic": "官方"
-   }
-  ]
- },
- "大安森林公園": {
-  "city": "台北市",
-  "lat": 25.030152,
-  "lng": 121.5353507,
-  "loc": "exact",
-  "addr": "台北市大安區新生南路二段1號",
-  "url": "https://gnn.gamer.com.tw/detail.php?sn=308568",
-  "ex": [
-   {
-    "t": "Pokémon GO 10週年「皮卡丘」與「伊布」見面會",
-    "s": "2026/08/15",
-    "e": "2026/08/16",
-    "l": "https://gnn.gamer.com.tw/detail.php?sn=308568",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pokemongo_10th_meetup_2026_20260815.jpg",
-    "cat2": "體驗活動/Experience Activity",
-    "ip": "精靈寶可夢（Pokémon GO）",
-    "org": "需人工確認（Pokémon GO 官方 × 台北捷運聯名企劃）",
-    "lic": "需人工確認（KV版權標示 ©Niantic、©Pokémon／Nintendo／Creatures／GAME FREAK）"
    }
   ]
  },
@@ -4601,25 +4581,25 @@
    }
   ]
  },
- "花蓮縣壽豐鄉鯉魚潭": {
-  "city": "花蓮縣",
-  "lat": 23.9370434,
-  "lng": 121.5093228,
-  "loc": "exact",
-  "addr": "花蓮縣壽豐鄉池南村環潭北路100號",
-  "url": "https://www.instagram.com/p/DZrU9yxgT5x/",
+ "花漾蒔光": {
+  "city": "台北市",
+  "lat": 25.06956,
+  "lng": 121.56704,
+  "loc": "區級",
+  "addr": "台北市松山區復興北路313巷38號1樓",
+  "url": "https://www.instagram.com/p/DcIXeCEIDzX/",
   "ex": [
    {
-    "t": "2026花蓮FUN暑假",
-    "s": "2026/07/11",
-    "e": "2026/08/16",
-    "l": "https://www.instagram.com/p/DZrU9yxgT5x/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hualien_fun_onepiece_20260711.webp",
-    "cat2": "活動/Event",
-    "fee": "免費",
-    "ip": "航海王",
-    "org": "花蓮縣政府",
-    "lic": "東映"
+    "t": "『光逝去的夏天』聯名咖啡廳",
+    "s": "2026/08/19",
+    "e": "2026/09/30",
+    "l": "https://www.instagram.com/p/DcIXeCEIDzX/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hikaru_summer_cafe_20260819.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "ip": "光逝去的夏天",
+    "org": "萌番 More Fun／重星戰略有限公司",
+    "lic": "モクモクれん（Mokumokuren）／KADOKAWA／The Summer Hikaru Died Partners"
    }
   ]
  },
@@ -6370,6 +6350,28 @@
     "ip": "咒術迴戰（懷玉·玉折）",
     "org": "需人工確認",
     "lic": "羚邦 Medialink"
+   }
+  ]
+ },
+ "高雄夢時代購物中心 1F 時代光廊": {
+  "city": "高雄市",
+  "lat": 22.59244,
+  "lng": 120.30842,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路789號1樓",
+  "url": "https://www.instagram.com/p/DcKmOqwD-s4/",
+  "ex": [
+   {
+    "t": "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）",
+    "s": "2026/08/19",
+    "e": "2026/09/20",
+    "l": "https://www.instagram.com/p/DcKmOqwD-s4/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/solo_leveling_kaohsiung_20260819.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "ip": "我獨自升級（SOLO LEVELING）",
+    "org": "樂曜日股份有限公司（NoonX）",
+    "lic": "羚邦亞洲有限公司（Medialink）／Solo Leveling Animation Partners"
    }
   ]
  },
