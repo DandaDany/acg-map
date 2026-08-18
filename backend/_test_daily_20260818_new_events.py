@@ -6,7 +6,7 @@ import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TITLES = {
-    "Ani-One 玩轉動漫遊・高雄場": "ani_one_kaohsiung_20260829.jpg",
+    "Ani-One 玩轉動漫遊‧高雄場": "ani_one_kaohsiung_20260829.jpg",
     "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）": "solo_leveling_kaohsiung_20260819.jpg",
     "「我在意的對象 並不是男人」POP UP STORE in A-BASE": "guy_not_guy_abase_20260828.jpg",
     "『光逝去的夏天』聯名咖啡廳": "hikaru_summer_cafe_20260819.jpg",
