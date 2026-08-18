@@ -60,6 +60,15 @@ class Daily20260818NewEventsTests(unittest.TestCase):
                 self.assertNotIn("需人工確認", json.dumps(event, ensure_ascii=False))
                 self.assertNotEqual(event["c2"], "其他")
 
+    def test_solo_leveling_keeps_stable_identity_and_latest_official_source(self):
+        solo = [
+            event for _, event in self.rows
+            if event["t"] == "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）"
+        ]
+        self.assertEqual(len(solo), 1)
+        self.assertEqual(solo[0]["id"], "manual-solo-leveling-kaohsiung-20260819")
+        self.assertEqual(solo[0]["l"], "https://www.instagram.com/p/DcLXtexlGz4/")
+
     def test_official_kv_is_self_hosted_and_matches_verified_source(self):
         for _, event in self.rows:
             with self.subTest(title=event["t"]):
@@ -73,6 +82,8 @@ class Daily20260818NewEventsTests(unittest.TestCase):
                     public_bytes = fh.read()
                 self.assertEqual(source_bytes, public_bytes)
                 self.assertGreater(len(source_bytes), 100_000)
+                if event["t"] == "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）":
+                    self.assertGreater(len(source_bytes), 1_000_000)
 
 
 if __name__ == "__main__":

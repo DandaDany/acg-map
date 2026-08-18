@@ -6359,16 +6359,17 @@
   "lng": 120.30842,
   "loc": "區級",
   "addr": "高雄市前鎮區中華五路789號1樓",
-  "url": "https://www.instagram.com/p/DcKmOqwD-s4/",
+  "url": "https://www.instagram.com/p/DcLXtexlGz4/",
   "ex": [
    {
     "t": "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）",
     "s": "2026/08/19",
     "e": "2026/09/20",
-    "l": "https://www.instagram.com/p/DcKmOqwD-s4/",
+    "l": "https://www.instagram.com/p/DcLXtexlGz4/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/solo_leveling_kaohsiung_20260819.jpg",
     "cat2": "快閃店/Pop Up Store",
     "fee": "免費",
+    "id": "manual-solo-leveling-kaohsiung-20260819",
     "ip": "我獨自升級（SOLO LEVELING）",
     "org": "樂曜日股份有限公司（NoonX）",
     "lic": "羚邦亞洲有限公司（Medialink）／Solo Leveling Animation Partners"
