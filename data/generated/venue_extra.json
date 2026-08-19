@@ -206,27 +206,27 @@
   "url": "https://www.songshanculturalpark.org",
   "ex": [
    {
-    "t": "偶像夢幻祭 2 聚光舞台主題快閃店 台北場",
-    "s": "2026/08/28",
-    "e": "2026/09/13",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/44ec2ffc-72ff-4f98-8593-02937252a54b",
-    "img": "https://www.songshanculturalpark.org/gallery/1786934768_5ba56997984a067de187.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "2026 史上最強球鞋與潮流展會",
-    "s": "2026/10/10",
-    "e": "2026/10/11",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/49261597-9309-4d32-9a48-27e68fa3b35d",
-    "img": "https://www.songshanculturalpark.org/gallery/1786946914_2196a4101d1fcb878a16.jpg",
-    "ty": "special"
-   },
-   {
     "t": "2026 金點設計獎：評選會場開放參觀",
     "s": "2026/08/27",
-    "e": "2026/08/28",
+    "e": "2026/08/27",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/1cc33bb6-a758-423c-96cf-a38b62b8deeb",
     "img": "https://www.songshanculturalpark.org/gallery/1786954756_6f4add5d2330b2a0ab37.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 琅琅原創：創作者大會",
+    "s": "2026/09/08",
+    "e": "2026/09/08",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/0d97836d-3421-45a0-b9d0-0001f3ca7579",
+    "img": "https://www.songshanculturalpark.org/gallery/1787106774_e73bb21f3d4287299538.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 臺北藝術進駐國際沙龍",
+    "s": "2026/09/04",
+    "e": "2026/09/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/b076f675-d5c7-4b7f-90bc-9967e047e803",
+    "img": "https://www.songshanculturalpark.org/gallery/1787128191_66e2a504984684500b6b.jpg",
     "ty": "special"
    },
    {
@@ -424,7 +424,7 @@
    {
     "t": "2026 年 iF 設計新秀小聚 | 設計已讀 ECHOES OF JOY",
     "s": "2026/08/21",
-    "e": "2026/08/28",
+    "e": "2026/08/27",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/f541389d-f744-49cb-a28a-b48afdfb45e8",
     "img": "https://www.songshanculturalpark.org/gallery/1786002395_39f650fdfa2efedb0713.jpg",
     "ty": "special"
@@ -434,13 +434,13 @@
     "s": "2026/08/11",
     "e": "2026/10/04",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/78965588-eee7-4b24-bf52-a785dfefe102",
-    "img": "https://www.songshanculturalpark.org/gallery/1786005300_4242d9a9e16180449cea.jpg",
+    "img": "https://www.songshanculturalpark.org/gallery/1787108139_2e64dc7e9406f10522ce.jpg",
     "ty": "special"
    },
    {
     "t": "2026 音協認證｜【88顆芭樂籽 阿強】台灣音樂人如何進軍國際？ 曲風創作策略與市場思維",
     "s": "2026/08/21",
-    "e": "2026/08/28",
+    "e": "2026/08/27",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/7a1eb339-8576-450d-a4ad-015aff7f1a25",
     "img": "https://www.songshanculturalpark.org/gallery/1786070873_38a266622d16841f7602.jpg",
     "ty": "special"
@@ -448,7 +448,7 @@
    {
     "t": "2026 音協認證｜【尤景文】從舞台到錄音室 職業樂手的實戰養成",
     "s": "2026/08/26",
-    "e": "2026/08/28",
+    "e": "2026/08/27",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/97d24aa1-a069-4f4a-b5e1-3d44dedc1539",
     "img": "https://www.songshanculturalpark.org/gallery/1786071062_fac09244465843e643df.jpg",
     "ty": "special"
@@ -488,7 +488,7 @@
    {
     "t": "一場夜遊，如何改變一座城市？「森林夜遊」三年城市實驗大公開！",
     "s": "2026/08/25",
-    "e": "2026/08/28",
+    "e": "2026/08/27",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/bbcd2203-90e5-429b-876b-2d30ff349527",
     "img": "https://www.songshanculturalpark.org/gallery/1786527103_7adb0efd48bd67173535.jpg",
     "ty": "special"
@@ -499,6 +499,22 @@
     "e": "2026/08/22",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/e23c561f-db23-4c1c-8f1e-2100cd71a4f0",
     "img": "https://www.songshanculturalpark.org/gallery/1786931505_7a8f17d68627154300c1.png",
+    "ty": "special"
+   },
+   {
+    "t": "偶像夢幻祭 2 聚光舞台主題快閃店 台北場",
+    "s": "2026/08/28",
+    "e": "2026/09/13",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/44ec2ffc-72ff-4f98-8593-02937252a54b",
+    "img": "https://www.songshanculturalpark.org/gallery/1786934768_5ba56997984a067de187.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 史上最強球鞋與潮流展會",
+    "s": "2026/10/10",
+    "e": "2026/10/11",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/49261597-9309-4d32-9a48-27e68fa3b35d",
+    "img": "https://www.songshanculturalpark.org/gallery/1786946914_2196a4101d1fcb878a16.jpg",
     "ty": "special"
    }
   ]
