@@ -4396,5 +4396,28 @@
   "_links": {
    "活動連結 / Activity link": "https://www.instagram.com/p/DcIXeCEIDzX/"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/enstars_spotlight_taipei_20260828.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-28 00:00:00",
+  "結束日期 / End Date": "2026-09-13 00:00:00",
+  "IP": "偶像夢幻祭2（Ensemble Stars!! Music）",
+  "活動名稱 / Activity Name": "偶像夢幻祭 2 聚光舞台主題快閃店 台北場",
+  "地點 / Location": "松山文創園區 藝異空間（台北市信義區光復南路133號）",
+  "主辦方 / Organizer": "活動官方未公開",
+  "授權單位 / Authorized unit (Licensor)": "Happy Elements K.K.",
+  "活動連結 / Activity link": "https://www.songshanculturalpark.org/exhibition/activity/44ec2ffc-72ff-4f98-8593-02937252a54b",
+  "備註 / NOTE": "松山文創園區官方活動頁確認2026/08/28–09/13於南向製菸工廠1F藝異空間舉辦，並明載免費入場。官方頁未公開實際策劃／執行單位，因此主辦方依規則記為活動官方未公開；權利方由Ensemble Stars!! Music官方IP條款確認為Happy Elements。KV取自同一松山文創官方活動頁，已由Daily Update自存並目視核對活動名稱、台北場、地點與日期。",
+  "IP_std": "偶像夢幻祭2",
+  "Licensor_std": "Happy Elements",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.songshanculturalpark.org/exhibition/activity/44ec2ffc-72ff-4f98-8593-02937252a54b"
+  }
  }
 ]

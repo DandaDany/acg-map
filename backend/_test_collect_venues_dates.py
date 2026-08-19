@@ -17,6 +17,11 @@ if "playwright.sync_api" not in sys.modules:
     sys.modules["playwright.sync_api"] = sync_api
 
 from collect_venues import parse_dates
+from refresh_venues import (
+    STRICT_OFFICIAL_DATE_VENUES,
+    filter_public_acg_only,
+    keep_official_event_dates,
+)
 
 
 class CollectVenueDateTests(unittest.TestCase):
@@ -36,6 +41,39 @@ class CollectVenueDateTests(unittest.TestCase):
         self.assertEqual(
             parse_dates("2026/08/28 - 08/21"),
             ("2026/08/28", "2026/08/28"),
+        )
+
+    def test_month_day_range_is_not_misread_as_a_year(self):
+        self.assertEqual(
+            parse_dates("▸11/8-9 一展將團精神引領陣頭風姿"),
+            ("", ""),
+        )
+
+    def test_roc_year_is_still_supported(self):
+        self.assertEqual(
+            parse_dates("115/08/19-115/09/20"),
+            ("2026/08/19", "2026/09/20"),
+        )
+
+    def test_public_guard_rejects_stale_open_ended_and_bad_year(self):
+        self.assertFalse(keep_official_event_dates("2025/09/05", "", "2026/08/19"))
+        self.assertFalse(keep_official_event_dates("11/08/09", "11/08/09", "2026/08/19"))
+        self.assertTrue(keep_official_event_dates("2026/12/19", "", "2026/08/19"))
+
+    def test_strict_official_date_venues_include_chiayi_yuanshan_and_songshan(self):
+        self.assertTrue(
+            {"嘉義文化創意產業園區", "圓山花博", "松山文創園區"}
+            <= STRICT_OFFICIAL_DATE_VENUES
+        )
+
+    def test_public_output_keeps_only_acg_and_drops_empty_venues(self):
+        venues = [
+            {"name": "混合場館", "ex": [{"t": "ACG", "c": "ACG"}, {"t": "藝術", "c": "其他文化"}]},
+            {"name": "非 ACG 場館", "ex": [{"t": "科技展", "c": "其他文化"}]},
+        ]
+        self.assertEqual(
+            filter_public_acg_only(venues),
+            [{"name": "混合場館", "ex": [{"t": "ACG", "c": "ACG"}]}],
         )
 
 
