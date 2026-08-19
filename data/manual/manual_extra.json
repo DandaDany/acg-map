@@ -1013,6 +1013,29 @@
    }
   ]
  },
+ "台中驛鐵道文化園區 鐵鹿大街 A2": {
+  "city": "台中市",
+  "lat": 24.14447,
+  "lng": 120.67706,
+  "loc": "區級",
+  "addr": "台中市中區台灣大道一段1號",
+  "url": "https://www.instagram.com/p/DcNp0ahkksP/",
+  "ex": [
+   {
+    "t": "2026 台中萌魂動漫祭．餘暑篇",
+    "s": "2026/08/27",
+    "e": "2026/09/20",
+    "l": "https://www.instagram.com/p/DcNp0ahkksP/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/taichung_moe_soul_20260827.png",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "id": "manual-taichung-moe-soul-20260827",
+    "ip": "光逝去的夏天等多作品",
+    "org": "辰星計畫／重星戰略有限公司",
+    "lic": "モクモクれん（Mokumokuren）／KADOKAWA／The Summer Hikaru Died Partners 及各參展作品權利人"
+   }
+  ]
+ },
  "台中麗寶OUTLET MALL C區1樓中央廣場": {
   "city": "台中市",
   "lat": 24.324143,

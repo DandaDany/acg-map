@@ -42,6 +42,29 @@ def _norm_title(t):
     return re.sub(r'\s+', '', (t or '')).lower()
 TODAY = datetime.date.today().strftime("%Y/%m/%d")
 CACHE = P("enrich_cache_v3.json")
+PUBLIC_DATE_RE = re.compile(r'^20\d{2}/(?:0[1-9]|1[0-2])/(?:0[1-9]|[12]\d|3[01])$')
+STRICT_OFFICIAL_DATE_VENUES = {"嘉義文化創意產業園區", "圓山花博", "松山文創園區"}
+
+def keep_official_event_dates(start, end, today=TODAY):
+    """公開官網資料的日期防線。
+
+    六館列表偶爾會混入歷史文章，或把標題中的 ``11/8-9`` 當成年份。
+    collector 應先阻擋；這裡再做一次輸出前防護，避免錯誤 generated
+    資料直接流入 public。
+    """
+    start = str(start or "").strip()
+    end = str(end or "").strip()
+    if start and not PUBLIC_DATE_RE.fullmatch(start):
+        return False
+    if end and not PUBLIC_DATE_RE.fullmatch(end):
+        return False
+    if not start and not end:
+        return False
+    if end and end < today:
+        return False
+    if start and not end and start < today:
+        return False
+    return True
 
 def log(*a): print(*a, file=sys.stderr)
 def s(v):
@@ -255,7 +278,7 @@ ANCHORS = [
 # 7 類精簡分類：混合法（展名關鍵字優先，場館類型打底，無法判斷→其他/綜合）
 # 動漫遊戲(ACG) 置於最前、最高優先：含通用詞與常見授權 IP 名；英文以 (?i) 不分大小寫。
 CAT_TITLE = [
-    ('動漫遊戲(ACG)', r'(?i)動漫|動畫|漫畫|二次元|電玩|電競|電子遊戲|手遊|桌遊|公仔|同人誌?|聲優|cosplay|角色扮演|特攝|鋼彈|機甲|寶可夢|Pok[eé]mon|哆啦|蠟筆小新|鬼滅|航海王|海賊王|火影|吉卜力|宮崎駿|角落生物|角落小夥伴|拉拉熊|好想兔|咖波|貓貓蟲|三麗鷗|Sanrio|凱蒂貓|Hello ?Kitty|布丁狗|美樂蒂|庫洛米|CHIIKAWA|吉伊卡哇|PEANUTS|SNOOPY|史努比|OSAMU|迪士尼|Disney|數碼寶貝|麵包超人|海綿寶寶|LINE ?FRIENDS|熊大|漫威|Marvel|蜘蛛人|全知讀者|webtoon|網漫|卡通|Anime'),
+    ('動漫遊戲(ACG)', r'(?i)動漫|動畫|漫畫|二次元|電玩|電競|電子遊戲|手遊|桌遊|公仔|同人誌?|聲優|cosplay|角色扮演|特攝|鋼彈|機甲|寶可夢|Pok[eé]mon|哆啦|蠟筆小新|鬼滅|航海王|海賊王|火影|吉卜力|宮崎駿|角落生物|角落小夥伴|拉拉熊|好想兔|咖波|貓貓蟲|三麗鷗|Sanrio|凱蒂貓|Hello ?Kitty|布丁狗|美樂蒂|庫洛米|CHIIKAWA|吉伊卡哇|PEANUTS|SNOOPY|史努比|OSAMU|迪士尼|Disney|數碼寶貝|麵包超人|海綿寶寶|LINE ?FRIENDS|熊大|漫威|Marvel|蜘蛛人|全知讀者|webtoon|網漫|卡通|Anime|偶像夢幻祭|Ensemble Stars'),
     ('親子兒童', r'親子|兒童|童趣|繪本|玩具'),
     ('科學自然', r'科學|自然|生態|天文|地質|礦物|恐龍|科技|海洋|動物|植物|宇宙|氣候|標本|昆蟲|地球|國家公園|環境教育|濕地|生物多樣'),
     ('工藝設計', r'工藝|陶藝|陶瓷|玻璃|竹編|漆藝|金工|設計|文創|手作|編織|捏麵|纖維|木雕|藍染|刺繡|樂器|傳統藝術'),
@@ -303,7 +326,7 @@ def classify_form(title, venue=''):
         if re.search(pat, title or ''): return name
     return ''
 
-THEME_ACG_KW = r'(?i)動漫|動畫|漫畫|聲優|Vtuber|遊戲|角色|IP|航海王|鬼滅|咒術|三麗鷗|Chiikawa|吉伊卡哇|寶可夢|Pok[eé]mon|哆啦|蠟筆小新|迪士尼|Disney|Sanrio|Hello\s*Kitty|布丁狗|美樂蒂|庫洛米|史努比|SNOOPY|PEANUTS|麵包超人|漫威|Marvel|卡通|Anime|ACG'
+THEME_ACG_KW = r'(?i)動漫|動畫|漫畫|聲優|Vtuber|遊戲|角色|IP|航海王|鬼滅|咒術|三麗鷗|Chiikawa|吉伊卡哇|寶可夢|Pok[eé]mon|哆啦|蠟筆小新|迪士尼|Disney|Sanrio|Hello\s*Kitty|布丁狗|美樂蒂|庫洛米|史努比|SNOOPY|PEANUTS|麵包超人|漫威|Marvel|卡通|Anime|ACG|偶像夢幻祭|Ensemble Stars'
 THEME_ART_KW  = r'美術|畫展|攝影|設計|工藝|陶|書法|雕塑'
 def classify_theme_kw(title, venue=''):
     if re.search(THEME_ACG_KW, title or '') or re.search(THEME_ACG_KW, venue or ''):
@@ -598,6 +621,24 @@ def filter_incomplete_acg_metadata(venues, valid_meta_titles):
     return out
 
 
+def filter_public_acg_only(venues):
+    """公開地圖只輸出 ACG 活動；完整官網爬蟲資料留在 generated 層。
+
+    六館收集器需要保留非 ACG 活動，才能稽核爬蟲與在後續人工判定時重新分類；
+    但 ``public/venues.json`` 是 ACG 地圖的產品輸出，不應把非 ACG 活動交給前端
+    再隱藏。移除非 ACG 活動後沒有任何活動的場館，也必須自然退出公開輸出。
+    """
+    removed = 0
+    for venue in venues:
+        events = venue.get("ex", [])
+        kept = [event for event in events if event.get("c") == "ACG"]
+        removed += len(events) - len(kept)
+        venue["ex"] = kept
+    out = [venue for venue in venues if venue.get("ex")]
+    log("公開 ACG-only 過濾: 移除非 ACG 活動", removed, "場｜移除空場館", len(venues) - len(out), "個")
+    return out
+
+
 def main():
     from collections import defaultdict, Counter
     cent = {tuple(k.split("|")): tuple(v) for k, v in
@@ -743,9 +784,14 @@ def main():
         for name, info in extra.items():
             exs = []
             for e in info.get("ex", []):
+                start = e.get("s", "")
                 end = e.get("e", "")
-                if end and end < TODAY: continue   # 過期略過
-                exs.append({"t": e["t"], "s": e.get("s", ""), "e": end, "l": e.get("l", ""),
+                if name in STRICT_OFFICIAL_DATE_VENUES:
+                    if not keep_official_event_dates(start, end):
+                        continue
+                elif end and end < TODAY:
+                    continue
+                exs.append({"t": e["t"], "s": start, "e": end, "l": e.get("l", ""),
                             "img": e.get("img", ""), "ty": "special", "h": 0, "src": "official"})
             if not exs: continue
             # 官網資料為準：有爬蟲的場館不再混入政府 API 展覽，避免較不精準的
@@ -1318,6 +1364,7 @@ def main():
     venues = filter_unclassifiable_acg(venues)
     venues = filter_rejected_events(venues, load_rejected_keys())
     venues = filter_incomplete_acg_metadata(venues, set(_meta_ov))
+    venues = filter_public_acg_only(venues)
 
     # Discover 以活動群組為單位；Map 仍保留場館 occurrence。所有公開 ACG 活動
     # 必須在輸出前取得穩定 id，並驗證同群組的標題與費用不衝突。

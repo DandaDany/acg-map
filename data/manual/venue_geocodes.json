@@ -3726,5 +3726,15 @@
   "addr_key": "高雄市新興區洛陽街68號",
   "loc": "exact",
   "precision_note": "Google Maps 初覓手作餐坊獨立場所圖釘"
+ },
+ "台中驛鐵道文化園區 鐵鹿大街 A2": {
+  "la": 24.1373875,
+  "lo": 120.6874749,
+  "source": "google_maps_place_pin_2026-08-19",
+  "display_name": "鐵鹿大街（台中市中區台灣大道一段1號）",
+  "type": "google_maps_place_pin",
+  "addr_key": "台中市中區台灣大道一段1號",
+  "loc": "building",
+  "precision_note": "Google Maps 有鐵鹿大街獨立場所圖釘；A2無獨立室內場所圖釘，採建物／街區圖釘，不誤標為A2室內exact"
  }
 }
