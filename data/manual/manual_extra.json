@@ -3208,28 +3208,6 @@
    }
   ]
  },
- "新光三越台中中港店 10F": {
-  "city": "台中市",
-  "lat": 24.1650058,
-  "lng": 120.6433984,
-  "loc": "exact",
-  "addr": "台中市西屯區惠來里台灣大道三段301號",
-  "url": "https://www.instagram.com/p/DazKEteDD38",
-  "ex": [
-   {
-    "t": "Tamagotchi電子雞30週年紀念快閃店",
-    "s": "2026/07/27",
-    "e": "2026/08/19",
-    "l": "https://www.instagram.com/p/DazKEteDD38",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tamagotchi_taichung_20260727.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "Tamagotchi塔麻可吉",
-    "org": "萬代國際(wangjungintl)",
-    "lic": "BANDAI"
-   }
-  ]
- },
  "新光三越台中中港店 10F天空劇場": {
   "city": "台中市",
   "lat": 24.1650058,
