@@ -74,7 +74,7 @@
     "s": "2026/07/31",
     "e": "2026/09/03",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26073017505992454",
-    "img": "",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/06_上刊處形象2_(W1920_x_H1080).jpeg",
     "ty": "special"
    },
    {
@@ -206,27 +206,27 @@
   "url": "https://www.songshanculturalpark.org",
   "ex": [
    {
-    "t": "2026 臺北藝術進駐國際沙龍",
-    "s": "2026/09/04",
-    "e": "2026/09/04",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/b076f675-d5c7-4b7f-90bc-9967e047e803",
-    "img": "https://www.songshanculturalpark.org/gallery/1787128191_66e2a504984684500b6b.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "毛孩藝術生活節 FURever Art Festival : IM”PAW”SIBLE",
-    "s": "2026/12/18",
-    "e": "2026/12/20",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/c738025c-425f-4fdb-b7f0-79fcf49c7dc1",
-    "img": "https://www.songshanculturalpark.org/gallery/1787192363_36f29568018f9e26a2ca.jpg",
-    "ty": "special"
-   },
-   {
     "t": "9/5-9/6 Fun 飛福島｜福島縣觀光物產展",
     "s": "2026/09/05",
     "e": "2026/09/06",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/bddbfd15-ccad-471a-a624-3bfac99fdda0",
     "img": "https://www.songshanculturalpark.org/gallery/1787207630_73c5e9fb719c88f29289.png",
+    "ty": "special"
+   },
+   {
+    "t": "2026 澳洲教育展 盛大開展",
+    "s": "2026/09/20",
+    "e": "2026/09/21",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/ecb119a6-7dd6-4fe4-8c98-97180b206fd1",
+    "img": "https://www.songshanculturalpark.org/gallery/1787282013_fa81071c4237eee0a146.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "ANKYUNGMANDOO 眼鏡餃子小鎮 快閃店",
+    "s": "2026/09/01",
+    "e": "2026/09/29",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/158befad-0061-4403-bd54-7c545dd5907d",
+    "img": "https://www.songshanculturalpark.org/gallery/1787291695_73b42577c5a059a45bd9.jpg",
     "ty": "special"
    },
    {
@@ -315,14 +315,6 @@
     "e": "2026/10/11",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/8e248f11-734d-4987-bbbe-7bfceab13e3e",
     "img": "https://www.songshanculturalpark.org/gallery/1782961525_3d8965812664d2b151f7.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "設計已讀 Echoes of Joy 2026 年 iF 學生設計獎獲獎作品展",
-    "s": "2026/07/28",
-    "e": "2026/08/20",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/056c27a9-e929-4649-9064-57610e766616",
-    "img": "https://www.songshanculturalpark.org/gallery/1784601442_074da365528850de6f4c.jpg",
     "ty": "special"
    },
    {
@@ -416,7 +408,7 @@
    {
     "t": "2026 年 iF 設計新秀小聚 | 設計已讀 ECHOES OF JOY",
     "s": "2026/08/21",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/f541389d-f744-49cb-a28a-b48afdfb45e8",
     "img": "https://www.songshanculturalpark.org/gallery/1786002395_39f650fdfa2efedb0713.jpg",
     "ty": "special"
@@ -432,7 +424,7 @@
    {
     "t": "2026 音協認證｜【88顆芭樂籽 阿強】台灣音樂人如何進軍國際？ 曲風創作策略與市場思維",
     "s": "2026/08/21",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/7a1eb339-8576-450d-a4ad-015aff7f1a25",
     "img": "https://www.songshanculturalpark.org/gallery/1786070873_38a266622d16841f7602.jpg",
     "ty": "special"
@@ -440,7 +432,7 @@
    {
     "t": "2026 音協認證｜【尤景文】從舞台到錄音室 職業樂手的實戰養成",
     "s": "2026/08/26",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/97d24aa1-a069-4f4a-b5e1-3d44dedc1539",
     "img": "https://www.songshanculturalpark.org/gallery/1787208655_3c3b37c0ca7b31afff3a.jpg",
     "ty": "special"
@@ -448,7 +440,7 @@
    {
     "t": "2026 音協認證｜【利啟正】音樂創作者的 YouTube 國際內容策略 內容經營與觀眾建立",
     "s": "2026/08/28",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/588c5fd6-abaf-4931-99fa-f99135421aaa",
     "img": "https://www.songshanculturalpark.org/gallery/1787208686_d0990b122db235cab89b.jpg",
     "ty": "special"
@@ -472,7 +464,7 @@
    {
     "t": "從品牌到體驗：設計如何被記住 | 2026 年 iF 設計獎系列講座 (II)",
     "s": "2026/09/04",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/d1d81f2a-65a0-4f0f-a557-d82785b4adb1",
     "img": "https://www.songshanculturalpark.org/gallery/1786521777_1f9a707ddd0062c5a83d.jpg",
     "ty": "special"
@@ -480,7 +472,7 @@
    {
     "t": "一場夜遊，如何改變一座城市？「森林夜遊」三年城市實驗大公開！",
     "s": "2026/08/25",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/bbcd2203-90e5-429b-876b-2d30ff349527",
     "img": "https://www.songshanculturalpark.org/gallery/1786527103_7adb0efd48bd67173535.jpg",
     "ty": "special"
@@ -512,7 +504,7 @@
    {
     "t": "2026 金點設計獎：評選會場開放參觀",
     "s": "2026/08/27",
-    "e": "2026/09/04",
+    "e": "2026/09/05",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/1cc33bb6-a758-423c-96cf-a38b62b8deeb",
     "img": "https://www.songshanculturalpark.org/gallery/1786954756_6f4add5d2330b2a0ab37.jpg",
     "ty": "special"
@@ -523,6 +515,22 @@
     "e": "2026/09/08",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/0d97836d-3421-45a0-b9d0-0001f3ca7579",
     "img": "https://www.songshanculturalpark.org/gallery/1787106774_e73bb21f3d4287299538.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026 臺北藝術進駐國際沙龍",
+    "s": "2026/09/04",
+    "e": "2026/09/05",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/b076f675-d5c7-4b7f-90bc-9967e047e803",
+    "img": "https://www.songshanculturalpark.org/gallery/1787128191_66e2a504984684500b6b.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "毛孩藝術生活節 FURever Art Festival : IM”PAW”SIBLE",
+    "s": "2026/12/18",
+    "e": "2026/12/20",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/c738025c-425f-4fdb-b7f0-79fcf49c7dc1",
+    "img": "https://www.songshanculturalpark.org/gallery/1787192363_36f29568018f9e26a2ca.jpg",
     "ty": "special"
    }
   ]
