@@ -399,11 +399,11 @@ for(const [filter,filters,query,visibleOptions,excludedOptions] of filterCases){
         self.assertIn("openActivityPicker({mode:'nearby'", self.html)
         self.assertIn("zoomToBoundsOnClick:false,spiderfyOnMaxZoom:false", self.html)
         cluster_handler = self.html[self.html.index("function handleClusterActivate"):self.html.index("cluster.on('clusterclick'")]
-        self.assertIn("destinationClusterInfo(items)", cluster_handler)
-        self.assertNotIn("venueIds.size===1", cluster_handler)
-        self.assertIn("if(destination)", cluster_handler)
-        self.assertIn("clusterLayer.zoomToBounds()", cluster_handler)
+        self.assertIn("if(map.getZoom()<map.getMaxZoom()){clusterLayer.zoomToBounds();return}", cluster_handler)
+        self.assertIn("if(items.length>4)", cluster_handler)
+        self.assertIn("openActivityPicker({mode:'cluster'", cluster_handler)
         self.assertIn("clusterLayer.spiderfy()", cluster_handler)
+        self.assertNotIn("destinationClusterInfo", cluster_handler)
 
     def test_picker_close_is_transient_and_selection_is_unified(self):
         close = self.html[self.html.index("function closeActivityPicker()"):self.html.index("function openNearbyPicker")]

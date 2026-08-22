@@ -28,16 +28,17 @@ mobile=text[text.index("document.getElementById('mobileVenueBody').addEventListe
 assert 'touchstart' not in mobile and 'touchend' not in mobile
 assert 'function buildNearbyActivities' in text  # Nearby distance logic remains.
 
-# Destination cluster policy: canonical cultural parks fullscreen, mixed ordinary clusters still zoom/spiderfy.
-for name in ('華山1914文化創意產業園區','松山文創園區','高雄市駁二藝術特區','駁二藝術特區','花蓮文化創意產業園區','嘉義文化創意產業園區'):
-    assert name in text
-assert 'function destinationVenueGroup(location)' in text
-assert 'function destinationClusterInfo(items)' in text
+# Cluster policy: spatial zoom first; at max zoom 2-4 spiderfy and 5+ distinct events fullscreen.
+assert 'DESTINATION_VENUE_GROUPS' not in text
+assert 'function destinationVenueGroup(location)' not in text
+assert 'function destinationClusterInfo(items)' not in text
+picker=text[text.index('function clusterPickerItems'):text.index('function handleClusterActivate')]
+assert 'const seenEvents=new Set()' in picker and 'seenEvents.has(group.id)' in picker
 cluster=text[text.index('function handleClusterActivate'):text.index("cluster.on('clusterclick'")]
-assert 'destinationClusterInfo(items)' in cluster
-assert "openActivityPicker({mode:'cluster'" in cluster
-assert 'clusterLayer.zoomToBounds()' in cluster and 'clusterLayer.spiderfy()' in cluster
-assert 'venueIds.size===1' not in cluster
+assert "if(map.getZoom()<map.getMaxZoom()){clusterLayer.zoomToBounds();return}" in cluster
+assert "if(items.length>4){openActivityPicker({mode:'cluster',items,title:'這個地點的活動'});return}" in cluster
+assert 'clusterLayer.spiderfy();' in cluster
+assert 'MOBILE_QUERY' not in cluster
 
 # City filter changes viewport only; they do not select an activity or force mobile Explore into Map.
 desktop_start=text.index("document.getElementById('filterOptions').addEventListener")
@@ -53,6 +54,6 @@ set_tab=text[text.index('function setTab('):text.index('let searchTimer=')]
 assert 'uiState.pendingCityView!==null' in set_tab
 assert 'fitCityView(city)' in set_tab
 
-for phrase in ('Desktop Map controls / Destination cluster / City viewport 微調','Map popup 不再提供跨活動 carousel','Desktop 選定縣市 Filter 後立即 `fitCityView(city)`'):
+for phrase in ('Desktop Map controls / Cluster threshold / City viewport 微調','Map popup 不再提供跨活動 carousel','Desktop 選定縣市 Filter 後立即 `fitCityView(city)`'):
     assert phrase in decision
 print('map follow-up UX: PASS')
