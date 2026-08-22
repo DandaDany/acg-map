@@ -576,28 +576,6 @@
    }
   ]
  },
- "中友百貨": {
-  "city": "台中市",
-  "lat": 24.1522668,
-  "lng": 120.6847123,
-  "loc": "exact",
-  "addr": "台中市北區三民路三段161號",
-  "url": "https://www.instagram.com/p/DY3xo0lDO42/",
-  "ex": [
-   {
-    "t": "孤獨搖滾！動畫展（台中場）",
-    "s": "2026/07/20",
-    "e": "2026/08/20",
-    "l": "https://www.instagram.com/p/DY3xo0lDO42/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bocchi_animation_exhibition_taichung_20260720.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "孤獨搖滾！",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
  "全台誠品書店（誠品線上、誠品蝦皮同步；北中南逾20家主題IP店，含誠品生活新店、誠品書店恆春限定店、誠品R79、誠品書店中友店、松菸誠品表演廳、誠品板橋、誠品新板、高雄大遠百店等）": {
   "city": "高雄市",
   "lat": 22.77535,
@@ -1185,28 +1163,6 @@
     "ip": "寶可夢",
     "org": "The Pokémon Company（新光三越信義新天地協辦）",
     "lic": "The Pokémon Company"
-   }
-  ]
- },
- "台東縣鹿野鄉高台": {
-  "city": "台東縣",
-  "lat": 22.9241216,
-  "lng": 121.1247784,
-  "loc": "exact",
-  "addr": "台東縣鹿野鄉永安村高台路46號",
-  "url": "https://www.facebook.com/balloontaiwan",
-  "ex": [
-   {
-    "t": "吉伊卡哇-2026 臺灣國際熱氣球嘉年華",
-    "s": "2026/07/04",
-    "e": "2026/08/20",
-    "l": "https://www.facebook.com/balloontaiwan",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_balloon_festival_20260704.jpg",
-    "cat2": "活動/Event",
-    "fee": "免費",
-    "ip": "吉伊卡哇",
-    "org": "2026臺灣國際熱氣球嘉年華",
-    "lic": "三貝多"
    }
   ]
  },
