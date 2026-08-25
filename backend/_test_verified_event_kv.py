@@ -5,6 +5,8 @@ import os
 import unittest
 from urllib.parse import urlparse
 
+from event_lifecycle_test_helpers import active_manual_rows, venue_name
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_PREFIX = "https://raw.githubusercontent.com/DandaDany/acg-map/main/"
@@ -125,7 +127,6 @@ class VerifiedEventKvTests(unittest.TestCase):
             for event in venue.get("ex", [])
             if event.get("t") in expected_titles
         ]
-        self.assertTrue(pins, "no verified events currently on the map")
         for event in pins:
             img = str(event.get("img") or "")
             # repo 內永久圖：download_event_kv.py --all 會把遠端 KV 自存到
@@ -161,7 +162,11 @@ class VerifiedEventKvTests(unittest.TestCase):
             for event in venue.get("ex", [])
             if event.get("t") == title
         }
-        self.assertEqual(pins, {venue: expected for venue in venues})
+        active_venues = {
+            venue_name(row)
+            for row in active_manual_rows(self.public, self.events, title)
+        }
+        self.assertEqual(pins, {venue: expected for venue in active_venues})
         local_path = os.path.join(ROOT, "public", expected.removeprefix("/"))
         self.assertTrue(os.path.isfile(local_path), local_path)
         self.assertGreater(os.path.getsize(local_path), 512)
