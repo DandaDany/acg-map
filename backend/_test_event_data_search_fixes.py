@@ -3,6 +3,8 @@ import json
 import os
 import unittest
 
+from event_lifecycle_test_helpers import assert_public_matches_lifecycle
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ITO_TITLE = "伊藤潤二狂熱城市夜行路跑"
@@ -28,13 +30,13 @@ class EventDataSearchFixTests(unittest.TestCase):
         self.assertEqual(venue["loc"], "exact")
         self.assertAlmostEqual(venue["lat"], 22.6377809)
         self.assertAlmostEqual(venue["lng"], 120.3034814)
-        generated = next(
-            venue
-            for venue in self.public["venues"]
-            if any(event.get("t") == INITIAL_D_TITLE for event in venue.get("ex", []))
+        pins = assert_public_matches_lifecycle(
+            self, self.public, self.events, INITIAL_D_TITLE
         )
-        self.assertAlmostEqual(generated["la"], 22.6377809)
-        self.assertAlmostEqual(generated["lo"], 120.3034814)
+        if pins:
+            generated, _ = pins[0]
+            self.assertAlmostEqual(generated["la"], 22.6377809)
+            self.assertAlmostEqual(generated["lo"], 120.3034814)
 
     def test_junji_ito_uses_requested_page_and_kv(self):
         rows = [
@@ -46,14 +48,10 @@ class EventDataSearchFixTests(unittest.TestCase):
         for row in rows:
             self.assertEqual(row["活動連結 / Activity link"], ITO_LINK)
             self.assertEqual(row["KV"], ITO_KV)
-        generated = [
-            event
-            for venue in self.public["venues"]
-            for event in venue.get("ex", [])
-            if event.get("t") == ITO_TITLE
-        ]
-        self.assertTrue(generated)
-        for event in generated:
+        pins = assert_public_matches_lifecycle(
+            self, self.public, self.events, ITO_TITLE, active_count=1
+        )
+        for _, event in pins:
             self.assertEqual(event["l"], ITO_LINK)
             # 地圖上的 KV：download_event_kv.py --all 會把這張遠端圖自存到
             # public/kv/ 並改引用 'kv/<hash>.<ext>'；尚未自存時才是原始遠端網址。

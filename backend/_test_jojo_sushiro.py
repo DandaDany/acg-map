@@ -3,6 +3,8 @@ import json
 import os
 import unittest
 
+from event_lifecycle_test_helpers import assert_public_matches_lifecycle, manual_rows, public_pins
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TITLE = "《JOJO的奇妙冒險 星塵遠征軍》× 台灣壽司郎 聯名活動"
@@ -14,13 +16,10 @@ class JojoSushiroTests(unittest.TestCase):
         with open(os.path.join(ROOT, "data", "manual", "台灣壽司郎門市地址_20260815.json"), encoding="utf-8") as fh:
             cls.stores = json.load(fh)
         with open(os.path.join(ROOT, "public", "venues.json"), encoding="utf-8") as fh:
-            cls.venues = json.load(fh)["venues"]
-        cls.pins = [
-            (venue, event)
-            for venue in cls.venues
-            for event in venue.get("ex", [])
-            if event.get("t") == TITLE
-        ]
+            cls.public = json.load(fh)
+        with open(os.path.join(ROOT, "data", "manual", "acg_events.json"), encoding="utf-8") as fh:
+            cls.events = json.load(fh)
+        cls.pins = public_pins(cls.public, TITLE)
 
     def test_official_scope_excludes_togo(self):
         self.assertEqual(self.stores["官網全部店舖數"], 59)
@@ -29,12 +28,20 @@ class JojoSushiroTests(unittest.TestCase):
         self.assertEqual([store["門市名稱"] for store in self.stores["排除門市"]], ["To Go 站前店"])
 
     def test_all_participating_stores_have_exact_google_pins(self):
-        self.assertEqual(len(self.pins), 58)
         expected = {
             f'台灣壽司郎 {store["門市名稱"]}': (store["緯度"], store["經度"])
             for store in self.stores["門市清單"]
         }
-        self.assertEqual({venue["name"] for venue, _ in self.pins}, set(expected))
+        assert_public_matches_lifecycle(
+            self,
+            self.public,
+            self.events,
+            TITLE,
+            active_count=58,
+            active_venues=set(expected),
+        )
+        if self.pins:
+            self.assertEqual({venue["name"] for venue, _ in self.pins}, set(expected))
         for venue, _ in self.pins:
             with self.subTest(venue=venue["name"]):
                 self.assertEqual(venue["loc"], "exact")
@@ -42,8 +49,10 @@ class JojoSushiroTests(unittest.TestCase):
                 self.assertAlmostEqual(venue["lo"], expected[venue["name"]][1], places=6)
 
     def test_event_fields_and_multistore_group(self):
+        rows = manual_rows(self.events, TITLE)
+        self.assertEqual(len(rows), 1)
         ids = {event["id"] for _, event in self.pins}
-        self.assertEqual(len(ids), 1)
+        self.assertEqual(len(ids), 1 if self.pins else 0)
         for _, event in self.pins:
             self.assertEqual(event["s"], "2026/08/17")
             self.assertEqual(event["e"], "2026/09/20")

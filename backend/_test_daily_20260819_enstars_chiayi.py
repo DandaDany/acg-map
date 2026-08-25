@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import datetime
 import json
 import os
 import re
 import unittest
+
+from event_lifecycle_test_helpers import assert_public_matches_lifecycle, snapshot_date
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,13 +28,16 @@ class Daily20260819EnstarsChiayiTests(unittest.TestCase):
         cls.generated = load("data/generated/venue_extra.json")
 
     def test_enstars_is_a_complete_public_acg_event(self):
-        rows = [
-            (venue, event)
-            for venue in self.public["venues"]
-            for event in venue.get("ex", [])
-            if event.get("t") == TITLE
-        ]
-        self.assertEqual(len(rows), 1)
+        rows = assert_public_matches_lifecycle(
+            self,
+            self.public,
+            self.manual,
+            TITLE,
+            active_count=1,
+            active_venues={"松山文創園區"},
+        )
+        if not rows:
+            return
         venue, event = rows[0]
         self.assertEqual(venue["name"], "松山文創園區")
         self.assertEqual((event["s"], event["e"]), ("2026/08/28", "2026/09/13"))
@@ -71,7 +75,7 @@ class Daily20260819EnstarsChiayiTests(unittest.TestCase):
         self.assertGreater(len(manual_bytes), 100_000)
 
     def test_chiayi_generated_data_has_no_invalid_or_stale_open_end_date(self):
-        today = datetime.date.today().strftime("%Y/%m/%d")
+        today = snapshot_date(self.public).strftime("%Y/%m/%d")
         events = self.generated["嘉義文化創意產業園區"]["ex"]
         self.assertTrue(events)
         for event in events:

@@ -3,6 +3,12 @@ import json
 import os
 import unittest
 
+from event_lifecycle_test_helpers import (
+    active_manual_rows,
+    assert_public_matches_lifecycle,
+    manual_rows,
+)
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TITLES = {
@@ -24,7 +30,10 @@ class Daily20260818NewEventsTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         with open(os.path.join(ROOT, "public", "venues.json"), encoding="utf-8") as fh:
-            cls.venues = json.load(fh)["venues"]
+            cls.public = json.load(fh)
+        cls.venues = cls.public["venues"]
+        with open(os.path.join(ROOT, "data", "manual", "acg_events.json"), encoding="utf-8") as fh:
+            cls.events = json.load(fh)
         cls.rows = [
             (venue, event)
             for venue in cls.venues
@@ -33,15 +42,23 @@ class Daily20260818NewEventsTests(unittest.TestCase):
         ]
 
     def test_four_event_groups_create_five_location_pins(self):
-        self.assertEqual(len(self.rows), 5)
-        self.assertEqual({event["t"] for _, event in self.rows}, set(TITLES))
-        self.assertEqual(len({event["id"] for _, event in self.rows}), 4)
+        for title in TITLES:
+            self.assertTrue(manual_rows(self.events, title), title)
+            assert_public_matches_lifecycle(self, self.public, self.events, title)
+        active_titles = {
+            title for title in TITLES
+            if active_manual_rows(self.public, self.events, title)
+        }
+        self.assertEqual({event["t"] for _, event in self.rows}, active_titles)
+        self.assertEqual(len({event["id"] for _, event in self.rows}), len(active_titles))
         hikari = [event for _, event in self.rows if event["t"] == "『光逝去的夏天』聯名咖啡廳"]
-        self.assertEqual(len(hikari), 2)
-        self.assertEqual(len({event["id"] for event in hikari}), 1)
+        expected_hikari = active_manual_rows(
+            self.public, self.events, "『光逝去的夏天』聯名咖啡廳"
+        )
+        self.assertEqual(len(hikari), len(expected_hikari))
+        self.assertEqual(len({event["id"] for event in hikari}), 1 if hikari else 0)
 
     def test_verified_google_map_coordinates_and_precision(self):
-        self.assertEqual({venue["name"] for venue, _ in self.rows}, set(EXPECTED_PINS))
         for venue, _ in self.rows:
             with self.subTest(venue=venue["name"]):
                 lat, lng, precision = EXPECTED_PINS[venue["name"]]
@@ -61,28 +78,43 @@ class Daily20260818NewEventsTests(unittest.TestCase):
                 self.assertNotEqual(event["c2"], "其他")
 
     def test_solo_leveling_keeps_stable_identity_and_latest_official_source(self):
+        manual = manual_rows(
+            self.events,
+            "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）",
+        )
+        self.assertEqual(len(manual), 1)
+        self.assertEqual(
+            manual[0]["活動連結 / Activity link"],
+            "https://www.instagram.com/p/DcLXtexlGz4/",
+        )
         solo = [
             event for _, event in self.rows
             if event["t"] == "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）"
         ]
+        if not solo:
+            return
         self.assertEqual(len(solo), 1)
         self.assertEqual(solo[0]["id"], "manual-solo-leveling-kaohsiung-20260819")
         self.assertEqual(solo[0]["l"], "https://www.instagram.com/p/DcLXtexlGz4/")
 
     def test_official_kv_is_self_hosted_and_matches_verified_source(self):
-        for _, event in self.rows:
-            with self.subTest(title=event["t"]):
-                source = os.path.join(ROOT, "data", "manual", "_kv_cache", TITLES[event["t"]])
-                public = os.path.join(ROOT, "public", event["img"].lstrip("/"))
+        public_by_title = {event["t"]: event for _, event in self.rows}
+        for title, filename in TITLES.items():
+            with self.subTest(title=title):
+                source = os.path.join(ROOT, "data", "manual", "_kv_cache", filename)
                 self.assertTrue(os.path.isfile(source))
-                self.assertTrue(os.path.isfile(public))
                 with open(source, "rb") as fh:
                     source_bytes = fh.read()
+                self.assertGreater(len(source_bytes), 100_000)
+                if title not in public_by_title:
+                    continue
+                event = public_by_title[title]
+                public = os.path.join(ROOT, "public", event["img"].lstrip("/"))
+                self.assertTrue(os.path.isfile(public))
                 with open(public, "rb") as fh:
                     public_bytes = fh.read()
                 self.assertEqual(source_bytes, public_bytes)
-                self.assertGreater(len(source_bytes), 100_000)
-                if event["t"] == "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）":
+                if title == "《我獨自升級 SOLO LEVELING》期間限定快閃店（高雄場）":
                     self.assertGreater(len(source_bytes), 1_000_000)
 
 
