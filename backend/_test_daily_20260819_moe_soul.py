@@ -3,6 +3,8 @@ import json
 import os
 import unittest
 
+from event_lifecycle_test_helpers import assert_public_matches_lifecycle, public_pins
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TITLE = "2026 台中萌魂動漫祭．餘暑篇"
@@ -21,15 +23,19 @@ class Daily20260819MoeSoulTests(unittest.TestCase):
         cls.manual = load("data/manual/acg_events.json")
         cls.metadata = load("data/manual/event_metadata_overrides.json")
         cls.admission = load("data/manual/event_admission_overrides.json")
-        cls.rows = [
-            (venue, event)
-            for venue in cls.public["venues"]
-            for event in venue.get("ex", [])
-            if event.get("t") == TITLE
-        ]
+        cls.rows = public_pins(cls.public, TITLE)
 
     def test_event_is_complete_and_has_one_map_pin(self):
-        self.assertEqual(len(self.rows), 1)
+        assert_public_matches_lifecycle(
+            self,
+            self.public,
+            self.manual,
+            TITLE,
+            active_count=1,
+            active_venues={"台中驛鐵道文化園區 鐵鹿大街 A2"},
+        )
+        if not self.rows:
+            return
         venue, event = self.rows[0]
         self.assertEqual(venue["name"], "台中驛鐵道文化園區 鐵鹿大街 A2")
         self.assertEqual(venue["addr"], "台中市中區台灣大道一段1號")
@@ -59,19 +65,20 @@ class Daily20260819MoeSoulTests(unittest.TestCase):
         self.assertEqual(self.admission[TITLE]["fee"], "免費")
 
     def test_official_kv_is_self_hosted_and_matches_verified_source(self):
-        _, event = self.rows[0]
         source = os.path.join(
             ROOT, "data", "manual", "_kv_cache", "taichung_moe_soul_20260827.png"
         )
-        public = os.path.join(ROOT, "public", event["img"])
         self.assertTrue(os.path.isfile(source))
-        self.assertTrue(os.path.isfile(public))
         with open(source, "rb") as fh:
             source_bytes = fh.read()
-        with open(public, "rb") as fh:
-            public_bytes = fh.read()
-        self.assertEqual(source_bytes, public_bytes)
         self.assertGreater(len(source_bytes), 100_000)
+        if self.rows:
+            _, event = self.rows[0]
+            public = os.path.join(ROOT, "public", event["img"])
+            self.assertTrue(os.path.isfile(public))
+            with open(public, "rb") as fh:
+                public_bytes = fh.read()
+            self.assertEqual(source_bytes, public_bytes)
 
 
 if __name__ == "__main__":
