@@ -4,7 +4,7 @@
 
 重要檔案：
 - `全台ACG活動.xlsx`：使用者維護的 ACG 活動來源。
-- `manual_extra.json`：Excel 匯入後的 ACG 活動持久層。
+- `manual_extra.json`：Excel 匯入後、依執行日期過濾的 ACG 活動中介層；活動到期後會從此檔移除，不是歷史活動或 geocode 的 SSOT。
 - `manual_permanent_extra.json`：長期保留的手動活動。
 - `venue_corrections.json`：場館修正規則。
 - `venue_address_overrides.json`：場館地址覆寫。
@@ -15,6 +15,8 @@
 - `點點心門市地址_dimdimsum.json`、`凍心門市地址_frozenheart.json`：多門市聯名活動的人工門市參考清單。
 
 原則：這裡的資料不要被爬蟲任意覆蓋。
+
+持久資料模型：歷史人工活動來源以 `acg_events.json` 為準；活動欄位決策以 metadata／admission 等 overrides 為準；場館地址與座標以 `venue_address_overrides.json`、`venue_geocodes.json` 為準。測試不得要求到期活動繼續留在 `manual_extra.json` 或 `public/venues.json`。
 
 ## ACG 活動品質門檻
 

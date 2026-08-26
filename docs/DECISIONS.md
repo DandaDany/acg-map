@@ -51,7 +51,7 @@
 2. **HTML 已放棄 `build2.py` 產生流程，改為直接手動編輯 `taiwan-exhibition-map.html`。** 來源：`專案交接文件.md` §7「注意」、`README.md`「維護重點」。這條路已經走回頭——代表往後也要接受手動編輯 HTML 的維護方式。
 3. **分類採兩正交軸**（主題 `c`：ACG／藝術設計／其他文化；形式 `c2`：展覽／快閃店／主題餐廳／體驗活動／其他），非單一分類欄位。來源：`README.md`「資料來源」段、`分類重構規格_for_ClaudeCode.md`。已寫入 `refresh_venues.py` 分類邏輯與前端篩選按鈕的 `data-c` 字串契約，兩邊字串必須完全一致，改分類要同步動前後端。
 4. **座標聚合合併門檻定為 0.003°（≈330m）**，由原本 0.01° 收緊而來。來源：`專案交接文件.md` §0／§6。這是為了不把相距約 1km 的不同館誤併，是已修正過的教訓，不宜再放寬。
-5. **`manual_extra.json`（使用者手動 ACG 資料）為持久層，每次自動更新一律併入、不被自動下架清除**（只有 `endDate < 今天` 才會過期略過）。來源：`專案交接文件.md` §3 第四層、§10。`README.md` 也明列「不要改動 `manual_extra.json` 既有列」。
+5. **人工 ACG 資料必須保留來源與決策，但不同層有不同生命週期。** `acg_events.json`、metadata／admission overrides、`venue_address_overrides.json` 與 `venue_geocodes.json` 是持久 SSOT；`manual_extra.json` 是每日依日期重建的中介層，`endDate < 今天` 的活動會正常略過。不得為保留歷史或座標而要求到期活動繼續留在 `manual_extra.json` 或公開輸出。來源：`專案交接文件.md` §3 第四層、§10；現行細則見根目錄 `decision.md`「場館資料生命週期與 geocode SSOT」。
 6. **圖片／KV 嚴格驗證，寧可留空也不放錯圖。** 來源：`README.md`「已知限制」、`專案交接文件.md` §6 步驟10。
 7. **排除圖書館、郵政類場館，不收錄。** 來源：`專案交接文件.md` §6 步驟9、§11。
 8. **協作流程硬性規定**：任何人（Claude／Claude Code／Codex／人類）每次改動結束前，必須（1）在 `Agent交流工作日誌.txt` 追加一筆紀錄、（2）覆蓋更新 `README.md` 的六欄交接狀態。來源：`README.md` 開頭「硬性規定」。這不是技術決策，但屬於已經確立、不能私自跳過的流程承諾。
