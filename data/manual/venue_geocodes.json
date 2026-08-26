@@ -3736,5 +3736,45 @@
   "addr_key": "台中市中區台灣大道一段1號",
   "loc": "building",
   "precision_note": "Google Maps 有鐵鹿大街獨立場所圖釘；A2無獨立室內場所圖釘，採建物／街區圖釘，不誤標為A2室內exact"
+ },
+ "有點市松菸旗艦店／松菸 island 133": {
+  "la": 25.0436882,
+  "lo": 121.5597379,
+  "source": "manual_extra_exact_pin_migration_2026-08-26",
+  "display_name": "有點市松菸旗艦店／松菸 island 133（台北市信義區光復南路133號）",
+  "type": "preserved_manual_exact_pin",
+  "addr_key": "台北市信義區光復南路133號",
+  "loc": "exact",
+  "precision_note": "將既有人工活動圖釘移入持久 geocode SSOT；活動到期後仍保留供未來活動重用"
+ },
+ "有點市高雄旗艦店／高雄統一夢時代 時代百貨B1連通口": {
+  "la": 22.5953429,
+  "lo": 120.3087795,
+  "source": "manual_extra_exact_pin_migration_2026-08-26",
+  "display_name": "有點市高雄旗艦店／高雄統一夢時代 時代百貨B1連通口（高雄市前鎮區中華五路789號B1）",
+  "type": "preserved_manual_exact_pin",
+  "addr_key": "高雄市前鎮區中華五路789號B1",
+  "loc": "exact",
+  "precision_note": "將既有人工活動圖釘移入持久 geocode SSOT；活動到期後仍保留供未來活動重用"
+ },
+ "義式屋古拉爵 南港中信店": {
+  "la": 25.0583953,
+  "lo": 121.6161248,
+  "source": "manual_extra_exact_pin_migration_2026-08-26",
+  "display_name": "義式屋古拉爵 南港中信店（台北市南港區經貿二路166號中國信託金融廣場A棟2樓）",
+  "type": "preserved_manual_exact_pin",
+  "addr_key": "台北市南港區經貿二路166號中國信託金融廣場A棟2樓",
+  "loc": "exact",
+  "precision_note": "將既有人工活動圖釘移入持久 geocode SSOT；活動到期後仍保留供未來活動重用"
+ },
+ "義式屋古拉爵 高雄大遠百店": {
+  "la": 22.613424,
+  "lo": 120.303549,
+  "source": "manual_extra_exact_pin_migration_2026-08-26",
+  "display_name": "義式屋古拉爵 高雄大遠百店（高雄市苓雅區三多四路21號12樓）",
+  "type": "preserved_manual_exact_pin",
+  "addr_key": "高雄市苓雅區三多四路21號12樓",
+  "loc": "exact",
+  "precision_note": "將既有人工活動圖釘移入持久 geocode SSOT；活動到期後仍保留供未來活動重用"
  }
 }

@@ -118,6 +118,7 @@
 ## 2026-08-18 — 場館資料生命週期與 geocode SSOT
 
 - `data/manual/venue_geocodes.json`、`venue_address_overrides.json` 等人工場館修正是**持久的人工決策層**。已驗證的地址、座標與精度必須保留，供目前與未來活動重用；它們不是「目前必須出現在地圖上的場館清單」。
+- `data/manual/acg_events.json` 保存人工活動來源列；`manual_extra.json` 是每日依日期重建的中介產物，活動到期後可以不再含該場館，因此**不得**把 `manual_extra.json` 當成歷史活動或 geocode 的持久 SSOT。回歸測試要保護歷史來源列、metadata／admission overrides、`venue_address_overrides.json` 與 `venue_geocodes.json`，不可要求到期活動仍存在於 `manual_extra.json` 或公開輸出。
 - `public/venues.json` 是**依當期有效活動動態產生的衍生輸出**，不是場館或 geocode 的 SSOT。只有至少一筆活動通過日期、分類、審核與 metadata 門檻的場館才應出現在公開地圖。
 - 場館的最後一筆活動到期、被拒絕或因資料不完整而隔離後，該場館應自然退出 `public/venues.json`；這不等於人工座標遺失。日後同一正規化場館名稱出現新活動時，管線必須重新套用既有人工地址與 geocode，不得要求空場館永久留在公開輸出。
 - 測試必須分開保護兩種不同生命週期：

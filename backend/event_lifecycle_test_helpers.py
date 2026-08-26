@@ -46,6 +46,56 @@ def venue_name(row):
     return str(row.get("地點 / Location") or "").split("（", 1)[0]
 
 
+def venue_address(row):
+    location = str(row.get("地點 / Location") or "")
+    if "（" not in location or not location.endswith("）"):
+        return ""
+    return location.split("（", 1)[1][:-1]
+
+
+def normalize_address(value):
+    return str(value or "").replace("臺", "台").strip()
+
+
+def assert_persistent_venue_decisions(
+    testcase,
+    events,
+    title,
+    address_overrides,
+    venue_geocodes,
+    expected_count,
+    *,
+    expected_loc=None,
+):
+    """Protect source rows and geocode SSOT independently of dated materializations."""
+    rows = manual_rows(events, title)
+    testcase.assertEqual(len(rows), expected_count, title)
+    for row in rows:
+        name = venue_name(row)
+        address = venue_address(row)
+        testcase.assertTrue(address, f"{title}: {name} is missing an address")
+        testcase.assertIn(name, address_overrides, title)
+        testcase.assertIn(name, venue_geocodes, title)
+
+        override = address_overrides[name]
+        geocode = venue_geocodes[name]
+        testcase.assertEqual(
+            normalize_address(override.get("addr")),
+            normalize_address(address),
+            title,
+        )
+        testcase.assertEqual(
+            normalize_address(geocode.get("addr_key")),
+            normalize_address(address),
+            title,
+        )
+        testcase.assertIsInstance(geocode.get("la"), (int, float), title)
+        testcase.assertIsInstance(geocode.get("lo"), (int, float), title)
+        if expected_loc is not None:
+            testcase.assertEqual(geocode.get("loc"), expected_loc, title)
+    return rows
+
+
 def assert_public_matches_lifecycle(
     testcase,
     public,

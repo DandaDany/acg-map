@@ -5,9 +5,8 @@ import os
 import unittest
 
 from event_lifecycle_test_helpers import (
+    assert_persistent_venue_decisions,
     assert_public_matches_lifecycle,
-    manual_rows,
-    venue_name,
 )
 
 
@@ -24,20 +23,21 @@ class Daily20260803EventTests(unittest.TestCase):
     def setUpClass(cls):
         cls.public = load("public/venues.json")
         cls.events = load("data/manual/acg_events.json")
-        cls.manual_extra = load("data/manual/manual_extra.json")
+        cls.address_overrides = load("data/manual/venue_address_overrides.json")
+        cls.venue_geocodes = load("data/manual/venue_geocodes.json")
         cls.metadata = load("data/manual/event_metadata_overrides.json")
         cls.admission = load("data/manual/event_admission_overrides.json")
 
     def assert_persistent_records(self, title, expected_count):
-        rows = manual_rows(self.events, title)
-        self.assertEqual(len(rows), expected_count)
-        for row in rows:
-            name = venue_name(row)
-            self.assertIn(name, self.manual_extra)
-            venue = self.manual_extra[name]
-            self.assertEqual(venue["loc"], "exact")
-            self.assertTrue(any(event.get("t") == title for event in venue.get("ex", [])))
-        return rows
+        return assert_persistent_venue_decisions(
+            self,
+            self.events,
+            title,
+            self.address_overrides,
+            self.venue_geocodes,
+            expected_count,
+            expected_loc="exact",
+        )
 
     def test_maniani_popup_has_two_exact_official_pins(self):
         title = "Maniani World 限定快閃店"
@@ -81,6 +81,22 @@ class Daily20260803EventTests(unittest.TestCase):
         self.assertEqual(self.metadata[title]["source_tier"], 1)
         self.assertTrue(self.metadata[title]["kv_source"].startswith("https://www.instagram.com/"))
         self.assertEqual(self.admission[title]["fee"], "付費")
+
+    def test_expired_identity_v_keeps_ssot_without_materialized_or_public_pins(self):
+        title = "第五人格 × 義式屋古拉爵 8週年聯名"
+        rows = self.assert_persistent_records(title, 2)
+        expired_snapshot = {"updated": "2026/08/24", "venues": []}
+        pins = assert_public_matches_lifecycle(
+            self,
+            expired_snapshot,
+            self.events,
+            title,
+        )
+        self.assertEqual(pins, [])
+        self.assertEqual(
+            {row["結束日期 / End Date"] for row in rows},
+            {"2026-08-23 00:00:00"},
+        )
 
 
 if __name__ == "__main__":
