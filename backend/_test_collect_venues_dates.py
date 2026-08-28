@@ -16,7 +16,7 @@ if "playwright.sync_api" not in sys.modules:
     sys.modules["playwright"] = playwright
     sys.modules["playwright.sync_api"] = sync_api
 
-from collect_venues import parse_dates
+from collect_venues import CARD_CONTAINER_SELECTOR, parse_dates
 from refresh_venues import (
     STRICT_OFFICIAL_DATE_VENUES,
     filter_public_acg_only,
@@ -25,6 +25,9 @@ from refresh_venues import (
 
 
 class CollectVenueDateTests(unittest.TestCase):
+    def test_songshan_rows_are_a_card_boundary(self):
+        self.assertIn(".rows", CARD_CONTAINER_SELECTOR.split(","))
+
     def test_valid_range_is_preserved(self):
         self.assertEqual(
             parse_dates("2026-08-11～2026-09-07"),
