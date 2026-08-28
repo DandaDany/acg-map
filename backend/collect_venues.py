@@ -82,6 +82,11 @@ VENUES = [
 ]
 GLOBAL_EXCLUDE = re.compile(r"(news/article|門票|售票|常見問題|交通資訊)")
 
+# 官網清單中單一活動卡的容器。松山使用 `.rows`；若沒有在這一層停下，
+# closest() 會繼續向上命中包含多張卡的 `.item`/清單容器，使下一張卡的日期
+# 被誤當成本活動結束日。
+CARD_CONTAINER_SELECTOR = "li,article,.card,.item,.box,.rows"
+
 # 2026/07/18：check-sources.yml 實測 GitHub Actions 雲端機器連 hualien1913.nat.gov.tw 回 403
 # （其餘 7 個來源皆 200，含另一個政府網域 expopark.taipei）。研判是該政府網站對雲端機房 IP
 # 的防火牆/WAF 阻擋，非程式問題。Daniel 確認：雲端排程排除此館即可，不用等它連上再研究繞過方案。
@@ -268,14 +273,14 @@ def collect_one(pg, v):
         else { if(href.indexOf(pathkey)<0) return; }
         if((title||txt).length<8) return;
         if(seen.has(href)) return; seen.add(href);
-        const box=a.closest('li,article,.card,.item,.box')||a.parentElement||a;
+        const box=a.closest('__CARD_CONTAINER_SELECTOR__')||a.parentElement||a;
         let img=fromImg(a.querySelector('img')||box.querySelector('img'));
         if(!img) img=fromBg(box);
         const boxtxt=(box.innerText||'').replace(/\\s+/g,' ').slice(0,220);
         out.push({txt:title||txt, href, img, boxtxt});
       });
       return out;
-    }"""
+    }""".replace("__CARD_CONTAINER_SELECTOR__", CARD_CONTAINER_SELECTOR)
     urls = v["list"] if isinstance(v["list"], list) else [v["list"]]
     items = []; _seen = set()
     MAX_PAGES = 15   # 翻頁上限，防無窮迴圈
