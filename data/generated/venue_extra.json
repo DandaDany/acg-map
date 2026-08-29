@@ -400,7 +400,7 @@
    {
     "t": "2026 音協認證｜【利啟正】音樂創作者的 YouTube 國際內容策略 內容經營與觀眾建立",
     "s": "2026/08/28",
-    "e": "2026/09/08",
+    "e": "2026/08/28",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/588c5fd6-abaf-4931-99fa-f99135421aaa",
     "img": "https://www.songshanculturalpark.org/gallery/1787208686_d0990b122db235cab89b.jpg",
     "ty": "special"
@@ -424,7 +424,7 @@
    {
     "t": "從品牌到體驗：設計如何被記住 | 2026 年 iF 設計獎系列講座 (II)",
     "s": "2026/09/04",
-    "e": "2026/09/08",
+    "e": "2026/09/04",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/d1d81f2a-65a0-4f0f-a557-d82785b4adb1",
     "img": "https://www.songshanculturalpark.org/gallery/1786521777_1f9a707ddd0062c5a83d.jpg",
     "ty": "special"
@@ -456,7 +456,7 @@
    {
     "t": "2026 臺北藝術進駐國際沙龍",
     "s": "2026/09/04",
-    "e": "2026/09/08",
+    "e": "2026/09/04",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/b076f675-d5c7-4b7f-90bc-9967e047e803",
     "img": "https://www.songshanculturalpark.org/gallery/1787128191_66e2a504984684500b6b.jpg",
     "ty": "special"
@@ -510,25 +510,49 @@
     "ty": "special"
    },
    {
-    "t": "還是先躺一下再說？ Lay Down",
-    "s": "2026/11/13",
-    "e": "2026/11/15",
+   "t": "還是先躺一下再說？ Lay Down",
+    "s": "2026/06/12",
+    "e": "2027/03/01",
     "l": "https://pier2.org/exhibition/info/1922/",
     "img": "https://pier2.org/upload/others/files/DFO8633.jpg",
     "ty": "special"
    },
    {
+    "t": "怪獸風景－西川伸司＆氫酸鉀駐地創作展",
+    "s": "2026/06/12",
+    "e": "2026/09/28",
+    "l": "https://pier2.org/exhibition/info/1926/",
+    "img": "https://pier2.org/upload/others/files/BTO9370.jpg",
+    "ty": "special"
+   },
+   {
     "t": "漫畫便當店 COMIC BENTO",
-    "s": "2026/11/13",
-    "e": "2026/11/15",
+    "s": "2026/06/12",
+    "e": "2026/09/28",
     "l": "https://pier2.org/exhibition/info/1927/",
     "img": "https://pier2.org/upload/others/files/JUV2048.jpg",
     "ty": "special"
    },
    {
+    "t": "駁二舊事倉庫",
+    "s": "2026/01/22",
+    "e": "2030/12/31",
+    "l": "https://pier2.org/exhibition/info/3/",
+    "img": "https://pier2.org/upload/others/files/YBM5744.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "《凡爾賽玫瑰》快閃空間",
+    "s": "2026/06/13",
+    "e": "2026/09/28",
+    "l": "https://pier2.org/exhibition/info/1933/",
+    "img": "https://pier2.org/upload/others/files/SRQ4915.jpg",
+    "ty": "special"
+   },
+   {
     "t": "彩虹地景",
-    "s": "2026/11/13",
-    "e": "2026/11/15",
+    "s": "2020/11/14",
+    "e": "2027/12/31",
     "l": "https://pier2.org/exhibition/info/905/",
     "img": "https://pier2.org/upload/others/files/GLR4062.jpg",
     "ty": "special"
@@ -575,50 +599,26 @@
    },
    {
     "t": "115 年長者量六力互動式展覽「六力時光機，找回健康力」",
-    "s": "2026/11/13",
-    "e": "2026/11/15",
+    "s": "2026/09/10",
+    "e": "2026/09/14",
     "l": "https://pier2.org/exhibition/info/1964/",
     "img": "https://pier2.org/upload/others/files/MDC8522.jpg",
     "ty": "special"
    },
    {
-    "t": "nagano market POP UP SHOP",
-    "s": "2026/05/29",
-    "e": "2026/07/19",
-    "l": "https://pier2.org/exhibition/info/1916/",
-    "img": "https://pier2.org/upload/event/HWSBKDVV223053.jpeg",
+    "t": "《獵人實境解謎遊戲－貪婪之島篇》高雄站",
+    "s": "2026/07/01",
+    "e": "2026/09/06",
+    "l": "https://pier2.org/exhibition/info/1923/",
+    "img": "https://pier2.org/upload/others/files/KBE0440.jpg",
     "ty": "special"
    },
    {
-    "t": "Mercedes-Benz 慶祝汽車發明 140 週年特展",
-    "s": "2026/06/12",
-    "e": "2026/06/14",
-    "l": "https://pier2.org/exhibition/info/1934/",
-    "img": "https://pier2.org/upload/others/files/NPZ0069.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "K.O.格鬥祭 FIGHTING FESTIVAL",
-    "s": "2026/02/14",
-    "e": "2026/06/07",
-    "l": "https://pier2.org/exhibition/info/1844/",
-    "img": "https://pier2.org/upload/others/files/GZZ3246.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "10秒鐘教室 | 令人討厭的便當配菜的一生",
-    "s": "2025/07/04",
-    "e": "2026/06/07",
-    "l": "https://pier2.org/exhibition/info/1714/",
-    "img": "https://pier2.org/upload/others/files/KJV7019.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "K.O.格鬥祭 | GAME OVER 動畫馬拉松",
-    "s": "2026/04/04",
-    "e": "2026/06/07",
-    "l": "https://pier2.org/exhibition/info/1899/",
-    "img": "https://pier2.org/upload/others/files/STS0790.jpg",
+    "t": "虎姑婆和他的朋友 勇氣島大冒險",
+    "s": "2026/09/17",
+    "e": "2026/12/20",
+    "l": "https://pier2.org/exhibition/info/1961/",
+    "img": "https://pier2.org/upload/others/files/OXC1659.jpg",
     "ty": "special"
    }
   ]
