@@ -949,27 +949,6 @@
    }
   ]
  },
- "台中東海大學": {
-  "city": "台中市",
-  "lat": 24.1822604,
-  "lng": 120.6025048,
-  "loc": "exact",
-  "addr": "台中市西屯區台灣大道四段1727號",
-  "url": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
-  "ex": [
-   {
-    "t": "伊藤潤二狂熱城市夜行路跑",
-    "s": "2026/08/29",
-    "e": "2026/08/29",
-    "l": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
-    "img": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
-    "cat2": "體驗活動/Experience Activity",
-    "ip": "伊藤潤二",
-    "org": "木棉花",
-    "lic": "木棉花"
-   }
-  ]
- },
  "台中驛鐵道文化園區 鐵鹿大街 A2": {
   "city": "台中市",
   "lat": 24.14447,
@@ -6102,8 +6081,8 @@
  },
  "駁二藝術特區": {
   "city": "高雄市",
-  "lat": 22.6198889,
-  "lng": 120.2817222,
+  "lat": 22.6203,
+  "lng": 120.282,
   "loc": "exact",
   "addr": "高雄市鹽埕區大勇路1號",
   "url": "https://www.instagram.com/p/DZZ0g9UpJHY/",
