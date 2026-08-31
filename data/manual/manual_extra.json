@@ -555,49 +555,6 @@
    }
   ]
  },
- "object taipei store": {
-  "city": "台北市",
-  "lat": 25.0566681,
-  "lng": 121.5210811,
-  "loc": "exact",
-  "addr": "台北市中山區中山北路二段62巷32號1樓",
-  "url": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
-  "ex": [
-   {
-    "t": "《Marshville Quokscout》",
-    "s": "2026/06/19",
-    "e": "2026/08/23",
-    "l": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/marshville_quokscout_20260619.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "Marshville Quokscout",
-    "org": "object taipei"
-   }
-  ]
- },
- "中友百貨": {
-  "city": "台中市",
-  "lat": 24.1522668,
-  "lng": 120.6847123,
-  "loc": "exact",
-  "addr": "台中市北區三民路三段161號",
-  "url": "https://www.instagram.com/p/DY3xo0lDO42/",
-  "ex": [
-   {
-    "t": "孤獨搖滾！動畫展（台中場）",
-    "s": "2026/07/20",
-    "e": "2026/08/20",
-    "l": "https://www.instagram.com/p/DY3xo0lDO42/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bocchi_animation_exhibition_taichung_20260720.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "孤獨搖滾！",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
  "全台誠品書店（誠品線上、誠品蝦皮同步；北中南逾20家主題IP店，含誠品生活新店、誠品書店恆春限定店、誠品R79、誠品書店中友店、松菸誠品表演廳、誠品板橋、誠品新板、高雄大遠百店等）": {
   "city": "高雄市",
   "lat": 22.77535,
@@ -992,27 +949,6 @@
    }
   ]
  },
- "台中東海大學": {
-  "city": "台中市",
-  "lat": 24.1822604,
-  "lng": 120.6025048,
-  "loc": "exact",
-  "addr": "台中市西屯區台灣大道四段1727號",
-  "url": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
-  "ex": [
-   {
-    "t": "伊藤潤二狂熱城市夜行路跑",
-    "s": "2026/08/29",
-    "e": "2026/08/29",
-    "l": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
-    "img": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
-    "cat2": "體驗活動/Experience Activity",
-    "ip": "伊藤潤二",
-    "org": "木棉花",
-    "lic": "木棉花"
-   }
-  ]
- },
  "台中驛鐵道文化園區 鐵鹿大街 A2": {
   "city": "台中市",
   "lat": 24.14447,
@@ -1068,48 +1004,14 @@
    }
   ]
  },
- "台北三創生活園區": {
-  "city": "台北市",
-  "lat": 25.045633,
-  "lng": 121.531021,
-  "loc": "exact",
-  "addr": "台北市中正區市民大道三段2號",
-  "url": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-  "ex": [
-   {
-    "t": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
-    "s": "2026/07/15",
-    "e": "2026/08/30",
-    "l": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dungeon_meshi_taipei_20260715.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "迷宮飯",
-    "org": "INCUBASE Studio X TRENDIC",
-    "lic": "INCUBASE Studio"
-   }
-  ]
- },
  "台北三創生活園區 6F INCUBASE Arena": {
   "city": "台北市",
   "lat": 25.045633,
   "lng": 121.531021,
   "loc": "exact",
   "addr": "台北市中正區市民大道三段2號6樓",
-  "url": "https://www.instagram.com/p/DZpKKNpDIN3/",
+  "url": "https://www.instagram.com/p/DaNEtndDFyn/",
   "ex": [
-   {
-    "t": "《東京喰種》期間限定快閃店",
-    "s": "2026/07/31",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_ghoul_incubase_20260731.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "東京喰種",
-    "org": "INCUBASE",
-    "lic": "INCUBASE"
-   },
    {
     "t": "HUNTER×HUNTER POP UP SHOP",
     "s": "2026/09/04",
@@ -1185,28 +1087,6 @@
     "ip": "寶可夢",
     "org": "The Pokémon Company（新光三越信義新天地協辦）",
     "lic": "The Pokémon Company"
-   }
-  ]
- },
- "台東縣鹿野鄉高台": {
-  "city": "台東縣",
-  "lat": 22.9241216,
-  "lng": 121.1247784,
-  "loc": "exact",
-  "addr": "台東縣鹿野鄉永安村高台路46號",
-  "url": "https://www.facebook.com/balloontaiwan",
-  "ex": [
-   {
-    "t": "吉伊卡哇-2026 臺灣國際熱氣球嘉年華",
-    "s": "2026/07/04",
-    "e": "2026/08/20",
-    "l": "https://www.facebook.com/balloontaiwan",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_balloon_festival_20260704.jpg",
-    "cat2": "活動/Event",
-    "fee": "免費",
-    "ip": "吉伊卡哇",
-    "org": "2026臺灣國際熱氣球嘉年華",
-    "lic": "三貝多"
    }
   ]
  },
@@ -3015,33 +2895,9 @@
   "lat": 22.5948961,
   "lng": 120.3079497,
   "loc": "exact",
-  "addr": "高雄市前鎮區中華五路789號；近高雄輕軌夢時代站、捷運凱旋站",
-  "url": "https://universe.oneone.com.tw/posts/6309",
+  "addr": "高雄市前鎮區中華五路789號8樓",
+  "url": "https://www.instagram.com/p/Db75of2D9Uy/",
   "ex": [
-   {
-    "t": "《家庭教師HITMAN REBORN!》動畫20週年快閃店（高雄場）",
-    "s": "2026/07/17",
-    "e": "2026/08/23",
-    "l": "https://universe.oneone.com.tw/posts/6309",
-    "img": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "家庭教師HITMAN REBORN!",
-    "org": "木棉花國際",
-    "lic": "木棉花"
-   },
-   {
-    "t": "2026高雄翻轉動漫祭",
-    "s": "2026/07/17",
-    "e": "2026/08/23",
-    "l": "https://gnn.gamer.com.tw/detail.php?sn=308179",
-    "img": "https://news.qoo-app.com/wp-content/uploads/2026/07/2026%E9%AB%98%E9%9B%84%E7%BF%BB%E8%BD%89%E5%8B%95%E6%BC%AB%E7%A5%AD%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "多動漫IP（Muse木棉花代理，含蠟筆小新、JOJO的奇妙冒險、暗殺教室、戀上換裝娃娃、86—不存在的戰區—、入間同學入魔了！、擅長逃跑的殿下、葬送的芙莉蓮 等17大動漫）",
-    "org": "木棉花國際（Muse木棉花）× 統一夢時代",
-    "lic": "木棉花"
-   },
    {
     "t": "Ani-One 玩轉動漫遊‧高雄場",
     "s": "2026/08/29",
@@ -3143,28 +2999,6 @@
    }
   ]
  },
- "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心": {
-  "city": "台北市",
-  "lat": 25.0461294,
-  "lng": 121.5441255,
-  "loc": "exact",
-  "addr": "台北市松山區復興南路一段39號",
-  "url": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-  "ex": [
-   {
-    "t": "San-X 90週年紀念展in台灣",
-    "s": "2026/06/27",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanx90_breeze_20260627.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "San-X",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
  "微風運河園區": {
   "city": "新北市",
   "lat": 25.09514,
@@ -3227,18 +3061,6 @@
     "ip": "吉伊卡哇（ちいかわ）",
     "org": "活動官方未公開",
     "lic": "ナガノ（官方頁版權列權利方）"
-   },
-   {
-    "t": "Sanrio Gift Gate 狗狗派對快閃店（台中站）",
-    "s": "2026/08/07",
-    "e": "2026/08/23",
-    "l": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_dog_party_taichung_20260807.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "三麗鷗家族",
-    "org": "三麗鷗股份有限公司／Sanrio Gift Gate Taiwan",
-    "lic": "Sanrio Co., Ltd."
    }
   ]
  },
@@ -3303,50 +3125,6 @@
     "ip": "鏈鋸人",
     "org": "Vision Toys／樂玩多 WAYTOFUN",
     "lic": "藤本樹／集英社・MAPPA／Chainsaw Man Project"
-   }
-  ]
- },
- "新光三越高雄左營店 10F": {
-  "city": "高雄市",
-  "lat": 22.688943,
-  "lng": 120.310525,
-  "loc": "exact",
-  "addr": "高雄市左營區高鐵路123號10樓",
-  "url": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-  "ex": [
-   {
-    "t": "Hello Kitty展 高雄站",
-    "s": "2026/07/03",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hello_kitty_kaohsiung_20260703.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "Hello Kitty",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
- "新莊棒球場": {
-  "city": "新北市",
-  "lat": 25.0402673,
-  "lng": 121.4474074,
-  "loc": "exact",
-  "addr": "新北市新莊區和興街66號",
-  "url": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
-  "ex": [
-   {
-    "t": "進擊的巨人 × 富邦棒球主題日",
-    "s": "2026/08/21",
-    "e": "2026/08/27",
-    "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
-    "img": "/kv/fubon-guardians-attack-on-titan-theme-day-20260821.jpg",
-    "cat2": "活動/Event",
-    "fee": "付費",
-    "ip": "進擊的巨人",
-    "org": "富邦悍將",
-    "lic": "木棉花"
    }
   ]
  },
@@ -3436,28 +3214,6 @@
    }
   ]
  },
- "澎湖": {
-  "city": "澎湖縣",
-  "lat": 23.56969,
-  "lng": 119.56645,
-  "loc": "exact",
-  "addr": "澎湖縣，2026澎湖花火節，地點：馬公觀音亭",
-  "url": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
-  "ex": [
-   {
-    "t": "2026 澎湖花火節 × 七龍珠Z",
-    "s": "2026/05/04",
-    "e": "2026/08/25",
-    "l": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
-    "img": "",
-    "cat2": "活動/Event",
-    "fee": "免費",
-    "ip": "七龍珠Z",
-    "org": "澎湖縣政府",
-    "lic": "東映"
-   }
-  ]
- },
  "爆彈燒本舖 南港 LaLaport": {
   "city": "台北市",
   "lat": 25.059345,
@@ -3543,72 +3299,6 @@
     "ip": "初音未來",
     "org": "需人工確認",
     "lic": "需人工確認"
-   }
-  ]
- },
- "羊空間 YOUNG SPACE": {
-  "city": "台北市",
-  "lat": 25.0531179,
-  "lng": 121.5219655,
-  "loc": "exact",
-  "addr": "台北市中山區中山北路二段16巷1號",
-  "url": "https://woman.udn.com/woman/story/123164/9629395",
-  "ex": [
-   {
-    "t": "Monchhichi Summer Vibe in Taiwan 2026 台灣快閃店",
-    "s": "2026/07/31",
-    "e": "2026/08/30",
-    "l": "https://woman.udn.com/woman/story/123164/9629395",
-    "img": "",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "Monchhichi（蒙奇奇）",
-    "org": "ipnjoy",
-    "lic": "官方"
-   }
-  ]
- },
- "義式屋古拉爵 南港中信店": {
-  "city": "台北市",
-  "lat": 25.0583953,
-  "lng": 121.6161248,
-  "loc": "exact",
-  "addr": "台北市南港區經貿二路166號中國信託金融廣場A棟2樓",
-  "url": "https://www.grazie.com.tw/data-414071",
-  "ex": [
-   {
-    "t": "第五人格 × 義式屋古拉爵 8週年聯名",
-    "s": "2026/07/22",
-    "e": "2026/08/23",
-    "l": "https://www.grazie.com.tw/data-414071",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/identityv_grazie_20260722.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "第五人格（Identity V）",
-    "org": "義式屋古拉爵",
-    "lic": "Joker Studio／NetEase Inc."
-   }
-  ]
- },
- "義式屋古拉爵 高雄大遠百店": {
-  "city": "高雄市",
-  "lat": 22.613424,
-  "lng": 120.303549,
-  "loc": "exact",
-  "addr": "高雄市苓雅區三多四路21號12樓",
-  "url": "https://www.grazie.com.tw/data-414071",
-  "ex": [
-   {
-    "t": "第五人格 × 義式屋古拉爵 8週年聯名",
-    "s": "2026/07/22",
-    "e": "2026/08/23",
-    "l": "https://www.grazie.com.tw/data-414071",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/identityv_grazie_20260722.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "第五人格（Identity V）",
-    "org": "義式屋古拉爵",
-    "lic": "Joker Studio／NetEase Inc."
    }
   ]
  },
@@ -6138,28 +5828,6 @@
    }
   ]
  },
- "誠品R79 中山地下書街B1": {
-  "city": "台北市",
-  "lat": 25.0525048,
-  "lng": 121.5203318,
-  "loc": "exact",
-  "addr": "台北市中山區南京西路16號B1",
-  "url": "https://www.instagram.com/p/DaURh41Sp6r",
-  "ex": [
-   {
-    "t": "mofusand快閃店",
-    "s": "2026/07/03",
-    "e": "2026/08/23",
-    "l": "https://www.instagram.com/p/DaURh41Sp6r",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mofusand_r79_20260703.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "mofusand",
-    "org": "需人工確認",
-    "lic": "需人工確認"
-   }
-  ]
- },
  "誠品生活新店": {
   "city": "新北市",
   "lat": 24.9777493,
@@ -6374,28 +6042,6 @@
     "ip": "我獨自升級（SOLO LEVELING）",
     "org": "樂曜日股份有限公司（NoonX）",
     "lic": "羚邦亞洲有限公司（Medialink）／Solo Leveling Animation Partners"
-   }
-  ]
- },
- "高雄夢時代購物中心8樓 時代會館": {
-  "city": "高雄市",
-  "lat": 22.5953429,
-  "lng": 120.3087795,
-  "loc": "exact",
-  "addr": "高雄市前鎮區中華五路789號",
-  "url": "https://www.instagram.com/p/DaU5z0TFPTd",
-  "ex": [
-   {
-    "t": "primaniacs 夢時代POPUP 2026",
-    "s": "2026/07/17",
-    "e": "2026/08/23",
-    "l": "https://www.instagram.com/p/DaU5z0TFPTd",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/primaniacs_dreammall_20260717.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "進擊的巨人／鬼滅之刃／One Piece等",
-    "org": "primaniacs",
-    "lic": "primaniacs"
    }
   ]
  },
