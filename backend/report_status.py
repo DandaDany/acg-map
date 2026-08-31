@@ -18,6 +18,7 @@
 """
 import json, os, time, datetime
 from paths import path as P
+from event_first_seen import taipei_today
 from report_event_kv import kv_status  # 共用同一套 KV 判斷（img 空 / 會過期外站網址 / 已自存）
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -69,7 +70,7 @@ def main():
             if code == "empty":
                 note = "無圖"
             elif code == "expiring":
-                note = "已過期破圖" if (expiry and expiry < datetime.date.today().isoformat()) else "會過期外站網址"
+                note = "已過期破圖" if (expiry and expiry < taipei_today()) else "會過期外站網址"
             else:  # remote
                 note = "尚未自存(外站官網圖)"
             miss_kv.append((v["name"], e["t"], note))
@@ -79,7 +80,7 @@ def main():
     cats = Counter(e.get("c", "?") for v in vs for e in v.get("ex", []))
 
     pct = lambda a, b: f"{a*100//b}%" if b else "0%"
-    print(f"# 全台 ACG 活動地圖　維護回報　{datetime.date.today():%Y/%m/%d}")
+    print(f"# 全台 ACG 活動地圖　維護回報　{taipei_today().replace('-', '/')}")
     print(f"目前：{n_v} 場館 / {n_e} 場活動　｜　來源 {dict(src)}　｜　主題分布 {dict(cats)}")
     print("（範圍已收斂為 ACG 活動＋六大文創園區活動，來源：文化部 API 已停用、官網爬蟲僅留六大園區＋手動/CACO/Cayenne，"
           "見 docs/README_docs.md 交接狀態 ✅已驗證）")

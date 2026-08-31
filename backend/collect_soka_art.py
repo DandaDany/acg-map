@@ -11,6 +11,7 @@ Output:
 """
 import datetime
 from paths import path as P
+from event_first_seen import taipei_today
 import html
 import json
 import os
@@ -29,7 +30,7 @@ LIST_URLS = [
     "https://www.soka-art.com/cn/exhibition",
 ]
 UA = "tw-exhibition-map-soka/0.1 local maintenance"
-TODAY = datetime.date.today()
+TODAY = datetime.date.fromisoformat(taipei_today())
 
 BRANCHES = {
     "tainan": {

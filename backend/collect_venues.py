@@ -18,14 +18,14 @@
 """
 import json, re, os, sys, tempfile, time, urllib.request
 from paths import path as P
+from event_first_seen import taipei_today
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date
 from urllib.parse import urljoin
 from playwright.sync_api import sync_playwright
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 def log(*a): print(*a, file=sys.stderr)
-TODAY = date.today().strftime("%Y/%m/%d")
+TODAY = taipei_today().replace("-", "/")
 
 def load_json_retry(path, default, tries=5, delay=0.6):
     if not os.path.exists(path):

@@ -24,8 +24,9 @@
 用法：python3 backend/update_all.py
 定期更新：用系統排程（cron / 工作排程器）每日或每週執行本檔即可。
 """
-import subprocess, sys, datetime
+import subprocess, sys
 from paths import path as P
+from event_first_seen import taipei_now
 
 def run(script, *args):
     label = " ".join((script, *args))
@@ -34,7 +35,7 @@ def run(script, *args):
     if r.returncode != 0:
         sys.exit(f"{label} 失敗（離開碼 {r.returncode}），venues.json 維持上一版")
 
-print(f"開始更新 {datetime.datetime.now():%Y-%m-%d %H:%M}")
+print(f"開始更新 {taipei_now():%Y-%m-%d %H:%M} (Asia/Taipei)")
 run("collect_venues.py")   # 六大園區官網爬蟲；任一步失敗即停，避免產生半套資料
 # 2026/07/12 停止收錄：collect_public.py（新竹/關渡/C-LAB）、collect_soka_art.py（索卡）——
 # 官網來源收斂為六大文創園區/特區，不再抓純美術館。如需恢復再取消下列註解。

@@ -1004,48 +1004,14 @@
    }
   ]
  },
- "台北三創生活園區": {
-  "city": "台北市",
-  "lat": 25.045633,
-  "lng": 121.531021,
-  "loc": "exact",
-  "addr": "台北市中正區市民大道三段2號",
-  "url": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-  "ex": [
-   {
-    "t": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
-    "s": "2026/07/15",
-    "e": "2026/08/30",
-    "l": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dungeon_meshi_taipei_20260715.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "迷宮飯",
-    "org": "INCUBASE Studio X TRENDIC",
-    "lic": "INCUBASE Studio"
-   }
-  ]
- },
  "台北三創生活園區 6F INCUBASE Arena": {
   "city": "台北市",
   "lat": 25.045633,
   "lng": 121.531021,
   "loc": "exact",
   "addr": "台北市中正區市民大道三段2號6樓",
-  "url": "https://www.instagram.com/p/DZpKKNpDIN3/",
+  "url": "https://www.instagram.com/p/DaNEtndDFyn/",
   "ex": [
-   {
-    "t": "《東京喰種》期間限定快閃店",
-    "s": "2026/07/31",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_ghoul_incubase_20260731.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "東京喰種",
-    "org": "INCUBASE",
-    "lic": "INCUBASE"
-   },
    {
     "t": "HUNTER×HUNTER POP UP SHOP",
     "s": "2026/09/04",
@@ -3033,28 +2999,6 @@
    }
   ]
  },
- "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心": {
-  "city": "台北市",
-  "lat": 25.0461294,
-  "lng": 121.5441255,
-  "loc": "exact",
-  "addr": "台北市松山區復興南路一段39號",
-  "url": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-  "ex": [
-   {
-    "t": "San-X 90週年紀念展in台灣",
-    "s": "2026/06/27",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanx90_breeze_20260627.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "San-X",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
  "微風運河園區": {
   "city": "新北市",
   "lat": 25.09514,
@@ -3181,28 +3125,6 @@
     "ip": "鏈鋸人",
     "org": "Vision Toys／樂玩多 WAYTOFUN",
     "lic": "藤本樹／集英社・MAPPA／Chainsaw Man Project"
-   }
-  ]
- },
- "新光三越高雄左營店 10F": {
-  "city": "高雄市",
-  "lat": 22.688943,
-  "lng": 120.310525,
-  "loc": "exact",
-  "addr": "高雄市左營區高鐵路123號10樓",
-  "url": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-  "ex": [
-   {
-    "t": "Hello Kitty展 高雄站",
-    "s": "2026/07/03",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hello_kitty_kaohsiung_20260703.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "Hello Kitty",
-    "org": "曼迪",
-    "lic": "曼迪"
    }
   ]
  },
@@ -3377,28 +3299,6 @@
     "ip": "初音未來",
     "org": "需人工確認",
     "lic": "需人工確認"
-   }
-  ]
- },
- "羊空間 YOUNG SPACE": {
-  "city": "台北市",
-  "lat": 25.0531179,
-  "lng": 121.5219655,
-  "loc": "exact",
-  "addr": "台北市中山區中山北路二段16巷1號",
-  "url": "https://woman.udn.com/woman/story/123164/9629395",
-  "ex": [
-   {
-    "t": "Monchhichi Summer Vibe in Taiwan 2026 台灣快閃店",
-    "s": "2026/07/31",
-    "e": "2026/08/30",
-    "l": "https://woman.udn.com/woman/story/123164/9629395",
-    "img": "",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "Monchhichi（蒙奇奇）",
-    "org": "ipnjoy",
-    "lic": "官方"
    }
   ]
  },

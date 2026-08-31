@@ -8,6 +8,7 @@ refresh_venues.py then applies that cache on every run.
 """
 import datetime
 from paths import path as P
+from event_first_seen import taipei_today
 import argparse
 import json
 import os
@@ -22,7 +23,7 @@ from urllib.parse import quote, unquote, urljoin, urlparse, urlunparse
 HERE = os.path.dirname(os.path.abspath(__file__))
 VENUES = P("venues.json")
 CACHE = P("event_kv_cache.json")
-TODAY = datetime.date.today().strftime("%Y/%m/%d")
+TODAY = taipei_today().replace("-", "/")
 
 _SSL_CTX = ssl._create_unverified_context()
 

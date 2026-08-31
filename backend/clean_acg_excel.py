@@ -14,6 +14,7 @@ This script folds the address row into the previous location cell so it becomes:
 It creates a timestamped backup before saving the workbook in place.
 """
 import datetime
+from event_first_seen import taipei_now
 from paths import path as P
 import json
 import os
@@ -111,7 +112,7 @@ def main():
 
     if total_merged:
         os.makedirs(BACKUP_DIR, exist_ok=True)
-        stamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        stamp = taipei_now().strftime("%Y%m%d_%H%M%S")
         backup = os.path.join(BACKUP_DIR, f"全台ACG活動.before_clean_{stamp}.xlsx")
         shutil.copy2(XLSX, backup)
         wb.save(XLSX)

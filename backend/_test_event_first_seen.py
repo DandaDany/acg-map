@@ -4,13 +4,14 @@ import os
 import sys
 import tempfile
 import unittest
+import datetime as dt
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 
-from event_first_seen import apply_first_seen  # noqa: E402
+from event_first_seen import apply_first_seen, taipei_today  # noqa: E402
 
 
 class EventFirstSeenTests(unittest.TestCase):
@@ -25,6 +26,10 @@ class EventFirstSeenTests(unittest.TestCase):
             apply_first_seen(venues, registry, today="2026-08-09")
             self.assertEqual(venues[0]["ex"][0]["first_seen"], "2026-08-01")
             self.assertEqual(json.loads(registry.read_text())["auto-stable"], "2026-08-01")
+
+    def test_taipei_today_crosses_utc_date_boundary(self):
+        utc = dt.datetime(2026, 8, 30, 16, 30, tzinfo=dt.timezone.utc)
+        self.assertEqual(taipei_today(utc), "2026-08-31")
 
     def test_new_event_receives_today_first_seen(self):
         with tempfile.TemporaryDirectory() as tmp:

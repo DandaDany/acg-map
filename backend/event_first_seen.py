@@ -12,8 +12,16 @@ from zoneinfo import ZoneInfo
 TAIPEI = ZoneInfo("Asia/Taipei")
 
 
-def taipei_today() -> str:
-    return dt.datetime.now(TAIPEI).date().isoformat()
+def taipei_now(now: dt.datetime | None = None) -> dt.datetime:
+    """Return an aware datetime in the product's canonical timezone."""
+    current = now or dt.datetime.now(TAIPEI)
+    if current.tzinfo is None:
+        current = current.replace(tzinfo=TAIPEI)
+    return current.astimezone(TAIPEI)
+
+
+def taipei_today(now: dt.datetime | None = None) -> str:
+    return taipei_now(now).date().isoformat()
 
 
 def load_registry(path: Path) -> dict[str, str | None]:

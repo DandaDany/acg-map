@@ -8,6 +8,7 @@ Outputs:
 """
 import datetime
 from paths import path as P
+from event_first_seen import taipei_today
 import html
 import json
 import os
@@ -192,7 +193,8 @@ def main():
         "_note": "ACG-related Cayenne Cafe events generated from cayenne_stores.json.",
         "venues": extra,
     }, open(EXTRA, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    current = sum(1 for info in extra.values() for e in info["ex"] if not e.get("e") or e["e"] >= datetime.date.today().strftime("%Y/%m/%d"))
+    today = taipei_today().replace("-", "/")
+    current = sum(1 for info in extra.values() for e in info["ex"] if not e.get("e") or e["e"] >= today)
     print(json.dumps({"stores": len(stores), "news": len(news), "venues": len(extra), "current_events": current}, ensure_ascii=False))
 
 

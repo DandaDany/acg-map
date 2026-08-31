@@ -29,6 +29,7 @@ import json
 from urllib.parse import urlparse, parse_qs
 
 from paths import path as P
+from event_first_seen import taipei_today
 
 KV_PREFIX = "kv/"
 EXPIRING_MARKERS = ("cdninstagram.com", "fbcdn.net")
@@ -69,7 +70,7 @@ REASON_TEXT = {
 
 def build_report(venues, today=None):
     """回傳 (rows, summary)。rows 只含有風險的活動。"""
-    today = today or datetime.date.today().isoformat()
+    today = today or taipei_today()
     rows = []
     counts = {"ok": 0, "empty": 0, "expiring": 0, "remote": 0}
     expired_now = 0

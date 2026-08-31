@@ -4,11 +4,12 @@ import datetime
 import json
 import os
 import unittest
+from event_first_seen import taipei_today
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VALID_FEES = {"免費", "付費"}
-TODAY = datetime.date.today()
+TODAY = datetime.date.fromisoformat(taipei_today())
 
 
 def load(relative_path):
