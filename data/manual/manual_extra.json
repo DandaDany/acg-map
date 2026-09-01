@@ -21,28 +21,6 @@
    }
   ]
  },
- "animate cafe 台北北門店": {
-  "city": "台北市",
-  "lat": 25.046082644279,
-  "lng": 121.511411565128,
-  "loc": "exact",
-  "addr": "台北市中正區博愛路7號",
-  "url": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
-  "ex": [
-   {
-    "t": "名偵探柯南 × animate cafe 台北北門店",
-    "s": "2026/07/29",
-    "e": "2026/09/01",
-    "l": "https://www.facebook.com/animatecafetw/posts/1373629048207729/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_animate_cafe_beimen_20260729.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "名偵探柯南",
-    "org": "animate cafe（安利美特台灣）",
-    "lic": "青山剛昌／小學館・讀賣電視台・TMS"
-   }
-  ]
- },
  "中友百貨 C棟13F 國際大廳": {
   "city": "台中市",
   "lat": 24.1522668,
