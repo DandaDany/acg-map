@@ -43,6 +43,29 @@
    }
   ]
  },
+ "中友百貨 C棟13F 國際大廳": {
+  "city": "台中市",
+  "lat": 24.1522668,
+  "lng": 120.6847123,
+  "loc": "exact",
+  "addr": "台中市北區三民路三段161號",
+  "url": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/",
+  "ex": [
+   {
+    "t": "JOJO CARAVAN《飆馬野郎》複製原畫展（台中站）",
+    "s": "2026/08/29",
+    "e": "2026/09/28",
+    "l": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_taichung_20260829.jpg",
+    "cat2": "展覽/Exhibition",
+    "fee": "免費",
+    "id": "manual-jojo-caravan-taichung-20260829",
+    "ip": "JOJO的奇妙冒險",
+    "org": "木棉花國際股份有限公司",
+    "lic": "荒木飛呂彥／LUCKY LAND COMMUNICATIONS／集英社"
+   }
+  ]
+ },
  "全台誠品書店（誠品線上、誠品蝦皮同步；北中南逾20家主題IP店，含誠品生活新店、誠品書店恆春限定店、誠品R79、誠品書店中友店、松菸誠品表演廳、誠品板橋、誠品新板、高雄大遠百店等）": {
   "city": "高雄市",
   "lat": 22.77535,

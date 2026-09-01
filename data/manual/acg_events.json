@@ -4443,5 +4443,29 @@
   "_links": {
    "活動連結 / Activity link": "https://www.instagram.com/p/DcNp0ahkksP/"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_taichung_20260829.jpg",
+  "類型 / Category": "展覽/Exhibition",
+  "活動類別 / Activity Category": "展覽/Exhibition",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-29 00:00:00",
+  "結束日期 / End Date": "2026-09-28 00:00:00",
+  "IP": "JOJO的奇妙冒險",
+  "活動名稱 / Activity Name": "JOJO CARAVAN《飆馬野郎》複製原畫展（台中站）",
+  "活動群組ID / Event Group ID": "manual-jojo-caravan-taichung-20260829",
+  "地點 / Location": "中友百貨 C棟13F 國際大廳（台中市北區三民路三段161號）",
+  "主辦方 / Organizer": "木棉花國際股份有限公司",
+  "授權單位 / Authorized unit (Licensor)": "荒木飛呂彥／LUCKY LAND COMMUNICATIONS／集英社",
+  "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/",
+  "備註 / NOTE": "Muse木棉花官方貼文確認官方巡迴展台中站於2026/08/29–09/28在中友百貨C棟13F舉辦；官方KV明載免費入場、C棟13F國際大廳、主辦單位MUSE木棉花，以及©Hirohiko Araki & LUCKY LAND COMMUNICATIONS/Shueisha版權列。KV取自同一官方貼文首圖，已下載1688×1688原圖並目視核對活動名稱、日期、地點、免費、主辦與權利方，保存為repository穩定檔案。Slack來源：https://uandmeclaude.slack.com/archives/C0B9ANKJ3L2/p1788169155835249",
+  "IP_std": "JOJO的奇妙冒險",
+  "Licensor_std": "集英社",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/"
+  }
  }
 ]
