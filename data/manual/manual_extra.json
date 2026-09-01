@@ -21,182 +21,6 @@
    }
   ]
  },
- "IKEA 內湖店": {
-  "city": "台北市",
-  "lat": 25.06084,
-  "lng": 121.578244,
-  "loc": "exact",
-  "addr": "台北市內湖區舊宗路一段128號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 台中店": {
-  "city": "台中市",
-  "lat": 24.147418,
-  "lng": 120.643179,
-  "loc": "exact",
-  "addr": "台中市南屯區向上路二段168號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 台北城市店": {
-  "city": "台北市",
-  "lat": 25.052912,
-  "lng": 121.548088,
-  "loc": "exact",
-  "addr": "台北市松山區敦化北路100號B1",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 嘉義城市店": {
-  "city": "嘉義市",
-  "lat": 23.478217,
-  "lng": 120.438062,
-  "loc": "exact",
-  "addr": "嘉義市西區博愛路二段281號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 新店店": {
-  "city": "新北市",
-  "lat": 24.972116,
-  "lng": 121.530795,
-  "loc": "exact",
-  "addr": "新北市新店區中央路159號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 新莊店": {
-  "city": "新北市",
-  "lat": 25.041438,
-  "lng": 121.465269,
-  "loc": "exact",
-  "addr": "新北市新莊區中正路1號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 桃園店": {
-  "city": "桃園市",
-  "lat": 25.013196,
-  "lng": 121.217479,
-  "loc": "exact",
-  "addr": "桃園市中壢區高鐵站前東路一段1號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
- "IKEA 高雄店": {
-  "city": "高雄市",
-  "lat": 22.605661,
-  "lng": 120.303915,
-  "loc": "exact",
-  "addr": "高雄市前鎮區中華五路1201號",
-  "url": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-  "ex": [
-   {
-    "t": "Pikmin Bloom × IKEA 台灣 期間限定活動",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.ikea.com.tw/zh/campaign/meet-decor-pikmin-at-ikea",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/pikmin_bloom_ikea_2026_20260801.webp",
-    "cat2": "體驗活動/Experience Activity",
-    "fee": "免費",
-    "ip": "皮克敏（Pikmin）",
-    "org": "IKEA Taiwan（宜家家居台灣）",
-    "lic": "Nintendo（Pikmin and Mii Characters / Artwork / Music © Nintendo）"
-   }
-  ]
- },
  "animate cafe 台北北門店": {
   "city": "台北市",
   "lat": 25.046082644279,
@@ -219,382 +43,26 @@
    }
   ]
  },
- "bb.q CHICKEN 三重三和店": {
-  "city": "新北市",
-  "lat": 25.079326,
-  "lng": 121.481494,
-  "loc": "exact",
-  "addr": "新北市三重區三和路四段398之1號1樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 中友百貨店": {
-  "city": "台中市",
-  "lat": 24.1522668,
-  "lng": 120.6847123,
-  "loc": "exact",
-  "addr": "台中市北區三民路三段161號B棟B2",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 中和中漢店": {
-  "city": "新北市",
-  "lat": 25.006584,
-  "lng": 121.47232,
-  "loc": "exact",
-  "addr": "新北市中和區中山路3段186號",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 公館店": {
-  "city": "台北市",
-  "lat": 25.0156631,
-  "lng": 121.5315247,
-  "loc": "exact",
-  "addr": "台北市中正區汀洲路3段153、155號1樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 南紡購物店": {
-  "city": "台南市",
-  "lat": 22.990582,
-  "lng": 120.233455,
-  "loc": "exact",
-  "addr": "台南市東區中華東路1段366號5樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 南西店": {
-  "city": "台北市",
-  "lat": 25.052676,
-  "lng": 121.52096,
-  "loc": "exact",
-  "addr": "台北市中山區南京西路15號7樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 台中崇德店": {
-  "city": "台中市",
-  "lat": 24.1707868,
-  "lng": 120.6851669,
-  "loc": "exact",
-  "addr": "台中市北屯區崇德路2段67號1樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 新竹巨城店": {
-  "city": "新竹市",
-  "lat": 24.809384,
-  "lng": 120.975509,
-  "loc": "exact",
-  "addr": "新竹市東區中央路229號4樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 松山店": {
-  "city": "台北市",
-  "lat": 25.0403043,
-  "lng": 121.5780041,
-  "loc": "exact",
-  "addr": "台北市信義區松山路435號",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 板橋板農店": {
-  "city": "新北市",
-  "lat": 25.008633,
-  "lng": 121.45876,
-  "loc": "exact",
-  "addr": "新北市板橋區府中路29之1號",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 桃園統領廣場店": {
-  "city": "桃園市",
-  "lat": 24.991113,
-  "lng": 121.312523,
-  "loc": "exact",
-  "addr": "桃園市桃園區中正路61號8樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 洲子店": {
-  "city": "台北市",
-  "lat": 25.0792389,
-  "lng": 121.5691082,
-  "loc": "exact",
-  "addr": "台北市內湖區瑞光路517號",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 芝山店": {
-  "city": "台北市",
-  "lat": 25.1024587,
-  "lng": 121.5229631,
-  "loc": "exact",
-  "addr": "台北市士林區福華路118號1樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "bb.q CHICKEN 鳳山青年店": {
-  "city": "高雄市",
-  "lat": 22.63988,
-  "lng": 120.3509,
-  "loc": "exact",
-  "addr": "高雄市鳳山區青年路2段305號1樓",
-  "url": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-  "ex": [
-   {
-    "t": "bb.q CHICKEN × 褲褲兔「下班俱樂部 AFTER WORK CLUB」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.bbqchicken.com.tw/news_page.aspx?id=1127",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bbq_opanchu_usagi_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "褲褲兔（Opanchu Usagi）",
-    "org": "bb.q CHICKEN Taiwan（全家國際餐飲股份有限公司）",
-    "lic": "需人工確認（KV標示 R&B Asia／©KAWAISOUNI!）",
-    "mf": "bb.q CHICKEN",
-    "ms": 14
-   }
-  ]
- },
- "object taipei store": {
-  "city": "台北市",
-  "lat": 25.0566681,
-  "lng": 121.5210811,
-  "loc": "exact",
-  "addr": "台北市中山區中山北路二段62巷32號1樓",
-  "url": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
-  "ex": [
-   {
-    "t": "《Marshville Quokscout》",
-    "s": "2026/06/19",
-    "e": "2026/08/23",
-    "l": "https://www.instagram.com/p/DZwtQdGE2ro?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/marshville_quokscout_20260619.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "Marshville Quokscout",
-    "org": "object taipei"
-   }
-  ]
- },
- "中友百貨": {
+ "中友百貨 C棟13F 國際大廳": {
   "city": "台中市",
   "lat": 24.1522668,
   "lng": 120.6847123,
   "loc": "exact",
   "addr": "台中市北區三民路三段161號",
-  "url": "https://www.instagram.com/p/DY3xo0lDO42/",
+  "url": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/",
   "ex": [
    {
-    "t": "孤獨搖滾！動畫展（台中場）",
-    "s": "2026/07/20",
-    "e": "2026/08/20",
-    "l": "https://www.instagram.com/p/DY3xo0lDO42/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bocchi_animation_exhibition_taichung_20260720.jpg",
+    "t": "JOJO CARAVAN《飆馬野郎》複製原畫展（台中站）",
+    "s": "2026/08/29",
+    "e": "2026/09/28",
+    "l": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo_caravan_taichung_20260829.jpg",
     "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "孤獨搖滾！",
-    "org": "曼迪",
-    "lic": "曼迪"
+    "fee": "免費",
+    "id": "manual-jojo-caravan-taichung-20260829",
+    "ip": "JOJO的奇妙冒險",
+    "org": "木棉花國際股份有限公司",
+    "lic": "荒木飛呂彥／LUCKY LAND COMMUNICATIONS／集英社"
    }
   ]
  },
@@ -971,48 +439,6 @@
    }
   ]
  },
- "台中中友百貨 B棟13F 文化大廳": {
-  "city": "台中市",
-  "lat": 24.1522668,
-  "lng": 120.6847123,
-  "loc": "exact",
-  "addr": "台中市北區三民路三段161號",
-  "url": "https://gnn.gamer.com.tw/detail.php?sn=308146",
-  "ex": [
-   {
-    "t": "東京卍復仇者展 最後的世界線 POP-UP STORE",
-    "s": "2026/08/06",
-    "e": "2026/08/31",
-    "l": "https://gnn.gamer.com.tw/detail.php?sn=308146",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_revengers_saigo_2026_20260806.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "ip": "東京卍復仇者",
-    "org": "曼迪傳播（Mighty Media）",
-    "lic": "需人工確認（KV版權標示 ©Ken Wakui, KODANSHA／Tokyo Revengers Exhibition Production Committee）"
-   }
-  ]
- },
- "台中東海大學": {
-  "city": "台中市",
-  "lat": 24.1822604,
-  "lng": 120.6025048,
-  "loc": "exact",
-  "addr": "台中市西屯區台灣大道四段1727號",
-  "url": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
-  "ex": [
-   {
-    "t": "伊藤潤二狂熱城市夜行路跑",
-    "s": "2026/08/29",
-    "e": "2026/08/29",
-    "l": "https://www.bryte-fun.com/activity/1c3889b0-d90e-41d0-88ca-198c78fd2b5e/pages/102",
-    "img": "https://bryte-dev-cdn.bearathome.com.tw/dc149475-85d4-3677-8e7c-f6c9cd42d160.jpg",
-    "cat2": "體驗活動/Experience Activity",
-    "ip": "伊藤潤二",
-    "org": "木棉花",
-    "lic": "木棉花"
-   }
-  ]
- },
  "台中驛鐵道文化園區 鐵鹿大街 A2": {
   "city": "台中市",
   "lat": 24.14447,
@@ -1068,48 +494,14 @@
    }
   ]
  },
- "台北三創生活園區": {
-  "city": "台北市",
-  "lat": 25.045633,
-  "lng": 121.531021,
-  "loc": "exact",
-  "addr": "台北市中正區市民大道三段2號",
-  "url": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-  "ex": [
-   {
-    "t": "九井諒子展 及 《迷宮飯》迷宮探索展 台灣站",
-    "s": "2026/07/15",
-    "e": "2026/08/30",
-    "l": "https://www.facebook.com/ryoko.kui.dungeonmeshi.exhibit/posts/pfbid032Ef5k9GqKLmkeKPBAbZ6PxRL2Ffum338mMXYLEaJyp5GArNZNXLzi74DRYHFgp1Tl?locale=zh_TW",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/dungeon_meshi_taipei_20260715.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "迷宮飯",
-    "org": "INCUBASE Studio X TRENDIC",
-    "lic": "INCUBASE Studio"
-   }
-  ]
- },
  "台北三創生活園區 6F INCUBASE Arena": {
   "city": "台北市",
   "lat": 25.045633,
   "lng": 121.531021,
   "loc": "exact",
   "addr": "台北市中正區市民大道三段2號6樓",
-  "url": "https://www.instagram.com/p/DZpKKNpDIN3/",
+  "url": "https://www.instagram.com/p/DaNEtndDFyn/",
   "ex": [
-   {
-    "t": "《東京喰種》期間限定快閃店",
-    "s": "2026/07/31",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZpKKNpDIN3/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/tokyo_ghoul_incubase_20260731.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "東京喰種",
-    "org": "INCUBASE",
-    "lic": "INCUBASE"
-   },
    {
     "t": "HUNTER×HUNTER POP UP SHOP",
     "s": "2026/09/04",
@@ -1185,28 +577,6 @@
     "ip": "寶可夢",
     "org": "The Pokémon Company（新光三越信義新天地協辦）",
     "lic": "The Pokémon Company"
-   }
-  ]
- },
- "台東縣鹿野鄉高台": {
-  "city": "台東縣",
-  "lat": 22.9241216,
-  "lng": 121.1247784,
-  "loc": "exact",
-  "addr": "台東縣鹿野鄉永安村高台路46號",
-  "url": "https://www.facebook.com/balloontaiwan",
-  "ex": [
-   {
-    "t": "吉伊卡哇-2026 臺灣國際熱氣球嘉年華",
-    "s": "2026/07/04",
-    "e": "2026/08/20",
-    "l": "https://www.facebook.com/balloontaiwan",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/chiikawa_balloon_festival_20260704.jpg",
-    "cat2": "活動/Event",
-    "fee": "免費",
-    "ip": "吉伊卡哇",
-    "org": "2026臺灣國際熱氣球嘉年華",
-    "lic": "三貝多"
    }
   ]
  },
@@ -3015,33 +2385,9 @@
   "lat": 22.5948961,
   "lng": 120.3079497,
   "loc": "exact",
-  "addr": "高雄市前鎮區中華五路789號；近高雄輕軌夢時代站、捷運凱旋站",
-  "url": "https://universe.oneone.com.tw/posts/6309",
+  "addr": "高雄市前鎮區中華五路789號8樓",
+  "url": "https://www.instagram.com/p/Db75of2D9Uy/",
   "ex": [
-   {
-    "t": "《家庭教師HITMAN REBORN!》動畫20週年快閃店（高雄場）",
-    "s": "2026/07/17",
-    "e": "2026/08/23",
-    "l": "https://universe.oneone.com.tw/posts/6309",
-    "img": "https://d89889xojlqhy.cloudfront.net/upload/featured/d234eb8ef0a0ebc168ef268b483477ab.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "家庭教師HITMAN REBORN!",
-    "org": "木棉花國際",
-    "lic": "木棉花"
-   },
-   {
-    "t": "2026高雄翻轉動漫祭",
-    "s": "2026/07/17",
-    "e": "2026/08/23",
-    "l": "https://gnn.gamer.com.tw/detail.php?sn=308179",
-    "img": "https://news.qoo-app.com/wp-content/uploads/2026/07/2026%E9%AB%98%E9%9B%84%E7%BF%BB%E8%BD%89%E5%8B%95%E6%BC%AB%E7%A5%AD%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "多動漫IP（Muse木棉花代理，含蠟筆小新、JOJO的奇妙冒險、暗殺教室、戀上換裝娃娃、86—不存在的戰區—、入間同學入魔了！、擅長逃跑的殿下、葬送的芙莉蓮 等17大動漫）",
-    "org": "木棉花國際（Muse木棉花）× 統一夢時代",
-    "lic": "木棉花"
-   },
    {
     "t": "Ani-One 玩轉動漫遊‧高雄場",
     "s": "2026/08/29",
@@ -3075,28 +2421,6 @@
     "ip": "綜合",
     "org": "野獸國 X SUNRISEPOP",
     "lic": "官方"
-   }
-  ]
- },
- "天成文旅 華山町餐酒館": {
-  "city": "台北市",
-  "lat": 25.0430852,
-  "lng": 121.5305187,
-  "loc": "exact",
-  "addr": "台北市中正區忠孝東路二段79號；捷運忠孝新生站步行約1分鐘",
-  "url": "https://www.huashandin.com.tw/events/20260623/",
-  "ex": [
-   {
-    "t": "貓咪大戰爭13週年「LOUNGE貓咪」× 天成文旅 華山町餐酒館",
-    "s": "2026/07/27",
-    "e": "2026/08/31",
-    "l": "https://www.huashandin.com.tw/events/20260623/",
-    "img": "https://www.huashandin.com.tw/wp-content/uploads/sites/224/2026/06/1-9.jpg",
-    "cat2": "主題餐廳/Theme Restaurant",
-    "fee": "付費",
-    "ip": "貓咪大戰爭（The Battle Cats）",
-    "org": "天成文旅 華山町餐酒館（天成飯店集團）",
-    "lic": "PONOS Corp."
    }
   ]
  },
@@ -3143,28 +2467,6 @@
    }
   ]
  },
- "微風廣場 Breeze MEGA Studio 8F C廳 & 9F D廳 藝文中心": {
-  "city": "台北市",
-  "lat": 25.0461294,
-  "lng": 121.5441255,
-  "loc": "exact",
-  "addr": "台北市松山區復興南路一段39號",
-  "url": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-  "ex": [
-   {
-    "t": "San-X 90週年紀念展in台灣",
-    "s": "2026/06/27",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZJepmSjPht/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanx90_breeze_20260627.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "San-X",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
  "微風運河園區": {
   "city": "新北市",
   "lat": 25.09514,
@@ -3183,28 +2485,6 @@
     "ip": "咒術迴戰（懷玉·玉折）",
     "org": "需人工確認",
     "lic": "羚邦 Medialink"
-   }
-  ]
- },
- "指南針 Lashinbang 誠品生活武昌店 3F": {
-  "city": "台北市",
-  "lat": 25.0450768,
-  "lng": 121.5057086,
-  "loc": "exact",
-  "addr": "台北市萬華區武昌街二段77號；西門町，捷運西門站",
-  "url": "https://www.facebook.com/lashinbang.tw/photos/-%E6%8C%87%E5%8D%97%E9%87%9D-%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E6%AD%A6%E6%98%8C%E5%BA%97%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E9%A0%90%E5%91%8A%E8%97%8D%E8%89%B2%E7%9B%A3%E7%8D%84%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E7%89%B9%E8%B3%A3%E7%86%B1%E8%A1%80%E9%96%8B%E8%B7%91%E9%9B%86%E7%B5%90%E4%BA%BA%E6%B0%A3%E8%A7%92%E8%89%B2%E5%91%A8%E9%82%8A%E7%84%A1%E8%AB%96%E6%98%AF%E6%94%B6%E8%97%8F%E9%82%84%E6%98%AF%E6%87%89%E6%8F%B4%E9%80%99%E6%AC%A1%E9%83%BD%E4%B8%8D%E8%83%BD%E9%8C%AF%E9%81%8E-%E6%B4%BB%E5%8B%95%E6%9C%9F%E9%96%9320260801%E5%85%AD20260831%E4%B8%80-/1408262328094553/",
-  "ex": [
-   {
-    "t": "藍色監獄 期間限定特賣（指南針 誠品生活武昌店）",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lashinbang.tw/photos/-%E6%8C%87%E5%8D%97%E9%87%9D-%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E6%AD%A6%E6%98%8C%E5%BA%97%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E9%A0%90%E5%91%8A%E8%97%8D%E8%89%B2%E7%9B%A3%E7%8D%84%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E7%89%B9%E8%B3%A3%E7%86%B1%E8%A1%80%E9%96%8B%E8%B7%91%E9%9B%86%E7%B5%90%E4%BA%BA%E6%B0%A3%E8%A7%92%E8%89%B2%E5%91%A8%E9%82%8A%E7%84%A1%E8%AB%96%E6%98%AF%E6%94%B6%E8%97%8F%E9%82%84%E6%98%AF%E6%87%89%E6%8F%B4%E9%80%99%E6%AC%A1%E9%83%BD%E4%B8%8D%E8%83%BD%E9%8C%AF%E9%81%8E-%E6%B4%BB%E5%8B%95%E6%9C%9F%E9%96%9320260801%E5%85%AD20260831%E4%B8%80-/1408262328094553/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/bluelock_lashinbang_wuchang_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "藍色監獄（BLUE LOCK）",
-    "org": "指南針 Lashinbang（台灣指南針）",
-    "lic": "需人工確認"
    }
   ]
  },
@@ -3227,18 +2507,6 @@
     "ip": "吉伊卡哇（ちいかわ）",
     "org": "活動官方未公開",
     "lic": "ナガノ（官方頁版權列權利方）"
-   },
-   {
-    "t": "Sanrio Gift Gate 狗狗派對快閃店（台中站）",
-    "s": "2026/08/07",
-    "e": "2026/08/23",
-    "l": "https://www.skm.com.tw/page/201/2026sannio?page_crumb=",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/sanrio_dog_party_taichung_20260807.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "三麗鷗家族",
-    "org": "三麗鷗股份有限公司／Sanrio Gift Gate Taiwan",
-    "lic": "Sanrio Co., Ltd."
    }
   ]
  },
@@ -3303,50 +2571,6 @@
     "ip": "鏈鋸人",
     "org": "Vision Toys／樂玩多 WAYTOFUN",
     "lic": "藤本樹／集英社・MAPPA／Chainsaw Man Project"
-   }
-  ]
- },
- "新光三越高雄左營店 10F": {
-  "city": "高雄市",
-  "lat": 22.688943,
-  "lng": 120.310525,
-  "loc": "exact",
-  "addr": "高雄市左營區高鐵路123號10樓",
-  "url": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-  "ex": [
-   {
-    "t": "Hello Kitty展 高雄站",
-    "s": "2026/07/03",
-    "e": "2026/08/30",
-    "l": "https://www.instagram.com/p/DZHVbrREseB/?img_index=1",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/hello_kitty_kaohsiung_20260703.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "付費",
-    "ip": "Hello Kitty",
-    "org": "曼迪",
-    "lic": "曼迪"
-   }
-  ]
- },
- "新莊棒球場": {
-  "city": "新北市",
-  "lat": 25.0402673,
-  "lng": 121.4474074,
-  "loc": "exact",
-  "addr": "新北市新莊區和興街66號",
-  "url": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
-  "ex": [
-   {
-    "t": "進擊的巨人 × 富邦棒球主題日",
-    "s": "2026/08/21",
-    "e": "2026/08/27",
-    "l": "https://www.fubonguardians.com/content/info/NewsDetail?id=696",
-    "img": "/kv/fubon-guardians-attack-on-titan-theme-day-20260821.jpg",
-    "cat2": "活動/Event",
-    "fee": "付費",
-    "ip": "進擊的巨人",
-    "org": "富邦悍將",
-    "lic": "木棉花"
    }
   ]
  },
@@ -3436,28 +2660,6 @@
    }
   ]
  },
- "澎湖": {
-  "city": "澎湖縣",
-  "lat": 23.56969,
-  "lng": 119.56645,
-  "loc": "exact",
-  "addr": "澎湖縣，2026澎湖花火節，地點：馬公觀音亭",
-  "url": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
-  "ex": [
-   {
-    "t": "2026 澎湖花火節 × 七龍珠Z",
-    "s": "2026/05/04",
-    "e": "2026/08/25",
-    "l": "https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html",
-    "img": "",
-    "cat2": "活動/Event",
-    "fee": "免費",
-    "ip": "七龍珠Z",
-    "org": "澎湖縣政府",
-    "lic": "東映"
-   }
-  ]
- },
  "爆彈燒本舖 南港 LaLaport": {
   "city": "台北市",
   "lat": 25.059345,
@@ -3470,50 +2672,6 @@
     "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
     "s": "2026/08/01",
     "e": "2026/09/30",
-    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "付費",
-    "ip": "葬送的芙莉蓮",
-    "org": "爆彈燒本舖",
-    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
-   }
-  ]
- },
- "爆彈燒本舖 新竹巨城": {
-  "city": "新竹市",
-  "lat": 24.809384,
-  "lng": 120.975509,
-  "loc": "exact",
-  "addr": "新竹市東區中央路229號4樓",
-  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
-  "ex": [
-   {
-    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "付費",
-    "ip": "葬送的芙莉蓮",
-    "org": "爆彈燒本舖",
-    "lic": "山田鐘人・アベツカサ／小學館／「葬送的芙莉蓮」製作委員會"
-   }
-  ]
- },
- "爆彈燒本舖 新莊宏匯": {
-  "city": "新北市",
-  "lat": 25.059944,
-  "lng": 121.449451,
-  "loc": "exact",
-  "addr": "新北市新莊區新北大道四段3號7樓",
-  "url": "https://www.instagram.com/p/DbSzwVIFPRH/",
-  "ex": [
-   {
-    "t": "《葬送的芙莉蓮》× 爆彈燒本舖 聯名快閃店",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
     "l": "https://www.instagram.com/p/DbSzwVIFPRH/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/frieren_bakudanyaki_20260801.jpg",
     "cat2": "快閃店/Pop Up Store",
@@ -3543,72 +2701,6 @@
     "ip": "初音未來",
     "org": "需人工確認",
     "lic": "需人工確認"
-   }
-  ]
- },
- "羊空間 YOUNG SPACE": {
-  "city": "台北市",
-  "lat": 25.0531179,
-  "lng": 121.5219655,
-  "loc": "exact",
-  "addr": "台北市中山區中山北路二段16巷1號",
-  "url": "https://woman.udn.com/woman/story/123164/9629395",
-  "ex": [
-   {
-    "t": "Monchhichi Summer Vibe in Taiwan 2026 台灣快閃店",
-    "s": "2026/07/31",
-    "e": "2026/08/30",
-    "l": "https://woman.udn.com/woman/story/123164/9629395",
-    "img": "",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "Monchhichi（蒙奇奇）",
-    "org": "ipnjoy",
-    "lic": "官方"
-   }
-  ]
- },
- "義式屋古拉爵 南港中信店": {
-  "city": "台北市",
-  "lat": 25.0583953,
-  "lng": 121.6161248,
-  "loc": "exact",
-  "addr": "台北市南港區經貿二路166號中國信託金融廣場A棟2樓",
-  "url": "https://www.grazie.com.tw/data-414071",
-  "ex": [
-   {
-    "t": "第五人格 × 義式屋古拉爵 8週年聯名",
-    "s": "2026/07/22",
-    "e": "2026/08/23",
-    "l": "https://www.grazie.com.tw/data-414071",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/identityv_grazie_20260722.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "第五人格（Identity V）",
-    "org": "義式屋古拉爵",
-    "lic": "Joker Studio／NetEase Inc."
-   }
-  ]
- },
- "義式屋古拉爵 高雄大遠百店": {
-  "city": "高雄市",
-  "lat": 22.613424,
-  "lng": 120.303549,
-  "loc": "exact",
-  "addr": "高雄市苓雅區三多四路21號12樓",
-  "url": "https://www.grazie.com.tw/data-414071",
-  "ex": [
-   {
-    "t": "第五人格 × 義式屋古拉爵 8週年聯名",
-    "s": "2026/07/22",
-    "e": "2026/08/23",
-    "l": "https://www.grazie.com.tw/data-414071",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/identityv_grazie_20260722.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "第五人格（Identity V）",
-    "org": "義式屋古拉爵",
-    "lic": "Joker Studio／NetEase Inc."
    }
   ]
  },
@@ -4425,160 +3517,6 @@
     "lic": "Animation International Ltd.（Animation Int'l）",
     "mf": "聚",
     "ms": 34
-   }
-  ]
- },
- "肉的長谷川 SOGO忠孝店": {
-  "city": "台北市",
-  "lat": 25.0417384,
-  "lng": 121.5449554,
-  "loc": "exact",
-  "addr": "台北市大安區忠孝東路四段45號B1美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
-   }
-  ]
- },
- "肉的長谷川 南港LaLaPort店": {
-  "city": "台北市",
-  "lat": 25.0586227,
-  "lng": 121.6169879,
-  "loc": "exact",
-  "addr": "台北市南港區經貿二路105巷1號5樓美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
-   }
-  ]
- },
- "肉的長谷川 台中新光三越中港店": {
-  "city": "台中市",
-  "lat": 24.1650058,
-  "lng": 120.6433984,
-  "loc": "exact",
-  "addr": "台中市西屯區台灣大道三段301號12樓美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
-   }
-  ]
- },
- "肉的長谷川 新竹巨城店": {
-  "city": "新竹市",
-  "lat": 24.809384,
-  "lng": 120.975509,
-  "loc": "exact",
-  "addr": "新竹市東區中央路229號4樓美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
-   }
-  ]
- },
- "肉的長谷川 林口三井店": {
-  "city": "新北市",
-  "lat": 25.0712411,
-  "lng": 121.3635472,
-  "loc": "exact",
-  "addr": "新北市林口區文化三路一段356號2樓美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
-   }
-  ]
- },
- "肉的長谷川 誠品南西店": {
-  "city": "台北市",
-  "lat": 25.0523804,
-  "lng": 121.5212653,
-  "loc": "exact",
-  "addr": "台北市中山區南京西路14號B1美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
-   }
-  ]
- },
- "肉的長谷川 高雄漢神巨蛋店": {
-  "city": "高雄市",
-  "lat": 22.669549,
-  "lng": 120.303159,
-  "loc": "exact",
-  "addr": "高雄市左營區博愛二路777號B1美食街",
-  "url": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-  "ex": [
-   {
-    "t": "《戀與製作人》× 肉的長谷川「盛夏美學合作餐廳」",
-    "s": "2026/08/01",
-    "e": "2026/08/31",
-    "l": "https://www.facebook.com/lovenproducerTW/posts/1487822886722445/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/love_and_producer_hasegawa_20260801.jpg",
-    "cat2": "主題餐廳/Theme Cafe",
-    "fee": "付費",
-    "ip": "戀與製作人",
-    "org": "戀與製作人台港澳官方 × 肉的長谷川",
-    "lic": "Paper Games（疊紙遊戲）；台港澳代理：翡莉絲網路科技有限公司"
    }
   ]
  },
@@ -6138,116 +5076,6 @@
    }
   ]
  },
- "誠品R79 中山地下書街B1": {
-  "city": "台北市",
-  "lat": 25.0525048,
-  "lng": 121.5203318,
-  "loc": "exact",
-  "addr": "台北市中山區南京西路16號B1",
-  "url": "https://www.instagram.com/p/DaURh41Sp6r",
-  "ex": [
-   {
-    "t": "mofusand快閃店",
-    "s": "2026/07/03",
-    "e": "2026/08/23",
-    "l": "https://www.instagram.com/p/DaURh41Sp6r",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/mofusand_r79_20260703.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "mofusand",
-    "org": "需人工確認",
-    "lic": "需人工確認"
-   }
-  ]
- },
- "誠品生活新店": {
-  "city": "新北市",
-  "lat": 24.9777493,
-  "lng": 121.5463634,
-  "loc": "exact",
-  "addr": "新北市新店區中興路三段70號，裕隆城B1-4F",
-  "url": "https://www.instagram.com/p/Daj62-JJU6Q",
-  "ex": [
-   {
-    "t": "「夏日動漫時光機」展",
-    "s": "2026/07/10",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "免費",
-    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
-    "org": "回歸線娛樂 X 誠品生活",
-    "lic": "需人工確認"
-   }
-  ]
- },
- "誠品生活松菸店": {
-  "city": "台北市",
-  "lat": 25.0447371,
-  "lng": 121.5611106,
-  "loc": "exact",
-  "addr": "台北市信義區菸廠路88號",
-  "url": "https://www.instagram.com/p/Daj62-JJU6Q",
-  "ex": [
-   {
-    "t": "「夏日動漫時光機」展",
-    "s": "2026/07/10",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "免費",
-    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
-    "org": "回歸線娛樂 X 誠品生活",
-    "lic": "需人工確認"
-   }
-  ]
- },
- "誠品生活武昌店": {
-  "city": "台北市",
-  "lat": 25.0450768,
-  "lng": 121.5057086,
-  "loc": "exact",
-  "addr": "台北市萬華區武昌街二段77號",
-  "url": "https://www.instagram.com/p/Daj62-JJU6Q",
-  "ex": [
-   {
-    "t": "「夏日動漫時光機」展",
-    "s": "2026/07/10",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "免費",
-    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
-    "org": "回歸線娛樂 X 誠品生活",
-    "lic": "需人工確認"
-   }
-  ]
- },
- "誠品生活西門店": {
-  "city": "台北市",
-  "lat": 25.0438027,
-  "lng": 121.505399,
-  "loc": "exact",
-  "addr": "台北市萬華區峨眉街52號",
-  "url": "https://www.instagram.com/p/Daj62-JJU6Q",
-  "ex": [
-   {
-    "t": "「夏日動漫時光機」展",
-    "s": "2026/07/10",
-    "e": "2026/08/31",
-    "l": "https://www.instagram.com/p/Daj62-JJU6Q",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anime_time_machine_eslite_20260710.jpg",
-    "cat2": "展覽/Exhibition",
-    "fee": "免費",
-    "ip": "科學小飛俠／真珠美人魚／凡爾賽玫瑰",
-    "org": "回歸線娛樂 X 誠品生活",
-    "lic": "需人工確認"
-   }
-  ]
- },
  "遠東巨城購物中心": {
   "city": "新竹市",
   "lat": 24.809384,
@@ -6266,27 +5094,6 @@
     "ip": "褲褲兔（おぱんちゅうさぎ）",
     "org": "FANFANS",
     "lic": "Rights & Brands Asia"
-   }
-  ]
- },
- "遠雄海洋公園": {
-  "city": "花蓮縣",
-  "lat": 23.9009737,
-  "lng": 121.6014247,
-  "loc": "exact",
-  "addr": "花蓮縣壽豐鄉鹽寮村福德189號",
-  "url": "https://www.farglory-oceanpark.com.tw/info-in/cc1zMAarQdpZ6xJB/607Yn54nx4Ms0PI0",
-  "ex": [
-   {
-    "t": "進擊的巨人 × 遠雄海洋公園",
-    "s": "2026/07/01",
-    "e": "2026/08/31",
-    "l": "https://www.farglory-oceanpark.com.tw/info-in/cc1zMAarQdpZ6xJB/607Yn54nx4Ms0PI0",
-    "img": "https://www.farglory-oceanpark.com.tw/files/images/News/KV_2445X1729%20%281%29.png",
-    "cat2": "活動/Event",
-    "fee": "付費",
-    "ip": "進擊的巨人",
-    "lic": "木棉花"
    }
   ]
  },
@@ -6313,16 +5120,16 @@
  },
  "駁二藝術特區": {
   "city": "高雄市",
-  "lat": 22.6198889,
-  "lng": 120.2817222,
+  "lat": 22.6203,
+  "lng": 120.282,
   "loc": "exact",
   "addr": "高雄市鹽埕區大勇路1號",
   "url": "https://www.instagram.com/p/DZZ0g9UpJHY/",
   "ex": [
    {
     "t": "《凡爾賽玫瑰》快閃空間",
-    "s": "2026/06/12",
-    "e": "2026/09/27",
+    "s": "2026/06/13",
+    "e": "2026/09/28",
     "l": "https://www.instagram.com/p/DZZ0g9UpJHY/",
     "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rose_of_versailles_pier2_20260612.jpg",
     "cat2": "快閃店/Pop Up Store",
@@ -6374,28 +5181,6 @@
     "ip": "我獨自升級（SOLO LEVELING）",
     "org": "樂曜日股份有限公司（NoonX）",
     "lic": "羚邦亞洲有限公司（Medialink）／Solo Leveling Animation Partners"
-   }
-  ]
- },
- "高雄夢時代購物中心8樓 時代會館": {
-  "city": "高雄市",
-  "lat": 22.5953429,
-  "lng": 120.3087795,
-  "loc": "exact",
-  "addr": "高雄市前鎮區中華五路789號",
-  "url": "https://www.instagram.com/p/DaU5z0TFPTd",
-  "ex": [
-   {
-    "t": "primaniacs 夢時代POPUP 2026",
-    "s": "2026/07/17",
-    "e": "2026/08/23",
-    "l": "https://www.instagram.com/p/DaU5z0TFPTd",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/primaniacs_dreammall_20260717.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "進擊的巨人／鬼滅之刃／One Piece等",
-    "org": "primaniacs",
-    "lic": "primaniacs"
    }
   ]
  },

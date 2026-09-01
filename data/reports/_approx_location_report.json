@@ -1,12 +1,19 @@
 {
  "summary": {
-  "venues_total": 303,
-  "exact": 290,
-  "approx_total": 13,
-  "has_road_or_addr": 12,
+  "venues_total": 247,
+  "exact": 232,
+  "approx_total": 15,
+  "has_road_or_addr": 14,
   "only_area": 1
  },
  "has_road_or_addr": [
+  {
+   "name": "台中驛鐵道文化園區 鐵鹿大街 A2",
+   "city": "台中市",
+   "addr": "台中市中區台灣大道一段1號",
+   "loc": "building",
+   "url": "https://www.instagram.com/p/DcNp0ahkksP/"
+  },
   {
    "name": "和牛涮 仁德萬家福店",
    "city": "台南市",
@@ -90,6 +97,13 @@
    "addr": "高雄市岡山區捷安路25號",
    "loc": "building",
    "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "高雄夢時代購物中心 1F 時代光廊",
+   "city": "高雄市",
+   "addr": "高雄市前鎮區中華五路789號1樓",
+   "loc": "building",
+   "url": "https://www.instagram.com/p/DcLXtexlGz4/"
   }
  ],
  "only_area": [

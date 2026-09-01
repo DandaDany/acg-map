@@ -18,7 +18,7 @@
 import json, re, hashlib, urllib.request, datetime, os, sys, ssl, html
 from pathlib import Path
 from paths import path as P
-from event_first_seen import apply_first_seen
+from event_first_seen import apply_first_seen, taipei_today
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from concurrent.futures import ThreadPoolExecutor
 
@@ -40,7 +40,7 @@ API = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFin
 def _norm_title(t):
     """正規化活動標題（去空白、轉小寫）供跨場館去重比對。"""
     return re.sub(r'\s+', '', (t or '')).lower()
-TODAY = datetime.date.today().strftime("%Y/%m/%d")
+TODAY = taipei_today().replace("-", "/")
 CACHE = P("enrich_cache_v3.json")
 PUBLIC_DATE_RE = re.compile(r'^20\d{2}/(?:0[1-9]|1[0-2])/(?:0[1-9]|[12]\d|3[01])$')
 STRICT_OFFICIAL_DATE_VENUES = {"嘉義文化創意產業園區", "圓山花博", "松山文創園區"}

@@ -3776,5 +3776,15 @@
   "addr_key": "高雄市苓雅區三多四路21號12樓",
   "loc": "exact",
   "precision_note": "將既有人工活動圖釘移入持久 geocode SSOT；活動到期後仍保留供未來活動重用"
+ },
+ "中友百貨 C棟13F 國際大廳": {
+  "la": 24.1522668,
+  "lo": 120.6847123,
+  "source": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/",
+  "display_name": "中友百貨 C棟13F 國際大廳（台中市北區三民路三段161號）",
+  "type": "department_store",
+  "addr_key": "台中市北區三民路三段161號",
+  "loc": "exact",
+  "precision_note": "沿用同一門牌既有中友百貨精確場所圖釘；樓層無獨立室內座標"
  }
 }

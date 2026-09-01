@@ -463,6 +463,10 @@
     "addr": "台北市信義區光復南路133號",
     "source": "https://www.songshanculturalpark.org/exhibition/activity/c64a0dee-b436-408d-b527-b141ab24a202"
   },
+  "高雄市駁二藝術特區": {
+    "addr": "高雄市鹽埕區大勇路1號",
+    "source": "https://pier2.org/"
+  },
   "夢時代購物中心 8F 時代會館": {
     "addr": "高雄市前鎮區中華五路789號8樓",
     "source": "https://www.instagram.com/p/Db75of2D9Uy/"
@@ -498,5 +502,9 @@
   "義式屋古拉爵 高雄大遠百店": {
     "addr": "高雄市苓雅區三多四路21號12樓",
     "source": "https://www.grazie.com.tw/data-414071"
+  },
+  "中友百貨 C棟13F 國際大廳": {
+    "addr": "台中市北區三民路三段161號",
+    "source": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/"
   }
 }

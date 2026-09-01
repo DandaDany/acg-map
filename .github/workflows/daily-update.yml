@@ -50,7 +50,7 @@ jobs:
 
       - name: Get current date for PR title
         id: date
-        run: echo "today=$(date '+%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+        run: echo "today=$(TZ=Asia/Taipei date '+%Y-%m-%d')" >> "$GITHUB_OUTPUT"
 
       - name: Create Pull Request with updated data
         uses: peter-evans/create-pull-request@v6

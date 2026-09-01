@@ -18,14 +18,14 @@
 """
 import json, re, os, sys, tempfile, time, urllib.request
 from paths import path as P
+from event_first_seen import taipei_today
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date
 from urllib.parse import urljoin
 from playwright.sync_api import sync_playwright
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 def log(*a): print(*a, file=sys.stderr)
-TODAY = date.today().strftime("%Y/%m/%d")
+TODAY = taipei_today().replace("-", "/")
 
 def load_json_retry(path, default, tries=5, delay=0.6):
     if not os.path.exists(path):
@@ -72,7 +72,7 @@ VENUES = [
   "path":"/exhibition/activity/","exclude":r"(攻略|課程|培力|例大祭)"},
  {"key":"高雄市駁二藝術特區","city":"高雄市","lat":22.6203,"lng":120.2820,
   "url":"https://www.pier2.org","list":"https://pier2.org/exhibition/list/all/",
-  "path":"/exhibition/info/","exclude":r"","kv":"content"},
+  "path":"/exhibition/info/","root":"#event_list","exclude":r"","kv":"content"},
  {"key":"嘉義文化創意產業園區","city":"嘉義市","lat":23.4790,"lng":120.4490,"url":"https://www.g9cip.com","list":"https://www.g9cip.com/activity/exhibitions/","path":"auto","drop_past_start_without_end":True,"exclude":r"(名單|公告|得獎|徵件|徵選|報名|招標|研習)"},
  {"key":"花蓮文化創意產業園區","city":"花蓮縣","lat":23.9760,"lng":121.6090,"url":"https://hualien1913.nat.gov.tw","list":"https://hualien1913.nat.gov.tw/%e6%9c%80%e6%96%b0%e6%b4%bb%e5%8b%95/","path":"auto","exclude":r"(講座|工作坊|論壇|課程|徵件)"},  # 2026/07/18 check-sources.yml 實測：GitHub Actions 雲端連此網域回 403（本機/一般網路正常），故在雲端排程排除，見 CLOUD_EXCLUDE_KEYS
  {"key":"圓山花博","city":"台北市","lat":25.0703595,"lng":121.5204969,
@@ -81,6 +81,12 @@ VENUES = [
   "exclude":r"(講座|工作坊|論壇|課程|徵件)"},
 ]
 GLOBAL_EXCLUDE = re.compile(r"(news/article|門票|售票|常見問題|交通資訊)")
+
+# 官網清單中單一活動卡的容器。松山使用 `.rows`；若沒有在這一層停下，
+# closest() 會繼續向上命中包含多張卡的容器，使相鄰卡片日期被誤當成本活動
+# 結束日。駁二則是 <a><li>...</li></a>，卡片在連結的直接子層，不能只往上找。
+CARD_CONTAINER_SELECTOR = "li,article,.card,.item,.box,.rows"
+CARD_DESCENDANT_SELECTOR = ":scope > li,:scope > article,:scope > .card,:scope > .item,:scope > .box,:scope > .rows"
 
 # 2026/07/18：check-sources.yml 實測 GitHub Actions 雲端機器連 hualien1913.nat.gov.tw 回 403
 # （其餘 7 個來源皆 200，含另一個政府網域 expopark.taipei）。研判是該政府網站對雲端機房 IP
@@ -256,26 +262,32 @@ def _click_next(pg):
 
 def collect_one(pg, v):
     exclude = re.compile(v["exclude"]) if v.get("exclude") else None
-    _JS = """(pathkey)=>{
+    _JS = """(cfg)=>{
+      const pathkey=cfg.pathkey;
       const auto = (pathkey==='auto');
       const seen=new Set(), out=[];
+      const root=cfg.root?document.querySelector(cfg.root):document;
+      if(!root) return out;
       const fromImg=(im)=>im?(im.currentSrc||im.src||im.getAttribute('data-src')||im.getAttribute('data-original')||''):'';
       const fromBg=(box)=>{ if(!box) return ''; for(const c of [box,...box.querySelectorAll('*')]){ const bg=getComputedStyle(c).backgroundImage; const m=bg&&bg.match(/url\\(["']?([^"')]+)/); if(m && /\\.(jpg|jpeg|png|webp)/i.test(m[1])) return m[1]; } return ''; };
-      document.querySelectorAll('a').forEach(a=>{
+      root.querySelectorAll('a').forEach(a=>{
         const href=a.href||''; const txt=(a.innerText||'').trim();
         const title=(a.getAttribute('title')||txt).trim();
         if(auto){ if(!/(展|個展|聯展|特展|典藏)/.test(title+' '+txt)) return; }
         else { if(href.indexOf(pathkey)<0) return; }
         if((title||txt).length<8) return;
         if(seen.has(href)) return; seen.add(href);
-        const box=a.closest('li,article,.card,.item,.box')||a.parentElement||a;
+        const childCard=a.querySelector('__CARD_DESCENDANT_SELECTOR__');
+        const box=childCard?a:(a.closest('__CARD_CONTAINER_SELECTOR__')||a.parentElement||a);
         let img=fromImg(a.querySelector('img')||box.querySelector('img'));
         if(!img) img=fromBg(box);
         const boxtxt=(box.innerText||'').replace(/\\s+/g,' ').slice(0,220);
         out.push({txt:title||txt, href, img, boxtxt});
       });
       return out;
-    }"""
+    }""".replace("__CARD_CONTAINER_SELECTOR__", CARD_CONTAINER_SELECTOR).replace(
+        "__CARD_DESCENDANT_SELECTOR__", CARD_DESCENDANT_SELECTOR
+    )
     urls = v["list"] if isinstance(v["list"], list) else [v["list"]]
     items = []; _seen = set()
     MAX_PAGES = 15   # 翻頁上限，防無窮迴圈
@@ -294,7 +306,7 @@ def collect_one(pg, v):
                 pg.mouse.wheel(0, 2200); pg.wait_for_timeout(450)
             pg.wait_for_timeout(500)
             before = len(_seen)
-            for it in pg.evaluate(_JS, v["path"]):
+            for it in pg.evaluate(_JS, {"pathkey": v["path"], "root": v.get("root", "")}):
                 if it["href"] in _seen: continue
                 _seen.add(it["href"]); items.append(it)
             added = len(_seen) - before

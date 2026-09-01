@@ -15,11 +15,12 @@
 """
 import json, re, os, sys, datetime
 from paths import path as P
+from event_first_seen import taipei_today
 from playwright.sync_api import sync_playwright
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTP = P("venue_extra.json")
-TODAY = datetime.date.today().strftime("%Y/%m/%d")
+TODAY = taipei_today().replace("-", "/")
 def log(*a): print(*a, file=sys.stderr)
 
 # 場館基本資訊（座標取自 OpenStreetMap POI，與 refresh_venues.py 的 ANCHORS 一致）
