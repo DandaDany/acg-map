@@ -164,6 +164,14 @@
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26072515232688455",
     "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/S__90046467_26072715485853978.jpg",
     "ty": "special"
+   },
+   {
+    "t": "大春煉皂 華山限定特展",
+    "s": "2026/09/07",
+    "e": "2027/01/04",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26083110515386973",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/Dachun-_KV_1920_26083110563279414.jpg",
+    "ty": "special"
    }
   ]
  },
@@ -187,6 +195,14 @@
     "e": "2026/09/08",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/4e186226-c6a8-4981-af98-cd0e62981f91",
     "img": "https://www.songshanculturalpark.org/gallery/1787727769_1e1ed81f4e3dc0ab6c7e.png",
+    "ty": "special"
+   },
+   {
+    "t": "2026 原創服裝大賞頒獎典禮系列活動",
+    "s": "2026/10/02",
+    "e": "2026/10/04",
+    "l": "https://www.songshanculturalpark.org/exhibition/activity/b57ef955-2d9a-4e67-81bc-f99af969f954",
+    "img": "https://www.songshanculturalpark.org/gallery/1788144062_2ef0f233d32a882fea0e.jpg",
     "ty": "special"
    },
    {
@@ -275,22 +291,6 @@
     "e": "2026/09/28",
     "l": "https://www.songshanculturalpark.org/exhibition/activity/f398feec-d38d-4df4-86ea-b2afb13ed3ce",
     "img": "https://www.songshanculturalpark.org/gallery/1784775168_9677ab76fbc6e86caba9.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "PERCENTAGE《GHOST HOME》快閃店",
-    "s": "2026/07/29",
-    "e": "2026/08/30",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/82cc6a2f-f4e6-4eb4-9eb6-b32b89697e5b",
-    "img": "https://www.songshanculturalpark.org/gallery/1784871423_bd12a5cad1aa24f10055.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "PPULBATU <Hey! APPUL Market> POP-UP in TAIPEI",
-    "s": "2026/07/30",
-    "e": "2026/08/30",
-    "l": "https://www.songshanculturalpark.org/exhibition/activity/e0053678-92f0-4331-a4dd-9e6bf1d996a8",
-    "img": "https://www.songshanculturalpark.org/gallery/1784873882_87cbbc0407ad0efaaa63.jpg",
     "ty": "special"
    },
    {
@@ -494,14 +494,6 @@
     "ty": "special"
    },
    {
-    "t": "好想兔10週年特展",
-    "s": "2026/06/06",
-    "e": "2026/08/30",
-    "l": "https://pier2.org/exhibition/info/1910/",
-    "img": "https://pier2.org/upload/event/PCFQYXUX1391438.jpeg",
-    "ty": "special"
-   },
-   {
     "t": "Baby Shark 守護海洋大冒險",
     "s": "2026/07/01",
     "e": "2026/09/06",
@@ -518,14 +510,6 @@
     "ty": "special"
    },
    {
-    "t": "布丁狗30週年快閃店",
-    "s": "2026/06/13",
-    "e": "2026/08/30",
-    "l": "https://pier2.org/exhibition/info/1917/",
-    "img": "https://pier2.org/upload/others/files/FPB2976.jpg",
-    "ty": "special"
-   },
-   {
     "t": "ChiikawaBaby",
     "s": "2026/07/24",
     "e": "2026/09/06",
@@ -539,6 +523,14 @@
     "e": "2026/09/14",
     "l": "https://pier2.org/exhibition/info/1964/",
     "img": "https://pier2.org/upload/others/files/MDC8522.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "TAMASHII EXHIBITION 2026",
+    "s": "2026/09/19",
+    "e": "2026/09/28",
+    "l": "https://pier2.org/exhibition/info/1976/",
+    "img": "https://pier2.org/upload/event/YIFZFCQZ982552.jpeg",
     "ty": "special"
    },
    {
