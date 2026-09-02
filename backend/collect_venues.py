@@ -69,10 +69,11 @@ VENUES = [
   "path":"exhibition_","exclude":r"(攻略|市集|好市|論壇|講座)"},
  {"key":"松山文創園區","city":"台北市","lat":25.0438,"lng":121.5606,
   "url":"https://www.songshanculturalpark.org","list":"https://www.songshanculturalpark.org/exhibition",
-  "path":"/exhibition/activity/","exclude":r"(攻略|課程|培力|例大祭)"},
+  "path":"/exhibition/activity/","card_self":True,"exclude":r"(攻略|課程|培力|例大祭)"},
  {"key":"高雄市駁二藝術特區","city":"高雄市","lat":22.6203,"lng":120.2820,
   "url":"https://www.pier2.org","list":"https://pier2.org/exhibition/list/all/",
-  "path":"/exhibition/info/","root":"#event_list","exclude":r"","kv":"content"},
+  "path":"/exhibition/info/","root":"#event_list","settle_ms":8000,
+  "detail_dates":True,"exclude":r"","kv":"content"},
  {"key":"嘉義文化創意產業園區","city":"嘉義市","lat":23.4790,"lng":120.4490,"url":"https://www.g9cip.com","list":"https://www.g9cip.com/activity/exhibitions/","path":"auto","drop_past_start_without_end":True,"exclude":r"(名單|公告|得獎|徵件|徵選|報名|招標|研習)"},
  {"key":"花蓮文化創意產業園區","city":"花蓮縣","lat":23.9760,"lng":121.6090,"url":"https://hualien1913.nat.gov.tw","list":"https://hualien1913.nat.gov.tw/%e6%9c%80%e6%96%b0%e6%b4%bb%e5%8b%95/","path":"auto","exclude":r"(講座|工作坊|論壇|課程|徵件)"},  # 2026/07/18 check-sources.yml 實測：GitHub Actions 雲端連此網域回 403（本機/一般網路正常），故在雲端排程排除，見 CLOUD_EXCLUDE_KEYS
  {"key":"圓山花博","city":"台北市","lat":25.0703595,"lng":121.5204969,
@@ -278,7 +279,7 @@ def collect_one(pg, v):
         if((title||txt).length<8) return;
         if(seen.has(href)) return; seen.add(href);
         const childCard=a.querySelector('__CARD_DESCENDANT_SELECTOR__');
-        const box=childCard?a:(a.closest('__CARD_CONTAINER_SELECTOR__')||a.parentElement||a);
+        const box=cfg.cardSelf?a:(childCard?a:(a.closest('__CARD_CONTAINER_SELECTOR__')||a.parentElement||a));
         let img=fromImg(a.querySelector('img')||box.querySelector('img'));
         if(!img) img=fromBg(box);
         const boxtxt=(box.innerText||'').replace(/\\s+/g,' ').slice(0,220);
@@ -300,13 +301,20 @@ def collect_one(pg, v):
             pg.wait_for_load_state("networkidle", timeout=8000)
         except Exception:
             pass
-        pg.wait_for_timeout(1200)
+        # 駁二的 #event_list 由 AJAX 分兩階段填入；GitHub runner 上第一批 9 筆
+        # 可能先出現，稍後才補成完整當期清單。場館可用 settle_ms 要求等待清單穩定，
+        # 避免把「部分成功」誤當成完整結果並覆蓋昨日資料。
+        pg.wait_for_timeout(v.get("settle_ms", 1200))
         for _page in range(MAX_PAGES):
             for _ in range(5):
                 pg.mouse.wheel(0, 2200); pg.wait_for_timeout(450)
             pg.wait_for_timeout(500)
             before = len(_seen)
-            for it in pg.evaluate(_JS, {"pathkey": v["path"], "root": v.get("root", "")}):
+            for it in pg.evaluate(_JS, {
+                "pathkey": v["path"],
+                "root": v.get("root", ""),
+                "cardSelf": v.get("card_self", False),
+            }):
                 if it["href"] in _seen: continue
                 _seen.add(it["href"]); items.append(it)
             added = len(_seen) - before
@@ -348,6 +356,23 @@ def collect_one(pg, v):
                 pg.goto(r["l"], wait_until="domcontentloaded", timeout=40000)
                 try: pg.wait_for_selector('#thecontent img', timeout=8000)
                 except Exception: pass
+                if v.get("detail_dates"):
+                    # 駁二部分列表卡只顯示每週開放時段，真正展期只在詳情頁的
+                    # .daterange 欄位。直接讀結構化欄位，不從整頁文字（含「猜你喜歡」）
+                    # 猜日期，避免活動被誤設為空日期或套到相鄰活動展期。
+                    detail = pg.evaluate("""()=>{
+                      const read=(sel)=>{
+                        const box=document.querySelector(sel);
+                        if(!box) return '';
+                        const y=(box.querySelector('.y')?.textContent||'').trim();
+                        const d=(box.querySelector('.d')?.textContent||'').trim();
+                        return y&&d ? `${y}/${d.replace('.', '/')}` : '';
+                      };
+                      return {s:read('.daterange.starttime'),e:read('.daterange.endtime')};
+                    }""") or {}
+                    if detail.get("s"):
+                        r["s"] = detail["s"]
+                        r["e"] = detail.get("e", "")
                 src = pg.evaluate("()=>{const i=document.querySelector('#thecontent img');return i?i.src:'';}") or ""
             except Exception:
                 src = ""

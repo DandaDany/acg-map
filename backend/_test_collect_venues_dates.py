@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import os
+import json
 import sys
 import types
 import unittest
+from pathlib import Path
 
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -22,6 +24,7 @@ from collect_venues import (
     VENUES,
     parse_dates,
 )
+from event_first_seen import taipei_today
 from refresh_venues import (
     STRICT_OFFICIAL_DATE_VENUES,
     filter_public_acg_only,
@@ -30,8 +33,23 @@ from refresh_venues import (
 
 
 class CollectVenueDateTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        path = Path(__file__).resolve().parents[1] / "data" / "generated" / "venue_extra.json"
+        cls.generated = json.loads(path.read_text(encoding="utf-8"))
+
+    def _event(self, venue, title):
+        return next(
+            (e for e in self.generated[venue]["ex"] if e["t"] == title),
+            None,
+        )
+
     def test_songshan_rows_are_a_card_boundary(self):
         self.assertIn(".rows", CARD_CONTAINER_SELECTOR.split(","))
+
+    def test_songshan_uses_each_activity_link_as_its_own_card(self):
+        songshan = next(v for v in VENUES if v["key"] == "松山文創園區")
+        self.assertTrue(songshan.get("card_self"))
 
     def test_anchor_wrapped_cards_are_a_descendant_boundary(self):
         self.assertIn(":scope > li", CARD_DESCENDANT_SELECTOR.split(","))
@@ -39,6 +57,34 @@ class CollectVenueDateTests(unittest.TestCase):
     def test_pier2_only_scans_current_event_list(self):
         pier2 = next(v for v in VENUES if v["key"] == "高雄市駁二藝術特區")
         self.assertEqual(pier2.get("root"), "#event_list")
+
+    def test_pier2_waits_for_ajax_and_reads_detail_dates(self):
+        pier2 = next(v for v in VENUES if v["key"] == "高雄市駁二藝術特區")
+        self.assertGreaterEqual(pier2.get("settle_ms", 0), 8000)
+        self.assertTrue(pier2.get("detail_dates"))
+
+    def test_current_pier2_events_cannot_silently_disappear_or_lose_dates(self):
+        if taipei_today() <= "2026-09-06":
+            hunter = self._event(
+                "高雄市駁二藝術特區",
+                "《獵人實境解謎遊戲－貪婪之島篇》高雄站",
+            )
+            self.assertIsNotNone(hunter)
+            self.assertEqual((hunter["s"], hunter["e"]), ("2026/07/01", "2026/09/06"))
+        if taipei_today() <= "2026-09-28":
+            comic = self._event("高雄市駁二藝術特區", "漫畫便當店 COMIC BENTO")
+            self.assertIsNotNone(comic)
+            self.assertEqual((comic["s"], comic["e"]), ("2026/06/12", "2026/09/28"))
+
+    def test_songshan_single_day_events_do_not_borrow_adjacent_dates(self):
+        if taipei_today() <= "2026-09-04":
+            for title in (
+                "從品牌到體驗：設計如何被記住 | 2026 年 iF 設計獎系列講座 (II)",
+                "2026 臺北藝術進駐國際沙龍",
+            ):
+                event = self._event("松山文創園區", title)
+                self.assertIsNotNone(event)
+                self.assertEqual((event["s"], event["e"]), ("2026/09/04", "2026/09/04"))
 
     def test_valid_range_is_preserved(self):
         self.assertEqual(
