@@ -168,8 +168,15 @@ class VerifiedEventKvTests(unittest.TestCase):
         }
         self.assertEqual(pins, {venue: expected for venue in active_venues})
         local_path = os.path.join(ROOT, "public", expected.removeprefix("/"))
-        self.assertTrue(os.path.isfile(local_path), local_path)
-        self.assertGreater(os.path.getsize(local_path), 512)
+        if active_venues:
+            self.assertTrue(os.path.isfile(local_path), local_path)
+            self.assertGreater(os.path.getsize(local_path), 512)
+        else:
+            # public/kv is a dated generated layer.  Once every pin for the
+            # event has expired, download_event_kv.py intentionally garbage-
+            # collects this public copy; the verified source KV remains in
+            # the persistent manual SSOT rows above.
+            self.assertFalse(os.path.exists(local_path), local_path)
 
 
 if __name__ == "__main__":
