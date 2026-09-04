@@ -19,6 +19,8 @@
 六館官網的列表卡日期只可在明確卡片邊界內解析；駁二清單若未完整載入不得覆蓋昨日成果，
 且其列表缺日期時應讀取官方詳情頁的結構化展期欄位。這些修正只影響 generated／public 衍生層，
 不得回寫或改寫本目錄的人工 SSOT。
+駁二即使回傳非空清單，只要相較昨日缺少官方結束日尚未到期的活動，就視為 AJAX 部分載入；保留本次新抓資料並補回仍有效的昨日活動，
+已到期活動不受此保護，仍會依 Asia/Taipei 日期正常下架。
 
 持久資料模型：歷史人工活動來源以 `acg_events.json` 為準；活動欄位決策以 metadata／admission 等 overrides 為準；場館地址與座標以 `venue_address_overrides.json`、`venue_geocodes.json` 為準。測試不得要求到期活動繼續留在 `manual_extra.json` 或 `public/venues.json`。`public/kv/` 同樣是依當期公開活動重建的衍生層；活動全部到期後，未再被引用的公開 KV 會由管線清理，測試只應保護人工來源列所引用的持久 KV，不得要求孤兒公開副本永久存在。所有「今天」、到期判斷、輸出日期與 Daily Update PR 日期一律以 Asia/Taipei 為準，不得依 runner 的 UTC 或本機時區漂移。
 

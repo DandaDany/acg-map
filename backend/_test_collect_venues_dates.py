@@ -22,6 +22,8 @@ from collect_venues import (
     CARD_CONTAINER_SELECTOR,
     CARD_DESCENDANT_SELECTOR,
     VENUES,
+    merge_partial_events,
+    missing_active_events,
     parse_dates,
 )
 from event_first_seen import taipei_today
@@ -62,6 +64,60 @@ class CollectVenueDateTests(unittest.TestCase):
         pier2 = next(v for v in VENUES if v["key"] == "高雄市駁二藝術特區")
         self.assertGreaterEqual(pier2.get("settle_ms", 0), 8000)
         self.assertTrue(pier2.get("detail_dates"))
+        self.assertTrue(pier2.get("preserve_active_on_partial"))
+
+    def test_partial_pier2_list_cannot_overwrite_still_active_events(self):
+        previous = [
+            {
+                "t": "仍在展期",
+                "e": "2026/09/06",
+                "l": "https://pier2.org/exhibition/info/1923/",
+            },
+            {
+                "t": "已結束",
+                "e": "2026/09/02",
+                "l": "https://pier2.org/exhibition/info/old/",
+            },
+        ]
+        fresh = [
+            {
+                "t": "其他活動",
+                "e": "2026/09/30",
+                "l": "https://pier2.org/exhibition/info/new/",
+            }
+        ]
+        self.assertEqual(
+            missing_active_events(previous, fresh, today="2026/09/04"),
+            ["仍在展期"],
+        )
+
+    def test_complete_pier2_list_is_accepted(self):
+        previous = [
+            {
+                "t": "活動",
+                "e": "2026/09/06",
+                "l": "https://pier2.org/exhibition/info/1923/",
+            }
+        ]
+        fresh = [
+            {
+                "t": "活動更新名稱",
+                "e": "2026/09/06",
+                "l": "https://pier2.org/exhibition/info/1923/",
+            }
+        ]
+        self.assertEqual(missing_active_events(previous, fresh, today="2026/09/04"), [])
+
+    def test_partial_merge_restores_active_but_not_expired_events(self):
+        previous = [
+            {"t": "仍在展期", "e": "2026/09/06", "l": "https://pier2.org/active/"},
+            {"t": "已結束", "e": "2026/09/02", "l": "https://pier2.org/expired/"},
+        ]
+        fresh = [
+            {"t": "新活動", "e": "2026/09/30", "l": "https://pier2.org/new/"}
+        ]
+        merged = merge_partial_events(previous, fresh, today="2026/09/04")
+        self.assertEqual([event["t"] for event in merged], ["新活動", "仍在展期"])
 
     def test_current_pier2_events_cannot_silently_disappear_or_lose_dates(self):
         if taipei_today() <= "2026-09-06":

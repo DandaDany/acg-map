@@ -3786,5 +3786,15 @@
   "addr_key": "台中市北區三民路三段161號",
   "loc": "exact",
   "precision_note": "沿用同一門牌既有中友百貨精確場所圖釘；樓層無獨立室內座標"
+ },
+ "台南南紡威秀影城": {
+  "la": 22.9914868,
+  "lo": 120.2328959,
+  "source": "same_building_verified_pin_2026-09-04",
+  "display_name": "台南南紡威秀影城（台南市東區中華東路一段366號5樓）",
+  "type": "building_or_site",
+  "addr_key": "台南市東區中華東路一段366號5樓",
+  "loc": "building",
+  "precision_note": "威秀官方館別頁確認完整地址；沿用南紡購物中心同址既有官方門市Google Maps建物圖釘，樓層無獨立室內座標"
  }
 }

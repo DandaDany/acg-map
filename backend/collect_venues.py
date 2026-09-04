@@ -73,7 +73,7 @@ VENUES = [
  {"key":"高雄市駁二藝術特區","city":"高雄市","lat":22.6203,"lng":120.2820,
   "url":"https://www.pier2.org","list":"https://pier2.org/exhibition/list/all/",
   "path":"/exhibition/info/","root":"#event_list","settle_ms":8000,
-  "detail_dates":True,"exclude":r"","kv":"content"},
+  "detail_dates":True,"preserve_active_on_partial":True,"exclude":r"","kv":"content"},
  {"key":"嘉義文化創意產業園區","city":"嘉義市","lat":23.4790,"lng":120.4490,"url":"https://www.g9cip.com","list":"https://www.g9cip.com/activity/exhibitions/","path":"auto","drop_past_start_without_end":True,"exclude":r"(名單|公告|得獎|徵件|徵選|報名|招標|研習)"},
  {"key":"花蓮文化創意產業園區","city":"花蓮縣","lat":23.9760,"lng":121.6090,"url":"https://hualien1913.nat.gov.tw","list":"https://hualien1913.nat.gov.tw/%e6%9c%80%e6%96%b0%e6%b4%bb%e5%8b%95/","path":"auto","exclude":r"(講座|工作坊|論壇|課程|徵件)"},  # 2026/07/18 check-sources.yml 實測：GitHub Actions 雲端連此網域回 403（本機/一般網路正常），故在雲端排程排除，見 CLOUD_EXCLUDE_KEYS
  {"key":"圓山花博","city":"台北市","lat":25.0703595,"lng":121.5204969,
@@ -426,6 +426,43 @@ def _err_tail(stderr):
     lines = [l for l in (stderr or "").splitlines() if l.strip()]
     return lines[-1].strip()[:200] if lines else ""
 
+def _event_identity(event):
+    """Prefer the official detail URL as the stable identity for a scraped event."""
+    link = (event.get("l") or "").strip().rstrip("/")
+    if link:
+        return link
+    return re.sub(r"\s+", " ", (event.get("t") or "").strip())
+
+def missing_active_events(previous, current, today=TODAY):
+    """Return previously known, still-active events absent from a fresh list.
+
+    Dynamic venue pages may expose only their first AJAX batch. A non-empty
+    response is therefore not sufficient evidence that the current list is
+    complete. Only dated events whose official end date has not passed are
+    protected; expired events may still disappear normally.
+    """
+    current_ids = {_event_identity(event) for event in current}
+    missing = []
+    for event in previous:
+        end = (event.get("e") or "").replace("-", "/")
+        if not re.fullmatch(r"20\d{2}/\d{2}/\d{2}", end) or end < today:
+            continue
+        if _event_identity(event) not in current_ids:
+            missing.append(event.get("t") or _event_identity(event))
+    return missing
+
+def merge_partial_events(previous, current, today=TODAY):
+    """Keep the fresh batch and restore only missing prior events still in range."""
+    merged = list(current)
+    current_ids = {_event_identity(event) for event in current}
+    for event in previous:
+        end = (event.get("e") or "").replace("-", "/")
+        if not re.fullmatch(r"20\d{2}/\d{2}/\d{2}", end) or end < today:
+            continue
+        if _event_identity(event) not in current_ids:
+            merged.append(event)
+    return merged
+
 def main():
     """主控：逐站以獨立 process group 子程序處理，即時寫檔。
     單站逾時會連同 Chromium 子孫程序一併終結，不會卡住整體流程。
@@ -450,8 +487,24 @@ def main():
             continue
         if data and v["key"] in data:
             if data[v["key"]].get("ex"):
-                out.update(data)
-                log(f"OK   {v['key']}: {len(out[v['key']]['ex'])} 展覽")
+                fresh = data[v["key"]]["ex"]
+                previous = out.get(v["key"], {}).get("ex", [])
+                missing = (
+                    missing_active_events(previous, fresh)
+                    if v.get("preserve_active_on_partial") else []
+                )
+                if missing:
+                    sample = "、".join(missing[:3])
+                    more = f" 等 {len(missing)} 筆" if len(missing) > 3 else ""
+                    log(
+                        f"PARTIAL {v['key']}：新清單 {len(fresh)} 筆，"
+                        f"缺少仍在展期的 {sample}{more}（補回仍有效的舊資料）"
+                    )
+                    data[v["key"]]["ex"] = merge_partial_events(previous, fresh)
+                    out.update(data)
+                else:
+                    out.update(data)
+                    log(f"OK   {v['key']}: {len(out[v['key']]['ex'])} 展覽")
             else:
                 log(f"MISS {v['key']}（保留舊資料：空結果）")
             dump_json_atomic(out, OUTP)
