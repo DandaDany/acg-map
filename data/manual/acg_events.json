@@ -4467,5 +4467,149 @@
   "_links": {
    "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-08-25 00:00:00",
+  "結束日期 / End Date": "2026-09-21 00:00:00",
+  "IP": "咒術迴戰",
+  "活動名稱 / Activity Name": "咒術迴戰 期間限定快閃店（威秀北中南場）",
+  "活動群組ID / Event Group ID": "manual-jujutsu-kaisen-vieshow-popup-20260825",
+  "地點 / Location": "新光三越台中中港店 10F（台中市西屯區臺灣大道三段301號10樓）",
+  "主辦方 / Organizer": "羚邦集團（Medialink Group）／Ani-One Taiwan",
+  "授權單位 / Authorized unit (Licensor)": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DcTGEbJDInO/",
+  "備註 / NOTE": "2026/09/03 Slack候選。Ani-One Taiwan官方貼文及正式KV載明台中場2026/08/25–09/21於新光三越台中中港店10F、台北與台南場2026/09/02–09/30於威秀影城；官方貼文未公告門票、預約或最低消費，商品選購不等於付費入場，判定免費。KV取自同一官方貼文並保存為repository穩定檔案，已目視核對三館日期、地點、Medialink／Ani-One標誌，以及©芥見下々／集英社・咒術迴戰製作委員會、Licensed by Medialink版權列。",
+  "IP_std": "咒術迴戰",
+  "Licensor_std": "羚邦 Medialink",
+  "月份": "2026-08-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DcTGEbJDInO/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-02 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "咒術迴戰",
+  "活動名稱 / Activity Name": "咒術迴戰 期間限定快閃店（威秀北中南場）",
+  "活動群組ID / Event Group ID": "manual-jujutsu-kaisen-vieshow-popup-20260825",
+  "地點 / Location": "台北京站威秀影城（台北市大同區市民大道一段209號5樓）",
+  "主辦方 / Organizer": "羚邦集團（Medialink Group）／Ani-One Taiwan",
+  "授權單位 / Authorized unit (Licensor)": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DcTGEbJDInO/",
+  "備註 / NOTE": "同一官方快閃店台北場；正式KV載明2026/09/02–09/30、台北京站威秀影城Q square京站時尚廣場5F。地址由威秀影城官方館別頁交叉確認。",
+  "IP_std": "咒術迴戰",
+  "Licensor_std": "羚邦 Medialink",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DcTGEbJDInO/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-02 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "咒術迴戰",
+  "活動名稱 / Activity Name": "咒術迴戰 期間限定快閃店（威秀北中南場）",
+  "活動群組ID / Event Group ID": "manual-jujutsu-kaisen-vieshow-popup-20260825",
+  "地點 / Location": "台南南紡威秀影城（台南市東區中華東路一段366號5樓）",
+  "主辦方 / Organizer": "羚邦集團（Medialink Group）／Ani-One Taiwan",
+  "授權單位 / Authorized unit (Licensor)": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DcTGEbJDInO/",
+  "備註 / NOTE": "同一官方快閃店台南場；正式KV載明2026/09/02–09/30、台南南紡威秀影城南紡購物中心5F。地址由威秀影城官方館別頁交叉確認；採南紡購物中心同址建物圖釘。",
+  "IP_std": "咒術迴戰",
+  "Licensor_std": "羚邦 Medialink",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DcTGEbJDInO/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/madoka-walpurgis-popup-20260904.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-04 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+  "活動名稱 / Activity Name": "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區",
+  "活動群組ID / Event Group ID": "manual-madoka-walpurgis-popup-20260904",
+  "地點 / Location": "台北京站威秀影城（台北市大同區市民大道一段209號5樓）",
+  "主辦方 / Organizer": "木棉花國際股份有限公司／威秀影城",
+  "授權單位 / Authorized unit (Licensor)": "Magica Quartet／Aniplex／Madoka Project",
+  "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
+  "備註 / NOTE": "2026/09/03 Slack候選。木棉花官方貼文載明期間限定商售區2026/09/04–09/30於台北京站、台中iFG遠雄廣場及高雄大遠百威秀影城舉辦，現場設角色背景牆、主視覺區與電影海報區，符合有獨立造景的快閃店而非一般電影上映。官方未公告門票、預約或最低消費，商品選購不等於付費入場，判定免費。正式KV取自同一官方來源並保存為repository穩定檔案，已目視核對活動名稱、日期、三館及©Magica Quartet／Aniplex／Madoka Project版權列。",
+  "IP_std": "魔法少女小圓",
+  "Licensor_std": "Aniplex",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/madoka-walpurgis-popup-20260904.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-04 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+  "活動名稱 / Activity Name": "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區",
+  "活動群組ID / Event Group ID": "manual-madoka-walpurgis-popup-20260904",
+  "地點 / Location": "台中iFG 遠雄廣場威秀影城（台中市東區復興路四段186號4樓）",
+  "主辦方 / Organizer": "木棉花國際股份有限公司／威秀影城",
+  "授權單位 / Authorized unit (Licensor)": "Magica Quartet／Aniplex／Madoka Project",
+  "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
+  "備註 / NOTE": "同一官方期間限定商售區台中場；木棉花官方貼文與威秀官方館別頁確認地點及完整地址。",
+  "IP_std": "魔法少女小圓",
+  "Licensor_std": "Aniplex",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/madoka-walpurgis-popup-20260904.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-04 00:00:00",
+  "結束日期 / End Date": "2026-09-30 00:00:00",
+  "IP": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+  "活動名稱 / Activity Name": "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區",
+  "活動群組ID / Event Group ID": "manual-madoka-walpurgis-popup-20260904",
+  "地點 / Location": "高雄大遠百威秀影城（高雄市苓雅區三多四路21號13樓）",
+  "主辦方 / Organizer": "木棉花國際股份有限公司／威秀影城",
+  "授權單位 / Authorized unit (Licensor)": "Magica Quartet／Aniplex／Madoka Project",
+  "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
+  "備註 / NOTE": "同一官方期間限定商售區高雄場；木棉花官方貼文與威秀官方館別頁確認地點及完整地址。",
+  "IP_std": "魔法少女小圓",
+  "Licensor_std": "Aniplex",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/"
+  }
  }
 ]

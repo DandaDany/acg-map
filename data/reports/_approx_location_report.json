@@ -1,9 +1,9 @@
 {
  "summary": {
-  "venues_total": 246,
+  "venues_total": 247,
   "exact": 231,
-  "approx_total": 15,
-  "has_road_or_addr": 14,
+  "approx_total": 16,
+  "has_road_or_addr": 15,
   "only_area": 1
  },
  "has_road_or_addr": [
@@ -13,6 +13,13 @@
    "addr": "台中市中區台灣大道一段1號",
    "loc": "building",
    "url": "https://www.instagram.com/p/DcNp0ahkksP/"
+  },
+  {
+   "name": "台南南紡威秀影城",
+   "city": "台南市",
+   "addr": "台南市東區中華東路一段366號5樓",
+   "loc": "building",
+   "url": "https://www.instagram.com/p/DcTGEbJDInO/"
   },
   {
    "name": "和牛涮 仁德萬家福店",

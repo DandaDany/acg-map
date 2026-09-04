@@ -380,19 +380,20 @@
   "lng": 120.687673995592,
   "loc": "exact",
   "addr": "台中市東區復興路四段186號4樓",
-  "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+  "url": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
   "ex": [
    {
-    "t": "蠟筆小新快閃店（威秀北中南場）",
-    "s": "2026/07/03",
-    "e": "2026/09/02",
-    "l": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
-    "img": "/kv/crayon-shinchan-popup-vieshow-20260703.jpg",
+    "t": "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區",
+    "s": "2026/09/04",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/madoka-walpurgis-popup-20260904.jpg",
     "cat2": "快閃店/Pop Up Store",
     "fee": "免費",
-    "ip": "蠟筆小新（Crayon Shin-chan）",
-    "org": "IP POPUP STORE（宅一番）",
-    "lic": "Animation International Ltd.／臼井儀人・雙葉社・SHIN-EI・テレビ朝日・ADK"
+    "id": "manual-madoka-walpurgis-popup-20260904",
+    "ip": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+    "org": "木棉花國際股份有限公司／威秀影城",
+    "lic": "Magica Quartet／Aniplex／Madoka Project"
    }
   ]
  },
@@ -499,19 +500,33 @@
   "lng": 121.518349936939,
   "loc": "exact",
   "addr": "台北市大同區市民大道一段209號5樓",
-  "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+  "url": "https://www.instagram.com/p/DcTGEbJDInO/",
   "ex": [
    {
-    "t": "蠟筆小新快閃店（威秀北中南場）",
-    "s": "2026/07/03",
-    "e": "2026/09/02",
-    "l": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
-    "img": "/kv/crayon-shinchan-popup-vieshow-20260703.jpg",
+    "t": "咒術迴戰 期間限定快閃店（威秀北中南場）",
+    "s": "2026/09/02",
+    "e": "2026/09/30",
+    "l": "https://www.instagram.com/p/DcTGEbJDInO/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
     "cat2": "快閃店/Pop Up Store",
     "fee": "免費",
-    "ip": "蠟筆小新（Crayon Shin-chan）",
-    "org": "IP POPUP STORE（宅一番）",
-    "lic": "Animation International Ltd.／臼井儀人・雙葉社・SHIN-EI・テレビ朝日・ADK"
+    "id": "manual-jujutsu-kaisen-vieshow-popup-20260825",
+    "ip": "咒術迴戰",
+    "org": "羚邦集團（Medialink Group）／Ani-One Taiwan",
+    "lic": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會"
+   },
+   {
+    "t": "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區",
+    "s": "2026/09/04",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/madoka-walpurgis-popup-20260904.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "id": "manual-madoka-walpurgis-popup-20260904",
+    "ip": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+    "org": "木棉花國際股份有限公司／威秀影城",
+    "lic": "Magica Quartet／Aniplex／Madoka Project"
    }
   ]
  },
@@ -555,6 +570,29 @@
     "ip": "寶可夢",
     "org": "The Pokémon Company（新光三越信義新天地協辦）",
     "lic": "The Pokémon Company"
+   }
+  ]
+ },
+ "台南南紡威秀影城": {
+  "city": "台南市",
+  "lat": 22.99159,
+  "lng": 120.23774,
+  "loc": "區級",
+  "addr": "台南市東區中華東路一段366號5樓",
+  "url": "https://www.instagram.com/p/DcTGEbJDInO/",
+  "ex": [
+   {
+    "t": "咒術迴戰 期間限定快閃店（威秀北中南場）",
+    "s": "2026/09/02",
+    "e": "2026/09/30",
+    "l": "https://www.instagram.com/p/DcTGEbJDInO/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "id": "manual-jujutsu-kaisen-vieshow-popup-20260825",
+    "ip": "咒術迴戰",
+    "org": "羚邦集團（Medialink Group）／Ani-One Taiwan",
+    "lic": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會"
    }
   ]
  },
@@ -2466,6 +2504,29 @@
    }
   ]
  },
+ "新光三越台中中港店 10F": {
+  "city": "台中市",
+  "lat": 24.18913,
+  "lng": 120.62962,
+  "loc": "區級",
+  "addr": "台中市西屯區台灣大道三段301號10樓",
+  "url": "https://www.instagram.com/p/DcTGEbJDInO/",
+  "ex": [
+   {
+    "t": "咒術迴戰 期間限定快閃店（威秀北中南場）",
+    "s": "2026/08/25",
+    "e": "2026/09/21",
+    "l": "https://www.instagram.com/p/DcTGEbJDInO/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "id": "manual-jujutsu-kaisen-vieshow-popup-20260825",
+    "ip": "咒術迴戰",
+    "org": "羚邦集團（Medialink Group）／Ani-One Taiwan",
+    "lic": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會"
+   }
+  ]
+ },
  "新光三越台中中港店 10F天空劇場": {
   "city": "台中市",
   "lat": 24.1650058,
@@ -2506,28 +2567,6 @@
     "ip": "新世紀福音戰士（EVANGELION）",
     "org": "TRENDIC／INCUBASE Studio",
     "lic": "khara, Inc."
-   }
-  ]
- },
- "新光三越台北信義新天地A8館5樓": {
-  "city": "台北市",
-  "lat": 25.0388131,
-  "lng": 121.5668002,
-  "loc": "exact",
-  "addr": "台北市信義區松高路12號5樓",
-  "url": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
-  "ex": [
-   {
-    "t": "《新世紀福音戰士》POP-UP STORE",
-    "s": "2026/07/31",
-    "e": "2026/09/03",
-    "l": "https://www.facebook.com/mightymedia.com.tw/posts/1495413392624764/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/eva_popup_20260731.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "新世紀福音戰士",
-    "org": "曼迪傳播",
-    "lic": "khara"
    }
   ]
  },
@@ -5168,19 +5207,20 @@
   "lng": 120.303548975058,
   "loc": "exact",
   "addr": "高雄市苓雅區三多四路21號13樓",
-  "url": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
+  "url": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
   "ex": [
    {
-    "t": "蠟筆小新快閃店（威秀北中南場）",
-    "s": "2026/07/03",
-    "e": "2026/09/02",
-    "l": "https://www.instagram.com/ippopupstore/p/Db7Jh2cjbos/",
-    "img": "/kv/crayon-shinchan-popup-vieshow-20260703.jpg",
+    "t": "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區",
+    "s": "2026/09/04",
+    "e": "2026/09/30",
+    "l": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/madoka-walpurgis-popup-20260904.jpg",
     "cat2": "快閃店/Pop Up Store",
     "fee": "免費",
-    "ip": "蠟筆小新（Crayon Shin-chan）",
-    "org": "IP POPUP STORE（宅一番）",
-    "lic": "Animation International Ltd.／臼井儀人・雙葉社・SHIN-EI・テレビ朝日・ADK"
+    "id": "manual-madoka-walpurgis-popup-20260904",
+    "ip": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
+    "org": "木棉花國際股份有限公司／威秀影城",
+    "lic": "Magica Quartet／Aniplex／Madoka Project"
    }
   ]
  },
