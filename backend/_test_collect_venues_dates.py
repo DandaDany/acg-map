@@ -64,6 +64,7 @@ class CollectVenueDateTests(unittest.TestCase):
         pier2 = next(v for v in VENUES if v["key"] == "高雄市駁二藝術特區")
         self.assertGreaterEqual(pier2.get("settle_ms", 0), 8000)
         self.assertTrue(pier2.get("detail_dates"))
+        self.assertTrue(pier2.get("detail_title"))
         self.assertTrue(pier2.get("preserve_active_on_partial"))
 
     def test_partial_pier2_list_cannot_overwrite_still_active_events(self):

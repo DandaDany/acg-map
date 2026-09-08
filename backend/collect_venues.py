@@ -73,7 +73,7 @@ VENUES = [
  {"key":"高雄市駁二藝術特區","city":"高雄市","lat":22.6203,"lng":120.2820,
   "url":"https://www.pier2.org","list":"https://pier2.org/exhibition/list/all/",
   "path":"/exhibition/info/","root":"#event_list","settle_ms":8000,
-  "detail_dates":True,"preserve_active_on_partial":True,"exclude":r"","kv":"content"},
+  "detail_dates":True,"detail_title":True,"preserve_active_on_partial":True,"exclude":r"","kv":"content"},
  {"key":"嘉義文化創意產業園區","city":"嘉義市","lat":23.4790,"lng":120.4490,"url":"https://www.g9cip.com","list":"https://www.g9cip.com/activity/exhibitions/","path":"auto","drop_past_start_without_end":True,"exclude":r"(名單|公告|得獎|徵件|徵選|報名|招標|研習)"},
  {"key":"花蓮文化創意產業園區","city":"花蓮縣","lat":23.9760,"lng":121.6090,"url":"https://hualien1913.nat.gov.tw","list":"https://hualien1913.nat.gov.tw/%e6%9c%80%e6%96%b0%e6%b4%bb%e5%8b%95/","path":"auto","exclude":r"(講座|工作坊|論壇|課程|徵件)"},  # 2026/07/18 check-sources.yml 實測：GitHub Actions 雲端連此網域回 403（本機/一般網路正常），故在雲端排程排除，見 CLOUD_EXCLUDE_KEYS
  {"key":"圓山花博","city":"台北市","lat":25.0703595,"lng":121.5204969,
@@ -368,11 +368,18 @@ def collect_one(pg, v):
                         const d=(box.querySelector('.d')?.textContent||'').trim();
                         return y&&d ? `${y}/${d.replace('.', '/')}` : '';
                       };
-                      return {s:read('.daterange.starttime'),e:read('.daterange.endtime')};
+                      const heading=(document.querySelector('h1')?.textContent||'').trim();
+                      return {s:read('.daterange.starttime'),e:read('.daterange.endtime'),title:heading};
                     }""") or {}
                     if detail.get("s"):
                         r["s"] = detail["s"]
                         r["e"] = detail.get("e", "")
+                    # 列表卡有時只剩日期片段；以同一官方詳情頁的 h1 還原標題，
+                    # 不從整頁文字或相鄰卡片推測。
+                    if v.get("detail_title") and detail.get("title"):
+                        heading = re.sub(r'\s+', ' ', detail["title"]).strip()
+                        if len(re.sub(r'[^\w一-鿿]', '', heading)) >= 3:
+                            r["t"] = heading[:70]
                 src = pg.evaluate("()=>{const i=document.querySelector('#thecontent img');return i?i.src:'';}") or ""
             except Exception:
                 src = ""

@@ -510,5 +510,9 @@
   "台南南紡威秀影城": {
     "addr": "台南市東區中華東路一段366號5樓",
     "source": "https://www.vscinemas.com.tw/theater/detail.aspx?id=16"
+  },
+  "誠品R79 中山地下書街B1": {
+    "addr": "台北市大同區南京西路16號B1之中山地下街B1-B48號店鋪",
+    "source": "https://meet.eslite.com/tw/en/store/index/20180222011?areaId=e0a7c75a-7cbd-e711-a974-06d9a90704e1"
   }
 }

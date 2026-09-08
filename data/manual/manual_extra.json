@@ -1,26 +1,4 @@
 {
- "A-BASE": {
-  "city": "台北市",
-  "lat": 25.042666,
-  "lng": 121.506814,
-  "loc": "exact",
-  "addr": "台北市萬華區成都路29號2樓",
-  "url": "https://x.com/abasetaiwan/status/2078886790556229923",
-  "ex": [
-   {
-    "t": "「我在意的對象 並不是男人」POP UP STORE in A-BASE",
-    "s": "2026/08/28",
-    "e": "2026/09/07",
-    "l": "https://x.com/abasetaiwan/status/2078886790556229923",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/guy_not_guy_abase_20260828.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "ip": "我在意的對象 並不是男人",
-    "org": "A-BASE（SENSE LABO Co., Ltd.）",
-    "lic": "新井すみこ（Sumiko Arai）／KADOKAWA CORPORATION"
-   }
-  ]
- },
  "中友百貨 C棟13F 國際大廳": {
   "city": "台中市",
   "lat": 24.1522668,
@@ -376,9 +354,9 @@
  },
  "台中iFG 遠雄廣場威秀影城": {
   "city": "台中市",
-  "lat": 24.135473018575,
-  "lng": 120.687673995592,
-  "loc": "exact",
+  "lat": 24.14003,
+  "lng": 120.69166,
+  "loc": "區級",
   "addr": "台中市東區復興路四段186號4樓",
   "url": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
   "ex": [
@@ -394,27 +372,6 @@
     "ip": "劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉",
     "org": "木棉花國際股份有限公司／威秀影城",
     "lic": "Magica Quartet／Aniplex／Madoka Project"
-   }
-  ]
- },
- "台中世界貿易中心 大禮堂": {
-  "city": "台中市",
-  "lat": 24.176085,
-  "lng": 120.617068,
-  "loc": "exact",
-  "addr": "台中市西屯區天保街60號3樓",
-  "url": "https://realescapeconan.oen.tw/",
-  "ex": [
-   {
-    "t": "名偵探柯南 大型實境解謎遊戲《逃脫！疾風的高速追逐》台中場",
-    "s": "2026/08/28",
-    "e": "2026/09/06",
-    "l": "https://realescapeconan.oen.tw/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_realescape_taichung_20260828.jpg",
-    "cat2": "體驗活動/Experience Activity",
-    "ip": "名偵探柯南",
-    "org": "SCRAP／頂級豬排遊戲工作室（台灣代理）",
-    "lic": "需人工確認"
    }
   ]
  },
@@ -496,9 +453,9 @@
  },
  "台北京站威秀影城": {
   "city": "台北市",
-  "lat": 25.048892761138,
-  "lng": 121.518349936939,
-  "loc": "exact",
+  "lat": 25.0738,
+  "lng": 121.54406,
+  "loc": "市級",
   "addr": "台北市大同區市民大道一段209號5樓",
   "url": "https://www.instagram.com/p/DcTGEbJDInO/",
   "ex": [
@@ -5093,6 +5050,29 @@
    }
   ]
  },
+ "誠品R79 中山地下書街B1": {
+  "city": "台北市",
+  "lat": 25.05803,
+  "lng": 121.52417,
+  "loc": "區級",
+  "addr": "台北市大同區南京西路16號B1之中山地下街B1-B48號店鋪",
+  "url": "https://www.instagram.com/p/DcdNjlvGJ78/",
+  "ex": [
+   {
+    "t": "Re:從零開始的異世界生活 主題Café",
+    "s": "2026/08/28",
+    "e": "2026/10/31",
+    "l": "https://www.instagram.com/p/DcdNjlvGJ78/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/rezero-cafe-r79-20260828.jpg",
+    "cat2": "主題餐廳/Theme Cafe",
+    "fee": "付費",
+    "id": "manual-rezero-cafe-r79-20260828",
+    "ip": "Re:從零開始的異世界生活",
+    "org": "IP POPUP STORE（宅一番）",
+    "lic": "木棉花國際股份有限公司（台灣代理）／長月達平・KADOKAWA刊／Re:ZERO3 PARTNERS"
+   }
+  ]
+ },
  "遠東巨城購物中心": {
   "city": "新竹市",
   "lat": 24.809384,
@@ -5137,8 +5117,8 @@
  },
  "駁二藝術特區": {
   "city": "高雄市",
-  "lat": 22.6203,
-  "lng": 120.282,
+  "lat": 22.6198889,
+  "lng": 120.2817222,
   "loc": "exact",
   "addr": "高雄市鹽埕區大勇路1號",
   "url": "https://www.instagram.com/p/DZZ0g9UpJHY/",
@@ -5203,9 +5183,9 @@
  },
  "高雄大遠百威秀影城": {
   "city": "高雄市",
-  "lat": 22.613424008067,
-  "lng": 120.303548975058,
-  "loc": "exact",
+  "lat": 22.61181,
+  "lng": 120.31929,
+  "loc": "區級",
   "addr": "高雄市苓雅區三多四路21號13樓",
   "url": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
   "ex": [
