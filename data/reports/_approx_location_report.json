@@ -1,12 +1,19 @@
 {
  "summary": {
-  "venues_total": 246,
+  "venues_total": 247,
   "exact": 230,
-  "approx_total": 16,
-  "has_road_or_addr": 15,
+  "approx_total": 17,
+  "has_road_or_addr": 16,
   "only_area": 1
  },
  "has_road_or_addr": [
+  {
+   "name": "LaLaport 台中北館1F 舞台區",
+   "city": "台中市",
+   "addr": "台中市東區進德路600號北館1樓",
+   "loc": "building",
+   "url": "https://www.instagram.com/p/Dc-lB3cjbjj/"
+  },
   {
    "name": "台中驛鐵道文化園區 鐵鹿大街 A2",
    "city": "台中市",

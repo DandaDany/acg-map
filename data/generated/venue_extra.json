@@ -86,6 +86,30 @@
     "ty": "special"
    },
    {
+    "t": "Speak 說好英文是好工作的敲門磚",
+    "s": "2026/09/18",
+    "e": "2026/09/20",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090813320173524",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/resize1.png",
+    "ty": "special"
+   },
+   {
+    "t": "台北結婚博覽會",
+    "s": "2026/09/19",
+    "e": "2026/09/20",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090816412401514",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e4%b8%bb%e8%a6%96%e8%a6%ba_1920x1080_26090816404536258.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "2026國際失智症月特展",
+    "s": "2026/09/18",
+    "e": "2026/09/21",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090816132895622",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1920(W) x 1080(H)_0_26090816113939131.jpg",
+    "ty": "special"
+   },
+   {
     "t": "CHIIKAWA DAYS 台北特展",
     "s": "2026/07/04",
     "e": "2026/09/27",
@@ -110,11 +134,11 @@
     "ty": "special"
    },
    {
-    "t": "鄭豐喜義賣書展",
-    "s": "2026/09/17",
-    "e": "2026/09/29",
-    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090114351964571",
-    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1-1920x1080-150dpi.jpg",
+    "t": "Fluffy Wagon 開幕🌸被花療癒的一百種方式",
+    "s": "2026/09/04",
+    "e": "2026/09/28",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090811413137005",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/260904_fluffy_kazan_FB_1725%c3%97656_26090811480726921.jpg",
     "ty": "special"
    },
    {
@@ -123,6 +147,14 @@
     "e": "2026/09/29",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26081009302082724",
     "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e6%95%a3%e6%ad%a5%e6%99%82%e9%96%93_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_1920x1080_26081009420271603.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "鄭豐喜義賣書展",
+    "s": "2026/09/17",
+    "e": "2026/09/29",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090114351964571",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/1-1920x1080-150dpi.jpg",
     "ty": "special"
    },
    {
@@ -195,6 +227,14 @@
     "e": "2026/10/12",
     "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26080712070005557",
     "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/20260803_JNP%e8%8f%af%e5%b1%b1_%e8%8f%af%e5%b1%b1%e5%ae%98%e7%b6%b2%e6%b4%bb%e5%8b%95_001.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "SIF in Taipei 首爾插畫展 台北站",
+    "s": "2026/10/23",
+    "e": "2026/10/26",
+    "l": "https://www.huashan1914.com/w/huashan1914/exhibition_26090811570516858",
+    "img": "https://media.huashan1914.com/WebUPD/huashan1914/exhibition/%e9%a6%96%e7%88%be%e6%8f%92%e7%95%ab%e5%b1%95%e5%8f%b0%e5%8c%97%e7%ab%99_%e6%b4%bb%e5%8b%95%e4%b8%bb%e8%a6%96%e8%a6%ba_%e8%8f%af%e5%b1%b1%e5%ae%98%e6%96%b9%e6%b4%bb%e5%8b%95_1920x1080.jpg",
     "ty": "special"
    },
    {
@@ -502,35 +542,19 @@
   "url": "https://www.pier2.org",
   "ex": [
    {
-    "t": "彩虹地景",
-    "s": "2020/11/14",
-    "e": "2027/12/31",
-    "l": "https://pier2.org/exhibition/info/905/",
-    "img": "https://pier2.org/upload/others/files/GLR4062.jpg",
+    "t": "2026高雄漾藝術博覽會 YOUNG ART KAOHSIUNG",
+    "s": "2026/11/13",
+    "e": "2026/11/15",
+    "l": "https://pier2.org/exhibition/info/1967/",
+    "img": "https://pier2.org/upload/others/files/XGU0065.jpg",
     "ty": "special"
    },
    {
-    "t": "駁二舊事倉庫",
-    "s": "2026/01/22",
-    "e": "2030/12/31",
-    "l": "https://pier2.org/exhibition/info/3/",
-    "img": "https://pier2.org/upload/others/files/YBM5744.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "怪獸風景－西川伸司＆氫酸鉀駐地創作展",
-    "s": "2026/06/12",
-    "e": "2026/09/28",
-    "l": "https://pier2.org/exhibition/info/1926/",
-    "img": "https://pier2.org/upload/others/files/BTO9370.jpg",
-    "ty": "special"
-   },
-   {
-    "t": "漫畫便當店 COMIC BENTO",
-    "s": "2026/06/12",
-    "e": "2026/09/28",
-    "l": "https://pier2.org/exhibition/info/1927/",
-    "img": "https://pier2.org/upload/others/files/JUV2048.jpg",
+    "t": "YES, AI DO. 歡迎光臨—2050情感交易所",
+    "s": "2026/10/09",
+    "e": "2026/10/26",
+    "l": "https://pier2.org/exhibition/info/1980/",
+    "img": "https://pier2.org/upload/others/files/UXE9496.jpg",
     "ty": "special"
    },
    {
@@ -542,11 +566,19 @@
     "ty": "special"
    },
    {
-    "t": "《凡爾賽玫瑰》快閃空間",
-    "s": "2026/06/13",
+    "t": "漫畫便當店 COMIC BENTO",
+    "s": "2026/06/12",
     "e": "2026/09/28",
-    "l": "https://pier2.org/exhibition/info/1933/",
-    "img": "https://pier2.org/upload/others/files/SRQ4915.jpg",
+    "l": "https://pier2.org/exhibition/info/1927/",
+    "img": "https://pier2.org/upload/others/files/JUV2048.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "彩虹地景",
+    "s": "2020/11/14",
+    "e": "2027/12/31",
+    "l": "https://pier2.org/exhibition/info/905/",
+    "img": "https://pier2.org/upload/others/files/GLR4062.jpg",
     "ty": "special"
    },
    {
@@ -566,27 +598,11 @@
     "ty": "special"
    },
    {
-    "t": "虎姑婆和他的朋友 勇氣島大冒險",
-    "s": "2026/09/17",
-    "e": "2026/12/20",
-    "l": "https://pier2.org/exhibition/info/1961/",
-    "img": "https://pier2.org/upload/others/files/OXC1659.jpg",
-    "ty": "special"
-   },
-   {
     "t": "TAMASHII EXHIBITION 2026",
     "s": "2026/09/19",
     "e": "2026/09/28",
     "l": "https://pier2.org/exhibition/info/1976/",
     "img": "https://pier2.org/upload/event/YIFZFCQZ982552.jpeg",
-    "ty": "special"
-   },
-   {
-    "t": "YES, AI DO. 歡迎光臨—2050情感交易所",
-    "s": "2026/10/09",
-    "e": "2026/10/26",
-    "l": "https://pier2.org/exhibition/info/1980/",
-    "img": "https://pier2.org/upload/others/files/UXE9496.jpg",
     "ty": "special"
    },
    {
@@ -598,11 +614,35 @@
     "ty": "special"
    },
    {
-    "t": "2026高雄漾藝術博覽會 YOUNG ART KAOHSIUNG",
-    "s": "2026/11/13",
-    "e": "2026/11/15",
-    "l": "https://pier2.org/exhibition/info/1967/",
-    "img": "https://pier2.org/upload/others/files/XGU0065.jpg",
+    "t": "駁二舊事倉庫",
+    "s": "2026/01/22",
+    "e": "2030/12/31",
+    "l": "https://pier2.org/exhibition/info/3/",
+    "img": "https://pier2.org/upload/others/files/YBM5744.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "怪獸風景－西川伸司＆氫酸鉀駐地創作展",
+    "s": "2026/06/12",
+    "e": "2026/09/28",
+    "l": "https://pier2.org/exhibition/info/1926/",
+    "img": "https://pier2.org/upload/others/files/BTO9370.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "《凡爾賽玫瑰》快閃空間",
+    "s": "2026/06/13",
+    "e": "2026/09/28",
+    "l": "https://pier2.org/exhibition/info/1933/",
+    "img": "https://pier2.org/upload/others/files/SRQ4915.jpg",
+    "ty": "special"
+   },
+   {
+    "t": "虎姑婆和他的朋友 勇氣島大冒險",
+    "s": "2026/09/17",
+    "e": "2026/12/20",
+    "l": "https://pier2.org/exhibition/info/1961/",
+    "img": "https://pier2.org/upload/others/files/OXC1659.jpg",
     "ty": "special"
    }
   ]
