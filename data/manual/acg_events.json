@@ -4659,5 +4659,77 @@
   "_links": {
    "活動連結 / Activity link": "https://www.instagram.com/p/Dc-lB3cjbjj/"
   }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/wind-breaker-5th-taipei-20261024.jpg",
+  "類型 / Category": "展覽/Exhibition",
+  "活動類別 / Activity Category": "展覽/Exhibition",
+  "付費狀態 / Admission": "付費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q4",
+  "開始日期 / Start Date": "2026-10-24 00:00:00",
+  "結束日期 / End Date": "2026-12-06 00:00:00",
+  "IP": "WIND BREAKER—防風少年—",
+  "活動名稱 / Activity Name": "WIND BREAKER—防風少年—5th Anniversary Exhibition Taipei",
+  "活動群組ID / Event Group ID": "manual-wind-breaker-5th-taipei-20261024",
+  "地點 / Location": "新光三越台北南西店 一館 9F 活動會館（台北市中山區南京西路12號）",
+  "主辦方 / Organizer": "台灣東販股份有限公司／movic Co., Ltd.",
+  "授權單位 / Authorized unit (Licensor)": "Satoru Nii／KODANSHA",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DdDWojPgfRZ/",
+  "備註 / NOTE": "2026/09/09 Slack候選。台灣東販／movic官方活動帳號公告展覽於2026/10/24–12/06在新光三越台北南西店一館9F活動會館舉辦，Klook獨家售票於09/23開賣，核心展覽需購票，判定付費；10/23作者簽名會屬不合四種形式且抽選細節另行公告，未混入展覽日期。正式KV取自同一官方貼文，已下載2048×2048原圖並目視核對展覽名稱、Taipei Edition、場地、簽名會日期及©Satoru Nii/KODANSHA版權列；展覽完整期間依同一貼文文字。Slack來源：https://uandmeclaude.slack.com/archives/C0B9ANKJ3L2/p1788949665140399",
+  "IP_std": "WIND BREAKER—防風少年—",
+  "Licensor_std": "講談社",
+  "月份": "2026-10-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DdDWojPgfRZ/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo-stardust-popup-kaohsiung-20260916.jpg",
+  "類型 / Category": "物販/Goods",
+  "活動類別 / Activity Category": "快閃店/Pop Up Store",
+  "付費狀態 / Admission": "免費",
+  "年度 / Start Year": 2026,
+  "季別 / Season": "Q3",
+  "開始日期 / Start Date": "2026-09-16 00:00:00",
+  "結束日期 / End Date": "2026-11-02 00:00:00",
+  "IP": "JOJO的奇妙冒險 星塵遠征軍",
+  "活動名稱 / Activity Name": "《JOJO的奇妙冒險 星塵遠征軍》快閃店（高雄站）",
+  "活動群組ID / Event Group ID": "manual-jojo-stardust-popup-kaohsiung-20260916",
+  "地點 / Location": "高雄夢時代購物中心 1F（高雄市前鎮區中華五路789號1樓）",
+  "主辦方 / Organizer": "IP POPUP STORE（宅一番）",
+  "授權單位 / Authorized unit (Licensor)": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DdDbFsPnT69/",
+  "備註 / NOTE": "2026/09/09 Slack候選。IP POPUP STORE官方貼文確認高雄站2026/09/16–11/02於夢時代統一時代百貨高雄店1F舉辦，設五大角色打卡點及限定商品，符合獨立快閃店；官方未公告門票、預約或最低消費，商品選購不等於付費入場，判定免費。正式KV取自同一官方貼文，已下載2048×1448原圖並目視核對活動名稱、高雄場日期、場地及©Hirohiko Araki & LUCKY LAND COMMUNICATIONS/SHUEISHA・JOJO’s Animation SC Project版權列。Slack來源：https://uandmeclaude.slack.com/archives/C0B9ANKJ3L2/p1788949665140399",
+  "IP_std": "JOJO的奇妙冒險",
+  "Licensor_std": "集英社",
+  "月份": "2026-09-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DdDbFsPnT69/"
+  }
+ },
+ {
+  "KV": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_realescape_taichung_20260828.jpg",
+  "類型 / Category": "體驗/Experience",
+  "活動類別 / Activity Category": "體驗活動/Experience Activity",
+  "付費狀態 / Admission": "付費",
+  "年度 / Start Year": 2027,
+  "季別 / Season": "Q1",
+  "開始日期 / Start Date": "2027-01-21 00:00:00",
+  "結束日期 / End Date": "2027-01-24 00:00:00",
+  "IP": "名偵探柯南",
+  "活動名稱 / Activity Name": "名偵探柯南 大型實境解謎遊戲《逃脫！疾風的高速追逐》新竹場",
+  "活動群組ID / Event Group ID": "manual-conan-realescape-hsinchu-20270121",
+  "地點 / Location": "風livehouse（新竹市東區東大路一段1號）",
+  "主辦方 / Organizer": "SCRAP／頂級豬排遊戲工作室",
+  "授權單位 / Authorized unit (Licensor)": "青山剛昌／小學館・讀賣電視台・TMS／SCRAP",
+  "活動連結 / Activity link": "https://www.instagram.com/p/DdBiBMqCf67/",
+  "備註 / NOTE": "2026/09/09 Slack候選。頂級豬排遊戲工作室官方貼文及正式售票頁確認新竹場於2027/01/21–01/24在風livehouse舉辦；SCRAP官方特設頁載明核心實境解謎須購票及票價，判定付費。正式KV沿用同一巡迴活動之SCRAP官方特設頁主視覺，已目視核對活動名稱、SCRAP／頂級豬排標誌及©Gosho Aoyama/1996,2026 Shogakukan,YTV,TMS ©SCRAP版權列；新竹日期與場地依官方主辦貼文及售票頁。高雄場因官方公告為12/11、12/12、12/13、12/19、12/20五個不連續日期，現行單一連續展期schema無法忠實表示，未併入本列。Slack來源：https://uandmeclaude.slack.com/archives/C0B9ANKJ3L2/p1788949693248889",
+  "IP_std": "名偵探柯南",
+  "Licensor_std": "小學館／TMS／SCRAP",
+  "月份": "2027-01-01 00:00:00",
+  "_links": {
+   "活動連結 / Activity link": "https://www.instagram.com/p/DdBiBMqCf67/"
+  }
  }
 ]

@@ -1,9 +1,9 @@
 {
  "summary": {
-  "venues_total": 247,
-  "exact": 230,
-  "approx_total": 17,
-  "has_road_or_addr": 16,
+  "venues_total": 250,
+  "exact": 232,
+  "approx_total": 18,
+  "has_road_or_addr": 17,
   "only_area": 1
  },
  "has_road_or_addr": [
@@ -111,6 +111,13 @@
    "addr": "高雄市岡山區捷安路25號",
    "loc": "building",
    "url": "https://kurasushi.tw/activities/588"
+  },
+  {
+   "name": "風livehouse",
+   "city": "新竹市",
+   "addr": "新竹市東區東大路一段1號",
+   "loc": "building",
+   "url": "https://www.instagram.com/p/DdBiBMqCf67/"
   },
   {
    "name": "高雄夢時代購物中心 1F 時代光廊",

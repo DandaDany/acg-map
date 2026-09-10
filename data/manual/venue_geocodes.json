@@ -3806,5 +3806,15 @@
   "addr_key": "台中市東區進德路600號北館1樓",
   "loc": "building",
   "precision_note": "LaLaport台中官方網站確認完整地址；沿用同址既有官方門市建物圖釘，樓層與舞台區無獨立室內座標"
+ },
+ "風livehouse": {
+  "la": 24.8007509,
+  "lo": 120.9768483,
+  "source": "openstreetmap_named_building_2026-09-10",
+  "display_name": "風livehouse, 1, 東大路一段, 公園里, 東區, 新竹市, 300031, 臺灣",
+  "type": "building",
+  "addr_key": "新竹市東區東大路一段1號",
+  "loc": "building",
+  "precision_note": "官方主辦貼文與售票頁確認完整地址；OpenStreetMap查得風livehouse具名建物範圍中心座標，未誤標為室內exact圖釘"
  }
 }

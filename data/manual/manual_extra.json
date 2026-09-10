@@ -377,9 +377,9 @@
  },
  "台中iFG 遠雄廣場威秀影城": {
   "city": "台中市",
-  "lat": 24.14003,
-  "lng": 120.69166,
-  "loc": "區級",
+  "lat": 24.135473018575,
+  "lng": 120.687673995592,
+  "loc": "exact",
   "addr": "台中市東區復興路四段186號4樓",
   "url": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
   "ex": [
@@ -476,9 +476,9 @@
  },
  "台北京站威秀影城": {
   "city": "台北市",
-  "lat": 25.0738,
-  "lng": 121.54406,
-  "loc": "市級",
+  "lat": 25.048892761138,
+  "lng": 121.518349936939,
+  "loc": "exact",
   "addr": "台北市大同區市民大道一段209號5樓",
   "url": "https://www.instagram.com/p/DcTGEbJDInO/",
   "ex": [
@@ -2486,9 +2486,9 @@
  },
  "新光三越台中中港店 10F": {
   "city": "台中市",
-  "lat": 24.18913,
-  "lng": 120.62962,
-  "loc": "區級",
+  "lat": 24.1650058,
+  "lng": 120.6433984,
+  "loc": "exact",
   "addr": "台中市西屯區台灣大道三段301號10樓",
   "url": "https://www.instagram.com/p/DcTGEbJDInO/",
   "ex": [
@@ -2568,6 +2568,29 @@
     "ip": "鏈鋸人",
     "org": "Vision Toys／樂玩多 WAYTOFUN",
     "lic": "藤本樹／集英社・MAPPA／Chainsaw Man Project"
+   }
+  ]
+ },
+ "新光三越台北南西店 一館 9F 活動會館": {
+  "city": "台北市",
+  "lat": 25.06366,
+  "lng": 121.53236,
+  "loc": "區級",
+  "addr": "台北市中山區南京西路12號",
+  "url": "https://www.instagram.com/p/DdDWojPgfRZ/",
+  "ex": [
+   {
+    "t": "WIND BREAKER—防風少年—5th Anniversary Exhibition Taipei",
+    "s": "2026/10/24",
+    "e": "2026/12/06",
+    "l": "https://www.instagram.com/p/DdDWojPgfRZ/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/wind-breaker-5th-taipei-20261024.jpg",
+    "cat2": "展覽/Exhibition",
+    "fee": "付費",
+    "id": "manual-wind-breaker-5th-taipei-20261024",
+    "ip": "WIND BREAKER—防風少年—",
+    "org": "台灣東販股份有限公司／movic Co., Ltd.",
+    "lic": "Satoru Nii／KODANSHA"
    }
   ]
  },
@@ -5075,9 +5098,9 @@
  },
  "誠品R79 中山地下書街B1": {
   "city": "台北市",
-  "lat": 25.05803,
-  "lng": 121.52417,
-  "loc": "區級",
+  "lat": 25.0525048,
+  "lng": 121.5203318,
+  "loc": "exact",
   "addr": "台北市大同區南京西路16號B1之中山地下街B1-B48號店鋪",
   "url": "https://www.instagram.com/p/DcdNjlvGJ78/",
   "ex": [
@@ -5117,6 +5140,29 @@
    }
   ]
  },
+ "風livehouse": {
+  "city": "新竹市",
+  "lat": 24.79748,
+  "lng": 120.99369,
+  "loc": "區級",
+  "addr": "新竹市東區東大路一段1號",
+  "url": "https://www.instagram.com/p/DdBiBMqCf67/",
+  "ex": [
+   {
+    "t": "名偵探柯南 大型實境解謎遊戲《逃脫！疾風的高速追逐》新竹場",
+    "s": "2027/01/21",
+    "e": "2027/01/24",
+    "l": "https://www.instagram.com/p/DdBiBMqCf67/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/conan_realescape_taichung_20260828.jpg",
+    "cat2": "體驗活動/Experience Activity",
+    "fee": "付費",
+    "id": "manual-conan-realescape-hsinchu-20270121",
+    "ip": "名偵探柯南",
+    "org": "SCRAP／頂級豬排遊戲工作室",
+    "lic": "青山剛昌／小學館・讀賣電視台・TMS／SCRAP"
+   }
+  ]
+ },
  "馬場町紀念公園": {
   "city": "台北市",
   "lat": 25.0199329,
@@ -5140,8 +5186,8 @@
  },
  "駁二藝術特區": {
   "city": "高雄市",
-  "lat": 22.6198889,
-  "lng": 120.2817222,
+  "lat": 22.6203,
+  "lng": 120.282,
   "loc": "exact",
   "addr": "高雄市鹽埕區大勇路1號",
   "url": "https://www.instagram.com/p/DZZ0g9UpJHY/",
@@ -5181,6 +5227,29 @@
    }
   ]
  },
+ "高雄夢時代購物中心 1F": {
+  "city": "高雄市",
+  "lat": 22.58594,
+  "lng": 120.30646,
+  "loc": "區級",
+  "addr": "高雄市前鎮區中華五路789號1樓",
+  "url": "https://www.instagram.com/p/DdDbFsPnT69/",
+  "ex": [
+   {
+    "t": "《JOJO的奇妙冒險 星塵遠征軍》快閃店（高雄站）",
+    "s": "2026/09/16",
+    "e": "2026/11/02",
+    "l": "https://www.instagram.com/p/DdDbFsPnT69/",
+    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jojo-stardust-popup-kaohsiung-20260916.jpg",
+    "cat2": "快閃店/Pop Up Store",
+    "fee": "免費",
+    "id": "manual-jojo-stardust-popup-kaohsiung-20260916",
+    "ip": "JOJO的奇妙冒險 星塵遠征軍",
+    "org": "IP POPUP STORE（宅一番）",
+    "lic": "荒木飛呂彥＆LUCKY LAND COMMUNICATIONS／集英社・JOJO的奇妙冒險SC製作委員會"
+   }
+  ]
+ },
  "高雄夢時代購物中心 1F 時代光廊": {
   "city": "高雄市",
   "lat": 22.59244,
@@ -5206,9 +5275,9 @@
  },
  "高雄大遠百威秀影城": {
   "city": "高雄市",
-  "lat": 22.61181,
-  "lng": 120.31929,
-  "loc": "區級",
+  "lat": 22.613424008067,
+  "lng": 120.303548975058,
+  "loc": "exact",
   "addr": "高雄市苓雅區三多四路21號13樓",
   "url": "https://www.facebook.com/emuse.com.tw/posts/1553507910145206/",
   "ex": [
