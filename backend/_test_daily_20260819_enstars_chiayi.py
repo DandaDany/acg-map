@@ -66,12 +66,8 @@ class Daily20260819EnstarsChiayiTests(unittest.TestCase):
         self.assertEqual(self.admission[TITLE]["fee"], "免費")
 
         manual_kv = os.path.join(ROOT, "data", "manual", "_kv_cache", "enstars_spotlight_taipei_20260828.jpg")
-        public_kv = os.path.join(ROOT, "public", "kv", "a99974cee949f199.jpg")
         with open(manual_kv, "rb") as fh:
             manual_bytes = fh.read()
-        with open(public_kv, "rb") as fh:
-            public_bytes = fh.read()
-        self.assertEqual(manual_bytes, public_bytes)
         self.assertGreater(len(manual_bytes), 100_000)
 
     def test_chiayi_generated_data_has_no_invalid_or_stale_open_end_date(self):

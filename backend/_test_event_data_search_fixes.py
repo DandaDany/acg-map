@@ -24,12 +24,13 @@ class EventDataSearchFixTests(unittest.TestCase):
         cls.manual = load("data/manual/manual_extra.json")
         cls.events = load("data/manual/acg_events.json")
         cls.public = load("public/venues.json")
+        cls.geocodes = load("data/manual/venue_geocodes.json")
 
     def test_initial_d_uses_kaohsiung_station_coordinates(self):
-        venue = self.manual["高雄駅一番街・北站 高雄捷運高雄車站B2"]
-        self.assertEqual(venue["loc"], "exact")
-        self.assertAlmostEqual(venue["lat"], 22.6377809)
-        self.assertAlmostEqual(venue["lng"], 120.3034814)
+        # manual_extra／public 是日期衍生層；到期後改驗證持久 geocode SSOT。
+        venue = self.geocodes["高雄駅一番街・北站 高雄捷運高雄車站B2"]
+        self.assertAlmostEqual(venue["la"], 22.6377809)
+        self.assertAlmostEqual(venue["lo"], 120.3034814)
         pins = assert_public_matches_lifecycle(
             self, self.public, self.events, INITIAL_D_TITLE
         )
