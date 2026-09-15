@@ -399,38 +399,6 @@
    }
   ]
  },
- "台中麗寶OUTLET MALL C區1樓中央廣場": {
-  "city": "台中市",
-  "lat": 24.324143,
-  "lng": 120.699211,
-  "loc": "exact",
-  "addr": "台中市后里區福容路201號",
-  "url": "https://www.instagram.com/p/Da2DfOEj_9k",
-  "ex": [
-   {
-    "t": "麵包超人夏日萌萌主題店",
-    "s": "2026/07/16",
-    "e": "2026/09/14",
-    "l": "https://www.instagram.com/p/Da2DfOEj_9k",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/anpanman_lihpao_20260716.jpg",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "麵包超人"
-   },
-   {
-    "t": "Sirotan期間限定快閃店",
-    "s": "2026/07/16",
-    "e": "2026/09/14",
-    "l": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
-    "img": "https://www.facebook.com/photo?fbid=1557479489724975&set=pb.100063888157498.-2207520000",
-    "cat2": "快閃店/Pop-up Store",
-    "fee": "免費",
-    "ip": "Sirotan",
-    "org": "Sirotan台灣官方粉絲團",
-    "lic": "CREATIVE YOKO"
-   }
-  ]
- },
  "台北三創生活園區 6F INCUBASE Arena": {
   "city": "台北市",
   "lat": 25.045633,

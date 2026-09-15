@@ -929,6 +929,11 @@ def main():
     HIST_KEEP = {'國立故宮博物院', '文化部文化資產園區', '國立臺灣文學館', '臺中文學館', '池上穀倉藝術館', '舊打狗驛故事館'}
     def is_history(v):
         if v['name'] in HIST_KEEP: return False
+        # 場館級過濾不得連帶刪除同館已明確命中的 ACG 活動。
+        # 例如花博當日只剩「宗教展」與 CCF 動漫盛典各一筆時，
+        # 舊的 50% 比例會誤刪整個官方場館。
+        if any(e.get('c') == '動漫遊戲(ACG)' for e in v.get('ex', [])):
+            return False
         n = len(v['ex']); he = sum(1 for e in v['ex'] if e.get('c') == '歷史人文')
         return bool(HIST_NAME.search(v['name'])) or (n > 0 and he / n >= 0.5)
     bh = len(venues)
