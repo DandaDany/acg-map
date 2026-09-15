@@ -506,5 +506,29 @@
   "中友百貨 C棟13F 國際大廳": {
     "addr": "台中市北區三民路三段161號",
     "source": "https://www.facebook.com/emuse.com.tw/posts/1530886889073975/"
+  },
+  "台南南紡威秀影城": {
+    "addr": "台南市東區中華東路一段366號5樓",
+    "source": "https://www.vscinemas.com.tw/theater/detail.aspx?id=16"
+  },
+  "誠品R79 中山地下書街B1": {
+    "addr": "台北市大同區南京西路16號B1之中山地下街B1-B48號店鋪",
+    "source": "https://meet.eslite.com/tw/en/store/index/20180222011?areaId=e0a7c75a-7cbd-e711-a974-06d9a90704e1"
+  },
+  "LaLaport 台中北館1F 舞台區": {
+    "addr": "台中市東區進德路600號北館1樓",
+    "source": "https://www.mitsui-shopping-park.com.tw/lalaport/taichung/tw/index.html"
+  },
+  "新光三越台北南西店 一館 9F 活動會館": {
+    "addr": "台北市中山區南京西路12號",
+    "source": "https://www.instagram.com/p/DdDWojPgfRZ/"
+  },
+  "高雄夢時代購物中心 1F": {
+    "addr": "高雄市前鎮區中華五路789號1樓",
+    "source": "https://www.instagram.com/p/DdDbFsPnT69/"
+  },
+  "風livehouse": {
+    "addr": "新竹市東區東大路一段1號",
+    "source": "https://www.instagram.com/p/DdBiBMqCf67/"
   }
 }
