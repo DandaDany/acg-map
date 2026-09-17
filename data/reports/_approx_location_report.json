@@ -1,9 +1,9 @@
 {
  "summary": {
-  "venues_total": 223,
-  "exact": 205,
-  "approx_total": 18,
-  "has_road_or_addr": 17,
+  "venues_total": 160,
+  "exact": 149,
+  "approx_total": 11,
+  "has_road_or_addr": 10,
   "only_area": 1
  },
  "has_road_or_addr": [
@@ -62,55 +62,6 @@
    "addr": "彰化縣員林市中山路二段30之3號2樓",
    "loc": "building",
    "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
-  },
-  {
-   "name": "藏壽司 中山南西店",
-   "city": "台北市",
-   "addr": "台北市大同區南京西路57號2樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 台北館前店",
-   "city": "台北市",
-   "addr": "台北市中正區館前路12號5樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 基隆中正信三店",
-   "city": "基隆市",
-   "addr": "基隆市中正區中正路3號1樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 板橋遠科店",
-   "city": "新北市",
-   "addr": "新北市板橋區遠東路62之3號",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 桃園遠百店",
-   "city": "桃園市",
-   "addr": "桃園市桃園區中正路20號11樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 淡水站前店",
-   "city": "新北市",
-   "addr": "新北市淡水區中山路8號5樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 高雄岡山店",
-   "city": "高雄市",
-   "addr": "高雄市岡山區捷安路25號",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
   },
   {
    "name": "風livehouse",
