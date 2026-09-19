@@ -12,6 +12,8 @@
  "2026 咒術迴戰 懷玉·玉折 最強路跑 中部場（台中）": {"fee":"付費","source":"https://irunner.biji.co/2026JujutsuKaisenRUN2","checked":"2026-08-01","basis":"路跑須付費報名"},
  "2026 咒術迴戰 懷玉·玉折 最強路跑 北部場（新北）": {"fee":"付費","source":"https://irunner.biji.co/2026JujutsuKaisenRUN2","checked":"2026-08-01","basis":"路跑須付費報名"},
  "2026 咒術迴戰 懷玉·玉折 最強路跑 南部場（高雄）": {"fee":"付費","source":"https://irunner.biji.co/2026JujutsuKaisenRUN2","checked":"2026-08-01","basis":"路跑須付費報名"},
+ "咒術迴戰 期間限定快閃店（威秀北中南場）": {"fee":"免費","source":"https://www.instagram.com/p/DcTGEbJDInO/","checked":"2026-09-04","basis":"官方快閃店貼文未公告門票、報名費或強制消費；商品選購不等於付費入場"},
+ "《劇場版 魔法少女小圓〈瓦爾普吉斯的迴天〉》期間限定商售區": {"fee":"免費","source":"https://www.facebook.com/emuse.com.tw/posts/1553507910145206/","checked":"2026-09-04","basis":"官方期間限定商售區與造景拍照區未公告門票、報名費或強制消費；商品選購不等於付費入場"},
  "2026 新世紀福音戰士路跑（2KM）": {"fee":"付費","source":"https://irunner.biji.co/2026NeonGenesisEvangelion","checked":"2026-08-01","basis":"官方報名費 NT$1,580"},
  "2026 澎湖花火節 × 七龍珠Z": {"fee":"免費","source":"https://tw.news.yahoo.com/%E5%8F%AC%E5%96%9A%E7%A5%9E%E9%BE%8D-2026%E6%BE%8E%E6%B9%96%E8%8A%B1%E7%81%AB%E7%AF%80%E6%94%9C%E6%89%8B-%E4%B8%83%E9%BE%8D%E7%8F%A0z-5-4%E8%B5%B7%E9%9C%87%E6%92%BC%E7%99%BB%E5%A0%B4-052400010.html","checked":"2026-08-01","basis":"免門票入場"},
  "2026 誠品動漫祭": {"fee":"免費","source":"https://gnn.gamer.com.tw/detail.php?sn=308160","checked":"2026-08-01","basis":"免門票入場"},
@@ -113,5 +115,11 @@
  "『光逝去的夏天』聯名咖啡廳": {"fee":"付費","source":"https://www.instagram.com/p/DcIXeCEIDzX/","checked":"2026-08-18","basis":"核心活動為聯名咖啡廳餐飲體驗，參與需於合作餐廳消費"},
  "偶像夢幻祭 2 聚光舞台主題快閃店 台北場": {"fee":"免費","source":"https://www.songshanculturalpark.org/exhibition/activity/44ec2ffc-72ff-4f98-8593-02937252a54b","checked":"2026-08-19","basis":"松山文創園區官方活動頁明載免費入場；商品選購不等於付費入場"},
  "2026 台中萌魂動漫祭．餘暑篇": {"fee":"免費","source":"https://www.instagram.com/p/DcNp0ahkksP/","checked":"2026-08-19","basis":"官方快閃物販公告未設門票、預約或最低消費；商品選購不等於付費入場"},
- "《獵人實境解謎遊戲－貪婪之島篇》高雄站": {"fee":"付費","source":"https://pier2.org/exhibition/info/1923/","checked":"2026-08-29","basis":"官方頁明載售票網站、最後購票入場時間與約75分鐘核心實境解謎體驗，參與必須購票"}
+ "《獵人實境解謎遊戲－貪婪之島篇》高雄站": {"fee":"付費","source":"https://pier2.org/exhibition/info/1923/","checked":"2026-08-29","basis":"官方頁明載售票網站、最後購票入場時間與約75分鐘核心實境解謎體驗，參與必須購票"},
+ "Re:從零開始的異世界生活 主題Café": {"fee":"付費","source":"https://www.instagram.com/p/DcdNjlvGJ78/","checked":"2026-09-08","basis":"核心活動為主題Café餐飲體驗，參與需於合作餐廳消費"},
+ "兩棲爬蟲盛典x CCF動漫盛典": {"fee":"付費","source":"https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4560","checked":"2026-09-08","basis":"花博官方活動頁明載一般票新台幣250元、優待票100元"},
+ "台中超動漫研究社快閃店": {"fee":"免費","source":"https://www.facebook.com/emuse.com.tw/posts/1552279143601416/","checked":"2026-09-09","basis":"木棉花官方正式KV明載免費入場；商品選購不等於付費入場"},
+ "WIND BREAKER—防風少年—5th Anniversary Exhibition Taipei": {"fee":"付費","source":"https://www.instagram.com/p/DdDWojPgfRZ/","checked":"2026-09-10","basis":"台灣東販／movic官方活動公告載明Klook獨家售票於2026/09/23開賣，核心展覽需購票"},
+ "《JOJO的奇妙冒險 星塵遠征軍》快閃店（高雄站）": {"fee":"免費","source":"https://www.instagram.com/p/DdDbFsPnT69/","checked":"2026-09-10","basis":"IP POPUP STORE官方公告未設門票、預約或最低消費；商品選購不等於付費入場"},
+ "名偵探柯南 大型實境解謎遊戲《逃脫！疾風的高速追逐》新竹場": {"fee":"付費","source":"https://realdgame.jp/s/conan2026/taiwan/","checked":"2026-09-10","basis":"SCRAP官方特設頁明載各票種價格，核心實境解謎體驗須購票"}
 }

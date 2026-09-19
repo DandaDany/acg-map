@@ -73,7 +73,12 @@ class AdmissionStatusTests(unittest.TestCase):
         }
         for title, fee in expected.items():
             with self.subTest(title=title):
-                self.assertEqual(events[title].get("fee"), fee)
+                # 公開資料只保存當期活動；已到期範例的費用決策仍應由
+                # persistent admission override 保護，不能要求活動永久上圖。
+                if title in events:
+                    self.assertEqual(events[title].get("fee"), fee)
+                else:
+                    self.assertEqual(self.overrides[title].get("fee"), fee)
 
 
 if __name__ == "__main__":
