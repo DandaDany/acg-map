@@ -1,9 +1,9 @@
 {
  "summary": {
-  "venues_total": 160,
-  "exact": 149,
-  "approx_total": 11,
-  "has_road_or_addr": 10,
+  "venues_total": 97,
+  "exact": 88,
+  "approx_total": 9,
+  "has_road_or_addr": 8,
   "only_area": 1
  },
  "has_road_or_addr": [
@@ -13,13 +13,6 @@
    "addr": "台中市東區進德路600號北館1樓",
    "loc": "building",
    "url": "https://www.instagram.com/p/Dc-lB3cjbjj/"
-  },
-  {
-   "name": "台中驛鐵道文化園區 鐵鹿大街 A2",
-   "city": "台中市",
-   "addr": "台中市中區台灣大道一段1號",
-   "loc": "building",
-   "url": "https://www.instagram.com/p/DcNp0ahkksP/"
   },
   {
    "name": "台南南紡威秀影城",
@@ -69,13 +62,6 @@
    "addr": "新竹市東區東大路一段1號",
    "loc": "building",
    "url": "https://www.instagram.com/p/DdBiBMqCf67/"
-  },
-  {
-   "name": "高雄夢時代購物中心 1F 時代光廊",
-   "city": "高雄市",
-   "addr": "高雄市前鎮區中華五路789號1樓",
-   "loc": "building",
-   "url": "https://www.instagram.com/p/DcLXtexlGz4/"
   }
  ],
  "only_area": [
