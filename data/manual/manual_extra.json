@@ -993,29 +993,6 @@
    }
   ]
  },
- "新光三越台中中港店 10F": {
-  "city": "台中市",
-  "lat": 24.1650058,
-  "lng": 120.6433984,
-  "loc": "exact",
-  "addr": "台中市西屯區台灣大道三段301號10樓",
-  "url": "https://www.instagram.com/p/DcTGEbJDInO/",
-  "ex": [
-   {
-    "t": "咒術迴戰 期間限定快閃店（威秀北中南場）",
-    "s": "2026/08/25",
-    "e": "2026/09/21",
-    "l": "https://www.instagram.com/p/DcTGEbJDInO/",
-    "img": "https://raw.githubusercontent.com/DandaDany/acg-map/main/data/manual/_kv_cache/jujutsu-kaisen-popup-20260825.jpg",
-    "cat2": "快閃店/Pop Up Store",
-    "fee": "免費",
-    "id": "manual-jujutsu-kaisen-vieshow-popup-20260825",
-    "ip": "咒術迴戰",
-    "org": "羚邦集團（Medialink Group）／Ani-One Taiwan",
-    "lic": "羚邦 Medialink（代理）／芥見下々・集英社・咒術迴戰製作委員會"
-   }
-  ]
- },
  "新光三越台北信義新天地 A9 9F 宴會展演館": {
   "city": "台北市",
   "lat": 25.0360816,
