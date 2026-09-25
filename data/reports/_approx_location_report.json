@@ -1,18 +1,25 @@
 {
  "summary": {
-  "venues_total": 246,
-  "exact": 231,
-  "approx_total": 15,
-  "has_road_or_addr": 14,
+  "venues_total": 96,
+  "exact": 87,
+  "approx_total": 9,
+  "has_road_or_addr": 8,
   "only_area": 1
  },
  "has_road_or_addr": [
   {
-   "name": "台中驛鐵道文化園區 鐵鹿大街 A2",
+   "name": "LaLaport 台中北館1F 舞台區",
    "city": "台中市",
-   "addr": "台中市中區台灣大道一段1號",
+   "addr": "台中市東區進德路600號北館1樓",
    "loc": "building",
-   "url": "https://www.instagram.com/p/DcNp0ahkksP/"
+   "url": "https://www.instagram.com/p/Dc-lB3cjbjj/"
+  },
+  {
+   "name": "台南南紡威秀影城",
+   "city": "台南市",
+   "addr": "台南市東區中華東路一段366號5樓",
+   "loc": "building",
+   "url": "https://www.instagram.com/p/DcTGEbJDInO/"
   },
   {
    "name": "和牛涮 仁德萬家福店",
@@ -50,60 +57,11 @@
    "url": "https://www.giguo.com.tw/activity.php?newsurl=2026_DORAEMON"
   },
   {
-   "name": "藏壽司 中山南西店",
-   "city": "台北市",
-   "addr": "台北市大同區南京西路57號2樓",
+   "name": "風livehouse",
+   "city": "新竹市",
+   "addr": "新竹市東區東大路一段1號",
    "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 台北館前店",
-   "city": "台北市",
-   "addr": "台北市中正區館前路12號5樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 基隆中正信三店",
-   "city": "基隆市",
-   "addr": "基隆市中正區中正路3號1樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 板橋遠科店",
-   "city": "新北市",
-   "addr": "新北市板橋區遠東路62之3號",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 桃園遠百店",
-   "city": "桃園市",
-   "addr": "桃園市桃園區中正路20號11樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 淡水站前店",
-   "city": "新北市",
-   "addr": "新北市淡水區中山路8號5樓",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "藏壽司 高雄岡山店",
-   "city": "高雄市",
-   "addr": "高雄市岡山區捷安路25號",
-   "loc": "building",
-   "url": "https://kurasushi.tw/activities/588"
-  },
-  {
-   "name": "高雄夢時代購物中心 1F 時代光廊",
-   "city": "高雄市",
-   "addr": "高雄市前鎮區中華五路789號1樓",
-   "loc": "building",
-   "url": "https://www.instagram.com/p/DcLXtexlGz4/"
+   "url": "https://www.instagram.com/p/DdBiBMqCf67/"
   }
  ],
  "only_area": [

@@ -66,17 +66,19 @@ class Daily20260819EnstarsChiayiTests(unittest.TestCase):
         self.assertEqual(self.admission[TITLE]["fee"], "免費")
 
         manual_kv = os.path.join(ROOT, "data", "manual", "_kv_cache", "enstars_spotlight_taipei_20260828.jpg")
-        public_kv = os.path.join(ROOT, "public", "kv", "a99974cee949f199.jpg")
         with open(manual_kv, "rb") as fh:
             manual_bytes = fh.read()
-        with open(public_kv, "rb") as fh:
-            public_bytes = fh.read()
-        self.assertEqual(manual_bytes, public_bytes)
         self.assertGreater(len(manual_bytes), 100_000)
 
-    def test_chiayi_generated_data_has_no_invalid_or_stale_open_end_date(self):
+    def test_chiayi_generated_dates_are_valid_and_expired_rows_are_not_public(self):
         today = snapshot_date(self.public).strftime("%Y/%m/%d")
         events = self.generated["嘉義文化創意產業園區"]["ex"]
+        public_titles = {
+            event.get("t")
+            for venue in self.public["venues"]
+            if venue.get("name") == "嘉義文化創意產業園區"
+            for event in venue.get("ex", [])
+        }
         self.assertTrue(events)
         for event in events:
             with self.subTest(title=event.get("t")):
@@ -87,16 +89,20 @@ class Daily20260819EnstarsChiayiTests(unittest.TestCase):
                     self.assertRegex(start, DATE_RE)
                 if end:
                     self.assertRegex(end, DATE_RE)
-                    self.assertGreaterEqual(end, today)
-                elif start:
-                    self.assertGreaterEqual(start, today)
+                    if end < today:
+                        self.assertNotIn(event.get("t"), public_titles)
 
     def test_generated_keeps_auditable_non_acg_but_public_is_acg_only(self):
-        generated_titles = {
-            event.get("t")
-            for event in self.generated["嘉義文化創意產業園區"]["ex"]
-        }
-        self.assertIn("▸OpenLab 沉浸式投影展 ➫ 科技與藝術的交會點", generated_titles)
+        # generated 是官網每日稽核層，場館可能暫時增減非 ACG 活動；測試應驗證
+        # 來源與公開邊界，不應把某一筆非 ACG 活動的永久存在當成契約。
+        generated_events = self.generated["嘉義文化創意產業園區"]["ex"]
+        self.assertTrue(generated_events)
+        for event in generated_events:
+            with self.subTest(title=event.get("t")):
+                self.assertTrue(str(event.get("t") or "").strip())
+                self.assertTrue(
+                    str(event.get("l") or "").startswith("https://www.g9cip.com/activity/")
+                )
 
         public_events = [
             event

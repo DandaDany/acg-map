@@ -65,17 +65,20 @@ class JojoSushiroTests(unittest.TestCase):
             self.assertTrue(event["l"].startswith("https://www.facebook.com/Sushiro.TW/posts/"))
             self.assertEqual(event["img"], "/kv/jojo-sushiro-20260817.jpg")
 
-    def test_uploaded_kv_is_stable_and_identical(self):
+    def test_kv_source_is_persistent_and_public_copy_follows_lifecycle(self):
         source = os.path.join(ROOT, "data", "manual", "_kv_cache", "jojo_sushiro_20260817.jpg")
         public = os.path.join(ROOT, "public", "kv", "jojo-sushiro-20260817.jpg")
         self.assertTrue(os.path.isfile(source))
-        self.assertTrue(os.path.isfile(public))
         with open(source, "rb") as fh:
             source_bytes = fh.read()
-        with open(public, "rb") as fh:
-            public_bytes = fh.read()
-        self.assertEqual(source_bytes, public_bytes)
         self.assertGreater(len(source_bytes), 200_000)
+        if self.pins:
+            self.assertTrue(os.path.isfile(public))
+            with open(public, "rb") as fh:
+                public_bytes = fh.read()
+            self.assertEqual(source_bytes, public_bytes)
+        else:
+            self.assertFalse(os.path.exists(public))
 
 
 if __name__ == "__main__":
